@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Organization Research Group</title>
+  <style type="text/css">
+    html, body { margin: 0; padding: 0;}
+    .org-scroll {
+      height: 10vh;
+      background: url('org.png');
+      background-size: auto 100%;
+
+      animation: org-scroll 100s linear infinite;
+    }
+
+    .org-scroll:nth-of-type(even) {
+      animation: org-scroll-back 100s linear infinite;
+    }
+
+    @keyframes org-scroll {
+      from { background-position: 0 0 }
+      to { background-position: 9999px 0 }
+    }
+
+    @keyframes org-scroll-back {
+      from { background-position: 9999px 0 }
+      to { background-position: 0 0 }
+    }
+
+    .message-wrapper {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 2em;
+      max-width: 48em;
+
+      background: white;
+    }
+
+    .next-reading {
+      // text-indent: -2em;
+      // margin-left: 2em;
+      // padding: 2em 0;
+    }
+    .next-reading::first-line {
+      padding-left: 0;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+    <div class="org-scroll"></div>
+
+    <div class="message-wrapper">
+    <div class="message">
+      <h1 class="flex-none">The Organization Research Group</h1>
+      <p class="next-reading" style="padding: 0 2em">
+      <strong>Next reading (19 February):</strong><br />
+Robert A. Fairthorne. (1971). Temporal structure in bibliographic classification. In Proceedings of the Ottawa Conference on the Conceptual Basis of the Classification of Knowledge. Ottawa, ON, Canada. 404-415.
+      </p>
+      <p class="flex-none" style="white-space: nowrap;"><a href="past_readings.html">Past readings</a></p>
+    </div>
+    </div>
+</body>
