@@ -5,27 +5,35 @@
   <meta charset="utf-8">
   <title>The Organization Research Group</title>
   <style type="text/css">
-    html, body { margin: 0; padding: 0;}
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
     .org-scroll {
       height: 10vh;
       background: url('org.png');
-      background-size: auto 100%;
-
-      animation: org-scroll 100s linear infinite;
+      background-repeat: repeat-x;
+      background-size: auto 10vh;
     }
 
+    .org-scroll:nth-of-type(odd) {
+      animation: org-scroll 2s ease-in-out infinite;
+    }
     .org-scroll:nth-of-type(even) {
-      animation: org-scroll-back 100s linear infinite;
+      animation: org-scroll-back 2s ease-in-out infinite;
     }
 
     @keyframes org-scroll {
-      from { background-position: 0 0 }
-      to { background-position: 9999px 0 }
+      0%, 25% { background-position: 0 0, center; }
+      75%, 100% { background-position: calc(10vh * 3.3) 0, center; }
     }
 
     @keyframes org-scroll-back {
-      from { background-position: 9999px 0 }
-      to { background-position: 0 0 }
+      0%, 25% { background-position: calc(10vh * 3.3) 0, center; }
+      75%, 100% { background-position: 0 0, center; }
+    }
+
+
+
+    * {
+      cursor: url(org_small.png), default;
     }
 
     .message-wrapper {
@@ -45,17 +53,16 @@
       justify-content: center;
       align-items: center;
 
-      padding: 2em;
+
+
+      border: 1px solid #ccc;
+
+      padding: 1.5em;
       max-width: 48em;
 
       background: white;
     }
 
-    .next-reading {
-      // text-indent: -2em;
-      // margin-left: 2em;
-      // padding: 2em 0;
-    }
     .next-reading::first-line {
       padding-left: 0;
     }
@@ -63,16 +70,18 @@
 </head>
 
 <body>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
-    <div class="org-scroll"></div>
+    <div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+      <div class="org-scroll"></div>
+    </div>
 
     <div class="message-wrapper">
     <div class="message">
