@@ -14,20 +14,21 @@
     }
 
     .org-scroll:nth-of-type(odd) {
-      animation: org-scroll 2s ease-in-out infinite;
+      animation: org-scroll 5s ease-in-out infinite;
     }
     .org-scroll:nth-of-type(even) {
-      animation: org-scroll-back 2s ease-in-out infinite;
+      animation: org-scroll-back 5s ease-in-out infinite;
     }
 
     @keyframes org-scroll {
-      0%, 25% { background-position: 0 0, center; }
-      75%, 100% { background-position: calc(10vh * 3.3) 0, center; }
+      0%, 13% { background-position: 110px 0, center; }
+      25% { background-position: calc(110px + ((10vh + 1px - 1px) * 3.3)) 0, center; }
+      38%, 50%, 100% { background-position: 110px 0, center; }
     }
 
     @keyframes org-scroll-back {
-      0%, 25% { background-position: calc(10vh * 3.3) 0, center; }
-      75%, 100% { background-position: 0 0, center; }
+      0%, 25%, 100% { background-position: calc(110px + ((10vh + 1px - 1px) * 3.3)) 0, center; }
+      12.5% { background-position: 110px 0, center; }
     }
 
 
