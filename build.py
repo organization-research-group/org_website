@@ -71,6 +71,8 @@ if __name__ == '__main__':
       </section>
       </main>
       </div>
+
+      <script type="text/javascript" src="org.js"></script>
     </body>
 
     </html>
