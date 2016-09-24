@@ -1,12 +1,15 @@
 READINGS = $(wildcard readings/*)
 
-all: dist/index.html dist/style.css dist/org.js # dist/archive.html
+all: dist/index.html dist/archive.html dist/style.css dist/org.js # dist/archive.html
 
 dist:
 	mkdir -p dist
 
 dist/index.html: build.py $(READINGS) | dist
 	./build.py > $@
+
+dist/archive.html: build.py $(READINGS) | dist
+	./build.py archive > $@
 
 dist/style.css: style.css | dist
 	cp $< $@
