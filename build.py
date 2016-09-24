@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import re
 import time
 
 readings = sorted(os.listdir('readings'), reverse=True)
@@ -12,6 +13,14 @@ def datestring_from_filename(filename):
     time_struct = time.strptime(filename.replace('.html', ''), '%Y-%m-%d')
     return time.strftime('%A, %b. %e, %Y', time_struct)
 
+def content_from_filename(filename):
+    text = open(os.path.join('readings', filename), 'r').read()
+    text = re.sub(
+        r'(doi:([^\b]+))',
+        r'<a href="https://doi.org/\2">\1</a>',
+        text)
+    return text
+
 
 def entry_from_filename(filename, level=3):
     return """
@@ -22,7 +31,7 @@ def entry_from_filename(filename, level=3):
     """.format(
         level=level,
         heading=datestring_from_filename(filename),
-        content=open(os.path.join('readings', filename), 'r').read()
+        content=content_from_filename(filename)
     )
 
 

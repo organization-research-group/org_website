@@ -1,6 +1,6 @@
 "use strict";
 
-const DURATION = 200
+const DURATION = 420
     , UNIT = 24
 
 
@@ -77,4 +77,4 @@ function start() {
 
 start();
 
-setInterval(start, 666);
+setInterval(start, 800);

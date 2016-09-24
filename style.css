@@ -12,9 +12,11 @@ html, body {
 }
 
 main {
+    position: relative;
+    z-index: 2;
     box-sizing: border-box;
     max-width: 600px;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .7);
 }
 
 section {
@@ -36,4 +38,10 @@ section > :last-child { margin-bottom: 0; }
 
 .reading h3 {
     margin-bottom: 0;
+}
+
+.reading ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
