@@ -51,7 +51,7 @@ template = """
   </main>
   </div>
 
-  <script type="text/javascript" src="org.js"></script>
+  <!-- <script type="text/javascript" src="org.js"></script> -->
 </body>
 
 </html>
@@ -74,7 +74,12 @@ archive_template = """
 
 index_template = """
   <section id="about">
-    <h1>The Organization Research Group</h1>
+    <h1>
+      The
+      <span class="org-letter">O</span>rganization
+      <span class="org-letter">R</span>esearch
+      <span class="org-letter">G</span>roup
+    </h1>
 
     <p>
     ORG meets Fridays at 11am in 214 Manning Hall.
