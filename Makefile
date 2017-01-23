@@ -17,7 +17,10 @@ dist/style.css: style.css | dist
 dist/org.js: animation.js | dist
 	cp $< $@
 
-.PHONY: clean
+.PHONY: clean upload
 
 clean:
 	rm -rf dist
+
+upload:
+	scp dist/* orgorgorgorgorg.org:~/webapps/org_home/
