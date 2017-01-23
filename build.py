@@ -76,9 +76,11 @@ index_template = """
   <section id="about">
     <h1>
       The
-      <span class="org-letter">O</span>rganization
-      <span class="org-letter">R</span>esearch
-      <span class="org-letter">G</span>roup
+      <span class="org-o org-firstletter">O</span><span class="org-r">r</span><span class="org-g">g</span>anizati<span class="org-o">o</span>n
+
+      <span class="org-r org-firstletter">R</span>esea<span class="org-r">r</span>ch
+
+      <span class="org-g org-firstletter">G</span><span class="org-r">r</span><span class="org-o">o</span>up
     </h1>
 
     <p>
