@@ -1,9 +1,11 @@
-READINGS = $(wildcard readings/*)
+READINGS := $(wildcard readings/*)
 
-all: dist/index.html dist/archive.html dist/style.css dist/org.js # dist/archive.html
+SITE_FILES := dist/index.html dist/archive.html dist/style.css dist/org.js
+
+all: $(SITE_FILES)
 
 dist:
-	mkdir -p dist
+	mkdir -p $@
 
 dist/index.html: build.py $(READINGS) | dist
 	./build.py > $@
@@ -22,5 +24,6 @@ dist/org.js: animation.js | dist
 clean:
 	rm -rf dist
 
-upload:
-	scp dist/* orgorgorgorgorg.org:~/webapps/org_home/
+upload: $(SITE_FILES)
+	chmod g+w $^
+	scp -p $^ orgorgorgorgorg.org:/home/ptgolden/webapps/org_home/
