@@ -23,4 +23,4 @@ clean:
 	rm -rf dist
 
 upload:
-	scp dist/* orgorgorgorgorg.org:~/webapps/org_home/
+	scp dist/* orgorgorgorgorg.org:/home/ptgolden/webapps/org_home/
