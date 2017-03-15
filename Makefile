@@ -26,4 +26,4 @@ clean:
 
 upload: $(SITE_FILES)
 	chmod g+w $^
-	scp -p dist/* orgorgorgorgorg.org:/home/ptgolden/webapps/org_home/
+	scp -p $^ orgorgorgorgorg.org:/home/ptgolden/webapps/org_home/
