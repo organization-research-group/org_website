@@ -18,6 +18,16 @@
 
 # -- Begin bibliography --
 
+:ORG-UNC
+    a :Org .;
+    :meeting <> .
+
+:conference:OCCBCK
+    a bibo:Conference ;
+    dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
+    address:localityName "Ottawa" ;
+    dc:date "October 1st to 5th, 1971" .
+
 :journal:AI
     a bibo:Journal ;
     dc:title "Artificial Intelligence" ;
@@ -32,18 +42,18 @@
     dc:title "The British Journal of Sociology" ;
     bibo:issn "1468-4446" .
 
+:journal:CSCW
+    a bibo:Journal ;
+    dc:title "Computer Supported Cooperative Work (CSCW)" ;
+    bibo:shortTitle "Comput Supported Coop Work" ;
+    bibo:issn "0925-9724", "1573-7551" .
+
 :journal:CSCW:3:1
     a bibo:Issue ;
     dc:date "1994/03/01" ;
     dc:isPartOf :journal:CSCW ;
     bibo:issue "1" ;
     bibo:volume "3" .
-
-:journal:CSCW
-    a bibo:Journal ;
-    dc:title "Computer Supported Cooperative Work (CSCW)" ;
-    bibo:shortTitle "Comput Supported Coop Work" ;
-    bibo:issn "0925-9724", "1573-7551" .
 
 :journal:CriticalInquiry
     a bibo:Journal ;
@@ -129,17 +139,17 @@
     a bibo:Journal ;
     dc:title "Theory & Psychology" .
 
+:journal:WSQ
+    a bibo:Journal ;
+    dc:title "WSQ: Women's Studies Quarterly" ;
+    bibo:issn "1934-1520" .
+
 :journal:WSQ:41:3
     a bibo:Issue ;
     dc:date "2013/12/06" ;
     dc:isPartOf :journal:WSQ ;
     bibo:issue "3" ;
     bibo:volume "41" .
-
-:journal:WSQ
-    a bibo:Journal ;
-    dc:title "WSQ: Women's Studies Quarterly" ;
-    bibo:issn "1934-1520" .
 
 :journal:eflux
     a bibo:Journal ;
@@ -1100,12 +1110,6 @@
     ] ;
     bibo:pages "1137-1160" ;
     bibo:doi "10.1016/j.artint.2007.10.012" .
-
-:conference:OCCBCK
-    a bibo:Conference ;
-    dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
-    address:localityName "Ottawa" ;
-    dc:date "October 1st to 5th, 1971" .
 
 :reading:Fairthorne1974
     a :Reading, :ConferencePaper ;
