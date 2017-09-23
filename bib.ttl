@@ -20,7 +20,7 @@
 
 :ORG-UNC
     a :Org .;
-    :meeting <> .
+    :meeting :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:OCCBCK
     a bibo:Conference ;
@@ -168,6 +168,621 @@
     a bibo:Journal ;
     dc:title "Representations" ;
     bibo:issn "0734-6018, 1533-855X" .
+
+:meeting:2015-07-24
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-07-24T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2015-07-30
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-07-30T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Hjorland2015 .
+
+:meeting:2015-08-17
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-08-17T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Clark1996 .
+
+:meeting:2015-08-28
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-08-28T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Latour2012 .
+
+:meeting:2015-09-04
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-09-04T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Day2014 .
+
+:meeting:2015-09-11
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-09-11T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2015-09-18
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-09-18T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Acker2015 .
+
+:meeting:2015-09-25
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-09-25T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Blair2004 .
+
+:meeting:2015-10-02
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2015-10-02T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Wobbrock2009 .
+
+:meeting:2016-02-12
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-02-12T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Star1995 .
+
+:meeting:2016-02-19
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-02-19T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Fairthorne1974 .
+
+:meeting:2016-02-26
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-02-26T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Geiger2011 .
+
+:meeting:2016-03-04
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-03-04T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2016-03-25
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-03-25T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2016-04-01
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-04-01T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2016-04-15
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-04-15T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Fidler2016 .
+
+:meeting:2016-04-22
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-04-22T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2016-05-20
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-05-20T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Monteiro2012 .
+
+:meeting:2016-05-26
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-05-26T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Rieder2016 .
+
+:meeting:2016-06-02
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-06-02T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Galey2010 .
+
+:meeting:2016-06-10
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-06-10T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Star1989, :reading:Griesemer2016 .
+
+:meeting:2016-06-17
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-06-17T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Shavit2011 .
+
+:meeting:2016-06-24
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-06-24T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Feenberg2015 .
+
+:meeting:2016-07-01
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-07-01T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Medina2011 .
+
+:meeting:2016-07-08
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-07-08T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Leahu2016 .
+
+:meeting:2016-07-15
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-07-15T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Barad2003 .
+
+:meeting:2016-07-29
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-07-29T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Chun2016 .
+
+:meeting:2016-08-05
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-08-05T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Rouvroy2011 .
+
+:meeting:2016-08-26
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-08-26T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2016-09-02
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-09-02T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Plantin2016 .
+
+:meeting:2016-09-09
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-09-09T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Furner2016 .
+
+:meeting:2016-09-16
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-09-16T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Verhoeven2014 .
+
+:meeting:2016-09-23
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-09-23T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Kreiss2011 .
+
+:meeting:2016-09-30
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-09-30T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Hui2016 .
+
+:meeting:2016-10-07
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-10-07T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Haraway2016 .
+
+:meeting:2016-10-14
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-10-14T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Parikka2015 .
+
+:meeting:2016-10-28
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-10-28T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Marcus2016 .
+
+:meeting:2016-11-04
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-11-04T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Genosko2016 .
+
+:meeting:2016-11-11
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-11-11T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 .
+
+:meeting:2016-11-18
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-11-18T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Agre1994a, :reading:Mai2016 .
+
+:meeting:2016-12-02
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-12-02T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 .
+
+:meeting:2016-12-09
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2016-12-09T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Holmes2002, :reading:Rose1999 .
+
+:meeting:2017-01-13
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-01-13T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2017-01-20
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-01-20T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2017-01-27
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-01-27T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:RoblesAnderson2016 .
+
+:meeting:2017-02-03
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-02-03T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2017-02-10
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-02-10T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2017-02-17
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-02-17T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Cope2017, :reading:Gorichanaz2017 .
+
+:meeting:2017-03-03
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-03-03T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Smith2016, :reading:Feinberg2017 .
+
+:meeting:2017-03-10
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-03-10T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Passi2017 .
+
+:meeting:2017-03-17
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-03-17T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Hayles2016 .
+
+:meeting:2017-03-24
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-03-24T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Bratus2011 .
+
+:meeting:2017-03-31
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-03-31T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Dennett2002 .
+
+:meeting:2017-04-14
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-04-14T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Stenner2016 .
+
+:meeting:2017-04-21
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-04-21T11:00:00-0500
+        ]
+    ] .
+
+:meeting:2017-04-28
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-04-28T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Flynn1997 .
+
+:meeting:2017-05-05
+    a :Meeting ;
+    lode:atTime [
+        a owltime:Interval ;
+        owltime:hasBeginning [
+            a owltime:Instant ;
+            owltime:inXSDDateTimeStamp 2017-05-05T11:00:00-0500
+        ]
+    ] ;
+    lode:involved :reading:Dreyfus2007 .
 
 :person:AckerA
     a foaf:Person ;
@@ -656,7 +1271,7 @@
     foaf:surname "Ribes" ;
     foaf:homepage <http://www.davidribes.com/> .
 
-:person:RiderB
+:person:RiederB
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-2404-9277 ;
     foaf:givenname "Bernhard" ;
@@ -1159,7 +1774,7 @@
     bibo:pages "336-356" ;
     bibo:doi "10.1108/JD-03-2016-0030" .
 
-:reading:Fidler2017
+:reading:Fidler2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/asi.23660> ;
     dc:title "Metadata, infrastructure, and computer-mediated communication in historical perspective" ;
@@ -1258,6 +1873,11 @@
         a bibo:Conference
     ] .
 
+:reading:Genosko2016
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2016-11-04
+    a :Reading .
+
 :reading:Gorichanaz2017
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.24242/jclis.v1i1.7> ;
@@ -1276,7 +1896,7 @@
     ] ;
     bibo:doi "10.24242/jclis.v1i1.7" .
 
-:reading:Griesemer2015
+:reading:Griesemer2016
     a :Reading, bibo:BookSection ;
     dc:title "Sharing Spaces, Crossing Boundaries" ;
     dc:creator :person:GriesemerJ ;
@@ -1286,7 +1906,7 @@
     dc:isPartOf :volume:Bowker2015 ;
     bibo:pages "201-218" .
 
-:reading:Haraway2017
+:reading:Haraway2016
     a :Reading, bibo:AcademicArticle ;
     dc:title "Tentacular Thinking: Anthropocene, Capitalocene, Chthulucene" ;
     dc:creator :person:HarawayD ;
@@ -1357,6 +1977,11 @@
     ] ;
     bibo:pages "1559-1575" ;
     bibo:doi "10.1002/asi.23250" .
+
+:reading:Holmes2002
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2016-12-09
+    a :Reading .
 
 :reading:Hui2016
     a :Reading, bibo:Book ;
@@ -1537,6 +2162,7 @@
 
 :reading:Passi2017
     a :Reading, :ConferencePaper ;
+    # Add an additional field for "Online first" article (?)
     owl:sameAs <http://doi.org/10.1145/2998181.2998331> ;
     dc:title "Data Vision: Learning to See Through Algorithmic Abstraction" ;
     bibo:shortTitle "Data Vision" ;
@@ -1548,7 +2174,7 @@
     bibo:reproducedIn :proceedings:CSCW2017 ;
     bibo:pages "2436–2447" ;
     bibo:doi "10.1145/2998181.2998331" .
-# Add an additional field for "Online first" article (?)
+
 
 :reading:Plantin2016
     a :Reading, bibo:AcademicArticle ;
@@ -1581,9 +2207,10 @@
     bibo:pages "47-50" ;
     bibo:doi "10.1007/BF01305844" .
 
-:reading:Rider2017
+:reading:Rieder2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1080/1369118X.2016.1181195> ;
+    # FIXME: This was an online-only, pre-publication
     dc:title "Scrutinizing an algorithmic technique: the Bayes classifier as interested reading of reality" ;
     bibo:shortTitle "Scrutinizing an algorithmic technique" ;
     dc:creator :person:RiderB ;
@@ -1600,6 +2227,11 @@
     bibo:pages "100-117" ;
     bibo:doi "10.1080/1369118X.2016.1181195" .
 
+:reading:RoblesAnderson2016
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-01-27
+    a :Reading .
+
 :reading:Rose1999
     a :Reading, bibo:Book ;
     dc:title "Governing the soul: the shaping of the private self" ;
@@ -1613,14 +2245,14 @@
     bibo:edition "2nd ed." ;
     bibo:isbn13 "978-1-85343-443-3" .
 
-:reading:Rouvroy2013
+:reading:Rouvroy2011
     a :Reading, bibo:BookSection ;
     dc:title "Technology, virtuality and utopia: Governmentality in an age of autonomic computing" ;
     dc:creator :person:RouvroyA ;
     bibo:authorList (
         :person:RouvroyA
     ) ;
-    dc:isPartOf :volume:Hildebrandt2013 .
+    dc:isPartOf :volume:Hildebrandt2011 .
 
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
@@ -1631,6 +2263,11 @@
         :person:GriesemerJ
     ) ;
     dc:isPartOf :volume:Carrier2011 .
+
+:reading:Smith2016
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-03-03
+    a :Reading .
 
 :reading:Spade2013
     a :Reading, bibo:AcademicArticle ;
@@ -1714,7 +2351,7 @@
 :reading:Suchman1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305852> ;
-    dc:title "Speech acts and voices: Response to Winogradet al." ;
+    dc:title "Speech acts and voices: Response to Winograd et al." ;
     bibo:shortTitle "Speech acts and voices" ;
     dc:creator :person:SuchmanL ;
     bibo:authorList (
@@ -1847,10 +2484,10 @@
         :person:ClapinH
     ) .
 
-:volume:Hildebrandt2013
+:volume:Hildebrandt2011
     a bibo:EditedBook ;
     dc:title "Law, human agency and autonomic computing: the philosophy of law meets the philosophy of technology" ;
-    dc:date "2013" ;
+    dc:date "2011" ;
     dc:publisher :publisher:Routledge ;
     bibo:editor :person:HildebrandtM, :person:RouvroyA ;
     bibo:editorList (
