@@ -1,0 +1,23 @@
+{
+  "name": "org_website",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptgolden/org_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ptgolden/org_website/issues"
+  },
+  "homepage": "https://github.com/ptgolden/org_website#readme",
+  "dependencies": {
+    "es6-string-html-template": "^1.0.2",
+    "n3": "^0.11.2",
+    "union-type": "^0.4.0"
+  }
+}

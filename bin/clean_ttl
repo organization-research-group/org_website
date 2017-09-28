@@ -3,6 +3,10 @@
 import fileinput
 import itertools
 
+"""
+Alphabetize top-level nodes within the bibliography based on their
+"""
+
 def clean_ttl(text):
     lines = text.split('\n')
 
