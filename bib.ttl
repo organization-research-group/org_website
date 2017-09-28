@@ -4,6 +4,7 @@
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
 @prefix orcid: <http://orcid.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,6 +12,7 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix viaf: <http://viaf.org/viaf/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :ConferencePaper
     a rdf:Class ;
@@ -19,8 +21,22 @@
 # -- Begin bibliography --
 
 :ORG-UNC
-    a :Org .;
+    a :Org;
     :meeting :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+
+:conference:CSCW2017
+    a bibo:Conference ;
+    dc:title "The 20th ACM Conference on Computer-Supported Cooperative Work and Social Computing" ;
+    address:localityName "Portland, Oregon" ;
+    dc:date "February 25 - March 1, 2017" ;
+    foaf:homepage <https://cscw.acm.org/2017/>.
+
+:conference:DIS2016
+    a bibo:Conference ;
+    dc:title "Designing Interactive Systems 2016" ;
+    address:localityName "Brisbane, Australia" ;
+    dc:date "June 4-8 2016" ;
+    foaf:homepage <http://www.dis2016.org/> .
 
 :conference:OCCBCK
     a bibo:Conference ;
@@ -44,7 +60,7 @@
 
 :journal:CSCW
     a bibo:Journal ;
-    dc:title "Computer Supported Cooperative Work (CSCW)" ;
+    dc:title "Computer Supported Cooperative Work" ;
     bibo:shortTitle "Comput Supported Coop Work" ;
     bibo:issn "0925-9724", "1573-7551" .
 
@@ -172,20 +188,20 @@
 :meeting:2015-07-24
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-07-24T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-07-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2015-07-30
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-07-30T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-07-30T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hjorland2015 .
@@ -193,10 +209,10 @@
 :meeting:2015-08-17
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-08-17T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Clark1996 .
@@ -204,10 +220,10 @@
 :meeting:2015-08-28
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-08-28T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-08-28T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Latour2012 .
@@ -215,10 +231,10 @@
 :meeting:2015-09-04
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-09-04T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-04T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Day2014 .
@@ -226,20 +242,20 @@
 :meeting:2015-09-11
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-09-11T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-11T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2015-09-18
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-09-18T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-18T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Acker2015 .
@@ -247,10 +263,10 @@
 :meeting:2015-09-25
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-09-25T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-25T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Blair2004 .
@@ -258,10 +274,10 @@
 :meeting:2015-10-02
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2015-10-02T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-10-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Wobbrock2009 .
@@ -269,10 +285,10 @@
 :meeting:2016-02-12
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-02-12T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-12T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Star1995 .
@@ -280,10 +296,10 @@
 :meeting:2016-02-19
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-02-19T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-19T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Fairthorne1974 .
@@ -291,10 +307,10 @@
 :meeting:2016-02-26
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-02-26T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Geiger2011 .
@@ -302,40 +318,40 @@
 :meeting:2016-03-04
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-03-04T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-03-04T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2016-03-25
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-03-25T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-03-25T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2016-04-01
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-04-01T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-01T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2016-04-15
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-04-15T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-15T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Fidler2016 .
@@ -343,20 +359,20 @@
 :meeting:2016-04-22
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-04-22T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-22T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2016-05-20
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-05-20T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-05-20T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Monteiro2012 .
@@ -364,10 +380,10 @@
 :meeting:2016-05-26
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-05-26T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-05-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rieder2016 .
@@ -375,10 +391,10 @@
 :meeting:2016-06-02
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-06-02T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Galey2010 .
@@ -386,10 +402,10 @@
 :meeting:2016-06-10
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-06-10T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-10T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Star1989, :reading:Griesemer2016 .
@@ -397,10 +413,10 @@
 :meeting:2016-06-17
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-06-17T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Shavit2011 .
@@ -408,10 +424,10 @@
 :meeting:2016-06-24
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-06-24T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-24T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Feenberg2015 .
@@ -419,10 +435,10 @@
 :meeting:2016-07-01
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-07-01T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-01T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Medina2011 .
@@ -430,10 +446,10 @@
 :meeting:2016-07-08
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-07-08T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-08T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Leahu2016 .
@@ -441,10 +457,10 @@
 :meeting:2016-07-15
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-07-15T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-15T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Barad2003 .
@@ -452,10 +468,10 @@
 :meeting:2016-07-29
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-07-29T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-29T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Chun2016 .
@@ -463,10 +479,10 @@
 :meeting:2016-08-05
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-08-05T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-08-05T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rouvroy2011 .
@@ -474,20 +490,20 @@
 :meeting:2016-08-26
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-08-26T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-08-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2016-09-02
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-09-02T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Plantin2016 .
@@ -495,10 +511,10 @@
 :meeting:2016-09-09
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-09-09T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-09T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Furner2016 .
@@ -506,10 +522,10 @@
 :meeting:2016-09-16
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-09-16T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-16T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Verhoeven2014 .
@@ -517,10 +533,10 @@
 :meeting:2016-09-23
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-09-23T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-23T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Kreiss2011 .
@@ -528,10 +544,10 @@
 :meeting:2016-09-30
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-09-30T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-30T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hui2016 .
@@ -539,10 +555,10 @@
 :meeting:2016-10-07
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-10-07T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-07T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Haraway2016 .
@@ -550,10 +566,10 @@
 :meeting:2016-10-14
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-10-14T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-14T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Parikka2015 .
@@ -561,10 +577,10 @@
 :meeting:2016-10-28
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-10-28T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-28T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Marcus2016 .
@@ -572,10 +588,10 @@
 :meeting:2016-11-04
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-11-04T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-04T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Genosko2016 .
@@ -583,10 +599,10 @@
 :meeting:2016-11-11
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-11-11T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-11T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 .
@@ -594,10 +610,10 @@
 :meeting:2016-11-18
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-11-18T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-18T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Agre1994a, :reading:Mai2016 .
@@ -605,10 +621,10 @@
 :meeting:2016-12-02
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-12-02T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-12-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 .
@@ -616,10 +632,10 @@
 :meeting:2016-12-09
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2016-12-09T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-12-09T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Holmes2002, :reading:Rose1999 .
@@ -627,30 +643,30 @@
 :meeting:2017-01-13
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-01-13T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-13T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2017-01-20
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-01-20T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-20T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2017-01-27
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-01-27T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-27T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:RoblesAnderson2016 .
@@ -658,30 +674,30 @@
 :meeting:2017-02-03
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-02-03T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-03T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2017-02-10
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-02-10T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-10T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2017-02-17
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-02-17T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Cope2017, :reading:Gorichanaz2017 .
@@ -689,10 +705,10 @@
 :meeting:2017-03-03
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-03-03T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-03T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Smith2016, :reading:Feinberg2017 .
@@ -700,10 +716,10 @@
 :meeting:2017-03-10
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-03-10T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-10T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Passi2017 .
@@ -711,10 +727,10 @@
 :meeting:2017-03-17
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-03-17T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hayles2016 .
@@ -722,10 +738,10 @@
 :meeting:2017-03-24
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-03-24T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-24T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bratus2011 .
@@ -733,10 +749,10 @@
 :meeting:2017-03-31
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-03-31T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-31T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Dennett2002 .
@@ -744,10 +760,10 @@
 :meeting:2017-04-14
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-04-14T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-14T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stenner2016 .
@@ -755,20 +771,20 @@
 :meeting:2017-04-21
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-04-21T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-21T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] .
 
 :meeting:2017-04-28
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-04-28T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-28T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Flynn1997 .
@@ -776,10 +792,10 @@
 :meeting:2017-05-05
     a :Meeting ;
     lode:atTime [
-        a owltime:Interval ;
-        owltime:hasBeginning [
-            a owltime:Instant ;
-            owltime:inXSDDateTimeStamp 2017-05-05T11:00:00-0500
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-05T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Dreyfus2007 .
@@ -1432,7 +1448,8 @@
 :proceedings:HICSS2011
     a bibo:Proceedings ;
     dc:date "January 2011" ;
-    dc:title "2011 44th Hawaii International Conference on System Sciences" .
+    dc:title "Proceedings of the 2011 44th Hawaii International Conference on System Sciences" ;
+    dc:publisher :publisher:IEEComputerSociety .
 
 :publisher:ACM
     a foaf:Organization ;
@@ -1443,6 +1460,11 @@
     a foaf:Organization ;
     foaf:name "Free Association Books" ;
     address:localityName "London" .
+
+:publisher:IEEComputerSociety
+    a foaf:Organization ;
+    foaf:name "IEEE Computer Society" ;
+    address:localityName "Washington, DC" .
 
 :publisher:MIT
     a foaf:Organization ;
@@ -1865,7 +1887,7 @@
         :person:GeigerR
         :person:RibesD
     ) ;
-    dc:isPartOf <HICSS2011> ;
+    bibo:reproducedIn :proceedings:HICSS2011 ;
     bibo:pages "1-10" ;
     bibo:doi "10.1109/HICSS.2011.455" ;
     bibo:presentedAt [
@@ -2049,6 +2071,7 @@
     bibo:authorList (
         :person:LeahuL
     ) ;
+    bibo:presentedAt :conference:DIS2016 ;
     bibo:reproducedIn :proceedings:DIS2016 ;
     bibo:pages "182–186" ;
     bibo:doi "10.1145/2901790.2901840" .
@@ -2172,6 +2195,7 @@
         :person:JacksonS
     ) ;
     bibo:reproducedIn :proceedings:CSCW2017 ;
+    bibo:presentedAt :conference:CSCW2017 ;
     bibo:pages "2436–2447" ;
     bibo:doi "10.1145/2998181.2998331" .
 
@@ -2213,9 +2237,9 @@
     # FIXME: This was an online-only, pre-publication
     dc:title "Scrutinizing an algorithmic technique: the Bayes classifier as interested reading of reality" ;
     bibo:shortTitle "Scrutinizing an algorithmic technique" ;
-    dc:creator :person:RiderB ;
+    dc:creator :person:RiederB ;
     bibo:authorList (
-        :person:RiderB
+        :person:RiederB
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
