@@ -18,6 +18,9 @@
     a rdf:Class ;
     rdfs:isSubClassOf bibo:Article .
 
+:schedule
+    a rdf:Property .
+
 # -- Begin bibliography --
 
 :ORG-UNC
@@ -193,7 +196,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2015-07-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Patrick's article on “Periodo assertion as nanopublication” for <i>PeerJ Computer Science</i>" ]
+    ) .
 
 :meeting:2015-07-30
     a :Meeting ;
@@ -204,7 +210,11 @@
             time:inXSDDateTimeStamp "2015-07-30T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Hjorland2015 .
+    lode:involved :reading:Hjorland2015 ;
+    :schedule (
+        [ dc:description "Melanie's syllabus for INLS720" ]
+        :reading:Hjorland2015
+    ) .
 
 :meeting:2015-08-17
     a :Meeting ;
@@ -212,10 +222,14 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-08-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-08-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Clark1996 .
+    lode:involved :reading:Clark1996 ;
+    :schedule (
+        [ dc:description "Debbie and Jacob's DCMI poster analyzing metadata job keywords" ]
+        :reading:Clark1996
+    ) .
 
 :meeting:2015-08-28
     a :Meeting ;
@@ -226,7 +240,11 @@
             time:inXSDDateTimeStamp "2015-08-28T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Latour2012 .
+    lode:involved :reading:Latour2012 ;
+    :schedule (
+        [ dc:description "Jacob's Knowledge Organization literature review." ]
+        :reading:Latour2012
+    ) .
 
 :meeting:2015-09-04
     a :Meeting ;
@@ -237,7 +255,11 @@
             time:inXSDDateTimeStamp "2015-09-04T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Day2014 .
+    lode:involved :reading:Day2014 ;
+    :schedule (
+        :reading:Day2014
+        [ dc:description "Chapters [[ FIXME ]] " ]
+    ) .
 
 :meeting:2015-09-11
     a :Meeting ;
@@ -247,7 +269,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2015-09-11T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper for CHI" ]
+    ) .
 
 :meeting:2015-09-18
     a :Meeting ;
@@ -258,7 +283,10 @@
             time:inXSDDateTimeStamp "2015-09-18T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Acker2015 .
+    lode:involved :reading:Acker2015 ;
+    :schedule (
+        :reading:Acker2015
+    ) .
 
 :meeting:2015-09-25
     a :Meeting ;
@@ -269,7 +297,10 @@
             time:inXSDDateTimeStamp "2015-09-25T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Blair2004 .
+    lode:involved :reading:Blair2004 ;
+    :schedule (
+        :reading:Blair2004
+    ) .
 
 :meeting:2015-10-02
     a :Meeting ;
@@ -280,7 +311,10 @@
             time:inXSDDateTimeStamp "2015-10-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Wobbrock2009 .
+    lode:involved :reading:Wobbrock2009 ;
+    :schedule (
+        :reading:Wobbrock2009
+    ) .
 
 :meeting:2016-02-12
     a :Meeting ;
@@ -291,7 +325,10 @@
             time:inXSDDateTimeStamp "2016-02-12T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Star1995 .
+    lode:involved :reading:Star1995 ;
+    :schedule (
+        :reading:Star1995
+    ) .
 
 :meeting:2016-02-19
     a :Meeting ;
@@ -302,7 +339,10 @@
             time:inXSDDateTimeStamp "2016-02-19T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Fairthorne1974 .
+    lode:involved :reading:Fairthorne1974 ;
+    :schedule (
+        :reading:Fairthorne1974
+    ) .
 
 :meeting:2016-02-26
     a :Meeting ;
@@ -313,7 +353,10 @@
             time:inXSDDateTimeStamp "2016-02-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Geiger2011 .
+    lode:involved :reading:Geiger2011 ;
+    :schedule (
+        :reading:Geiger2011
+    ) .
 
 :meeting:2016-03-04
     a :Meeting ;
@@ -323,7 +366,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2016-03-04T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Field trip: Attend <a href=\"http://chat16.web.unc.edu/\">CHAT Festival</a>" ]
+    ) .
 
 :meeting:2016-03-25
     a :Meeting ;
@@ -333,7 +379,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2016-03-25T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper, “The value of discernment”" ]
+    ) .
 
 :meeting:2016-04-01
     a :Meeting ;
@@ -343,7 +392,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2016-04-01T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Think of possible topics for an ORG study" ]
+    ) .
 
 :meeting:2016-04-15
     a :Meeting ;
@@ -354,7 +406,10 @@
             time:inXSDDateTimeStamp "2016-04-15T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Fidler2016 .
+    lode:involved :reading:Fidler2016 ;
+    :schedule (
+        :reading:Fidler2016
+    ) .
 
 :meeting:2016-04-22
     a :Meeting ;
@@ -364,7 +419,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2016-04-22T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Think of possible topics for an ORG study" ]
+    ) .
 
 :meeting:2016-05-20
     a :Meeting ;
@@ -375,7 +433,10 @@
             time:inXSDDateTimeStamp "2016-05-20T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Monteiro2012 .
+    lode:involved :reading:Monteiro2012 ;
+    :schedule (
+        :reading:Monteiro2012
+    ) .
 
 :meeting:2016-05-26
     a :Meeting ;
@@ -386,7 +447,10 @@
             time:inXSDDateTimeStamp "2016-05-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Rieder2016 .
+    lode:involved :reading:Rieder2016 ;
+    :schedule (
+        :reading:Rieder2016
+    ) .
 
 :meeting:2016-06-02
     a :Meeting ;
@@ -397,7 +461,10 @@
             time:inXSDDateTimeStamp "2016-06-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Galey2010 .
+    lode:involved :reading:Galey2010 ;
+    :schedule (
+        :reading:Galey2010
+    ) .
 
 :meeting:2016-06-10
     a :Meeting ;
@@ -408,7 +475,11 @@
             time:inXSDDateTimeStamp "2016-06-10T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Star1989, :reading:Griesemer2016 .
+    lode:involved :reading:Star1989, :reading:Griesemer2016 ;
+    :schedule (
+        :reading:Star1989
+        :reading:Griesemer2016
+    ) .
 
 :meeting:2016-06-17
     a :Meeting ;
@@ -419,7 +490,10 @@
             time:inXSDDateTimeStamp "2016-06-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Shavit2011 .
+    lode:involved :reading:Shavit2011 ;
+    :schedule (
+        :reading:Shavit2011
+    ) .
 
 :meeting:2016-06-24
     a :Meeting ;
@@ -430,7 +504,10 @@
             time:inXSDDateTimeStamp "2016-06-24T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Feenberg2015 .
+    lode:involved :reading:Feenberg2015 ;
+    :schedule (
+        :reading:Feenberg2015
+    ) .
 
 :meeting:2016-07-01
     a :Meeting ;
@@ -441,7 +518,11 @@
             time:inXSDDateTimeStamp "2016-07-01T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Medina2011 .
+    lode:involved :reading:Medina2011 ;
+    :schedule (
+        :reading:Medina2011
+        [ dc:description "FIXME: chapters" ]
+    ) .
 
 :meeting:2016-07-08
     a :Meeting ;
@@ -452,7 +533,10 @@
             time:inXSDDateTimeStamp "2016-07-08T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Leahu2016 .
+    lode:involved :reading:Leahu2016 ;
+    :schedule (
+        :reading:Leahu2016
+    ) .
 
 :meeting:2016-07-15
     a :Meeting ;
@@ -463,7 +547,10 @@
             time:inXSDDateTimeStamp "2016-07-15T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Barad2003 .
+    lode:involved :reading:Barad2003 ;
+    :schedule (
+        :reading:Barad2003
+    ) .
 
 :meeting:2016-07-29
     a :Meeting ;
@@ -474,7 +561,10 @@
             time:inXSDDateTimeStamp "2016-07-29T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Chun2016 .
+    lode:involved :reading:Chun2016 ;
+    :schedule (
+        :reading:Chun2016
+    ) .
 
 :meeting:2016-08-05
     a :Meeting ;
@@ -485,7 +575,10 @@
             time:inXSDDateTimeStamp "2016-08-05T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Rouvroy2011 .
+    lode:involved :reading:Rouvroy2011 ;
+    :schedule (
+        :reading:Rouvroy2011
+    ) .
 
 :meeting:2016-08-26
     a :Meeting ;
@@ -495,7 +588,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2016-08-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper, “A design perspective on data”" ]
+    ) .
 
 :meeting:2016-09-02
     a :Meeting ;
@@ -506,7 +602,10 @@
             time:inXSDDateTimeStamp "2016-09-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Plantin2016 .
+    lode:involved :reading:Plantin2016 ;
+    :schedule (
+        :reading:Plantin2016
+    ) .
 
 :meeting:2016-09-09
     a :Meeting ;
@@ -517,7 +616,10 @@
             time:inXSDDateTimeStamp "2016-09-09T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Furner2016 .
+    lode:involved :reading:Furner2016 ;
+    :schedule (
+        :reading:Furner2016
+    ) .
 
 :meeting:2016-09-16
     a :Meeting ;
@@ -528,7 +630,10 @@
             time:inXSDDateTimeStamp "2016-09-16T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Verhoeven2014 .
+    lode:involved :reading:Verhoeven2014 ;
+    :schedule (
+        :reading:Verhoeven2014
+    ) .
 
 :meeting:2016-09-23
     a :Meeting ;
@@ -539,7 +644,10 @@
             time:inXSDDateTimeStamp "2016-09-23T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Kreiss2011 .
+    lode:involved :reading:Kreiss2011 ;
+    :schedule (
+        :reading:Kreiss2011
+    ) .
 
 :meeting:2016-09-30
     a :Meeting ;
@@ -550,7 +658,10 @@
             time:inXSDDateTimeStamp "2016-09-30T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Hui2016 .
+    lode:involved :reading:Hui2016 ;
+    :schedule (
+        :reading:Hui2016
+    ) .
 
 :meeting:2016-10-07
     a :Meeting ;
@@ -561,7 +672,10 @@
             time:inXSDDateTimeStamp "2016-10-07T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Haraway2016 .
+    lode:involved :reading:Haraway2016 ;
+    :schedule (
+        :reading:Haraway2016
+    ) .
 
 :meeting:2016-10-14
     a :Meeting ;
@@ -572,7 +686,10 @@
             time:inXSDDateTimeStamp "2016-10-14T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Parikka2015 .
+    lode:involved :reading:Parikka2015 ;
+    :schedule (
+        :reading:Parikka2015
+    ) .
 
 :meeting:2016-10-28
     a :Meeting ;
@@ -583,7 +700,10 @@
             time:inXSDDateTimeStamp "2016-10-28T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Marcus2016 .
+    lode:involved :reading:Marcus2016 ;
+    :schedule (
+        :reading:Marcus2016
+    ) .
 
 :meeting:2016-11-04
     a :Meeting ;
@@ -594,7 +714,10 @@
             time:inXSDDateTimeStamp "2016-11-04T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Genosko2016 .
+    lode:involved :reading:Genosko2016 ;
+    :schedule (
+        :reading:Genosko2016
+    ) .
 
 :meeting:2016-11-11
     a :Meeting ;
@@ -605,7 +728,19 @@
             time:inXSDDateTimeStamp "2016-11-11T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 .
+    lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 ;
+    :schedule (
+        :reading:Winograd1987
+        :reading:Suchman1993
+        :reading:Winograd1993
+        :reading:Agre1994b
+        :reading:Button1994
+        :reading:Randall1994
+        :reading:Curtis1994
+        :reading:Lynch1994
+        :reading:Bogen1994
+        :reading:Suchman1994
+    ) .
 
 :meeting:2016-11-18
     a :Meeting ;
@@ -616,7 +751,11 @@
             time:inXSDDateTimeStamp "2016-11-18T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Agre1994a, :reading:Mai2016 .
+    lode:involved :reading:Agre1994a, :reading:Mai2016 ;
+    :schedule (
+        :reading:Agre1994a
+        :reading:Mai2016
+    ) .
 
 :meeting:2016-12-02
     a :Meeting ;
@@ -627,7 +766,13 @@
             time:inXSDDateTimeStamp "2016-12-02T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 .
+    lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 ;
+    :schedule (
+        :reading:Freeman2013
+        :reading:Spade2013
+        :reading:Baez2013
+        :reading:Moore2013
+    ) .
 
 :meeting:2016-12-09
     a :Meeting ;
@@ -638,7 +783,11 @@
             time:inXSDDateTimeStamp "2016-12-09T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Holmes2002, :reading:Rose1999 .
+    lode:involved :reading:Holmes2002, :reading:Rose1999 ;
+    :schedule (
+        :reading:Holmes2002
+        :reading:Rose1999
+    ) .
 
 :meeting:2017-01-13
     a :Meeting ;
@@ -648,7 +797,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2017-01-13T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Patrick&apos;s syllabus for <a href=\"https://ptgolden.org/740syllabus.html\">INLS 740 (Digital Libraries)</a>" ]
+    ) .
 
 :meeting:2017-01-20
     a :Meeting ;
@@ -658,7 +810,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2017-01-20T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "<a href=\"http://savageminds.org/2017/01/12/society-must-be-defended-a-read-in-on-20-january-2017/\">http://savageminds.org/2017/01/12/society-must-be-defended-a-read-in-on-20-january-2017/</a>" ]
+    ) .
 
 :meeting:2017-01-27
     a :Meeting ;
@@ -669,7 +824,10 @@
             time:inXSDDateTimeStamp "2017-01-27T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:RoblesAnderson2016 .
+    lode:involved :reading:RoblesAnderson2016 ;
+    :schedule (
+        :reading:RoblesAnderson2016
+    ) .
 
 :meeting:2017-02-03
     a :Meeting ;
@@ -679,7 +837,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2017-02-03T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "No meeting-- attend <a href=\"https://www.bitcurator.net/nlp4arc\">nlp4arc</a>" ]
+    ) .
 
 :meeting:2017-02-10
     a :Meeting ;
@@ -689,7 +850,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2017-02-10T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "Community check-in: a chance to tell everyone what you&apos;ve been working on, your recent successes, your terrible setbacks" ]
+    ) .
 
 :meeting:2017-02-17
     a :Meeting ;
@@ -700,7 +864,11 @@
             time:inXSDDateTimeStamp "2017-02-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Cope2017, :reading:Gorichanaz2017 .
+    lode:involved :reading:Cope2017, :reading:Gorichanaz2017 ;
+    :schedule (
+        :reading:Cope2017
+        :reading:Gorichanaz2017
+    ) .
 
 :meeting:2017-03-03
     a :Meeting ;
@@ -711,7 +879,11 @@
             time:inXSDDateTimeStamp "2017-03-03T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Smith2016, :reading:Feinberg2017 .
+    lode:involved :reading:Smith2016, :reading:Feinberg2017 ;
+    :schedule (
+        :reading:Smith2016
+        :reading:Feinberg2017
+    ) .
 
 :meeting:2017-03-10
     a :Meeting ;
@@ -722,7 +894,10 @@
             time:inXSDDateTimeStamp "2017-03-10T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Passi2017 .
+    lode:involved :reading:Passi2017 ;
+    :schedule (
+        :reading:Passi2017
+    ) .
 
 :meeting:2017-03-17
     a :Meeting ;
@@ -733,7 +908,10 @@
             time:inXSDDateTimeStamp "2017-03-17T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Hayles2016 .
+    lode:involved :reading:Hayles2016 ;
+    :schedule (
+        :reading:Hayles2016
+    ) .
 
 :meeting:2017-03-24
     a :Meeting ;
@@ -744,7 +922,10 @@
             time:inXSDDateTimeStamp "2017-03-24T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Bratus2011 .
+    lode:involved :reading:Bratus2011 ;
+    :schedule (
+        :reading:Bratus2011
+    ) .
 
 :meeting:2017-03-31
     a :Meeting ;
@@ -755,7 +936,10 @@
             time:inXSDDateTimeStamp "2017-03-31T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Dennett2002 .
+    lode:involved :reading:Dennett2002 ;
+    :schedule (
+        :reading:Dennett2002
+    ) .
 
 :meeting:2017-04-14
     a :Meeting ;
@@ -766,7 +950,10 @@
             time:inXSDDateTimeStamp "2017-04-14T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Stenner2016 .
+    lode:involved :reading:Stenner2016 ;
+    :schedule (
+        :reading:Stenner2016
+    ) .
 
 :meeting:2017-04-21
     a :Meeting ;
@@ -776,7 +963,10 @@
             a time:Instant ;
             time:inXSDDateTimeStamp "2017-04-21T11:00:00-0500"^^xsd:dateTimeStamp
         ]
-    ] .
+    ] ;
+    :schedule (
+        [ dc:description "No meeting: SILS <a href=\"http://info4socialgood.web.unc.edu\">Symposium on Information for Social Good</a>" ]
+    ) .
 
 :meeting:2017-04-28
     a :Meeting ;
@@ -787,7 +977,10 @@
             time:inXSDDateTimeStamp "2017-04-28T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Flynn1997 .
+    lode:involved :reading:Flynn1997 ;
+    :schedule (
+        :reading:Flynn1997
+    ) .
 
 :meeting:2017-05-05
     a :Meeting ;
@@ -798,7 +991,10 @@
             time:inXSDDateTimeStamp "2017-05-05T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:Dreyfus2007 .
+    lode:involved :reading:Dreyfus2007 ;
+    :schedule (
+        :reading:Dreyfus2007
+    ) .
 
 :person:AckerA
     a foaf:Person ;
