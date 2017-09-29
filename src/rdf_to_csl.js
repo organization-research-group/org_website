@@ -1,13 +1,10 @@
 "use strict";
 
-const fs = require('fs')
-    , path = require('path')
-    , N3 = require('n3')
+const N3 = require('n3')
+    , Cite = require('citation-js')
+    , { DateParser } = require('citeproc')
     , literalValue = N3.Util.getLiteralValue
     , { isType, rdfListToArray, ns, getDCContainer, one } = require('./rdf')
-
-const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
-
 
 const bibRDFTypes = {
   'bibo:BookSection': bookSection,
@@ -16,13 +13,28 @@ const bibRDFTypes = {
   ':ConferencePaper': conferencePaper,
 }
 
+module.exports = function getBibEntries(store) {
+  const cslItems = Object.entries(bibRDFTypes).reduce((acc=[], [rdfType, fn]) =>
+    acc.concat(
+      store
+        .getSubjects('rdf:type', rdfType)
+        .map(uri => {
+          const def = fn(store, uri)
 
-main().catch(
-  err => {
-    process.stderr.write('Uncaught: ' + err.stack + '\n');
-    process.exit(1);
-  }
-)
+          return execCSLDefinition(store, uri, def)
+        })
+    )
+  , [])
+
+  return new Map(cslItems.map(csl => [
+    csl.id,
+    new Cite(csl).get({
+      type: 'html',
+      style: 'citation-apa',
+      lang: 'en-US',
+    })
+  ]))
+}
 
 function bookSection(store, uri) {
   const $chapter = uri
@@ -125,53 +137,6 @@ function conferencePaper(store, uri) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-async function main() {
-  const store = await new Promise((resolve, reject) => {
-    const store = N3.Store()
-        , parser = N3.Parser()
-
-    parser.parse(fs.createReadStream(BIB_FILE), (err, triple, prefixes) => {
-      if (err) reject(err)
-
-      if (triple) {
-        store.addTriple(triple)
-      }
-
-      if (prefixes) {
-        store.addPrefixes(prefixes)
-        resolve(store)
-      }
-    })
-  })
-
-  const csl = Object.entries(bibRDFTypes).reduce((acc=[], [rdfType, fn]) =>
-    acc.concat(
-      store
-        .getSubjects('rdf:type', rdfType)
-        .map(uri => {
-          const def = fn(store, uri)
-
-          return execCSLDefinition(store, uri, def)
-        })
-    )
-  , [])
-
-  process.stdout.write(JSON.stringify(csl, true, '  ') + '\n')
-}
-
-
 function execCSLDefinition(store, uri, def) {
   const csl = {
     id: uri.split(':').slice(-1)[0],
@@ -206,7 +171,7 @@ function execCSLDefinition(store, uri, def) {
     if (N3.Util.isLiteral(v)) csl[k] = literalValue(v)
   })
 
-  csl.issued = { raw: csl.issued }
+  csl.issued = DateParser.parseDateToArray(csl.issued)
 
   return csl
 }

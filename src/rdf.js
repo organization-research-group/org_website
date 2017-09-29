@@ -1,9 +1,12 @@
 "use strict";
 
 const R = require('ramda')
+    , N3 = require('n3')
+    , jsonld = require('jsonld')
 
-const prefixes = {
-  '': 'http://orgorgorgorgorg.org/graph#',
+const org = 'http://orgorgorgorgorg.org/graph#';
+
+const _prefixes = {
   address: 'http://schemas.talis.com/2005/address/schema#',
   bibo: 'http://purl.org/ontology/bibo/',
   dc: 'http://purl.org/dc/terms/',
@@ -18,6 +21,9 @@ const prefixes = {
   wd: 'http://www.wikidata.org/entity/',
   xsd: 'http://www.w3.org/2001/XMLSchema#',
 }
+
+const prefixes = Object.assign({ '': org }, _prefixes)
+    , context = Object.assign({ org }, _prefixes)
 
 function ns(str) {
   const [ns, rest] = [].concat(str)[0].split(':')
@@ -66,9 +72,31 @@ function one(store, s, p, o) {
   return ret;
 }
 
+async function toJSONLD(store, frame) {
+  const ntriples = await new Promise((resolve, reject) => {
+    const writer = N3.Writer({ format: 'N-Triples' })
+    store.forEach(t => writer.addTriple(t))
+    writer.end((err, doc) => {
+      if (err) reject(err)
+      resolve(doc)
+    })
+  })
+
+  let ret = await jsonld.promises.fromRDF(ntriples)
+
+  if (frame) {
+    ret = await jsonld.promises.frame(ret, frame)
+  }
+
+  return ret;
+}
+
 module.exports = {
+  org,
   prefixes,
+  context,
   ns,
+  toJSONLD: R.curry(toJSONLD),
   isType: R.curry(isType),
   rdfListToArray: R.curry(rdfListToArray),
   getDCContainer: R.curry(getDCContainer),
