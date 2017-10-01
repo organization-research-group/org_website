@@ -1288,7 +1288,7 @@
     foaf:surname "Hayles" ;
     foaf:homepage <http://nkhayles.com/> .
 
-:person:HerrnsteinB
+:person:SmithB
     a foaf:Person ;
     owl:sameAs viaf:46432, wd:Q4858975 ;
     foaf:givenname "Barbara Herrnstein" ;
@@ -2091,10 +2091,35 @@
         a bibo:Conference
     ] .
 
+:journal:PJOS
+    a bibo:Journal ;
+    dc:title "Public Journal of Semiotics" ;
+    bibo:issn "1918-9907" .
+
+:person:GenoskoG
+    a foaf:Person ;
+    owl:sameAs viaf:11003213 ;
+    foaf:givenname "Gary" ;
+    foaf:surname "Genosko" ;
+    foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
+
+
 :reading:Genosko2016
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2016-11-04
-    a :Reading .
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "A-signifying semiotics" ;
+    dc:creator :person:GenoskoG ;
+    bibo:authorList (
+        :person:GenoskoG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2008" ;
+        dc:isPartOf :journal:PJOS ;
+        bibo:volume "2" ;
+        bibo:issue "1"
+    ] ;
+    bibo:uri "http://journals.lub.lu.se/ojs/index.php/pjos/article/view/8822" .
+
 
 :reading:Gorichanaz2017
     a :Reading, bibo:AcademicArticle ;
@@ -2158,25 +2183,6 @@
     bibo:pages "32-55" ;
     bibo:doi "10.1086/688293" .
 
-:reading:Herrnstein2016
-    a :Reading, bibo:AcademicArticle ;
-    owl:sameAs <http://doi.org/10.1215/00265667-3630844> ;
-    dc:title "What Was “Close Reading”? A Century of Method in Literary Studies" ;
-    bibo:shortTitle "What Was “Close Reading”?" ;
-    dc:creator :person:HerrnsteinB ;
-    bibo:authorList (
-        :person:HerrnsteinB
-    ) ;
-    dc:isPartOf [
-        a bibo:Issue ;
-        dc:date "01/01/2016" ;
-        dc:isPartOf :journal:MinnesotaReview ;
-        bibo:issue "87" ;
-        bibo:volume "2016"
-    ] ;
-    bibo:pages "57-75" ;
-    bibo:doi "10.1215/00265667-3630844" .
-
 :reading:Hjorland2015
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/asi.23250> ;
@@ -2196,10 +2202,32 @@
     bibo:pages "1559-1575" ;
     bibo:doi "10.1002/asi.23250" .
 
+:journal:transversals
+    a bibo:Journal ;
+    dc:title "transversals" .
+
+:person:HolmesB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Holmes" ;
+    foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
+
 :reading:Holmes2002
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2016-12-09
-    a :Reading .
+    # FIXME: Metadata here could definitely be amended/cleaned up... Kind of a
+    # confusing case.
+    a :Reading, bibo:AcademicArticle ; # FIXME: This is a web journal, maybe not an "Academic" journal?
+    dc:title "The flexible personality: For a new cultural critique" ;
+    dc:creator :person:HolmesB ;
+    bibo:authorList (
+        :person:HolmesB
+    ) ;
+    dc:date "January 2002" ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:transversals
+
+    ] ;
+    bibo:uri "http://eipcp.net/transversal/1106/holmes/en" .
 
 :reading:Hui2016
     a :Reading, bibo:Book ;
@@ -2447,10 +2475,39 @@
     bibo:pages "100-117" ;
     bibo:doi "10.1080/1369118X.2016.1181195" .
 
+:journal:ComputationalCulture
+    a bibo:Journal ;
+    dc:title "Computational Culture" ;
+    bibo:issn "2047-2390" .
+
+:person:RoblesAndersonE
+    a foaf:Person ;
+    foaf:givenname "Erica" ;
+    foaf:surname "Robles-Anderson" ;
+    foaf:workInfoHomepage <http://steinhardt.nyu.edu/faculty/Erica_Robles-Anderson> .
+
+:person:SvenssonP
+    a foaf:Person ;
+    foaf:givenname "Patrik" ;
+    foaf:surname "Svensson" ;
+    foaf:homepage <http://patriksv.net/> .
+
 :reading:RoblesAnderson2016
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2017-01-27
-    a :Reading .
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "“One damn slide after another”: PowerPoint at every occasion for speech" ;
+    dc:creator :person:RoblesAndersonE, :person:SvenssonP ;
+    bibo:authorList (
+        :person:RoblesAndersonE
+        :person:SvenssonP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ; # maybe?
+        dc:isPartOf :journal:ComputationalCulture ;
+        bibo:uri "http://computationalculture.net/issue-five" ;
+        bibo:volume "1" ; # maybe?
+        bibo:issue "5" ;
+    ] .
 
 :reading:Rose1999
     a :Reading, bibo:Book ;
@@ -2485,9 +2542,23 @@
     dc:isPartOf :volume:Carrier2011 .
 
 :reading:Smith2016
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2017-03-03
-    a :Reading .
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/00265667-3630844> ;
+    dc:title "What Was “Close Reading”? A Century of Method in Literary Studies" ;
+    bibo:shortTitle "What Was “Close Reading”?" ;
+    dc:creator :person:SmithB ;
+    bibo:authorList (
+        :person:SmithB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "01/01/2016" ;
+        dc:isPartOf :journal:MinnesotaReview ;
+        bibo:issue "87" ;
+        bibo:volume "2016"
+    ] ;
+    bibo:pages "57-75" ;
+    bibo:doi "10.1215/00265667-3630844" .
 
 :reading:Spade2013
     a :Reading, bibo:AcademicArticle ;
