@@ -60,7 +60,7 @@ function makeReadingsHTML(store, bib, readings) {
     return `<li>${ret}</li>`
   })
 
-  return`<ul>${readingsHTML.join('')}</ul>`
+  return`<ul class="reading-list">${readingsHTML.join('')}</ul>`
 }
 
 module.exports = async function getMeetings(store, bib) {

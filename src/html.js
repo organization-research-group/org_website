@@ -4,6 +4,7 @@ const { html, raw } = require('es6-string-html-template')
 
 module.exports = {
   renderMain,
+  renderArchive,
 }
 
 const days = [
@@ -42,6 +43,12 @@ function renderMain(meetings) {
   return renderPage(content)
 }
 
+function renderArchive(meetings) {
+  const content = archive(meetings)
+
+  return renderPage(content)
+}
+
 function renderReading(meeting) {
   const { date } = meeting
       , meetingHTML = meeting.html
@@ -57,22 +64,10 @@ function renderReading(meeting) {
 }
 
 function main(meetings) {
-  const now = new Date()
-      , lastUpdated = `${now.getFullYear()}-${zeroPad(now.getMonth())}-${zeroPad(now.getDate())}`
-
   meetings = meetings.map(renderReading)
 
   return html`
 <section id="about">
-  <h1>
-    The
-    <span class="org-o org-firstletter">O</span><span class="org-r">r</span><span class="org-g">g</span>anizati<span class="org-o">o</span>n
-
-    <span class="org-r org-firstletter">R</span>esea<span class="org-r">r</span>ch
-
-    <span class="org-g org-firstletter">G</span><span class="org-r">r</span><span class="org-o">o</span>up
-  </h1>
-
   <p>
   ORG meets Fridays at 11am in 214 Manning Hall.
   </p>
@@ -92,24 +87,23 @@ function main(meetings) {
   ${raw(meetings.slice(1,6).join(''))}
 </section>
 
-<section>
-  <p>
-    <a href="archive.html">All past meetings</a>
-  </p>
-  <p>
-    <i>Last updated ${lastUpdated}</i>
-  </p>
 </section>
   `
 }
 
-function renderArchives({ bib, meetings }) {
-}
-
-function renderIndex({ bib, meetings }) {
+function archive(meetings) {
+  meetings = meetings.map(renderReading)
+  return html`
+<section>
+  ${raw(meetings.slice(0).join('\n\n'))}
+</section>
+`
 }
 
 function renderPage(content) {
+  const now = new Date()
+      , lastUpdated = `${now.getFullYear()}-${zeroPad(now.getMonth())}-${zeroPad(now.getDate())}`
+
   return html`<!doctype html>
 <html>
 <head>
@@ -120,7 +114,30 @@ function renderPage(content) {
 
 <body>
   <main>
+  <header>
+  <h1>
+    The
+    <span class="org-o org-firstletter">O</span><span class="org-r">r</span><span class="org-g">g</span>anizati<span class="org-o">o</span>n
+
+    <span class="org-r org-firstletter">R</span>esea<span class="org-r">r</span>ch
+
+    <span class="org-g org-firstletter">G</span><span class="org-r">r</span><span class="org-o">o</span>up
+  </h1>
+
+    <ul id="nav-controls">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="author.html">Author index</a></li>
+    </ul>
+    </header>
+
+    <main>
     ${raw(content)}
+    </main>
+
+    <footer>
+      Last updated ${lastUpdated}
+    </footer>
   </main>
 
   <script type="text/javascript" src="org.js" />

@@ -21,7 +21,12 @@ module.exports = function getBibEntries(store) {
         .map(uri => {
           const def = fn(store, uri)
 
-          return execCSLDefinition(store, uri, def)
+          try {
+            return execCSLDefinition(store, uri, def)
+          } catch (e) {
+            console.error('Error generating CSL for URI: ' + uri);
+            throw e;
+          }
         })
     )
   , [])
@@ -79,7 +84,10 @@ function academicArticle(store, uri) {
       DOI: [$article, 'bibo:doi'],
       author: [$article, 'bibo:authorList'],
       'container-title': [$journal, 'dc:title'],
-      issued: [$issue, 'dc:date'],
+      issued: [
+        [$article, 'dc:date'],
+        [$issue, 'dc:date'],
+      ],
       volume: [$issue, 'bibo:volume'],
       issue: [$issue, 'bibo:issue'],
     },
@@ -143,11 +151,19 @@ function execCSLDefinition(store, uri, def) {
     type: def.type,
   }
 
-  Object.entries(def.fields).forEach(([cslKey, [s, p]]) => {
-    const [ o ] = store.getObjects(s, p)
+  Object.entries(def.fields).forEach(([cslKey, paths]) => {
+    if (!Array.isArray(paths[0])) {
+      paths = [paths]
+    }
 
-    if (o) {
-      csl[cslKey] = o;
+    for (let i = 0; i < paths.length; i++) {
+      const [ s, p ] = paths[i]
+          , [ o ] = store.getObjects(s, p)
+
+      if (o) {
+        csl[cslKey] = o;
+        break;
+      }
     }
   })
 

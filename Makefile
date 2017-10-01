@@ -1,36 +1,23 @@
-WEB_OUTPUT :=
-	dist/index.html \
-	dist/archive.html \
-	dist/authors.html \
-	dist/org.css \
-	dist/org.js
+JS_FILES := $(wildcard src/*js)
+
+all: dist/site.tar
+	tar xf $< -C dist
+	rm $<
 
 dist:
 	mkdir -p $@
 
-bib.json: bib.ttl
-	./bin/generate_csl $< > $@
+dist/site.tar: $(JS_FILES) org.css js/org.js | dist
+	node . > $@ || rm $@
+	tar rf $@ $< -C js org.js
 
-
-dist/index.html: dist/style.css build.py $(READINGS) | dist
-	./bin/create_index > $@
-
-dist/archive.html: dist/style.css build.py $(READINGS) | dist
-	./bin/create_archive > $@
-
-dist/style.css: style.css | dist
-	cp $< $@
-
-dist/org.js: animation.js | dist
-	cp $< $@
-
-.PHONY: clean upload add_meeting missing_bib_ids
+.PHONY: clean upload add_meeting
 
 clean:
 	rm -rf dist
 
 add_meeting:
-	@python3 scripts/add_meeting.py
+	@python3 scripts/add_meeting
 
 upload: $(SITE_FILES)
 	chmod g+w $^

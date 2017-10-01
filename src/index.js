@@ -4,9 +4,10 @@ const fs = require('fs')
     , path = require('path')
     , N3 = require('n3')
     , R = require('ramda')
+    , tar = require('tar-stream')
     , getBibMap = require('./rdf_to_csl')
     , getMeetings = require('./meetings')
-    , { renderMain } = require('./html')
+    , { renderArchive, renderMain } = require('./html')
 
 const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
 
@@ -16,7 +17,6 @@ main().catch(
     process.exit(1);
   }
 )
-
 
 async function main() {
   const store = await new Promise((resolve, reject) => {
@@ -39,9 +39,12 @@ async function main() {
 
   let meetings = await getMeetings(store, bibItems)
 
+  const pack = tar.pack()
+
+
   meetings = R.sortBy(d => d.date.getTime(), meetings).reverse()
 
-  const html = renderMain(meetings)
-
-  console.log('' + html)
+  pack.entry({ name: 'index.html' }, '' + renderMain(meetings))
+  pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
+  pack.pipe(process.stdout);
 }

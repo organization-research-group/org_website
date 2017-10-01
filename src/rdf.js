@@ -47,8 +47,9 @@ function rdfListToArray(store, rootNode) {
     if (!el || !tail) throw new Error(`${currentNode} is not a node in a linked list.`)
 
     els.push(el.object);
-    currentNode = tail;
-  } while (currentNode.object !== 'http://www.w3.org/1999/02/22-rdf-syntax-ns#nil')
+    currentNode = tail.object;
+  } while (currentNode !== 'http://www.w3.org/1999/02/22-rdf-syntax-ns#nil')
+
 
   return els;
 }
