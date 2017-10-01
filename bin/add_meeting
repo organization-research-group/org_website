@@ -3,7 +3,7 @@
 import os
 import re
 import sys
-import time
+import json
 from datetime import datetime
 
 from clean_ttl import clean_ttl
@@ -18,9 +18,14 @@ meeting_ttl_template = '''
             owltime:inXSDDateTimeStamp {date}T11:00:00-0{offset}00
         ]
     ]'''
-    
+
 involved_ttl_template = ''' ;
     lode:involved {readings}'''
+
+schedule_ttl_template = ''' ;
+    :schedule (
+        {schedule}
+    )'''
 
 reading_ttl_template = '''
 {key}
@@ -46,19 +51,38 @@ try:
         except ValueError:
             print('\nWrong date format, try again\n')
             continue
+        print('''
+\033[1mSchedule\033[0m
 
-        cites_input = input('''
-\033[1mReadings involved\033[0m
-Cite items with an identifier consisting of the first word of the first
-author's family name followed by the year, like Buckland1994 or Suchman1995.
-Join multiple readings with commas.
+Add entries for this meeting's schedule, one item a time.
 
--> ''')
+Cite items with an identifier consisting of an '@' symbol, the first word of
+the first author's family name followed by the year, like @Buckland1994 or
+@Suchman1995.
 
-        cites = [
-            ':reading:' + cite.strip()
-            for cite in cites_input.split(',')
-        ] if cites_input.strip() else []
+Add arbitrary HTML by just typing a string.
+''')
+
+        _in = None
+
+        schedule_input = []
+
+        while _in != '':
+            _in = input('-> ').strip()
+            if (_in):
+                schedule_input.append(_in)
+
+        cites = []
+        schedule = []
+
+        for item in schedule_input:
+            if item[0] == '@' and ' ' not in item:
+                cite = ':reading:' + item[1:]
+                cites.append(cite)
+                schedule.append(cite)
+            else:
+                schedule.append('[ dc:description {} ]'.format(
+                    json.dumps(item)))
 
         old_ttl = ''.join([l for l in open(BIB_FILENAME)])
 
@@ -71,7 +95,14 @@ Join multiple readings with commas.
             offset=4 if date.timetuple().tm_isdst > 0 else 5)
 
         if cites:
-            new_ttl += involved_ttl_template.format(readings=', '.join(cites))
+            new_ttl += involved_ttl_template.format(
+                readings=', '.join(cites)
+            )
+
+        if schedule:
+            new_ttl += schedule_ttl_template.format(
+                schedule='\n        '.join(schedule)
+            )
 
         new_ttl += ' .\n'
 
@@ -84,7 +115,9 @@ Join multiple readings with commas.
         print('\n====')
         print(new_ttl + '====\n')
 
-        keep = input('\033[1mAdding these statements to bib.ttl. Press Ctrl-c to cancel.\033[0m')
+        keep = input(
+            '\033[1mAdding these statements to bib.ttl. '
+            'Press Ctrl-c to cancel.\033[0m')
 
         ttl_with_new = clean_ttl(
             old_ttl.replace(

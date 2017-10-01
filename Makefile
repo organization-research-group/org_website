@@ -17,7 +17,7 @@ clean:
 	rm -rf dist
 
 add_meeting:
-	@python3 scripts/add_meeting
+	@python3 bin/add_meeting
 
 upload: $(SITE_FILES)
 	chmod g+w $^
