@@ -1,10 +1,12 @@
 "use strict";
 
-const { html, raw } = require('es6-string-html-template')
+const R = require('ramda')
+    , { html, raw } = require('es6-string-html-template')
 
 module.exports = {
   renderMain,
   renderArchive,
+  renderAuthors,
 }
 
 const days = [
@@ -49,12 +51,33 @@ function renderArchive(meetings) {
   return renderPage(content)
 }
 
+function renderAuthors(meetings) {
+  const agents = R.pipe(
+    R.chain(R.prop('agents')),
+    R.sortBy(R.prop('@id')),
+    R.map(d => ({
+      id: d['@id'],
+      link: 'archive.html#' + d.fragment,
+      name: d['foaf:givenname'] + ' ' + d['foaf:surname'],
+      page: [].concat(d['homepage'] || d['workpage'])[0],
+    })),
+    R.groupWith((a, b) => a.id === b.id),
+    R.map(xs => Object.assign(R.mergeAll(xs), {
+      weeks: xs.map(d => d.link).sort()
+    }))
+  )(meetings)
+
+  const content = authors(agents)
+
+  return renderPage(content)
+}
+
 function renderReading(meeting) {
-  const { date } = meeting
+  const { date, fragment } = meeting
       , meetingHTML = meeting.html
 
   return html`
-  <div class="reading">
+  <div id="${fragment}" class="reading">
   <h3>
   ${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}
   </h3>
@@ -88,6 +111,25 @@ function main(meetings) {
 </section>
 
 </section>
+  `
+}
+
+function authors(agents) {
+  const agentsHTML = agents.map(({ name, weeks }) => html`
+<div>
+  <h3>${name}</h3>
+  <ul>
+    ${raw(weeks.map(week => html`
+      <li>
+        <a href="${week}">${week.split(':').slice(-1)[0]}</a>
+      </li>
+    `).join('\n'))}
+  </ul>
+</div>
+`).join('\n')
+
+  return html`
+    <section>${raw(agentsHTML)}</section>
   `
 }
 
@@ -127,7 +169,7 @@ function renderPage(content) {
     <ul id="nav-controls">
       <li><a href="index.html">Home</a></li>
       <li><a href="archive.html">Archive</a></li>
-      <li><a href="author.html">Author index</a></li>
+      <li><a href="authors.html">Author index</a></li>
     </ul>
     </header>
 

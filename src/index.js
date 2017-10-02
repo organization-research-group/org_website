@@ -7,7 +7,7 @@ const fs = require('fs')
     , tar = require('tar-stream')
     , getBibMap = require('./rdf_to_csl')
     , getMeetings = require('./meetings')
-    , { renderArchive, renderMain } = require('./html')
+    , { renderArchive, renderAuthors, renderMain } = require('./html')
 
 const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
 
@@ -39,12 +39,12 @@ async function main() {
 
   let meetings = await getMeetings(store, bibItems)
 
-  const pack = tar.pack()
-
-
   meetings = R.sortBy(d => d.date.getTime(), meetings).reverse()
+
+  const pack = tar.pack()
 
   pack.entry({ name: 'index.html' }, '' + renderMain(meetings))
   pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
+  pack.entry({ name: 'authors.html' }, '' + renderAuthors(meetings))
   pack.pipe(process.stdout);
 }

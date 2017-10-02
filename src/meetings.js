@@ -1,7 +1,20 @@
 "use strict";
 
 const R = require('ramda')
+    , jsonld = require('jsonld')
     , { toJSONLD, context } = require('./rdf')
+
+function fragmentOf(uri) {
+  const id = typeof uri === 'object'
+    ? uri['@id']
+    : uri
+
+  if (!id) {
+    throw new Error(`${uri} does not have an associated URI`)
+  }
+
+  return id.replace(/^org:/, '')
+}
 
 const frame = {
   '@context': Object.assign({}, context, {
@@ -27,6 +40,9 @@ const frame = {
   '@explicit': true,
   '@type': 'org:Meeting',
   'schedule': {},
+  'lode:involved': {
+    '@embed': '@always'
+  },
   'at': {
     beginning: {
       datetime: {},
@@ -34,6 +50,23 @@ const frame = {
   },
 }
 
+const agentFrame = {
+  '@context': Object.assign({
+    'sameAs': {
+      '@id': 'owl:sameAs',
+      '@type': '@id',
+    },
+    'homepage': {
+      '@id': 'foaf:homepage',
+      '@type': '@id',
+    },
+    'workpage': {
+      '@id': 'foaf:workInfoHomepage',
+      '@type': '@id',
+    }
+  }, context),
+  '@type': 'foaf:Person',
+}
 
 function makeReadingsHTML(store, bib, readings) {
   const readingsHTML = readings.map(item => {
@@ -68,7 +101,9 @@ module.exports = async function getMeetings(store, bib) {
 
   const meetings = ld['@graph']
 
-  return meetings.map(({ schedule, at }) => {
+  return Promise.all(meetings.map(async meeting => {
+    const { schedule, at } = meeting
+
     const html = R.pipe(
       R.groupWith((a, b) => a['@type'] === b['@type']),
       R.transduce(
@@ -81,9 +116,22 @@ module.exports = async function getMeetings(store, bib) {
       )
     )(schedule)
 
+    const involved = [].concat(meeting['lode:involved'] || [])
+
+    const agents = await jsonld.promises.frame({
+      '@context': context,
+      '@graph': [].concat(meeting['lode:involved'] || [])
+    }, agentFrame)
+
+    const fragment = fragmentOf(meeting);
+
     return {
+      fragment,
       date: new Date(at.beginning.datetime),
+      agents: agents['@graph'].map(a => Object.assign({
+        fragment
+      }, a)),
       html,
     }
-  })
+  }))
 }
