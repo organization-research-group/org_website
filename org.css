@@ -27,9 +27,10 @@ section > :first-child, header > :first-child { margin-top: 0; }
 section > :last-child, header > :last-child { margin-bottom: 0; }
 
 .reading {
-    text-indent: -3em;
-    padding-left: 3em;
+    text-indent: -2.2em;
+    padding-left: 2.2em;
     line-height: 1.62em;
+    margin-bottom: 2.5em;
 }
 
 .reading h3 {
@@ -40,6 +41,10 @@ section > :last-child, header > :last-child { margin-bottom: 0; }
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.csl-entry {
+    margin: .5em 0;
 }
 
 #nav-controls {
