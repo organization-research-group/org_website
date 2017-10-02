@@ -175,6 +175,7 @@ function execCSLDefinition(store, uri, def) {
         if (predicate === ns`foaf:name`) agent.name = literalValue(object);
         if (predicate === ns`foaf:givenname`) agent.given = literalValue(object);
         if (predicate === ns`foaf:surname`) agent.family = literalValue(object);
+        if (predicate === ns`bibo:suffixName`) agent.suffix = literalValue(object);
       }, uri)
 
       return agent
