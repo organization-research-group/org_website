@@ -19,6 +19,9 @@ clean:
 add_meeting:
 	@python3 bin/add_meeting
 
+sort_turtle:
+	bin/clean_ttl.py bib.ttl | sponge bib.ttl
+
 upload: $(SITE_FILES)
 	chmod g+w $^
 	scp $^ orgorgorgorgorg.org:/home/ptgolden/webapps/org_home/
