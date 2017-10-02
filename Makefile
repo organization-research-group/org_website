@@ -7,7 +7,7 @@ all: dist/site.tar
 dist:
 	mkdir -p $@
 
-dist/site.tar: $(JS_FILES) org.css js/org.js | dist
+dist/site.tar: org.css js/org.js $(JS_FILES) | dist
 	node . > $@ || rm $@
 	tar rf $@ $< -C js org.js
 
