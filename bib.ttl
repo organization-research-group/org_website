@@ -25,7 +25,7 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:CSCW2017
     a bibo:Conference ;
@@ -52,6 +52,12 @@
     dc:title "Artificial Intelligence" ;
     bibo:issn "0004-3702" .
 
+:journal:EJIS
+    a bibo:Journal ;
+    dc:title "European Journal of Information Systems" ;
+    bibo:issn "0960-085X" .
+
+
 :journal:AdvancingDigitalHumanities
     a bibo:Journal ;
     dc:title "Advancing digital humanities: research, methods, theories" .
@@ -73,6 +79,11 @@
     dc:isPartOf :journal:CSCW ;
     bibo:issue "1" ;
     bibo:volume "3" .
+
+:journal:ComputationalCulture
+    a bibo:Journal ;
+    dc:title "Computational Culture" ;
+    bibo:issn "2047-2390" .
 
 :journal:CriticalInquiry
     a bibo:Journal ;
@@ -140,6 +151,11 @@
     dc:title "New Media & Society" ;
     bibo:issn "1461-4448", "1461-7315" .
 
+:journal:PJOS
+    a bibo:Journal ;
+    dc:title "Public Journal of Semiotics" ;
+    bibo:issn "1918-9907" .
+
 :journal:RethinkingMarxism
     a bibo:Journal ;
     dc:title "Rethinking Marxism" ;
@@ -187,6 +203,10 @@
     a bibo:Journal ;
     dc:title "Representations" ;
     bibo:issn "0734-6018, 1533-855X" .
+
+:journal:transversals
+    a bibo:Journal ;
+    dc:title "transversals" .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -996,6 +1016,245 @@
         :reading:Dreyfus2007
     ) .
 
+:meeting:2017-05-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-12T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting: end-of-semester institutional collapse" ]
+    ) .
+
+:meeting:2017-05-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ciborra2004 ;
+    :schedule (
+        :reading:Ciborra2004
+    ) .
+
+:meeting:2017-05-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Debbie's paper: \u201cProblematizing metadata\u201d" ]
+    ) .
+
+:meeting:2017-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ciborra2004, :reading:Askey2017 ;
+    :schedule (
+        :reading:Ciborra2004
+        :reading:Askey2017
+    ) .
+
+:meeting:2017-06-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-09T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Nofre2014 ;
+    :schedule (
+        :reading:Nofre2014
+    ) .
+
+:meeting:2017-06-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wakkary2017 ;
+    :schedule (
+        :reading:Wakkary2017
+    ) .
+
+:meeting:2017-06-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-30T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Poitou1997 ;
+    :schedule (
+        :reading:Poitou1997
+    ) .
+
+:meeting:2017-07-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-07T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Abbate2017, :reading:Turner2017 ;
+    :schedule (
+        :reading:Abbate2017
+        :reading:Turner2017
+    ) .
+
+:meeting:2017-07-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-21T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siegert2014 ;
+    :schedule (
+        :reading:Siegert2014
+    ) .
+
+:meeting:2017-07-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-28T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siegert2014 ;
+    :schedule (
+        :reading:Siegert2014
+    ) .
+
+:meeting:2017-08-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-18T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tenen2017 ;
+    :schedule (
+        :reading:Tenen2017
+    ) .
+
+:meeting:2017-08-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-25T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Daston2017 ;
+    :schedule (
+        :reading:Daston2017
+    ) .
+
+:meeting:2017-09-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-01T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Emerson2014 ;
+    :schedule (
+        :reading:Emerson2014
+    ) .
+
+:meeting:2017-09-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-08T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Boland2017 ;
+    :schedule (
+        :reading:Boland2017
+    ) .
+
+:meeting:2017-09-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bernstein1991 ;
+    :schedule (
+        :reading:Bernstein1991
+    ) .
+
+:meeting:2017-09-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-22T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wittkower2016, :reading:Gibson1979 ;
+    :schedule (
+        :reading:Wittkower2016
+        :reading:Gibson1979
+    ) .
+
+:meeting:2017-09-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-29T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Evans2016 ;
+    :schedule (
+        :reading:Evans2016
+    ) .
+
 :person:AckerA
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-5332-0487 ;
@@ -1246,6 +1505,13 @@
     foaf:surname "Geiger" ;
     foaf:homepage <http://stuartgeiger.com/> .
 
+:person:GenoskoG
+    a foaf:Person ;
+    owl:sameAs viaf:11003213 ;
+    foaf:givenname "Gary" ;
+    foaf:surname "Genosko" ;
+    foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
+
 :person:GorichanazT
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-0226-7799 ;
@@ -1288,13 +1554,6 @@
     foaf:surname "Hayles" ;
     foaf:homepage <http://nkhayles.com/> .
 
-:person:SmithB
-    a foaf:Person ;
-    owl:sameAs viaf:46432, wd:Q4858975 ;
-    foaf:givenname "Barbara Herrnstein" ;
-    foaf:surname "Smith" ;
-    foaf:homepage <https://english.duke.edu/people/barbara-h-smith> .
-
 :person:HildebrandtM
     a foaf:Person ;
     owl:sameAs viaf:65702387 ;
@@ -1307,6 +1566,12 @@
     owl:sameAs orcid:0000-0001-9535-1732, viaf:33277453, wd:Q4916221 ;
     foaf:givenname "Birger" ;
     foaf:surname "Hjørland" .
+
+:person:HolmesB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Holmes" ;
+    foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
 
 :person:HuiY
     a foaf:Person ;
@@ -1490,6 +1755,12 @@
     foaf:surname "Rieder" ;
     foaf:homepage <http://thepoliticsofsystems.net/> .
 
+:person:RoblesAndersonE
+    a foaf:Person ;
+    foaf:givenname "Erica" ;
+    foaf:surname "Robles-Anderson" ;
+    foaf:workInfoHomepage <http://steinhardt.nyu.edu/faculty/Erica_Robles-Anderson> .
+
 :person:RoseN
     a foaf:Person ;
     owl:sameAs viaf:69699, wd:Q539879 ;
@@ -1536,6 +1807,13 @@
     foaf:surname "Shubina" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~ashubina/> .
 
+:person:SmithB
+    a foaf:Person ;
+    owl:sameAs viaf:46432, wd:Q4858975 ;
+    foaf:givenname "Barbara Herrnstein" ;
+    foaf:surname "Smith" ;
+    foaf:homepage <https://english.duke.edu/people/barbara-h-smith> .
+
 :person:SpadeD
     a foaf:Person ;
     owl:sameAs viaf:170374343, wd:Q5246478 ;
@@ -1563,6 +1841,12 @@
     foaf:givenname "Lucy" ;
     foaf:surname "Suchman" ;
     foaf:homepage <http://www.lancaster.ac.uk/sociology/about-us/people/lucy-suchman> .
+
+:person:SvenssonP
+    a foaf:Person ;
+    foaf:givenname "Patrik" ;
+    foaf:surname "Svensson" ;
+    foaf:homepage <http://patriksv.net/> .
 
 :person:TimmermansS
     a foaf:Person ;
@@ -1617,6 +1901,13 @@
     foaf:givenname "Jerzy A." ;
     foaf:surname "Wojciechowski" .
 
+:proceedings:Hypertext1991
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the third annual ACM conference on Hypertext" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-0-89791-461-1" .
+
 :proceedings:CSCW2017
     a bibo:Proceedings ;
     dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
@@ -1662,10 +1953,16 @@
     foaf:name "IEEE Computer Society" ;
     address:localityName "Washington, DC" .
 
+:publisher:SUP
+    a foaf:Organization ;
+    foaf:name "Stanford University Press" ;
+    address:localityName "Stanford, CA" .
+
+
 :publisher:MIT
     a foaf:Organization ;
     foaf:name "MIT Press" ;
-    address:localityName "Cambridge, Mass." .
+    address:localityName "Cambridge, MA" .
 
 :publisher:OUP
     a foaf:Organization ;
@@ -1687,6 +1984,11 @@
     foaf:name "Springer" ;
     address:localityName "Dordrecht" .
 
+:publisher:FUP
+    a foaf:Organization ;
+    foaf:name "Fordham University Press" ;
+    address:localityName "New York" .
+
 :publisher:SpringerFW
     a foaf:Organization ;
     foaf:name "Springer Fachmedien Wiesbaden" ;
@@ -1701,6 +2003,39 @@
     a foaf:Organization ;
     foaf:name "Verlag Dokumentation" ;
     address:localityName "Pullach, Germany" .
+
+:person:AbbateJ
+    a foaf:Person ;
+    owl:sameAs viaf:43545973, wd:Q20859597 ;
+    foaf:givenname "Janet" ;
+    foaf:surname "Abbate" ;
+    foaf:workInfoHomepage <https://liberalarts.vt.edu/faculty-directory/sts-faculty/janet-abbate.html> .
+
+:journal:InternetHistories
+    a bibo:Journal ;
+    dc:title "Internet Histories" ;
+    bibo:issn "2470-1475" .
+
+:journal:InternetHistories:1:1-2
+    a bibo:issue ;
+    dc:date "2017" ;
+    dc:isPartOf :journal:InternetHistories ;
+    bibo:volume "1" ;
+    bibo:issue "1-2" .
+
+:reading:Abbate2017
+    a :Reading, bibo:AcademicArticle ;
+    # owl:sameAs <http://doi.org/10.1080/24701475.2017.1305836> ;
+    dc:title "What and where is the Internet? (Re)defining Internet histories" ;
+    dc:creator :person:AbbateJ ;
+    bibo:authorList (
+        :person:AbbateJ
+    ) ;
+    dc:isPartOf :journal:InternetHistories:1:1-2 ;
+    bibo:pages "8-14" ;
+    # DOI doesn't actually lead to the article, so just include the URI
+    bibo:uri "http://www.tandfonline.com/doi/abs/10.1080/24701475.2017.1305836" .
+
 
 :reading:Acker2015
     a :Reading, bibo:AcademicArticle ;
@@ -1751,6 +2086,14 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "31-35" ;
     bibo:doi "10.1007/BF01305840" .
+
+:reading:Askey2017
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-02
+    a :Reading ;
+    owl:sameAs <https://doi.org/10.18665/sr.303501> ;
+    dc:title "Finding a Way from the Margins to the Middle: Library Information Technology, Leadership, and Culture" ;
+    bibo:doi "https://doi.org/10.18665/sr.303501" .
 
 :reading:Baez2013
     a :Reading, bibo:AcademicArticle ;
@@ -1814,6 +2157,39 @@
     bibo:pages "79-83" ;
     bibo:doi "10.1007/BF01305851" .
 
+:person:BolandR
+    a foaf:Person ;
+    owl:sameAs viaf:34597719 ;
+    foaf:givenname "Richard J." ;
+    foaf:surname "Boland" ;
+    bibo:suffixName "Jr." ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/richard-boland-jr> .
+
+:person:LyytinenK
+    a foaf:Person ;
+    foaf:givenname "Kalle" ;
+    foaf:surname "Lyytinen" ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
+
+:reading:Boland2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1057/s41303-017-0043-4> ;
+    dc:title "The limits to language in doing systems design" ;
+    dc:creator :person:BolandR, :person:LyytinenK ;
+    bibo:authorList (
+        :person:BolandR
+        :person:LyytinenK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:EJIS ;
+        dc:date "May 2017" ;
+        bibo:volume "26" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "248-259" ;
+    bibo:doi "10.1057/s41303-017-0043-4" .
+
 :reading:Bratus2011
     a :Reading, bibo:AcademicArticle ;
     dc:title "Exploit Programming: From Buffer Overflows to “Weird Machines” and Theory of Computation" ;
@@ -1830,8 +2206,8 @@
         a bibo:Issue ;
         dc:date "2011" ;
         dc:isPartOf :journal:login ;
-    bibo:issue "6" ;
-    bibo:volume "36"
+        bibo:issue "6" ;
+        bibo:volume "36"
     ] ;
     bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
 
@@ -1905,6 +2281,11 @@
     bibo:pages "61-64" ;
     bibo:doi "10.1007/BF01305847" .
 
+:reading:Daston2017
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-08-25
+    a :Reading .
+
 :reading:Day2014
     a :Reading, bibo:Book ;
     dc:title "Indexing It All: The Subject in the Age of Documentation, Information, and Data" ;
@@ -1914,6 +2295,45 @@
     ) ;
     dc:date "2014" ;
     dc:publisher :publisher:MIT .
+
+:person:CiborraC
+    a foaf:Person ;
+    owl:sameAs viaf:41910748, wd:Q5129344 ;
+    foaf:givenname "Claudio" ;
+    foaf:surname "Ciborra" ;
+    foaf:homepage <https://web.archive.org/web/20050301000649/http://personal.lse.ac.uk:80/ciborrac/> .
+
+:reading:Ciborra2004
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780199275267.001.0001> ;
+    dc:title "The labyrinths of information: Challenging the wisdom of systems" ;
+    bibo:shortTitle "The labyrinths of information" ;
+    dc:creator :person:CiborraC ;
+    bibo:authorList (
+        :person:CiborraC
+    ) ;
+    dc:date "2004" ;
+    dc:publisher :publisher:OUP ;
+    bibo:isbn13 "978-0-19-927526-7" ;
+    bibo:doi "10.1093/acprof:oso/9780199275267.001.0001" .
+
+:person:GibsonJ
+    a foaf:Person ;
+    owl:sameAs viaf:12396941, wd:Q737823 ;
+    foaf:givenname "James Jerome" ;
+    foaf:surname "Gibson" .
+
+:reading:Gibson1979
+    # FIXME: make this a chapter, not the whole book
+    a :Reading, bibo:Book ;
+    dc:title "The ecological approach to visual perception" ;
+    dc:creator :person:GibsonJ ;
+    bibo:authorList (
+        :person:GibsonJ
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PsychologyPress ;
+    bibo:isbn13 "978-1-315-74021-8" .
 
 :reading:Dennett2002
     a :Reading, bibo:BookSection ;
@@ -1943,6 +2363,64 @@
     ] ;
     bibo:pages "1137-1160" ;
     bibo:doi "10.1016/j.artint.2007.10.012" .
+
+:reading:Emerson2014
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-09-01
+    a :Reading .
+
+:journal:JCC
+    a bibo:Journal ;
+    dc:title "Journal of Computer-Mediated Communication" ;
+    bibo:issn "1083-6101" .
+
+:person:EvansS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5218-2190 ;
+    foaf:givenname "Sandra K." ;
+    foaf:surname "Evans" ;
+    foaf:homepage <https://sandrakevans.com/> .
+
+:person:PearceK
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3837-5305 ;
+    foaf:givenname "Katy E." ;
+    foaf:surname "Pearce" ;
+    foaf:homepage <http://www.katypearce.net/> .
+
+:person:VitakJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9362-9032 ;
+    foaf:givenname "Jessica" ;
+    foaf:surname "Vitak" ;
+    foaf:homepage <https://jessicavitak.com/> .
+
+:person:TreemJ
+    a foaf:Person ;
+    foaf:givenname "Jeffrey W." ;
+    foaf:surname "Treem" ;
+    foaf:homepage <http://jeffreytreem.com/> .
+
+:reading:Evans2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/jcc4.12180> ;
+    dc:title "Explicating Affordances: A Conceptual Framework for Understanding Affordances in Communication Research" ;
+    dc:creator :person:EvansS, :person:PearceK, :person:VitakJ, :person:TreemJ ;
+    bibo:authorList (
+        :person:EvansS
+        :person:PearceK
+        :person:VitakJ
+        :person:TreemJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "26 December 2016" ;
+        dc:isPartOf :journal:JCC ;
+        bibo:volume "22" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "35-52" ;
+    bibo:doi "10.1111/jcc4.12180" .
 
 :reading:Fairthorne1974
     a :Reading, :ConferencePaper ;
@@ -2074,8 +2552,61 @@
     bibo:pages "405-424" ;
     bibo:doi "10.1093/llc/fqq021" .
 
+:conference:Hypertext1991
+    a bibo:Conference ;
+    dc:title "The third annual ACM conference on Hypertext" ;
+    address:localityName "San Antonio Texas" ;
+    dc:date "December 15 - 18, 1991" .
+
+:person:BernsteinM
+    a foaf:Person ;
+    # I think this viaf ID is right?
+    owl:sameAs viaf:212157024 ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Bernstein" ;
+    foaf:homepage <http://www.markbernstein.org/> .
+
+:person:BolterJ
+    a foaf:Person ;
+    owl:sameAs viaf:94367912, wd:Q93037 ;
+    foaf:givenname "Jay David" ;
+    foaf:surname "Bolter" ;
+    foaf:homepage <http://www.jdbolter.net/> .
+
+:person:JoyceM
+    a foaf:Person ;
+    owl:sameAs viaf:12423304, wd:Q727045 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Joyce" ;
+    foaf:workInfoHomepage <http://faculty.vassar.edu/mijoyce/> .
+
+:person:MylonasE
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-0215-4324 ;
+    foaf:givenname "Elli" ;
+    foaf:surname "Mylonas" ;
+    foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
+
+:reading:Bernstein1991
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/122974.122999> ;
+    dc:title "Architectures for volatile hypertext" ;
+    dc:creator :person:BernsteinM, :person:BolterJ, :person:JoyceM, :person:MylonasE ;
+    bibo:authorList (
+        :person:BernsteinM
+        :person:BolterJ
+        :person:JoyceM
+        :person:MylonasE
+    ) ;
+    bibo:reproducedIn :proceedings:Hypertext1991 ;
+    bibo:presentedAt :conference:Hypertext1991 ;
+    bibo:pages "243-260" ;
+    bibo:doi "10.1145/122974.122999" .
+
+
 :reading:Geiger2011
     a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/HICSS.2011.455> ;
     dc:title "Trace Ethnography: Following Coordination through Documentary Practices" ;
     bibo:shortTitle "Trace Ethnography" ;
     dc:creator :person:GeigerR, :person:RibesD ;
@@ -2090,19 +2621,6 @@
         dc:title "2011 44th Hawaii International Conference on System Sciences" ;
         a bibo:Conference
     ] .
-
-:journal:PJOS
-    a bibo:Journal ;
-    dc:title "Public Journal of Semiotics" ;
-    bibo:issn "1918-9907" .
-
-:person:GenoskoG
-    a foaf:Person ;
-    owl:sameAs viaf:11003213 ;
-    foaf:givenname "Gary" ;
-    foaf:surname "Genosko" ;
-    foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
-
 
 :reading:Genosko2016
     a :Reading, bibo:AcademicArticle ;
@@ -2119,7 +2637,6 @@
         bibo:issue "1"
     ] ;
     bibo:uri "http://journals.lub.lu.se/ojs/index.php/pjos/article/view/8822" .
-
 
 :reading:Gorichanaz2017
     a :Reading, bibo:AcademicArticle ;
@@ -2202,16 +2719,6 @@
     bibo:pages "1559-1575" ;
     bibo:doi "10.1002/asi.23250" .
 
-:journal:transversals
-    a bibo:Journal ;
-    dc:title "transversals" .
-
-:person:HolmesB
-    a foaf:Person ;
-    foaf:givenname "Brian" ;
-    foaf:surname "Holmes" ;
-    foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
-
 :reading:Holmes2002
     # FIXME: Metadata here could definitely be amended/cleaned up... Kind of a
     # confusing case.
@@ -2225,7 +2732,6 @@
     dc:isPartOf [
         a bibo:Issue ;
         dc:isPartOf :journal:transversals
-
     ] ;
     bibo:uri "http://eipcp.net/transversal/1106/holmes/en" .
 
@@ -2251,8 +2757,8 @@
     dc:creator :person:KreissD, :person:FinnM, :person:TurnerF ;
     bibo:authorList (
         :person:KreissD
-    :person:FinnM
-           :person:TurnerF
+        :person:FinnM
+        :person:TurnerF
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
@@ -2361,6 +2867,24 @@
     dc:date "2011" ;
     dc:publisher :publisher:MIT .
 
+:person:TenenD
+    a foaf:Person ;
+    owl:sameAs viaf:4810150085884015060001 ;
+    foaf:givenname "Dennis" ;
+    foaf:surname "Tenen" ;
+    foaf:homepage <http://denten.plaintext.in/> .
+
+:reading:Tenen2017
+    a :Reading, bibo:Book ;
+    dc:title "Plain text: The poetics of computation" ;
+    dc:creator :person:TenenD ;
+    bibo:authorList (
+        :person:TenenD
+    ) ;
+    dc:date "June 2017" ;
+    dc:publisher :publisher:SUP .
+
+
 :reading:Monteiro2012
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/s10606-012-9167-1> ;
@@ -2394,6 +2918,11 @@
     bibo:pages "257-260" ;
     bibo:doi "10.1353/wsq.2013.0087" .
 
+:reading:Nofre2014
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-09
+    a :Reading .
+
 :reading:Parikka2015
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.5749/minnesota/9780816695515.001.0001> ;
@@ -2423,7 +2952,6 @@
     bibo:pages "2436–2447" ;
     bibo:doi "10.1145/2998181.2998331" .
 
-
 :reading:Plantin2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1177/1461444816661553> ;
@@ -2442,10 +2970,15 @@
     ] ;
     bibo:doi "10.1177/1461444816661553" .
 
+:reading:Poitou1997
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-30
+    a :Reading .
+
 :reading:Randall1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305844> ;
-    dc:title "A comment on Lucy Suchman's “do categories have politics?”" ;
+    dc:title "A comment on Lucy Suchman's “Do categories have politics?”" ;
     bibo:shortTitle "A comment on Lucy Suchman's “do categories have politics?" ;
     dc:creator :person:RandallD ;
     bibo:authorList (
@@ -2474,23 +3007,6 @@
     ] ;
     bibo:pages "100-117" ;
     bibo:doi "10.1080/1369118X.2016.1181195" .
-
-:journal:ComputationalCulture
-    a bibo:Journal ;
-    dc:title "Computational Culture" ;
-    bibo:issn "2047-2390" .
-
-:person:RoblesAndersonE
-    a foaf:Person ;
-    foaf:givenname "Erica" ;
-    foaf:surname "Robles-Anderson" ;
-    foaf:workInfoHomepage <http://steinhardt.nyu.edu/faculty/Erica_Robles-Anderson> .
-
-:person:SvenssonP
-    a foaf:Person ;
-    foaf:givenname "Patrik" ;
-    foaf:surname "Svensson" ;
-    foaf:homepage <http://patriksv.net/> .
 
 :reading:RoblesAnderson2016
     a :Reading, bibo:AcademicArticle ;
@@ -2540,6 +3056,35 @@
         :person:GriesemerJ
     ) ;
     dc:isPartOf :volume:Carrier2011 .
+
+:person:SiegertB
+    a foaf:Person ;
+    owl:sameAs viaf:66760106, wd:Q110715 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Siegert" .
+
+:person:WinthropYoungG
+    a foaf:Person ;
+    owl:sameAs viaf:119473466 ;
+    foaf:givenname "Geoffrey" ;
+    foaf:surname "Winthrop-Young" ;
+    foaf:workInfoHomepage <http://cenes.ubc.ca/people/geoffrey-winthrop-young/> .
+
+
+:reading:Siegert2014
+    # TODO: Should translator go into CSL JSON?
+    a :Reading, bibo:Book ;
+    dc:title "Cultural techniques: Grids, filters, doors, and other articulations of the real" ;
+    bibo:shortTitle "Cultural techniques" ;
+    dc:creator :person:SiegertB ;
+    bibo:authorList (
+        :person:SiegertB
+    ) ;
+    bibo:translator :person:WinthropYoungG ;
+    dc:date "December 2014" ;
+    dc:publisher :publisher:FUP ;
+    bibo:isbn13 "978-0-8232-6376-9" .
+
 
 :reading:Smith2016
     a :Reading, bibo:AcademicArticle ;
@@ -2652,6 +3197,19 @@
     bibo:pages "85-95" ;
     bibo:doi "10.1007/BF01305852" .
 
+:reading:Turner2017
+    a :Reading, bibo:AcademicArticle ;
+    # owl:sameAs <http://doi.org/10.1080/24701475.2017.1307540> ;
+    dc:title "Can we write a cultural history of the Internet? If so, how?" ;
+    dc:creator :person:TurnerF ;
+    bibo:authorList (
+        :person:TurnerF
+    ) ;
+    dc:isPartOf :journal:InternetHistories:1:1-2 ;
+    bibo:pages "39-46" ;
+    # DOI doesn't actually lead to the article, so just include the URI
+    bibo:uri "http://www.tandfonline.com/doi/full/10.1080/24701475.2017.1307540" .
+
 :reading:Verhoeven2014
     a :Reading, bibo:AcademicArticle ;
     dc:title "Doing the sheep good: facilitating engagement in digital humanities and creative arts research" ;
@@ -2671,6 +3229,11 @@
     ] ;
     bibo:pages "206-220" ;
     bibo:uri "http://dro.deakin.edu.au/view/DU:30070005" .
+
+:reading:Wakkary2017
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-23
+    a :Reading .
 
 :reading:Winograd1987
     a :Reading, bibo:AcademicArticle ;
@@ -2707,6 +3270,11 @@
     ] ;
     bibo:pages "191-197" ;
     bibo:doi "10.1007/BF00749016" .
+
+:reading:Wittkower2016
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-09-22
+    a :Reading .
 
 :reading:Wobbrock2009
     a :Reading, bibo:AcademicArticle ;
