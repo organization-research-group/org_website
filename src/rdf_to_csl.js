@@ -11,6 +11,7 @@ const bibRDFTypes = {
   'bibo:AcademicArticle': academicArticle,
   'bibo:Book': book,
   ':ConferencePaper': conferencePaper,
+  ':Lecture': lecture,
 }
 
 module.exports = function getBibEntries(store) {
@@ -67,6 +68,27 @@ function bookSection(store, uri) {
     },
   }
 }
+
+function lecture(store, uri) {
+  const $lecture = uri
+
+  return {
+    type: 'book', // Whatever, as long as all the fields are in there.
+    agentFields: ['author'],
+    dateFields: ['event-date', 'issued'],
+    fields: {
+      title: [$lecture, 'dc:title'],
+      URI: [$lecture, 'bibo:uri'],
+      DOI: [$lecture, 'bibo:doi'],
+      author: [$lecture, 'bibo:authorList'],
+      medium: [$lecture, 'dc:format'],
+
+      'event-date': [$lecture, 'dc:created'],
+      issued: [$lecture, 'dc:issued'],
+    },
+  }
+}
+
 
 function academicArticle(store, uri) {
   const $article = uri

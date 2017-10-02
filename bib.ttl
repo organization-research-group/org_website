@@ -18,6 +18,10 @@
     a rdf:Class ;
     rdfs:isSubClassOf bibo:Article .
 
+:Lecture
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Document .
+
 :schedule
     a rdf:Property .
 
@@ -41,6 +45,12 @@
     dc:date "June 4-8 2016" ;
     foaf:homepage <http://www.dis2016.org/> .
 
+:conference:Hypertext1991
+    a bibo:Conference ;
+    dc:title "The third annual ACM conference on Hypertext" ;
+    address:localityName "San Antonio Texas" ;
+    dc:date "December 15 - 18, 1991" .
+
 :conference:OCCBCK
     a bibo:Conference ;
     dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
@@ -51,12 +61,6 @@
     a bibo:Journal ;
     dc:title "Artificial Intelligence" ;
     bibo:issn "0004-3702" .
-
-:journal:EJIS
-    a bibo:Journal ;
-    dc:title "European Journal of Information Systems" ;
-    bibo:issn "0960-085X" .
-
 
 :journal:AdvancingDigitalHumanities
     a bibo:Journal ;
@@ -90,6 +94,11 @@
     dc:title "Critical Inquiry" ;
     bibo:issn "0093-1896" .
 
+:journal:EJIS
+    a bibo:Journal ;
+    dc:title "European Journal of Information Systems" ;
+    bibo:issn "0960-085X" .
+
 :journal:ELH
     a bibo:Journal ;
     dc:title "ELH" ;
@@ -115,6 +124,18 @@
     dc:title "The Information Society" ;
     bibo:issn "0197-2243" .
 
+:journal:InternetHistories
+    a bibo:Journal ;
+    dc:title "Internet Histories" ;
+    bibo:issn "2470-1475" .
+
+:journal:InternetHistories:1:1-2
+    a bibo:issue ;
+    dc:date "2017" ;
+    dc:isPartOf :journal:InternetHistories ;
+    bibo:volume "1" ;
+    bibo:issue "1-2" .
+
 :journal:JASIS
     a bibo:Journal ;
     dc:title "Journal of the American Society for Information Science" ;
@@ -125,6 +146,11 @@
     a bibo:Journal ;
     dc:title "Journal of the Association for Information Science and Technology" ;
     bibo:issn "2330-1643" .
+
+:journal:JCC
+    a bibo:Journal ;
+    dc:title "Journal of Computer-Mediated Communication" ;
+    bibo:issn "1083-6101" .
 
 :journal:JCLIS
     a bibo:Journal ;
@@ -1255,6 +1281,13 @@
         :reading:Evans2016
     ) .
 
+:person:AbbateJ
+    a foaf:Person ;
+    owl:sameAs viaf:43545973, wd:Q20859597 ;
+    foaf:givenname "Janet" ;
+    foaf:surname "Abbate" ;
+    foaf:workInfoHomepage <https://liberalarts.vt.edu/faculty-directory/sts-faculty/janet-abbate.html> .
+
 :person:AckerA
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-5332-0487 ;
@@ -1296,6 +1329,14 @@
     foaf:surname "Barad" ;
     foaf:homepage <https://people.ucsc.edu/~kbarad/> .
 
+:person:BernsteinM
+    a foaf:Person ;
+    # I think this viaf ID is right?
+    owl:sameAs viaf:212157024 ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Bernstein" ;
+    foaf:homepage <http://www.markbernstein.org/> .
+
 :person:BestS
     a foaf:Person ;
     owl:sameAs viaf:286613059 ;
@@ -1329,6 +1370,21 @@
     foaf:givenname "David" ;
     foaf:surname "Bogen" ;
     foaf:homepage <https://www.mica.edu/About_MICA/People/Administration/David_Bogen.html> .
+
+:person:BolandR
+    a foaf:Person ;
+    owl:sameAs viaf:34597719 ;
+    foaf:givenname "Richard J." ;
+    foaf:surname "Boland" ;
+    bibo:suffixName "Jr." ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/richard-boland-jr> .
+
+:person:BolterJ
+    a foaf:Person ;
+    owl:sameAs viaf:94367912, wd:Q93037 ;
+    foaf:givenname "Jay David" ;
+    foaf:surname "Bolter" ;
+    foaf:homepage <http://www.jdbolter.net/> .
 
 :person:BoullierD
     a foaf:Person ;
@@ -1377,6 +1433,13 @@
     foaf:surname "Chun" ;
     foaf:homepage <http://www.brown.edu/Departments/MCM/people/chun/> .
 
+:person:CiborraC
+    a foaf:Person ;
+    owl:sameAs viaf:41910748, wd:Q5129344 ;
+    foaf:givenname "Claudio" ;
+    foaf:surname "Ciborra" ;
+    foaf:homepage <https://web.archive.org/web/20050301000649/http://personal.lse.ac.uk:80/ciborrac/> .
+
 :person:ClapinH
     a foaf:Person ;
     owl:sameAs viaf:10064544 ;
@@ -1410,6 +1473,13 @@
     foaf:surname "Curtis" ;
     foaf:workInfoHomepage <http://it-cisq.org/bill-curtis-biography/> .
 
+:person:DastonL
+    a foaf:Person ;
+    owl:sameAs viaf:266876859, wd:Q529094 ;
+    foaf:givenname "Lorraine" ;
+    foaf:surname "Daston" ;
+    foaf:workInfoHomepage <https://www.mpiwg-berlin.mpg.de/en/users/ldaston> .
+
 :person:DayR
     a foaf:Person ;
     owl:sameAs viaf:71647760, wd:Q24196086 ;
@@ -1437,6 +1507,20 @@
     foaf:givenname "Paul N." ;
     foaf:surname "Edwards" ;
     foaf:homepage <http://pne.people.si.umich.edu/> .
+
+:person:EmersonL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7085-2370, viaf:12016619 ;
+    foaf:givenname "Lori" ;
+    foaf:surname "Emerson" ;
+    foaf:homepage <https://loriemerson.net/> .
+
+:person:EvansS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5218-2190 ;
+    foaf:givenname "Sandra K." ;
+    foaf:surname "Evans" ;
+    foaf:homepage <https://sandrakevans.com/> .
 
 :person:FairthorneR
     a foaf:Person ;
@@ -1511,6 +1595,12 @@
     foaf:givenname "Gary" ;
     foaf:surname "Genosko" ;
     foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
+
+:person:GibsonJ
+    a foaf:Person ;
+    owl:sameAs viaf:12396941, wd:Q737823 ;
+    foaf:givenname "James Jerome" ;
+    foaf:surname "Gibson" .
 
 :person:GorichanazT
     a foaf:Person ;
@@ -1593,6 +1683,13 @@
     foaf:surname "Jensen" ;
     foaf:homepage <http://perso.ens-lyon.fr/pablo.jensen/> .
 
+:person:JoyceM
+    a foaf:Person ;
+    owl:sameAs viaf:12423304, wd:Q727045 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Joyce" ;
+    foaf:workInfoHomepage <http://faculty.vassar.edu/mijoyce/> .
+
 :person:KellyM
     a foaf:Person ;
     foaf:givenname "Matthew" ;
@@ -1660,6 +1757,12 @@
     foaf:givenname "Michael" ;
     foaf:surname "Lynch" .
 
+:person:LyytinenK
+    a foaf:Person ;
+    foaf:givenname "Kalle" ;
+    foaf:surname "Lyytinen" ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
+
 :person:MaiJ
     a foaf:Person ;
     owl:sameAs wd:Q28762574, orcid:0000-0002-3053-8675 ;
@@ -1695,6 +1798,13 @@
     foaf:surname "Moore" ;
     foaf:homepage <http://darnellmoore.squarespace.com/> .
 
+:person:MylonasE
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-0215-4324 ;
+    foaf:givenname "Elli" ;
+    foaf:surname "Mylonas" ;
+    foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
+
 :person:NordmannA
     a foaf:Person ;
     owl:sameAs viaf:115023610 ;
@@ -1720,6 +1830,13 @@
     owl:sameAs wd:Q14105 ;
     foaf:givenname "Meredith L." ;
     foaf:surname "Patterson" .
+
+:person:PearceK
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3837-5305 ;
+    foaf:givenname "Katy E." ;
+    foaf:surname "Pearce" ;
+    foaf:homepage <http://www.katypearce.net/> .
 
 :person:PlantinJ
     a foaf:Person ;
@@ -1807,6 +1924,12 @@
     foaf:surname "Shubina" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~ashubina/> .
 
+:person:SiegertB
+    a foaf:Person ;
+    owl:sameAs viaf:66760106, wd:Q110715 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Siegert" .
+
 :person:SmithB
     a foaf:Person ;
     owl:sameAs viaf:46432, wd:Q4858975 ;
@@ -1848,12 +1971,25 @@
     foaf:surname "Svensson" ;
     foaf:homepage <http://patriksv.net/> .
 
+:person:TenenD
+    a foaf:Person ;
+    owl:sameAs viaf:4810150085884015060001 ;
+    foaf:givenname "Dennis" ;
+    foaf:surname "Tenen" ;
+    foaf:homepage <http://denten.plaintext.in/> .
+
 :person:TimmermansS
     a foaf:Person ;
     owl:sameAs viaf:8521206 ;
     foaf:givenname "Stefan" ;
     foaf:surname "Timmermans" ;
     foaf:homepage <http://www.stefantimmermans.com/> .
+
+:person:TreemJ
+    a foaf:Person ;
+    foaf:givenname "Jeffrey W." ;
+    foaf:surname "Treem" ;
+    foaf:homepage <http://jeffreytreem.com/> .
 
 :person:TurnerF
     a foaf:Person ;
@@ -1876,6 +2012,13 @@
     foaf:surname "Verhoeven" ;
     foaf:homepage <https://www.debverhoeven.com/> .
 
+:person:VitakJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9362-9032 ;
+    foaf:givenname "Jessica" ;
+    foaf:surname "Vitak" ;
+    foaf:homepage <https://jessicavitak.com/> .
+
 :person:WilliamsR
     a foaf:Person ;
     owl:sameAs wd:Q27252, viaf:60907032 ;
@@ -1889,6 +2032,20 @@
     foaf:surname "Winograd" ;
     foaf:homepage <https://hci.stanford.edu/winograd/> .
 
+:person:WinthropYoungG
+    a foaf:Person ;
+    owl:sameAs viaf:119473466 ;
+    foaf:givenname "Geoffrey" ;
+    foaf:surname "Winthrop-Young" ;
+    foaf:workInfoHomepage <http://cenes.ubc.ca/people/geoffrey-winthrop-young/> .
+
+:person:WittkowerD
+    a foaf:Person ;
+    owl:sameAs viaf:63483601 ;
+    foaf:givenname "Dylan E." ;
+    foaf:surname "Wittkower" ;
+    foaf:workInfoHomepage <https://www.odu.edu/directory/people/d/dwittkow> .
+
 :person:WobbrockJ
     a foaf:Person ;
     foaf:givenname "Jacob O." ;
@@ -1900,13 +2057,6 @@
     owl:sameAs viaf:73903272, wd:Q28354404 ;
     foaf:givenname "Jerzy A." ;
     foaf:surname "Wojciechowski" .
-
-:proceedings:Hypertext1991
-    a bibo:Proceedings ;
-    dc:title "Proceedings of the third annual ACM conference on Hypertext" ;
-    dc:date "1991" ;
-    dc:publisher :publisher:ACM ;
-    bibo:isbn13 "978-0-89791-461-1" .
 
 :proceedings:CSCW2017
     a bibo:Proceedings ;
@@ -1938,9 +2088,21 @@
     dc:title "Proceedings of the 2011 44th Hawaii International Conference on System Sciences" ;
     dc:publisher :publisher:IEEComputerSociety .
 
+:proceedings:Hypertext1991
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the third annual ACM conference on Hypertext" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-0-89791-461-1" .
+
 :publisher:ACM
     a foaf:Organization ;
     foaf:name "ACM" ;
+    address:localityName "New York" .
+
+:publisher:FUP
+    a foaf:Organization ;
+    foaf:name "Fordham University Press" ;
     address:localityName "New York" .
 
 :publisher:FreeAssociation
@@ -1953,11 +2115,10 @@
     foaf:name "IEEE Computer Society" ;
     address:localityName "Washington, DC" .
 
-:publisher:SUP
+:publisher:IEEE
     a foaf:Organization ;
-    foaf:name "Stanford University Press" ;
-    address:localityName "Stanford, CA" .
-
+    foaf:name "IEEE" ;
+    address:localityName "Piscataway" .
 
 :publisher:MIT
     a foaf:Organization ;
@@ -1969,6 +2130,11 @@
     foaf:name "Oxford University Press" ;
     address:localityName "Oxford" .
 
+:publisher:PsychologyPress
+    a foaf:Organization ;
+    foaf:name "Psychology Press" ;
+    address:localityName "New York" .
+
 :publisher:Routledge
     a foaf:Organization ;
     foaf:name "Routledge" ;
@@ -1979,15 +2145,15 @@
     foaf:name "State University of New York Press" ;
     address:localityName "Albany" .
 
+:publisher:SUP
+    a foaf:Organization ;
+    foaf:name "Stanford University Press" ;
+    address:localityName "Stanford, CA" .
+
 :publisher:Spring
     a foaf:Organization ;
     foaf:name "Springer" ;
     address:localityName "Dordrecht" .
-
-:publisher:FUP
-    a foaf:Organization ;
-    foaf:name "Fordham University Press" ;
-    address:localityName "New York" .
 
 :publisher:SpringerFW
     a foaf:Organization ;
@@ -2004,25 +2170,6 @@
     foaf:name "Verlag Dokumentation" ;
     address:localityName "Pullach, Germany" .
 
-:person:AbbateJ
-    a foaf:Person ;
-    owl:sameAs viaf:43545973, wd:Q20859597 ;
-    foaf:givenname "Janet" ;
-    foaf:surname "Abbate" ;
-    foaf:workInfoHomepage <https://liberalarts.vt.edu/faculty-directory/sts-faculty/janet-abbate.html> .
-
-:journal:InternetHistories
-    a bibo:Journal ;
-    dc:title "Internet Histories" ;
-    bibo:issn "2470-1475" .
-
-:journal:InternetHistories:1:1-2
-    a bibo:issue ;
-    dc:date "2017" ;
-    dc:isPartOf :journal:InternetHistories ;
-    bibo:volume "1" ;
-    bibo:issue "1-2" .
-
 :reading:Abbate2017
     a :Reading, bibo:AcademicArticle ;
     # owl:sameAs <http://doi.org/10.1080/24701475.2017.1305836> ;
@@ -2035,7 +2182,6 @@
     bibo:pages "8-14" ;
     # DOI doesn't actually lead to the article, so just include the URI
     bibo:uri "http://www.tandfonline.com/doi/abs/10.1080/24701475.2017.1305836" .
-
 
 :reading:Acker2015
     a :Reading, bibo:AcademicArticle ;
@@ -2126,6 +2272,22 @@
     bibo:pages "801–831" ;
     bibo:doi "10.1086/345321" .
 
+:reading:Bernstein1991
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/122974.122999> ;
+    dc:title "Architectures for volatile hypertext" ;
+    dc:creator :person:BernsteinM, :person:BolterJ, :person:JoyceM, :person:MylonasE ;
+    bibo:authorList (
+        :person:BernsteinM
+        :person:BolterJ
+        :person:JoyceM
+        :person:MylonasE
+    ) ;
+    bibo:reproducedIn :proceedings:Hypertext1991 ;
+    bibo:presentedAt :conference:Hypertext1991 ;
+    bibo:pages "243-260" ;
+    bibo:doi "10.1145/122974.122999" .
+
 :reading:Blair2004
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1086/427303> ;
@@ -2156,20 +2318,6 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "79-83" ;
     bibo:doi "10.1007/BF01305851" .
-
-:person:BolandR
-    a foaf:Person ;
-    owl:sameAs viaf:34597719 ;
-    foaf:givenname "Richard J." ;
-    foaf:surname "Boland" ;
-    bibo:suffixName "Jr." ;
-    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/richard-boland-jr> .
-
-:person:LyytinenK
-    a foaf:Person ;
-    foaf:givenname "Kalle" ;
-    foaf:surname "Lyytinen" ;
-    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
 
 :reading:Boland2017
     a :Reading, bibo:AcademicArticle ;
@@ -2241,6 +2389,20 @@
     bibo:pages "363-382" ;
     bibo:doi "10.1353/elh.2016.0011" .
 
+:reading:Ciborra2004
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780199275267.001.0001> ;
+    dc:title "The labyrinths of information: Challenging the wisdom of systems" ;
+    bibo:shortTitle "The labyrinths of information" ;
+    dc:creator :person:CiborraC ;
+    bibo:authorList (
+        :person:CiborraC
+    ) ;
+    dc:date "2004" ;
+    dc:publisher :publisher:OUP ;
+    bibo:isbn13 "978-0-19-927526-7" ;
+    bibo:doi "10.1093/acprof:oso/9780199275267.001.0001" .
+
 :reading:Clark1996
     a :Reading, bibo:BookSection ;
     dc:title "Happy Couplings: Emergence and Explanatory Interlock" ;
@@ -2282,9 +2444,16 @@
     bibo:doi "10.1007/BF01305847" .
 
 :reading:Daston2017
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2017-08-25
-    a :Reading .
+    a :Reading, :Lecture ;
+    dc:title "Algorithms before computers: Patterns, recipes, and rules" ;
+    dc:creator :person:DastonL ;
+    bibo:authorList (
+        :person:DastonL
+    ) ;
+    dc:created "19 April 2017" ;
+    dc:issued "28 April 2017" ;
+    dc:format "Video" ;
+    bibo:uri "https://www.youtube.com/watch?v=pqoSMWnWTwA" .
 
 :reading:Day2014
     a :Reading, bibo:Book ;
@@ -2295,45 +2464,6 @@
     ) ;
     dc:date "2014" ;
     dc:publisher :publisher:MIT .
-
-:person:CiborraC
-    a foaf:Person ;
-    owl:sameAs viaf:41910748, wd:Q5129344 ;
-    foaf:givenname "Claudio" ;
-    foaf:surname "Ciborra" ;
-    foaf:homepage <https://web.archive.org/web/20050301000649/http://personal.lse.ac.uk:80/ciborrac/> .
-
-:reading:Ciborra2004
-    a :Reading, bibo:Book ;
-    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780199275267.001.0001> ;
-    dc:title "The labyrinths of information: Challenging the wisdom of systems" ;
-    bibo:shortTitle "The labyrinths of information" ;
-    dc:creator :person:CiborraC ;
-    bibo:authorList (
-        :person:CiborraC
-    ) ;
-    dc:date "2004" ;
-    dc:publisher :publisher:OUP ;
-    bibo:isbn13 "978-0-19-927526-7" ;
-    bibo:doi "10.1093/acprof:oso/9780199275267.001.0001" .
-
-:person:GibsonJ
-    a foaf:Person ;
-    owl:sameAs viaf:12396941, wd:Q737823 ;
-    foaf:givenname "James Jerome" ;
-    foaf:surname "Gibson" .
-
-:reading:Gibson1979
-    # FIXME: make this a chapter, not the whole book
-    a :Reading, bibo:Book ;
-    dc:title "The ecological approach to visual perception" ;
-    dc:creator :person:GibsonJ ;
-    bibo:authorList (
-        :person:GibsonJ
-    ) ;
-    dc:date "2015" ;
-    dc:publisher :publisher:PsychologyPress ;
-    bibo:isbn13 "978-1-315-74021-8" .
 
 :reading:Dennett2002
     a :Reading, bibo:BookSection ;
@@ -2365,41 +2495,14 @@
     bibo:doi "10.1016/j.artint.2007.10.012" .
 
 :reading:Emerson2014
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2017-09-01
-    a :Reading .
-
-:journal:JCC
-    a bibo:Journal ;
-    dc:title "Journal of Computer-Mediated Communication" ;
-    bibo:issn "1083-6101" .
-
-:person:EvansS
-    a foaf:Person ;
-    owl:sameAs orcid:0000-0001-5218-2190 ;
-    foaf:givenname "Sandra K." ;
-    foaf:surname "Evans" ;
-    foaf:homepage <https://sandrakevans.com/> .
-
-:person:PearceK
-    a foaf:Person ;
-    owl:sameAs orcid:0000-0002-3837-5305 ;
-    foaf:givenname "Katy E." ;
-    foaf:surname "Pearce" ;
-    foaf:homepage <http://www.katypearce.net/> .
-
-:person:VitakJ
-    a foaf:Person ;
-    owl:sameAs orcid:0000-0001-9362-9032 ;
-    foaf:givenname "Jessica" ;
-    foaf:surname "Vitak" ;
-    foaf:homepage <https://jessicavitak.com/> .
-
-:person:TreemJ
-    a foaf:Person ;
-    foaf:givenname "Jeffrey W." ;
-    foaf:surname "Treem" ;
-    foaf:homepage <http://jeffreytreem.com/> .
+    a :Reading, bibo:Book ;
+    dc:title "Reading writing interfaces: From the digital to the bookbound" ;
+    dc:creator :person:EmersonL ;
+    bibo:authorList (
+        :person:EmersonL
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:UMP .
 
 :reading:Evans2016
     a :Reading, bibo:AcademicArticle ;
@@ -2552,58 +2655,6 @@
     bibo:pages "405-424" ;
     bibo:doi "10.1093/llc/fqq021" .
 
-:conference:Hypertext1991
-    a bibo:Conference ;
-    dc:title "The third annual ACM conference on Hypertext" ;
-    address:localityName "San Antonio Texas" ;
-    dc:date "December 15 - 18, 1991" .
-
-:person:BernsteinM
-    a foaf:Person ;
-    # I think this viaf ID is right?
-    owl:sameAs viaf:212157024 ;
-    foaf:givenname "Mark" ;
-    foaf:surname "Bernstein" ;
-    foaf:homepage <http://www.markbernstein.org/> .
-
-:person:BolterJ
-    a foaf:Person ;
-    owl:sameAs viaf:94367912, wd:Q93037 ;
-    foaf:givenname "Jay David" ;
-    foaf:surname "Bolter" ;
-    foaf:homepage <http://www.jdbolter.net/> .
-
-:person:JoyceM
-    a foaf:Person ;
-    owl:sameAs viaf:12423304, wd:Q727045 ;
-    foaf:givenname "Michael" ;
-    foaf:surname "Joyce" ;
-    foaf:workInfoHomepage <http://faculty.vassar.edu/mijoyce/> .
-
-:person:MylonasE
-    a foaf:Person ;
-    owl:sameAs orcid:0000-0002-0215-4324 ;
-    foaf:givenname "Elli" ;
-    foaf:surname "Mylonas" ;
-    foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
-
-:reading:Bernstein1991
-    a :Reading, :ConferencePaper ;
-    owl:sameAs <http://doi.org/10.1145/122974.122999> ;
-    dc:title "Architectures for volatile hypertext" ;
-    dc:creator :person:BernsteinM, :person:BolterJ, :person:JoyceM, :person:MylonasE ;
-    bibo:authorList (
-        :person:BernsteinM
-        :person:BolterJ
-        :person:JoyceM
-        :person:MylonasE
-    ) ;
-    bibo:reproducedIn :proceedings:Hypertext1991 ;
-    bibo:presentedAt :conference:Hypertext1991 ;
-    bibo:pages "243-260" ;
-    bibo:doi "10.1145/122974.122999" .
-
-
 :reading:Geiger2011
     a :Reading, :ConferencePaper ;
     owl:sameAs <http://doi.org/10.1109/HICSS.2011.455> ;
@@ -2637,6 +2688,20 @@
         bibo:issue "1"
     ] ;
     bibo:uri "http://journals.lub.lu.se/ojs/index.php/pjos/article/view/8822" .
+
+:reading:Gibson1979
+    # FIXME: make this a chapter, not the whole book
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781315740218> ;
+    dc:title "The ecological approach to visual perception" ;
+    dc:creator :person:GibsonJ ;
+    bibo:authorList (
+        :person:GibsonJ
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PsychologyPress ;
+    bibo:isbn13 "978-1-315-74021-8" ;
+    bibo:doi "10.4324/9781315740218" .
 
 :reading:Gorichanaz2017
     a :Reading, bibo:AcademicArticle ;
@@ -2867,24 +2932,6 @@
     dc:date "2011" ;
     dc:publisher :publisher:MIT .
 
-:person:TenenD
-    a foaf:Person ;
-    owl:sameAs viaf:4810150085884015060001 ;
-    foaf:givenname "Dennis" ;
-    foaf:surname "Tenen" ;
-    foaf:homepage <http://denten.plaintext.in/> .
-
-:reading:Tenen2017
-    a :Reading, bibo:Book ;
-    dc:title "Plain text: The poetics of computation" ;
-    dc:creator :person:TenenD ;
-    bibo:authorList (
-        :person:TenenD
-    ) ;
-    dc:date "June 2017" ;
-    dc:publisher :publisher:SUP .
-
-
 :reading:Monteiro2012
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/s10606-012-9167-1> ;
@@ -3057,20 +3104,6 @@
     ) ;
     dc:isPartOf :volume:Carrier2011 .
 
-:person:SiegertB
-    a foaf:Person ;
-    owl:sameAs viaf:66760106, wd:Q110715 ;
-    foaf:givenname "Bernhard" ;
-    foaf:surname "Siegert" .
-
-:person:WinthropYoungG
-    a foaf:Person ;
-    owl:sameAs viaf:119473466 ;
-    foaf:givenname "Geoffrey" ;
-    foaf:surname "Winthrop-Young" ;
-    foaf:workInfoHomepage <http://cenes.ubc.ca/people/geoffrey-winthrop-young/> .
-
-
 :reading:Siegert2014
     # TODO: Should translator go into CSL JSON?
     a :Reading, bibo:Book ;
@@ -3084,7 +3117,6 @@
     dc:date "December 2014" ;
     dc:publisher :publisher:FUP ;
     bibo:isbn13 "978-0-8232-6376-9" .
-
 
 :reading:Smith2016
     a :Reading, bibo:AcademicArticle ;
@@ -3197,6 +3229,16 @@
     bibo:pages "85-95" ;
     bibo:doi "10.1007/BF01305852" .
 
+:reading:Tenen2017
+    a :Reading, bibo:Book ;
+    dc:title "Plain text: The poetics of computation" ;
+    dc:creator :person:TenenD ;
+    bibo:authorList (
+        :person:TenenD
+    ) ;
+    dc:date "June 2017" ;
+    dc:publisher :publisher:SUP .
+
 :reading:Turner2017
     a :Reading, bibo:AcademicArticle ;
     # owl:sameAs <http://doi.org/10.1080/24701475.2017.1307540> ;
@@ -3274,7 +3316,29 @@
 :reading:Wittkower2016
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-09-22
-    a :Reading .
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/ETHICS.2016.7560055> ;
+    dc:title "Principles of anti-discriminatory design" ;
+    dc:creator :person:WittkowerD ;
+    bibo:authorList (
+        :person:WittkowerD
+    ) ;
+    bibo:reproducedIn [
+        a bibo:Proceedings ;
+        dc:title "2016 IEEE International Symposium on Ethics in Engineering, Science, and Technology (ETHICS 2016)" ;
+        dc:date "May 2016" ;
+        dc:publisher :publisher:IEEE ;
+        bibo:isbn13 "9781509023189" ;
+        bibo:doi "10.1109/ETHICS.2016.7560055"
+    ] ;
+    bibo:presentedAt [
+        a bibo:Conference ;
+        dc:title "IEEE International Symposium on Ethics in Engineering, Science, and Technology, ETHICS 2016" ;
+        address:localityName "Vancouver, BC" ;
+        dc:date "13-14 May 2016" ;
+        foaf:homepage <http://sites.ieee.org/ethics-conference/>
+    ] ;
+    bibo:doi "10.1109/ETHICS.2016.7560055" .
 
 :reading:Wobbrock2009
     a :Reading, bibo:AcademicArticle ;
