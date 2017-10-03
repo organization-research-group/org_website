@@ -52,36 +52,65 @@ function renderArchive(meetings) {
 }
 
 function renderAuthors(meetings) {
-  const agents = R.pipe(
-    R.chain(R.prop('agents')),
-    R.sortBy(R.prop('@id')),
-    R.map(d => ({
-      id: d['@id'],
-      link: 'archive.html#' + d.fragment,
-      name: d['foaf:givenname'] + ' ' + d['foaf:surname'],
-      page: [].concat(d['homepage'] || d['workpage'])[0],
-    })),
-    R.groupWith((a, b) => a.id === b.id),
-    R.map(xs => Object.assign(R.mergeAll(xs), {
-      weeks: xs.map(d => d.link).sort()
-    }))
+  const entitiesByType = R.pipe(
+    R.transduce(
+      R.map(R.prop('entities')),
+      R.mergeWith(R.concat),
+      {}
+    ),
+    R.map(R.pipe(
+      R.sortBy(R.prop('id')),
+      R.groupWith((a, b) => a.id === b.id),
+      R.map(xs => Object.assign(R.mergeAll(xs), {
+        weeks: xs.map(d => d.meetingLink).sort()
+      }))
+    )),
   )(meetings)
 
-  const content = authors(agents)
+
+  const content = entities(entitiesByType)
 
   return renderPage(content)
 }
 
-function renderReading(meeting) {
-  const { date, fragment } = meeting
-      , meetingHTML = meeting.html
+function renderEntity(val, key) {
+  if (!val.length) return ''
+
+  const entityListHTML = val.map(({ id, label }) => html`
+    <li><a href="authors.html#${id}">${label}</a></li>
+  `).join('\n')
 
   return html`
-  <div id="${fragment}" class="reading">
+    <h4>${key}</h4>
+    <ul>${raw(entityListHTML)}</ul>
+  `
+}
+
+function renderReading(meeting) {
+  const { date, fragment, entities } = meeting
+      , meetingHTML = meeting.html
+
+  const entityHTML = Object.values(R.mapObjIndexed(renderEntity, entities)).join('\n')
+
+  /*
+  const agentHTML = agents.map(a => html`
+    <li>${a['foaf:givenname']} ${a['foaf:surname']}</li>
+  `).join('\n')
+  */
+
+  return html`
+  <div class="meeting" id="${fragment}">
   <h3>
   ${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}
   </h3>
-  ${raw(meetingHTML)}
+  <div class="reading-container">
+    <div class="reading">
+      ${raw(meetingHTML)}
+    </div>
+    <div class="reading-agents">
+      ${raw(entityHTML)}
+    </div>
+  </div>
   </div>
   `
 }
@@ -114,7 +143,8 @@ function main(meetings) {
   `
 }
 
-function authors(agents) {
+function entities(entitiesByType) {
+  return '';
   const agentsHTML = agents.map(({ name, weeks }) => html`
 <div>
   <h3>${name}</h3>
@@ -128,8 +158,31 @@ function authors(agents) {
 </div>
 `).join('\n')
 
+  const journalsHTML = journals.map(({ name, weeks }) => html`
+<div>
+  <h3>${name}</h3>
+  <ul>
+    ${raw(weeks.map(week => html`
+      <li>
+        <a href="${week}">${week.split(':').slice(-1)[0]}</a>
+      </li>
+    `).join('\n'))}
+  </ul>
+</div>
+`).join('\n')
+
   return html`
-    <section>${raw(agentsHTML)}</section>
+    <section id="index">
+      <div>
+        <h2>People</h2>
+        ${raw(agentsHTML)}
+      </div>
+
+      <div>
+        <h2>Journals</h2>
+        ${raw(journalsHTML)}
+      </div>
+    </section>
   `
 }
 

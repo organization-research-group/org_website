@@ -50,24 +50,6 @@ const frame = {
   },
 }
 
-const agentFrame = {
-  '@context': Object.assign({
-    'sameAs': {
-      '@id': 'owl:sameAs',
-      '@type': '@id',
-    },
-    'homepage': {
-      '@id': 'foaf:homepage',
-      '@type': '@id',
-    },
-    'workpage': {
-      '@id': 'foaf:workInfoHomepage',
-      '@type': '@id',
-    }
-  }, context),
-  '@type': 'foaf:Person',
-}
-
 function makeReadingsHTML(store, bib, readings) {
   const readingsHTML = readings.map(item => {
     let ret
@@ -81,7 +63,7 @@ function makeReadingsHTML(store, bib, readings) {
       ret = bibItem
         .split('\n').slice(1,-1).join('\n')
         .replace(/(https:\/\/doi.org\/(.*?))<\/div>/, (_, url, doi) =>
-          `<a href="${url}">doi:${doi}</a></div>`)
+          `<a href="${url}">doi:${doi.replace(/(\W)+/g, '<wbr>$1</wbr>')}</a></div>`)
 
       if (ret.slice(-7) === '.</div>' && item['bibo:uri']) {
         ret = `${ret.slice(0, -6)} Retrieved from <a href="${item['bibo:uri']}">${item['bibo:uri']}</a>.`
@@ -94,6 +76,44 @@ function makeReadingsHTML(store, bib, readings) {
   })
 
   return`<ul class="reading-list">${readingsHTML.join('')}</ul>`
+}
+
+const entityDefinitions = {
+  People: {
+    frame: {
+      '@type': 'foaf:Person',
+    },
+    label: d => `${d['foaf:givenname']} ${d['foaf:surname']}`,
+  },
+
+  Journals: {
+    frame: {
+      '@type': 'bibo:Journal',
+    },
+    label: R.prop('dc:title'),
+  },
+
+  Conferences: {
+    frame: {
+      '@type': 'bibo:Conference',
+    },
+    label: R.prop('dc:title'),
+  },
+
+  Publishers: {
+    frame: {
+      '@type': 'org:Publisher',
+    },
+    label: R.prop('foaf:name'),
+  }
+}
+
+async function resolveObj(obj) {
+  const pairs = await Promise.all(
+    Object.entries(obj).map(([k, v]) => Promise.resolve(v).then(v => [k, v]))
+  )
+
+  return R.fromPairs(pairs)
 }
 
 module.exports = async function getMeetings(store, bib) {
@@ -116,21 +136,26 @@ module.exports = async function getMeetings(store, bib) {
       )
     )(schedule)
 
-    const involved = [].concat(meeting['lode:involved'] || [])
+    const meetingFragment = fragmentOf(meeting);
 
-    const agents = await jsonld.promises.frame({
-      '@context': context,
-      '@graph': [].concat(meeting['lode:involved'] || [])
-    }, agentFrame)
-
-    const fragment = fragmentOf(meeting);
+    const entities = await R.pipe(
+      involved => ({ '@graph': involved, '@context': context }),
+      ld => R.map(({ frame, label }) =>
+        jsonld.promises.frame(ld, Object.assign({ '@context': context }, frame))
+          .then(data => data['@graph'].map(item => ({
+            label: label(item),
+            id: fragmentOf(item),
+            meetingLink: 'archive.html#' + meetingFragment,
+            ld: item,
+          })))
+      )(entityDefinitions),
+      resolveObj
+    )([].concat(meeting['lode:involved'] || []))
 
     return {
-      fragment,
+      fragment: meetingFragment,
       date: new Date(at.beginning.datetime),
-      agents: agents['@graph'].map(a => Object.assign({
-        fragment
-      }, a)),
+      entities,
       html,
     }
   }))
