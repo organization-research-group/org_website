@@ -90,7 +90,9 @@ function renderReading(meeting) {
   const { date, fragment, entities } = meeting
       , meetingHTML = meeting.html
 
-  const entityHTML = Object.values(R.mapObjIndexed(renderEntity, entities)).join('\n')
+  const entityHTML = Object.values(entities).some(x => x.length)
+    ? Object.values(R.mapObjIndexed(renderEntity, entities)).join('\n')
+    : ''
 
   /*
   const agentHTML = agents.map(a => html`
@@ -100,17 +102,13 @@ function renderReading(meeting) {
 
   return html`
   <div class="meeting" id="${fragment}">
-  <h3>
-  ${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}
-  </h3>
-  <div class="reading-container">
-    <div class="reading">
-      ${raw(meetingHTML)}
-    </div>
-    <div class="reading-agents">
-      ${raw(entityHTML)}
-    </div>
-  </div>
+    <h3 class="meeting--date">
+    ${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}
+    </h3>
+
+    <div class="meeting--schedule">${raw(meetingHTML)}</div>
+
+    <div class="meeting--entities">${raw(entityHTML)}</div>
   </div>
   `
 }
@@ -213,9 +211,7 @@ function renderPage(content) {
   <h1>
     The
     <span class="org-o org-firstletter">O</span><span class="org-r">r</span><span class="org-g">g</span>anizati<span class="org-o">o</span>n
-
     <span class="org-r org-firstletter">R</span>esea<span class="org-r">r</span>ch
-
     <span class="org-g org-firstletter">G</span><span class="org-r">r</span><span class="org-o">o</span>up
   </h1>
 

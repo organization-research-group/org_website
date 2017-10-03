@@ -58,7 +58,7 @@ function makeReadingsHTML(store, bib, readings) {
         , bibItem = bib.get(bibID)
 
     if (!bibItem) {
-      ret = `<div style="background-color: red;">Missing citation</div>`
+      ret = `<p style="background-color: red;">Missing citation</p>`
     } else {
       ret = bibItem
         .split('\n').slice(1,-1).join('\n')
@@ -66,16 +66,16 @@ function makeReadingsHTML(store, bib, readings) {
           `<a href="${url}">doi:${doi.replace(/(\W)+/g, '<wbr>$1</wbr>')}</a></div>`)
 
       if (ret.slice(-7) === '.</div>' && item['bibo:uri']) {
-        ret = `${ret.slice(0, -6)} Retrieved from <a href="${item['bibo:uri']}">${item['bibo:uri']}</a>.`
+        ret = `${ret.slice(0, -6)} Retrieved from <a href="${item['bibo:uri']}">${item['bibo:uri']}</a>.</div>`
       }
 
 
     }
 
-    return `<li>${ret}</li>`
+    return `${ret}`
   })
 
-  return`<ul class="reading-list">${readingsHTML.join('')}</ul>`
+  return readingsHTML.join('')
 }
 
 const entityDefinitions = {
@@ -130,7 +130,7 @@ module.exports = async function getMeetings(store, bib) {
         R.map(list =>
           [].concat(list[0]['@type']).includes('org:Reading')
             ? makeReadingsHTML(store, bib, list)
-            : list.map(({ description }) => `<div>${description}</div>`)),
+            : list.map(({ description }) => `<p>${description}</p>`)),
         R.concat,
         '',
       )
