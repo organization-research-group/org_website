@@ -22,6 +22,10 @@
     a rdf:Class ;
     rdfs:isSubClassOf bibo:Document .
 
+:Publisher
+    a rdf:Class ;
+    rdfs:isSubClassOf foaf:Organization .
+
 :schedule
     a rdf:Property .
 
@@ -2096,77 +2100,77 @@
     bibo:isbn13 "978-0-89791-461-1" .
 
 :publisher:ACM
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "ACM" ;
     address:localityName "New York" .
 
 :publisher:FUP
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Fordham University Press" ;
     address:localityName "New York" .
 
 :publisher:FreeAssociation
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Free Association Books" ;
     address:localityName "London" .
 
 :publisher:IEEComputerSociety
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "IEEE Computer Society" ;
     address:localityName "Washington, DC" .
 
 :publisher:IEEE
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "IEEE" ;
     address:localityName "Piscataway" .
 
 :publisher:MIT
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "MIT Press" ;
     address:localityName "Cambridge, MA" .
 
 :publisher:OUP
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Oxford University Press" ;
     address:localityName "Oxford" .
 
 :publisher:PsychologyPress
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Psychology Press" ;
     address:localityName "New York" .
 
 :publisher:Routledge
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Routledge" ;
     address:localityName "Abingdon" .
 
 :publisher:SUNY
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "State University of New York Press" ;
     address:localityName "Albany" .
 
 :publisher:SUP
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Stanford University Press" ;
     address:localityName "Stanford, CA" .
 
 :publisher:Spring
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Springer" ;
     address:localityName "Dordrecht" .
 
 :publisher:SpringerFW
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Springer Fachmedien Wiesbaden" ;
     address:localityName "Wiesbaden" .
 
 :publisher:UMP
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "University of Minnesota Press" ;
     address:localityName "Minneapolis" .
 
 :publisher:Verlag
-    a foaf:Organization ;
+    a :Publisher ;
     foaf:name "Verlag Dokumentation" ;
     address:localityName "Pullach, Germany" .
 
