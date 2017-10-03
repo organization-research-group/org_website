@@ -119,7 +119,7 @@ function main(meetings) {
   return html`
 <section id="about">
   <p>
-  ORG meets Fridays at 11am in 214 Manning Hall.
+  ORG is a reading group at UNC Chapel Hill that meets Fridays at 11am in 214 Manning Hall.
   </p>
   <p>
   <a href="mailto:listmanager@listserv.unc.edu?body=subscribe%20org">Subscribe</a>
@@ -218,13 +218,13 @@ function renderPage(content) {
     <ul id="nav-controls">
       <li><a href="index.html">Home</a></li>
       <li><a href="archive.html">Archive</a></li>
-      <li><a href="authors.html">Author index</a></li>
+      <li><a href="authors.html">Index</a></li>
     </ul>
     </header>
 
-    <main>
+    <div>
     ${raw(content)}
-    </main>
+    </div>
 
     <footer>
       Last updated ${lastUpdated}
