@@ -48,7 +48,7 @@ function bookSection(store, uri) {
 
   const [ $publisher ] = store
     .getObjects($book, 'dc:publisher')
-    .filter(isType(store, 'foaf:Organization'))
+    .filter(isType(store, ':Publisher'))
 
   return {
     type: 'chapter',

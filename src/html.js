@@ -142,43 +142,43 @@ function main(meetings) {
 }
 
 function entities(entitiesByType) {
-  return '';
-  const agentsHTML = agents.map(({ name, weeks }) => html`
-<div>
-  <h3>${name}</h3>
-  <ul>
-    ${raw(weeks.map(week => html`
-      <li>
-        <a href="${week}">${week.split(':').slice(-1)[0]}</a>
-      </li>
-    `).join('\n'))}
-  </ul>
-</div>
-`).join('\n')
-
-  const journalsHTML = journals.map(({ name, weeks }) => html`
-<div>
-  <h3>${name}</h3>
-  <ul>
-    ${raw(weeks.map(week => html`
-      <li>
-        <a href="${week}">${week.split(':').slice(-1)[0]}</a>
-      </li>
-    `).join('\n'))}
-  </ul>
-</div>
-`).join('\n')
+  const htmlByType = R.map(
+    R.pipe(
+      R.map(({ id, label, weeks, externalLink }) => html`
+        <div id=${id}>
+        <h3>${label}</h3>
+        <a class="external" href="${externalLink}">${externalLink && 'Homepage'}</a>
+        <ul>
+          ${raw(weeks.map(week => html`
+            <li>
+              <a href="${week}">${week.split(':').slice(-1)[0]}</a>
+            </li>
+          `).join('\n'))}
+        </ul>
+        </div>
+      `),
+      d => d.join('\n')
+    ), entitiesByType)
 
   return html`
     <section id="index">
       <div>
         <h2>People</h2>
-        ${raw(agentsHTML)}
+        ${raw(htmlByType.People)}
       </div>
 
       <div>
         <h2>Journals</h2>
-        ${raw(journalsHTML)}
+        ${raw(htmlByType.Journals)}
+      </div>
+
+      <div>
+        <h2>Conferences</h2>
+
+        ${raw(htmlByType.Conferences)}
+        <h2>Publishers</h2>
+        ${raw(htmlByType.Publishers)}
+
       </div>
     </section>
   `
