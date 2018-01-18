@@ -124,7 +124,7 @@ function book(store, uri) {
 
   return {
     type: 'book',
-    agentFields: ['author'],
+    agentFields: ['author', 'editor'],
     dateFields: ['issued'],
     fields: {
       title: [$book, 'dc:title'],
@@ -132,6 +132,7 @@ function book(store, uri) {
       URI: [$book, 'bibo:uri'],
       DOI: [$book, 'bibo:doi'],
       author: [$book, 'bibo:authorList'],
+      editor: [$book, 'bibo:editorList'],
       issued: [$book, 'dc:date'],
       publisher: [$publisher, 'foaf:name'],
       'publisher-place': [$publisher, 'address:localityName'],
