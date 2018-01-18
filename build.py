@@ -5,25 +5,69 @@ import re
 import sys
 import time
 
-readings = sorted(os.listdir('readings'), reverse=True)
+templates = {
+    'document': open('./templates/document.html').read(),
 
-current_reading = readings[0]
-recent_readings = readings[1:6]
+    'index': open('./templates/index.html').read(),
+    'archive': open('./templates/archive.html').read(),
+}
 
-def datestring_from_filename(filename):
-    time_struct = time.strptime(filename.replace('.html', ''), '%Y-%m-%d')
+header_pattern = re.compile('^(\d{4}-\d{2}-\d{2})$\n---\n', re.M)
+doi_pattern = re.compile(' doi:([^ ]+)$')
+
+
+def format_date(date_str):
+    time_struct = time.strptime(date_str, '%Y-%m-%d')
     return time.strftime('%A, %b. %e, %Y', time_struct)
 
-def content_from_filename(filename):
-    text = open(os.path.join('readings', filename), 'r').read()
-    text = re.sub(
-        r'(doi:([^\b<]+))',
-        r'<a href="https://doi.org/\2">\1</a>',
-        text)
-    return text
+
+def format_reading(reading):
+    reading = re.sub('\n+', '\n', reading.rstrip())
+    readings = reading.split('\n')
+
+    readings = [
+        re.sub("'([^']+)'", r'&lsquo;\1&rsquo;', r)
+        for r in readings
+    ]
+
+    readings = [
+        re.sub('"([^"]+)"', r'&ldquo;\1&rdquo;', r)
+        for r in readings
+    ]
+
+    readings = [
+        re.sub(doi_pattern, r' <a href="https://doi.org/\1">doi:\1</a>', r)
+        for r in readings
+    ]
+
+    readings = [
+        '<li>' + r + '</li>'
+        for r in readings
+    ]
+
+    return '<ul>' + '\n'.join(readings) + '</ul>'
 
 
-def entry_from_filename(filename, level=3):
+def parse_readings(filename):
+    fp = open(filename, 'r')
+    readings = iter(re.split(header_pattern, fp.read()))
+    next(readings)  # Skip blank line
+
+    entries = [
+        {
+            "date": format_date(date),
+            "reading": format_reading(reading)
+        }
+
+        for (date, reading) in zip(readings, readings)
+    ]
+
+    fp.close()
+
+    return entries
+
+
+def reading_to_html(reading, level=3):
     return """
         <div class="reading">
           <h{level}>{heading}</h{level}>
@@ -31,100 +75,27 @@ def entry_from_filename(filename, level=3):
         </div>
     """.format(
         level=level,
-        heading=datestring_from_filename(filename),
-        content=content_from_filename(filename)
+        heading=reading['date'],
+        content=reading['reading'],
     )
 
-template = """
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <title>The Organization Research Group</title>
-</head>
-
-<body>
-  <div class="flex">
-  <main>
-  {content}
-  </main>
-  </div>
-
-  <!-- <script type="text/javascript" src="org.js"></script> -->
-</body>
-
-</html>
-"""
-
-archive_template = """
-  <section>
-    <h1><a href="./">The Organization Research Group</a></h1>
-  </section>
-  <section>
-    <h2>Past meetings</h2>
-    {recent_readings}
-  </section>
-  <section>
-    <p>
-      <i>Last updated {last_updated}</i>
-    </p>
-  </section>
-"""
-
-index_template = """
-  <section id="about">
-    <h1>
-      The
-      <span class="org-o org-firstletter">O</span><span class="org-r">r</span><span class="org-g">g</span>anizati<span class="org-o">o</span>n
-
-      <span class="org-r org-firstletter">R</span>esea<span class="org-r">r</span>ch
-
-      <span class="org-g org-firstletter">G</span><span class="org-r">r</span><span class="org-o">o</span>up
-    </h1>
-
-    <p>
-    ORG meets Fridays at 11am in 214 Manning Hall.
-    </p>
-    <p>
-    <a href="mailto:listmanager@listserv.unc.edu?body=subscribe%20org">Subscribe</a>
-    to our email list for announcements and general discussion.
-    </p>
-  </section>
-
-  <section id="current">
-    <h2>Current meeting</h2>
-    {current_reading}
-  </section>
-
-  <section id="recent">
-    <h2 id="recent">Recent meetings</h2>
-    {recent_readings}
-  </section>
-
-  <section>
-    <p>
-      <a href="archive.html">All past meetings</a>
-    </p>
-    <p>
-      <i>Last updated {last_updated}</i>
-    </p>
-  </section>
-"""
-
-
 if __name__ == '__main__':
+    current_readings = parse_readings('./readings.md')
+
+    current_reading = current_readings[0]
+    recent_readings = current_readings[1:4]
+
     if 'archive' in sys.argv:
-        content = archive_template.format(
-            recent_readings='\n'.join(map(entry_from_filename, readings)),
-            last_updated=datestring_from_filename(time.strftime('%Y-%m-%d'))
+        content = templates['archive'].format(
+            recent_readings='\n'.join(map(reading_to_html, current_readings)),
+            last_updated=format_date(time.strftime('%Y-%m-%d'))
         )
     else:
-        content = index_template.format(
-            current_reading=entry_from_filename(current_reading),
+        content = templates['index'].format(
+            current_reading=reading_to_html(current_reading),
             recent_readings='\n'.join(map(
-                entry_from_filename, recent_readings)),
-            last_updated=datestring_from_filename(time.strftime('%Y-%m-%d'))
+                reading_to_html, recent_readings)),
+            last_updated=format_date(time.strftime('%Y-%m-%d'))
         )
 
-    print(template.format(content=content))
+    print(templates['document'].format(content=content))

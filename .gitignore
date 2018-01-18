@@ -1,2 +1,5 @@
 *.swp
 dist/*
+__pycache__
+IGNORE
+node_modules

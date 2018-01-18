@@ -1,0 +1,226 @@
+/* --Reset, page-wide styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul { list-style-type: none; }
+
+html, body {
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    margin: auto;
+    max-width: 760px;
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+
+    --meeting-date-size: 16px;
+    --meeting-padding-x: 14px;
+    --meeting-padding-y: 8px;
+}
+
+/* --List of meetings */
+.meeting {
+    display: grid;
+    grid-template-columns: 66% 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+.meeting:last-of-type {
+    margin-bottom: 0;
+}
+
+.meeting--date {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: var(--meeting-date-size);
+    padding-right: var(--meeting-padding-x);
+}
+
+.meeting--schedule {
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+    padding-right: var(--meeting-padding-x);
+}
+
+.meeting--schedule > * {
+    line-height: 1.4em;
+    margin: 0;
+    margin-top: .66em;
+}
+
+.meeting--schedule > :first-of-type {
+    margin-top: .33em;
+}
+
+.csl-entry {
+    text-indent: -3em;
+    margin-left: 3em;
+}
+
+.meeting--entities {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+    font-size: 80%;
+    padding: var(--meeting-padding-y) var(--meeting-padding-x);
+
+    border: 1px solid #aaa;
+    background-color: lavender;
+}
+
+.meeting--entities:empty {
+    display: none;
+    background-color: white;
+}
+
+.meeting--entities h4:not(:first-of-type) {
+    margin-top: 8px;
+}
+
+.meeting--entities a {
+    color: blue;
+}
+
+.meeting--entities li {
+    text-indent: -12px;
+    margin-left: 12px;
+}
+
+/* --Front page */
+section {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+#about > p:first-of-type {
+    padding-top: 0;
+}
+p {
+    padding-top: 1em;
+}
+
+#current h2, #recent h2 {
+    margin-bottom: .5em;
+}
+
+
+/* --Index page */
+#index {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr 1fr;
+    grid-column-gap: 2em;
+    font-size: 80%;
+}
+
+#index h2 {
+    font-style: italic;
+    border-bottom: 1px solid #ccc;
+    margin-right: 2em;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+#index h2:not(:first-of-type) {
+    margin-top: 2em;
+}
+
+#index h3 {
+    margin-top: 8px;
+}
+
+#index ul {
+    margin-left: 1.66em;
+}
+
+#index a {
+    color: blue;
+}
+
+#index a.external {
+    color: maroon;
+}
+
+
+/*
+.meeting {
+    border-top: 1px dashed #ccc;
+}
+
+.meeting:nth-child(odd) {
+    border-left: 1px dashed #ccc;
+}
+
+.meeting:nth-child(even) {
+    border-right: 1px dashed #ccc;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+#nav-controls {
+    margin: 1em 0;
+    padding: 1em 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+/* ---- The animation ---- */
+
+.org-o {
+    animation: change-letter 6s ease-in-out 0s infinite;
+}
+
+.org-r {
+    animation: change-letter 6s ease-in-out 2s infinite;
+}
+
+.org-g {
+    animation: change-letter 6s ease-in-out 4s infinite;
+}
+
+@keyframes change-letter {
+    0% { color: black; }
+    25% { color: red; }
+    50% { color: black; }
+}

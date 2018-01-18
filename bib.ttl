@@ -1,0 +1,3983 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ConferencePaper
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Article .
+
+:Lecture
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Document .
+
+:Publisher
+    a rdf:Class ;
+    rdfs:isSubClassOf foaf:Organization .
+
+:schedule
+    a rdf:Property .
+
+# -- Begin bibliography --
+
+:ORG-UNC
+    a :Org;
+    :meeting :meeting:2018-01-19, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+
+:conference:CHI2014
+    a bibo:Conference ;
+    dc:title "SIGCHI Conference on Human Factors in Computing Systems 2014" ;
+    address:localityName "Toronto, Canada" ;
+    dc:date "April 26-May 1, 2014" ;
+    foaf:homepage <https://chi2014.acm.org/> .
+
+:conference:CSCW2017
+    a bibo:Conference ;
+    dc:title "The 20th ACM Conference on Computer-Supported Cooperative Work and Social Computing" ;
+    address:localityName "Portland, Oregon" ;
+    dc:date "February 25 - March 1, 2017" ;
+    foaf:homepage <https://cscw.acm.org/2017/>.
+
+:conference:DIS2016
+    a bibo:Conference ;
+    dc:title "Designing Interactive Systems 2016" ;
+    address:localityName "Brisbane, Australia" ;
+    dc:date "June 4-8 2016" ;
+    foaf:homepage <http://www.dis2016.org/> .
+
+:conference:Hypertext1991
+    a bibo:Conference ;
+    dc:title "The third annual ACM conference on Hypertext" ;
+    address:localityName "San Antonio Texas" ;
+    dc:date "December 15 - 18, 1991" .
+
+:conference:OCCBCK
+    a bibo:Conference ;
+    dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
+    address:localityName "Ottawa" ;
+    dc:date "October 1st to 5th, 1971" .
+
+:journal:AI
+    a bibo:Journal ;
+    dc:title "Artificial Intelligence" ;
+    foaf:homepage <http://www.sciencedirect.com/science/journal/00043702> ;
+    bibo:issn "0004-3702" .
+
+:journal:AdvancingDigitalHumanities
+    a bibo:Journal ;
+    dc:title "Advancing digital humanities: research, methods, theories" .
+
+:journal:BJS
+    a bibo:Journal ;
+    dc:title "The British Journal of Sociology" ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-4446> ;
+    bibo:issn "1468-4446" .
+
+:journal:CSCW
+    a bibo:Journal ;
+    dc:title "Computer Supported Cooperative Work" ;
+    bibo:shortTitle "Comput Supported Coop Work" ;
+    foaf:homepage <https://link.springer.com/journal/10606> ;
+    bibo:issn "0925-9724", "1573-7551" .
+
+:journal:CSCW:3:1
+    a bibo:Issue ;
+    dc:date "1994/03/01" ;
+    dc:isPartOf :journal:CSCW ;
+    bibo:issue "1" ;
+    bibo:volume "3" .
+
+:journal:ComputationalCulture
+    a bibo:Journal ;
+    dc:title "Computational Culture" ;
+    foaf:homepage <http://computationalculture.net/> ;
+    bibo:issn "2047-2390" .
+
+:journal:CriticalInquiry
+    a bibo:Journal ;
+    dc:title "Critical Inquiry" ;
+    foaf:homepage <http://criticalinquiry.uchicago.edu/> ;
+    bibo:issn "0093-1896" .
+
+:journal:EJIS
+    a bibo:Journal ;
+    dc:title "European Journal of Information Systems" ;
+    foaf:homepage <https://link.springer.com/journal/41303> ;
+    bibo:issn "0960-085X" .
+
+:journal:ELH
+    a bibo:Journal ;
+    dc:title "ELH" ;
+    foaf:homepage <https://www.press.jhu.edu/journals/elh> ;
+    bibo:issn "1080-6547" .
+
+:journal:FirstMonday
+    a bibo:Journal ;
+    dc:title "First Monday" ;
+    foaf:homepage <http://firstmonday.org> ;
+    bibo:issn "1396-0466" .
+
+:journal:HCI
+    a bibo:Journal ;
+    dc:title "Human Computer Interaction" ;
+    foaf:homepage <http://www.tandfonline.com/toc/hhci20/current> ;
+    bibo:issn "0737-0024" .
+
+:journal:IEEEAnnals
+    a bibo:Journal ;
+    dc:title "IEEE Annals of the History of Computing" ;
+    foaf:homepage <http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=85> ;
+    bibo:issn "1058-6180" .
+
+:journal:InformationCommunicationSociety
+    a bibo:Journal ;
+    dc:title "Information, Communcation, & Society" ;
+    foaf:homepage <http://www.tandfonline.com/toc/rics20/current> ;
+    bibo:issn "1369-118X" .
+
+:journal:InformationSociety
+    a bibo:Journal ;
+    dc:title "The Information Society" ;
+    foaf:homepage <http://www.tandfonline.com/toc/utis20/current> ;
+    bibo:issn "0197-2243" .
+
+:journal:InternetHistories
+    a bibo:Journal ;
+    dc:title "Internet Histories" ;
+    foaf:homepage <http://www.tandfonline.com/toc/rint20/current> ;
+    bibo:issn "2470-1475" .
+
+:journal:InternetHistories:1:1-2
+    a bibo:issue ;
+    dc:date "2017" ;
+    dc:isPartOf :journal:InternetHistories ;
+    bibo:volume "1" ;
+    bibo:issue "1-2" .
+
+:journal:JASIS
+    a bibo:Journal ;
+    dc:title "Journal of the American Society for Information Science" ;
+    bibo:shortTitle "J. Am. Soc. Inf. Sci." ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2330-1643> ;
+    bibo:issn "1097-4571" .
+
+:journal:JASIST
+    a bibo:Journal ;
+    dc:title "Journal of the Association for Information Science and Technology" ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2330-1643> ;
+    bibo:issn "2330-1643" .
+
+:journal:JCC
+    a bibo:Journal ;
+    dc:title "Journal of Computer-Mediated Communication" ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1083-6101> ;
+    bibo:issn "1083-6101" .
+
+:journal:JCLIS
+    a bibo:Journal ;
+    dc:title "Journal of Critical Library and Information Studies" ;
+    foaf:homepage <http://libraryjuicepress.com/journals/index.php/jclis/index> ;
+    bibo:issn "2572-1364" .
+
+:journal:JDOC
+    a bibo:Journal ;
+    dc:title "Journal of Documentation" ;
+    foaf:homepage <http://www.emeraldinsight.com/journal/jd> ;
+    bibo:issn "0022-0418" .
+
+:journal:JMIS
+    a bibo:Journal ;
+    dc:title "Journal of Management Information Systems" ;
+    foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
+    bibo:issn "0742-1222", "1557-928X" .
+
+:journal:LLC
+    a bibo:Journal ;
+    dc:title "Literary and Linguistic Computing" ;
+    foaf:homepage <http://llc.oxfordjournals.org/> ;
+    bibo:issn "0268-1145" .
+
+:journal:MinnesotaReview
+    a bibo:Journal ;
+    dc:title "The Minnesota Review" ;
+    foaf:homepage <http://www.theminnesotareview.org> ;
+    bibo:issn "0026-5667, 2157-4189" .
+
+:journal:NewMediaSociety
+    a bibo:Journal ;
+    dc:title "New Media & Society" ;
+    foaf:homepage <http://journals.sagepub.com/home/nms> ;
+    bibo:issn "1461-4448", "1461-7315" .
+
+:journal:PJOS
+    a bibo:Journal ;
+    dc:title "Public Journal of Semiotics" ;
+    foaf:homepage <http://pjos.org/> ;
+    bibo:issn "1918-9907" .
+
+:journal:RethinkingMarxism
+    a bibo:Journal ;
+    dc:title "Rethinking Marxism" ;
+    foaf:homepage <http://www.rethinkingmarxism.org/> ;
+    bibo:issn "0893-5696" .
+
+:journal:ScienceInContext
+    a bibo:Journal ;
+    dc:title "Science in Context" ;
+    foaf:homepage <https://www.cambridge.org/core/journals/science-in-context> ;
+    bibo:issn "0269-8897" .
+
+:journal:Signs
+    a bibo:Journal ;
+    dc:title "Signs: Journal of Women in Culture and Society" ;
+    foaf:homepage <http://signsjournal.org/> .
+
+:journal:SocStudSci
+    a bibo:Journal ;
+    dc:title "Social Studies of Science" ;
+    foaf:homepage <http://journals.sagepub.com/home/sss> ;
+    bibo:issn "0306-3127" .
+
+:journal:SociologicalTheory
+    a bibo:Journal ;
+    dc:title "Sociological Theory" ;
+    foaf:homepage <http://journals.sagepub.com/home/stx> ;
+    bibo:issn "14679558" .
+
+:journal:TCS
+    a bibo:Journal ;
+    dc:title "Theory, Culture & Society" ;
+    foaf:homepage <http://journals.sagepub.com/home/tcs> ;
+    bibo:issn "02632764", "14603616" .
+
+:journal:TheoryPsychology
+    a bibo:Journal ;
+    dc:title "Theory & Psychology" ;
+    foaf:homepage <http://journals.sagepub.com/home/tap> .
+
+:journal:WSQ
+    a bibo:Journal ;
+    dc:title "WSQ: Women's Studies Quarterly" ;
+    foaf:homepage <http://www.feministpress.org/wsq/> ;
+    bibo:issn "1934-1520" .
+
+:journal:WSQ:41:3
+    a bibo:Issue ;
+    dc:date "2013/12/06" ;
+    dc:isPartOf :journal:WSQ ;
+    bibo:issue "3" ;
+    bibo:volume "41" .
+
+:journal:eflux
+    a bibo:Journal ;
+    dc:title "e-flux" ;
+    foaf:homepage <http://www.e-flux.com/journal/> .
+
+:journal:interactions
+    a bibo:Journal ;
+    dc:title "interactions" ;
+    foaf:homepage <https://dl.acm.org/citation.cfm?id=J373> ;
+    bibo:issn "1072-5520" .
+
+:journal:login
+    a bibo:Journal ;
+    dc:title ";login: The USENIX Magazine" ;
+    foaf:homepage <https://www.usenix.org/publications/login> .
+
+:journal:representations
+    a bibo:Journal ;
+    dc:title "Representations" ;
+    foaf:homepage <http://rep.ucpress.edu/> ;
+    bibo:issn "0734-6018", "1533-855X" .
+
+:journal:transversals
+    a bibo:Journal ;
+    dc:title "transversals" .
+
+:meeting:2015-07-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-07-24T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Patrick's article on “Periodo assertion as nanopublication” for <i>PeerJ Computer Science</i>" ]
+    ) .
+
+:meeting:2015-07-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-07-30T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hjorland2015 ;
+    :schedule (
+        [ dc:description "Melanie's syllabus for INLS720" ]
+        :reading:Hjorland2015
+    ) .
+
+:meeting:2015-08-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-08-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Clark1996 ;
+    :schedule (
+        [ dc:description "Debbie and Jacob's DCMI poster analyzing metadata job keywords" ]
+        :reading:Clark1996
+    ) .
+
+:meeting:2015-08-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-08-28T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Latour2012 ;
+    :schedule (
+        [ dc:description "Jacob's Knowledge Organization literature review." ]
+        :reading:Latour2012
+    ) .
+
+:meeting:2015-09-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-04T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Day2014 ;
+    :schedule (
+        :reading:Day2014
+        [ dc:description "Chapters [[ FIXME ]] " ]
+    ) .
+
+:meeting:2015-09-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-11T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper for CHI" ]
+    ) .
+
+:meeting:2015-09-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-18T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Acker2015 ;
+    :schedule (
+        :reading:Acker2015
+    ) .
+
+:meeting:2015-09-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-25T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Blair2004 ;
+    :schedule (
+        :reading:Blair2004
+    ) .
+
+:meeting:2015-10-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-10-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wobbrock2009 ;
+    :schedule (
+        :reading:Wobbrock2009
+    ) .
+
+:meeting:2016-02-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-12T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Star1995 ;
+    :schedule (
+        :reading:Star1995
+    ) .
+
+:meeting:2016-02-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Fairthorne1974 ;
+    :schedule (
+        :reading:Fairthorne1974
+    ) .
+
+:meeting:2016-02-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Geiger2011 ;
+    :schedule (
+        :reading:Geiger2011
+    ) .
+
+:meeting:2016-03-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-03-04T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Field trip: Attend <a href=\"http://chat16.web.unc.edu/\">CHAT Festival</a>" ]
+    ) .
+
+:meeting:2016-03-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-03-25T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper, “The value of discernment”" ]
+    ) .
+
+:meeting:2016-04-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-01T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Think of possible topics for an ORG study" ]
+    ) .
+
+:meeting:2016-04-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Fidler2016 ;
+    :schedule (
+        :reading:Fidler2016
+    ) .
+
+:meeting:2016-04-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-22T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Think of possible topics for an ORG study" ]
+    ) .
+
+:meeting:2016-05-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-05-20T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Monteiro2012 ;
+    :schedule (
+        :reading:Monteiro2012
+    ) .
+
+:meeting:2016-05-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-05-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2016 ;
+    :schedule (
+        :reading:Rieder2016
+    ) .
+
+:meeting:2016-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Galey2010 ;
+    :schedule (
+        :reading:Galey2010
+    ) .
+
+:meeting:2016-06-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-10T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Star1989, :reading:Griesemer2016 ;
+    :schedule (
+        :reading:Star1989
+        :reading:Griesemer2016
+    ) .
+
+:meeting:2016-06-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Shavit2011 ;
+    :schedule (
+        :reading:Shavit2011
+    ) .
+
+:meeting:2016-06-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-24T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Feenberg2015 ;
+    :schedule (
+        :reading:Feenberg2015
+    ) .
+
+:meeting:2016-07-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-01T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Medina2011 ;
+    :schedule (
+        :reading:Medina2011
+        [ dc:description "FIXME: chapters" ]
+    ) .
+
+:meeting:2016-07-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-08T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Leahu2016 ;
+    :schedule (
+        :reading:Leahu2016
+    ) .
+
+:meeting:2016-07-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Barad2003 ;
+    :schedule (
+        :reading:Barad2003
+    ) .
+
+:meeting:2016-07-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-29T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Chun2016 ;
+    :schedule (
+        :reading:Chun2016
+    ) .
+
+:meeting:2016-08-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-08-05T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rouvroy2011 ;
+    :schedule (
+        :reading:Rouvroy2011
+    ) .
+
+:meeting:2016-08-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-08-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper, “A design perspective on data”" ]
+    ) .
+
+:meeting:2016-09-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Plantin2016 ;
+    :schedule (
+        :reading:Plantin2016
+    ) .
+
+:meeting:2016-09-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-09T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Furner2016 ;
+    :schedule (
+        :reading:Furner2016
+    ) .
+
+:meeting:2016-09-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-16T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Verhoeven2014 ;
+    :schedule (
+        :reading:Verhoeven2014
+    ) .
+
+:meeting:2016-09-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kreiss2011 ;
+    :schedule (
+        :reading:Kreiss2011
+    ) .
+
+:meeting:2016-09-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-30T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2016 ;
+    :schedule (
+        :reading:Hui2016
+    ) .
+
+:meeting:2016-10-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-07T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Haraway2016 ;
+    :schedule (
+        :reading:Haraway2016
+    ) .
+
+:meeting:2016-10-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-14T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Parikka2015 ;
+    :schedule (
+        :reading:Parikka2015
+    ) .
+
+:meeting:2016-10-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-28T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Marcus2016 ;
+    :schedule (
+        :reading:Marcus2016
+    ) .
+
+:meeting:2016-11-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-04T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Genosko2016 ;
+    :schedule (
+        :reading:Genosko2016
+    ) .
+
+:meeting:2016-11-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-11T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 ;
+    :schedule (
+        :reading:Winograd1987
+        :reading:Suchman1993
+        :reading:Winograd1993
+        :reading:Agre1994b
+        :reading:Button1994
+        :reading:Randall1994
+        :reading:Curtis1994
+        :reading:Lynch1994
+        :reading:Bogen1994
+        :reading:Suchman1994
+    ) .
+
+:meeting:2016-11-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-18T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Agre1994a, :reading:Mai2016 ;
+    :schedule (
+        :reading:Agre1994a
+        :reading:Mai2016
+    ) .
+
+:meeting:2016-12-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-12-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 ;
+    :schedule (
+        :reading:Freeman2013
+        :reading:Spade2013
+        :reading:Baez2013
+        :reading:Moore2013
+    ) .
+
+:meeting:2016-12-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-12-09T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Holmes2002, :reading:Rose1999 ;
+    :schedule (
+        :reading:Holmes2002
+        :reading:Rose1999
+    ) .
+
+:meeting:2017-01-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-13T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Patrick&apos;s syllabus for <a href=\"https://ptgolden.org/740syllabus.html\">INLS 740 (Digital Libraries)</a>" ]
+    ) .
+
+:meeting:2017-01-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-20T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "<a href=\"http://savageminds.org/2017/01/12/society-must-be-defended-a-read-in-on-20-january-2017/\">http://savageminds.org/2017/01/12/society-must-be-defended-a-read-in-on-20-january-2017/</a>" ]
+    ) .
+
+:meeting:2017-01-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-27T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:RoblesAnderson2016 ;
+    :schedule (
+        :reading:RoblesAnderson2016
+    ) .
+
+:meeting:2017-02-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-03T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting-- attend <a href=\"https://www.bitcurator.net/nlp4arc\">nlp4arc</a>" ]
+    ) .
+
+:meeting:2017-02-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-10T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Community check-in: a chance to tell everyone what you&apos;ve been working on, your recent successes, your terrible setbacks" ]
+    ) .
+
+:meeting:2017-02-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Cope2017, :reading:Gorichanaz2017 ;
+    :schedule (
+        :reading:Cope2017
+        :reading:Gorichanaz2017
+    ) .
+
+:meeting:2017-03-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-03T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Smith2016, :reading:Feinberg2017 ;
+    :schedule (
+        :reading:Smith2016
+        :reading:Feinberg2017
+    ) .
+
+:meeting:2017-03-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-10T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Passi2017 ;
+    :schedule (
+        :reading:Passi2017
+    ) .
+
+:meeting:2017-03-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hayles2016 ;
+    :schedule (
+        :reading:Hayles2016
+    ) .
+
+:meeting:2017-03-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-24T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bratus2011 ;
+    :schedule (
+        :reading:Bratus2011
+    ) .
+
+:meeting:2017-03-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-31T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dennett2002 ;
+    :schedule (
+        :reading:Dennett2002
+    ) .
+
+:meeting:2017-04-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-14T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stenner2016 ;
+    :schedule (
+        :reading:Stenner2016
+    ) .
+
+:meeting:2017-04-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-21T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting: SILS <a href=\"http://info4socialgood.web.unc.edu\">Symposium on Information for Social Good</a>" ]
+    ) .
+
+:meeting:2017-04-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-28T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Flynn1997 ;
+    :schedule (
+        :reading:Flynn1997
+    ) .
+
+:meeting:2017-05-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-05T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dreyfus2007 ;
+    :schedule (
+        :reading:Dreyfus2007
+    ) .
+
+:meeting:2017-05-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-12T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting: end-of-semester institutional collapse" ]
+    ) .
+
+:meeting:2017-05-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ciborra2004 ;
+    :schedule (
+        :reading:Ciborra2004
+    ) .
+
+:meeting:2017-05-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Debbie's paper: \u201cProblematizing metadata\u201d" ]
+    ) .
+
+:meeting:2017-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ciborra2004, :reading:Askey2017 ;
+    :schedule (
+        :reading:Ciborra2004
+        :reading:Askey2017
+    ) .
+
+:meeting:2017-06-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-09T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Nofre2014 ;
+    :schedule (
+        :reading:Nofre2014
+    ) .
+
+:meeting:2017-06-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wakkary2017 ;
+    :schedule (
+        :reading:Wakkary2017
+    ) .
+
+:meeting:2017-06-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-30T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Poitou1997 ;
+    :schedule (
+        :reading:Poitou1997
+    ) .
+
+:meeting:2017-07-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-07T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Abbate2017, :reading:Turner2017 ;
+    :schedule (
+        :reading:Abbate2017
+        :reading:Turner2017
+    ) .
+
+:meeting:2017-07-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-21T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siegert2014 ;
+    :schedule (
+        :reading:Siegert2014
+    ) .
+
+:meeting:2017-07-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-28T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siegert2014 ;
+    :schedule (
+        :reading:Siegert2014
+    ) .
+
+:meeting:2017-08-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-18T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tenen2017 ;
+    :schedule (
+        :reading:Tenen2017
+    ) .
+
+:meeting:2017-08-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-25T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Daston2017 ;
+    :schedule (
+        :reading:Daston2017
+    ) .
+
+:meeting:2017-09-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-01T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Emerson2014 ;
+    :schedule (
+        :reading:Emerson2014
+    ) .
+
+:meeting:2017-09-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-08T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Boland2017 ;
+    :schedule (
+        :reading:Boland2017
+    ) .
+
+:meeting:2017-09-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bernstein1991 ;
+    :schedule (
+        :reading:Bernstein1991
+    ) .
+
+:meeting:2017-09-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-22T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wittkower2016, :reading:Gibson1979 ;
+    :schedule (
+        :reading:Wittkower2016
+        :reading:Gibson1979
+    ) .
+
+:meeting:2017-09-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-29T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Evans2016 ;
+    :schedule (
+        :reading:Evans2016
+    ) .
+
+:meeting:2017-10-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-06T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Levine2015 ;
+    :schedule (
+        :reading:Levine2015
+    ) .
+
+:meeting:2017-10-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-13T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Losee2015 ;
+    :schedule (
+        :reading:Losee2015
+    ) .
+
+:meeting:2017-10-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-27T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bowers1991, :reading:Healy2017 ;
+    :schedule (
+        :reading:Bowers1991
+        :reading:Healy2017
+    ) .
+
+:meeting:2017-11-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-03T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dork2014, :reading:Sack2000 ;
+    :schedule (
+        :reading:Dork2014
+        :reading:Sack2000
+    ) .
+
+:meeting:2017-11-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-10T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Simmel2014, :reading:Simmel1950 ;
+    :schedule (
+        :reading:Simmel2014
+        :reading:Simmel1950
+    ) .
+
+:meeting:2017-11-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting-- attend <a href=\"https://fhi.duke.edu/events/futures-literature-science-and-media-symposium-honoring-professor-n-katherine-hayles\">https://fhi.duke.edu/events/futures-literature-science-and-media-symposium-honoring-professor-n-katherine-hayles</a>" ]
+    ) .
+
+:meeting:2017-12-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-12-08T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tsing2015 ;
+    :schedule (
+        :reading:Tsing2015
+    ) .
+
+:meeting:2017-12-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-12-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lynch2017 ;
+    :schedule (
+        :reading:Lynch2017
+    ) .
+
+:meeting:2018-01-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-05T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Alcoff1997 ;
+    :schedule (
+        :reading:Alcoff1997
+    ) .
+
+:meeting:2018-01-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gorichanaz2016 ;
+    :schedule (
+        :reading:Gorichanaz2016
+    ) .
+
+:person:AbbateJ
+    a foaf:Person ;
+    owl:sameAs viaf:43545973, wd:Q20859597 ;
+    foaf:givenname "Janet" ;
+    foaf:surname "Abbate" ;
+    foaf:workInfoHomepage <https://liberalarts.vt.edu/faculty-directory/sts-faculty/janet-abbate.html> .
+
+:person:AckerA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5332-0487 ;
+    foaf:givenname "Amelia" ;
+    foaf:surname "Acker" ;
+    foaf:homepage <http://www.ameliaacker.com/> .
+
+:person:AgreP
+    a foaf:Person ;
+    owl:sameAs viaf:7529977, wd:Q7183485 ;
+    foaf:givenname "Philip E." ;
+    foaf:surname "Agre" ;
+    foaf:homepage <http://polaris.gseis.ucla.edu/pagre/> .
+
+:person:AlcoffL
+    a foaf:Person ;
+    owl:sameAs viaf:39539108, wd:Q6551801 ;
+    foaf:givenname "Linda Martín" ;
+    foaf:surname "Alcoff" ;
+    foaf:homepage <http://www.alcoff.com/> .
+
+:person:ArthurP
+    a foaf:Person ;
+    owl:sameAs viaf:29684467 ;
+    foaf:givenname "Paul Longley" ;
+    foaf:surname "Arthur" ;
+    foaf:homepage <http://www.paularthur.com/> .
+
+:person:BaezJ
+    a foaf:Person ;
+    foaf:givenname "Jillian" ;
+    foaf:surname "Báez" ;
+    foaf:homepage <https://csivc.csi.cuny.edu/mediaculture/files/faculty/baez.html> .
+
+:person:BalkaE
+    a foaf:Person ;
+    owl:sameAs viaf:102712044 ;
+    foaf:givenname "Ellen" ;
+    foaf:surname "Balka" ;
+    foaf:homepage <http://www.sfu.ca/~ellenb/> .
+
+:person:BaradK
+    a foaf:Person ;
+    owl:sameAs viaf:18822822, wd:Q443431 ;
+    foaf:givenname "Karen" ;
+    foaf:surname "Barad" ;
+    foaf:homepage <https://people.ucsc.edu/~kbarad/> .
+
+:person:BenfordS
+    a foaf:Person ;
+    owl:sameAs viaf:21245837 ;
+    foaf:givenname "Steven D." ;
+    foaf:surname "Benford" ;
+    foaf:homepage <https://stevebenford.wordpress.com/> ;
+    foaf:workInfoHomepage <https://www.nottingham.ac.uk/computerscience/people/steve.benford> .
+
+:person:BernsteinM
+    a foaf:Person ;
+    # I think this viaf ID is right?
+    owl:sameAs viaf:212157024 ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Bernstein" ;
+    foaf:homepage <http://www.markbernstein.org/> .
+
+:person:BestS
+    a foaf:Person ;
+    owl:sameAs viaf:286613059 ;
+    foaf:givenname "Stephen" ;
+    foaf:surname "Best" ;
+    foaf:homepage <https://english.berkeley.edu/users/15> .
+
+:person:BielbyJ
+    a foaf:Person ;
+    owl:sameAs viaf:218147118097526340176 ;
+    foaf:givenname "Jared" ;
+    foaf:surname "Bielby" ;
+    foaf:homepage <https://www.jaredbielby.com/> .
+
+:person:BlairA
+    a foaf:Person ;
+    owl:sameAs wd:Q4766521, viaf:61677205 ;
+    foaf:givenname "Ann" ;
+    foaf:surname "Blair" ;
+    foaf:homepage <https://projects.iq.harvard.edu/ablair> .
+
+:person:BodeK
+    a foaf:Person ;
+    owl:sameAs viaf:91155370, orcid:0000-0003-3561-9332 ;
+    foaf:givenname "Katherine" ;
+    foaf:surname "Bode" ;
+    foaf:homepage <http://katherinebode.wordpress.com/> .
+
+:person:BogenD
+    a foaf:Person ;
+    foaf:givenname "David" ;
+    foaf:surname "Bogen" ;
+    foaf:homepage <https://www.mica.edu/About_MICA/People/Administration/David_Bogen.html> .
+
+:person:BolandR
+    a foaf:Person ;
+    owl:sameAs viaf:34597719 ;
+    foaf:givenname "Richard J." ;
+    foaf:surname "Boland" ;
+    bibo:suffixName "Jr." ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/richard-boland-jr> .
+
+:person:BolterJ
+    a foaf:Person ;
+    owl:sameAs viaf:94367912, wd:Q93037 ;
+    foaf:givenname "Jay David" ;
+    foaf:surname "Bolter" ;
+    foaf:homepage <http://www.jdbolter.net/> .
+
+:person:BoullierD
+    a foaf:Person ;
+    owl:sameAs wd:Q3035013, viaf:27061533 ;
+    foaf:givenname "Dominique" ;
+    foaf:surname "Boullier" ;
+    foaf:homepage <https://sites.google.com/site/dominiqueboullier/home> .
+
+:person:BowersM
+    a foaf:Person ;
+    owl:sameAs viaf:164544053 ;
+    foaf:givenname "John M." ;
+    foaf:surname "Bowers" ;
+    foaf:homepage <http://www.jmbowers.net/> ;
+    foaf:workInfoHomepage <http://www.ncl.ac.uk/sacs/staff/profile/johnbowers.html> .
+
+:person:BowkerG
+    a foaf:Person ;
+    owl:sameAs viaf:59236925, wd:Q3101066 ;
+    foaf:givenname "Geoffrey C." ;
+    foaf:surname "Bowker" ;
+    foaf:homepage <http://www.ics.uci.edu/~gbowker/> .
+
+:person:BratusS
+    a foaf:Person ;
+    owl:sameAs viaf:306149617058503751950 ;
+    foaf:givenname "Sergey" ;
+    foaf:surname "Bratus" ;
+    foaf:homepage <http://www.cs.dartmouth.edu/~sergey/> .
+
+:person:ButtonG
+    a foaf:Person ;
+    owl:sameAs viaf:41901360 ;
+    foaf:givenname "Graham" ;
+    foaf:surname "Button" .
+
+:person:CantwellSmithB
+    a foaf:Person ;
+    owl:sameAs viaf:61709255, wd:Q4963278 ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Cantwell Smith" .
+
+:person:CarrierM
+    a foaf:Person ;
+    owl:sameAs viaf:266650531, wd:Q1543817 ;
+    foaf:givenname "Martin" ;
+    foaf:surname "Carrier" ;
+    foaf:homepage <https://www.uni-bielefeld.de/philosophie/personen/carrier/> .
+
+:person:ChunW
+    a foaf:Person ;
+    owl:sameAs wd:Q23883713 ;
+    foaf:givenname "Wendy Hui Kyong" ;
+    foaf:surname "Chun" ;
+    foaf:homepage <http://www.brown.edu/Departments/MCM/people/chun/> .
+
+:person:CiborraC
+    a foaf:Person ;
+    owl:sameAs viaf:41910748, wd:Q5129344 ;
+    foaf:givenname "Claudio" ;
+    foaf:surname "Ciborra" ;
+    foaf:homepage <https://web.archive.org/web/20050301000649/http://personal.lse.ac.uk:80/ciborrac/> .
+
+:person:ClapinH
+    a foaf:Person ;
+    owl:sameAs viaf:10064544 ;
+    foaf:givenname "Hugh" ;
+    foaf:surname "Clapin" .
+
+:person:ClarkA
+    a foaf:Person ;
+    owl:sameAs viaf:34595527, wd:Q4760523 ;
+    foaf:givenname "Andy" ;
+    foaf:surname "Clark" ;
+    foaf:workInfoHomepage <http://www.ed.ac.uk/profile/andy-clark> .
+
+:person:ClarkeA
+    a foaf:Person ;
+    owl:sameAs viaf:56711028 ;
+    foaf:givenname "Adele E." ;
+    foaf:surname "Clarke" ;
+    foaf:workInfoHomepage <http://profiles.ucsf.edu/adele.clarke> .
+
+:person:CliffL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2803-4512, viaf:63035107, wd:Q13515697 ;
+    foaf:givenname "Clifford" ;
+    foaf:surname "Lynch" ;
+    foaf:workInfoHomepage <http://people.ischool.berkeley.edu/~clifford/> .
+
+:person:ComberR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3127-1917 ;
+    foaf:givenname "Rob" ;
+    foaf:surname "Comber" ;
+    foaf:homepage <http://robcomber.co.uk/> ;
+    foaf:workInfoHomepage <https://openlab.ncl.ac.uk/people/nrc42/> .
+
+:person:CopeJ
+    a foaf:Person ;
+    foaf:givenname "Jonathan" ;
+    foaf:surname "Cope" ;
+    foaf:homepage <https://jonathancope.commons.gc.cuny.edu/> .
+
+:person:CurtisB
+    a foaf:Person ;
+    owl:sameAs wd:Q16120588 ;
+    foaf:givenname "Bill" ;
+    foaf:surname "Curtis" ;
+    foaf:workInfoHomepage <http://it-cisq.org/bill-curtis-biography/> .
+
+:person:DadeRobertsonM
+    a foaf:Person ;
+    owl:sameAs viaf:130429885 ;
+    foaf:givenname "Martyn" ;
+    foaf:surname "Dade-Robertson" ;
+    foaf:workInfoHomepage <http://www.ncl.ac.uk/apl/staff/profile/martyndade-robertson.html> .
+
+:person:DastonL
+    a foaf:Person ;
+    owl:sameAs viaf:266876859, wd:Q529094 ;
+    foaf:givenname "Lorraine" ;
+    foaf:surname "Daston" ;
+    foaf:workInfoHomepage <https://www.mpiwg-berlin.mpg.de/en/users/ldaston> .
+
+:person:DayR
+    a foaf:Person ;
+    owl:sameAs viaf:71647760, wd:Q24196086 ;
+    foaf:givenname "Ronald E" ;
+    foaf:surname "Day" ;
+    foaf:homepage <http://info.slis.indiana.edu/~roday/> .
+
+:person:DennettD
+    a foaf:Person ;
+    owl:sameAs viaf:99825560, wd:Q215263 ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Dennett" ;
+    foaf:workInfoHomepage <http://ase.tufts.edu/cogstud/dennett/> .
+
+:person:DorkM
+    a foaf:Person ;
+    foaf:givenname "Marian" ;
+    foaf:surname "Dörk" ;
+    foaf:homepage <http://mariandoerk.de/> ;
+    foaf:workInfoHomepage <https://uclab.fh-potsdam.de/people/marian-doerk/> .
+
+:person:DreyfusH
+    a foaf:Person ;
+    owl:sameAs viaf:29544900, wd:Q971585 ;
+    foaf:givenname "Hubert L." ;
+    foaf:surname "Dreyfus" ;
+    foaf:homepage <http://socrates.berkeley.edu/~hdreyfus/> .
+
+:person:EdwardsP
+    a foaf:Person ;
+    owl:sameAs viaf:44518799 ;
+    foaf:givenname "Paul N." ;
+    foaf:surname "Edwards" ;
+    foaf:homepage <http://pne.people.si.umich.edu/> .
+
+:person:EmersonL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7085-2370, viaf:12016619 ;
+    foaf:givenname "Lori" ;
+    foaf:surname "Emerson" ;
+    foaf:homepage <https://loriemerson.net/> .
+
+:person:EvansS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5218-2190 ;
+    foaf:givenname "Sandra K." ;
+    foaf:surname "Evans" ;
+    foaf:homepage <https://sandrakevans.com/> .
+
+:person:FairthorneR
+    a foaf:Person ;
+    owl:sameAs viaf:274768820 ;
+    foaf:givenname "Robert A." ;
+    foaf:surname "Fairthorne" .
+
+:person:FeenbergA
+    a foaf:Person ;
+    owl:sameAs viaf:8513718, wd:Q2846598 ;
+    foaf:givenname "Andrew" ;
+    foaf:surname "Feenberg" ;
+    foaf:homepage <https://www.sfu.ca/~andrewf/> .
+
+:person:FeinbergM
+    a foaf:Person ;
+    owl:sameAs viaf:88462492 ;
+    foaf:givenname "Melanie" ;
+    foaf:surname "Feinberg" ;
+    foaf:homepage <https://ils.unc.edu/~mfeinber/> .
+
+:person:FiderlB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2882-5915 ;
+    foaf:givenname "Bradley" ;
+    foaf:surname "Fidler" ;
+    foaf:homepage <http://brfidler.com/> .
+
+:person:FinnM
+    a foaf:Person ;
+    foaf:givenname "Megan" ;
+    foaf:surname "Finn" ;
+    foaf:homepage <https://meganfinn.org/> .
+
+:person:FlynnP
+    a foaf:Person ;
+    owl:sameAs owl:0000-0003-4203-4199 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Flynn" ;
+    foaf:homepage <http://blogs.silmaril.ie/peter/>, <http://research.ucc.ie/profiles/H505/pflynn> .
+
+:person:FreemanJ
+    a foaf:Person ;
+    owl:sameAs viaf:39489658, wd:Q2403438 ;
+    foaf:givenname "Jo" ;
+    foaf:surname "Freeman" .
+
+:person:FurnerJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8839-9930, viaf:47494786 ;
+    foaf:givenname "Jonathan" ;
+    foaf:surname "Furner" ;
+    foaf:homepage <http://www.jonathanfurner.info/> .
+
+:person:GaleyA
+    a foaf:Person ;
+    owl:sameAs viaf:167429570 ;
+    foaf:givenname "Alan" ;
+    foaf:surname "Galey" ;
+    foaf:homepage <http://individual.utoronto.ca/alangaley/> .
+
+:person:GeigerR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7215-0532 ;
+    foaf:givenname "R. S." ;
+    foaf:surname "Geiger" ;
+    foaf:homepage <http://stuartgeiger.com/> .
+
+:person:GenoskoG
+    a foaf:Person ;
+    owl:sameAs viaf:11003213 ;
+    foaf:givenname "Gary" ;
+    foaf:surname "Genosko" ;
+    foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
+
+:person:GibsonJ
+    a foaf:Person ;
+    owl:sameAs viaf:12396941, wd:Q737823 ;
+    foaf:givenname "James Jerome" ;
+    foaf:surname "Gibson" .
+
+:person:GorichanazT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0226-7799 ;
+    foaf:givenname "Tim" ;
+    foaf:surname "Gorichanaz" ;
+    foaf:homepage <http://timgorichanaz.com/> .
+
+:person:GrauwinS
+    a foaf:Person ;
+    owl:sameAs viaf:284964592 ;
+    foaf:givenname "Sébastian" ;
+    foaf:surname "Grauwin" ;
+    foaf:homepage <http://www.sebastian-grauwin.com/> .
+
+:person:GriesemerJ
+    a foaf:Person ;
+    owl:sameAs wd:Q6141630, viaf:296627405 ;
+    foaf:givenname "James R." ;
+    foaf:surname "Griesemer" ;
+    foaf:homepage <http://griesemer.ucdavis.edu/> .
+
+:person:HansethO
+    a foaf:Person ;
+    owl:sameAs viaf:51131650 ;
+    foaf:givenname "Ole" ;
+    foaf:surname "Hanseth" ;
+    foaf:homepage <https://folk.uio.no/oleha/> .
+
+:person:HarawayD
+    a foaf:Person ;
+    owl:sameAs viaf:91665330, wd:Q253407 ;
+    foaf:givenname "Donna" ;
+    foaf:surname "Haraway" ;
+    foaf:homepage <https://people.ucsc.edu/~haraway/> .
+
+:person:HaylesN
+    a foaf:Person ;
+    owl:sameAs viaf:27082380, wd:Q4953004 ;
+    foaf:givenname "N. Katherine" ;
+    foaf:surname "Hayles" ;
+    foaf:homepage <http://nkhayles.com/> .
+
+:person:HealyK
+    a foaf:Person ;
+    owl:sameAs wd:Q6405389 ;
+    foaf:givenname "Kieran" ;
+    foaf:surname "Healy" ;
+    foaf:homepage <https://kieranhealy.org/> .
+
+:person:HildebrandtM
+    a foaf:Person ;
+    owl:sameAs viaf:65702387 ;
+    foaf:givenname "Mireille" ;
+    foaf:surname "Hildebrandt" ;
+    foaf:workInfoHomepage <https://www.vub.ac.be/LSTS/members/hildebrandt/> .
+
+:person:HjorlandB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9535-1732, viaf:33277453, wd:Q4916221 ;
+    foaf:givenname "Birger" ;
+    foaf:surname "Hjørland" .
+
+:person:HolmesB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Holmes" ;
+    foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
+
+:person:HuiY
+    a foaf:Person ;
+    owl:sameAs viaf:315173378 ;
+    foaf:givenname "Yuk" ;
+    foaf:surname "Hui" ;
+    foaf:homepage <http://www.digitalmilieu.net/yuk/> .
+
+:person:JacksonS
+    a foaf:Person ;
+    foaf:givenname "Steven" ;
+    foaf:surname "Jackson" ;
+    foaf:homepage <https://sjackson.infosci.cornell.edu/> .
+
+:person:JensenP
+    a foaf:Person ;
+    owl:sameAs wd:Q3359977, viaf:39559512 ;
+    foaf:givenname "Pablo" ;
+    foaf:surname "Jensen" ;
+    foaf:homepage <http://perso.ens-lyon.fr/pablo.jensen/> .
+
+:person:JoyceM
+    a foaf:Person ;
+    owl:sameAs viaf:12423304, wd:Q727045 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Joyce" ;
+    foaf:workInfoHomepage <http://faculty.vassar.edu/mijoyce/> .
+
+:person:KellyM
+    a foaf:Person ;
+    foaf:givenname "Matthew" ;
+    foaf:surname "Kelly" ;
+    foaf:workInfoHomepage <https://staffportal.curtin.edu.au/staff/profile/view/Matthew.Kelly> ;
+    foaf:publications <https://scholar.google.com/citations?user=RCbZXx4AAAAJ>  .
+
+:person:KientzJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7437-7861 ;
+    foaf:givenname "Julie A." ;
+    foaf:surname "Kientz" ;
+    foaf:homepage <http://www.juliekientz.com/> .
+
+:person:KoA
+    a foaf:Person ;
+    foaf:givenname "Andrew J." ;
+    foaf:surname "Ko" ;
+    foaf:homepage <http://faculty.washington.edu/ajko/> .
+
+:person:KreissD
+    a foaf:Person ;
+    owl:sameAs viaf:171118811, orcid:0000-0003-2533-195X ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Kreiss" ;
+    foaf:homepage <https://danielkreiss.com/> .
+
+:person:LagozeC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5281-5215 ;
+    foaf:givenname "Carl" ;
+    foaf:surname "Lagoze" ;
+    foaf:homepage <https://www.si.umich.edu/people/carl-lagoze> .
+
+:person:LathamK
+    a foaf:Person ;
+    foaf:givenname "Kiersten F." ;
+    foaf:surname "Latham" ;
+    foaf:homepage <http://kentstate.academia.edu/KierstenFLatham> .
+
+:person:LatourB
+    a foaf:Person ;
+    owl:sameAs wd:Q355237, viaf:109228530 ;
+    foaf:givenname "Bruno" ;
+    foaf:surname "Latour" ;
+    foaf:homepage <http://www.bruno-latour.fr/> .
+
+:person:LeahuL
+    a foaf:Person ;
+    owl:sameAs <http://dblp.org/pers/l/Leahu:Lucian> ;
+    foaf:givenname "Lucian" ;
+    foaf:surname "Leahu" ;
+    foaf:workInfoHomepage <https://pure.itu.dk/portal/en/persons/lucian-leahu(55d34e51-05c7-460b-9918-067e3401e65c).html> .
+
+:person:LevineC
+    a foaf:Person ;
+    foaf:givenname "Caroline" ;
+    foaf:surname "Levine" ;
+    foaf:workInfoHomepage <http://as.cornell.edu/caroline-levine-0> .
+
+:person:LocastoM
+    a foaf:Person ;
+    foaf:givenname "Michael E." ;
+    foaf:surname "Locasto" ;
+    foaf:homepage <http://pages.cpsc.ucalgary.ca/~locasto/> .
+
+:person:LoseeR
+    a foaf:Person ;
+    owl:sameAs viaf:93305170 ;
+    foaf:givenname "Robert" ;
+    foaf:surname "Losee" ;
+    foaf:homepage <https://ils.unc.edu/~losee/> .
+
+:person:LoveH
+    a foaf:Person ;
+    owl:sameAs viaf:48676613 ;
+    foaf:givenname "Heather" ;
+    foaf:surname "Love" ;
+    foaf:homepage <https://www.english.upenn.edu/people/heather-k-love> .
+
+:person:LynchM
+    a foaf:Person ;
+    owl:sameAs wd:Q3308334, viaf:90696806 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Lynch" .
+
+:person:LyytinenK
+    a foaf:Person ;
+    foaf:givenname "Kalle" ;
+    foaf:surname "Lyytinen" ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
+
+:person:MaiJ
+    a foaf:Person ;
+    owl:sameAs wd:Q28762574, orcid:0000-0002-3053-8675 ;
+    foaf:givenname "Jens-Erik" ;
+    foaf:surname "Mai" ;
+    foaf:homepage <http://www.jenserikmai.info/> .
+
+:person:MarcusS
+    a foaf:Person ;
+    owl:sameAs viaf:116550455, wd:Q18062238 ;
+    foaf:givenname "Sharon" ;
+    foaf:surname "Marcus" ;
+    foaf:homepage <http://english.columbia.edu/people/profile/393> .
+
+:person:MedinaE
+    a foaf:Person ;
+    owl:sameAs viaf:170241863 ;
+    foaf:givenname "Eden" ;
+    foaf:surname "Medina" ;
+    foaf:homepage <https://www.informatics.indiana.edu/edenm/> .
+
+:person:MonteiroE
+    a foaf:Person ;
+    owl:sameAs viaf:304926794 ;
+    foaf:givenname "Eric" ;
+    foaf:surname "Monteiro" ;
+    foaf:homepage <https://www.idi.ntnu.no/~ericm/> .
+
+:person:MooreD
+    a foaf:Person ;
+    owl:sameAs wd:Q5224125 ;
+    foaf:givenname "Darnell L." ;
+    foaf:surname "Moore" ;
+    foaf:homepage <http://darnellmoore.squarespace.com/> .
+
+:person:MylonasE
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-0215-4324 ;
+    foaf:givenname "Elli" ;
+    foaf:surname "Mylonas" ;
+    foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
+
+:person:NordmannA
+    a foaf:Person ;
+    owl:sameAs viaf:115023610 ;
+    foaf:givenname "Alfred" ;
+    foaf:surname "Nordmann" ;
+    foaf:workInfoHomepage <www.philosophie.tu-darmstadt.de/nordmann>.
+
+:person:ParikkaJ
+    a foaf:Person ;
+    owl:sameAs viaf:48673156, wd:Q6315657 ;
+    foaf:givenname "Jussi" ;
+    foaf:surname "Parikka" ;
+    foaf:homepage <https://jussiparikka.net/> .
+
+:person:PassiS
+    a foaf:Person ;
+    foaf:givenname "Samir" ;
+    foaf:surname "Passi" ;
+    foaf:homepage <http://www.samirpassi.com/> .
+
+:person:PattersonM
+    a foaf:Person ;
+    owl:sameAs wd:Q14105 ;
+    foaf:givenname "Meredith L." ;
+    foaf:surname "Patterson" .
+
+:person:PearceK
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3837-5305 ;
+    foaf:givenname "Katy E." ;
+    foaf:surname "Pearce" ;
+    foaf:homepage <http://www.katypearce.net/> .
+
+:person:PlantinJ
+    a foaf:Person ;
+    owl:sameAs viaf:299928249 ;
+    foaf:givenname "Jean-Christophe" ;
+    foaf:surname "Plantin" ;
+    foaf:homepage <http://www.lse.ac.uk/media@lse/WhosWho/AcademicStaff/JC-Plantin.aspx> .
+
+:person:PollockN
+    a foaf:Person ;
+    owl:sameAs viaf:9212031 ;
+    foaf:givenname "Neil" ;
+    foaf:surname "Pollock" ;
+    foaf:homepage <https://www.business-school.ed.ac.uk/about/people/84/Neil/Pollock> .
+
+:person:RandallD
+    a foaf:Person ;
+    foaf:givenname "D. W." ;
+    foaf:surname "Randall" ;
+    foaf:homepage <https://www.researchgate.net/profile/Dave_Randall> .
+
+:person:RibesD
+    a foaf:Person ;
+    owl:sameAs wd:Q29033066 ;
+    foaf:givenname "David" ;
+    foaf:surname "Ribes" ;
+    foaf:homepage <http://www.davidribes.com/> .
+
+:person:RiederB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2404-9277 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Rieder" ;
+    foaf:homepage <http://thepoliticsofsystems.net/> .
+
+:person:RoblesAndersonE
+    a foaf:Person ;
+    foaf:givenname "Erica" ;
+    foaf:surname "Robles-Anderson" ;
+    foaf:workInfoHomepage <http://steinhardt.nyu.edu/faculty/Erica_Robles-Anderson> .
+
+:person:RoseN
+    a foaf:Person ;
+    owl:sameAs viaf:69699, wd:Q539879 ;
+    foaf:givenname "Nikolas" ;
+    foaf:surname "Rose" ;
+    foaf:homepage <http://nikolasrose.com/> .
+
+:person:RouvroyA
+    a foaf:Person ;
+    owl:sameAs viaf:53597499 ;
+    foaf:givenname "Antoinette" ;
+    foaf:surname "Rouvroy" ;
+    foaf:publications <https://works.bepress.com/antoinette_rouvroy/> .
+
+:person:RueckerS
+    a foaf:Person ;
+    owl:sameAs viaf:165153459, orcid:0000-0003-0099-1687 ;
+    foaf:givenname "Stan" ;
+    foaf:surname "Ruecker" .
+
+:person:SackW
+    a foaf:Person ;
+    owl:sameAs viaf:190146284394615331476 ;
+    foaf:givenname "Warren" ;
+    foaf:surname "Sack" ;
+    foaf:homepage <https://people.ucsc.edu/~wsack/> ;
+    foaf:workInfoHomepage <http://film.ucsc.edu/faculty/warren_sack> .
+
+:person:SandvigC
+    a foaf:Person ;
+    owl:sameAs viaf:186145542448096640602, orcid:0000-0002-9025-536X ;
+    foaf:givenname "Christian" ;
+    foaf:surname "Sandvig" ;
+    foaf:homepage <http://www-personal.umich.edu/~csandvig/> .
+
+:person:SassamanL
+    a foaf:Person ;
+    owl:sameAs viaf:20913252, wd:Q523530 ;
+    foaf:givenname "Len" ;
+    foaf:surname "Sassaman" .
+
+:person:ShavitA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-4683-0857 ;
+    foaf:givenname "Ayelet" ;
+    foaf:surname "Shavit" ;
+    foaf:workInfoHomepage <http://english.telhai.ac.il/content/dr-ayelet-shavit> .
+
+:person:Shubina
+    a foaf:Person ;
+    foaf:givenname "Anna" ;
+    foaf:surname "Shubina" ;
+    foaf:homepage <http://www.cs.dartmouth.edu/~ashubina/> .
+
+:person:SiegertB
+    a foaf:Person ;
+    owl:sameAs viaf:66760106, wd:Q110715 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Siegert" .
+
+:person:SimmelG
+    a foaf:Person ;
+    owl:sameAs viaf:39384262, wd:Q76849 ;
+    foaf:givenname "Georg" ;
+    foaf:surname "Simmel" .
+
+:person:SmithB
+    a foaf:Person ;
+    owl:sameAs viaf:46432, wd:Q4858975 ;
+    foaf:givenname "Barbara Herrnstein" ;
+    foaf:surname "Smith" ;
+    foaf:homepage <https://english.duke.edu/people/barbara-h-smith> .
+
+:person:SpadeD
+    a foaf:Person ;
+    owl:sameAs viaf:170374343, wd:Q5246478 ;
+    foaf:givenname "Dean" ;
+    foaf:surname "Spade" ;
+    foaf:homepage <http://www.deanspade.net/> .
+
+:person:StarS
+    a foaf:Person ;
+    owl:sameAs wd:Q3505585, viaf:92811280 ;
+    foaf:givenname "Susan Leigh" ;
+    foaf:surname "Star" ;
+    foaf:homepage <http://lchc.ucsd.edu/People/lstar_bio.html> .
+
+:person:StennerP
+    a foaf:Person ;
+    owl:sameAs viaf:19559999 ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Stenner" ;
+    foaf:homepage <http://www.open.ac.uk/people/ps7476> .
+
+:person:SuchmanL
+    a foaf:Person ;
+    owl:sameAs viaf:13809022, wd:Q3266022 ;
+    foaf:givenname "Lucy" ;
+    foaf:surname "Suchman" ;
+    foaf:homepage <http://www.lancaster.ac.uk/sociology/about-us/people/lucy-suchman> .
+
+:person:SvenssonP
+    a foaf:Person ;
+    foaf:givenname "Patrik" ;
+    foaf:surname "Svensson" ;
+    foaf:homepage <http://patriksv.net/> .
+
+:person:TenenD
+    a foaf:Person ;
+    owl:sameAs viaf:4810150085884015060001 ;
+    foaf:givenname "Dennis" ;
+    foaf:surname "Tenen" ;
+    foaf:homepage <http://denten.plaintext.in/> .
+
+:person:TimmermansS
+    a foaf:Person ;
+    owl:sameAs viaf:8521206 ;
+    foaf:givenname "Stefan" ;
+    foaf:surname "Timmermans" ;
+    foaf:homepage <http://www.stefantimmermans.com/> .
+
+:person:TreemJ
+    a foaf:Person ;
+    foaf:givenname "Jeffrey W." ;
+    foaf:surname "Treem" ;
+    foaf:homepage <http://jeffreytreem.com/> .
+
+:person:TsingA
+    a foaf:Person ;
+    owl:sameAs viaf:10002035, wd:Q21821411 ;
+    foaf:givenname "Anna Lowenhaupt" ;
+    foaf:surname "Tsing" ;
+    foaf:workInfoHomepage <https://anthro.ucsc.edu/faculty/singleton.php?&singleton=true&cruz_id=atsing> .
+
+:person:TurnerF
+    a foaf:Person ;
+    owl:sameAs viaf:340652, wd:Q5496435 ;
+    foaf:givenname "Fred" ;
+    foaf:surname "Turner" ;
+    foaf:homepage <http://fredturner.stanford.edu/> .
+
+:person:VenuriniT
+    a foaf:Person ;
+    owl:sameAs viaf:304924835 ;
+    foaf:givenname "Tommaso" ;
+    foaf:surname "Venturini" ;
+    foaf:homepage <http://www.tommasoventurini.it/> .
+
+:person:VerhoevenD
+    a foaf:Person ;
+    owl:sameAs wd:Q5247794, viaf:48769109, orcid:0000-0003-3680-3561 ;
+    foaf:givenname "Deb" ;
+    foaf:surname "Verhoeven" ;
+    foaf:homepage <https://www.debverhoeven.com/> .
+
+:person:VitakJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9362-9032 ;
+    foaf:givenname "Jessica" ;
+    foaf:surname "Vitak" ;
+    foaf:homepage <https://jessicavitak.com/> .
+
+:person:WilliamsR
+    a foaf:Person ;
+    owl:sameAs wd:Q27252, viaf:60907032 ;
+    foaf:givenname "Robin" ;
+    foaf:surname "Williams" .
+
+:person:WinogradT
+    a foaf:Person ;
+    owl:sameAs viaf:36948575, wd:Q92826 ;
+    foaf:givenname "Terry" ;
+    foaf:surname "Winograd" ;
+    foaf:homepage <https://hci.stanford.edu/winograd/> .
+
+:person:WinthropYoungG
+    a foaf:Person ;
+    owl:sameAs viaf:119473466 ;
+    foaf:givenname "Geoffrey" ;
+    foaf:surname "Winthrop-Young" ;
+    foaf:workInfoHomepage <http://cenes.ubc.ca/people/geoffrey-winthrop-young/> .
+
+:person:WittkowerD
+    a foaf:Person ;
+    owl:sameAs viaf:63483601 ;
+    foaf:givenname "Dylan E." ;
+    foaf:surname "Wittkower" ;
+    foaf:workInfoHomepage <https://www.odu.edu/directory/people/d/dwittkow> .
+
+:person:WobbrockJ
+    a foaf:Person ;
+    foaf:givenname "Jacob O." ;
+    foaf:surname "Wobbrock" ;
+    foaf:homepage <https://faculty.washington.edu/wobbrock/> .
+
+:person:WojciechowskiJ
+    a foaf:Person ;
+    owl:sameAs viaf:73903272, wd:Q28354404 ;
+    foaf:givenname "Jerzy A." ;
+    foaf:surname "Wojciechowski" .
+
+:person:WolffK
+    a foaf:Person ;
+    owl:sameAs viaf:98310436, wd:Q67259 ;
+    foaf:givenname "Kurt H." ;
+    foaf:surname "Wolff" .
+
+:proceedings:CHI2014
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '14)" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 " 978-1-4503-2473-1" .
+
+:proceedings:CSCW2017
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
+    dc:date "2017" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-4335-0" .
+
+:proceedings:ConceptualBasis1974
+    a bibo:Proceedings ;
+    dc:title "Conceptual Basis of the Classification of Knowledge: Proceedings of the Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
+    dc:date "1974" ;
+    dc:publisher :publisher:Verlag ;
+    bibo:editor :person:WojciechowskiJ ;
+    bibo:editorList (
+        :person:WojciechowskiJ
+    ) .
+
+:proceedings:DIS2016
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2016 ACM Conference on Designing Interactive Systems" ;
+    dc:date "2016" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-4031-1" .
+
+:proceedings:HICSS2011
+    a bibo:Proceedings ;
+    dc:date "January 2011" ;
+    dc:title "Proceedings of the 2011 44th Hawaii International Conference on System Sciences" ;
+    dc:publisher :publisher:IEEComputerSociety .
+
+:proceedings:Hypertext1991
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the third annual ACM conference on Hypertext" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-0-89791-461-1" .
+
+:publisher:ACM
+    a :Publisher ;
+    foaf:name "ACM" ;
+    address:localityName "New York" .
+
+:publisher:FUP
+    a :Publisher ;
+    foaf:name "Fordham University Press" ;
+    address:localityName "New York" .
+
+:publisher:FreeAssociation
+    a :Publisher ;
+    foaf:name "Free Association Books" ;
+    address:localityName "London" .
+
+:publisher:FreePress
+    a :Publisher ;
+    foaf:name "The Free Press" ;
+    address:localityName "Glencoe, Illinois" .
+
+:publisher:IEEComputerSociety
+    a :Publisher ;
+    foaf:name "IEEE Computer Society" ;
+    address:localityName "Washington, DC" .
+
+:publisher:IEEE
+    a :Publisher ;
+    foaf:name "IEEE" ;
+    address:localityName "Piscataway" .
+
+:publisher:MIT
+    a :Publisher ;
+    foaf:name "MIT Press" ;
+    address:localityName "Cambridge, MA" .
+
+:publisher:NorthHollandPublishingCo
+    a :Publisher ;
+    foaf:name "North Holland Publishing Co." ;
+    address:localityName "Amsterdam" .
+
+:publisher:OUP
+    a :Publisher ;
+    foaf:name "Oxford University Press" ;
+    address:localityName "Oxford" .
+
+:publisher:PUP
+    a :Publisher ;
+    foaf:name "Princeton University Press" ;
+    address:localityName "Princeton, NJ" .
+
+:publisher:PsychologyPress
+    a :Publisher ;
+    foaf:name "Psychology Press" ;
+    address:localityName "New York" .
+
+:publisher:Routledge
+    a :Publisher ;
+    foaf:name "Routledge" ;
+    address:localityName "Abingdon" .
+
+:publisher:SUNY
+    a :Publisher ;
+    foaf:name "State University of New York Press" ;
+    address:localityName "Albany" .
+
+:publisher:SUP
+    a :Publisher ;
+    foaf:name "Stanford University Press" ;
+    address:localityName "Stanford, CA" .
+
+:publisher:Spring
+    a :Publisher ;
+    foaf:name "Springer" ;
+    address:localityName "Dordrecht" .
+
+:publisher:SpringerFW
+    a :Publisher ;
+    foaf:name "Springer Fachmedien Wiesbaden" ;
+    address:localityName "Wiesbaden" .
+
+:publisher:UMP
+    a :Publisher ;
+    foaf:name "University of Minnesota Press" ;
+    address:localityName "Minneapolis" .
+
+:publisher:Verlag
+    a :Publisher ;
+    foaf:name "Verlag Dokumentation" ;
+    address:localityName "Pullach, Germany" .
+
+:reading:Abbate2017
+    a :Reading, bibo:AcademicArticle ;
+    # owl:sameAs <http://doi.org/10.1080/24701475.2017.1305836> ;
+    dc:title "What and where is the Internet? (Re)defining Internet histories" ;
+    dc:creator :person:AbbateJ ;
+    bibo:authorList (
+        :person:AbbateJ
+    ) ;
+    dc:isPartOf :journal:InternetHistories:1:1-2 ;
+    bibo:pages "8-14" ;
+    # DOI doesn't actually lead to the article, so just include the URI
+    bibo:uri "http://www.tandfonline.com/doi/abs/10.1080/24701475.2017.1305836" .
+
+:reading:Acker2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2015.68> ;
+    dc:title "Toward a Hermeneutics of Data" ;
+    dc:creator :person:AckerA ;
+    bibo:authorList (
+        :person:AckerA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "July 2015" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "3" ;
+        bibo:volume "37"
+    ] ;
+    bibo:pages "70-75" ;
+    bibo:doi "10.1109/MAHC.2015.68" .
+
+:reading:Agre1994a
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01972243.1994.9960162> ;
+    dc:title "Surveillance and capture: Two models of privacy" ;
+    bibo:shortTitle "Surveillance and capture" ;
+    dc:creator :person:AgreP ;
+    bibo:authorList (
+        :person:AgreP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "April 1, 1994" ;
+        dc:isPartOf :journal:InformationSociety ;
+        bibo:issue "2" ;
+        bibo:volume "10"
+    ] ;
+    bibo:pages "101-127" ;
+    bibo:doi "10.1080/01972243.1994.9960162" .
+
+:reading:Agre1994b
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305840> ;
+    dc:title "Accountability and discipline: A comment on Suchman and Winograd" ;
+    bibo:shortTitle "Accountability and discipline" ;
+    dc:creator :person:AgreP ;
+    bibo:authorList (
+        :person:AgreP
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "31-35" ;
+    bibo:doi "10.1007/BF01305840" .
+
+:reading:Alcoff1997
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1017/S0269889700002556> ;
+    dc:title "Immanent  Truth" ;
+    dc:creator :person:AlcoffL ;
+    bibo:authorList (
+        :person:AlcoffL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1997" ;
+        dc:isPartOf :journal:ScienceInContext ;
+        bibo:volume "10" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "97-112" ;
+    bibo:doi "10.1017/S0269889700002556" .
+
+:reading:Askey2017
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-02
+    a :Reading ;
+    owl:sameAs <https://doi.org/10.18665/sr.303501> ;
+    dc:title "Finding a Way from the Margins to the Middle: Library Information Technology, Leadership, and Culture" ;
+    bibo:doi "https://doi.org/10.18665/sr.303501" .
+
+:reading:Baez2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0082> ;
+    dc:title "Structurelessness 2.0" ;
+    dc:creator :person:BaezJ ;
+    bibo:authorList (
+        :person:BaezJ
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "253-256" ;
+    bibo:doi "10.1353/wsq.2013.0082" .
+
+:reading:Barad2003
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/345321> ;
+    dc:title "Posthumanist performativity: Toward an understanding of how matter comes to matter" ;
+    bibo:shortTitle "Posthumanist performativity" ;
+    dc:creator :person:BaradK ;
+    bibo:authorList (
+        :person:BaradK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2003" ;
+        dc:isPartOf :journal:Signs ;
+        bibo:issue "3" ;
+        bibo:volume "28"
+    ] ;
+    bibo:pages "801–831" ;
+    bibo:doi "10.1086/345321" .
+
+:reading:Bernstein1991
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/122974.122999> ;
+    dc:title "Architectures for volatile hypertext" ;
+    dc:creator :person:BernsteinM, :person:BolterJ, :person:JoyceM, :person:MylonasE ;
+    bibo:authorList (
+        :person:BernsteinM
+        :person:BolterJ
+        :person:JoyceM
+        :person:MylonasE
+    ) ;
+    bibo:reproducedIn :proceedings:Hypertext1991 ;
+    bibo:presentedAt :conference:Hypertext1991 ;
+    bibo:pages "243-260" ;
+    bibo:doi "10.1145/122974.122999" .
+
+:reading:Blair2004
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/427303> ;
+    dc:title "Note Taking as an Art of Transmission" ;
+    dc:creator :person:BlairA ;
+    bibo:authorList (
+        :person:BlairA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "09/2004" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "1" ;
+        bibo:volume "31"
+    ] ;
+    bibo:pages "85-107" ;
+    bibo:doi "10.1086/427303" .
+
+:reading:Bogen1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305851> ;
+    dc:title "“Do Winograd and Flores have politics?”" ;
+    bibo:shortTitle "“Do Winograd and Flores have politics?" ;
+    dc:creator :person:BogenD ;
+    bibo:authorList (
+        :person:BogenD
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "79-83" ;
+    bibo:doi "10.1007/BF01305851" .
+
+:reading:Boland2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1057/s41303-017-0043-4> ;
+    dc:title "The limits to language in doing systems design" ;
+    dc:creator :person:BolandR, :person:LyytinenK ;
+    bibo:authorList (
+        :person:BolandR
+        :person:LyytinenK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:EJIS ;
+        dc:date "May 2017" ;
+        bibo:volume "26" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "248-259" ;
+    bibo:doi "10.1057/s41303-017-0043-4" .
+
+:reading:Bowers1991
+    a :Reading, bibo:BookSection ;
+    dc:title "The Janus Faces of Design: Some Critical Questions for CSCW" ;
+    dc:creator :person:BowersM ;
+    bibo:authorList (
+        :person:BowersM
+    ) ;
+    dc:isPartOf :volume:Bowers1991 ;
+    bibo:pages "333-350" .
+
+:reading:Bratus2011
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Exploit Programming: From Buffer Overflows to “Weird Machines” and Theory of Computation" ;
+    bibo:shortTitle "Exploit Programming" ;
+    dc:creator :person:BratusS, :person:LocastoM, :person:PattersonM, :person:SassamanL, :person:Shubina ;
+    bibo:authorList (
+        :person:BratusS
+        :person:LocastoM
+        :person:PattersonM
+        :person:SassamanL
+        :person:Shubina
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2011" ;
+        dc:isPartOf :journal:login ;
+        bibo:issue "6" ;
+        bibo:volume "36"
+    ] ;
+    bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
+
+:reading:Button1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305842> ;
+    dc:title "What's wrong with speech-act theory" ;
+    dc:creator :person:ButtonG ;
+    bibo:authorList (
+        :person:ButtonG
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "39-42" ;
+    bibo:doi "10.1007/BF01305842" .
+
+:reading:Chun2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/elh.2016.0011> ;
+    dc:title "Big Data as Drama" ;
+    dc:creator :person:ChunW ;
+    bibo:authorList (
+        :person:ChunW
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016/06/22" ;
+        dc:isPartOf :journal:ELH ;
+        bibo:issue "2" ;
+        bibo:volume "83"
+    ] ;
+    bibo:pages "363-382" ;
+    bibo:doi "10.1353/elh.2016.0011" .
+
+:reading:Ciborra2004
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780199275267.001.0001> ;
+    dc:title "The labyrinths of information: Challenging the wisdom of systems" ;
+    bibo:shortTitle "The labyrinths of information" ;
+    dc:creator :person:CiborraC ;
+    bibo:authorList (
+        :person:CiborraC
+    ) ;
+    dc:date "2004" ;
+    dc:publisher :publisher:OUP ;
+    bibo:isbn13 "978-0-19-927526-7" ;
+    bibo:doi "10.1093/acprof:oso/9780199275267.001.0001" .
+
+:reading:Clark1996
+    a :Reading, bibo:BookSection ;
+    dc:title "Happy Couplings: Emergence and Explanatory Interlock" ;
+    dc:creator :person:ClarkA ;
+    bibo:authorList (
+        :person:ClarkA
+    ) ;
+    dc:isPartOf :volume:Kelly2016 ;
+    bibo:pages "262-281" .
+
+:reading:Cope2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.24242/jclis.v1i1.30> ;
+    dc:title "Four Theses for Critical Library and Information Studies: A Manifesto" ;
+    bibo:shortTitle "Four Theses for Critical Library and Information Studies" ;
+    dc:creator :person:CopeJ ;
+    bibo:authorList (
+        :person:CopeJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017/01/31" ;
+        dc:isPartOf :journal:JCLIS ;
+        bibo:issue "1" ;
+        bibo:volume "1"
+    ] ;
+    bibo:doi "10.24242/jclis.v1i1.30" .
+
+:reading:Curtis1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305847> ;
+    dc:title "Can speech acts walk the talk?" ;
+    dc:creator :person:CurtisB ;
+    bibo:authorList (
+        :person:CurtisB
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "61-64" ;
+    bibo:doi "10.1007/BF01305847" .
+
+:reading:Daston2017
+    a :Reading, :Lecture ;
+    dc:title "Algorithms before computers: Patterns, recipes, and rules" ;
+    dc:creator :person:DastonL ;
+    bibo:authorList (
+        :person:DastonL
+    ) ;
+    dc:created "19 April 2017" ;
+    dc:issued "28 April 2017" ;
+    dc:format "Video" ;
+    bibo:uri "https://www.youtube.com/watch?v=pqoSMWnWTwA" .
+
+:reading:Day2014
+    a :Reading, bibo:Book ;
+    dc:title "Indexing It All: The Subject in the Age of Documentation, Information, and Data" ;
+    dc:creator :person:DayR ;
+    bibo:authorList (
+        :person:DayR
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:MIT .
+
+:reading:Dennett2002
+    a :Reading, bibo:BookSection ;
+    dc:title "Brian Cantwell Smith on evolution, objectivity, and intentionality" ;
+    dc:creator :person:DennettD, :person:CantwellSmithB ;
+    bibo:authorList (
+        :person:DennettD
+        :person:CantwellSmithB
+    ) ;
+    dc:isPartOf :volume:Clapin2002 ;
+    bibo:pages "222-292" .
+
+:reading:Dork2014
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2556288.2557083> ;
+    dc:title "Monadic exploration: seeing the whole through its parts" ;
+    dc:creator :person:DorkM, :person:ComberR, :person:DadeRobertsonM ;
+    bibo:authorList (
+        :person:DorkM
+        :person:ComberR
+        :person:DadeRobertsonM
+    ) ;
+    bibo:reproducedIn :proceedings:CHI2014 ;
+    bibo:presentedAt :conference:CHI2014 ;
+    bibo:pages "1535-1544" ;
+    bibo:doi "10.1145/2556288.2557083" .
+
+:reading:Dreyfus2007
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1016/j.artint.2007.10.012> ;
+    dc:title "Why Heideggerian AI failed and how fixing it would require making it more Heideggerian" ;
+    dc:creator :person:DreyfusH ;
+    bibo:authorList (
+        :person:DreyfusH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 1, 2007" ;
+        dc:isPartOf :journal:AI ;
+        bibo:issue "18" ;
+        bibo:volume "171"
+    ] ;
+    bibo:pages "1137-1160" ;
+    bibo:doi "10.1016/j.artint.2007.10.012" .
+
+:reading:Emerson2014
+    a :Reading, bibo:Book ;
+    dc:title "Reading writing interfaces: From the digital to the bookbound" ;
+    dc:creator :person:EmersonL ;
+    bibo:authorList (
+        :person:EmersonL
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:UMP .
+
+:reading:Evans2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/jcc4.12180> ;
+    dc:title "Explicating Affordances: A Conceptual Framework for Understanding Affordances in Communication Research" ;
+    dc:creator :person:EvansS, :person:PearceK, :person:VitakJ, :person:TreemJ ;
+    bibo:authorList (
+        :person:EvansS
+        :person:PearceK
+        :person:VitakJ
+        :person:TreemJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "26 December 2016" ;
+        dc:isPartOf :journal:JCC ;
+        bibo:volume "22" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "35-52" ;
+    bibo:doi "10.1111/jcc4.12180" .
+
+:reading:Fairthorne1974
+    a :Reading, :ConferencePaper ;
+    dc:title "Temporal structure in bibliographic classification" ;
+    dc:creator :person:FairthorneR ;
+    bibo:authorList (
+        :person:FairthorneR
+    ) ;
+    bibo:presentedAt :conference:OCCBCK ;
+    bibo:reproducedIn :proceedings:ConceptualBasis1974 ;
+    bibo:pages "404-415" .
+
+:reading:Feenberg2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/08935696.2015.1076968> ;
+    dc:title "Lukács's Theory of Reification and Contemporary Social Movements" ;
+    dc:creator :person:FeenbergA ;
+    bibo:authorList (
+        :person:FeenbergA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "October 2, 2015" ;
+        dc:isPartOf :journal:RethinkingMarxism ;
+        bibo:issue "4" ;
+        bibo:volume "27"
+    ] ;
+    bibo:pages "490-507" ;
+    bibo:doi "10.1080/08935696.2015.1076968" .
+
+:reading:Feinberg2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-03-2016-0030> ;
+    dc:title "Reading databases: slow information interactions beyond the retrieval paradigm" ;
+    bibo:shortTitle "Reading databases" ;
+    dc:creator :person:FeinbergM ;
+    bibo:authorList (
+        :person:FeinbergM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "February 22, 2017" ;
+        dc:isPartOf :journal:JDOC ;
+        bibo:issue "2" ;
+        bibo:volume "73"
+    ] ;
+    bibo:pages "336-356" ;
+    bibo:doi "10.1108/JD-03-2016-0030" .
+
+:reading:Fidler2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23660> ;
+    dc:title "Metadata, infrastructure, and computer-mediated communication in historical perspective" ;
+    dc:creator :person:FidlerB, :person:AckerA ;
+    bibo:authorList (
+        :person:FidlerB
+        :person:AckerA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "February 1, 2017" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:issue "2" ;
+        bibo:volume "68"
+    ] ;
+    bibo:pages "412-422" ;
+    bibo:doi "10.1002/asi.23660" .
+
+:reading:Flynn1997
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/(SICI)1097-4571(199707)48:7%3c614::AID-ASI8%3e3.0.CO;2-W> ;
+    dc:title "W[h]ither the web? The extension or replacement of HTML" ;
+    bibo:shortTitle "W[h]ither the web?" ;
+    dc:creator :person:FlynnP ;
+    bibo:authorList (
+        :person:FlynnP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "July 1, 1997" ;
+        dc:isPartOf :journal:JASIS ;
+        bibo:issue "7" ;
+        bibo:volume "48"
+    ] ;
+    bibo:pages "614-621" ;
+    bibo:doi "10.1002/(SICI)1097-4571(199707)48:7<614::AID-ASI8>3.0.CO;2-W" .
+
+:reading:Freeman2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0072> ;
+    dc:title "The Tyranny of Structurelessness" ;
+    dc:creator :person:FreemanJ ;
+    bibo:authorList (
+        :person:FreemanJ
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "231-246" ;
+    bibo:doi "10.1353/wsq.2013.0072" .
+
+:reading:Furner2016
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1007/978-3-658-14681-8_17> ;
+    dc:title "“Data”: The data" ;
+    bibo:shortTitle "“Data”" ;
+    dc:creator :person:FurnerJ ;
+    bibo:authorList (
+        :person:FurnerJ
+    ) ;
+    dc:isPartOf :volume:Kelly2016 ;
+    bibo:pages "287-306" ;
+    bibo:doi "10.1007/978-3-658-14681-8_17" .
+
+:reading:Galey2010
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1093/llc/fqq021> ;
+    dc:title "How a prototype argues" ;
+    dc:creator :person:GaleyA, :person:RueckerS ;
+    bibo:authorList (
+        :person:GaleyA
+        :person:RueckerS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2010/12/01" ;
+        dc:isPartOf :journal:LLC ;
+        bibo:issue "4" ;
+        bibo:volume "25"
+    ] ;
+    bibo:pages "405-424" ;
+    bibo:doi "10.1093/llc/fqq021" .
+
+:reading:Geiger2011
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/HICSS.2011.455> ;
+    dc:title "Trace Ethnography: Following Coordination through Documentary Practices" ;
+    bibo:shortTitle "Trace Ethnography" ;
+    dc:creator :person:GeigerR, :person:RibesD ;
+    bibo:authorList (
+        :person:GeigerR
+        :person:RibesD
+    ) ;
+    bibo:reproducedIn :proceedings:HICSS2011 ;
+    bibo:pages "1-10" ;
+    bibo:doi "10.1109/HICSS.2011.455" ;
+    bibo:presentedAt [
+        dc:title "2011 44th Hawaii International Conference on System Sciences" ;
+        a bibo:Conference
+    ] .
+
+:reading:Genosko2016
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "A-signifying semiotics" ;
+    dc:creator :person:GenoskoG ;
+    bibo:authorList (
+        :person:GenoskoG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2008" ;
+        dc:isPartOf :journal:PJOS ;
+        bibo:volume "2" ;
+        bibo:issue "1"
+    ] ;
+    bibo:uri "http://journals.lub.lu.se/ojs/index.php/pjos/article/view/8822" .
+
+:reading:Gibson1979
+    # FIXME: make this a chapter, not the whole book
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781315740218> ;
+    dc:title "The ecological approach to visual perception" ;
+    dc:creator :person:GibsonJ ;
+    bibo:authorList (
+        :person:GibsonJ
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PsychologyPress ;
+    bibo:isbn13 "978-1-315-74021-8" ;
+    bibo:doi "10.4324/9781315740218" .
+
+:reading:Gorichanaz2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-01-2016-0007> ;
+    dc:title "Document phenomenology: a framework for holistic analysis" ;
+    bibo:shortTitle "Document phenomenology" ;
+    dc:creator :person:GorichanazT, :person:LathamK ;
+    bibo:authorList (
+        :person:GorichanazT
+        :person:LathamK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:JDOC ;
+        bibo:volume "72" ;
+        bibo:issue "6"
+    ] ;
+    bibo:pages "1114-1133" ;
+    bibo:doi "10.1108/JD-01-2016-0007" .
+
+:reading:Gorichanaz2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.24242/jclis.v1i1.7> ;
+    dc:title "Minting the Obverse: Library and Information Studies as a One-Sided Coin" ;
+    bibo:shortTitle "Minting the Obverse" ;
+    dc:creator :person:GorichanazT ;
+    bibo:authorList (
+        :person:GorichanazT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017/01/31" ;
+        dc:isPartOf :journal:JCLIS ;
+        bibo:issue "1" ;
+        bibo:volume "1"
+    ] ;
+    bibo:doi "10.24242/jclis.v1i1.7" .
+
+:reading:Griesemer2016
+    a :Reading, bibo:BookSection ;
+    dc:title "Sharing Spaces, Crossing Boundaries" ;
+    dc:creator :person:GriesemerJ ;
+    bibo:authorList (
+        :person:GriesemerJ
+    ) ;
+    dc:isPartOf :volume:Bowker2015 ;
+    bibo:pages "201-218" .
+
+:reading:Haraway2016
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Tentacular Thinking: Anthropocene, Capitalocene, Chthulucene" ;
+    dc:creator :person:HarawayD ;
+    bibo:authorList (
+        :person:HarawayD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+    dc:date "September 2016" ;
+        dc:isPartOf :journal:eflux ;
+        bibo:volume "75"
+    ] ;
+    bibo:uri "http://www.e-flux.com/journal/75/67125/tentacular-thinking-anthropocene-capitalocene-chthulucene/" .
+
+:reading:Hayles2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/688293> ;
+    dc:title "Cognitive Assemblages: Technical Agency and Human Interactions" ;
+    bibo:shortTitle "Cognitive Assemblages" ;
+    dc:creator :person:HaylesN ;
+    bibo:authorList (
+        :person:HaylesN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 1, 2016" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "1" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "32-55" ;
+    bibo:doi "10.1086/688293" .
+
+:reading:Healy2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0735275117709046> ;
+    dc:title "Fuck Nuance" ;
+    dc:creator :person:HealyK ;
+    bibo:authorList (
+        :person:HealyK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017" ;
+        dc:isPartOf :journal:SociologicalTheory ;
+        bibo:volume "35" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "118-127" ;
+    bibo:doi "10.1177/0735275117709046" .
+
+:reading:Hjorland2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23250> ;
+    dc:title "Classical databases and knowledge organization: A case for boolean retrieval and human decision-making during searches" ;
+    bibo:shortTitle "Classical databases and knowledge organization" ;
+    dc:creator :person:HjorlandB ;
+    bibo:authorList (
+        :person:HjorlandB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "August 1, 2015" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:issue "8" ;
+        bibo:volume "66"
+    ] ;
+    bibo:pages "1559-1575" ;
+    bibo:doi "10.1002/asi.23250" .
+
+:reading:Holmes2002
+    # FIXME: Metadata here could definitely be amended/cleaned up... Kind of a
+    # confusing case.
+    a :Reading, bibo:AcademicArticle ; # FIXME: This is a web journal, maybe not an "Academic" journal?
+    dc:title "The flexible personality: For a new cultural critique" ;
+    dc:creator :person:HolmesB ;
+    bibo:authorList (
+        :person:HolmesB
+    ) ;
+    dc:date "January 2002" ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:transversals
+    ] ;
+    bibo:uri "http://eipcp.net/transversal/1106/holmes/en" .
+
+:reading:Hui2016
+    a :Reading, bibo:Book ;
+    dc:title "On the Existence of Digital Objects" ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) ;
+    dc:date "2016" ;
+    dc:language "English" ;
+    dc:publisher :publisher:UMP ;
+    bibo:isbn13 "978-1-4529-4993-2" ;
+    bibo:uri "https://muse.jhu.edu/book/45372" ;
+    bibo:doi: "10.5749/minnesota/9780816695515.001.0001" .
+
+:reading:Kreiss2011
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1461444810370951> ;
+    dc:title "The limits of peer production: Some reminders from Max Weber for the network society" ;
+    bibo:shortTitle "The limits of peer production" ;
+    dc:creator :person:KreissD, :person:FinnM, :person:TurnerF ;
+    bibo:authorList (
+        :person:KreissD
+        :person:FinnM
+        :person:TurnerF
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "03/2011" ;
+        dc:isPartOf :journal:NewMediaSociety ;
+        bibo:issue "2" ;
+        bibo:volume "13"
+    ] ;
+    bibo:pages "243-259" ;
+    bibo:doi "10.1177/1461444810370951" .
+
+:reading:Latour2012
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/j.1468-4446.2012.01428.x> ;
+    dc:title "‘The whole is always smaller than its parts’ – a digital test of Gabriel Tardes' monads" ;
+    dc:creator :person:LatourB, :person:JensenP, :person:VenuriniT, :person:GrauwinS, :person:BoullierD ;
+    bibo:authorList (
+        :person:LatourB
+        :person:JensenP
+        :person:VenuriniT
+        :person:GrauwinS
+        :person:BoullierD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 1, 2012" ;
+        dc:isPartOf :journal:BJS ;
+        bibo:issue "4" ;
+        bibo:volume "63"
+    ] ;
+    bibo:pages "590-615" ;
+    bibo:doi "10.1111/j.1468-4446.2012.01428.x" .
+
+:reading:Leahu2016
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2901790.2901840> ;
+    dc:title "Ontological Surprises: A Relational Perspective on Machine Learning" ;
+    bibo:shortTitle "Ontological Surprises" ;
+    dc:creator :person:LeahuL ;
+    bibo:authorList (
+        :person:LeahuL
+    ) ;
+    bibo:presentedAt :conference:DIS2016 ;
+    bibo:reproducedIn :proceedings:DIS2016 ;
+    bibo:pages "182–186" ;
+    bibo:doi "10.1145/2901790.2901840" .
+
+:reading:Levine2015
+    a :Reading, bibo:Book ;
+    dc:title "Forms: Whole, rhythm, hierarchy, network" ;
+    dc:creator :person:LevineC ;
+    bibo:authorList (
+        :person:LevineC
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PUP .
+
+:reading:Losee2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23544> ;
+    dc:title "Thesaurus structure, descriptive parameters, and scale" ;
+    dc:creator :person:LoseeR ;
+    bibo:authorList (
+        :person:LoseeR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "13 May 2015" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:volume "67" ;
+        bibo:issue "9" ;
+    ] ;
+    bibo:doi "10.1002/asi.23544" ;
+    bibo:pages "2156-2165" .
+
+:reading:Lynch1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305848> ;
+    dc:title "On making explicit" ;
+    dc:creator :person:LynchM ;
+    bibo:authorList (
+        :person:LynchM
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "65-68" ;
+    bibo:doi "10.1007/BF01305848" .
+
+:reading:Lynch2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.5210/fm.v22i12.8097> ;
+    dc:title "Stewardship in the “Age of Algorithms”" ;
+    dc:creator :perons:CliffL ;
+    bibo:authorList (
+        :person:CliffL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "4 December 2017" ;
+        dc:isPartOf :journal:FirstMonday ;
+        bibo:volume "22" ;
+        bibo:issue "12"
+    ] ;
+    bibo:doi "10.5210/fm.v22i12.8097" .
+
+:reading:Mai2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01972243.2016.1153010> ;
+    dc:title "Big data privacy: The datafication of personal information" ;
+    bibo:shortTitle "Big data privacy" ;
+    dc:creator :person:MaiJ ;
+    bibo:authorList (
+        :person:MaiJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "May 26, 2016" ;
+        dc:isPartOf :journal:InformationSociety ;
+        bibo:issue "3" ;
+        bibo:volume "32" ;
+    ] ;
+    bibo:pages "192-199" ;
+    bibo:doi "10.1080/01972243.2016.1153010" .
+
+:reading:Marcus2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1525/rep.2016.135.1.1> ;
+    dc:title "Building a Better Description" ;
+    dc:creator :person:MarcusS, :person:LoveH, :person:BestS ;
+    bibo:authorList (
+        :person:MarcusS
+        :person:LoveH
+        :person:BestS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016/08/01" ;
+        dc:isPartOf :journal:representations ;
+        bibo:issue "1" ;
+        bibo:volume "135"
+    ] ;
+    bibo:pages "1-21" ;
+    bibo:doi "10.1525/rep.2016.135.1.1" .
+
+:reading:Medina2011
+    a :Reading, bibo:Book ;
+    dc:title "Introduction: Political and Technological Visions" ;
+    dc:creator :person:MedinaE ;
+    bibo:authorList (
+        :person:MedinaE
+    ) ;
+    dc:date "2011" ;
+    dc:publisher :publisher:MIT .
+
+:reading:Monteiro2012
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s10606-012-9167-1> ;
+    dc:title "From Artefacts to Infrastructures" ;
+    dc:creator :person:MonteiroE, :person:PollockN, :person:HansethO, :person:WilliamsR ;
+    bibo:authorList (
+        :person:MonteiroE
+    :person:PollockN
+    :person:HansethO
+    :person:WilliamsR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2012/06/06" ;
+        dc:isPartOf :journal:CSCW ;
+        bibo:issue "4-6" ;
+        bibo:volume "22"
+    ] ;
+    bibo:pages "575-607" ;
+    bibo:doi "10.1007/s10606-012-9167-1" .
+
+:reading:Moore2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0087> ;
+    dc:title "Structurelessness, Structure, and Queer Movements" ;
+    dc:creator :person:MooreD ;
+    bibo:authorList (
+        :person:MooreD
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "257-260" ;
+    bibo:doi "10.1353/wsq.2013.0087" .
+
+:reading:Nofre2014
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-09
+    a :Reading .
+
+:reading:Parikka2015
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.5749/minnesota/9780816695515.001.0001> ;
+    dc:title "A Geology of Media" ;
+    dc:creator :person:ParikkaJ ;
+    bibo:authorList (
+        :person:ParikkaJ
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:UMP ;
+    bibo:isbn13 "978-1-4529-4456-2" ;
+    bibo:doi "10.5749/minnesota/9780816695515.001.0001" .
+
+:reading:Passi2017
+    a :Reading, :ConferencePaper ;
+    # Add an additional field for "Online first" article (?)
+    owl:sameAs <http://doi.org/10.1145/2998181.2998331> ;
+    dc:title "Data Vision: Learning to See Through Algorithmic Abstraction" ;
+    bibo:shortTitle "Data Vision" ;
+    dc:creator :person:PassiS, :person:JacksonS ;
+    bibo:authorList (
+        :person:PassiS
+        :person:JacksonS
+    ) ;
+    bibo:reproducedIn :proceedings:CSCW2017 ;
+    bibo:presentedAt :conference:CSCW2017 ;
+    bibo:pages "2436–2447" ;
+    bibo:doi "10.1145/2998181.2998331" .
+
+:reading:Plantin2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1461444816661553> ;
+    dc:title "Infrastructure studies meet platform studies in the age of Google and Facebook" ;
+    dc:creator :person:PlantinJ, :person:LagozeC, :person:EdwardsP, :person:SandvigC ;
+    bibo:authorList (
+        :person:PlantinJ
+    :person:LagozeC
+    :person:EdwardsP
+    :person:SandvigC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:NewMediaSociety ;
+    ] ;
+    bibo:doi "10.1177/1461444816661553" .
+
+:reading:Poitou1997
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-30
+    a :Reading .
+
+:reading:Randall1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305844> ;
+    dc:title "A comment on Lucy Suchman's “Do categories have politics?”" ;
+    bibo:shortTitle "A comment on Lucy Suchman's “do categories have politics?" ;
+    dc:creator :person:RandallD ;
+    bibo:authorList (
+        :person:RandallD
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "47-50" ;
+    bibo:doi "10.1007/BF01305844" .
+
+:reading:Rieder2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/1369118X.2016.1181195> ;
+    # FIXME: This was an online-only, pre-publication
+    dc:title "Scrutinizing an algorithmic technique: the Bayes classifier as interested reading of reality" ;
+    bibo:shortTitle "Scrutinizing an algorithmic technique" ;
+    dc:creator :person:RiederB ;
+    bibo:authorList (
+        :person:RiederB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 2, 2017" ;
+        dc:isPartOf :journal:InformationCommunicationSociety ;
+        bibo:issue "1" ;
+        bibo:volume "20"
+    ] ;
+    bibo:pages "100-117" ;
+    bibo:doi "10.1080/1369118X.2016.1181195" .
+
+:reading:RoblesAnderson2016
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "“One damn slide after another”: PowerPoint at every occasion for speech" ;
+    dc:creator :person:RoblesAndersonE, :person:SvenssonP ;
+    bibo:authorList (
+        :person:RoblesAndersonE
+        :person:SvenssonP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ; # maybe?
+        dc:isPartOf :journal:ComputationalCulture ;
+        bibo:uri "http://computationalculture.net/issue-five" ;
+        bibo:volume "1" ; # maybe?
+        bibo:issue "5" ;
+    ] .
+
+:reading:Rose1999
+    a :Reading, bibo:Book ;
+    dc:title "Governing the soul: the shaping of the private self" ;
+    bibo:shortTitle "Governing the soul" ;
+    dc:creator :person:RoseN ;
+    bibo:authorList (
+        :person:RoseN
+    ) ;
+    dc:date "1999" ;
+    dc:publisher :publisher:FreeAssociation ;
+    bibo:edition "2nd ed." ;
+    bibo:isbn13 "978-1-85343-443-3" .
+
+:reading:Rouvroy2011
+    a :Reading, bibo:BookSection ;
+    dc:title "Technology, virtuality and utopia: Governmentality in an age of autonomic computing" ;
+    dc:creator :person:RouvroyA ;
+    bibo:authorList (
+        :person:RouvroyA
+    ) ;
+    dc:isPartOf :volume:Hildebrandt2011 .
+
+:reading:Sack2000
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/07421222.2000.11045652> ;
+    dc:title "Conversation Map: An Interface for Very Large-Scale Conversations" ;
+    dc:shortTitle "Conversation Map" ;
+    dc:creator :person:SackW ;
+    bibo:authorList (
+        :person:SackW
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:JMIS ;
+        bibo:volume "17" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "73-92" ;
+    bibo:doi "10.1080/07421222.2000.11045652" .
+
+:reading:Shavit2011
+    a :Reading, bibo:BookSection ;
+    dc:title "Transforming objects into data: how minute technicalities of recording “species location” entrench a basic challenge for biodiversity" ;
+    dc:creator :person:ShavitA, :person:GriesemerJ ;
+    bibo:authorList (
+        :person:ShavitA
+        :person:GriesemerJ
+    ) ;
+    dc:isPartOf :volume:Carrier2011 .
+
+:reading:Siegert2014
+    # TODO: Should translator go into CSL JSON?
+    a :Reading, bibo:Book ;
+    dc:title "Cultural techniques: Grids, filters, doors, and other articulations of the real" ;
+    bibo:shortTitle "Cultural techniques" ;
+    dc:creator :person:SiegertB ;
+    bibo:authorList (
+        :person:SiegertB
+    ) ;
+    bibo:translator :person:WinthropYoungG ;
+    dc:date "December 2014" ;
+    dc:publisher :publisher:FUP ;
+    bibo:isbn13 "978-0-8232-6376-9" .
+
+:reading:Simmel1950
+    a :Reading, bibo:Book ;
+    dc:title "The Sociology of Georg Simmel" ;
+    dc:creator :person:SimmelG ;
+    bibo:editor :person:WolffK ;
+    bibo:translator :person:WolffK ;
+    bibo:editorList (
+        :person:WolffK
+    ) ;
+    bibo:authorList (
+        :person:SimmelG
+    ) ;
+    dc:date "1950" ;
+    dc:publisher :publisher:FreePress .
+
+:reading:Simmel2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0263276414531052> ;
+    dc:title "On Art Exhibitions" ;
+    dc:creator :person:SimmelG ;
+    bibo:authorList (
+        :person:SimmelG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2015" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:volume "32" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "87-92" ;
+    bibo:doi "10.1177/0263276414531052" .
+
+:reading:Smith2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/00265667-3630844> ;
+    dc:title "What Was “Close Reading”? A Century of Method in Literary Studies" ;
+    bibo:shortTitle "What Was “Close Reading”?" ;
+    dc:creator :person:SmithB ;
+    bibo:authorList (
+        :person:SmithB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "01/01/2016" ;
+        dc:isPartOf :journal:MinnesotaReview ;
+        bibo:issue "87" ;
+        bibo:volume "2016"
+    ] ;
+    bibo:pages "57-75" ;
+    bibo:doi "10.1215/00265667-3630844" .
+
+:reading:Spade2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0077> ;
+    dc:title "Being Together, After Nonprofitization" ;
+    dc:creator :person:SpadeD ;
+    bibo:authorList (
+        :person:SpadeD
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "247-252" ;
+    bibo:doi "10.1353/wsq.2013.0077" .
+
+:reading:Star1989
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/030631289019003001> ;
+    dc:title "Institutional Ecology, 'Translations' and Boundary Objects: Amateurs and Professionals in Berkeley's Museum of Vertebrate Zoology, 1907-39" ;
+    bibo:shortTitle "Institutional Ecology, 'Translations' and Boundary Objects" ;
+    dc:creator :person:StarS, :person:GriesemerJ ;
+    bibo:authorList (
+        :person:StarS
+        :person:GriesemerJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1989" ;
+        dc:isPartOf :journal:SocStudSci ;
+        bibo:issue "3" ;
+        bibo:volume "19"
+    ] ;
+    bibo:pages "387-420" ;
+    bibo:doi "10.1177/030631289019003001" .
+
+:reading:Star1995
+    a :Reading, bibo:BookSection ;
+    dc:title "The Politics of Formal Representation: Wizards, Gurus, and Organizational Complexity" ;
+    dc:creator :person:StarS ;
+    bibo:authorList (
+        :person:StarS
+    ) ;
+    dc:isPartOf :volume:Star1995 ;
+    bibo:pages "88-118" .
+
+:reading:Stenner2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0959354316630619> ;
+    dc:title "On standards and values: Between finite actuality and infinite possibility" ;
+    bibo:shortTitle "On standards and values" ;
+    dc:creator :person:StennerP ;
+    bibo:authorList (
+        :person:StennerP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:TheoryPsychology ;
+        bibo:issue "2" ;
+        bibo:volume "26"
+    ] ;
+    bibo:pages "144–162" ;
+    bibo:doi "10.1177/0959354316630619" .
+
+:reading:Suchman1993
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF00749015> ;
+    dc:title "Do categories have politics?" ;
+    dc:creator :person:SuchmanL ;
+    bibo:authorList (
+        :person:SuchmanL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1993/09/01" ;
+        dc:isPartOf :journal:CSCW ;
+        bibo:issue "3" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "177-190" ;
+    bibo:doi "10.1007/BF00749015" .
+
+:reading:Suchman1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305852> ;
+    dc:title "Speech acts and voices: Response to Winograd et al." ;
+    bibo:shortTitle "Speech acts and voices" ;
+    dc:creator :person:SuchmanL ;
+    bibo:authorList (
+        :person:SuchmanL
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "85-95" ;
+    bibo:doi "10.1007/BF01305852" .
+
+:reading:Tenen2017
+    a :Reading, bibo:Book ;
+    dc:title "Plain text: The poetics of computation" ;
+    dc:creator :person:TenenD ;
+    bibo:authorList (
+        :person:TenenD
+    ) ;
+    dc:date "June 2017" ;
+    dc:publisher :publisher:SUP .
+
+:reading:Tsing2015
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1515/9781400873548> ;
+    dc:title "The mushroom at the end of the world: On the possibility of life in capitalist ruins" ;
+    dc:creator :person:TsingA ;
+    bibo:authorList (
+        :person:TsingA
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PUP ;
+    bibo:doi "10.1515/9781400873548" .
+
+:reading:Turner2017
+    a :Reading, bibo:AcademicArticle ;
+    # owl:sameAs <http://doi.org/10.1080/24701475.2017.1307540> ;
+    dc:title "Can we write a cultural history of the Internet? If so, how?" ;
+    dc:creator :person:TurnerF ;
+    bibo:authorList (
+        :person:TurnerF
+    ) ;
+    dc:isPartOf :journal:InternetHistories:1:1-2 ;
+    bibo:pages "39-46" ;
+    # DOI doesn't actually lead to the article, so just include the URI
+    bibo:uri "http://www.tandfonline.com/doi/full/10.1080/24701475.2017.1307540" .
+
+:reading:Verhoeven2014
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Doing the sheep good: facilitating engagement in digital humanities and creative arts research" ;
+    bibo:shortTitle "Doing the sheep good" ;
+    dc:creator :person:VerhoevenD ;
+    bibo:authorList (
+    :person:VerhoevenD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2014/01/01" ;
+        dc:isPartOf :journal:AdvancingDigitalHumanities ;
+        bibo:editorList (
+            :person:ArthurP
+        :person:BodeK
+        )
+    ] ;
+    bibo:pages "206-220" ;
+    bibo:uri "http://dro.deakin.edu.au/view/DU:30070005" .
+
+:reading:Wakkary2017
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-23
+    a :Reading .
+
+:reading:Winograd1987
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1207/s15327051hci0301_2> ;
+    dc:title "A Language/Action Perspective on the Design of Cooperative Work" ;
+    dc:creator :person:WinogradT ;
+    bibo:authorList (
+        :person:WinogradT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "March 1987" ;
+        dc:isPartOf :journal:HCI ;
+        bibo:issue "1" ;
+        bibo:volume "3"
+    ] ;
+    bibo:pages "3–30" ;
+    bibo:doi "10.1207/s15327051hci0301_2" .
+
+:reading:Winograd1993
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF00749016> ;
+    dc:title "Categories, disciplines, and social coordination" ;
+    dc:creator :person:WinogradT ;
+    bibo:authorList (
+        :person:WinogradT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1993/09/01" ;
+        dc:isPartOf :journal:CSCW ;
+        bibo:issue "3" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "191-197" ;
+    bibo:doi "10.1007/BF00749016" .
+
+:reading:Wittkower2016
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-09-22
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/ETHICS.2016.7560055> ;
+    dc:title "Principles of anti-discriminatory design" ;
+    dc:creator :person:WittkowerD ;
+    bibo:authorList (
+        :person:WittkowerD
+    ) ;
+    bibo:reproducedIn [
+        a bibo:Proceedings ;
+        dc:title "2016 IEEE International Symposium on Ethics in Engineering, Science, and Technology (ETHICS 2016)" ;
+        dc:date "May 2016" ;
+        dc:publisher :publisher:IEEE ;
+        bibo:isbn13 "9781509023189" ;
+        bibo:doi "10.1109/ETHICS.2016.7560055"
+    ] ;
+    bibo:presentedAt [
+        a bibo:Conference ;
+        dc:title "IEEE International Symposium on Ethics in Engineering, Science, and Technology, ETHICS 2016" ;
+        address:localityName "Vancouver, BC" ;
+        dc:date "13-14 May 2016" ;
+        foaf:homepage <http://sites.ieee.org/ethics-conference/>
+    ] ;
+    bibo:doi "10.1109/ETHICS.2016.7560055" .
+
+:reading:Wobbrock2009
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1145/1572626.1572641> ;
+    dc:title "Reflections on the Future of iSchools from Inspired Junior Faculty" ;
+    dc:creator :person:WobbrockJ, :person:KoA, :person:KientzJ ;
+    bibo:authorList (
+        :person:WobbrockJ
+    :person:KoA
+    :person:KientzJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:interactions ;
+        bibo:volume "16" ;
+        bibo:issue "5" ;
+        dc:date "September 2009"
+    ] ;
+    bibo:pages "69–71" ;
+    bibo:doi "10.1145/1572626.1572641" .
+
+:volume:Boden1996
+    a bibo:EditedBook ;
+    dc:title "The Philosophy of Artificial Life" ;
+    dc:date "1996" ;
+    dc:publisher :publisher:OUP ;
+    bibo:editor :person:BodenM ;
+    bibo:editorList (
+        :person:BodenM
+    ) .
+
+:volume:Bowers1991
+    a bibo:EditedBook ;
+    dc:title "Studies in computer supported cooperative work" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:NorthHollandPublishingCo ;
+    bibo:editor :person:BowersM, :person:BenfordS ;
+    bibo:editorList (
+        :person:BowersM
+        :person:BenfordS
+    ) .
+
+:volume:Bowker2015
+    a bibo:EditedBook ;
+    dc:date "2015" ;
+    dc:publisher :publisher:MIT ;
+    dc:title "Boundary objects and beyond: working with Leigh Star" ;
+    bibo:editor :person:BowkerG, :person:TimmermansS, :person:ClarkeA, :person:BalkaE ;
+    bibo:editorList (
+        :person:BowkerG
+        :person:TimmermansS
+        :person:ClarkeA
+        :person:BalkaE
+    ) ;
+    bibo:isbn13 "978-0-262-02974-2", "978-0-262-52808-5" ;
+    bibo:lccn "BD175 B675 2015" .
+
+:volume:Carrier2011
+    a bibo:EditedBook ;
+    dc:title "Science in the context of application: Methodological change, conceptual transformation, cultural reorientation" ;
+    dc:date "2011" ;
+    dc:publisher :publisher:Springer ;
+    bibo:editor :person:CarrierM, :person:NordmannA ;
+    bibo:editorList (
+        :person:CarrierM
+        :person:NordmannA
+    ) ;
+    bibo:isbn13 "978-90-481-9050-8" .
+
+:volume:Clapin2002
+    a bibo:EditedBook ;
+    dc:date "2002" ;
+    dc:title "Philosophy of Mental Representation" ;
+    dc:publisher :publisher:OUP ;
+    bibo:editor :person:ClapinH ;
+    bibo:editorList (
+        :person:ClapinH
+    ) .
+
+:volume:Hildebrandt2011
+    a bibo:EditedBook ;
+    dc:title "Law, human agency and autonomic computing: the philosophy of law meets the philosophy of technology" ;
+    dc:date "2011" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:editor :person:HildebrandtM, :person:RouvroyA ;
+    bibo:editorList (
+        :person:HildebrandtM
+        :person:RouvroyA
+    ) ;
+    bibo:isbn13 "978-0-415-72015-1" .
+
+:volume:Kelly2016
+    a bibo:EditedBook ;
+    dc:title "Information Cultures in the Digital Age" ;
+    dc:date "2016" ;
+    dc:publisher :publisher:SpringerFW ;
+    bibo:editor :person:KellyM, :person:BielbyJ ;
+    bibo:editorList (
+        :person:KellyM
+        :person:BielbyJ
+    ) ;
+    bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
+
+:volume:Star1995
+    a bibo:EditedBook ;
+    dc:title "Ecologies of Knowledge: Work and Politics in Science and Technology" ;
+    dc:date "1995" ;
+    dc:publisher :publisher:SUNY ;
+    bibo:editor :person:StarS ;
+    bibo:editorList (
+        :person:StarS
+    ) .

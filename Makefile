@@ -1,28 +1,27 @@
-READINGS := $(wildcard readings/*)
+JS_FILES := $(wildcard src/*js)
+SITE_FILES = $(wildcard dist/*)
 
-SITE_FILES := dist/index.html dist/archive.html dist/style.css dist/org.js
-
-all: $(SITE_FILES)
+all: dist/site.tar
+	tar xf $< -C dist
+	rm $<
 
 dist:
 	mkdir -p $@
 
-dist/index.html: build.py $(READINGS) | dist
-	./build.py > $@
+dist/site.tar: org.css js/org.js $(JS_FILES) | dist
+	node . > $@ || rm $@
+	tar rf $@ $< -C js org.js
 
-dist/archive.html: build.py $(READINGS) | dist
-	./build.py archive > $@
-
-dist/style.css: style.css | dist
-	cp $< $@
-
-dist/org.js: animation.js | dist
-	cp $< $@
-
-.PHONY: clean upload
+.PHONY: clean upload add_meeting
 
 clean:
 	rm -rf dist
+
+add_meeting:
+	@python3 bin/add_meeting
+
+sort_turtle:
+	bin/clean_ttl.py bib.ttl | sponge bib.ttl
 
 upload: $(SITE_FILES)
 	chmod g+w $^
