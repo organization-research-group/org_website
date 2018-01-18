@@ -33,7 +33,14 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2018-01-19, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+
+:conference:CHI2014
+    a bibo:Conference ;
+    dc:title "SIGCHI Conference on Human Factors in Computing Systems 2014" ;
+    address:localityName "Toronto, Canada" ;
+    dc:date "April 26-May 1, 2014" ;
+    foaf:homepage <https://chi2014.acm.org/> .
 
 :conference:CSCW2017
     a bibo:Conference ;
@@ -115,6 +122,12 @@
     foaf:homepage <https://www.press.jhu.edu/journals/elh> ;
     bibo:issn "1080-6547" .
 
+:journal:FirstMonday
+    a bibo:Journal ;
+    dc:title "First Monday" ;
+    foaf:homepage <http://firstmonday.org> ;
+    bibo:issn "1396-0466" .
+
 :journal:HCI
     a bibo:Journal ;
     dc:title "Human Computer Interaction" ;
@@ -183,6 +196,12 @@
     foaf:homepage <http://www.emeraldinsight.com/journal/jd> ;
     bibo:issn "0022-0418" .
 
+:journal:JMIS
+    a bibo:Journal ;
+    dc:title "Journal of Management Information Systems" ;
+    foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
+    bibo:issn "0742-1222", "1557-928X" .
+
 :journal:LLC
     a bibo:Journal ;
     dc:title "Literary and Linguistic Computing" ;
@@ -213,6 +232,12 @@
     foaf:homepage <http://www.rethinkingmarxism.org/> ;
     bibo:issn "0893-5696" .
 
+:journal:ScienceInContext
+    a bibo:Journal ;
+    dc:title "Science in Context" ;
+    foaf:homepage <https://www.cambridge.org/core/journals/science-in-context> ;
+    bibo:issn "0269-8897" .
+
 :journal:Signs
     a bibo:Journal ;
     dc:title "Signs: Journal of Women in Culture and Society" ;
@@ -223,6 +248,18 @@
     dc:title "Social Studies of Science" ;
     foaf:homepage <http://journals.sagepub.com/home/sss> ;
     bibo:issn "0306-3127" .
+
+:journal:SociologicalTheory
+    a bibo:Journal ;
+    dc:title "Sociological Theory" ;
+    foaf:homepage <http://journals.sagepub.com/home/stx> ;
+    bibo:issn "14679558" .
+
+:journal:TCS
+    a bibo:Journal ;
+    dc:title "Theory, Culture & Society" ;
+    foaf:homepage <http://journals.sagepub.com/home/tcs> ;
+    bibo:issn "02632764", "14603616" .
 
 :journal:TheoryPsychology
     a bibo:Journal ;
@@ -1329,6 +1366,134 @@
         :reading:Levine2015
     ) .
 
+:meeting:2017-10-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-13T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Losee2015 ;
+    :schedule (
+        :reading:Losee2015
+    ) .
+
+:meeting:2017-10-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-27T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bowers1991, :reading:Healy2017 ;
+    :schedule (
+        :reading:Bowers1991
+        :reading:Healy2017
+    ) .
+
+:meeting:2017-11-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-03T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dork2014, :reading:Sack2000 ;
+    :schedule (
+        :reading:Dork2014
+        :reading:Sack2000
+    ) .
+
+:meeting:2017-11-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-10T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Simmel2014, :reading:Simmel1950 ;
+    :schedule (
+        :reading:Simmel2014
+        :reading:Simmel1950
+    ) .
+
+:meeting:2017-11-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting-- attend <a href=\"https://fhi.duke.edu/events/futures-literature-science-and-media-symposium-honoring-professor-n-katherine-hayles\">https://fhi.duke.edu/events/futures-literature-science-and-media-symposium-honoring-professor-n-katherine-hayles</a>" ]
+    ) .
+
+:meeting:2017-12-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-12-08T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tsing2015 ;
+    :schedule (
+        :reading:Tsing2015
+    ) .
+
+:meeting:2017-12-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-12-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lynch2017 ;
+    :schedule (
+        :reading:Lynch2017
+    ) .
+
+:meeting:2018-01-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-05T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Alcoff1997 ;
+    :schedule (
+        :reading:Alcoff1997
+    ) .
+
+:meeting:2018-01-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gorichanaz2016 ;
+    :schedule (
+        :reading:Gorichanaz2016
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -1349,6 +1514,13 @@
     foaf:givenname "Philip E." ;
     foaf:surname "Agre" ;
     foaf:homepage <http://polaris.gseis.ucla.edu/pagre/> .
+
+:person:AlcoffL
+    a foaf:Person ;
+    owl:sameAs viaf:39539108, wd:Q6551801 ;
+    foaf:givenname "Linda Martín" ;
+    foaf:surname "Alcoff" ;
+    foaf:homepage <http://www.alcoff.com/> .
 
 :person:ArthurP
     a foaf:Person ;
@@ -1376,6 +1548,14 @@
     foaf:givenname "Karen" ;
     foaf:surname "Barad" ;
     foaf:homepage <https://people.ucsc.edu/~kbarad/> .
+
+:person:BenfordS
+    a foaf:Person ;
+    owl:sameAs viaf:21245837 ;
+    foaf:givenname "Steven D." ;
+    foaf:surname "Benford" ;
+    foaf:homepage <https://stevebenford.wordpress.com/> ;
+    foaf:workInfoHomepage <https://www.nottingham.ac.uk/computerscience/people/steve.benford> .
 
 :person:BernsteinM
     a foaf:Person ;
@@ -1440,6 +1620,14 @@
     foaf:givenname "Dominique" ;
     foaf:surname "Boullier" ;
     foaf:homepage <https://sites.google.com/site/dominiqueboullier/home> .
+
+:person:BowersM
+    a foaf:Person ;
+    owl:sameAs viaf:164544053 ;
+    foaf:givenname "John M." ;
+    foaf:surname "Bowers" ;
+    foaf:homepage <http://www.jmbowers.net/> ;
+    foaf:workInfoHomepage <http://www.ncl.ac.uk/sacs/staff/profile/johnbowers.html> .
 
 :person:BowkerG
     a foaf:Person ;
@@ -1508,6 +1696,21 @@
     foaf:surname "Clarke" ;
     foaf:workInfoHomepage <http://profiles.ucsf.edu/adele.clarke> .
 
+:person:CliffL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2803-4512, viaf:63035107, wd:Q13515697 ;
+    foaf:givenname "Clifford" ;
+    foaf:surname "Lynch" ;
+    foaf:workInfoHomepage <http://people.ischool.berkeley.edu/~clifford/> .
+
+:person:ComberR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3127-1917 ;
+    foaf:givenname "Rob" ;
+    foaf:surname "Comber" ;
+    foaf:homepage <http://robcomber.co.uk/> ;
+    foaf:workInfoHomepage <https://openlab.ncl.ac.uk/people/nrc42/> .
+
 :person:CopeJ
     a foaf:Person ;
     foaf:givenname "Jonathan" ;
@@ -1520,6 +1723,13 @@
     foaf:givenname "Bill" ;
     foaf:surname "Curtis" ;
     foaf:workInfoHomepage <http://it-cisq.org/bill-curtis-biography/> .
+
+:person:DadeRobertsonM
+    a foaf:Person ;
+    owl:sameAs viaf:130429885 ;
+    foaf:givenname "Martyn" ;
+    foaf:surname "Dade-Robertson" ;
+    foaf:workInfoHomepage <http://www.ncl.ac.uk/apl/staff/profile/martyndade-robertson.html> .
 
 :person:DastonL
     a foaf:Person ;
@@ -1541,6 +1751,13 @@
     foaf:givenname "Daniel" ;
     foaf:surname "Dennett" ;
     foaf:workInfoHomepage <http://ase.tufts.edu/cogstud/dennett/> .
+
+:person:DorkM
+    a foaf:Person ;
+    foaf:givenname "Marian" ;
+    foaf:surname "Dörk" ;
+    foaf:homepage <http://mariandoerk.de/> ;
+    foaf:workInfoHomepage <https://uclab.fh-potsdam.de/people/marian-doerk/> .
 
 :person:DreyfusH
     a foaf:Person ;
@@ -1692,6 +1909,13 @@
     foaf:surname "Hayles" ;
     foaf:homepage <http://nkhayles.com/> .
 
+:person:HealyK
+    a foaf:Person ;
+    owl:sameAs wd:Q6405389 ;
+    foaf:givenname "Kieran" ;
+    foaf:surname "Healy" ;
+    foaf:homepage <https://kieranhealy.org/> .
+
 :person:HildebrandtM
     a foaf:Person ;
     owl:sameAs viaf:65702387 ;
@@ -1772,6 +1996,12 @@
     foaf:surname "Lagoze" ;
     foaf:homepage <https://www.si.umich.edu/people/carl-lagoze> .
 
+:person:LathamK
+    a foaf:Person ;
+    foaf:givenname "Kiersten F." ;
+    foaf:surname "Latham" ;
+    foaf:homepage <http://kentstate.academia.edu/KierstenFLatham> .
+
 :person:LatourB
     a foaf:Person ;
     owl:sameAs wd:Q355237, viaf:109228530 ;
@@ -1797,6 +2027,13 @@
     foaf:givenname "Michael E." ;
     foaf:surname "Locasto" ;
     foaf:homepage <http://pages.cpsc.ucalgary.ca/~locasto/> .
+
+:person:LoseeR
+    a foaf:Person ;
+    owl:sameAs viaf:93305170 ;
+    foaf:givenname "Robert" ;
+    foaf:surname "Losee" ;
+    foaf:homepage <https://ils.unc.edu/~losee/> .
 
 :person:LoveH
     a foaf:Person ;
@@ -1952,6 +2189,14 @@
     foaf:givenname "Stan" ;
     foaf:surname "Ruecker" .
 
+:person:SackW
+    a foaf:Person ;
+    owl:sameAs viaf:190146284394615331476 ;
+    foaf:givenname "Warren" ;
+    foaf:surname "Sack" ;
+    foaf:homepage <https://people.ucsc.edu/~wsack/> ;
+    foaf:workInfoHomepage <http://film.ucsc.edu/faculty/warren_sack> .
+
 :person:SandvigC
     a foaf:Person ;
     owl:sameAs viaf:186145542448096640602, orcid:0000-0002-9025-536X ;
@@ -1983,6 +2228,12 @@
     owl:sameAs viaf:66760106, wd:Q110715 ;
     foaf:givenname "Bernhard" ;
     foaf:surname "Siegert" .
+
+:person:SimmelG
+    a foaf:Person ;
+    owl:sameAs viaf:39384262, wd:Q76849 ;
+    foaf:givenname "Georg" ;
+    foaf:surname "Simmel" .
 
 :person:SmithB
     a foaf:Person ;
@@ -2044,6 +2295,13 @@
     foaf:givenname "Jeffrey W." ;
     foaf:surname "Treem" ;
     foaf:homepage <http://jeffreytreem.com/> .
+
+:person:TsingA
+    a foaf:Person ;
+    owl:sameAs viaf:10002035, wd:Q21821411 ;
+    foaf:givenname "Anna Lowenhaupt" ;
+    foaf:surname "Tsing" ;
+    foaf:workInfoHomepage <https://anthro.ucsc.edu/faculty/singleton.php?&singleton=true&cruz_id=atsing> .
 
 :person:TurnerF
     a foaf:Person ;
@@ -2112,6 +2370,19 @@
     foaf:givenname "Jerzy A." ;
     foaf:surname "Wojciechowski" .
 
+:person:WolffK
+    a foaf:Person ;
+    owl:sameAs viaf:98310436, wd:Q67259 ;
+    foaf:givenname "Kurt H." ;
+    foaf:surname "Wolff" .
+
+:proceedings:CHI2014
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '14)" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 " 978-1-4503-2473-1" .
+
 :proceedings:CSCW2017
     a bibo:Proceedings ;
     dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
@@ -2164,6 +2435,11 @@
     foaf:name "Free Association Books" ;
     address:localityName "London" .
 
+:publisher:FreePress
+    a :Publisher ;
+    foaf:name "The Free Press" ;
+    address:localityName "Glencoe, Illinois" .
+
 :publisher:IEEComputerSociety
     a :Publisher ;
     foaf:name "IEEE Computer Society" ;
@@ -2178,6 +2454,11 @@
     a :Publisher ;
     foaf:name "MIT Press" ;
     address:localityName "Cambridge, MA" .
+
+:publisher:NorthHollandPublishingCo
+    a :Publisher ;
+    foaf:name "North Holland Publishing Co." ;
+    address:localityName "Amsterdam" .
 
 :publisher:OUP
     a :Publisher ;
@@ -2292,6 +2573,24 @@
     bibo:pages "31-35" ;
     bibo:doi "10.1007/BF01305840" .
 
+:reading:Alcoff1997
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1017/S0269889700002556> ;
+    dc:title "Immanent  Truth" ;
+    dc:creator :person:AlcoffL ;
+    bibo:authorList (
+        :person:AlcoffL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1997" ;
+        dc:isPartOf :journal:ScienceInContext ;
+        bibo:volume "10" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "97-112" ;
+    bibo:doi "10.1017/S0269889700002556" .
+
 :reading:Askey2017
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-02
@@ -2396,6 +2695,16 @@
     ] ;
     bibo:pages "248-259" ;
     bibo:doi "10.1057/s41303-017-0043-4" .
+
+:reading:Bowers1991
+    a :Reading, bibo:BookSection ;
+    dc:title "The Janus Faces of Design: Some Critical Questions for CSCW" ;
+    dc:creator :person:BowersM ;
+    bibo:authorList (
+        :person:BowersM
+    ) ;
+    dc:isPartOf :volume:Bowers1991 ;
+    bibo:pages "333-350" .
 
 :reading:Bratus2011
     a :Reading, bibo:AcademicArticle ;
@@ -2534,6 +2843,21 @@
     ) ;
     dc:isPartOf :volume:Clapin2002 ;
     bibo:pages "222-292" .
+
+:reading:Dork2014
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2556288.2557083> ;
+    dc:title "Monadic exploration: seeing the whole through its parts" ;
+    dc:creator :person:DorkM, :person:ComberR, :person:DadeRobertsonM ;
+    bibo:authorList (
+        :person:DorkM
+        :person:ComberR
+        :person:DadeRobertsonM
+    ) ;
+    bibo:reproducedIn :proceedings:CHI2014 ;
+    bibo:presentedAt :conference:CHI2014 ;
+    bibo:pages "1535-1544" ;
+    bibo:doi "10.1145/2556288.2557083" .
 
 :reading:Dreyfus2007
     a :Reading, bibo:AcademicArticle ;
@@ -2762,6 +3086,26 @@
     bibo:isbn13 "978-1-315-74021-8" ;
     bibo:doi "10.4324/9781315740218" .
 
+:reading:Gorichanaz2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-01-2016-0007> ;
+    dc:title "Document phenomenology: a framework for holistic analysis" ;
+    bibo:shortTitle "Document phenomenology" ;
+    dc:creator :person:GorichanazT, :person:LathamK ;
+    bibo:authorList (
+        :person:GorichanazT
+        :person:LathamK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:JDOC ;
+        bibo:volume "72" ;
+        bibo:issue "6"
+    ] ;
+    bibo:pages "1114-1133" ;
+    bibo:doi "10.1108/JD-01-2016-0007" .
+
 :reading:Gorichanaz2017
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.24242/jclis.v1i1.7> ;
@@ -2823,6 +3167,24 @@
     ] ;
     bibo:pages "32-55" ;
     bibo:doi "10.1086/688293" .
+
+:reading:Healy2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0735275117709046> ;
+    dc:title "Fuck Nuance" ;
+    dc:creator :person:HealyK ;
+    bibo:authorList (
+        :person:HealyK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017" ;
+        dc:isPartOf :journal:SociologicalTheory ;
+        bibo:volume "35" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "118-127" ;
+    bibo:doi "10.1177/0735275117709046" .
 
 :reading:Hjorland2015
     a :Reading, bibo:AcademicArticle ;
@@ -2940,6 +3302,24 @@
     dc:date "2015" ;
     dc:publisher :publisher:PUP .
 
+:reading:Losee2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23544> ;
+    dc:title "Thesaurus structure, descriptive parameters, and scale" ;
+    dc:creator :person:LoseeR ;
+    bibo:authorList (
+        :person:LoseeR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "13 May 2015" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:volume "67" ;
+        bibo:issue "9" ;
+    ] ;
+    bibo:doi "10.1002/asi.23544" ;
+    bibo:pages "2156-2165" .
+
 :reading:Lynch1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305848> ;
@@ -2951,6 +3331,23 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "65-68" ;
     bibo:doi "10.1007/BF01305848" .
+
+:reading:Lynch2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.5210/fm.v22i12.8097> ;
+    dc:title "Stewardship in the “Age of Algorithms”" ;
+    dc:creator :perons:CliffL ;
+    bibo:authorList (
+        :person:CliffL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "4 December 2017" ;
+        dc:isPartOf :journal:FirstMonday ;
+        bibo:volume "22" ;
+        bibo:issue "12"
+    ] ;
+    bibo:doi "10.5210/fm.v22i12.8097" .
 
 :reading:Mai2016
     a :Reading, bibo:AcademicArticle ;
@@ -3163,6 +3560,25 @@
     ) ;
     dc:isPartOf :volume:Hildebrandt2011 .
 
+:reading:Sack2000
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/07421222.2000.11045652> ;
+    dc:title "Conversation Map: An Interface for Very Large-Scale Conversations" ;
+    dc:shortTitle "Conversation Map" ;
+    dc:creator :person:SackW ;
+    bibo:authorList (
+        :person:SackW
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:JMIS ;
+        bibo:volume "17" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "73-92" ;
+    bibo:doi "10.1080/07421222.2000.11045652" .
+
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
     dc:title "Transforming objects into data: how minute technicalities of recording “species location” entrench a basic challenge for biodiversity" ;
@@ -3186,6 +3602,39 @@
     dc:date "December 2014" ;
     dc:publisher :publisher:FUP ;
     bibo:isbn13 "978-0-8232-6376-9" .
+
+:reading:Simmel1950
+    a :Reading, bibo:Book ;
+    dc:title "The Sociology of Georg Simmel" ;
+    dc:creator :person:SimmelG ;
+    bibo:editor :person:WolffK ;
+    bibo:translator :person:WolffK ;
+    bibo:editorList (
+        :person:WolffK
+    ) ;
+    bibo:authorList (
+        :person:SimmelG
+    ) ;
+    dc:date "1950" ;
+    dc:publisher :publisher:FreePress .
+
+:reading:Simmel2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0263276414531052> ;
+    dc:title "On Art Exhibitions" ;
+    dc:creator :person:SimmelG ;
+    bibo:authorList (
+        :person:SimmelG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2015" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:volume "32" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "87-92" ;
+    bibo:doi "10.1177/0263276414531052" .
 
 :reading:Smith2016
     a :Reading, bibo:AcademicArticle ;
@@ -3307,6 +3756,18 @@
     ) ;
     dc:date "June 2017" ;
     dc:publisher :publisher:SUP .
+
+:reading:Tsing2015
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1515/9781400873548> ;
+    dc:title "The mushroom at the end of the world: On the possibility of life in capitalist ruins" ;
+    dc:creator :person:TsingA ;
+    bibo:authorList (
+        :person:TsingA
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PUP ;
+    bibo:doi "10.1515/9781400873548" .
 
 :reading:Turner2017
     a :Reading, bibo:AcademicArticle ;
@@ -3437,6 +3898,17 @@
     bibo:editor :person:BodenM ;
     bibo:editorList (
         :person:BodenM
+    ) .
+
+:volume:Bowers1991
+    a bibo:EditedBook ;
+    dc:title "Studies in computer supported cooperative work" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:NorthHollandPublishingCo ;
+    bibo:editor :person:BowersM, :person:BenfordS ;
+    bibo:editorList (
+        :person:BowersM
+        :person:BenfordS
     ) .
 
 :volume:Bowker2015
