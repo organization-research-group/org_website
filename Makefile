@@ -1,4 +1,5 @@
 JS_FILES := $(wildcard src/*js)
+SITE_FILES = $(wildcard dist/*)
 
 all: dist/site.tar
 	tar xf $< -C dist
