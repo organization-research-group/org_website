@@ -33,7 +33,7 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2018-01-19, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:CHI2014
     a bibo:Conference ;
@@ -1480,13 +1480,27 @@
         :reading:Alcoff1997
     ) .
 
-:meeting:2018-01-19
+:meeting:2018-01-12
     a :Meeting ;
     lode:atTime [
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-01-19T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-01-12T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bratton2016 ;
+    :schedule (
+        :reading:Bratton2016
+    ) .
+
+:meeting:2018-01-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-26T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Gorichanaz2016 ;
@@ -1635,6 +1649,13 @@
     foaf:givenname "Geoffrey C." ;
     foaf:surname "Bowker" ;
     foaf:homepage <http://www.ics.uci.edu/~gbowker/> .
+
+:person:BrattonB
+    a foaf:Person ;
+    owl:sameAs viaf:315175159, wd:Q4888739 ;
+    foaf:givenname "Benjamin H." ;
+    foaf:surname "Bratton" ;
+    foaf:homepage <http://www.bratton.info/> .
 
 :person:BratusS
     a foaf:Person ;
@@ -2705,6 +2726,19 @@
     ) ;
     dc:isPartOf :volume:Bowers1991 ;
     bibo:pages "333-350" .
+
+:reading:Bratton2016
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/9780262029575.001.0001> ;
+    dc:title "The stack: On software and sovereignty" ;
+    dc:shortTitle "The stack" ;
+    dc:creator :person:BrattonB ;
+    bibo:authorList (
+        :person:BrattonB
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/9780262029575.001.0001" .
 
 :reading:Bratus2011
     a :Reading, bibo:AcademicArticle ;
