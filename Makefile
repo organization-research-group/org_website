@@ -8,9 +8,9 @@ all: dist/site.tar
 dist:
 	mkdir -p $@
 
-dist/site.tar: org.css js/org.js $(JS_FILES) | dist
+dist/site.tar: org.css $(JS_FILES) | dist
 	node . > $@ || rm $@
-	tar rf $@ $< -C js org.js
+	tar rf $@ $<
 
 .PHONY: clean upload add_meeting
 
