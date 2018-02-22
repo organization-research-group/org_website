@@ -1,8 +1,15 @@
 JS_FILES := $(wildcard src/*js)
 SITE_FILES = $(wildcard dist/*)
 
+platform=$(shell uname -s)
+ifeq ($(platform), Darwin)
+	TAR := gtar
+else
+	TAR := tar
+endif
+
 all: dist/site.tar
-	tar xf $< -C dist
+	$(TAR) xf $< -C dist
 	rm $<
 
 dist:
@@ -10,7 +17,7 @@ dist:
 
 dist/site.tar: org.css $(JS_FILES) | dist
 	node . > $@ || rm $@
-	tar rf $@ $<
+	$(TAR) --owner=0 --group=0 -r -f $@ $<
 
 .PHONY: clean upload add_meeting
 
