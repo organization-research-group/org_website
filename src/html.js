@@ -195,7 +195,7 @@ function archive(meetings) {
 
 function renderPage(content) {
   const now = new Date()
-      , lastUpdated = `${now.getFullYear()}-${zeroPad(now.getMonth())}-${zeroPad(now.getDate())}`
+      , lastUpdated = `${now.getFullYear()}-${zeroPad(now.getMonth() + 1)}-${zeroPad(now.getDate())}`
 
   return html`<!doctype html>
 <html>
