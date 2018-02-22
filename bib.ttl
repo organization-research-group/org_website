@@ -33,7 +33,7 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:CHI2014
     a bibo:Conference ;
@@ -59,8 +59,14 @@
 :conference:Hypertext1991
     a bibo:Conference ;
     dc:title "The third annual ACM conference on Hypertext" ;
-    address:localityName "San Antonio Texas" ;
+    address:localityName "San Antonio, Texas" ;
     dc:date "December 15 - 18, 1991" .
+
+:conference:Hypertext2001
+    a bibo:Conference ;
+    dc:title "The twelfth annual ACM conference on Hypertext" ;
+    address:localityName "Aarhus, Denmark" ;
+    dc:date "August 14 - 18, 2001" .
 
 :conference:OCCBCK
     a bibo:Conference ;
@@ -1508,6 +1514,61 @@
         :reading:Gorichanaz2016
     ) .
 
+:meeting:2018-02-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; in the afternoon go to a talk at Duke by Leif Weatherby on <a href=\"https://german.duke.edu/events/\u201cdata-capital-hayek-cybernetics-and-german-idealism\">Data Capital: Hayek, Cybernetics, and German Idealism</a>." ]
+    ) .
+
+:meeting:2018-02-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-09T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Miles2001 ;
+    :schedule (
+        :reading:Miles2001
+    ) .
+
+:meeting:2018-02-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-16T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Russell2014 ;
+    :schedule (
+        :reading:Russell2014
+    ) .
+
+:meeting:2018-02-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Naur1992 ;
+    :schedule (
+        :reading:Naur1992
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2096,6 +2157,12 @@
     foaf:surname "Medina" ;
     foaf:homepage <https://www.informatics.indiana.edu/edenm/> .
 
+:person:MilesA
+    a foaf:Person ;
+    foaf:givenname "Adrian" ;
+    foaf:surname "Miles" ;
+    foaf:homepage <http://web.archive.org/web/20180222142812/http://vogmae.net.au> .
+
 :person:MonteiroE
     a foaf:Person ;
     owl:sameAs viaf:304926794 ;
@@ -2116,6 +2183,13 @@
     foaf:givenname "Elli" ;
     foaf:surname "Mylonas" ;
     foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
+
+:person:NaurP
+    a foaf:Person ;
+    owl:sameAs viaf:37424500, wd:Q92618 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Naur" ;
+    foaf:homepage <http://web.archive.org/web/20180222150441/http://www.naur.com> .
 
 :person:NordmannA
     a foaf:Person ;
@@ -2209,6 +2283,13 @@
     owl:sameAs viaf:165153459, orcid:0000-0003-0099-1687 ;
     foaf:givenname "Stan" ;
     foaf:surname "Ruecker" .
+
+:person:RussellA
+  a foaf:Person ;
+  owl:sameAs viaf:307422034 ;
+  foaf:givenname "Andrew L." ;
+  foaf:surname "Russell" ;
+  foaf:homepage <http://arussell.org> .
 
 :person:SackW
     a foaf:Person ;
@@ -2441,10 +2522,22 @@
     dc:publisher :publisher:ACM ;
     bibo:isbn13 "978-0-89791-461-1" .
 
+:proceedings:Hypertext2001
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the twelfth annual ACM conference on Hypertext" ;
+    dc:date "2001" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn10 "1-58113-420-7" .
+
 :publisher:ACM
     a :Publisher ;
     foaf:name "ACM" ;
     address:localityName "New York" .
+
+:publisher:CUP
+    a :Publisher ;
+    foaf:name "Cambridge University Press" ;
+    address:localityName "Cambridge, UK" .
 
 :publisher:FUP
     a :Publisher ;
@@ -3432,6 +3525,19 @@
     dc:date "2011" ;
     dc:publisher :publisher:MIT .
 
+:reading:Miles2001
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/504216.504236> ;
+    dc:title "Hypertext structure as the evenyt of connection" ;
+    dc:creator :person:MilesA ;
+    bibo:authorList (
+        :person:MilesA
+    ) ;
+    bibo:reproducedIn :proceedings:Hypertext2001 ;
+    bibo:presentedAt :conference:Hypertext2001 ;
+    bibo:pages "61-68" ;
+    bibo:doi "10.1145/504216.504236" .
+
 :reading:Monteiro2012
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/s10606-012-9167-1> ;
@@ -3464,6 +3570,18 @@
     dc:isPartOf :journal:WSQ:41:3 ;
     bibo:pages "257-260" ;
     bibo:doi "10.1353/wsq.2013.0087" .
+
+:reading:Naur1992
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/23253583> ;
+    dc:title "Computing, a human acitivity" ;
+    dc:creator :person:NaurP ;
+    bibo:authorList (
+        :person:NaurP
+    ) ;
+    dc:date "1992" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-0-20158-069-3" .
 
 :reading:Nofre2014
     # FIXME: Update the details of this entry.
@@ -3593,6 +3711,19 @@
         :person:RouvroyA
     ) ;
     dc:isPartOf :volume:Hildebrandt2011 .
+
+:reading:Russell2014
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.1017/CBO9781139856553> ;
+    dc:title "Open standards and the digital age" ;
+    dc:creator :person:RussellA ;
+    bibo:authorList (
+        :person:RussellA
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:CUP ;
+    bibo:isbn13 "978-1-13985-655-3" ;
+    bibo:doi "10.1017/CBO9781139856553" .
 
 :reading:Sack2000
     a :Reading, bibo:AcademicArticle ;
