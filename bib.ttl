@@ -1889,7 +1889,7 @@
     foaf:surname "Feinberg" ;
     foaf:homepage <https://ils.unc.edu/~mfeinber/> .
 
-:person:FiderlB
+:person:FidlerB
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-2882-5915 ;
     foaf:givenname "Bradley" ;
