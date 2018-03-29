@@ -145,7 +145,7 @@ module.exports = async function getMeetings(store, bib) {
           .then(data => data['@graph'].map(item => ({
             label: label(item),
             id: fragmentOf(item),
-            externalLink: (item['foaf:homepage'] || item['foaf:workInfoHomepage'] || {})['@id'],
+            externalLink: (item['foaf:homepage'] || item['foaf:workInfoHomepage'] || item['foaf:page'] || {})['@id'],
             meetingLink: 'archive.html#' + meetingFragment,
             ld: item,
           })))
