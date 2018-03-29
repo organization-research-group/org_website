@@ -2580,7 +2580,7 @@
     dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '14)" ;
     dc:date "2014" ;
     dc:publisher :publisher:ACM ;
-    bibo:isbn13 " 978-1-4503-2473-1" .
+    bibo:isbn13 "978-1-4503-2473-1" .
 
 :proceedings:CSCW2017
     a bibo:Proceedings ;
@@ -3706,7 +3706,7 @@
 :reading:Naur1992
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/23253583> ;
-    dc:title "Computing, a human acitivity" ;
+    dc:title "Computing, a human activity" ;
     dc:creator :person:NaurP ;
     bibo:authorList (
         :person:NaurP
