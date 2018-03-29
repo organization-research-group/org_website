@@ -33,7 +33,7 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2018-03-23, :meeting:2018-03-16, :meeting:2018-03-09, :meeting:2018-03-02, :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:CHI2014
     a bibo:Conference ;
@@ -67,6 +67,12 @@
     dc:title "The twelfth annual ACM conference on Hypertext" ;
     address:localityName "Aarhus, Denmark" ;
     dc:date "August 14 - 18, 2001" .
+
+:conference:IRI2015
+    a bibo:Conference ;
+    dc:title "2015 IEEE 16th International Conference on Information Reuse and Integration" ;
+    address:localityName "Redwood City, California" ;
+    dc:date "August 13-15, 2015" .
 
 :conference:OCCBCK
     a bibo:Conference ;
@@ -1569,6 +1575,62 @@
         :reading:Naur1992
     ) .
 
+:meeting:2018-03-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2018-03-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-09T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Harris2015 ;
+    :schedule (
+        :reading:Harris2015
+    ) .
+
+:meeting:2018-03-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-16T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pickering1995, :reading:Waldstein2008 ;
+    :schedule (
+        :reading:Pickering1995
+        :reading:Waldstein2008
+    ) .
+
+:meeting:2018-03-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Noble2018 ;
+    :schedule (
+        :reading:Noble2018
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -1970,6 +2032,13 @@
     foaf:surname "Griesemer" ;
     foaf:homepage <http://griesemer.ucdavis.edu/> .
 
+:person:GuzikK
+    a foaf:Person ;
+    owl:sameAs viaf:48607995 ;
+    foaf:givenname "Keith" ;
+    foaf:surname "Guzik" ;
+    foaf:workInfoHomepage <https://clas.ucdenver.edu/directory/faculty-staff/keith_guzik> .
+
 :person:HansethO
     a foaf:Person ;
     owl:sameAs viaf:51131650 ;
@@ -1983,6 +2052,13 @@
     foaf:givenname "Donna" ;
     foaf:surname "Haraway" ;
     foaf:homepage <https://people.ucsc.edu/~haraway/> .
+
+:person:HarrisD
+    a foaf:Person ;
+    owl:sameAs viaf:98310436, wd:Q67259 ;
+    foaf:givenname "Daniel R." ;
+    foaf:surname "Harris" ;
+    foaf:page "https://scholar.google.com/citations?user=cd4XPCwAAAAJ" .
 
 :person:HaylesN
     a foaf:Person ;
@@ -2191,6 +2267,13 @@
     foaf:surname "Naur" ;
     foaf:homepage <http://web.archive.org/web/20180222150441/http://www.naur.com> .
 
+:person:NobleS
+    a foaf:Person ;
+    owl:sameAs viaf:20146285338215370371 ;
+    foaf:givenname "Safiya Umoja" ;
+    foaf:surname "Noble" ;
+    foaf:homepage <https://safiyaunoble.com> .
+
 :person:NordmannA
     a foaf:Person ;
     owl:sameAs viaf:115023610 ;
@@ -2223,6 +2306,13 @@
     foaf:givenname "Katy E." ;
     foaf:surname "Pearce" ;
     foaf:homepage <http://www.katypearce.net/> .
+
+:person:PickeringA
+    a foaf:Person ;
+    owl:sameAs viaf:28274197, wd:Q2846705 ;
+    foaf:givenname "Andrew" ;
+    foaf:surname "Pickering" ;
+    foaf:workInfoHomepage <http://socialsciences.exeter.ac.uk/sociology/staff/pickering/> .
 
 :person:PlantinJ
     a foaf:Person ;
@@ -2433,6 +2523,13 @@
     foaf:surname "Vitak" ;
     foaf:homepage <https://jessicavitak.com/> .
 
+:person:WaldsteinM
+    a foaf:Person ;
+    owl:sameAs viaf:273055176 ;
+    foaf:givenname "Maxim" ;
+    foaf:surname "Waldstein" ;
+    foaf:page <https://auc.academia.edu/MaximWaldstein> .
+
 :person:WilliamsR
     a foaf:Person ;
     owl:sameAs wd:Q27252, viaf:60907032 ;
@@ -2529,6 +2626,13 @@
     dc:publisher :publisher:ACM ;
     bibo:isbn10 "1-58113-420-7" .
 
+:proceedings:IRI2015
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2015 IEEE International Conference on Information Reuse and Integration" ;
+    dc:date "2015" ;
+    dc:publisher :publisher:IEEE ;
+    bibo:isbn13 "978-1-4673-6656-4" .
+
 :publisher:ACM
     a :Publisher ;
     foaf:name "ACM" ;
@@ -2538,6 +2642,11 @@
     a :Publisher ;
     foaf:name "Cambridge University Press" ;
     address:localityName "Cambridge, UK" .
+
+:publisher:DUP
+    a :Publisher ;
+    foaf:name "Duke University Press" ;
+    address:localityName "Durham, North Carolina" .
 
 :publisher:FUP
     a :Publisher ;
@@ -2568,6 +2677,11 @@
     a :Publisher ;
     foaf:name "MIT Press" ;
     address:localityName "Cambridge, MA" .
+
+:publisher:NYUP
+    a :Publisher ;
+    foaf:name "New York University Press" ;
+    address:localityName "New York" .
 
 :publisher:NorthHollandPublishingCo
     a :Publisher ;
@@ -2613,6 +2727,11 @@
     a :Publisher ;
     foaf:name "Springer Fachmedien Wiesbaden" ;
     address:localityName "Wiesbaden" .
+
+:publisher:UCP
+    a :Publisher ;
+    foaf:name "University of Chicago Press" ;
+    address:localityName "Chicago" .
 
 :publisher:UMP
     a :Publisher ;
@@ -3276,6 +3395,19 @@
     ] ;
     bibo:uri "http://www.e-flux.com/journal/75/67125/tentacular-thinking-anthropocene-capitalocene-chthulucene/" .
 
+:reading:Harris2015
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/IRI.2015.65> ;
+    dc:title "Modeling Reusable and Interoperable Faceted Browsing Systems with Category Theory" ;
+    dc:creator :person:HarrisD ;
+    bibo:authorList (
+        :person:HarrisD
+    ) ;
+    bibo:presentedAt :conference:IRI2015 ;
+    bibo:reproducedIn :proceedings:IRI2015 ;
+    bibo:pages "388–395" ;
+    bibo:doi "10.1109/IRI.2015.65" .
+
 :reading:Hayles2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1086/688293> ;
@@ -3583,6 +3715,18 @@
     dc:publisher :publisher:ACM ;
     bibo:isbn13 "978-0-20158-069-3" .
 
+:reading:Noble2018
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/987591529> ;
+    dc:title "Algorithms of Oppression: How Search Engines Reinforce Racism" ;
+    dc:creator :person:NobleS ;
+    bibo:authorList (
+        :person:NobleS
+    ) ;
+    dc:date "2018" ;
+    dc:publisher :publisher:NYUP ;
+    bibo:isbn13 "978-1-4798-3724-3" .
+
 :reading:Nofre2014
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-09
@@ -3616,6 +3760,24 @@
     bibo:presentedAt :conference:CSCW2017 ;
     bibo:pages "2436–2447" ;
     bibo:doi "10.1145/2998181.2998331" .
+
+:reading:Pickering1995
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/832588301> ;
+    dc:title "The Mangle of Practice: Time, Agency, and Science" ;
+    dc:shortTitle "The Mangle of Practice" ;
+    dc:creator :person:PickeringA ;
+    bibo:authorList (
+        :person:PickeringA
+    ) ;
+    dc:date "1995" ;
+    dc:publisher :publisher:UCP ;
+    bibo:isbn13 "978-0-2266-6802-4" .
+
+:reading:Pickering1995
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2018-03-16
+    a :Reading .
 
 :reading:Plantin2016
     a :Reading, bibo:AcademicArticle ;
@@ -3972,6 +4134,17 @@
     # Added automatically for meeting on 2017-06-23
     a :Reading .
 
+:reading:Waldstein2008
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822390107-010> ;
+    dc:title "The Mangle of Practice or the Empire of Signs: Toward a Dialogue between Science Studies and Soviet Semiotics" ;
+    dc:creator :person:WaldsteinM ;
+    bibo:authorList (
+        :person:WaldsteinM
+    ) ;
+    dc:isPartOf :volume:Pickering2008 ;
+    bibo:doi "10.1215/9780822390107-010" .
+
 :reading:Winograd1987
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1207/s15327051hci0301_2> ;
@@ -4136,6 +4309,19 @@
         :person:BielbyJ
     ) ;
     bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
+
+:volume:Pickering2008
+    a bibo:EditedBook ;
+    dc:title "The Mangle in Practice: Science, Society, and Becoming" ;
+    dc:shortTitle "The Mangle in Practice" ;
+    dc:date "2008" ;
+    dc:publisher :publisher:DUP ;
+    bibo:editor :person:PickeringA ;
+    bibo:editor :person:GuzikK ;
+    bibo:editorList (
+        :person:PickeringA
+        :person:GuzikK
+    ) .
 
 :volume:Star1995
     a bibo:EditedBook ;
