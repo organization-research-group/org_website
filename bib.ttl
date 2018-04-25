@@ -33,7 +33,7 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2018-04-13, :meeting:2018-04-06, :meeting:2018-03-30, :meeting:2018-03-23, :meeting:2018-03-16, :meeting:2018-03-09, :meeting:2018-03-02, :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2018-04-27, :meeting:2018-04-20, :meeting:2018-04-13, :meeting:2018-04-06, :meeting:2018-03-30, :meeting:2018-03-23, :meeting:2018-03-16, :meeting:2018-03-09, :meeting:2018-03-02, :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:CHI2014
     a bibo:Conference ;
@@ -146,6 +146,11 @@
     foaf:homepage <http://firstmonday.org> ;
     bibo:issn "1396-0466" .
 
+:journal:GoogleDevelopersBlog
+    a bibo:Journal ;
+    dc:title "Google Developers Blog" ;
+    foaf:homepage <https://developers.googleblog.com> .
+
 :journal:HCI
     a bibo:Journal ;
     dc:title "Human Computer Interaction" ;
@@ -219,6 +224,12 @@
     dc:title "Journal of Management Information Systems" ;
     foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
     bibo:issn "0742-1222", "1557-928X" .
+
+:journal:KO
+    a bibo:Journal ;
+    dc:title "Knowledge Organization" ;
+    foaf:homepage <http://www.isko.org/ko.html> ;
+    bibo:issn "0943-7444" .
 
 :journal:LLC
     a bibo:Journal ;
@@ -1679,6 +1690,35 @@
         [ dc:description "No meeting\u2014go to the <a href=\"http://info4socialgood2018.web.unc.edu\">Symposium on Information for Social Good</a>!" ]
     ) .
 
+:meeting:2018-04-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-04-20T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tennis2013 ;
+    :schedule (
+        :reading:Tennis2013
+    ) .
+
+:meeting:2018-04-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-04-27T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mackenzie2017, :reading:Packer2018 ;
+    :schedule (
+        :reading:Mackenzie2017
+        :reading:Packer2018
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2080,12 +2120,23 @@
     foaf:surname "Griesemer" ;
     foaf:homepage <http://griesemer.ucdavis.edu/> .
 
+:person:GuajardoCespedesM
+    a foaf:Person ;
+    foaf:givenname "Mario" ;
+    foaf:surname "Guajardo-Céspedes" .
+
 :person:GuzikK
     a foaf:Person ;
     owl:sameAs viaf:48607995 ;
     foaf:givenname "Keith" ;
     foaf:surname "Guzik" ;
     foaf:workInfoHomepage <https://clas.ucdenver.edu/directory/faculty-staff/keith_guzik> .
+
+:person:HalpernY
+    a foaf:Person ;
+    foaf:givenname "Yoni" ;
+    foaf:surname "Halpern" ;
+    foaf:homepage <https://cs.nyu.edu/~halpern/> .
 
 :person:HansethO
     a foaf:Person ;
@@ -2260,6 +2311,13 @@
     foaf:surname "Lyytinen" ;
     foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
 
+:person:MackenzieA
+    a foaf:Person ;
+    owl:sameAs viaf:40514317 ;
+    foaf:givenname "Adrian" ;
+    foaf:surname "Mackenzie" ;
+    foaf:workInfoHomepage <http://www.lancaster.ac.uk/sociology/about-us/people/Adrian-Mackenzie> .
+
 :person:MaiJ
     a foaf:Person ;
     owl:sameAs wd:Q28762574, orcid:0000-0002-3053-8675 ;
@@ -2286,6 +2344,12 @@
     foaf:givenname "Adrian" ;
     foaf:surname "Miles" ;
     foaf:homepage <http://web.archive.org/web/20180222142812/http://vogmae.net.au> .
+
+:person:MitchellM
+    a foaf:Person ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Mitchell" ;
+    foaf:homepage <http://www.m-mitchell.com> .
 
 :person:MonteiroE
     a foaf:Person ;
@@ -2328,6 +2392,12 @@
     foaf:givenname "Alfred" ;
     foaf:surname "Nordmann" ;
     foaf:workInfoHomepage <www.philosophie.tu-darmstadt.de/nordmann>.
+
+:person:PackerB
+    a foaf:Person ;
+    foaf:givenname "Ben" ;
+    foaf:surname "Packer" ;
+    foaf:homepage <https://www.quora.com/profile/Ben-Packer-1> .
 
 :person:ParikkaJ
     a foaf:Person ;
@@ -2528,6 +2598,14 @@
     foaf:givenname "Dennis" ;
     foaf:surname "Tenen" ;
     foaf:homepage <http://denten.plaintext.in/> .
+
+:person:TennisJ
+  a foaf:Person ;
+  owl:sameAs viaf:271507113 ;
+  foaf:givenname "Joseph T." ;
+  foaf:surname "Tennis" ;
+  foaf:homepage <https://joseph-t-tennis.squarespace.com> ;
+  foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/jtennis> .
 
 :person:TimmermansS
     a foaf:Person ;
@@ -3669,6 +3747,18 @@
     ] ;
     bibo:doi "10.5210/fm.v22i12.8097" .
 
+:reading:Mackenzie2017
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1017932995> ;
+    dc:title "Machine learners: archaeology of a data practice" ;
+    bibo:shortTitle "Machine learners" ;
+    dc:creator :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:date "2017" ;
+    dc:publisher :publisher:MIT .
+
 :reading:Mai2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1080/01972243.2016.1153010> ;
@@ -3807,6 +3897,23 @@
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-09
     a :Reading .
+
+:reading:Packer2018
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Text embedding models contain bias. Here's why that matters." ;
+    dc:creator :person:PackerB, :person:HalpernY, :person:GuajardoCespedesM, :person:MitchellM ;
+    bibo:authorList (
+      :person:PackerB
+      :person:HalpernY
+      :person:GuajardoCespedesM
+      :person:MitchellM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:GoogleDevelopersBlog
+    ] ;
+    dc:date "2018-04-13" ;
+    bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
 
 :reading:Parikka2015
     a :Reading, bibo:Book ;
@@ -4159,6 +4266,23 @@
     ) ;
     dc:date "June 2017" ;
     dc:publisher :publisher:SUP .
+
+:reading:Tennis2013
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Ethos and ideology of knowledge organization: toward precepts for an engaged knowledge organization" ;
+    dc:creator :person:TennisJ ;
+    bibo:authorList (
+         :person:TennisJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2013" ;
+        dc:isPartOf :journal:KO ;
+        bibo:issue "1" ;
+        bibo:volume "40"
+    ] ;
+    bibo:pages "42-49" ;
+    bibo:uri "http://hdl.handle.net/1773/37978" .
 
 :reading:Tsing2015
     a :Reading, bibo:Book ;
