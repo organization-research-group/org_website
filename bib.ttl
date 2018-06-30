@@ -33,7 +33,7 @@
 
 :ORG-UNC
     a :Org;
-    :meeting :meeting:2018-04-27, :meeting:2018-04-20, :meeting:2018-04-13, :meeting:2018-04-06, :meeting:2018-03-30, :meeting:2018-03-23, :meeting:2018-03-16, :meeting:2018-03-09, :meeting:2018-03-02, :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
+    :meeting :meeting:2018-05-04, :meeting:2018-04-27, :meeting:2018-04-20, :meeting:2018-04-13, :meeting:2018-04-06, :meeting:2018-03-30, :meeting:2018-03-23, :meeting:2018-03-16, :meeting:2018-03-09, :meeting:2018-03-02, :meeting:2018-02-23, :meeting:2018-02-16, :meeting:2018-02-09, :meeting:2018-02-02, :meeting:2018-01-12, :meeting:2018-01-26, :meeting:2017-12-15, :meeting:2017-12-08, :meeting:2018-01-05, :meeting:2017-11-17, :meeting:2017-11-10, :meeting:2017-11-03, :meeting:2017-10-27, :meeting:2017-10-13, :meeting:2017-10-06, :meeting:2017-09-29, :meeting:2017-09-22, :meeting:2017-09-15, :meeting:2017-09-08, :meeting:2017-09-01, :meeting:2017-08-25, :meeting:2017-08-18, :meeting:2017-07-28, :meeting:2017-07-21, :meeting:2017-07-07, :meeting:2017-06-30, :meeting:2017-06-23, :meeting:2017-06-09, :meeting:2017-06-02, :meeting:2017-05-26, :meeting:2017-05-19, :meeting:2017-05-12, :meeting:2017-05-05, :meeting:2017-04-28, :meeting:2017-04-21, :meeting:2017-04-14, :meeting:2017-03-31, :meeting:2017-03-24, :meeting:2017-03-17, :meeting:2017-03-10, :meeting:2017-03-03, :meeting:2017-02-17, :meeting:2017-02-10, :meeting:2017-02-03, :meeting:2017-01-27, :meeting:2017-01-20, :meeting:2017-01-13, :meeting:2016-12-09, :meeting:2016-12-02, :meeting:2016-11-18, :meeting:2016-11-11, :meeting:2016-11-04, :meeting:2016-10-28, :meeting:2016-10-14, :meeting:2016-10-07, :meeting:2016-09-30, :meeting:2016-09-23, :meeting:2016-09-16, :meeting:2016-09-09, :meeting:2016-09-02, :meeting:2016-08-26, :meeting:2016-08-05, :meeting:2016-07-29, :meeting:2016-07-15, :meeting:2016-07-08, :meeting:2016-07-01, :meeting:2016-06-24, :meeting:2016-06-17, :meeting:2016-06-10, :meeting:2016-06-02, :meeting:2016-05-26, :meeting:2016-05-20, :meeting:2016-04-22, :meeting:2016-04-15, :meeting:2016-04-01, :meeting:2016-03-25, :meeting:2016-03-04, :meeting:2016-02-26, :meeting:2016-02-19, :meeting:2016-02-12, :meeting:2015-10-02, :meeting:2015-09-25, :meeting:2015-09-18, :meeting:2015-09-11, :meeting:2015-09-04, :meeting:2015-08-28, :meeting:2015-08-17, :meeting:2015-07-30, :meeting:2015-07-24 .
 
 :conference:CHI2014
     a bibo:Conference ;
@@ -1719,6 +1719,20 @@
         :reading:Packer2018
     ) .
 
+:meeting:2018-05-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-05-04T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Salter2015 ;
+    :schedule (
+        :reading:Salter2015
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2338,6 +2352,14 @@
     foaf:givenname "Eden" ;
     foaf:surname "Medina" ;
     foaf:homepage <https://www.informatics.indiana.edu/edenm/> .
+
+:person:SalterC
+    a foaf:Person ;
+    owl:sameAs viaf:86250151 ;
+    foaf:givenname "Chris" ;
+    foaf:surname "Salter" ;
+    foaf:homepage <http://www.chrissalter.com/> .
+
 
 :person:MilesA
     a foaf:Person ;
@@ -4088,6 +4110,20 @@
     ] ;
     bibo:pages "73-92" ;
     bibo:doi "10.1080/07421222.2000.11045652" .
+
+:reading:Salter2015
+    a :Reading, bibo:Book ;
+    dc:title "Alien agency: experimental encounters with art in the making" ;
+    dc:shortTitle "Alien agency" ;
+    dc:creator :person:SalterC ;
+    bibo:authorList (
+        :person:SalterC
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "978-0-2620-2846-2" .
+
+
 
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
