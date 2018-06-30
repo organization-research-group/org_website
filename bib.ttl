@@ -48,11 +48,11 @@
         :meeting:2018-02-16,
         :meeting:2018-02-09,
         :meeting:2018-02-02,
-        :meeting:2018-01-12,
         :meeting:2018-01-26,
+        :meeting:2018-01-12,
+        :meeting:2018-01-05,
         :meeting:2017-12-15,
         :meeting:2017-12-08,
-        :meeting:2018-01-05,
         :meeting:2017-11-17,
         :meeting:2017-11-10,
         :meeting:2017-11-03,
@@ -2452,14 +2452,6 @@
     foaf:surname "Medina" ;
     foaf:homepage <https://www.informatics.indiana.edu/edenm/> .
 
-:person:SalterC
-    a foaf:Person ;
-    owl:sameAs viaf:86250151 ;
-    foaf:givenname "Chris" ;
-    foaf:surname "Salter" ;
-    foaf:homepage <http://www.chrissalter.com/> .
-
-
 :person:MilesA
     a foaf:Person ;
     foaf:givenname "Adrian" ;
@@ -2633,6 +2625,13 @@
     foaf:surname "Sack" ;
     foaf:homepage <https://people.ucsc.edu/~wsack/> ;
     foaf:workInfoHomepage <http://film.ucsc.edu/faculty/warren_sack> .
+
+:person:SalterC
+    a foaf:Person ;
+    owl:sameAs viaf:86250151 ;
+    foaf:givenname "Chris" ;
+    foaf:surname "Salter" ;
+    foaf:homepage <http://www.chrissalter.com/> .
 
 :person:SandvigC
     a foaf:Person ;
@@ -4221,8 +4220,6 @@
     dc:date "2015" ;
     dc:publisher :publisher:MIT ;
     bibo:isbn13 "978-0-2620-2846-2" .
-
-
 
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
