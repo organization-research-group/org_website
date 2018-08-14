@@ -121,8 +121,8 @@ Add arbitrary HTML by just typing a string.
 
         ttl_with_new = clean_ttl(
             old_ttl.replace(
-                '    :meeting',
-                '    :meeting\n        :meeting:' + date_input + ',')
+                '    :meeting\n',
+                '    :meeting\n        :meeting:' + date_input + ',\n')
             + new_ttl
         )
 
