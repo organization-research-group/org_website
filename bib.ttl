@@ -34,6 +34,14 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2018-08-17,
+        :meeting:2018-08-24,
+        :meeting:2018-08-31,
+        :meeting:2018-09-07,
+        :meeting:2018-09-14,
+        :meeting:2018-09-21,
+        :meeting:2018-09-28,
+        :meeting:2018-10-05,
         :meeting:2018-08-10,
         :meeting:2018-08-03,
         :meeting:2018-07-20,
@@ -2012,6 +2020,114 @@
         :reading:Law2013
     ) .
 
+:meeting:2018-08-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2018-08-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-24T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mrazek2002a ;
+    :schedule (
+        :reading:Mrazek2002a
+    ) .
+
+:meeting:2018-08-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-31T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2018-09-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-07T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mrazek2002b ;
+    :schedule (
+        :reading:Mrazek2002b
+    ) .
+
+:meeting:2018-09-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-14T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting due to <a href=\"https://en.wikipedia.org/wiki/Hurricane_Florence\">Hurricane Florence</a>." ]
+    ) .
+
+:meeting:2018-09-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-21T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:FletcherWatson2018 ;
+    :schedule (
+        :reading:FletcherWatson2018
+    ) .
+
+:meeting:2018-09-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-28T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting due to <a href=\"https://sils.unc.edu/events/2018/5-min-madness\">5-Minute Madness</a>." ]
+    ) .
+
+:meeting:2018-10-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-05T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stoler2009 ;
+    :schedule (
+        :reading:Stoler2009
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2298,6 +2414,12 @@
     foaf:surname "Day" ;
     foaf:homepage <http://info.slis.indiana.edu/~roday/> .
 
+:person:DeJaegherH
+    a foaf:Person ;
+    foaf:givenname "Hanne" ;
+    foaf:surname "De Jaegher" ;
+    foaf:homepage <https://hannedejaegher.net> .
+
 :person:DennettD
     a foaf:Person ;
     owl:sameAs viaf:99825560, wd:Q215263 ;
@@ -2373,12 +2495,24 @@
     foaf:surname "Finn" ;
     foaf:homepage <https://meganfinn.org/> .
 
+:person:FletcherWatsonS
+    a foaf:Person ;
+    foaf:givenname "Sue" ;
+    foaf:surname "Fletcher-Watson" ;
+    foaf:workInfoHomepage <https://www.ed.ac.uk/profile/dr-sue-fletcher-watson> .
+
 :person:FlynnP
     a foaf:Person ;
     owl:sameAs owl:0000-0003-4203-4199 ;
     foaf:givenname "Peter" ;
     foaf:surname "Flynn" ;
     foaf:homepage <http://blogs.silmaril.ie/peter/>, <http://research.ucc.ie/profiles/H505/pflynn> .
+
+:person:FrauenbergerC
+    a foaf:Person ;
+    foaf:givenname "Christopher" ;
+    foaf:surname "Frauenberger" ;
+    foaf:workInfoHomepage <http://igw.tuwien.ac.at/hci/people/CFrauenberger> .
 
 :person:FreemanJ
     a foaf:Person ;
@@ -2680,6 +2814,12 @@
     foaf:surname "Mackenzie" ;
     foaf:workInfoHomepage <http://www.lancaster.ac.uk/sociology/about-us/people/Adrian-Mackenzie> .
 
+:person:MagneeM
+    a foaf:Person ;
+    foaf:givenname "Maurice" ;
+    foaf:surname "Magnée" ;
+    foaf:workInfoHomepage <https://www.han.nl/onderzoek/kennismaken/han-sociaal/lectoraat/levensloopbegeleiding-bij-autisme/team/onderzoekers/maurice-magnee/> .
+
 :person:MaiJ
     a foaf:Person ;
     owl:sameAs wd:Q28762574, orcid:0000-0002-3053-8675 ;
@@ -2726,6 +2866,13 @@
     foaf:givenname "Darnell L." ;
     foaf:surname "Moore" ;
     foaf:homepage <http://darnellmoore.squarespace.com/> .
+
+:person:MrazekR
+    a foaf:Person ;
+    owl:sameAs wd:Q19731667 , viaf:102452101 ;
+    foaf:givenname "Rudolf" ;
+    foaf:surname "Mrázek" ;
+    foaf:homepage <https://lsa.umich.edu/history/people/emeritus/rdlf.html> .
 
 :person:MylonasE
     a foaf:Person ;
@@ -2962,6 +3109,13 @@
     foaf:surname "Stevenson" ;
     foaf:homepage <https://hcommons.org/members/mstevenson/> .
 
+:person:StolerAL
+    a foaf:Person ;
+    owl:sameAs wd:Q16203101, viaf:263247736 ;
+    foaf:givenname "Ann Laura" ;
+    foaf:surname "Stoler" ;
+    foaf:workInfoHomepage <https://www.newschool.edu/lang/faculty/Ann-Stoler/> .
+
 :person:SuchmanL
     a foaf:Person ;
     owl:sameAs viaf:13809022, wd:Q3266022 ;
@@ -3021,6 +3175,12 @@
     foaf:givenname "Fred" ;
     foaf:surname "Turner" ;
     foaf:homepage <http://fredturner.stanford.edu/> .
+
+:person:VanDijkJ
+    a foaf:Person ;
+    foaf:givenname "Jelle" ;
+    foaf:surname "van Dijk" ;
+    foaf:workInfoHomepage <https://people.utwente.nl/jelle.vandijk> .
 
 :person:VanDoornN
     a foaf:Person ;
@@ -3101,6 +3261,12 @@
     owl:sameAs viaf:98310436, wd:Q67259 ;
     foaf:givenname "Kurt H." ;
     foaf:surname "Wolff" .
+
+:person:YeJ
+    a foaf:Person ;
+    foaf:givenname "Juan" ;
+    foaf:surname "Ye" ;
+    foaf:homepage <https://sites.google.com/site/juanyeresearch/> .
 
 :proceedings:CHI2014
     a bibo:Proceedings ;
@@ -3766,6 +3932,29 @@
     bibo:pages "412-422" ;
     bibo:doi "10.1002/asi.23660" .
 
+:reading:FletcherWatson2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1145/3243461> ;
+    dc:title "Diversity Computing" ;
+    dc:creator :person:FletcherWatsonS, :person:DeJaegherH, :person:VanDijkJ, :person:FrauenbergerC, :person:MagneeM, :person:YeJ ;
+    bibo:authorList (
+        :person:FletcherWatsonS
+        :person:DeJaegherH
+        :person:VanDijkJ
+        :person:FrauenbergerC
+        :person:MagneeM
+        :person:YeJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September–October 2018" ;
+        dc:isPartOf :journal:interactions ;
+        bibo:issue "5" ;
+        bibo:volume "25"
+    ] ;
+    bibo:pages "28-33" ;
+    bibo:doi "10.1145/3243461" .
+
 :reading:Flynn1997
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/(SICI)1097-4571(199707)48:7%3c614::AID-ASI8%3e3.0.CO;2-W> ;
@@ -4316,6 +4505,18 @@
     bibo:pages "257-260" ;
     bibo:doi "10.1353/wsq.2013.0087" .
 
+:reading:Mrazek2002a
+    a :Reading, bibo:BookSection ;
+    dc:title "Language as Asphalt" ;
+    dc:isPartOf :volume:Mrazek2002 ;
+    bibo:pages "1–42" .
+
+:reading:Mrazek2002b
+    a :Reading, bibo:BookSection ;
+    dc:title "Let Us Become Radio Mechanics" ;
+    dc:isPartOf :volume:Mrazek2002 ;
+    bibo:pages "161–192" .
+
 :reading:Naur1992
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/23253583> ;
@@ -4758,6 +4959,18 @@
     bibo:pages "1331–1346" ;
     bibo:doi "10.1177/1461444814555950" .
 
+:reading:Stoler2009
+    a :Reading, bibo:Book ;
+    dc:title "Along the Archival Grain: Epistemic Anxieties and Colonial Common Sense" ;
+    dc:shortTitle "Along the Archival Grain" ;
+    dc:creator :person:StolerAL ;
+    bibo:authorList (
+        :person:StolerAL
+    ) ;
+    dc:date "2009" ;
+    dc:publisher :publisher:PUP ;
+    bibo:isbn13 "978-0-691-01578-1", "978-0-691-01577-4" .
+
 :reading:Suchman1993
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF00749015> ;
@@ -5099,6 +5312,18 @@
         :person:BielbyJ
     ) ;
     bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
+
+:volume:Mrazek2002
+    a bibo:Book ;
+    dc:title "Engineers of Happy Land: Technology and Nationalism in a Colony" ;
+    dc:shortTitle "Engineers of Happy Land" ;
+    dc:date "2002" ;
+    dc:publisher :publisher:PUP ;
+    dc:creator :person:MrazekR ;
+    bibo:authorList (
+        :person:MrazekR
+    ) ;
+    bibo:isbn10 "0-691-09161-7", "0-691-09162-5" .
 
 :volume:Pickering2008
     a bibo:EditedBook ;
