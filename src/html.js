@@ -6,7 +6,7 @@ const R = require('ramda')
 module.exports = {
   renderMain,
   renderArchive,
-  renderAuthors,
+  renderIndex,
 }
 
 const days = [
@@ -51,7 +51,7 @@ function renderArchive(meetings) {
   return renderPage(content)
 }
 
-function renderAuthors(meetings) {
+function renderIndex(meetings) {
   const entitiesByType = R.pipe(
     R.transduce(
       R.map(R.prop('entities')),

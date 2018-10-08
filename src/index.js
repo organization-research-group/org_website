@@ -7,33 +7,25 @@ const fs = require('fs')
     , tar = require('tar-stream')
     , getBibMap = require('./rdf_to_csl')
     , getMeetings = require('./meetings')
-    , { renderArchive, renderAuthors, renderMain } = require('./html')
+    , { renderArchive, renderIndex, renderMain } = require('./html')
 
 const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
 
-main().catch(
-  err => {
+createWebsiteArchive()
+  .catch(err => {
     process.stderr.write('Uncaught: ' + err.toString() + '\n' + err.stack + '\n');
     process.exit(1);
-  }
-)
-
-async function main() {
-  const store = await new Promise((resolve, reject) => {
-    const store = N3.Store()
-        , parser = N3.Parser()
-
-    parser.parse(fs.createReadStream(BIB_FILE), (err, triple, prefixes) => {
-      if (err) reject(err)
-
-      if (triple) store.addTriple(triple)
-
-      if (prefixes) {
-        store.addPrefixes(prefixes)
-        resolve(store)
-      }
-    })
   })
+
+async function createWebsiteArchive() {
+  const store = N3.Store()
+      , parser = N3.StreamParser()
+
+  await new Promise((resolve, reject) =>
+    store
+      .import(fs.createReadStream(BIB_FILE).pipe(parser))
+      .on('error', reject)
+      .on('end', resolve))
 
   const bibItems = await getBibMap(store)
 

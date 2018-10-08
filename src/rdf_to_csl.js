@@ -3,8 +3,8 @@
 const N3 = require('n3')
     , Cite = require('citation-js')
     , { DateParser } = require('citeproc')
-    , literalValue = N3.Util.getLiteralValue
-    , { isType, rdfListToArray, ns, getDCContainer, one } = require('./rdf')
+    , { rdfListToArray, findOne } = require('org-n3-utils')
+    , { expandNS, isType, getDCContainer } = require('./rdf')
 
 const bibRDFTypes = {
   'bibo:BookSection': bookSection,
@@ -18,14 +18,14 @@ module.exports = function getBibEntries(store) {
   const cslItems = Object.entries(bibRDFTypes).reduce((acc=[], [rdfType, fn]) =>
     acc.concat(
       store
-        .getSubjects('rdf:type', rdfType)
+        .getSubjects(expandNS('rdf:type'), expandNS(rdfType))
         .map(uri => {
           const def = fn(store, uri)
 
           try {
             return execCSLDefinition(store, uri, def)
           } catch (e) {
-            console.error('Error generating CSL for URI: ' + uri);
+            console.error('Error generating CSL for URI: ' + uri.value);
             throw e;
           }
         })
@@ -47,8 +47,8 @@ function bookSection(store, uri) {
       , $book = getDCContainer(store, $chapter)
 
   const [ $publisher ] = store
-    .getObjects($book, 'dc:publisher')
-    .filter(isType(store, ':Publisher'))
+    .getObjects($book, expandNS('dc:publisher'))
+    .filter(isType(store, expandNS(':Publisher')))
 
   return {
     type: 'chapter',
@@ -142,9 +142,9 @@ function book(store, uri) {
 
 function conferencePaper(store, uri) {
   const $paper = uri
-      , $conference = one(store, $paper, 'bibo:presentedAt', null).object
-      , $proceedings = one(store, $paper, 'bibo:reproducedIn', null).object
-      , $publisher = one(store, $proceedings, 'dc:publisher', null).object
+      , $conference = findOne(store, $paper, expandNS('bibo:presentedAt'), null).object
+      , $proceedings = findOne(store, $paper, expandNS('bibo:reproducedIn'), null).object
+      , $publisher = findOne(store, $proceedings, expandNS('dc:publisher'), null).object
 
   return {
     type: 'paper-conference',
@@ -170,7 +170,7 @@ function conferencePaper(store, uri) {
 
 function execCSLDefinition(store, uri, def) {
   const csl = {
-    id: uri.split(':').slice(-1)[0],
+    id: uri.value.split(':').slice(-1)[0],
     type: def.type,
   }
 
@@ -181,7 +181,7 @@ function execCSLDefinition(store, uri, def) {
 
     for (let i = 0; i < paths.length; i++) {
       const [ s, p ] = paths[i]
-          , [ o ] = store.getObjects(s, p)
+          , [ o ] = store.getObjects(s, expandNS(p))
 
       if (o) {
         csl[cslKey] = o;
@@ -195,10 +195,22 @@ function execCSLDefinition(store, uri, def) {
       const agent = {}
 
       store.forEach(({ predicate, object }) => {
-        if (predicate === ns`foaf:name`) agent.name = literalValue(object);
-        if (predicate === ns`foaf:givenname`) agent.given = literalValue(object);
-        if (predicate === ns`foaf:surname`) agent.family = literalValue(object);
-        if (predicate === ns`bibo:suffixName`) agent.suffix = literalValue(object);
+        if (predicate.equals(expandNS('foaf:name'))) {
+          agent.name = object.value
+        }
+
+        if (predicate.equals(expandNS('foaf:givenname'))) {
+          agent.given = object.value
+        }
+
+        if (predicate.equals(expandNS('foaf:surname'))) {
+          agent.family = object.value
+        }
+
+        if (predicate.equals(expandNS('bibo:suffixName'))) {
+          agent.suffix = object.value
+        }
+
       }, uri)
 
       return agent
@@ -208,7 +220,7 @@ function execCSLDefinition(store, uri, def) {
   })
 
   Object.entries(csl).forEach(([k, v]) => {
-    if (N3.Util.isLiteral(v)) csl[k] = literalValue(v)
+    if (N3.Util.isLiteral(v)) csl[k] = v.value
   })
 
   csl.issued = DateParser.parseDateToArray(csl.issued)

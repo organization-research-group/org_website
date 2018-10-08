@@ -470,7 +470,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-07-24T11:00:00-05:00"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-07-24T11:00:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (

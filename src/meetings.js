@@ -1,21 +1,15 @@
 "use strict";
 
 const R = require('ramda')
-    , jsonld = require('jsonld')
-    , { toJSONLD, context } = require('./rdf')
+    , N3 = require('n3')
+    , { expandNS, getFirstObjectLiteral } = require('./rdf')
+    , { rdfListToArray } = require('org-n3-utils')
 
 function fragmentOf(uri) {
-  const id = typeof uri === 'object'
-    ? uri['@id']
-    : uri
-
-  if (!id) {
-    throw new Error(`${uri} does not have an associated URI`)
-  }
-
-  return id.replace(/^org:/, '')
+  return uri.value.replace(/.*\/graph/, '')
 }
 
+/*
 const frame = {
   '@context': Object.assign({}, context, {
     schedule: {
@@ -49,12 +43,13 @@ const frame = {
     }
   },
 }
+*/
 
 function makeReadingsHTML(store, bib, readings) {
   const readingsHTML = readings.map(item => {
     let ret
 
-    const bibID = item['@id'].split(':').slice(-1)[0]
+    const bibID = item.value.split(':').slice(-1)[0]
         , bibItem = bib.get(bibID)
 
     if (!bibItem) {
@@ -78,34 +73,44 @@ function makeReadingsHTML(store, bib, readings) {
   return readingsHTML.join('')
 }
 
-const entityDefinitions = {
+const entityTypes = {
   People: {
-    frame: {
-      '@type': 'foaf:Person',
-    },
-    label: d => `${d['foaf:givenname']} ${d['foaf:surname']}`,
+    uri: expandNS('foaf:Person'),
+    label: (store, term) => ([
+      getFirstObjectLiteral(store, term, 'foaf:givenname'),
+      getFirstObjectLiteral(store, term, 'foaf:surname'),
+    ]).filter(R.identity).join(' ')
   },
-
   Journals: {
-    frame: {
-      '@type': 'bibo:Journal',
-    },
-    label: R.prop('dc:title'),
+    uri: expandNS('bibo:Journal'),
+    label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
   },
-
   Conferences: {
-    frame: {
-      '@type': 'bibo:Conference',
-    },
-    label: R.prop('dc:title'),
+    uri: expandNS('bibo:Conference'),
+    label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
   },
-
   Publishers: {
-    frame: {
-      '@type': 'org:Publisher',
-    },
-    label: R.prop('foaf:name'),
-  }
+    uri: expandNS(':Publisher'),
+    label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
+  },
+}
+
+function getEntities(store) {
+  const ret = {}
+
+  return [].concat(...Object.entries(entityTypes).map(([key, { uri }]) =>
+    store.getSubjects(expandNS('rdf:type'), uri).map(term => {
+      return { key, term }
+    })
+  )).map(({ key, term }) => {
+    const ret = {
+      key,
+      id: term.value,
+      label: entityTypes[key].label(store, term),
+    }
+
+    return ret
+  })
 }
 
 async function resolveObj(obj) {
@@ -116,28 +121,90 @@ async function resolveObj(obj) {
   return R.fromPairs(pairs)
 }
 
-module.exports = async function getMeetings(store, bib) {
-  const ld = await toJSONLD(store, frame)
+function getMeetingTime(store, meetingURI) {
+  try {
+    const [ interval ] = store.getObjects(meetingURI, expandNS('lode:atTime'))
+        , [ beginning ] = store.getObjects(interval, expandNS('time:hasBeginning'))
+        , [ dateStamp ] = store.getObjects(beginning, expandNS('time:inXSDDateTimeStamp'))
 
-  const meetings = ld['@graph']
+    return dateStamp
+
+  } catch (e) {
+    throw new Error(
+      `Triples for meeting time of ${meetingURI.value} are incorrectly defined.`
+    )
+  }
+}
+
+function makeSubGraphFrom(store, nodes) {
+  const newStore = N3.Store()
+      , subjs = [...nodes]
+
+  while (subjs.length) {
+    const subj = subjs.shift()
+
+    store.getQuads(subj).forEach(quad => {
+      const searchForObject = (
+        newStore.addQuad(quad) && (
+          N3.Util.isNamedNode(quad.object) || 
+          N3.Util.isBlankNode(quad.object)
+        )
+      )
+
+      if (searchForObject) {
+        subjs.push(quad.object)
+      }
+    })
+  }
+
+  return newStore
+}
+
+module.exports = async function getMeetings(store, bib) {
+  const meetings = store
+    .getObjects(null, expandNS(':meeting'))
+    .map(meetingURI => {
+      const [ schedule ] = store.getObjects(meetingURI, expandNS(':schedule'))
+
+      return {
+        meetingURI,
+        at: getMeetingTime(store, meetingURI),
+        schedule: rdfListToArray(store, schedule),
+      }
+    })
 
   return Promise.all(meetings.map(async meeting => {
     const { schedule, at } = meeting
 
     const html = R.pipe(
-      R.groupWith((a, b) => a['@type'] === b['@type']),
+      R.groupWith((a, b) => a.termType === b.termType),
       R.transduce(
         R.map(list =>
-          [].concat(list[0]['@type']).includes('org:Reading')
+          list[0].termType === 'NamedNode'
             ? makeReadingsHTML(store, bib, list)
-            : list.map(({ description }) => `<p>${description}</p>`)),
+            : ''
+          /*
+            : list.map(R.pipe(
+                bNode => store.getObjects(bNode, expandNS('dc:description')),
+                R.first,
+                term => `<p>${term.value}</p>`
+              )).join('\n')
+              */
+        ),
         R.concat,
         '',
       )
     )(schedule)
 
-    const meetingFragment = fragmentOf(meeting);
+    const meetingFragment = fragmentOf(meeting.meetingURI);
 
+    const entities = await R.pipe(
+      meetingURI => store.getObjects(meetingURI, expandNS('lode:involved')),
+      involvedURIs => makeSubGraphFrom(store, involvedURIs),
+      getEntities
+    )(meeting.meetingURI)
+
+    /*
     const entities = await R.pipe(
       involved => ({ '@graph': involved, '@context': context }),
       ld => R.map(({ frame, label }) =>
@@ -152,10 +219,11 @@ module.exports = async function getMeetings(store, bib) {
       )(entityDefinitions),
       resolveObj
     )([].concat(meeting['lode:involved'] || []))
+    */
 
     return {
       fragment: meetingFragment,
-      date: new Date(at.beginning.datetime),
+      date: new Date(at.value),
       entities,
       html,
     }
