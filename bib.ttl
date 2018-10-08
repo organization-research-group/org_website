@@ -34,14 +34,14 @@
 :ORG-UNC
     a :Org;
     :meeting
-        :meeting:2018-08-17,
-        :meeting:2018-08-24,
-        :meeting:2018-08-31,
-        :meeting:2018-09-07,
-        :meeting:2018-09-14,
-        :meeting:2018-09-21,
-        :meeting:2018-09-28,
         :meeting:2018-10-05,
+        :meeting:2018-09-28,
+        :meeting:2018-09-21,
+        :meeting:2018-09-14,
+        :meeting:2018-09-07,
+        :meeting:2018-08-31,
+        :meeting:2018-08-24,
+        :meeting:2018-08-17,
         :meeting:2018-08-10,
         :meeting:2018-08-03,
         :meeting:2018-07-20,
@@ -3008,11 +3008,11 @@
     foaf:surname "Ruecker" .
 
 :person:RussellA
-  a foaf:Person ;
-  owl:sameAs viaf:307422034 ;
-  foaf:givenname "Andrew L." ;
-  foaf:surname "Russell" ;
-  foaf:homepage <http://arussell.org> .
+    a foaf:Person ;
+    owl:sameAs viaf:307422034 ;
+    foaf:givenname "Andrew L." ;
+    foaf:surname "Russell" ;
+    foaf:homepage <http://arussell.org> .
 
 :person:SackW
     a foaf:Person ;
@@ -3137,14 +3137,15 @@
     foaf:homepage <http://denten.plaintext.in/> .
 
 :person:TennisJ
-  a foaf:Person ;
-  owl:sameAs viaf:271507113 ;
-  foaf:givenname "Joseph T." ;
-  foaf:surname "Tennis" ;
-  foaf:homepage <https://joseph-t-tennis.squarespace.com> ;
-  foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/jtennis> .
+    a foaf:Person ;
+    owl:sameAs viaf:271507113 ;
+    foaf:givenname "Joseph T." ;
+    foaf:surname "Tennis" ;
+    foaf:homepage <https://joseph-t-tennis.squarespace.com> ;
+    foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/jtennis> .
 
 :person:ThomasN
+    a foaf:Person ;
     foaf:givenname "Neal" ;
     foaf:surname "Thomas" ;
     foaf:homepage <http://www.hivemedia.ca> .
@@ -3523,8 +3524,6 @@
     bibo:doi "10.1017/S0269889700002556" .
 
 :reading:Askey2017
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2017-06-02
     a :Reading ;
     owl:sameAs <https://doi.org/10.18665/sr.303501> ;
     dc:title "Finding a Way from the Margins to the Middle: Library Information Technology, Leadership, and Culture" ;
@@ -4847,8 +4846,6 @@
     bibo:doi "10.1177/0263276414531052" .
 
 :reading:Smith2011
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2018-07-13
     a :Reading, bibo:BookSection ;
     owl:sameAs <http://doi.org/10.3366/edinburgh/9780748641178.003.0008> ;
     dc:title "Deleuze and the Question of Desire: Towards an Immanent Theory of Ethics" ;
@@ -5030,8 +5027,6 @@
     bibo:uri "http://hdl.handle.net/1773/37978" .
 
 :reading:Thomas2018
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2018-08-03
     a :Reading, bibo:Book ;
     dc:title "Becoming-Social in a Networked Age" ;
     dc:creator :person:ThomasN ;
