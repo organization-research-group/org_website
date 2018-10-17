@@ -3,7 +3,6 @@
 const R = require('ramda')
     , N3 = require('n3')
     , ns = require('lov-ns')
-    , jsonld = require('jsonld')
     , { findOne, nsExpander } = require('org-n3-utils')
 
 const expandNS = nsExpander({
@@ -34,25 +33,6 @@ function getDCContainer(store, uri) {
   return container && container.object
 }
 
-async function toJSONLD(store, frame) {
-  const ntriples = await new Promise((resolve, reject) => {
-    const writer = N3.Writer({ format: 'N-Triples' })
-    store.forEach(t => writer.addTriple(t))
-    writer.end((err, doc) => {
-      if (err) reject(err)
-      resolve(doc)
-    })
-  })
-
-  let ret = await jsonld.promises.fromRDF(ntriples)
-
-  if (frame) {
-    ret = await jsonld.promises.frame(ret, frame)
-  }
-
-  return ret;
-}
-
 function getFirstObjectLiteral(store, s, p) {
   if (typeof p === 'string') {
     p = expandNS(p)
@@ -65,11 +45,39 @@ function getFirstObjectLiteral(store, s, p) {
   return object.value
 }
 
+// Given a store and one or more nodes, return a new store that is a subset of
+// the original. The new graph is constructed by starting with all the
+// statements in the original graph where the given nodes are subjects. The
+// original graph is then re-traversed to find all the statements where those
+// objects are subjects, and so on, until all matching statements are exhausted.
+function makeSubgraphFrom(store, nodes) {
+  const newStore = N3.Store()
+      , subjs = [...[].concat(nodes)]
+
+  while (subjs.length) {
+    const subj = subjs.shift()
+
+    store.getQuads(subj).forEach(quad => {
+      const searchForObject = (
+        newStore.addQuad(quad) && (
+          N3.Util.isNamedNode(quad.object) ||
+          N3.Util.isBlankNode(quad.object)
+        )
+      )
+
+      if (searchForObject) {
+        subjs.push(quad.object)
+      }
+    })
+  }
+
+  return newStore
+}
 
 module.exports = {
   expandNS,
+  makeSubgraphFrom: R.curry(makeSubgraphFrom),
   getFirstObjectLiteral,
-  toJSONLD: R.curry(toJSONLD),
   isType: R.curry(isType),
   getDCContainer: R.curry(getDCContainer),
 }

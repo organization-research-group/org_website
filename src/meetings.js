@@ -2,8 +2,8 @@
 
 const R = require('ramda')
     , N3 = require('n3')
-    , { expandNS, getFirstObjectLiteral } = require('./rdf')
-    , { rdfListToArray } = require('org-n3-utils')
+    , { expandNS, getFirstObjectLiteral, makeSubgraphFrom } = require('./rdf')
+    , { rdfListToArray, findOne } = require('org-n3-utils')
 
 function fragmentOf(uri) {
   return uri.value.replace(/.*\/graph/, '')
@@ -91,7 +91,7 @@ const entityTypes = {
   },
   Publishers: {
     uri: expandNS(':Publisher'),
-    label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
+    label: (store, term) => getFirstObjectLiteral(store, term, 'foaf:name'),
   },
 }
 
@@ -136,30 +136,6 @@ function getMeetingTime(store, meetingURI) {
   }
 }
 
-function makeSubGraphFrom(store, nodes) {
-  const newStore = N3.Store()
-      , subjs = [...nodes]
-
-  while (subjs.length) {
-    const subj = subjs.shift()
-
-    store.getQuads(subj).forEach(quad => {
-      const searchForObject = (
-        newStore.addQuad(quad) && (
-          N3.Util.isNamedNode(quad.object) || 
-          N3.Util.isBlankNode(quad.object)
-        )
-      )
-
-      if (searchForObject) {
-        subjs.push(quad.object)
-      }
-    })
-  }
-
-  return newStore
-}
-
 module.exports = async function getMeetings(store, bib) {
   const meetings = store
     .getObjects(null, expandNS(':meeting'))
@@ -182,14 +158,10 @@ module.exports = async function getMeetings(store, bib) {
         R.map(list =>
           list[0].termType === 'NamedNode'
             ? makeReadingsHTML(store, bib, list)
-            : ''
-          /*
             : list.map(R.pipe(
-                bNode => store.getObjects(bNode, expandNS('dc:description')),
-                R.first,
+                bNode => findOne(store, bNode, expandNS('dc:description')),
                 term => `<p>${term.value}</p>`
               )).join('\n')
-              */
         ),
         R.concat,
         '',
@@ -200,7 +172,7 @@ module.exports = async function getMeetings(store, bib) {
 
     const entities = await R.pipe(
       meetingURI => store.getObjects(meetingURI, expandNS('lode:involved')),
-      involvedURIs => makeSubGraphFrom(store, involvedURIs),
+      makeSubgraphFrom(store),
       getEntities
     )(meeting.meetingURI)
 

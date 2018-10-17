@@ -36,7 +36,7 @@ async function createWebsiteArchive() {
   const pack = tar.pack()
 
   pack.entry({ name: 'index.html' }, '' + renderMain(meetings))
-  pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
-  pack.entry({ name: 'authors.html' }, '' + renderAuthors(meetings))
+  // pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
+  // pack.entry({ name: 'authors.html' }, '' + renderIndex(meetings))
   pack.pipe(process.stdout);
 }

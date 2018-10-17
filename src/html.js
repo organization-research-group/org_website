@@ -90,6 +90,10 @@ function renderReading(meeting) {
   const { date, fragment, entities } = meeting
       , meetingHTML = meeting.html
 
+  console.log(entities)
+
+  throw new Error()
+
   const entityHTML = Object.values(entities).some(x => x.length)
     ? Object.values(R.mapObjIndexed(renderEntity, entities)).join('\n')
     : ''
