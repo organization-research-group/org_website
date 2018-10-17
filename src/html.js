@@ -76,13 +76,13 @@ function renderIndex(meetings) {
 function renderEntity(val, key) {
   if (!val.length) return ''
 
-  const entityListHTML = val.map(({ id, label }) => html`
-    <li><a href="authors.html#${id}">${label}</a></li>
+  const entityListHTML = val.map(({ fragment, label }) => html`
+      <li><a href="authors.html${fragment}">${label}</a></li>
   `).join('\n')
 
   return html`
     <h4>${key}</h4>
-    <ul>${raw(entityListHTML)}</ul>
+    <ul>${raw(entityListHTML)}  </ul>
   `
 }
 
@@ -90,19 +90,13 @@ function renderReading(meeting) {
   const { date, fragment, entities } = meeting
       , meetingHTML = meeting.html
 
-  console.log(entities)
+  const entitiesByGroup = R.groupBy(R.prop('key'), entities)
 
-  throw new Error()
-
-  const entityHTML = Object.values(entities).some(x => x.length)
-    ? Object.values(R.mapObjIndexed(renderEntity, entities)).join('\n')
-    : ''
-
-  /*
-  const agentHTML = agents.map(a => html`
-    <li>${a['foaf:givenname']} ${a['foaf:surname']}</li>
-  `).join('\n')
-  */
+  const entityHTML = R.pipe(
+    R.groupBy(R.prop('key')),
+    R.mapObjIndexed(renderEntity),
+    R.values
+  )(entities).join('\n')
 
   return html`
   <div class="meeting" id="${fragment}">

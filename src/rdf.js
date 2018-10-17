@@ -54,8 +54,13 @@ function makeSubgraphFrom(store, nodes) {
   const newStore = N3.Store()
       , subjs = [...[].concat(nodes)]
 
+  const seen = [...store.seen]
+      , subSeen = []
+
   while (subjs.length) {
     const subj = subjs.shift()
+
+    subSeen.push(subj.value)
 
     store.getQuads(subj).forEach(quad => {
       const searchForObject = (
@@ -70,6 +75,14 @@ function makeSubgraphFrom(store, nodes) {
       }
     })
   }
+
+  const s = []
+
+  seen.forEach(v => {
+    if (subSeen.includes(v)) s.push(v)
+  })
+
+  newStore.seen = s
 
   return newStore
 }

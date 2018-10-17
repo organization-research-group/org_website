@@ -1,12 +1,11 @@
 "use strict";
 
 const R = require('ramda')
-    , N3 = require('n3')
     , { expandNS, getFirstObjectLiteral, makeSubgraphFrom } = require('./rdf')
     , { rdfListToArray, findOne } = require('org-n3-utils')
 
 function fragmentOf(uri) {
-  return uri.value.replace(/.*\/graph/, '')
+  return (uri.value || uri.id).replace(/.*\/graph/, '')
 }
 
 /*
@@ -96,21 +95,26 @@ const entityTypes = {
 }
 
 function getEntities(store) {
-  const ret = {}
+  const entities = []
 
-  return [].concat(...Object.entries(entityTypes).map(([key, { uri }]) =>
-    store.getSubjects(expandNS('rdf:type'), uri).map(term => {
-      return { key, term }
+  const defs = Object.entries(entityTypes)
+
+  for (const [key, {uri, label}] of Object.entries(entityTypes)) {
+    store.getSubjects(expandNS('rdf:type'), uri).forEach(subj => {
+      entities.push({
+        key,
+        id: subj,
+        label: label(store, subj),
+        fragment: fragmentOf(subj),
+      })
     })
-  )).map(({ key, term }) => {
-    const ret = {
-      key,
-      id: term.value,
-      label: entityTypes[key].label(store, term),
-    }
+  }
 
-    return ret
-  })
+  const sorted = R.sort(
+    (a, b) => store.seen.indexOf(a.id.value) - store.seen.indexOf(b.id.value),
+    entities)
+
+  return sorted
 }
 
 async function resolveObj(obj) {
@@ -160,7 +164,7 @@ module.exports = async function getMeetings(store, bib) {
             ? makeReadingsHTML(store, bib, list)
             : list.map(R.pipe(
                 bNode => findOne(store, bNode, expandNS('dc:description')),
-                term => `<p>${term.value}</p>`
+                term => `<p>${term.object.value}</p>`
               )).join('\n')
         ),
         R.concat,
