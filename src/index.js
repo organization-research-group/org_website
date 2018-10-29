@@ -3,7 +3,6 @@
 const fs = require('fs')
     , path = require('path')
     , N3 = require('n3')
-    , { isNamedNode } = N3.Util
     , R = require('ramda')
     , tar = require('tar-stream')
     , getBibMap = require('./rdf_to_csl')
@@ -22,23 +21,10 @@ async function createWebsiteArchive() {
   const store = N3.Store()
       , parser = N3.StreamParser()
 
-  let i = -1
-
-  const seenEntities = new Set()
-
   await new Promise((resolve, reject) =>
-    fs.createReadStream(BIB_FILE).pipe(parser)
-      .on('data', quad => {
-        if (isNamedNode(quad.object)) {
-          seenEntities.add(quad.object.value)
-        }
-
-        store.addQuad(quad)
-      })
+    store.import(fs.createReadStream(BIB_FILE).pipe(parser))
       .on('error', reject)
       .on('end', resolve))
-
-  store.seen = seenEntities
 
   const bibItems = await getBibMap(store)
 

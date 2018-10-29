@@ -74,6 +74,10 @@ function makeReadingsHTML(store, bib, readings) {
 
 const entityTypes = {
   People: {
+    entityList: {
+      author: expandNS('bibo:authorList'),
+      editor: expandNS('bibo:editorList'),
+    },
     uri: expandNS('foaf:Person'),
     label: (store, term) => ([
       getFirstObjectLiteral(store, term, 'foaf:givenname'),
@@ -97,24 +101,41 @@ const entityTypes = {
 function getEntities(store) {
   const entities = []
 
-  const defs = Object.entries(entityTypes)
+  for (const [key, {entityList={}, uri, label}] of Object.entries(entityTypes)) {
+    const entitiesForType = []
+        , rolesForEntity = {}
 
-  for (const [key, {uri, label}] of Object.entries(entityTypes)) {
+    const seen = subj => entitiesForType.some(x => x.id === subj.id)
+
+    Object.entries(entityList).forEach(([role, listPred]) => {
+      store.getObjects(null, listPred).forEach(list => {
+        rdfListToArray(store, list).forEach(subj => {
+          if (!seen(subj)) {
+            entitiesForType.push(subj)
+          }
+          rolesForEntity[subj.id] = (rolesForEntity[subj.id] || []).concat(role)
+        })
+      })
+    })
+
     store.getSubjects(expandNS('rdf:type'), uri).forEach(subj => {
+      if (!seen(subj)) {
+        entitiesForType.push(subj)
+      }
+    })
+
+    entitiesForType.forEach(subj => {
       entities.push({
         key,
         id: subj,
         label: label(store, subj),
         fragment: fragmentOf(subj),
+        roles: [...new Set(rolesForEntity[subj.id] || [])]
       })
     })
   }
 
-  const sorted = R.sort(
-    (a, b) => store.seen.indexOf(a.id.value) - store.seen.indexOf(b.id.value),
-    entities)
-
-  return sorted
+  return entities
 }
 
 async function resolveObj(obj) {

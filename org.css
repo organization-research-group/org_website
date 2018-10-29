@@ -110,6 +110,10 @@ a:hover {
     margin-left: 12px;
 }
 
+.meeting--entities .entity-role {
+    font-size: 80%;
+}
+
 /* --Front page */
 section {
     border-bottom: 1px solid #ccc;

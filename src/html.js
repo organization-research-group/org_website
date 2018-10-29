@@ -76,8 +76,13 @@ function renderIndex(meetings) {
 function renderEntity(val, key) {
   if (!val.length) return ''
 
-  const entityListHTML = val.map(({ fragment, label }) => html`
-      <li><a href="authors.html${fragment}">${label}</a></li>
+  const entityListHTML = val.map(({ fragment, roles, label }) => html`
+      <li>
+        <a href="authors.html${fragment}">${label}</a>
+        <span class="entity-role">
+          ${roles.length ? '(' + roles.join(', ') + ')' : ''}
+        </span>
+      </li>
   `).join('\n')
 
   return html`
@@ -89,8 +94,6 @@ function renderEntity(val, key) {
 function renderReading(meeting) {
   const { date, fragment, entities } = meeting
       , meetingHTML = meeting.html
-
-  const entitiesByGroup = R.groupBy(R.prop('key'), entities)
 
   const entityHTML = R.pipe(
     R.groupBy(R.prop('key')),
