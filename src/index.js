@@ -3,10 +3,10 @@
 const fs = require('fs')
     , path = require('path')
     , N3 = require('n3')
-    , R = require('ramda')
     , tar = require('tar-stream')
-    , getBibMap = require('./rdf_to_csl')
-    , getMeetings = require('./meetings')
+    , bibliography = require('./bibliography')
+    , meetings = require('./meetings')
+    , entities = require('./entities')
     , { renderArchive, renderDirectory, renderMain } = require('./html')
 
 const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
@@ -26,16 +26,14 @@ async function createWebsiteArchive() {
       .on('error', reject)
       .on('end', resolve))
 
-  const bibItems = await getBibMap(store)
-
-  let meetings = await getMeetings(store, bibItems)
-
-  meetings = R.sortBy(d => d.date.getTime(), meetings).reverse()
+  const orgBibliography = await bibliography.generate(store)
+      , orgMeetings = await meetings.generate(store)
+      , orgEntities = await entities.generate(store)
 
   const pack = tar.pack()
 
-  pack.entry({ name: 'index.html' }, '' + renderMain(meetings))
-  pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
-  pack.entry({ name: 'directory.html' }, '' + renderDirectory(meetings))
+  pack.entry({ name: 'index.html' }, '' + renderMain(orgMeetings))
+  // pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
+  // pack.entry({ name: 'directory.html' }, '' + renderDirectory(meetings))
   pack.pipe(process.stdout);
 }

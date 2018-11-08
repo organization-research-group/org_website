@@ -33,12 +33,18 @@ function getDCContainer(store, uri) {
   return container && container.object
 }
 
-function getFirstObjectLiteral(store, s, p) {
+function getFirstObject(store, s, p) {
   if (typeof p === 'string') {
     p = expandNS(p)
   }
 
-  const [ object ] = store.getObjects(s, p)
+  const statement = findOne(store, s, p)
+
+  return statement ? statement.object : null
+}
+
+function getFirstObjectLiteral(store, s, p) {
+  const object = getFirstObject(store, s, p)
 
   if (!object || !N3.Util.isLiteral(object)) return null
 
@@ -77,6 +83,7 @@ function makeSubgraphFrom(store, nodes) {
 module.exports = {
   expandNS,
   makeSubgraphFrom: R.curry(makeSubgraphFrom),
+  getFirstObject,
   getFirstObjectLiteral,
   isType: R.curry(isType),
   getDCContainer: R.curry(getDCContainer),

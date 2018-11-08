@@ -1,8 +1,9 @@
 "use strict";
 
 const R = require('ramda')
-    , { expandNS, getFirstObjectLiteral, makeSubgraphFrom } = require('./rdf')
+    , { expandNS, getFirstObject, getFirstObjectLiteral, makeSubgraphFrom } = require('./rdf')
     , { rdfListToArray, findOne } = require('org-n3-utils')
+    , entityDefs = require('./entities').definitions
 
 function fragmentOf(uri) {
   return (uri.value || uri.id).replace(/.*\/graph/, '')
@@ -36,79 +37,13 @@ function makeReadingsHTML(store, bib, readings) {
   return readingsHTML.join('')
 }
 
-const entityTypes = {
-  People: {
-    entityList: {
-      author: expandNS('bibo:authorList'),
-      editor: expandNS('bibo:editorList'),
-    },
-    uri: expandNS('foaf:Person'),
-    label: (store, term) => ([
-      getFirstObjectLiteral(store, term, 'foaf:givenname'),
-      getFirstObjectLiteral(store, term, 'foaf:surname'),
-    ]).filter(R.identity).join(' ')
-  },
-  Journals: {
-    uri: expandNS('bibo:Journal'),
-    label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
-  },
-  Conferences: {
-    uri: expandNS('bibo:Conference'),
-    label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
-  },
-  Publishers: {
-    uri: expandNS(':Publisher'),
-    label: (store, term) => getFirstObjectLiteral(store, term, 'foaf:name'),
-  },
-}
-
-function getEntities(store) {
-  const entities = []
-
-  for (const [key, {entityList={}, uri, label}] of Object.entries(entityTypes)) {
-    const entitiesForType = []
-        , rolesForEntity = {}
-
-    const seen = subj => entitiesForType.some(x => x.id === subj.id)
-
-    Object.entries(entityList).forEach(([role, listPred]) => {
-      store.getObjects(null, listPred).forEach(list => {
-        rdfListToArray(store, list).forEach(subj => {
-          if (!seen(subj)) {
-            entitiesForType.push(subj)
-          }
-          rolesForEntity[subj.id] = (rolesForEntity[subj.id] || []).concat(role)
-        })
-      })
-    })
-
-    store.getSubjects(expandNS('rdf:type'), uri).forEach(subj => {
-      if (!seen(subj)) {
-        entitiesForType.push(subj)
-      }
-    })
-
-    entitiesForType.forEach(subj => {
-      entities.push({
-        key,
-        id: subj,
-        label: label(store, subj),
-        fragment: fragmentOf(subj),
-        roles: [...new Set(rolesForEntity[subj.id] || [])]
-      })
-    })
-  }
-
-  return entities
-}
-
-function getMeetingTime(store, meetingURI) {
+function getMeetingDate(store, meetingURI) {
   try {
     const [ interval ] = store.getObjects(meetingURI, expandNS('lode:atTime'))
         , [ beginning ] = store.getObjects(interval, expandNS('time:hasBeginning'))
         , [ dateStamp ] = store.getObjects(beginning, expandNS('time:inXSDDateTimeStamp'))
 
-    return dateStamp
+    return new Date(dateStamp.value)
 
   } catch (e) {
     throw new Error(
@@ -117,22 +52,8 @@ function getMeetingTime(store, meetingURI) {
   }
 }
 
-module.exports = async function getMeetings(store, bib) {
-  const meetings = store
-    .getObjects(null, expandNS(':meeting'))
-    .map(meetingURI => {
-      const [ schedule ] = store.getObjects(meetingURI, expandNS(':schedule'))
 
-      return {
-        meetingURI,
-        at: getMeetingTime(store, meetingURI),
-        schedule: rdfListToArray(store, schedule),
-      }
-    })
-
-  return Promise.all(meetings.map(async meeting => {
-    const { schedule, at } = meeting
-
+    /*
     const html = R.pipe(
       R.groupWith((a, b) => a.termType === b.termType),
       R.transduce(
@@ -148,37 +69,59 @@ module.exports = async function getMeetings(store, bib) {
         '',
       )
     )(schedule)
-
-    const meetingFragment = fragmentOf(meeting.meetingURI);
-
-    const entities = await R.pipe(
-      meetingURI => store.getObjects(meetingURI, expandNS('lode:involved')),
-      makeSubgraphFrom(store),
-      getEntities
-    )(meeting.meetingURI)
-
-    /*
-    const entities = await R.pipe(
-      involved => ({ '@graph': involved, '@context': context }),
-      ld => R.map(({ frame, label }) =>
-        jsonld.promises.frame(ld, Object.assign({ '@context': context }, frame))
-          .then(data => data['@graph'].map(item => ({
-            label: label(item),
-            id: fragmentOf(item),
-            externalLink: (item['foaf:homepage'] || item['foaf:workInfoHomepage'] || item['foaf:page'] || {})['@id'],
-            meetingLink: 'archive.html#' + meetingFragment,
-            ld: item,
-          })))
-      )(entityDefinitions),
-      resolveObj
-    )([].concat(meeting['lode:involved'] || []))
     */
 
-    return {
-      fragment: meetingFragment,
-      date: new Date(at.value),
-      entities,
-      html,
+exports.generate = async function getMeetings(store, bib) {
+  const meetingNodes = store.getObjects(null, expandNS(':meeting'))
+      , meetings = []
+
+  await Promise.all(meetingNodes.map(async meetingNode => {
+    const scheduleNode = getFirstObject(store, meetingNode, ':schedule')
+        , schedule = rdfListToArray(store, scheduleNode)
+        , subgraph = await makeSubgraphFrom(store, schedule)
+        , entities = new Map()
+
+    const add = (entityTerm, role) => {
+      if (!entities.has(entityTerm.id)) {
+        entities.set(entityTerm.id, {
+          term: entityTerm,
+          roles: new Set()
+        })
+      }
+
+      if (role) {
+        entities.get(entityTerm.id).roles.add(role)
+      }
     }
+
+    // Add authors one at a time (to preserve order), from authorList predicate
+    subgraph.getObjects(null, expandNS('bibo:authorList')).forEach(listNode => {
+      rdfListToArray(subgraph, listNode).forEach(author => {
+        add(author, 'author')
+      })
+    })
+
+    // Then add editors from editorList predicate
+    subgraph.getObjects(null, expandNS('bibo:editorList')).forEach(listNode => {
+      rdfListToArray(subgraph, listNode).forEach(editor => {
+        add(editor, 'editor')
+      })
+    })
+
+    // Then add all matching entities from the subgraph
+    Array.from(entityDefs.keys()).forEach(entityType => {
+      subgraph.getSubjects(expandNS('rdf:type'), entityType).forEach(entity => {
+        add(entity)
+      })
+    })
+
+    meetings.push({
+      node: meetingNode,
+      schedule,
+      date: getMeetingDate(store, meetingNode),
+      entities: [...entities.values()],
+    })
   }))
+
+  return R.sortBy(d => d.date.getTime(), meetings).reverse()
 }

@@ -14,7 +14,7 @@ const bibRDFTypes = {
   ':Lecture': lecture,
 }
 
-module.exports = function getBibEntries(store) {
+exports.generate = function getBibEntries(store) {
   const cslItems = Object.entries(bibRDFTypes).reduce((acc=[], [rdfType, fn]) =>
     acc.concat(
       store
