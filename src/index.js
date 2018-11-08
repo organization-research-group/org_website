@@ -7,7 +7,7 @@ const fs = require('fs')
     , tar = require('tar-stream')
     , getBibMap = require('./rdf_to_csl')
     , getMeetings = require('./meetings')
-    , { renderArchive, renderIndex, renderMain } = require('./html')
+    , { renderArchive, renderDirectory, renderMain } = require('./html')
 
 const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
 
@@ -36,6 +36,6 @@ async function createWebsiteArchive() {
 
   pack.entry({ name: 'index.html' }, '' + renderMain(meetings))
   pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
-  // pack.entry({ name: 'authors.html' }, '' + renderIndex(meetings))
+  pack.entry({ name: 'directory.html' }, '' + renderDirectory(meetings))
   pack.pipe(process.stdout);
 }

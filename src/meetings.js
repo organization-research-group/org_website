@@ -8,42 +8,6 @@ function fragmentOf(uri) {
   return (uri.value || uri.id).replace(/.*\/graph/, '')
 }
 
-/*
-const frame = {
-  '@context': Object.assign({}, context, {
-    schedule: {
-      '@type': '@id',
-      '@container': '@list',
-      '@id': 'org:schedule',
-    },
-    at: {
-      '@id': 'lode:atTime',
-      '@type': '@id',
-    },
-    beginning: {
-      '@id': 'time:hasBeginning',
-      '@type': '@id',
-    },
-    datetime: {
-      '@id': 'time:inXSDDateTimeStamp',
-      '@type': 'xsd:dateTimeStamp',
-    },
-    description: 'dc:description'
-  }),
-  '@explicit': true,
-  '@type': 'org:Meeting',
-  'schedule': {},
-  'lode:involved': {
-    '@embed': '@always'
-  },
-  'at': {
-    beginning: {
-      datetime: {},
-    }
-  },
-}
-*/
-
 function makeReadingsHTML(store, bib, readings) {
   const readingsHTML = readings.map(item => {
     let ret
@@ -136,14 +100,6 @@ function getEntities(store) {
   }
 
   return entities
-}
-
-async function resolveObj(obj) {
-  const pairs = await Promise.all(
-    Object.entries(obj).map(([k, v]) => Promise.resolve(v).then(v => [k, v]))
-  )
-
-  return R.fromPairs(pairs)
 }
 
 function getMeetingTime(store, meetingURI) {

@@ -6,7 +6,7 @@ const R = require('ramda')
 module.exports = {
   renderMain,
   renderArchive,
-  renderIndex,
+  renderDirectory,
 }
 
 const days = [
@@ -51,24 +51,26 @@ function renderArchive(meetings) {
   return renderPage(content)
 }
 
-function renderIndex(meetings) {
+function renderDirectory(meetings) {
   const entitiesByType = R.pipe(
-    R.transduce(
-      R.map(R.prop('entities')),
-      R.mergeWith(R.concat),
-      {}
+    R.chain(meeting =>
+      meeting.entities.map(entity => ({ ...entity, weeks: meeting.fragment }))
     ),
+    R.groupBy(R.prop('key')),
     R.map(R.pipe(
-      R.sortBy(R.prop('id')),
-      R.groupWith((a, b) => a.id === b.id),
-      R.map(xs => Object.assign(R.mergeAll(xs), {
-        weeks: xs.map(d => d.meetingLink).sort()
+      R.sortBy(R.compose(R.toLower, R.prop('label'))),
+      R.groupWith((a, b) => a.id.id === b.id.id), // lol
+      R.map(meetingsByWeek => ({
+        ...meetingsByWeek[0],
+        weeks: R.pipe(
+          R.chain(R.prop('weeks')),
+          R.sortBy(R.identity)
+        )(meetingsByWeek)
       }))
-    )),
+    ))
   )(meetings)
 
-
-  const content = entities(entitiesByType)
+  const content = directory(entitiesByType)
 
   return renderPage(content)
 }
@@ -78,7 +80,7 @@ function renderEntity(val, key) {
 
   const entityListHTML = val.map(({ fragment, roles, label }) => html`
       <li>
-        <a href="authors.html${fragment}">${label}</a>
+        <a href="directory.html${fragment}">${label}</a>
         <span class="entity-role">
           ${roles.length ? '(' + roles.join(', ') + ')' : ''}
         </span>
@@ -142,7 +144,7 @@ function main(meetings) {
   `
 }
 
-function entities(entitiesByType) {
+function directory(entitiesByType) {
   const htmlByType = R.map(
     R.pipe(
       R.map(({ id, label, weeks, externalLink }) => html`
@@ -219,7 +221,7 @@ function renderPage(content) {
     <ul id="nav-controls">
       <li><a href="index.html">Home</a></li>
       <li><a href="archive.html">Archive</a></li>
-      <li><a href="authors.html">Index</a></li>
+      <li><a href="directory.html">Index</a></li>
     </ul>
     </header>
 
