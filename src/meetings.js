@@ -1,41 +1,9 @@
 "use strict";
 
 const R = require('ramda')
-    , { expandNS, getFirstObject, getFirstObjectLiteral, makeSubgraphFrom } = require('./rdf')
-    , { rdfListToArray, findOne } = require('org-n3-utils')
+    , { expandNS, getFirstObject, makeSubgraphFrom } = require('./rdf')
+    , { rdfListToArray } = require('org-n3-utils')
     , entityDefs = require('./entities').definitions
-
-function fragmentOf(uri) {
-  return (uri.value || uri.id).replace(/.*\/graph/, '')
-}
-
-function makeReadingsHTML(store, bib, readings) {
-  const readingsHTML = readings.map(item => {
-    let ret
-
-    const bibID = item.value.split(':').slice(-1)[0]
-        , bibItem = bib.get(bibID)
-
-    if (!bibItem) {
-      ret = `<p style="background-color: red;">Missing citation</p>`
-    } else {
-      ret = bibItem
-        .split('\n').slice(1,-1).join('\n')
-        .replace(/(https:\/\/doi.org\/(.*?))<\/div>/, (_, url, doi) =>
-          `<a href="${url}">doi:${doi.replace(/(\W)+/g, '<wbr>$1</wbr>')}</a></div>`)
-
-      if (ret.slice(-7) === '.</div>' && item['bibo:uri']) {
-        ret = `${ret.slice(0, -6)} Retrieved from <a href="${item['bibo:uri']}">${item['bibo:uri']}</a>.</div>`
-      }
-
-
-    }
-
-    return `${ret}`
-  })
-
-  return readingsHTML.join('')
-}
 
 function getMeetingDate(store, meetingURI) {
   try {
@@ -52,26 +20,7 @@ function getMeetingDate(store, meetingURI) {
   }
 }
 
-
-    /*
-    const html = R.pipe(
-      R.groupWith((a, b) => a.termType === b.termType),
-      R.transduce(
-        R.map(list =>
-          list[0].termType === 'NamedNode'
-            ? makeReadingsHTML(store, bib, list)
-            : list.map(R.pipe(
-                bNode => findOne(store, bNode, expandNS('dc:description')),
-                term => `<p>${term.object.value}</p>`
-              )).join('\n')
-        ),
-        R.concat,
-        '',
-      )
-    )(schedule)
-    */
-
-exports.generate = async function getMeetings(store, bib) {
+exports.generate = async function getMeetings(store) {
   const meetingNodes = store.getObjects(null, expandNS(':meeting'))
       , meetings = []
 
