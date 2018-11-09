@@ -26,14 +26,17 @@ async function createWebsiteArchive() {
       .on('error', reject)
       .on('end', resolve))
 
-  const orgBibliography = await bibliography.generate(store)
-      , orgMeetings = await meetings.generate(store)
-      , orgEntities = await entities.generate(store)
+  const grist = {
+    store,
+    bibliography: await bibliography.generate(store),
+    meetings: await meetings.generate(store),
+    entities: await entities.generate(store),
+  }
 
-  const pack = tar.pack()
+  const mill = tar.pack()
 
-  pack.entry({ name: 'index.html' }, '' + renderMain(orgMeetings))
-  // pack.entry({ name: 'archive.html' }, '' + renderArchive(meetings))
-  // pack.entry({ name: 'directory.html' }, '' + renderDirectory(meetings))
-  pack.pipe(process.stdout);
+  mill.entry({ name: 'index.html' }, '' + await renderMain(grist))
+  // mill.entry({ name: 'archive.html' }, '' + renderArchive(grist))
+  // mill.entry({ name: 'directory.html' }, '' + renderDirectory(grist))
+  mill.pipe(process.stdout);
 }

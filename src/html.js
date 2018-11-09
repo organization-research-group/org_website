@@ -1,7 +1,13 @@
 "use strict";
 
 const R = require('ramda')
+    , h = require('hyperscript')
+    , toHyperscript = require('html2hscript')
+    , { timeFormat } = require('d3-time-format')
     , { html, raw } = require('es6-string-html-template')
+    , pretty = require('pretty')
+    , { bibliographyTypes } = require('./bibliography')
+    , { getFirstObjectLiteral } = require('./rdf')
 
 module.exports = {
   renderMain,
@@ -9,40 +15,8 @@ module.exports = {
   renderDirectory,
 }
 
-const days = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-]
-
-const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-]
-
-
 function zeroPad(num) {
   return num.toString().padStart(2, '0')
-}
-
-function renderMain(meetings) {
-  const content = main(meetings)
-
-  return renderPage(content)
 }
 
 function renderArchive(meetings) {
@@ -52,6 +26,7 @@ function renderArchive(meetings) {
 }
 
 function renderDirectory(meetings) {
+  /*
   const entitiesByType = R.pipe(
     R.chain(meeting =>
       meeting.entities.map(entity => ({ ...entity, weeks: meeting.fragment }))
@@ -73,6 +48,7 @@ function renderDirectory(meetings) {
   const content = directory(entitiesByType)
 
   return renderPage(content)
+  */
 }
 
 function renderEntity(val, key) {
@@ -93,55 +69,108 @@ function renderEntity(val, key) {
   `
 }
 
-function renderReading(meeting) {
-  const { date, fragment, entities } = meeting
-      , meetingHTML = meeting.html
+function renderMeeting({ store, bibliography, entities }) {
+  return async meeting => {
+    const renderScheduleItem = async $scheduleItem => {
+      const bibItem = bibliography[$scheduleItem.id]
 
-  const entityHTML = R.pipe(
-    R.groupBy(R.prop('key')),
-    R.mapObjIndexed(renderEntity),
-    R.values
-  )(entities).join('\n')
+      let ret
 
-  return html`
-  <div class="meeting" id="${fragment}">
-    <h3 class="meeting--date">
-    ${days[date.getDay()]}, ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}
-    </h3>
+      if (bibItem) {
+        // Trim start and end tags of bibliography
+        let { html, csl: { URI }} = bibItem
 
-    <div class="meeting--schedule">${raw(meetingHTML)}</div>
+        html = html.split('\n').slice(1,-1).join('\n')
 
-    <div class="meeting--entities">${raw(entityHTML)}</div>
-  </div>
-  `
+        // Make DOI links clickable
+        html = html
+          .replace(/(https:\/\/doi.org\/(.*?))<\/div>/, (_, url, doi) =>
+            `<a href="${url}">doi:${doi.replace(/(\W)+/g, '<wbr>$1</wbr>')}</a></div>`)
+
+        // Add "Retrieved from" URL if available and there is no URI in the citation
+        if (URI && html.slice(-7) === '.</div>') {
+          html = (
+            html.slice(0, -6) +
+            ` Retrieved from <a href="${URI}">${encodEURIComponent(URI)}</a>.</div>`
+          )
+        }
+
+        ret = html
+      } else {
+        const description = getFirstObjectLiteral(store, $scheduleItem, 'dc:description')
+
+        if (description) {
+          ret = `<div>${description}</div>`
+        } else {
+          ret = '<p style="background-color: red;">Missing citation</p>'
+        }
+      }
+
+      return new Promise((resolve, reject) => toHyperscript(ret.trim(), (err, tree) => {
+        if (err) {
+          reject(err)
+        }
+
+        resolve(eval(tree))
+      }))
+    }
+
+    const scheduleHTML = await Promise.all(meeting.schedule.map(renderScheduleItem))
+
+    return (
+      h('div.meeting', {
+        id: meeting.node.id.split('#')[1]
+      }, [
+        h('.meeting--date', timeFormat('%A, %B %e, %Y')(meeting.date)),
+
+        h('.meeting--schedule', scheduleHTML),
+
+        // TODO
+    /*
+    const entityHTML = R.pipe(
+      R.groupBy(R.prop('key')),
+      R.mapObjIndexed(renderEntity),
+      R.values
+    )(entities).join('\n')
+    */
+
+        h('.meeting-entitites'),
+      ])
+    )
+  }
 }
 
-function main(meetings) {
-  meetings = meetings.map(renderReading)
+async function renderMain(grist) {
+  const meetings = await Promise.all(
+    grist.meetings.slice(0, 6).map(renderMeeting(grist)))
 
-  return html`
-<section id="about">
-  <p>
-  ORG is a reading group at UNC Chapel Hill that meets Fridays at 11am in 214 Manning Hall.
-  </p>
-  <p>
-  <a href="mailto:listmanager@listserv.unc.edu?body=subscribe%20org">Subscribe</a>
-  to our email list for announcements and general discussion.
-  </p>
-</section>
+  return renderPage(
+    h('div', [
+      h('section#about', [
+        h('p', [
+          'ORG is a reading group at UNC Chapel Hill that meets Fridays at 11am in 214 Manning Hall.',
+        ]),
 
-<section id="current">
-  <h2>Current meeting</h2>
-  ${meetings[0]}
-</section>
+        h('p', [
+          h('a', {
+            href: 'mailto:listmanager@listserv.unc.edu?body=subscribe%20org',
+          }, 'Subscribe'),
+          'to our email list for announcements and general discussion.',
+        ])
+      ]),
 
-<section id="recent">
-  <h2 id="recent">Recent meetings</h2>
-  ${raw(meetings.slice(1,6).join(''))}
-</section>
+      h('section#current', [
+        h('h2', 'Current meeting'),
+        meetings[0],
+      ]),
 
-</section>
-  `
+      h('section#recent', [
+        h('h2#recent', 'Recent meetings'),
+        meetings.slice(1),
+      ]),
+
+    ])
+  )
 }
 
 function directory(entitiesByType) {
@@ -196,45 +225,56 @@ function archive(meetings) {
 `
 }
 
-function renderPage(content) {
+function renderPage(page) {
   const now = new Date()
       , lastUpdated = `${now.getFullYear()}-${zeroPad(now.getMonth() + 1)}-${zeroPad(now.getDate())}`
 
-  return html`<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="org.css">
-  <title>The Organization Research Group</title>
-</head>
+  const doc = (
+    h('html', [
+      h('head', [
+        h('meta', { charset: 'utf-8' }),
+        h('link', { rel: 'stylesheet', href: 'org.css' }),
+        h('title', 'The Organization Research Group'),
+      ]),
 
-<body>
-  <main>
-  <header>
-  <h1>
-    The
-    <span class="org-o org-firstletter">O</span><span class="org-r">r</span><span class="org-g">g</span>anizati<span class="org-o">o</span>n
-    <span class="org-r org-firstletter">R</span>esea<span class="org-r">r</span>ch
-    <span class="org-g org-firstletter">G</span><span class="org-r">r</span><span class="org-o">o</span>up
-  </h1>
+      h('body', [
+        h('header', [
+          h('h1', [].concat('The ', 'Organization Research Group'.split('').map(letter => {
+            let classNames = ''
 
-    <ul id="nav-controls">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="archive.html">Archive</a></li>
-      <li><a href="directory.html">Index</a></li>
-    </ul>
-    </header>
+            if (letter.match(/[ORG]/)) classNames += '.org-firstletter'
+            if (letter.match(/[oO]/)) classNames += '.org-o'
+            if (letter.match(/[rR]/)) classNames += '.org-r'
+            if (letter.match(/[gG]/)) classNames += '.org-g'
 
-    <div>
-    ${raw(content)}
-    </div>
+            if (classNames) {
+              return h('span' + classNames, letter)
+            } else {
+              return letter
+            }
+          }))),
 
-    <footer>
-      Last updated ${lastUpdated}
-    </footer>
-  </main>
+          h('nav', [
+            h('ul', [
+              h('li', h('a', { href: 'index.html' }, 'Home')),
+              h('li', h('a', { href: 'archive.html' }, 'Archive')),
+              h('li', h('a', { href: 'directory.html' }, 'Index')),
+            ]),
+          ])
+        ]),
 
-  <script type="text/javascript" src="org.js" />
-</body>
-</html>`
+        h('main', page),
+
+        h('footer', [
+          'Last updated ',
+          lastUpdated,
+        ]),
+
+        h('script', { type: 'text/javascript', src: 'org.js' }),
+      ]),
+
+    ])
+  )
+
+  return pretty('<!doctype html>' + doc.outerHTML)
 }
