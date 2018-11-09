@@ -59,9 +59,9 @@ function renderEntity(val, key) {
       h('h4', key),
       h('ul', val.map(({ fragment, roles, label }) => (
         h('li', [
-          h('a', { href: `directory.html#${fragment}` }),
+          h('a', { href: `directory.html#${fragment}` }, label),
           roles.size === 0 ? null : h('span.entity-role', [
-            '(',
+            ' (',
             [...roles].join(', '),
             ')',
           ]),
@@ -139,11 +139,11 @@ function renderMeeting({ store, bibliography, entities }) {
       h('div.meeting', {
         id: meeting.node.id.split('#')[1]
       }, [
-        h('.meeting--date', timeFormat('%A, %B %e, %Y')(meeting.date)),
+        h('h3.meeting--date', timeFormat('%A, %B %e, %Y')(meeting.date)),
 
         h('.meeting--schedule', scheduleHTML),
 
-        h('.meeting-entities', entitiesHTML),
+        h('.meeting--entities', entitiesHTML),
       ])
     )
   }
@@ -164,7 +164,7 @@ async function renderMain(grist) {
           h('a', {
             href: 'mailto:listmanager@listserv.unc.edu?body=subscribe%20org',
           }, 'Subscribe'),
-          'to our email list for announcements and general discussion.',
+          ' to our email list for announcements and general discussion.',
         ])
       ]),
 
@@ -247,36 +247,38 @@ function renderPage(page) {
       ]),
 
       h('body', [
-        h('header', [
-          h('h1', [].concat('The ', 'Organization Research Group'.split('').map(letter => {
-            let classNames = ''
+        h('.content-wrapper', [
+          h('header', [
+            h('h1', [].concat('The ', 'Organization Research Group'.split('').map(letter => {
+              let classNames = ''
 
-            if (letter.match(/[ORG]/)) classNames += '.org-firstletter'
-            if (letter.match(/[oO]/)) classNames += '.org-o'
-            if (letter.match(/[rR]/)) classNames += '.org-r'
-            if (letter.match(/[gG]/)) classNames += '.org-g'
+              if (letter.match(/[ORG]/)) classNames += '.org-firstletter'
+              if (letter.match(/[oO]/)) classNames += '.org-o'
+              if (letter.match(/[rR]/)) classNames += '.org-r'
+              if (letter.match(/[gG]/)) classNames += '.org-g'
 
-            if (classNames) {
-              return h('span' + classNames, letter)
-            } else {
-              return letter
-            }
-          }))),
+              if (classNames) {
+                return h('span' + classNames, letter)
+              } else {
+                return letter
+              }
+            }))),
 
-          h('nav', [
-            h('ul', [
-              h('li', h('a', { href: 'index.html' }, 'Home')),
-              h('li', h('a', { href: 'archive.html' }, 'Archive')),
-              h('li', h('a', { href: 'directory.html' }, 'Index')),
-            ]),
-          ])
-        ]),
+            h('nav', [
+              h('ul', [
+                h('li', h('a', { href: 'index.html' }, 'Home')),
+                h('li', h('a', { href: 'archive.html' }, 'Archive')),
+                h('li', h('a', { href: 'directory.html' }, 'Index')),
+              ]),
+            ])
+          ]),
 
-        h('main', page),
+          h('main', page),
 
-        h('footer', [
-          'Last updated ',
-          lastUpdated,
+          h('footer', [
+            'Last updated ',
+            lastUpdated,
+          ]),
         ]),
 
         h('script', { type: 'text/javascript', src: 'org.js' }),

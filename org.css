@@ -15,7 +15,7 @@ html, body {
     margin: 0;
 }
 
-main {
+.content-wrapper {
     position: relative;
     margin: auto;
     max-width: 760px;
@@ -97,7 +97,7 @@ a:hover {
     background-color: white;
 }
 
-.meeting--entities h4:not(:first-of-type) {
+.meeting--entities > div:not(:first-of-type) h4 {
     margin-top: 8px;
 }
 
@@ -184,18 +184,7 @@ p {
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
-#nav-controls {
+nav ul {
     margin: 1em 0;
     padding: 1em 0;
     border-top: 1px solid #ccc;
