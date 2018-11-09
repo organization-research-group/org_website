@@ -5,6 +5,7 @@ const R = require('ramda')
 
 const entityDefs = exports.definitions = new Map([
   [expandNS('foaf:Person'), {
+    categoryLabel: 'People',
     label: (store, term) => ([
       getFirstObjectLiteral(store, term, 'foaf:givenname'),
       getFirstObjectLiteral(store, term, 'foaf:surname'),
@@ -17,16 +18,19 @@ const entityDefs = exports.definitions = new Map([
   }],
 
   [expandNS('bibo:Journal'), {
+    categoryLabel: 'Journals',
     label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
     homepage: (store, term) => getFirstObject(store, term, expandNS('foaf:homepage')),
   }],
 
   [expandNS('bibo:Conference'), {
+    categoryLabel: 'Conferences',
     label: (store, term) => getFirstObjectLiteral(store, term, 'dc:title'),
     homepage: (store, term) => getFirstObject(store, term, expandNS('foaf:homepage')),
   }],
 
   [expandNS(':Publisher'), {
+    categoryLabel: 'Publishers',
     label: (store, term) => getFirstObjectLiteral(store, term, 'foaf:name'),
     homepage: (store, term) => getFirstObject(store, term, expandNS('foaf:homepage')),
   }],
@@ -43,7 +47,11 @@ exports.generate = function getEntities(store, meetings) {
       }
 
       Object.entries(def).forEach(([ key, fn ]) => {
-        entity[key] = fn(store, entityNode)
+        if (typeof fn === 'string') {
+          entity[key] = fn
+        } else {
+          entity[key] = fn(store, entityNode)
+        }
       })
 
       entities[entityNode.id] = entity

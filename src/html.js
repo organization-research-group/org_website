@@ -54,19 +54,21 @@ function renderDirectory(meetings) {
 function renderEntity(val, key) {
   if (!val.length) return ''
 
-  const entityListHTML = val.map(({ fragment, roles, label }) => html`
-      <li>
-        <a href="directory.html${fragment}">${label}</a>
-        <span class="entity-role">
-          ${roles.length ? '(' + roles.join(', ') + ')' : ''}
-        </span>
-      </li>
-  `).join('\n')
-
-  return html`
-    <h4>${key}</h4>
-    <ul>${raw(entityListHTML)}  </ul>
-  `
+  return (
+    h('div', [
+      h('h4', key),
+      h('ul', val.map(({ fragment, roles, label }) => (
+        h('li', [
+          h('a', { href: `directory.html#${fragment}` }),
+          roles.size === 0 ? null : h('span.entity-role', [
+            '(',
+            [...roles].join(', '),
+            ')',
+          ]),
+        ])
+      )))
+    ])
+  )
 }
 
 function renderMeeting({ store, bibliography, entities }) {
@@ -91,7 +93,7 @@ function renderMeeting({ store, bibliography, entities }) {
         if (URI && html.slice(-7) === '.</div>') {
           html = (
             html.slice(0, -6) +
-            ` Retrieved from <a href="${URI}">${encodEURIComponent(URI)}</a>.</div>`
+            ` Retrieved from <a href="${URI}">${encodeURIComponent(URI)}</a>.</div>`
           )
         }
 
@@ -117,6 +119,22 @@ function renderMeeting({ store, bibliography, entities }) {
 
     const scheduleHTML = await Promise.all(meeting.schedule.map(renderScheduleItem))
 
+    const entitiesHTML = R.pipe(
+      R.map(({ term, roles }) => {
+        const entity = entities[term.id]
+
+        return {
+          roles,
+          categoryLabel: entity.categoryLabel,
+          label: entity.label,
+          fragment: R.last(term.id.split('#'))
+        }
+      }),
+      R.groupBy(R.prop('categoryLabel')),
+      R.mapObjIndexed(renderEntity),
+      R.values
+    )(meeting.entities)
+
     return (
       h('div.meeting', {
         id: meeting.node.id.split('#')[1]
@@ -125,16 +143,7 @@ function renderMeeting({ store, bibliography, entities }) {
 
         h('.meeting--schedule', scheduleHTML),
 
-        // TODO
-    /*
-    const entityHTML = R.pipe(
-      R.groupBy(R.prop('key')),
-      R.mapObjIndexed(renderEntity),
-      R.values
-    )(entities).join('\n')
-    */
-
-        h('.meeting-entitites'),
+        h('.meeting-entities', entitiesHTML),
       ])
     )
   }
