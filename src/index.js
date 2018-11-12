@@ -36,7 +36,7 @@ async function createWebsiteArchive() {
   const mill = tar.pack()
 
   mill.entry({ name: 'index.html' }, '' + await renderMain(grist))
-  // mill.entry({ name: 'archive.html' }, '' + renderArchive(grist))
+  mill.entry({ name: 'archive.html' }, '' + await renderArchive(grist))
   // mill.entry({ name: 'directory.html' }, '' + renderDirectory(grist))
   mill.pipe(process.stdout);
 }

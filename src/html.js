@@ -19,12 +19,6 @@ function zeroPad(num) {
   return num.toString().padStart(2, '0')
 }
 
-function renderArchive(meetings) {
-  const content = archive(meetings)
-
-  return renderPage(content)
-}
-
 function renderDirectory(meetings) {
   /*
   const entitiesByType = R.pipe(
@@ -225,13 +219,13 @@ function directory(entitiesByType) {
   `
 }
 
-function archive(meetings) {
-  meetings = meetings.map(renderReading)
-  return html`
-<section>
-  ${raw(meetings.slice(0).join('\n\n'))}
-</section>
-`
+async function renderArchive(grist) {
+  const meetings = await Promise.all(
+    grist.meetings.map(renderMeeting(grist)))
+
+  return renderPage(
+    h('section', meetings)
+  )
 }
 
 function renderPage(page) {
