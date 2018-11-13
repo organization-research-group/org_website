@@ -9,7 +9,7 @@ const fs = require('fs')
     , entities = require('./entities')
     , { renderArchive, renderDirectory, renderMain } = require('./html')
 
-const BIB_FILE = path.join(__dirname, '..', 'bib.ttl')
+const GRAPH_FILE = path.join(__dirname, '..', 'graph.ttl')
 
 createWebsiteArchive()
   .catch(err => {
@@ -22,7 +22,7 @@ async function createWebsiteArchive() {
       , parser = N3.StreamParser()
 
   await new Promise((resolve, reject) =>
-    store.import(fs.createReadStream(BIB_FILE).pipe(parser))
+    store.import(fs.createReadStream(GRAPH_FILE).pipe(parser))
       .on('error', reject)
       .on('end', resolve))
 

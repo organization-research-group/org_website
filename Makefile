@@ -15,7 +15,7 @@ all: dist/site.tar
 dist:
 	mkdir -p $@
 
-dist/site.tar: org.css $(JS_FILES) | dist
+dist/site.tar: org.css graph.ttl $(JS_FILES) | dist
 	node . > $@ || rm $@
 	$(TAR) --owner=0 --group=0 -r -f $@ $<
 
@@ -28,7 +28,7 @@ add_meeting:
 	@python3 bin/add_meeting
 
 sort_turtle:
-	bin/clean_ttl.py bib.ttl | sponge bib.ttl
+	bin/clean_ttl.py graph.ttl | sponge graph.ttl
 
 upload: $(SITE_FILES)
 	chmod g+w $^

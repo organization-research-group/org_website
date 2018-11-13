@@ -37,7 +37,7 @@ reading_ttl_template = '''
 BIB_FILENAME = os.path.join(
     os.path.dirname(os.path.realpath(__file__)),
     '..',
-    'bib.ttl'
+    'graph.ttl'
 )
 
 print()
@@ -116,7 +116,7 @@ Add arbitrary HTML by just typing a string.
         print(new_ttl + '====\n')
 
         keep = input(
-            '\033[1mAdding these statements to bib.ttl. '
+            '\033[1mAdding these statements to graph.ttl. '
             'Press Ctrl-c to cancel.\033[0m')
 
         ttl_with_new = clean_ttl(
