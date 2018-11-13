@@ -17,7 +17,7 @@ dist:
 
 dist/site.tar: org.css graph.ttl $(JS_FILES) | dist
 	node . > $@ || rm $@
-	$(TAR) --owner=0 --group=0 -r -f $@ $<
+	$(TAR) --owner=0 --group=0 -r -f $@ $(word 1, $^) $(word 2, $^)
 
 .PHONY: clean upload add_meeting
 

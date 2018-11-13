@@ -15,6 +15,11 @@ html, body {
     margin: 0;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .content-wrapper {
     position: relative;
     margin: auto;

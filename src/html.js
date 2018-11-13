@@ -258,8 +258,14 @@ function renderPage(page) {
           h('main', page),
 
           h('footer', [
-            'Last updated ',
-            lastUpdated,
+            h('div', [
+              'Last updated ',
+              lastUpdated,
+            ]),
+
+            h('div', [
+              h('a', { href: 'graph.ttl' }, 'Graph'),
+            ])
           ]),
         ]),
 
