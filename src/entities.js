@@ -42,6 +42,7 @@ exports.generate = function getEntities(store, meetings) {
   Array.from(entityDefs).forEach(([ typeNode, def ]) => {
     store.getSubjects(expandNS('rdf:type'), typeNode).forEach(entityNode => {
       const entity = {
+        uri: 'directory.html#' + entityNode.value.split('#')[1],
         node: entityNode,
         type: typeNode,
       }

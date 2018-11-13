@@ -4,9 +4,8 @@ const R = require('ramda')
     , h = require('hyperscript')
     , toHyperscript = require('html2hscript')
     , { timeFormat } = require('d3-time-format')
-    , { html, raw } = require('es6-string-html-template')
     , pretty = require('pretty')
-    , { bibliographyTypes } = require('./bibliography')
+    , { Util: { isNamedNode }} = require('n3')
     , { getFirstObjectLiteral } = require('./rdf')
 
 module.exports = {
@@ -17,32 +16,6 @@ module.exports = {
 
 function zeroPad(num) {
   return num.toString().padStart(2, '0')
-}
-
-function renderDirectory(meetings) {
-  /*
-  const entitiesByType = R.pipe(
-    R.chain(meeting =>
-      meeting.entities.map(entity => ({ ...entity, weeks: meeting.fragment }))
-    ),
-    R.groupBy(R.prop('key')),
-    R.map(R.pipe(
-      R.sortBy(R.compose(R.toLower, R.prop('label'))),
-      R.groupWith((a, b) => a.id.id === b.id.id), // lol
-      R.map(meetingsByWeek => ({
-        ...meetingsByWeek[0],
-        weeks: R.pipe(
-          R.chain(R.prop('weeks')),
-          R.sortBy(R.identity)
-        )(meetingsByWeek)
-      }))
-    ))
-  )(meetings)
-
-  const content = directory(entitiesByType)
-
-  return renderPage(content)
-  */
 }
 
 function renderEntity(val, key) {
@@ -176,47 +149,62 @@ async function renderMain(grist) {
   )
 }
 
-function directory(entitiesByType) {
-  const htmlByType = R.map(
-    R.pipe(
-      R.map(({ id, label, weeks, externalLink }) => html`
-        <div id=${id}>
-        <h3>${label}</h3>
-        <a class="external" href="${externalLink}">${externalLink && 'Homepage'}</a>
-        <ul>
-          ${raw(weeks.map(week => html`
-            <li>
-              <a href="${week}">${week.split(':').slice(-1)[0]}</a>
-            </li>
-          `).join('\n'))}
-        </ul>
-        </div>
-      `),
-      d => d.join('\n')
-    ), entitiesByType)
+function renderDirectory(grist) {
+  const entitiesWithWeeks = R.transduce(
+    R.map(R.pipe(
+      meeting => meeting.entities.map(entity => ({
+        meetingURI: meeting.uri,
+        entity: entity.term.id,
+      })),
+      R.groupBy(R.prop('entity')),
+      R.map(R.applySpec({
+        weeks: R.map(R.prop('meetingURI')),
+      }))
+    )),
+    R.mergeDeepWith(R.concat),
+    grist.entities,
+    grist.meetings
+  )
 
-  return html`
-    <section id="index">
-      <div>
-        <h2>People</h2>
-        ${raw(htmlByType.People)}
-      </div>
+  const htmlByType = R.pipe(
+    R.values,
+    R.filter(({ node }) => isNamedNode(node)),
+    R.groupBy(R.prop('categoryLabel')),
+    R.map(R.sortBy(R.prop('uri'))),
+    R.map(R.map(({ uri, label, weeks, homepage }) =>
+      h('div#' + uri.split('#')[1], [
+        h('h3', label),
+        homepage && h('a.external', { href: homepage.id }, 'Homepage'),
+        h('ul', weeks.map(week =>
+          h('li', [
+            h('a', { href: week }, week.split(':')[1]),
+          ])
+        ))
+      ])
+    ))
+  )(entitiesWithWeeks)
 
-      <div>
-        <h2>Journals</h2>
-        ${raw(htmlByType.Journals)}
-      </div>
+  return renderPage(
+    h('section#index', [
+      h('div', [
+        h('h2', 'People'),
+        htmlByType.People,
+      ]),
 
-      <div>
-        <h2>Conferences</h2>
+      h('div', [
+        h('h2', 'Journals'),
+        htmlByType.Journals,
+      ]),
 
-        ${raw(htmlByType.Conferences)}
-        <h2>Publishers</h2>
-        ${raw(htmlByType.Publishers)}
+      h('div', [
+        h('h2', 'Conferences'),
+        htmlByType.Conferences,
 
-      </div>
-    </section>
-  `
+        h('h2', 'Publishers'),
+        htmlByType.Publishers,
+      ])
+    ])
+  )
 }
 
 async function renderArchive(grist) {

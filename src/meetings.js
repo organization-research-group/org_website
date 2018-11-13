@@ -65,6 +65,7 @@ exports.generate = async function getMeetings(store) {
     })
 
     meetings.push({
+      uri: 'archive.html#' + meetingNode.value.split('#')[1],
       node: meetingNode,
       schedule,
       date: getMeetingDate(store, meetingNode),
