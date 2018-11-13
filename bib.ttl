@@ -3417,7 +3417,7 @@
     foaf:name "Stanford University Press" ;
     address:localityName "Stanford, CA" .
 
-:publisher:Spring
+:publisher:Springer
     a :Publisher ;
     foaf:name "Springer" ;
     address:localityName "Dordrecht" .
