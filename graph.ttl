@@ -34,6 +34,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2018-11-30,
+        :meeting:2018-11-23,
         :meeting:2018-11-16,
         :meeting:2018-11-09,
         :meeting:2018-10-05,
@@ -2162,6 +2164,32 @@
     ] ;
     :schedule (
         [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2018-11-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2018-11-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-30T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Melanie\u2019s recent CHI submission" ]
     ) .
 
 :person:AbbateJ
