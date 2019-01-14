@@ -34,6 +34,14 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2018-10-12,
+        :meeting:2018-10-19,
+        :meeting:2018-10-26,
+        :meeting:2018-11-02,
+        :meeting:2018-12-07,
+        :meeting:2018-12-14,
+        :meeting:2018-12-21,
+        :meeting:2019-01-11,
         :meeting:2018-11-30,
         :meeting:2018-11-23,
         :meeting:2018-11-16,
@@ -201,6 +209,12 @@
     dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
     address:localityName "Ottawa" ;
     dc:date "October 1st to 5th, 1971" .
+
+:conference:WebStudies2018
+    a bibo:Conference ;
+    dc:title "WS.2 2018 International conference on Web Studies" ;
+    address:localityName "Paris" ;
+    dc:date "October 3-5, 2018" .
 
 :journal:AI
     a bibo:Journal ;
@@ -423,6 +437,12 @@
     dc:title "Sociological Theory" ;
     foaf:homepage <http://journals.sagepub.com/home/stx> ;
     bibo:issn "14679558" .
+
+:journal:TAC
+    a bibo:Journal ;
+    dc:title "Technology and Culture" ;
+    foaf:homepage <https://www.press.jhu.edu/journals/technology-and-culture> ;
+    bibo:issn "1097-3729" .
 
 :journal:TCS
     a bibo:Journal ;
@@ -2138,6 +2158,60 @@
         :reading:Stoler2009
     ) .
 
+:meeting:2018-10-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-12T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:McLuhan1967 ;
+    :schedule (
+        :reading:McLuhan1967
+    ) .
+
+:meeting:2018-10-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Fall break - no meeting" ]
+    ) .
+
+:meeting:2018-10-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ingold2007 ;
+    :schedule (
+        :reading:Ingold2007
+    ) .
+
+:meeting:2018-11-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-02T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Center for Faculty Excellence event - no meeting" ]
+    ) .
+
 :meeting:2018-11-09
     a :Meeting ;
     lode:atTime [
@@ -2163,7 +2237,7 @@
         ]
     ] ;
     :schedule (
-        [ dc:description "No meeting" ]
+        [ dc:description "Lots of people traveling - no meeting" ]
     ) .
 
 :meeting:2018-11-23
@@ -2176,7 +2250,7 @@
         ]
     ] ;
     :schedule (
-        [ dc:description "No meeting" ]
+        [ dc:description "Thanksgiving - no meeting" ]
     ) .
 
 :meeting:2018-11-30
@@ -2190,6 +2264,61 @@
     ] ;
     :schedule (
         [ dc:description "Melanie\u2019s recent CHI submission" ]
+    ) .
+
+:meeting:2018-12-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-12-07T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lee2018 ;
+    :schedule (
+        :reading:Lee2018
+    ) .
+
+:meeting:2018-12-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-12-14T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Elliott's paper \u201cEnduring Ephemerality in Temporal Infrastructure\u201d" ]
+    ) .
+
+:meeting:2018-12-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-12-21T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bernstein2018 ;
+    :schedule (
+        :reading:Bernstein2018
+    ) .
+
+:meeting:2019-01-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-01-11T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Fazi2019 ;
+    :schedule (
+        :reading:Fazi2019
     ) .
 
 :person:AbbateJ
@@ -2247,6 +2376,13 @@
     foaf:surname "Barad" ;
     foaf:homepage <https://people.ucsc.edu/~kbarad/> .
 
+:person:BawdenD
+    a foaf:Person ;
+    owl:sameAs viaf:2620117 ;
+    foaf:givenname "David" ;
+    foaf:surname "Bawden" ;
+    foaf:workInfoHomepage <https://www.city.ac.uk/people/academics/david-bawden> .
+
 :person:BehrenshausenB
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-8346-6567 ;
@@ -2276,6 +2412,12 @@
     foaf:givenname "Mark" ;
     foaf:surname "Bernstein" ;
     foaf:homepage <http://www.markbernstein.org/> .
+
+:person:BessingerJB
+    a foaf:Person ;
+    owl:sameAs viaf:64132806 ;
+    foaf:givenname "Jess B." ;
+    foaf:surname "Bessinger" .
 
 :person:BestS
     a foaf:Person ;
@@ -2539,6 +2681,13 @@
     foaf:givenname "Robert A." ;
     foaf:surname "Fairthorne" .
 
+:person:FaziMB
+    a foaf:Person ;
+    owl:sameAs viaf:15154257983624152758 ;
+    foaf:givenname "M. Beatrice" ;
+    foaf:surname "Fazi" ;
+    foaf:workInfoHomepage <http://www.sussex.ac.uk/profiles/378975> .
+
 :person:FeenbergA
     a foaf:Person ;
     owl:sameAs viaf:8513718, wd:Q2846598 ;
@@ -2719,6 +2868,16 @@
     foaf:givenname "Birger" ;
     foaf:surname "Hjørland" .
 
+:person:HoggD
+    a foaf:Person ;
+    foaf:givenname "David" ;
+    foaf:surname "Hogg" .
+
+:person:HollisCC
+    a foaf:Person ;
+    foaf:givenname "Carol C." ;
+    foaf:surname "Hollis" .
+
 :person:HolmesB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -2739,6 +2898,13 @@
     foaf:surname "Hui" ;
     foaf:homepage <http://www.digitalmilieu.net/yuk/> .
 
+:person:IngoldT
+    a foaf:Person ;
+    owl:sameAs viaf:108921732, wd:Q2073266 ;
+    foaf:givenname "Tim" ;
+    foaf:surname "Ingold" ;
+    foaf:workInfoHomepage <https://www.abdn.ac.uk/socsci/people/profiles/tim.ingold> .
+
 :person:IraniL
     a foaf:Person ;
     foaf:givenname "Lilly" ;
@@ -2757,6 +2923,11 @@
     foaf:givenname "Pablo" ;
     foaf:surname "Jensen" ;
     foaf:homepage <http://perso.ens-lyon.fr/pablo.jensen/> .
+
+:person:JonesJ
+    a foaf:Person ;
+    foaf:givenname "Jack" ;
+    foaf:surname "Jones" .
 
 :person:JoyceM
     a foaf:Person ;
@@ -2833,6 +3004,12 @@
     foaf:surname "Leahu" ;
     foaf:workInfoHomepage <https://pure.itu.dk/portal/en/persons/lucian-leahu(55d34e51-05c7-460b-9918-067e3401e65c).html> .
 
+:person:LeeD
+    a foaf:Person ;
+    foaf:givenname "Deborah" ;
+    foaf:surname "Lee" ;
+    foaf:homepage <https://poulencing.wixsite.com/deborahlee> .
+
 :person:LevineC
     a foaf:Person ;
     foaf:givenname "Caroline" ;
@@ -2905,6 +3082,12 @@
     foaf:surname "Marcus" ;
     foaf:homepage <http://english.columbia.edu/people/profile/393> .
 
+:person:McLuhanM
+    a foaf:Person ;
+    owl:sameAs viaf:14198 , wd:Q193871 ;
+    foaf:givenname "Marshall" ;
+    foaf:surname "McLuhan" .
+
 :person:MedinaE
     a foaf:Person ;
     owl:sameAs viaf:170241863 ;
@@ -2966,6 +3149,24 @@
     foaf:surname "Noble" ;
     foaf:homepage <https://safiyaunoble.com> .
 
+:person:NofreD
+    a foaf:Person ;
+    foaf:givenname "David" ;
+    foaf:surname "Nofre" ;
+    foaf:homepage <https://www.researchgate.net/profile/David_Nofre> .
+
+:person:PriestleyM
+    a foaf:Person ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Priestley" ;
+    foaf:homepage <http://markpriestley.net> .
+
+:person:AlbertsG
+    a foaf:Person ;
+    foaf:givenname "Gerard" ;
+    foaf:surname "Alberts" ;
+    foaf:workInfoHomepage <http://www.uva.nl/en/profile/a/l/g.alberts/g.alberts.html> .
+
 :person:NordmannA
     a foaf:Person ;
     owl:sameAs viaf:115023610 ;
@@ -2978,6 +3179,12 @@
     foaf:givenname "Ben" ;
     foaf:surname "Packer" ;
     foaf:homepage <https://www.quora.com/profile/Ben-Packer-1> .
+
+:person:PapanekVJ
+    a foaf:Person ;
+    owl:sameAs viaf:108315176 , wd:Q89542 ;
+    foaf:givenname "Victor J." ;
+    foaf:surname "Papanek" .
 
 :person:ParikkaJ
     a foaf:Person ;
@@ -3019,6 +3226,12 @@
     foaf:surname "Plantin" ;
     foaf:homepage <http://www.lse.ac.uk/media@lse/WhosWho/AcademicStaff/JC-Plantin.aspx> .
 
+:person:PolanyiK
+    a foaf:Person ;
+    owl:sameAs viaf:77112818 , wd:Q318029 ;
+    foaf:givenname "Karl" ;
+    foaf:surname "Polanyi" .
+
 :person:PollockN
     a foaf:Person ;
     owl:sameAs viaf:9212031 ;
@@ -3051,6 +3264,14 @@
     foaf:givenname "Sarah T." ;
     foaf:surname "Roberts" ;
     foaf:homepage <https://illusionofvolition.com> .
+
+:person:RobinsonL
+    a foaf:Person ;
+    owl:sameAs viaf:162963207, wd:Q60362435 ;
+    foaf:givenname "Lyn" ;
+    foaf:surname "Robinson" ;
+    foaf:homepage <https://thelynxiblog.com> ;
+    foaf:workInfoHomepage <https://www.city.ac.uk/people/academics/lyn-robinson> .
 
 :person:RoblesAndersonE
     a foaf:Person ;
@@ -3405,6 +3626,13 @@
     dc:publisher :publisher:IEEE ;
     bibo:isbn13 "978-1-4673-6656-4" .
 
+:proceedings:WebStudies2018
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2nd International Conference on Web Studies" ;
+    dc:date "2018" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-6438-6" .
+
 :publisher:ACM
     a :Publisher ;
     foaf:name "ACM" ;
@@ -3494,6 +3722,11 @@
     a :Publisher ;
     foaf:name "Stanford University Press" ;
     address:localityName "Stanford, CA" .
+
+:publisher:SomethingElse
+    a :Publisher ;
+    foaf:name "Something Else Press" ;
+    address:localityName "New York" .
 
 :publisher:Springer
     a :Publisher ;
@@ -3666,6 +3899,19 @@
     bibo:presentedAt :conference:Hypertext1991 ;
     bibo:pages "243-260" ;
     bibo:doi "10.1145/122974.122999" .
+
+:reading:Bernstein2018
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/3240431.3240433> ;
+    dc:title "Links: Exercises In Style" ;
+    dc:creator :person:BernsteinM ;
+    bibo:authorList (
+        :person:BernsteinM
+    ) ;
+    bibo:reproducedIn :proceedings:WebStudies2018 ;
+    bibo:presentedAt :conference:WebStudies2018 ;
+    bibo:pages "5-11" ;
+    bibo:doi "10.1145/3240431.3240433" .
 
 :reading:Blair2004
     a :Reading, bibo:AcademicArticle ;
@@ -3971,6 +4217,24 @@
     bibo:presentedAt :conference:OCCBCK ;
     bibo:reproducedIn :proceedings:ConceptualBasis1974 ;
     bibo:pages "404-415" .
+
+:reading:Fazi2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0263276418770243> ;
+    dc:title "Digital Aesthetics: The Discrete and the Continuous" ;
+    dc:creator :person:FaziMB ;
+    bibo:authorList (
+        :person:FaziMB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "1" ;
+        bibo:volume "36"
+    ] ;
+    bibo:pages "3-26" ;
+    bibo:doi "10.1177/0263276418770243" .
 
 :reading:Feenberg2015
     a :Reading, bibo:AcademicArticle ;
@@ -4343,6 +4607,18 @@
     bibo:uri "https://muse.jhu.edu/book/45372" ;
     bibo:doi: "10.5749/minnesota/9780816695515.001.0001" .
 
+:reading:Ingold2007
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/762459510> ;
+    dc:title "Lines: A brief history" ;
+    dc:creator :person:IngoldT ;
+    bibo:authorList (
+        :person:IngoldT
+    ) ;
+    dc:date "2007" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:isbn13 "9780415424264" .
+
 :reading:Irani2018
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.28968/cftt.v4i1.243> ;
@@ -4436,6 +4712,20 @@
     bibo:reproducedIn :proceedings:DIS2016 ;
     bibo:pages "182–186" ;
     bibo:doi "10.1145/2901790.2901840" .
+
+:reading:Lee2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1002/asi.24120> ;
+    dc:title "Modeling the relationship between scientific and bibliographic classification for music" ;
+    dc:creator :person:LeeD, :person:RobinsonL, :person:BawdenD ;
+    bibo:authorList (
+        :person:LeeD
+        :person:RobinsonL
+        :person:BawdenD
+    ) ;
+    dc:date "28 November 2018" ;
+    dc:isPartOf :journal:JASIST ;
+    bibo:doi "10.1002/asi.24120" .
 
 :reading:Levine2015
     a :Reading, bibo:Book ;
@@ -4545,6 +4835,23 @@
     bibo:pages "1-21" ;
     bibo:doi "10.1525/rep.2016.135.1.1" .
 
+:reading:McLuhan1967
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/228434618> ;
+    dc:title "Verbi-voco-visual Explorations" ;
+    dc:creator :person:McLuhanM, :person:PapanekVJ, :person:BessingerJB, :person:PolanyiK, :person:HollisCC, :person:HoggD, :person:JonesJ ;
+    bibo:authorList (
+        :person:McLuhanM
+        :person:PapanekVJ
+        :person:BessingerJB
+        :person:PolanyiK
+        :person:HollisCC
+        :person:HoggD
+        :person:JonesJ
+    ) ;
+    dc:date "1967" ;
+    dc:publisher :publisher:SomethingElse .
+
 :reading:Medina2011
     a :Reading, bibo:Book ;
     dc:title "Introduction: Political and Technological Visions" ;
@@ -4653,9 +4960,23 @@
     bibo:isbn13 "978-1-4798-3724-3" .
 
 :reading:Nofre2014
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2017-06-09
-    a :Reading .
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/tech.2014.0031> ;
+    dc:title "When Technology Became Language: The Origins of the Linguistic Conception of Computer Programming, 1950–1960" ;
+    dc:creator :person:NofreD, :person:PriestleyM, :person:AlbertsG ;
+    bibo:authorList (
+        :person:NofreD
+        :person:PriestleyM
+        :person:AlbertsG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 2014" ;
+        dc:isPartOf :journal:TAC ;
+        bibo:issue "1" ;
+        bibo:volume "55"
+    ] ;
+    bibo:doi "10.1353/tech.2014.0031" .
 
 :reading:Packer2018
     a :Reading, bibo:AcademicArticle ;
@@ -4715,11 +5036,6 @@
     dc:date "1995" ;
     dc:publisher :publisher:UCP ;
     bibo:isbn13 "978-0-2266-6802-4" .
-
-:reading:Pickering1995
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2018-03-16
-    a :Reading .
 
 :reading:Plantin2016
     a :Reading, bibo:AcademicArticle ;
@@ -4785,7 +5101,6 @@
 :reading:Rieder2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1080/1369118X.2016.1181195> ;
-    # FIXME: This was an online-only, pre-publication
     dc:title "Scrutinizing an algorithmic technique: the Bayes classifier as interested reading of reality" ;
     bibo:shortTitle "Scrutinizing an algorithmic technique" ;
     dc:creator :person:RiederB ;
