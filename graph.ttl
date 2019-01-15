@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-01-18,
         :meeting:2018-10-12,
         :meeting:2018-10-19,
         :meeting:2018-10-26,
@@ -2321,6 +2322,22 @@
         :reading:Fazi2019
     ) .
 
+:meeting:2019-01-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-01-18T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VonFoerster2002a, :reading:Clarke2009a, :reading:Clarke2009b ;
+    :schedule (
+        :reading:VonFoerster2002a
+        :reading:Clarke2009a
+        :reading:Clarke2009b
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2341,6 +2358,12 @@
     foaf:givenname "Philip E." ;
     foaf:surname "Agre" ;
     foaf:homepage <http://polaris.gseis.ucla.edu/pagre/> .
+
+:person:AlbertsG
+    a foaf:Person ;
+    foaf:givenname "Gerard" ;
+    foaf:surname "Alberts" ;
+    foaf:workInfoHomepage <http://www.uva.nl/en/profile/a/l/g.alberts/g.alberts.html> .
 
 :person:AlcoffL
     a foaf:Person ;
@@ -2563,6 +2586,14 @@
     foaf:givenname "Adele E." ;
     foaf:surname "Clarke" ;
     foaf:workInfoHomepage <http://profiles.ucsf.edu/adele.clarke> .
+
+:person:ClarkeB
+    a foaf:Person ;
+    owl:sameAs viaf:113421281 ;
+    foaf:givenname "Bruce" ;
+    foaf:surname "Clarke" ;
+    foaf:workInfoHomepage <http://www.depts.ttu.edu/english/general_info/directory/faculty_directory/faculty_profile_pages/clarke_detailed.php> ;
+    foaf:homepage <http://www.faculty.english.ttu.edu/clarke/> .
 
 :person:CliffL
     a foaf:Person ;
@@ -2819,6 +2850,13 @@
     foaf:givenname "Yoni" ;
     foaf:surname "Halpern" ;
     foaf:homepage <https://cs.nyu.edu/~halpern/> .
+
+:person:HansenM
+    a foaf:Person ;
+    owl:sameAs viaf:62626903, wd:Q17745931 ;
+    foaf:givenname "Mark B. N." ;
+    foaf:surname "Hansen" ;
+    foaf:workInfoHomepage <https://literature.duke.edu/people/mark-bn-hansen> .
 
 :person:HansethO
     a foaf:Person ;
@@ -3155,18 +3193,6 @@
     foaf:surname "Nofre" ;
     foaf:homepage <https://www.researchgate.net/profile/David_Nofre> .
 
-:person:PriestleyM
-    a foaf:Person ;
-    foaf:givenname "Mark" ;
-    foaf:surname "Priestley" ;
-    foaf:homepage <http://markpriestley.net> .
-
-:person:AlbertsG
-    a foaf:Person ;
-    foaf:givenname "Gerard" ;
-    foaf:surname "Alberts" ;
-    foaf:workInfoHomepage <http://www.uva.nl/en/profile/a/l/g.alberts/g.alberts.html> .
-
 :person:NordmannA
     a foaf:Person ;
     owl:sameAs viaf:115023610 ;
@@ -3226,6 +3252,13 @@
     foaf:surname "Plantin" ;
     foaf:homepage <http://www.lse.ac.uk/media@lse/WhosWho/AcademicStaff/JC-Plantin.aspx> .
 
+:person:PoerksenB
+    a foaf:Person ;
+    owl:sameAs viaf:39594382, wd:Q825753 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Poerksen" ;
+    foaf:workInfoHomepage <https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/philosophie-rhetorik-medien/institute-of-media-studies/institute/staff/poerksen-bernhard-prof-dr/> .
+
 :person:PolanyiK
     a foaf:Person ;
     owl:sameAs viaf:77112818 , wd:Q318029 ;
@@ -3238,6 +3271,12 @@
     foaf:givenname "Neil" ;
     foaf:surname "Pollock" ;
     foaf:homepage <https://www.business-school.ed.ac.uk/about/people/84/Neil/Pollock> .
+
+:person:PriestleyM
+    a foaf:Person ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Priestley" ;
+    foaf:homepage <http://markpriestley.net> .
 
 :person:RandallD
     a foaf:Person ;
@@ -3510,6 +3549,13 @@
     foaf:surname "Vitak" ;
     foaf:homepage <https://jessicavitak.com/> .
 
+:person:VonFoersterH
+    a foaf:Person ;
+    owl:sameAs viaf:29663298, wd:Q78688 ;
+    foaf:givenname "Heinz" ;
+    foaf:surname "von Foerster" ;
+    foaf:homepage <https://www.univie.ac.at/constructivism/HvF.htm> .
+
 :person:WaldsteinM
     a foaf:Person ;
     owl:sameAs viaf:273055176 ;
@@ -3678,6 +3724,11 @@
     foaf:name "IEEE" ;
     address:localityName "Piscataway" .
 
+:publisher:Kluwer
+    a :Publisher ;
+    foaf:name "Kluwer Academic" ;
+    address:localityName "New York" .
+
 :publisher:MIT
     a :Publisher ;
     foaf:name "MIT Press" ;
@@ -3702,6 +3753,11 @@
     a :Publisher ;
     foaf:name "Princeton University Press" ;
     address:localityName "Princeton, NJ" .
+
+:publisher:Plenum
+    a :Publisher ;
+    foaf:name "Plenum Publishers" ;
+    address:localityName "New York" .
 
 :publisher:PsychologyPress
     a :Publisher ;
@@ -4060,6 +4116,31 @@
     ) ;
     dc:isPartOf :volume:Kelly2016 ;
     bibo:pages "262-281" .
+
+:reading:Clarke2009a
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822391388-001> ;
+    dc:title "Introduction: Neocybernetic Emergence" ;
+    dc:creator :person:ClarkeB, :person:HansenM ;
+    bibo:authorList (
+        :person:ClarkeB
+        :person:HansenM
+    ) ;
+    dc:isPartOf :volume:Clarke2009 ;
+    bibo:pages "1-25" ;
+    bibo:doi "10.1215/9780822391388-001" .
+
+:reading:Clarke2009b
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822391388-003> ;
+    dc:title "Heinz von Foerster's Demons: The Emergence of Second-Order Systems Theory" ;
+    dc:creator :person:ClarkeB ;
+    bibo:authorList (
+        :person:ClarkeB
+    ) ;
+    dc:isPartOf :volume:Clarke2009 ;
+    bibo:pages "34-61" ;
+    bibo:doi "10.1215/9780822391388-003" .
 
 :reading:Cope2017
     a :Reading, bibo:AcademicArticle ;
@@ -5513,6 +5594,17 @@
     bibo:pages "206-220" ;
     bibo:uri "http://dro.deakin.edu.au/view/DU:30070005" .
 
+:reading:VonFoerster2002a
+    a :Reading, bibo:BookSection ;
+    dc:title "Images of Reality" ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) ;
+    dc:isPartOf :volume:VonFoerster2002 ;
+    bibo:pages "17-63" .
+
 :reading:Wakkary2017
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-23
@@ -5683,6 +5775,20 @@
         :person:ClapinH
     ) .
 
+:volume:Clarke2009
+    a bibo:EditedBook ;
+    owl:sameAs <https://doi.org/10.1215/9780822391388> ;
+    bibo:doi "10.1215/9780822391388" ;
+    bibo:isbn13 "978-0-8223-9138-8" ;
+    dc:date "2009" ;
+    dc:title "Emergence and Embodiment: New Essays on Second-Order Systems Theory" ;
+    dc:publisher :publisher:DUP ;
+    bibo:editor :person:ClarkeB, :person:HansenM ;
+    bibo:editorList (
+        :person:ClarkeB
+        :person:HansenM
+    ) .
+
 :volume:Hildebrandt2011
     a bibo:EditedBook ;
     dc:title "Law, human agency and autonomic computing: the philosophy of law meets the philosophy of technology" ;
@@ -5752,4 +5858,16 @@
     bibo:editor :person:StarS ;
     bibo:editorList (
         :person:StarS
+    ) .
+
+:volume:VonFoerster2002
+    a bibo:Book ;
+    bibo:isbn10 "0-306-46752-6" ;
+    dc:date "2002" ;
+    dc:title "Understanding Systems: Conversations on Epistemology and Ethics" ;
+    dc:publisher :publisher:Kluwer, :publisher:Plenum ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
     ) .
