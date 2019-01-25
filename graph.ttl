@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-01-25,
         :meeting:2019-01-18,
         :meeting:2018-10-12,
         :meeting:2018-10-19,
@@ -2338,6 +2339,20 @@
         :reading:Clarke2009b
     ) .
 
+:meeting:2019-01-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-01-25T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:SpencerBrown1969 ;
+    :schedule (
+        :reading:SpencerBrown1969
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3426,6 +3441,12 @@
     foaf:surname "Spade" ;
     foaf:homepage <http://www.deanspade.net/> .
 
+:person:SpencerBrownG
+    a foaf:Person ;
+    owl:sameAs viaf:35259416 , wd:Q1508271 ;
+    foaf:givenname "George" ;
+    foaf:surname "Spencer-Brown" .
+
 :person:StarS
     a foaf:Person ;
     owl:sameAs wd:Q3505585, viaf:92811280 ;
@@ -3683,6 +3704,11 @@
     a :Publisher ;
     foaf:name "ACM" ;
     address:localityName "New York" .
+
+:publisher:AllenUnwin
+    a :Publisher ;
+    foaf:name "Allen & Unwin" ;
+    address:localityName "London" .
 
 :publisher:CUP
     a :Publisher ;
@@ -5380,6 +5406,16 @@
     dc:isPartOf :journal:WSQ:41:3 ;
     bibo:pages "247-252" ;
     bibo:doi "10.1353/wsq.2013.0077" .
+
+:reading:SpencerBrown1969
+    a :Reading, bibo:Book ;
+    dc:title "Laws of Form" ;
+    dc:creator :person:SpencerBrownG ;
+    bibo:authorList (
+        :person:SpencerBrownG
+    ) ;
+    dc:date "1969" ;
+    dc:publisher :publisher:AllenUnwin .
 
 :reading:Star1989
     a :Reading, bibo:AcademicArticle ;
