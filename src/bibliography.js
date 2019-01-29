@@ -115,7 +115,7 @@ function book(store, uri) {
   const $book = uri
 
   const [ $publisher ] = store
-    .getObjects($book, 'dc:publisher')
+    .getObjects($book, expandNS('dc:publisher'))
 
   return {
     cslType: 'book',
