@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-02-08,
         :meeting:2019-02-01,
         :meeting:2019-01-25,
         :meeting:2019-01-18,
@@ -2366,6 +2367,23 @@
     lode:involved :reading:Becker1982a ;
     :schedule (
         :reading:Becker1982a
+    ) .
+
+:meeting:2019-02-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-02-08T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VonFoerster2002b, :reading:VonFoerster2002c, :reading:Clarke2009a, :reading:Clarke2009b ;
+    :schedule (
+        :reading:VonFoerster2002b
+        :reading:VonFoerster2002c
+        :reading:Clarke2009a
+        :reading:Clarke2009b
     ) .
 
 :person:AbbateJ
@@ -5677,6 +5695,28 @@
     ) ;
     dc:isPartOf :volume:VonFoerster2002 ;
     bibo:pages "17-63" .
+
+:reading:VonFoerster2002b
+    a :Reading, bibo:BookSection ;
+    dc:title "Perspectives in Practice" ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) ;
+    dc:isPartOf :volume:VonFoerster2002 ;
+    bibo:pages "65-100" .
+
+:reading:VonFoerster2002c
+    a :Reading, bibo:BookSection ;
+    dc:title "Cybernetics" ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) ;
+    dc:isPartOf :volume:VonFoerster2002 ;
+    bibo:pages "101-116" .
 
 :reading:Wakkary2017
     # FIXME: Update the details of this entry.
