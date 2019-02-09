@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-02-15,
         :meeting:2019-02-08,
         :meeting:2019-02-01,
         :meeting:2019-01-25,
@@ -406,6 +407,11 @@
     dc:title "New Media & Society" ;
     foaf:homepage <http://journals.sagepub.com/home/nms> ;
     bibo:issn "1461-4448", "1461-7315" .
+
+:journal:PJLI
+    a bibo:Journal ;
+    dc:title "Penn Journal of Law and Innovation" ;
+    foaf:homepage <https://www.law.upenn.edu/institutes/ctic/> .
 
 :journal:PJOS
     a bibo:Journal ;
@@ -2386,6 +2392,20 @@
         :reading:Clarke2009b
     ) .
 
+:meeting:2019-02-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-02-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Grimmelmann2019 ;
+    :schedule (
+        :reading:Grimmelmann2019
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2880,6 +2900,13 @@
     foaf:givenname "James R." ;
     foaf:surname "Griesemer" ;
     foaf:homepage <http://griesemer.ucdavis.edu/> .
+
+:person:GrimmelmannJ
+    a foaf:Person ;
+    owl:sameAs viaf:296721073 ;
+    foaf:givenname "James" ;
+    foaf:surname "Grimmelmann" ;
+    foaf:homepage <https://james.grimmelmann.net> .
 
 :person:GrossbergL
     a foaf:Person ;
@@ -4635,6 +4662,20 @@
     ) ;
     dc:isPartOf :volume:Bowker2015 ;
     bibo:pages "201-218" .
+
+:reading:Grimmelmann2019
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "All Smart Contracts Are Ambiguous" ;
+    dc:creator :person:GrimmelmannJ ;
+    bibo:authorList (
+        :person:GrimmelmannJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:PJLI
+    ] ;
+    dc:date "January 14, 2019" ;
+    bibo:uri "https://ssrn.com/abstract=3315703" .
 
 :reading:Grossberg2016
     a :Reading, bibo:AcademicArticle ;
