@@ -60,7 +60,7 @@ function renderMeeting({ store, bibliography, entities }) {
         if (URI && html.slice(-7) === '.</div>') {
           html = (
             html.slice(0, -6) +
-            ` Retrieved from <a href="${URI}">${encodeURIComponent(URI)}</a>.</div>`
+            ` Retrieved from <a href="${URI}">${URI}</a>.</div>`
           )
         }
 
