@@ -34,6 +34,13 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-05-17,
+        :meeting:2019-05-10,
+        :meeting:2019-04-26,
+        :meeting:2019-04-19,
+        :meeting:2019-04-12,
+        :meeting:2019-04-05,
+        :meeting:2019-03-22,
         :meeting:2019-02-22,
         :meeting:2019-02-15,
         :meeting:2019-02-08,
@@ -178,6 +185,20 @@
     dc:date "April 26-May 1, 2014" ;
     foaf:homepage <https://chi2014.acm.org/> .
 
+:conference:CHI2019
+    a bibo:Conference ;
+    dc:title "SIGCHI Conference on Human Factors in Computing Systems 2019" ;
+    address:localityName "Glasgow, Scotland" ;
+    dc:date "May 4-May 9, 2019" ;
+    foaf:homepage <https://chi2019.acm.org/> .
+
+:conference:COLIS10
+    a bibo:Conference ;
+    dc:title "Conceptions of Library and Information Science 10th international conference" ;
+    address:localityName "Ljubljana, Slovenia" ;
+    dc:date "June 16-19, 2019" ;
+    foaf:homepage <http://oddelki.ff.uni-lj.si/biblio/colis/>.
+
 :conference:CSCW2017
     a bibo:Conference ;
     dc:title "The 20th ACM Conference on Computer-Supported Cooperative Work and Social Computing" ;
@@ -238,6 +259,11 @@
     foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-4446> ;
     bibo:issn "1468-4446" .
 
+:journal:CPO
+    a bibo:Journal ;
+    dc:title "communication +1" ;
+    foaf:homepage <https://scholarworks.umass.edu/cpo/> .
+
 :journal:CSCW
     a bibo:Journal ;
     dc:title "Computer Supported Cooperative Work" ;
@@ -294,6 +320,12 @@
     foaf:homepage <https://er.educause.edu> ;
     bibo:issn "1527-6619" .
 
+:journal:Emergence
+    a bibo:Journal ;
+    dc:title "Emergence: Complexity and Organization" ;
+    foaf:homepage <https://journal.emergentpublications.com> ;
+    bibo:issn "15213250" .
+
 :journal:FirstMonday
     a bibo:Journal ;
     dc:title "First Monday" ;
@@ -316,6 +348,12 @@
     dc:title "IEEE Annals of the History of Computing" ;
     foaf:homepage <http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=85> ;
     bibo:issn "1058-6180" .
+
+:journal:IR
+    a bibo:Journal ;
+    dc:title "Information Research" ;
+    foaf:homepage <http://www.informationr.net/> ;
+    bibo:issn "1368-1613" .
 
 :journal:InformationCommunicationSociety
     a bibo:Journal ;
@@ -425,6 +463,12 @@
     dc:title "Rethinking Marxism" ;
     foaf:homepage <http://www.rethinkingmarxism.org/> ;
     bibo:issn "0893-5696" .
+
+:journal:STH
+    a bibo:Journal ;
+    dc:title "Science, Technology, & Human Values" ;
+    foaf:homepage <https://journals.sagepub.com/home/sth> ;
+    bibo:issn "1552-8251" .
 
 :journal:ScienceInContext
     a bibo:Journal ;
@@ -2420,6 +2464,106 @@
         [ dc:description "SILS PhD student admit day - no meeting." ]
     ) .
 
+:meeting:2019-03-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-03-22T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lury2014 ;
+    :schedule (
+        :reading:Lury2014
+    ) .
+
+:meeting:2019-04-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-05T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bendell2018, :reading:Keyes2019 ;
+    :schedule (
+        :reading:Bendell2018
+        :reading:Keyes2019
+    ) .
+
+:meeting:2019-04-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-12T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Iliadis2013 ;
+    :schedule (
+        :reading:Iliadis2013
+    ) .
+
+:meeting:2019-04-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-19T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Oyama2000 ;
+    :schedule (
+        :reading:Oyama2000
+    ) .
+
+:meeting:2019-04-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-26T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; attend the <a href=\"https://info4socialgood.web.unc.edu/\">Symposium on Information for Social Good</a>" ]
+    ) .
+
+:meeting:2019-05-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-05-10T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:MacKenzie2002, :reading:Styhre2010 ;
+    :schedule (
+        :reading:MacKenzie2002
+        :reading:Styhre2010
+    ) .
+
+:meeting:2019-05-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-05-17T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Shaw2019, :reading:Ribes2019 ;
+    :schedule (
+        :reading:Shaw2019
+        :reading:Ribes2019
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2508,6 +2652,14 @@
     foaf:givenname "Agiatis" ;
     foaf:surname "Benardou" ;
     foaf:workInfoHomepage <http://www.dcu.gr/en/%ce%b1%ce%b3%ce%b9%ce%ac%cf%84%ce%b9%cf%82-%ce%bc%cf%80%ce%b5%ce%bd%ce%ac%cf%81%ce%b4%ce%bf%cf%85/> .
+
+:person:BendellJ
+    a foaf:Person ;
+    owl:sameAs viaf:46930616 ;
+    foaf:givenname "Jem" ;
+    foaf:surname "Bendell" ;
+    foaf:homepage <https://jembendell.com> ;
+    foaf:workInfoHomepage <https://www.cumbria.ac.uk/study/academic-staff/all-staff-members/iflas/professor-jem-bendell.php> .
 
 :person:BenfordS
     a foaf:Person ;
@@ -2774,6 +2926,12 @@
     foaf:surname "Dreyfus" ;
     foaf:homepage <http://socrates.berkeley.edu/~hdreyfus/> .
 
+:person:DrouhardM
+    a foaf:Person ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Drouhard" ;
+    foaf:homepage <https://students.washington.edu/mdrouhar/> .
+
 :person:EdwardsP
     a foaf:Person ;
     owl:sameAs viaf:44518799 ;
@@ -3018,6 +3176,12 @@
     foaf:surname "Holmes" ;
     foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
 
+:person:HoyJ
+    a foaf:Person ;
+    foaf:givenname "Josephine" ;
+    foaf:surname "Hoy" ;
+    foaf:homepage <http://www.josephinehoy.com> .
+
 :person:HughesL
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-8928-0341, viaf:50289206 ;
@@ -3031,6 +3195,13 @@
     foaf:givenname "Yuk" ;
     foaf:surname "Hui" ;
     foaf:homepage <http://www.digitalmilieu.net/yuk/> .
+
+:person:IliadisA
+    a foaf:Person ;
+    foaf:givenname "Andrew" ;
+    foaf:surname "Iliadis" ;
+    foaf:homepage <http://andrewiliadis.com> ;
+    foaf:workInfoHomepage <https://klein.temple.edu/faculty/andrew-iliadis> .
 
 :person:IngoldT
     a foaf:Person ;
@@ -3083,6 +3254,12 @@
     foaf:surname "Kelly" ;
     foaf:workInfoHomepage <https://staffportal.curtin.edu.au/staff/profile/view/Matthew.Kelly> ;
     foaf:publications <https://scholar.google.com/citations?user=RCbZXx4AAAAJ>  .
+
+:person:KeyesO
+    a foaf:Person ;
+    foaf:givenname "Os" ;
+    foaf:surname "Keyes" ;
+    foaf:homepage <https://ironholds.org> .
 
 :person:KientzJ
     a foaf:Person ;
@@ -3176,6 +3353,13 @@
     foaf:givenname "Heather" ;
     foaf:surname "Love" ;
     foaf:homepage <https://www.english.upenn.edu/people/heather-k-love> .
+
+:person:LuryC
+    a foaf:Person ;
+    owl:sameAs viaf:7491199, wd:Q63367351 ;
+    foaf:givenname "Celia" ;
+    foaf:surname "Lury" ;
+    foaf:workInfoHomepage <https://warwick.ac.uk/fac/cross_fac/cim/people/celia-lury/> .
 
 :person:LynchM
     a foaf:Person ;
@@ -3295,6 +3479,13 @@
     foaf:givenname "Alfred" ;
     foaf:surname "Nordmann" ;
     foaf:workInfoHomepage <www.philosophie.tu-darmstadt.de/nordmann>.
+
+:person:OyamaS
+    a foaf:Person ;
+    owl:sameAs viaf:66712131, wd:Q7648260 ;
+    foaf:givenname "Susan" ;
+    foaf:susan "Oyama" ;
+    foaf:workInfoHomepage <https://www.gc.cuny.edu/Page-Elements/Academics-Research-Centers-Initiatives/Doctoral-Programs/Psychology/Faculty-Bios/Susan-Oyama> .
 
 :person:PackerB
     a foaf:Person ;
@@ -3476,6 +3667,14 @@
     foaf:surname "Shavit" ;
     foaf:workInfoHomepage <http://english.telhai.ac.il/content/dr-ayelet-shavit> .
 
+:person:ShawR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5486-159X ;
+    foaf:givenname "Ryan" ;
+    foaf:surname "Shaw" ;
+    foaf:homepage <https://aeshin.org> ;
+    foaf:workInfoHomepage <https://sils.unc.edu/people/faculty/profiles/Ryan-Shaw> .
+
 :person:Shubina
     a foaf:Person ;
     foaf:givenname "Anna" ;
@@ -3555,6 +3754,13 @@
     foaf:givenname "Ann Laura" ;
     foaf:surname "Stoler" ;
     foaf:workInfoHomepage <https://www.newschool.edu/lang/faculty/Ann-Stoler/> .
+
+:person:StyhreA
+    a foaf:Person ;
+    owl:sameAs viaf:43679267, orcid:0000-0002-8347-2665 ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Styhre" ;
+    foaf:workInfoHomepage <https://fek.handels.gu.se/english/about-the-department/staff?languageId=100001&userId=xstyal> .
 
 :person:SuchmanL
     a foaf:Person ;
@@ -3658,6 +3864,13 @@
     foaf:surname "von Foerster" ;
     foaf:homepage <https://www.univie.ac.at/constructivism/HvF.htm> .
 
+:person:WakefordN
+    a foaf:Person ;
+    owl:sameAs viaf:220452036 ;
+    foaf:givenname "Nina" ;
+    foaf:surname "Wakeford" ;
+    foaf:homepage <https://www.gold.ac.uk/sociology/staff/wakeford-nina/> .
+
 :person:WaldsteinM
     a foaf:Person ;
     owl:sameAs viaf:273055176 ;
@@ -3723,6 +3936,19 @@
     dc:publisher :publisher:ACM ;
     bibo:isbn13 "978-1-4503-2473-1" .
 
+:proceedings:CHI2019
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '19)" ;
+    dc:date "2019" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-5970-2 " .
+
+:proceedings:COLIS10
+    a bibo:Proceedings ;
+    dc:title "Proceedings of CoLIS: 10th International Conference on Conceptions of Library and Information Science" ;
+    dc:date "2020" ;
+    dc:publisher :journal:IR .
+
 :proceedings:CSCW2017
     a bibo:Proceedings ;
     dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
@@ -3767,6 +3993,11 @@
     dc:publisher :publisher:ACM ;
     bibo:isbn10 "1-58113-420-7" .
 
+:proceedings:IFLAS
+    a bibo:Proceedings ;
+    dc:title "IFLAS Occasional Papers" ;
+    bibo:uri "https://www.cumbria.ac.uk/research/centres/iflas/" .
+
 :proceedings:IRI2015
     a bibo:Proceedings ;
     dc:title "Proceedings of the 2015 IEEE International Conference on Information Reuse and Integration" ;
@@ -3795,6 +4026,11 @@
     a :Publisher ;
     foaf:name "Cambridge University Press" ;
     address:localityName "Cambridge, UK" .
+
+:publisher:Continuum
+    a :Publisher ;
+    foaf:name "Continuum" ;
+    address:localityName "London" .
 
 :publisher:DUP
     a :Publisher ;
@@ -4061,6 +4297,17 @@
     ) ;
     dc:isPartOf :volume:Benardou2017 ;
     bibo:pages "1–14" .
+
+:reading:Bendell2018
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Deep Adaptation: A Map for Navigating Climate Tragedy" ;
+    dc:date "2018" ;
+    dc:creator :person:BendellJ ;
+    bibo:authorList (
+        :person:BendellJ
+    ) ;
+    dc:isPartOf :proceedings:IFLAS ;
+    bibo:uri "http://web.archive.org/web/20190112162910/http://www.lifeworth.com/deepadaptation.pdf" .
 
 :reading:Bernstein1991
     a :Reading, :ConferencePaper ;
@@ -4824,6 +5071,23 @@
     bibo:uri "https://muse.jhu.edu/book/45372" ;
     bibo:doi: "10.5749/minnesota/9780816695515.001.0001" .
 
+:reading:Iliadis2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.7275/R59884XW> ;
+    dc:title "Informational Ontology: The Meaning of Gilbert Simondon’s Concept of Individuation" ;
+    dc:creator :person:IliadisA ;
+    bibo:authorList (
+        :person:IliadisA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2013" ;
+        dc:isPartOf :journal:CPO ;
+        bibo:volume "2" ;
+        bibo:issue "1"
+    ] ;
+    bibo:doi "10.7275/R59884XW" .
+
 :reading:Ingold2007
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/762459510> ;
@@ -4853,6 +5117,21 @@
     ] ;
     bibo:pages "1-19" ;
     bibo:doi "10.28968/cftt.v4i1.243" .
+
+:reading:Keyes2019
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/3290605.3300569> ;
+    dc:title "Human-Computer Insurrection: Notes on an Anarchist HCI" ;
+    bibo:shortTitle "Human-Computer Insurrection" ;
+    dc:creator :person:KeyesO, :person:HoyJ, :person:DrouhardM ;
+    bibo:authorList (
+        :person:KeyesO
+        :person:HoyJ
+        :person:DrouhardM
+    ) ;
+    bibo:presentedAt :conference:CHI2019 ;
+    bibo:reproducedIn :proceedings:CHI2019 ;
+    bibo:doi "10.1145/3290605.3300569" .
 
 :reading:Kreiss2011
     a :Reading, bibo:AcademicArticle ;
@@ -4972,6 +5251,19 @@
     bibo:doi "10.1002/asi.23544" ;
     bibo:pages "2156-2165" .
 
+:reading:Lury2014
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/881063017> ;
+    dc:title "Inventive Methods: The Happening of the Social" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:editor :person:LuryC, :person:WakefordN ;
+    bibo:editorList (
+        :person:LuryC
+        :person:WakefordN
+    ) ;
+    bibo:isbn13 "9780415721103" .
+
 :reading:Lynch1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305848> ;
@@ -5000,6 +5292,18 @@
         bibo:issue "12"
     ] ;
     bibo:doi "10.5210/fm.v22i12.8097" .
+
+:reading:MacKenzie2002
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/64555493> ;
+    dc:title "Transductions: Bodies and Machines at Speed" ;
+    bibo:shortTitle "Transductions" ;
+    dc:creator :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:date "2002" ;
+    dc:publisher :publisher:Continuum .
 
 :reading:Mackenzie2017
     a :Reading, bibo:Book ;
@@ -5195,6 +5499,19 @@
     ] ;
     bibo:doi "10.1353/tech.2014.0031" .
 
+:reading:Oyama2000
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/873479453> ;
+    dc:title "The Ontogeny of Information: Developmental Systems and Evolution" ;
+    dc:shortTitle "The Ontogeny of Information" ;
+    dc:creator :person:OyamaS ;
+    bibo:authorList (
+        :person:OyamaS
+    );
+    dc:date "2000" ;
+    dc:publisher :publisher:DUP ;
+    bibo:isbn13 "9780822324669" .
+
 :reading:Packer2018
     a :Reading, bibo:AcademicArticle ;
     dc:title "Text embedding models contain bias. Here's why that matters." ;
@@ -5315,6 +5632,24 @@
     ] ;
     bibo:doi "10.1145/2998181.2998344" .
 
+:reading:Ribes2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0162243918798899> ;
+    dc:title "STS, Meet Data Science, Once Again" ;
+    dc:creator :person:RibesD ;
+    bibo:authorList (
+        :person:RibesD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:STH ;
+        bibo:issue "3" ;
+        bibo:volume "44"
+    ] ;
+    bibo:pages "514-539" ;
+    bibo:doi "10.1177/0162243918798899" .
+
 :reading:Rieder2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1080/1369118X.2016.1181195> ;
@@ -5426,6 +5761,17 @@
         :person:GriesemerJ
     ) ;
     dc:isPartOf :volume:Carrier2011 .
+
+:reading:Shaw2019
+    a :Reading, :ConferencePaper ;
+    dc:title "The Missing Profession: Toward an Institution of Critical Technical Practice" ;
+    bibo:shortTitle "The Missing Profession" ;
+    dc:creator :person:ShawR ;
+    bibo:authorList (
+        :person:ShawR
+    ) ;
+    bibo:presentedAt :conference:COLIS10 ;
+    bibo:reproducedIn :proceedings:COLIS10 .
 
 :reading:Siegert2014
     # TODO: Should translator go into CSL JSON?
@@ -5606,6 +5952,22 @@
     dc:date "2009" ;
     dc:publisher :publisher:PUP ;
     bibo:isbn13 "978-0-691-01578-1", "978-0-691-01577-4" .
+
+:reading:Styhre2010
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "The Concept Of Transduction And Its Use In Organization Studies" ;
+    dc:creator :person:StyhreA ;
+    bibo:authorList (
+        :person:StyhreA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2010" ;
+        dc:isPartOf :journal:Emergence ;
+        bibo:issue "3" ;
+        bibo:volume "12"
+    ] ;
+    bibo:pages "115-131" .
 
 :reading:Suchman1993
     a :Reading, bibo:AcademicArticle ;
