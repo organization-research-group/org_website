@@ -3946,7 +3946,7 @@
 :proceedings:COLIS10
     a bibo:Proceedings ;
     dc:title "Proceedings of CoLIS: 10th International Conference on Conceptions of Library and Information Science" ;
-    dc:date "2020" ;
+    dc:date "2019" ;
     dc:publisher :journal:IR .
 
 :proceedings:CSCW2017
