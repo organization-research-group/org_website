@@ -3737,7 +3737,7 @@
     foaf:workInfoHomepage <https://sils.unc.edu/people/faculty/profiles/Ryan-Shaw> .
 
 :person:ShioseT
-    a foaf:person ;
+    a foaf:Person ;
     foaf:givenname "Takayuki" ;
     foaf:surname "Shiose" ;
     foaf:homepage <http://designinnovation.jp/people/introduction/shiose.html> .
