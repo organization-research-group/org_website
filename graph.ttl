@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-08-23,
         :meeting:2019-05-24,
         :meeting:2019-05-17,
         :meeting:2019-05-10,
@@ -249,6 +250,12 @@
     dc:title "Artificial Intelligence" ;
     foaf:homepage <http://www.sciencedirect.com/science/journal/00043702> ;
     bibo:issn "0004-3702" .
+
+:journal:AIS
+    a bibo:Journal ;
+    dc:title "AI & Society" ;
+    foaf:homepage <https://link.springer.com/journal/146> ;
+    bibo:issn "1435-5655" .
 
 :journal:AdvancingDigitalHumanities
     a bibo:Journal ;
@@ -2585,6 +2592,20 @@
         :reading:Iliadis2019
     ) .
 
+:meeting:2019-08-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-08-23T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Katai2007 ;
+    :schedule (
+        :reading:Katai2007
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3269,6 +3290,19 @@
     foaf:surname "Jun" ;
     foaf:homepage <http://www.nathanjun.com/> .
 
+:person:KataiO
+    a foaf:Person ;
+    owl:sameAs viaf:111764376 ;
+    foaf:givenname "Osamu" ;
+    foaf:surname "Katai" ;
+    foaf:homepage <https://www.researchgate.net/profile/Osamu_Katai> .
+
+:person:KawakamiH
+    a foaf:Person ;
+    foaf:givenname "Hiroshi" ;
+    foaf:surname "Kawakami" ;
+    foaf:homepage <http://www.design.kyoto-u.ac.jp/members/kawakami/index.html> .
+
 :person:KellyM
     a foaf:Person ;
     foaf:givenname "Matthew" ;
@@ -3439,6 +3473,12 @@
     foaf:givenname "Adrian" ;
     foaf:surname "Miles" ;
     foaf:homepage <http://web.archive.org/web/20180222142812/http://vogmae.net.au> .
+
+:person:MinamizonoK
+    a foaf:Person ;
+    foaf:givenname "Katsushi" ;
+    foaf:surname "Minamizono" ;
+    foaf:homepage <https://www.linkedin.com/in/katsushi-minamizono-141923b4> .
 
 :person:MitchellM
     a foaf:Person ;
@@ -3695,6 +3735,12 @@
     foaf:surname "Shaw" ;
     foaf:homepage <https://aeshin.org> ;
     foaf:workInfoHomepage <https://sils.unc.edu/people/faculty/profiles/Ryan-Shaw> .
+
+:person:ShioseT
+    a foaf:person ;
+    foaf:givenname "Takayuki" ;
+    foaf:surname "Shiose" ;
+    foaf:homepage <http://designinnovation.jp/people/introduction/shiose.html> .
 
 :person:Shubina
     a foaf:Person ;
@@ -5154,6 +5200,27 @@
     ] ;
     bibo:pages "1-19" ;
     bibo:doi "10.28968/cftt.v4i1.243" .
+
+:reading:Katai2007
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s00146-007-0125-2> ;
+    dc:title "System design of ‘‘Ba’’-like stages for improvisational acts via Leibnizian space–time and Peirce’s existential graph concepts" ;
+    dc:creator :person:KataiO, :person:MinamizonoK, :person:ShioseT, :person:KawakamiH ;
+    bibo:authorList (
+        :person:KataiO
+        :person:MinamizonoK
+        :person:ShioseT
+        :person:KawakamiH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2007" ;
+        dc:isPartOf :journal:AIS ;
+        bibo:volume "22" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "101-112" ;
+    bibo:doi "10.1007/s00146-007-0125-2" .
 
 :reading:Keyes2019
     a :Reading, :ConferencePaper ;
