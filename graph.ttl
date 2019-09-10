@@ -34,6 +34,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-09-13,
+        :meeting:2019-09-06,
+        :meeting:2019-08-30,
         :meeting:2019-08-23,
         :meeting:2019-05-24,
         :meeting:2019-05-17,
@@ -261,6 +264,12 @@
     a bibo:Journal ;
     dc:title "Advancing digital humanities: research, methods, theories" .
 
+:journal:BDS
+    a bibo:Journal ;
+    dc:title "Big Data & Society" ;
+    foaf:homepage <https://journals.sagepub.com/home/bds> ;
+    bibo:issn "20539517" .
+
 :journal:BJS
     a bibo:Journal ;
     dc:title "The British Journal of Sociology" ;
@@ -442,6 +451,12 @@
     dc:title "Literary and Linguistic Computing" ;
     foaf:homepage <http://llc.oxfordjournals.org/> ;
     bibo:issn "0268-1145" .
+
+:journal:LibEd
+    a bibo:Journal ;
+    dc:title "Liberal Education" ;
+    foaf:homepage <https://www.aacu.org/liberaleducation> ;
+    bibo:issn "0024-1822" .
 
 :journal:MinnesotaReview
     a bibo:Journal ;
@@ -2606,6 +2621,47 @@
         :reading:Katai2007
     ) .
 
+:meeting:2019-08-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-08-30T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mackenzie2018 ;
+    :schedule (
+        :reading:Mackenzie2018
+    ) .
+
+:meeting:2019-09-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-06T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; Patrick and Ryan went to <a href=\"https://convention2.allacademic.com/one/ssss/4s19/index.php?cmd=Online+Program+View+Session&selected_session_id=1546522\">4S</a>" ]
+    ) .
+
+:meeting:2019-09-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-13T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lyman1995 ;
+    :schedule (
+        :reading:Lyman1995
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3415,6 +3471,13 @@
     foaf:givenname "Celia" ;
     foaf:surname "Lury" ;
     foaf:workInfoHomepage <https://warwick.ac.uk/fac/cross_fac/cim/people/celia-lury/> .
+
+:person:LymanP
+    a foaf:Person ;
+    owl:sameAs viaf:31778045, wd:Q1616033 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Lyman" ;
+    foaf:homepage <https://en.wikipedia.org/wiki/Peter_Lyman> .
 
 :person:LynchM
     a foaf:Person ;
@@ -5368,6 +5431,22 @@
     ) ;
     bibo:isbn13 "9780415721103" .
 
+:reading:Lyman1995
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "What is computer literacy and what is its place in liberal education?" ;
+    dc:creator :person:LymanP ;
+    bibo:authorList (
+        :person:LymanP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Summer 1995" ;
+        dc:isPartOf :journal:LibEd ;
+        bibo:volume "81" ;
+        bibo:issue "3" ;
+    ] ;
+    bibo:pages "4-15" .
+
 :reading:Lynch1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305848> ;
@@ -5420,6 +5499,23 @@
     ) ;
     dc:date "2017" ;
     dc:publisher :publisher:MIT .
+
+:reading:Mackenzie2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/2053951718778310> ;
+    dc:title "Personalization and probabilities: Impersonal propensities in online grocery shopping" ;
+    bibo:shortTitle "Personalization and probabilities" ;
+    dc:creator :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January-June 2018" ;
+        dc:isPartOf :journal:BDS ;
+    ] ;
+    bibo:pages "1-15" ;
+    bibo:doi "10.1177/2053951718778310" .
 
 :reading:Mai2016
     a :Reading, bibo:AcademicArticle ;
