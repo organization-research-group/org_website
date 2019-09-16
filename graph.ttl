@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-09-20,
         :meeting:2019-09-13,
         :meeting:2019-09-06,
         :meeting:2019-08-30,
@@ -318,6 +319,12 @@
     dc:title "Cultural Studies" ;
     foaf:homepage <https://www.tandfonline.com/toc/rcus20/current> ;
     bibo:issn "1466-4348" .
+
+:journal:EconSoc
+    a bibo:Journal ;
+    dc:title "Economy and Society" ;
+    foaf:homepage <https://www.tandfonline.com/toc/reso20/current> ;
+    bibo:issn "1469-5766" .
 
 :journal:EJIS
     a bibo:Journal ;
@@ -2662,6 +2669,20 @@
         :reading:Lyman1995
     ) .
 
+:meeting:2019-09-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-20T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2015 ;
+    :schedule (
+        :reading:Amoore2015
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2695,6 +2716,13 @@
     foaf:givenname "Linda Martín" ;
     foaf:surname "Alcoff" ;
     foaf:homepage <http://www.alcoff.com/> .
+
+:person:AmooreL
+    a foaf:Person ;
+    owl:sameAs viaf:73215314 ;
+    foaf:givenname "Louise" ;
+    foaf:surname "Amoore" ;
+    foaf:workInfoHomepage <https://www.dur.ac.uk/geography/staff/geogstaffhidden/?id=2710> .
 
 :person:ArthurP
     a foaf:Person ;
@@ -3656,6 +3684,12 @@
     foaf:surname "Pickering" ;
     foaf:workInfoHomepage <http://socialsciences.exeter.ac.uk/sociology/staff/pickering/> .
 
+:person:PiotukhV
+    a foaf:Person ;
+    owl:sameAs viaf:314897182 ;
+    foaf:givenname "Volha" ;
+    foaf:surname "Piotukh" .
+
 :person:PlantinJ
     a foaf:Person ;
     owl:sameAs viaf:299928249 ;
@@ -4367,6 +4401,26 @@
     ] ;
     bibo:pages "97-112" ;
     bibo:doi "10.1017/S0269889700002556" .
+
+:reading:Amoore2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/03085147.2015.1043793> ;
+    dc:title "Life beyond big data: governing with little analytics" ;
+    bibo:shortTitle "Life beyond big data" ;
+    dc:creator :person:AmooreL, :person:PiotukhV ;
+    bibo:authorList (
+        :person:AmooreL
+        :person:PiotukhV
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "August 2015" ;
+        dc:isPartOf :journal:EconSoc ;
+        bibo:volume "44" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "341-366" ;
+    bibo:doi "10.1080/03085147.2015.1043793" .
 
 :reading:Askey2017
     a :Reading ;
