@@ -321,12 +321,6 @@
     foaf:homepage <https://www.tandfonline.com/toc/rcus20/current> ;
     bibo:issn "1466-4348" .
 
-:journal:EconSoc
-    a bibo:Journal ;
-    dc:title "Economy and Society" ;
-    foaf:homepage <https://www.tandfonline.com/toc/reso20/current> ;
-    bibo:issn "1469-5766" .
-
 :journal:EJIS
     a bibo:Journal ;
     dc:title "European Journal of Information Systems" ;
@@ -338,6 +332,12 @@
     dc:title "ELH" ;
     foaf:homepage <https://www.press.jhu.edu/journals/elh> ;
     bibo:issn "1080-6547" .
+
+:journal:EconSoc
+    a bibo:Journal ;
+    dc:title "Economy and Society" ;
+    foaf:homepage <https://www.tandfonline.com/toc/reso20/current> ;
+    bibo:issn "1469-5766" .
 
 :journal:EducauseReview
     a bibo:Journal ;
