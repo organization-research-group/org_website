@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2019-09-27,
         :meeting:2019-09-20,
         :meeting:2019-09-13,
         :meeting:2019-09-06,
@@ -2681,6 +2682,19 @@
     lode:involved :reading:Amoore2015 ;
     :schedule (
         :reading:Amoore2015
+    ) .
+
+:meeting:2019-09-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-27T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
     ) .
 
 :person:AbbateJ
