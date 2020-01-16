@@ -34,6 +34,12 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-01-17,
+        :meeting:2019-11-22,
+        :meeting:2019-11-15,
+        :meeting:2019-11-01,
+        :meeting:2019-10-25,
+        :meeting:2019-10-18,
         :meeting:2019-10-04,
         :meeting:2019-09-27,
         :meeting:2019-09-20,
@@ -2718,6 +2724,89 @@
         :reading:Morozov2019
     ) .
 
+:meeting:2019-10-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-10-18T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sack2019 ;
+    :schedule (
+        :reading:Sack2019
+    ) .
+
+:meeting:2019-10-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-10-25T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sack2019 ;
+    :schedule (
+        :reading:Sack2019
+    ) .
+
+:meeting:2019-11-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-11-01T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Canguilhem2010 ;
+    :schedule (
+        :reading:Canguilhem2010
+    ) .
+
+:meeting:2019-11-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-11-15T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Orr1996 ;
+    :schedule (
+        :reading:Orr1996
+    ) .
+
+:meeting:2019-11-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-11-22T11:00:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Garfinkel2008 ;
+    :schedule (
+        :reading:Garfinkel2008
+    ) .
+
+:meeting:2020-01-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-01-17T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Elliott Hauser will give a talk on \"How Systems Make It So: Algorithms, Information, and Truth.\"" ]
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -2934,6 +3023,12 @@
     owl:sameAs viaf:41901360 ;
     foaf:givenname "Graham" ;
     foaf:surname "Button" .
+
+:person:CanguilhemG
+    a foaf:Person ;
+    owl:sameAs viaf:41837558, wd:Q433741 ;
+    foaf:givenname "Georges" ;
+    foaf:surname "Canguilhem" .
 
 :person:CantwellSmithB
     a foaf:Person ;
@@ -3192,6 +3287,12 @@
     foaf:givenname "Alan" ;
     foaf:surname "Galey" ;
     foaf:homepage <http://individual.utoronto.ca/alangaley/> .
+
+:person:GarfinkelH
+    a foaf:Person ;
+    owl:sameAs viaf:108536033, wd:Q461121 ;
+    foaf:givenname "Harold" ;
+    foaf:surname "Garfinkel" .
 
 :person:GeigerR
     a foaf:Person ;
@@ -3673,6 +3774,12 @@
     foaf:givenname "Alfred" ;
     foaf:surname "Nordmann" ;
     foaf:workInfoHomepage <www.philosophie.tu-darmstadt.de/nordmann>.
+
+:person:OrrJ
+    a foaf:Person ;
+    owl:sameAs viaf:115984089 ;
+    foaf:givenname "Julian" ;
+    foaf:surname "Orr" .
 
 :person:OyamaS
     a foaf:Person ;
@@ -4238,6 +4345,11 @@
     foaf:name "Continuum" ;
     address:localityName "London" .
 
+:publisher:CornellUP
+    a :Publisher ;
+    foaf:name "Cornell University Press" ;
+    address:localityName "Ithaca" .
+
 :publisher:DUP
     a :Publisher ;
     foaf:name "Duke University Press" ;
@@ -4302,6 +4414,11 @@
     a :Publisher ;
     foaf:name "Princeton University Press" ;
     address:localityName "Princeton, NJ" .
+
+:publisher:Paradigm
+    a :Publisher ;
+    foaf:name "Paradigm Publishers" ;
+    address:localityName "Boulder" .
 
 :publisher:Plenum
     a :Publisher ;
@@ -4669,6 +4786,18 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "39-42" ;
     bibo:doi "10.1007/BF01305842" .
+
+:reading:Canguilhem2010
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/916875318> ;
+    dc:title "Knowledge of Life" ;
+    dc:creator :person:CanguilhemG ;
+    bibo:authorList (
+        :person:CanguilhemG
+    ) ;
+    dc:date "2010" ;
+    dc:publisher :publisher:FUP ;
+    bibo:isbn13 "9780823229260" .
 
 :reading:Chun2016
     a :Reading, bibo:AcademicArticle ;
@@ -5053,6 +5182,18 @@
     ] ;
     bibo:pages "405-424" ;
     bibo:doi "10.1093/llc/fqq021" .
+
+:reading:Garfinkel2008
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/934409002> ;
+    dc:title "Toward a Sociological Theory of Information" ;
+    dc:creator :person:GarfinkelH ;
+    bibo:authorList (
+        :person:GarfinkelH
+    );
+    dc:date "2008" ;
+    dc:publisher :publisher:Paradigm ;
+    bibo:isbn13 "978-1-61205-354-7" .
 
 :reading:Geiger2011
     a :Reading, :ConferencePaper ;
@@ -5810,6 +5951,19 @@
     ] ;
     bibo:doi "10.1353/tech.2014.0031" .
 
+:reading:Orr1996
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/34906105> ;
+    dc:title "Talking About Machines: An Ethnography of a Modern Job" ;
+    dc:shortTitle "Talking About Machines" ;
+    dc:creator :person:OrrJ ;
+    bibo:authorList (
+        :person:OrrJ
+    );
+    dc:date "1996" ;
+    dc:publisher :publisher:CornellUP ;
+    bibo:isbn13 "9780801483905" .
+
 :reading:Oyama2000
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/873479453> ;
@@ -6050,6 +6204,18 @@
     ] ;
     bibo:pages "73-92" ;
     bibo:doi "10.1080/07421222.2000.11045652" .
+
+:reading:Sack2019
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1111739261> ;
+    dc:title "The Software Arts" ;
+    dc:creator :person:SackW ;
+    bibo:authorList (
+        :person:SackW
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "978-0-262-03970-3" .
 
 :reading:Salter2015
     a :Reading, bibo:Book ;
