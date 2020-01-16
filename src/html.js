@@ -124,7 +124,7 @@ async function renderMain(grist) {
     h('div', [
       h('section#about', [
         h('p', [
-          'ORG is a reading group at UNC Chapel Hill that meets Fridays at 11am in 214 Manning Hall or via ',
+          'ORG is a reading group at UNC Chapel Hill that meets Fridays at 11:30am in 214 Manning Hall or via ',
           h('a', {
             href: 'https://unc.zoom.us/j/990002258',
           }, 'Zoom'),
