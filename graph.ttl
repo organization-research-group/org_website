@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-01-31,
         :meeting:2020-01-24,
         :meeting:2020-01-17,
         :meeting:2019-11-22,
@@ -480,17 +481,17 @@
     foaf:homepage <https://www.aacu.org/liberaleducation> ;
     bibo:issn "0024-1822" .
 
-:journal:MinnesotaReview
-    a bibo:Journal ;
-    dc:title "The Minnesota Review" ;
-    foaf:homepage <http://www.theminnesotareview.org> ;
-    bibo:issn "0026-5667, 2157-4189" .
-
 :journal:MDS
     a bibo:Journal ;
     dc:title "SIAM Journal on Mathematics of Data Science" ;
     foaf:homepage <https://epubs.siam.org/loi/sjmdaq> ;
     bibo:issn "2577-0187" .
+
+:journal:MinnesotaReview
+    a bibo:Journal ;
+    dc:title "The Minnesota Review" ;
+    foaf:homepage <http://www.theminnesotareview.org> ;
+    bibo:issn "0026-5667, 2157-4189" .
 
 :journal:NLR
     a bibo:Journal ;
@@ -2835,6 +2836,20 @@
         :reading:Anderson2019
     ) .
 
+:meeting:2020-01-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-01-31T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2019ch4 ;
+    :schedule (
+        :reading:Hui2019ch4
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4496,6 +4511,11 @@
     foaf:name "Routledge" ;
     address:localityName "Abingdon" .
 
+:publisher:RL
+    a :Publisher ;
+    foaf:name "Rowman & Littlefield" ;
+    address:localityName "London" .
+
 :publisher:SUNY
     a :Publisher ;
     foaf:name "State University of New York Press" ;
@@ -5518,6 +5538,15 @@
     bibo:isbn13 "978-1-4529-4993-2" ;
     bibo:uri "https://muse.jhu.edu/book/45372" ;
     bibo:doi: "10.5749/minnesota/9780816695515.001.0001" .
+
+:reading:Hui2019ch4
+    a :Reading, bibo:BookSection ;
+    dc:title "Organizing Inorganic" ;
+    dc:isPartOf :volume:Hui2019 ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) .
 
 :reading:Iliadis2013
     a :Reading, bibo:AcademicArticle ;
@@ -6920,6 +6949,16 @@
         :person:RouvroyA
     ) ;
     bibo:isbn13 "978-0-415-72015-1" .
+
+:volume:Hui2019
+    a bibo:Book ;
+    dc:title "Recursivity and Contingency" ;
+    dc:date "2019" ;
+    dc:publisher :publisher:RL ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) .
 
 :volume:Jun2011
     a bibo:EditedBook ;
