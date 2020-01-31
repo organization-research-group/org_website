@@ -5118,6 +5118,7 @@
 :reading:Escobar2018intro
     a :Reading, bibo:BookSection ;
     owl:sameAs <https://doi.org/10.1215/9780822371816-001> ;
+    bibo:doi "10.1215/9780822371816-001" ;
     dc:title "Introduction" ;
     dc:isPartOf :volume:Escobar2018 ;
     dc:creator :person:EscobarA ;
@@ -5128,6 +5129,7 @@
 :reading:Escobar2018ch3
     a :Reading, bibo:BookSection ;
     owl:sameAs <https://doi.org/10.1215/9780822371816-004> ;
+    bibo:doi "10.1215/9780822371816-004" ;
     dc:title "In the Background of Our Culture: Rationalism, Ontological Dualism, and Relationality" ;
     bibo:shortTitle "Rationalism, Ontological Dualism, and Relationality" ;
     dc:isPartOf :volume:Escobar2018 ;
