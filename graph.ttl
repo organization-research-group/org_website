@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-02-07,
         :meeting:2020-01-31,
         :meeting:2020-01-24,
         :meeting:2020-01-17,
@@ -2850,6 +2851,21 @@
         :reading:Hui2019ch4
     ) .
 
+:meeting:2020-02-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-07T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Escobar2018intro, :reading:Escobar2018ch3 ;
+    :schedule (
+        :reading:Escobar2018intro
+        :reading:Escobar2018ch3
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3263,6 +3279,13 @@
     foaf:givenname "Lori" ;
     foaf:surname "Emerson" ;
     foaf:homepage <https://loriemerson.net/> .
+
+:person:EscobarA
+    a foaf:Person ;
+    owl:sameAs wd:Q4801729, viaf:34576079 ;
+    foaf:givenname "Arturo" ;
+    foaf:surname "Escobar" ;
+    foaf:homepage <https://web.archive.org/web/20140529035041/http://aescobar.web.unc.edu/> .
 
 :person:EvansS
     a foaf:Person ;
@@ -4506,15 +4529,15 @@
     foaf:name "Psychology Press" ;
     address:localityName "New York" .
 
-:publisher:Routledge
-    a :Publisher ;
-    foaf:name "Routledge" ;
-    address:localityName "Abingdon" .
-
 :publisher:RL
     a :Publisher ;
     foaf:name "Rowman & Littlefield" ;
     address:localityName "London" .
+
+:publisher:Routledge
+    a :Publisher ;
+    foaf:name "Routledge" ;
+    address:localityName "Abingdon" .
 
 :publisher:SUNY
     a :Publisher ;
@@ -5091,6 +5114,27 @@
     ) ;
     dc:date "2014" ;
     dc:publisher :publisher:UMP .
+
+:reading:Escobar2018intro
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-001> ;
+    dc:title "Introduction" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018ch3
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-004> ;
+    dc:title "In the Background of Our Culture: Rationalism, Ontological Dualism, and Relationality" ;
+    bibo:shortTitle "Rationalism, Ontological Dualism, and Relationality" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
 
 :reading:Evans2016
     a :Reading, bibo:AcademicArticle ;
@@ -6936,6 +6980,18 @@
     bibo:editorList (
         :person:ClarkeB
         :person:HansenM
+    ) .
+
+:volume:Escobar2018
+    a bibo:Book ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816> ;
+    dc:title "Designs for the Pluriverse: Radical Interdependence, Autonomy, and the Making of Worlds" ;
+    bibo:shortTitle "Designs for the Pluriverse" ;
+    dc:date "2018" ;
+    dc:publisher :publisher:DUP ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
     ) .
 
 :volume:Hildebrandt2011
