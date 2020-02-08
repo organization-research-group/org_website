@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-02-14,
         :meeting:2020-02-07,
         :meeting:2020-01-31,
         :meeting:2020-01-24,
@@ -2866,6 +2867,21 @@
         :reading:Escobar2018ch3
     ) .
 
+:meeting:2020-02-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-14T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Escobar2018ch5, :reading:Escobar2018ch6 ;
+    :schedule (
+        :reading:Escobar2018ch5
+        :reading:Escobar2018ch6
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5132,6 +5148,28 @@
     bibo:doi "10.1215/9780822371816-004" ;
     dc:title "In the Background of Our Culture: Rationalism, Ontological Dualism, and Relationality" ;
     bibo:shortTitle "Rationalism, Ontological Dualism, and Relationality" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018ch5
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-006> ;
+    bibo:doi "10.1215/9780822371816-006" ;
+    dc:title "Design for Transitions" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018ch6
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-007> ;
+    bibo:doi "10.1215/9780822371816-007" ;
+    dc:title "Autonomous Design and the Politics of Relationality and the Communal" ;
     dc:isPartOf :volume:Escobar2018 ;
     dc:creator :person:EscobarA ;
     bibo:authorList (
