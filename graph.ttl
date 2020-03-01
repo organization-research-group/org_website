@@ -34,6 +34,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-03-06,
+        :meeting:2020-02-28,
+        :meeting:2020-02-21,
         :meeting:2020-02-14,
         :meeting:2020-02-07,
         :meeting:2020-01-31,
@@ -2882,6 +2885,48 @@
         :reading:Escobar2018ch6
     ) .
 
+:meeting:2020-02-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-21T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "For today we will read two new chapters from Melanie's book-in-progress." ]
+    ) .
+
+:meeting:2020-02-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-28T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Roth2015, :reading:Lash2016 ;
+    :schedule (
+        :reading:Roth2015
+        :reading:Lash2016
+    ) .
+
+:meeting:2020-03-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-06T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mirowski2017 ;
+    :schedule (
+        :reading:Mirowski2017
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3268,6 +3313,11 @@
     foaf:surname "Dörk" ;
     foaf:homepage <http://mariandoerk.de/> ;
     foaf:workInfoHomepage <https://uclab.fh-potsdam.de/people/marian-doerk/> .
+
+:person:DragosB
+    a foaf:Person ;
+    foaf:givenname "Bogdan" ;
+    foaf:surname "Dragos" .
 
 :person:DreyfusH
     a foaf:Person ;
@@ -3671,6 +3721,13 @@
     foaf:surname "Langville" ;
     foaf:homepage <http://langvillea.people.cofc.edu> .
 
+:person:LashS
+    a foaf:Person ;
+    owl:sameAs viaf:101640437, wd:Q552135 ;
+    foaf:givenname "Scott" ;
+    foaf:surname "Lash" ;
+    foaf:page <https://en.wikipedia.org/wiki/Scott_Lash> .
+
 :person:LathamK
     a foaf:Person ;
     foaf:givenname "Kiersten F." ;
@@ -3822,6 +3879,13 @@
     foaf:surname "Minamizono" ;
     foaf:homepage <https://www.linkedin.com/in/katsushi-minamizono-141923b4> .
 
+:person:MirowskiP
+    a foaf:Person ;
+    owl:sameAs viaf:85305161 , wd:Q1167460 ;
+    foaf:givenname "Philip" ;
+    foaf:surname "Mirowski" ;
+    foaf:workInfoHomepage <https://reilly.nd.edu/people/faculty/philip-mirowski/> .
+
 :person:MitchellM
     a foaf:Person ;
     foaf:givenname "Margaret" ;
@@ -3869,6 +3933,13 @@
     foaf:givenname "Peter" ;
     foaf:surname "Naur" ;
     foaf:homepage <http://web.archive.org/web/20180222150441/http://www.naur.com> .
+
+:person:NikKhahE
+    a foaf:Person;
+    owl:sameAs viaf:19424769 ;
+    foaf:givenname "Edward" ;
+    foaf:surname "Nik-Khah" ;
+    foaf:workInfoHomepage <https://directory.roanoke.edu/faculty/164> .
 
 :person:NobleS
     a foaf:Person ;
@@ -4033,6 +4104,13 @@
     foaf:givenname "Nikolas" ;
     foaf:surname "Rose" ;
     foaf:homepage <http://nikolasrose.com/> .
+
+:person:RothA
+    a foaf:Person ;
+    owl:sameAs viaf:109190323, wd:Q28542 ;
+    foaf:givenname "Alvin" ;
+    foaf:surname "Roth" ;
+    foaf:homepage <https://web.stanford.edu/~alroth/> .
 
 :person:RouvroyA
     a foaf:Person ;
@@ -4484,6 +4562,11 @@
     a :Publisher ;
     foaf:name "Free Association Books" ;
     address:localityName "London" .
+
+:publisher:HMH
+    a :Publisher ;
+    foaf:name "Houghton Mifflin Harcourt" ;
+    address:localityName "Boston" .
 
 :publisher:FreePress
     a :Publisher ;
@@ -5131,17 +5214,6 @@
     dc:date "2014" ;
     dc:publisher :publisher:UMP .
 
-:reading:Escobar2018intro
-    a :Reading, bibo:BookSection ;
-    owl:sameAs <https://doi.org/10.1215/9780822371816-001> ;
-    bibo:doi "10.1215/9780822371816-001" ;
-    dc:title "Introduction" ;
-    dc:isPartOf :volume:Escobar2018 ;
-    dc:creator :person:EscobarA ;
-    bibo:authorList (
-        :person:EscobarA
-    ) .
-
 :reading:Escobar2018ch3
     a :Reading, bibo:BookSection ;
     owl:sameAs <https://doi.org/10.1215/9780822371816-004> ;
@@ -5170,6 +5242,17 @@
     owl:sameAs <https://doi.org/10.1215/9780822371816-007> ;
     bibo:doi "10.1215/9780822371816-007" ;
     dc:title "Autonomous Design and the Politics of Relationality and the Communal" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018intro
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-001> ;
+    bibo:doi "10.1215/9780822371816-001" ;
+    dc:title "Introduction" ;
     dc:isPartOf :volume:Escobar2018 ;
     dc:creator :person:EscobarA ;
     bibo:authorList (
@@ -5752,6 +5835,26 @@
     bibo:pages "243-259" ;
     bibo:doi "10.1177/1461444810370951" .
 
+:reading:Lash2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0263276415623063> ;
+    dc:title "An interview with Philip Mirowski" ;
+    dc:creator :person:LashS, :person:DragosB, :person:MirowskiP ;
+    bibo:authorList (
+        :person:LashS
+        :person:DragosB
+        :person:MirowskiP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "6" ;
+        bibo:volume "33"
+    ] ;
+    bibo:pages "123-140" ;
+    bibo:doi "10.1177/0263276415623063" .
+
 :reading:Latour2012
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1111/j.1468-4446.2012.01428.x> ;
@@ -6026,6 +6129,19 @@
     bibo:presentedAt :conference:Hypertext2001 ;
     bibo:pages "61-68" ;
     bibo:doi "10.1145/504216.504236" .
+
+:reading:Mirowski2017
+    a :Reading, bibo:Book ;
+    dc:title "The knowledge we have lost in information: The history of information in modern economics" ;
+    bibo:shortTitle "The knowledge we have lost in information" ;
+    dc:creator :person:MirowskiP, :person:NikKhahE ;
+    bibo:authorList (
+        :person:MirowskiP
+        :person:NikKhahE
+    ) ;
+    dc:date "2017" ;
+    dc:publisher :publisher:OUP ;
+    bibo:isbn13 "9780190270056" .
 
 :reading:Monteiro2012
     a :Reading, bibo:AcademicArticle ;
@@ -6378,6 +6494,18 @@
     dc:publisher :publisher:FreeAssociation ;
     bibo:edition "2nd ed." ;
     bibo:isbn13 "978-1-85343-443-3" .
+
+:reading:Roth2015
+    a :Reading, bibo:Book ;
+    dc:title "Who gets what and why: The new economics of matchmaking and market design" ;
+    bibo:shortTitle "Who gets what and why" ;
+    dc:creator :person:RothA ;
+    bibo:authorList (
+        :person:RothA
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:HMH ;
+    bibo:isbn13 "9780544291133" .
 
 :reading:Rouvroy2011
     a :Reading, bibo:BookSection ;
