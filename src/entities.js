@@ -13,7 +13,8 @@ const entityDefs = exports.definitions = new Map([
 
     homepage: (store, term) => (
       getFirstObject(store, term, expandNS('foaf:homepage')) ||
-      getFirstObject(store, term, expandNS('foaf:workInfoHomepage'))
+      getFirstObject(store, term, expandNS('foaf:workInfoHomepage')) ||
+      getFirstObject(store, term, expandNS('foaf:page'))
     )
   }],
 
