@@ -140,7 +140,7 @@ async function renderMain(grist) {
       ]),
 
       h('section#current', [
-        h('h2', 'Current meeting'),
+        h('h2', 'Next meeting'),
         meetings[0],
       ]),
 
