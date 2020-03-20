@@ -34,6 +34,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-03-27,
+        :meeting:2020-03-20,
         :meeting:2020-03-13,
         :meeting:2020-03-06,
         :meeting:2020-02-28,
@@ -2941,6 +2943,33 @@
         :reading:Mirowski2017
     ) .
 
+:meeting:2020-03-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-20T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2020-03-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-27T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stevenson2020 ;
+    :schedule (
+        :reading:Stevenson2020
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3573,6 +3602,16 @@
     foaf:givenname "Kieran" ;
     foaf:surname "Healy" ;
     foaf:homepage <https://kieranhealy.org/> .
+
+:person:HelmondA
+    a foaf:Person ;
+    owl:sameAs
+        orcid:0000-0003-4327-4012,
+        viaf:263147266778335481392,
+        wd:Q64853874 ;
+    foaf:givenname "Anne" ;
+    foaf:surname "Helmond" ;
+    foaf:homepage <https://www.annehelmond.nl> .
 
 :person:HildebrandtM
     a foaf:Person ;
@@ -4577,15 +4616,15 @@
     foaf:name "Free Association Books" ;
     address:localityName "London" .
 
-:publisher:HMH
-    a :Publisher ;
-    foaf:name "Houghton Mifflin Harcourt" ;
-    address:localityName "Boston" .
-
 :publisher:FreePress
     a :Publisher ;
     foaf:name "The Free Press" ;
     address:localityName "Glencoe, Illinois" .
+
+:publisher:HMH
+    a :Publisher ;
+    foaf:name "Houghton Mifflin Harcourt" ;
+    address:localityName "Boston" .
 
 :publisher:IEEComputerSociety
     a :Publisher ;
@@ -6774,6 +6813,25 @@
     ] ;
     bibo:pages "1331–1346" ;
     bibo:doi "10.1177/1461444814555950" .
+
+:reading:Stevenson2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/24701475.2020.1725854> ;
+    dc:title "Legacy systems: Internet histories of the abandoned, discontinued and forgotten" ;
+    dc:shortTitle "Legacy systems" ;
+    dc:creator :person:StevensonM, :person:HelmondA ;
+    bibo:authorList (
+        :person:StevensonM
+        :person:HelmondA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:InternetHistories ;
+        bibo:volume "4" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:doi "10.1080/24701475.2020.1725854" .
 
 :reading:Stoler2009
     a :Reading, bibo:Book ;
