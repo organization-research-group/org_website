@@ -34,6 +34,21 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-07-24,
+        :meeting:2020-07-17,
+        :meeting:2020-07-10,
+        :meeting:2020-07-03,
+        :meeting:2020-06-26,
+        :meeting:2020-06-19,
+        :meeting:2020-06-12,
+        :meeting:2020-06-05,
+        :meeting:2020-05-29,
+        :meeting:2020-05-15,
+        :meeting:2020-05-08,
+        :meeting:2020-05-01,
+        :meeting:2020-04-17,
+        :meeting:2020-04-10,
+        :meeting:2020-04-03,
         :meeting:2020-03-27,
         :meeting:2020-03-20,
         :meeting:2020-03-13,
@@ -2970,6 +2985,217 @@
         :reading:Stevenson2020
     ) .
 
+:meeting:2020-04-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-04-03T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ullman1997 ;
+    :schedule (
+        :reading:Ullman1997
+    ) .
+
+:meeting:2020-04-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-04-10T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Polt2019 ;
+    :schedule (
+        :reading:Polt2019
+    ) .
+
+:meeting:2020-04-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-04-17T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Polt2019 ;
+    :schedule (
+        :reading:Polt2019
+    ) .
+
+:meeting:2020-05-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-01:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bucher2020, :reading:Nancy2000 ;
+    :schedule (
+        :reading:Bucher2020
+        :reading:Nancy2000
+    ) .
+
+:meeting:2020-05-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-08T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gilbert2014 ;
+    :schedule (
+        :reading:Gilbert2014
+    ) .
+
+:meeting:2020-05-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-15T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gilbert2014 ;
+    :schedule (
+        :reading:Gilbert2014
+    ) .
+
+:meeting:2020-05-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-29T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Two more chapter's from Melanie's book in progress." ]
+    ) .
+
+:meeting:2020-06-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-05T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koopman2019 ;
+    :schedule (
+        :reading:Koopman2019
+    ) .
+
+:meeting:2020-06-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-12T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koopman2019 ;
+    :schedule (
+        :reading:Koopman2019
+    ) .
+
+:meeting:2020-06-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-19T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2020, :reading:Finn2020 ;
+    :schedule (
+        :reading:Rieder2020
+        :reading:Finn2020
+    ) .
+
+:meeting:2020-06-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-26T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2020 ;
+    :schedule (
+        :reading:Rieder2020
+    ) .
+
+:meeting:2020-07-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-03T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2020 ;
+    :schedule (
+        :reading:Rieder2020
+    ) .
+
+:meeting:2020-07-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-10T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2020 ;
+    :schedule (
+        :reading:Amoore2020
+    ) .
+
+:meeting:2020-07-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-17T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2020 ;
+    :schedule (
+        :reading:Amoore2020
+    ) .
+
+:meeting:2020-07-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-24T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2020 ;
+    :schedule (
+        :reading:Amoore2020
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4837,6 +5063,19 @@
     bibo:pages "341-366" ;
     bibo:doi "10.1080/03085147.2015.1043793" .
 
+:reading:Amoore2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.1215/9781478009276> ;
+    dc:title "Cloud ethics: Algorithms and the attributes of ourselves and others" ;
+    dc:shortTitle "Cloud ethics" ;
+    dc:creator :person:AmooreL ;
+    bibo:authorList (
+        :person:AmooreL
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:DUP ;
+    bibo:doi "10.1215/9781478009276" .
+
 :reading:Anderson2019
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1137/18M1183595> ;
@@ -5050,6 +5289,23 @@
         bibo:volume "36"
     ] ;
     bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
+
+:reading:Bucher2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0163443720914028> ;
+    dc:title "Nothing to disconnect from? Being singular plural in an age of machine learning" ;
+    dc:creator :person:BucherT ;
+    bibo:authorList (
+        :person:BucherT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:MCS ;
+        bibo:volume "42" ;
+        bibo:issue "4"
+    ] ;
+    bibo:doi "10.1177/0163443720914028" .
 
 :reading:Button1994
     a :Reading, bibo:AcademicArticle ;
@@ -5418,6 +5674,30 @@
     bibo:pages "412-422" ;
     bibo:doi "10.1002/asi.23660" .
 
+:reading:Finn2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.24242/jclis.v3i1.137> ;
+    dc:title "Troubled worlds: A course syllabus about information work and the Anthropocene" ;
+    dc:creator :person:FinnM, :person:RosnerD, :person:BlackS, :person:CunninghamN, :person:DewK, :person:HoyJ, :person:McCraneyK, :person:MorganC ;
+    bibo:authorList (
+        :person:FinnM
+        :person:RosnerD
+        :person:BlackS
+        :person:CunninghamN
+        :person:DewK
+        :person:HoyJ
+        :person:McCraneyK
+        :person:MorganC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:JCLIS ;
+        bibo:volume "3" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:doi "10.24242/jclis.v3i1.137" .
+
 :reading:FletcherWatson2018
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1145/3243461> ;
@@ -5563,6 +5843,20 @@
     dc:publisher :publisher:PsychologyPress ;
     bibo:isbn13 "978-1-315-74021-8" ;
     bibo:doi "10.4324/9781315740218" .
+
+:reading:Gilbert2014
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.2307/j.ctt183p7m6> ;
+    dc:title "Common ground: Democracy and collectivity in an age of individualism" ;
+    bibo:shortTitle "Common ground" ;
+    dc:creator :person:GilbertJ ;
+    bibo:authorList (
+        :person:GilbertJ
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:Pluto ;
+    bibo:isbn13 "978-1-84964-976-6" ;
+    bibo:doi "10.2307/j.ctt183p7m6" .
 
 :reading:Gorichanaz2016
     a :Reading, bibo:AcademicArticle ;
@@ -5866,6 +6160,19 @@
     bibo:presentedAt :conference:CHI2019 ;
     bibo:reproducedIn :proceedings:CHI2019 ;
     bibo:doi "10.1145/3290605.3300569" .
+
+:reading:Koopman2019
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.7208/chicago/9780226626611.001.0001> ;
+    dc:title "How we became our data: A genealogy of the informational person" ;
+    bibo:shortTitle "How we became our data" ;
+    dc:creator :person:KoopmanC ;
+    bibo:authorList (
+        :person:KoopmanC
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:CUP ;
+    bibo:doi "10.7208/chicago/9780226626611.001.0001" .
 
 :reading:Kreiss2011
     a :Reading, bibo:AcademicArticle ;
@@ -6256,6 +6563,19 @@
     dc:isPartOf :volume:Mrazek2002 ;
     bibo:pages "161–192" .
 
+:reading:Nancy2000
+    # FIXME: Make this a chapter out of the book
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://www.worldcat.org/oclc/1170551908> ;
+    dc:title "Being singular plural" ;
+    dc:creator :person:NancyJ ;
+    bibo:authorList (
+        :person:NancyJ
+    ) ;
+    dc:date "2000" ;
+    dc:publisher :publisher:SUP ;
+    bibo:isbn13 "9780804739740" .
+
 :reading:Naur1992
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/23253583> ;
@@ -6422,6 +6742,19 @@
     # Added automatically for meeting on 2017-06-30
     a :Reading .
 
+:reading:Polt2019
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1127536312> ;
+    dc:title "Time and trauma: Thinking through Heidegger in the thirties" ;
+    bibo:shortTitle "Time and trauma" ;
+    dc:creator :person:PoltR ;
+    bibo:authorList (
+        :person:PoltR
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:RowmanLittlefield ;
+    bibo:isbn13 "978-1-78661-050-8" .
+
 :reading:Randall1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305844> ;
@@ -6517,6 +6850,19 @@
     ] ;
     bibo:pages "50-68" ;
     bibo:doi "10.1177/1354856517736982" .
+
+:reading:Rieder2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.2307/j.ctv12sdvf1> ;
+    dc:title "Engines of order: A mechanology of algorithmic techniques" ;
+    bibo:shortTitle "Engines of order" ;
+    dc:creator :person:RiederB ;
+    bibo:authorList (
+        :person:RiederB
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:AUP ;
+    bibo:doi "10.2307/j.ctv12sdvf1" .
 
 :reading:RoblesAnderson2016
     a :Reading, bibo:AcademicArticle ;
@@ -6954,6 +7300,18 @@
     bibo:pages "39-46" ;
     # DOI doesn't actually lead to the article, so just include the URI
     bibo:uri "http://www.tandfonline.com/doi/full/10.1080/24701475.2017.1307540" .
+
+:reading:Ullman1997
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1170487286> ;
+    dc:title "Close to the machine: Technophilia and its discontents" ;
+    bibo:shortTitle "Close to the machine" ;
+    dc:creator :person:UllmanE ;
+    bibo:authorList (
+        :person:UllmanE
+    ) ;
+    dc:date "2010" ;
+    dc:publisher :publisher:CityLights .
 
 :reading:VanDoorn2017
     a :Reading, bibo:AcademicArticle ;
