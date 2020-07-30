@@ -1,0 +1,58 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+    , N3 = require('n3')
+    , graphText = fs.readFileSync('graph.ttl', { encoding: 'utf8' })
+    , { parseToPromise, nsExpander } = require('org-n3-utils')
+    , parser = new N3.Parser()
+
+function getCheckList(prefixes) {
+  const expandNS = nsExpander(prefixes)
+
+  return new Map([
+    [ expandNS('dc:creator'), expandNS('foaf:Person') ],
+    [ expandNS('bibo:editor'), expandNS('foaf:Person') ],
+    [ expandNS('dc:isPartOf'), null ],
+    [ expandNS('dc:publisher'), expandNS(':Publisher') ],
+  ])
+}
+
+async function main() {
+  const { quads, prefixes } = await parseToPromise(parser, graphText)
+      , store = new N3.Store()
+      , check = getCheckList(prefixes)
+
+  store.addQuads(quads)
+
+  Array.from(check).forEach(([ pred, type ]) => {
+    const entries = store.getObjects(null, pred)
+
+    entries.forEach(subj => {
+      const count = store.countQuads(subj)
+
+      if (count === 0) {
+        printEntity(subj, type, prefixes)
+      }
+    })
+  })
+}
+
+function shorten(str, prefixes) {
+  for (const [ prefix, uri ] of Object.entries(prefixes)) {
+    if (str.startsWith(uri)) {
+      return str.replace(uri, prefix + ':')
+    }
+  }
+
+  return str
+}
+
+function printEntity(node, type, prefixes) {
+  console.log(`
+${shorten(node.id, prefixes)}
+    # FIXME: Fill in missing entity
+    a ${type == null ? 'rdf:nil' : shorten(type.id, prefixes)} .
+`)
+}
+
+main()
