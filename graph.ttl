@@ -6357,7 +6357,7 @@
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.5210/fm.v22i12.8097> ;
     dc:title "Stewardship in the “Age of Algorithms”" ;
-    dc:creator :perons:CliffL ;
+    dc:creator :person:CliffL ;
     bibo:authorList (
         :person:CliffL
     ) ;
