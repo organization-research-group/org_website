@@ -504,6 +504,12 @@
     foaf:homepage <https://www.aacu.org/liberaleducation> ;
     bibo:issn "0024-1822" .
 
+:journal:MCS
+    a bibo:Journal ;
+    dc:title "Media, Culture & Society" ;
+    foaf:homepage <https://journals.sagepub.com/home/mcs> ;
+    bibo:issn "1460-3675" .
+
 :journal:MDS
     a bibo:Journal ;
     dc:title "SIAM Journal on Mathematics of Data Science" ;
@@ -3343,6 +3349,11 @@
     foaf:surname "Bielby" ;
     foaf:homepage <https://www.jaredbielby.com/> .
 
+:person:BlackS
+    a foaf:Person ;
+    foaf:givenname "Suzanne" ;
+    foaf:surname "Black" .
+
 :person:BlairA
     a foaf:Person ;
     owl:sameAs wd:Q4766521, viaf:61677205 ;
@@ -3356,6 +3367,13 @@
     foaf:givenname "Katherine" ;
     foaf:surname "Bode" ;
     foaf:homepage <http://katherinebode.wordpress.com/> .
+
+:person:BodenM
+    a foaf:Person ;
+    owl:sameAs wd:Q6759197, viaf:85307202 ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Boden" ;
+    foaf:homepage <http://users.sussex.ac.uk/~maggieb/> .
 
 :person:BogenD
     a foaf:Person ;
@@ -3413,6 +3431,13 @@
     foaf:givenname "Sergey" ;
     foaf:surname "Bratus" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~sergey/> .
+
+:person:BucherT
+    a foaf:Person ;
+    owl:sameAs viaf:240149196476274791574 ;
+    foaf:givenname "Taina" ;
+    foaf:surname "Bucher" ;
+    foaf:homepage <http://tainabucher.com/> .
 
 :person:ButtonG
     a foaf:Person ;
@@ -3521,6 +3546,11 @@
     foaf:surname "Coromina" ;
     foaf:homepage <http://www.oscarcoromina.com> .
 
+:person:CunninghamN
+    a foaf:Person ;
+    foaf:givenname "Nathan" ;
+    foaf:surname "Cunningham" .
+
 :person:CurtisB
     a foaf:Person ;
     owl:sameAs wd:Q16120588 ;
@@ -3575,6 +3605,12 @@
     foaf:givenname "Daniel" ;
     foaf:surname "Dennett" ;
     foaf:workInfoHomepage <http://ase.tufts.edu/cogstud/dennett/> .
+
+:person:DewK
+    a foaf:Person ;
+    foaf:givenname "Kristin N." ;
+    foaf:surname "Dew" ;
+    foaf:homepage <https://kristindew.com/> .
 
 :person:DorkM
     a foaf:Person ;
@@ -3733,6 +3769,13 @@
     owl:sameAs viaf:12396941, wd:Q737823 ;
     foaf:givenname "James Jerome" ;
     foaf:surname "Gibson" .
+
+:person:GilbertJ
+    a foaf:Person ;
+    owl:sameAs viaf:32173405 ;
+    foaf:givenname "Jeremy" ;
+    foaf:surname "Gilbert" ;
+    foaf:homepage <https://www.jeremygilbert.org/> .
 
 :person:GorichanazT
     a foaf:Person ;
@@ -3979,6 +4022,13 @@
     foaf:surname "Ko" ;
     foaf:homepage <http://faculty.washington.edu/ajko/> .
 
+:person:KoopmanC
+    a foaf:Person ;
+    owl:sameAs viaf:86239633 ;
+    foaf:givenname "Colin" ;
+    foaf:surname "Koopman" ;
+    foaf:homepage <https://pages.uoregon.edu/koopman/> .
+
 :person:KreissD
     a foaf:Person ;
     owl:sameAs viaf:171118811, orcid:0000-0003-2533-195X ;
@@ -4133,6 +4183,12 @@
     foaf:surname "Matamoros Fernández" ;
     foaf:workInfoHomepage <https://staff.qut.edu.au/staff/ariadna.matamorosfernandez> .
 
+:person:McCraneyK
+    a foaf:Person ;
+    foaf:givenname "Kevin" ;
+    foaf:surname "McCraney" ;
+    foaf:homepage <http://krmc.me/> .
+
 :person:McLuhanM
     a foaf:Person ;
     owl:sameAs viaf:14198 , wd:Q193871 ;
@@ -4185,6 +4241,11 @@
     foaf:surname "Moore" ;
     foaf:homepage <http://darnellmoore.squarespace.com/> .
 
+:person:MorganC
+    a foaf:Person ;
+    foaf:givenname "Colin" ;
+    foaf:surname "Morgan" .
+
 :person:MorozovE
     a foaf:Person ;
     owl:sameAs wd:Q93054, viaf:152687617 ;
@@ -4205,6 +4266,12 @@
     foaf:givenname "Elli" ;
     foaf:surname "Mylonas" ;
     foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
+
+:person:NancyJ
+    a foaf:Person ;
+    owl:sameAs wd:Q503017, viaf:103617048 ;
+    foaf:givenname "Jean-Luc" ;
+    foaf:surname "Nancy" .
 
 :person:NaurP
     a foaf:Person ;
@@ -4331,6 +4398,13 @@
     foaf:surname "Pollock" ;
     foaf:homepage <https://www.business-school.ed.ac.uk/about/people/84/Neil/Pollock> .
 
+:person:PoltR
+    a foaf:Person ;
+    owl:sameAs wd:Q7328471, viaf:69210655, orcid:0000-0003-3782-2617 ;
+    foaf:givenname "Richard" ;
+    foaf:surname "Polt" ;
+    foaf:homepage <https://site.xavier.edu/polt/typewriters/> .
+
 :person:PriestleyM
     a foaf:Person ;
     foaf:givenname "Mark" ;
@@ -4383,6 +4457,13 @@
     foaf:givenname "Nikolas" ;
     foaf:surname "Rose" ;
     foaf:homepage <http://nikolasrose.com/> .
+
+:person:RosnerD
+    a foaf:Person ;
+    owl:sameAs viaf:13150565705506252782 ;
+    foaf:givenname "Daniela K." ;
+    foaf:surname "Rosner" ;
+    foaf:homepage <http://www.danielarosner.com/> .
 
 :person:RothA
     a foaf:Person ;
@@ -4608,6 +4689,12 @@
     foaf:surname "Turner" ;
     foaf:homepage <http://fredturner.stanford.edu/> .
 
+:person:UllmanE
+    a foaf:Person ;
+    owl:sameAs viaf:72247376, wd:Q5365042 ;
+    foaf:givenname "Ellen" ;
+    foaf:surname "Ullman" .
+
 :person:VanDijkJ
     a foaf:Person ;
     foaf:givenname "Jelle" ;
@@ -4802,6 +4889,11 @@
     foaf:name "ACM" ;
     address:localityName "New York" .
 
+:publisher:AUP
+    a :Publisher ;
+    foaf:name "Amsterdam University Press" ;
+    address:localityName "Amsterdam" .
+
 :publisher:AllenUnwin
     a :Publisher ;
     foaf:name "Allen & Unwin" ;
@@ -4811,6 +4903,11 @@
     a :Publisher ;
     foaf:name "Cambridge University Press" ;
     address:localityName "Cambridge, UK" .
+
+:publisher:CityLights
+    a :Publisher ;
+    foaf:name "City Lights" ;
+    address:localityName "San Francisco" .
 
 :publisher:Continuum
     a :Publisher ;
@@ -4902,6 +4999,11 @@
     foaf:name "Plenum Publishers" ;
     address:localityName "New York" .
 
+:publisher:Pluto
+    a :Publisher ;
+    foaf:name "Pluto Press" ;
+    address:localityName "London" .
+
 :publisher:PsychologyPress
     a :Publisher ;
     foaf:name "Psychology Press" ;
@@ -4916,6 +5018,11 @@
     a :Publisher ;
     foaf:name "Routledge" ;
     address:localityName "Abingdon" .
+
+:publisher:RowmanLittlefield
+    a :Publisher ;
+    foaf:name "Rowman & Littlefield" ;
+    address:localityName "London" .
 
 :publisher:SUNY
     a :Publisher ;
