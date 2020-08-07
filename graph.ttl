@@ -34,6 +34,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-08-14,
+        :meeting:2020-08-07,
+        :meeting:2020-07-31,
         :meeting:2020-07-24,
         :meeting:2020-07-17,
         :meeting:2020-07-10,
@@ -3200,6 +3203,45 @@
     lode:involved :reading:Amoore2020 ;
     :schedule (
         :reading:Amoore2020
+    ) .
+
+:meeting:2020-07-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-31T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2020-08-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-07T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Double postponement." ]
+    ) .
+
+:meeting:2020-08-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-14T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Another chapter from Melanie's book in progress." ]
     ) .
 
 :person:AbbateJ
