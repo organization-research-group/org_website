@@ -177,7 +177,8 @@ function renderDirectory(grist) {
     R.filter(({ node }) => isNamedNode(node)),
     R.groupBy(R.prop('categoryLabel')),
     R.map(R.sortBy(R.prop('uri'))),
-    R.map(R.map(({ uri, label, weeks, homepage }) =>
+    // FIXME: weeks should always be populated
+    R.map(R.map(({ uri, label, weeks=[], homepage }) =>
       h('div#' + uri.split('#')[1], [
         h('h3', label),
         homepage && h('a.external', { href: homepage.id }, 'Homepage'),
