@@ -18,8 +18,8 @@ createWebsiteArchive()
   })
 
 async function createWebsiteArchive() {
-  const store = N3.Store()
-      , parser = N3.StreamParser()
+  const store = new N3.Store()
+      , parser = new N3.StreamParser()
 
   await new Promise((resolve, reject) =>
     store.import(fs.createReadStream(GRAPH_FILE).pipe(parser))
