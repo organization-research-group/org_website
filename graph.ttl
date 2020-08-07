@@ -3033,7 +3033,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-05-01:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-05-01T11:30:00-0500"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bucher2020, :reading:Nancy2000 ;
