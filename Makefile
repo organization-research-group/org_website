@@ -1,6 +1,10 @@
 JS_FILES := $(wildcard src/*js)
 SITE_FILES = $(wildcard dist/*)
 
+UPLOAD_HOST ?= orgorgorgorgorg.org
+UPLOAD_PATH ?= /home/ptgolden/webapps/org_home/
+
+
 platform=$(shell uname -s)
 ifeq ($(platform), Darwin)
 	TAR := gtar
@@ -32,4 +36,4 @@ sort_turtle:
 
 upload: $(SITE_FILES)
 	chmod g+w $^
-	scp $^ orgorgorgorgorg.org:/home/ptgolden/webapps/org_home/
+	scp $^ $(UPLOAD_HOST):$(UPLOAD_PATH)
