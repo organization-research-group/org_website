@@ -14,6 +14,8 @@ function getCheckList(prefixes) {
     [ expandNS('bibo:editor'), expandNS('foaf:Person') ],
     [ expandNS('dc:isPartOf'), null ],
     [ expandNS('dc:publisher'), expandNS(':Publisher') ],
+    [ expandNS('bibo:reproducedIn'), expandNS('bibo:Proceedings') ],
+    [ expandNS('bibo:presentedAt'), expandNS('bibo:Conference') ],
   ])
 }
 
