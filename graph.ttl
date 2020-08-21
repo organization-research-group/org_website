@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-08-21,
         :meeting:2020-08-14,
         :meeting:2020-08-07,
         :meeting:2020-07-31,
@@ -219,6 +220,13 @@
         :meeting:2015-08-17,
         :meeting:2015-07-30,
         :meeting:2015-07-24 .
+
+:conference:ACL2020
+    a bibo:Conference ;
+    dc:title "The 58th Annual Meeting of the Association for Computational Linguistics" ;
+    address:localityName "Online" ;
+    dc:date "July 5-10, 2020" ;
+    foaf:homepage <https://acl2020.org/> .
 
 :conference:CHI2014
     a bibo:Conference ;
@@ -3244,6 +3252,20 @@
         [ dc:description "Another chapter from Melanie's book in progress." ]
     ) .
 
+:meeting:2020-08-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-21T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bender2020 ;
+    :schedule (
+        :reading:Bender2020
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3354,6 +3376,13 @@
     foaf:surname "Bendell" ;
     foaf:homepage <https://jembendell.com> ;
     foaf:workInfoHomepage <https://www.cumbria.ac.uk/study/academic-staff/all-staff-members/iflas/professor-jem-bendell.php> .
+
+:person:BenderE
+    a foaf:Person ;
+    owl:sameAs viaf:16600136, wd:Q33122366 ;
+    foaf:givenname "Emily M." ;
+    foaf:surname "Bender" ;
+    foaf:workInfoHomepage <https://faculty.washington.edu/ebender/> .
 
 :person:BenfordS
     a foaf:Person ;
@@ -4063,6 +4092,12 @@
     foaf:givenname "Andrew J." ;
     foaf:surname "Ko" ;
     foaf:homepage <http://faculty.washington.edu/ajko/> .
+
+:person:KollerA
+    a foaf:Person ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Koller" ;
+    foaf:homepage <http://www.coli.uni-saarland.de/~koller/> .
 
 :person:KoopmanC
     a foaf:Person ;
@@ -4843,6 +4878,12 @@
     foaf:surname "Ye" ;
     foaf:homepage <https://sites.google.com/site/juanyeresearch/> .
 
+:proceedings:ACL2020
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics" ;
+    dc:date "2020" ;
+    dc:publisher :publisher:ACL .
+
 :proceedings:CHI2014
     a bibo:Proceedings ;
     dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '14)" ;
@@ -4925,6 +4966,11 @@
     dc:date "2018" ;
     dc:publisher :publisher:ACM ;
     bibo:isbn13 "978-1-4503-6438-6" .
+
+:publisher:ACL
+    a :Publisher ;
+    foaf:name "Association for Computational Linguistics" ;
+    address:localityName "Online" .
 
 :publisher:ACM
     a :Publisher ;
@@ -5315,6 +5361,20 @@
     ) ;
     dc:isPartOf :proceedings:IFLAS ;
     bibo:uri "http://web.archive.org/web/20190112162910/http://www.lifeworth.com/deepadaptation.pdf" .
+
+:reading:Bender2020
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.18653/v1/2020.acl-main.463> ;
+    dc:title "Climbing towards NLU: On meaning, form, and understanding in the Age of Data" ;
+    dc:creator :person:BenderE, :person:KollerA ;
+    bibo:authorList (
+        :person:BenderE
+        :person:KollerA
+    ) ;
+    bibo:reproducedIn :proceedings:ACL2020 ;
+    bibo:presentedAt :conference:ACL2020 ;
+    bibo:pages "5185-5198" ;
+    bibo:doi "10.18653/v1/2020.acl-main.463" .
 
 :reading:Bernstein1991
     a :Reading, :ConferencePaper ;
