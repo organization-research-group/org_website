@@ -124,7 +124,7 @@ async function renderMain(grist) {
     h('div', [
       h('section#about', [
         h('p', [
-          'ORG is a reading group at UNC Chapel Hill that meets Fridays at 11:30am ',
+          'ORG is a reading group at UNC Chapel Hill that meets Fridays at 11:00am ',
           h('strike', 'in 214 Manning Hall or'),
           ' via ',
           h('a', {
