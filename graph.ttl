@@ -34,6 +34,20 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-12-11,
+        :meeting:2020-12-04,
+        :meeting:2020-11-27,
+        :meeting:2020-11-20,
+        :meeting:2020-11-13,
+        :meeting:2020-11-06,
+        :meeting:2020-10-30,
+        :meeting:2020-10-23,
+        :meeting:2020-10-16,
+        :meeting:2020-10-09,
+        :meeting:2020-09-25,
+        :meeting:2020-09-18,
+        :meeting:2020-09-04,
+        :meeting:2020-08-21,
         :meeting:2020-08-21,
         :meeting:2020-08-14,
         :meeting:2020-08-07,
@@ -406,6 +420,11 @@
     foaf:homepage <http://firstmonday.org> ;
     bibo:issn "1396-0466" .
 
+:journal:Foucaldien
+    a bibo:Journal ;
+    dc:title "Le foucaldien" ;
+    foaf:homepage <https://foucaldien.net> .
+
 :journal:GoogleDevelopersBlog
     a bibo:Journal ;
     dc:title "Google Developers Blog" ;
@@ -539,6 +558,12 @@
     foaf:homepage <https://newleftreview.org/> ;
     bibo:issn "0028-6060" .
 
+:journal:NatureHumanBehavior
+    a bibo:Journal ;
+    dc:title "Nature Human Behavior" ;
+    foaf:homepage <https://www.nature.com/nathumbehav/> ;
+    bibo:issn "2397-3374" .
+
 :journal:NewMediaSociety
     a bibo:Journal ;
     dc:title "New Media & Society" ;
@@ -608,6 +633,12 @@
     dc:title "Theory, Culture & Society" ;
     foaf:homepage <http://journals.sagepub.com/home/tcs> ;
     bibo:issn "02632764", "14603616" .
+
+:journal:TNM
+    a bibo:Journal ;
+    dc:title "Television & New Media" ;
+    foaf:homepage <https://journals.sagepub.com/home/tvn> ;
+    bibo:issn "1552-8316" .
 
 :journal:TheoryPsychology
     a bibo:Journal ;
@@ -3274,6 +3305,199 @@
         <https://physics.nyu.edu/sokal/SocialText_reply_LF.pdf>
     ) .
 
+:meeting:2020-08-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-21T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Machlup1983 ;
+    :schedule (
+        :reading:Machlup1983
+    ) .
+
+:meeting:2020-09-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-09-04T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stawarska2020 ;
+    :schedule (
+        :reading:Stawarska2020
+    ) .
+
+:meeting:2020-09-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-09-18T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thompson2020 ;
+    :schedule (
+        :reading:Thompson2020
+    ) .
+
+:meeting:2020-09-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-09-25T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Couldry2019, :reading:Calzati2020 ;
+    :schedule (
+        :reading:Couldry2019
+        :reading:Calzati2020
+    ) .
+
+:meeting:2020-10-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-09T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomer2020 ;
+    :schedule (
+        :reading:Thomer2020
+    ) .
+
+:meeting:2020-10-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-16T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2020-10-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-23T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting (ASIS&T)" ]
+    ) .
+
+:meeting:2020-10-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-30T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Buneman2008, :reading:Palmer2013 ;
+    :schedule (
+        :reading:Buneman2008
+        :reading:Palmer2013
+    ) .
+
+:meeting:2020-11-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-06T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WinthropYoung2014 ;
+    :schedule (
+        :reading:WinthropYoung2014
+    ) .
+
+:meeting:2020-11-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-13T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "A revised chapter from Melanie's book in progress" ]
+    ) .
+
+:meeting:2020-11-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-20T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting (grading)" ]
+    ) .
+
+:meeting:2020-11-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-27T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting (Thanksgiving)" ]
+    ) .
+
+:meeting:2020-12-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-12-04T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Brower2020 ;
+    :schedule (
+        :reading:Brower2020
+    ) .
+
+:meeting:2020-12-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-12-11T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siskin2016 ;
+    :schedule (
+        :reading:Siskin2016
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3511,6 +3735,13 @@
     foaf:surname "Bratus" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~sergey/> .
 
+:person:BrowerV
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5316-3565, viaf:44160362609763500146 ;
+    foaf:givenname "Virgil W." ;
+    foaf:surname "Virgil" ;
+    foaf:page <https://philpeople.org/profiles/virgil-w-brower> .
+
 :person:BucherT
     a foaf:Person ;
     owl:sameAs viaf:240149196476274791574 ;
@@ -3523,6 +3754,13 @@
     owl:sameAs viaf:41901360 ;
     foaf:givenname "Graham" ;
     foaf:surname "Button" .
+
+:person:CalzatiS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-4590-6709, viaf:11155409687108742002 ;
+    foaf:givenname "Stefano" ;
+    foaf:surname "Calzati" ;
+    foaf:workInfoHomepage <https://www.etis.ee/CV/Stefano_Calzati/eng> .
 
 :person:CanguilhemG
     a foaf:Person ;
@@ -3624,6 +3862,13 @@
     foaf:givenname "Òscar" ;
     foaf:surname "Coromina" ;
     foaf:homepage <http://www.oscarcoromina.com> .
+
+:person:CouldryN
+    a foaf:Person ;
+    owl:sameAs viaf:117153249, wd:Q62559683 ;
+    foaf:givenname "Nick" ;
+    foaf:surname "Couldry" ;
+    foaf:homepage <http://www.nickcouldry.org/> .
 
 :person:CunninghamN
     a foaf:Person ;
@@ -4208,6 +4453,13 @@
     foaf:surname "Love" ;
     foaf:homepage <https://www.english.upenn.edu/people/heather-k-love> .
 
+:person:LupyanG
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8441-7433, viaf:24408753, wd:Q41667787 ;
+    foaf:givenname "Gary" ;
+    foaf:surname "Lupyan" ;
+    foaf:workInfoHomepage <https://psych.wisc.edu/staff/lupyan-gary/> .
+
 :person:LuryC
     a foaf:Person ;
     owl:sameAs viaf:7491199, wd:Q63367351 ;
@@ -4234,6 +4486,12 @@
     foaf:surname "Lyytinen" ;
     foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
 
+:person:MachlupF
+    a foaf:Person ;
+    owl:sameAs viaf:101860744, wd:Q78604 ;
+    foaf:givenname "Fritz" ;
+    foaf:surname "Machlup" .
+
 :person:MackenzieA
     a foaf:Person ;
     owl:sameAs viaf:40514317 ;
@@ -4253,6 +4511,12 @@
     foaf:givenname "Jens-Erik" ;
     foaf:surname "Mai" ;
     foaf:homepage <http://www.jenserikmai.info/> .
+
+:person:MansfieldU
+    a foaf:Person ;
+    owl:sameAs viaf:14835690;
+    foaf:givenname "Una" ;
+    foaf:surname "Mansfield" .
 
 :person:MarcusS
     a foaf:Person ;
@@ -4286,6 +4550,13 @@
     foaf:givenname "Eden" ;
     foaf:surname "Medina" ;
     foaf:homepage <https://www.informatics.indiana.edu/edenm/> .
+
+:person:MejiasU
+    a foaf:Person ;
+    owl:sameAs viaf:300110986 ;
+    foaf:givenname "Ulises A." ;
+    foaf:surname "Mejias" ;
+    foaf:homepage <https://blog.ulisesmejias.com/> .
 
 :person:MilesA
     a foaf:Person ;
@@ -4522,6 +4793,13 @@
     foaf:surname "Roberts" ;
     foaf:homepage <https://illusionofvolition.com> .
 
+:person:RobertsSean
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5990-9161 ;
+    foaf:givenname "Seán G." ;
+    foaf:surname "Roberts" ;
+    foaf:workInfoHomepage <https://research-information.bris.ac.uk/en/persons/sean-g-roberts> .
+
 :person:RobinsonL
     a foaf:Person ;
     owl:sameAs viaf:162963207, wd:Q60362435 ;
@@ -4644,6 +4922,13 @@
     foaf:givenname "Georg" ;
     foaf:surname "Simmel" .
 
+:person:SiskinC
+    a foaf:Person ;
+    owl:sameAs viaf:11321860 ;
+    foaf:givenname "Clifford" ;
+    foaf:surname "Siskin" ;
+    foaf:workInfoHomepage <https://as.nyu.edu/content/nyu-as/as/faculty/clifford-siskin.html> .
+
 :person:SmithB
     a foaf:Person ;
     owl:sameAs viaf:46432, wd:Q4858975 ;
@@ -4684,6 +4969,13 @@
     foaf:givenname "Susan Leigh" ;
     foaf:surname "Star" ;
     foaf:homepage <http://lchc.ucsd.edu/People/lstar_bio.html> .
+
+:person:StawarskaB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9971-2726, viaf:91040455 ;
+    foaf:givenname "Beata" ;
+    foaf:surname "Stawarska" ;
+    foaf:workInfoHomepage <https://philosophy.uoregon.edu/profile/stawarsk/> .
 
 :person:StennerP
     a foaf:Person ;
@@ -4746,6 +5038,20 @@
     foaf:givenname "Neal" ;
     foaf:surname "Thomas" ;
     foaf:homepage <http://www.hivemedia.ca> .
+
+:person:ThomerA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-6238-3498, wd:Q47502207 ;
+    foaf:givenname "Andrea K." ;
+    foaf:surname "Thomer" ;
+    foaf:homepage <https://www.akthomer.com/> .
+
+:person:ThompsonB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7348-3531 ;
+    foaf:givenname "Bill" ;
+    foaf:surname "Thompson" ;
+    foaf:homepage <https://billdthompson.github.io/> .
 
 :person:TimmermansS
     a foaf:Person ;
@@ -4834,6 +5140,13 @@
     foaf:givenname "Maxim" ;
     foaf:surname "Waldstein" ;
     foaf:page <https://auc.academia.edu/MaximWaldstein> .
+
+:person:WickettK
+    a foaf:Person ;
+    owl:sameAs wd:Q62576259 ;
+    foaf:givenname "Karen M." ;
+    foaf:surname "Wickett" ;
+    foaf:workInfoHomepage <https://ischool.illinois.edu/people/karen-wickett> .
 
 :person:WilliamsR
     a foaf:Person ;
@@ -5085,6 +5398,11 @@
     foaf:name "Princeton University Press" ;
     address:localityName "Princeton, NJ" .
 
+:publisher:Palgrave
+    a :Publisher ;
+    foaf:name "Palgrave Macmillan" ;
+    address:localityName "Cham, Switzerland" .
+
 :publisher:Paradigm
     a :Publisher ;
     foaf:name "Paradigm Publishers" ;
@@ -5164,6 +5482,11 @@
     a :Publisher ;
     foaf:name "Verlag Dokumentation" ;
     address:localityName "Pullach, Germany" .
+
+:publisher:Wiley
+    a :Publisher ;
+    foaf:name "Wiley" ;
+    address:localityName "New York" .
 
 :reading:Abbate2017
     a :Reading, bibo:AcademicArticle ;
@@ -5507,6 +5830,23 @@
     ] ;
     bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
 
+:reading:Brower2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.16995/lefou.74> ;
+    dc:title "Genealogy of algorithms: Datafication as transvaluation" ;
+    dc:creator :person:BrowerV ;
+    bibo:authorList (
+        :person:BrowerV
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:Foucaldien ;
+        bibo:volume "6" ;
+        bibo:issue "1"
+    ] ;
+    bibo:doi "10.16995/lefou.74" .
+
 :reading:Bucher2020
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1177/0163443720914028> ;
@@ -5524,6 +5864,11 @@
     ] ;
     bibo:doi "10.1177/0163443720914028" .
 
+:reading:Buneman2008
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2020-10-30
+    a :Reading .
+
 :reading:Button1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305842> ;
@@ -5535,6 +5880,22 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "39-42" ;
     bibo:doi "10.1007/BF01305842" .
+
+:reading:Calzati2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1527476420957267> ;
+    dc:title "Decolonising “data colonialism”: Propositions for investigating the Realpolitik of today’s networked ecology" ;
+    dc:creator :person:CalzatiS ;
+    bibo:authorList (
+        :person:CalzatiS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:TNM
+    ] ;
+    bibo:pages "1-16" ;
+    bibo:doi "10.1177/1527476420957267" .
 
 :reading:Canguilhem2010
     a :Reading, bibo:Book ;
@@ -5632,6 +5993,19 @@
         bibo:volume "1"
     ] ;
     bibo:doi "10.24242/jclis.v1i1.30" .
+
+:reading:Couldry2019
+    a :Reading, bibo:Book ;
+    dc:title "Costs of connection: How data is colonizing human life and appropriating it for capitalism" ;
+    dc:shortTitle "Costs of connection" ;
+    dc:creator :person:CouldryN, :person:MejiasU ;
+    bibo:authorList (
+        :person:CouldryN
+        :person:MejiasU
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:SUP ;
+    bibo:isbn13 "9781503609754" .
 
 :reading:Curtis1994
     a :Reading, bibo:AcademicArticle ;
@@ -6599,6 +6973,17 @@
     dc:date "2002" ;
     dc:publisher :publisher:Continuum .
 
+:reading:Machlup1983
+    a :Reading, bibo:BookSection ;
+    dc:title "Cultural diversity in studies of information" ;
+    dc:creator :person:MachlupF, :person:MansfieldU ;
+    bibo:authorList (
+        :person:MachlupF
+        :person:MansfieldU
+    ) ;
+    dc:isPartOf :volume:Machlup1983 ;
+    bibo:pages "3–56" .
+
 :reading:Mackenzie2017
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/1017932995> ;
@@ -6893,6 +7278,11 @@
     ] ;
     dc:date "2018-04-13" ;
     bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
+
+:reading:Palmer2013
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2020-10-30
+    a :Reading .
 
 :reading:Parikka2015
     a :Reading, bibo:Book ;
@@ -7256,6 +7646,18 @@
     bibo:pages "87-92" ;
     bibo:doi "10.1177/0263276414531052" .
 
+:reading:Siskin2016
+    a :Reading, bibo:Book ;
+    dc:title "System: The shaping of modern knowledge" ;
+    dc:shortTitle "System" ;
+    dc:creator :person:SiskinC ;
+    bibo:authorList (
+        :person:SiskinC
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "978-0-262-03531-6" .
+
 :reading:Smith2011
     a :Reading, bibo:BookSection ;
     owl:sameAs <http://doi.org/10.3366/edinburgh/9780748641178.003.0008> ;
@@ -7338,6 +7740,18 @@
     ) ;
     dc:isPartOf :volume:Star1995 ;
     bibo:pages "88-118" .
+
+:reading:Stawarska2020
+    a :Reading, bibo:Book ;
+    dc:title "Saussure's linguistics, structuralism, and phenomenology: The <i>Course in General Linguistics</i> after a century" ;
+    dc:shortTitle "Saussure's linguistics, structuralism, and phenomenology" ;
+    dc:creator :person:StawarskaB ;
+    bibo:authorList (
+        :person:StawarskaB
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:Palgrave ;
+    bibo:isbn13 "978-3-030-43097-9" .
 
 :reading:Stenner2016
     a :Reading, bibo:AcademicArticle ;
@@ -7492,6 +7906,43 @@
     dc:date "2018" ;
     dc:publisher :publisher:Routledge ;
     bibo:isbn13 "9781138719026" .
+
+:reading:Thomer2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/2053951720934838> ;
+    dc:title "Relational data paradigms: What do we learn by taking the materiality of databases seriously?" ;
+    dc:creator :person:ThomerA, :person:WickettK ;
+    bibo:authorList (
+        :person:ThomerA
+        :person:WickettK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:volume "7" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:doi "10.1177/2053951720934838" .
+
+:reading:Thompson2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1038/s41562-020-0924-8> ;
+    dc:title "Cultural influences on word meanings revealed through large-scale semantic alignment" ;
+    dc:creator :person:ThompsonB, :person:RobertsSean, :person:LupyanG ;
+    bibo:authorList (
+        :person:ThompsonB
+        :person:RobertsS
+        :person:LupyanG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:NatureHumanBehavior ;
+        bibo:issue "4" ;
+    ] ;
+    bibo:pages "1029-1038" ;
+    bibo:doi "10.1038/s41562-020-0924-8" .
 
 :reading:Tsing2015
     a :Reading, bibo:Book ;
@@ -7653,6 +8104,11 @@
     ] ;
     bibo:pages "191-197" ;
     bibo:doi "10.1007/BF00749016" .
+
+:reading:WinthropYoung2014
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2020-11-06
+    a :Reading .
 
 :reading:Wittkower2016
     a :Reading, :ConferencePaper ;
@@ -7855,6 +8311,18 @@
         :person:BielbyJ
     ) ;
     bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
+
+:volume:Machlup1983
+    a bibo:EditedBook ;
+    dc:title "The study of information: Interdisciplinary messages" ;
+    dc:shortTitle "The study of information" ;
+    dc:date "1983" ;
+    dc:publisher :publisher:Wiley ;
+    dc:editor :person:MachlupF, :person:MansfieldU ;
+    bibo:editorList (
+        :person:MachlupF
+        :person:MansfieldU
+    ) .
 
 :volume:Mrazek2002
     a bibo:Book ;
