@@ -64,7 +64,16 @@ exports.generate = async function getMeetings(store) {
       })
     })
 
+    let links = []
+
+    const linksNode = getFirstObject(store, meetingNode, ':postedLinks')
+
+    if (linksNode) {
+      links = rdfListToArray(store, linksNode).map(linkNode => linkNode.id)
+    }
+
     meetings.push({
+      links,
       uri: 'archive.html#' + meetingNode.value.split('#')[1],
       node: meetingNode,
       schedule,

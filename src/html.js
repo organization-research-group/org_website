@@ -38,6 +38,24 @@ function renderEntity(val, key) {
   )
 }
 
+function renderLinks(links) {
+  if (!links.length) return null
+
+  return (
+    h('div', [
+      h('h4', 'Links posted in meeting'),
+      h('ul', links.map(href => (
+        h('li', [
+          h('a', { href }, href),
+
+        ])
+      )))
+    ])
+  )
+
+
+}
+
 function renderMeeting({ store, bibliography, entities }) {
   return async meeting => {
     const renderScheduleItem = async $scheduleItem => {
@@ -102,6 +120,8 @@ function renderMeeting({ store, bibliography, entities }) {
       R.values
     )(meeting.entities)
 
+    const linksHTML = renderLinks(meeting.links)
+
     return (
       h('div.meeting', {
         id: meeting.node.id.split('#')[1]
@@ -109,6 +129,8 @@ function renderMeeting({ store, bibliography, entities }) {
         h('h3.meeting--date', timeFormat('%A, %B %e, %Y')(meeting.date)),
 
         h('.meeting--schedule', scheduleHTML),
+
+        h('.meeting--links', linksHTML),
 
         h('.meeting--entities', entitiesHTML),
       ])
