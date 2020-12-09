@@ -3264,6 +3264,14 @@
     lode:involved :reading:Bender2020 ;
     :schedule (
         :reading:Bender2020
+    ) ;
+    :postedLinks (
+        <https://www.youtube.com/watch?v=zE1J9JxqhFo>
+        <http://svr91.edns1.com/~culturem/index.php/cm/article/view/429/446>
+        <https://www.youtube.com/watch?v=S6wnHsEoTmc>
+        <https://media.unito.it/?content=9248&fbclid=IwAR0HmhG9QQBBPqG4PnK4vOAVcsZq2xXuIbts_YiXUe7dm8_4TfCvMFkbQEk>
+        <https://socialsystemstheory.com/2020/08/13/language-is-not-informational-or-communicational/>
+        <https://physics.nyu.edu/sokal/SocialText_reply_LF.pdf>
     ) .
 
 :person:AbbateJ
