@@ -1,8 +1,13 @@
-JS_FILES := $(wildcard src/*js)
-SITE_FILES = $(wildcard dist/*)
+SITE_TARBALL := dist/site.tar
 
 UPLOAD_HOST ?= orgorgorgorgorg.org
-UPLOAD_PATH ?= /home/ptgolden/webapps/org_home/
+UPLOAD_PATH ?= /home/ptgolden/apps/org_home/
+
+# Files that will be included in the tarball
+STATIC_DEPS = org.css graph.ttl
+
+# Files that generate the tarball
+SITE_SCRIPTS := $(wildcard src/*js)
 
 
 platform=$(shell uname -s)
@@ -12,28 +17,45 @@ else
 	TAR := tar
 endif
 
-all: dist/site.tar
+
+.PHONY: all
+all: $(SITE_TARBALL)
 	$(TAR) xf $< -C dist
-	rm $<
+
+.PHONY: clean
+clean:
+	rm -rf dist node_modules
+
+.PHONY: upload
+upload: $(SITE_TARBALL)
+	$(TAR) xf $< -C dist
+	chmod g+w $(addprefix dist/,$(shell $(TAR) tf $<))
+	scp $(addprefix dist/,$(shell $(TAR) tf $<)) $(UPLOAD_HOST):$(UPLOAD_PATH)
+
 
 dist:
 	mkdir -p $@
 
-dist/site.tar: org.css graph.ttl $(JS_FILES) | dist
+node_modules: package.json
+	npm ci
+
+$(SITE_TARBALL): $(STATIC_DEPS) $(SITE_SCRIPTS) node_modules | dist
 	node . > $@ || rm $@
-	$(TAR) --owner=0 --group=0 -r -f $@ $(word 1, $^) $(word 2, $^)
+	$(TAR) --owner=0 --group=0 -r -f $@ $(STATIC_DEPS)
 
-.PHONY: clean upload add_meeting
 
-clean:
-	rm -rf dist
+#--- Utilities
 
+.PHONY: add_meeting
 add_meeting:
 	@python3 bin/add_meeting
 
+.PHONY: sort_turtle
 sort_turtle:
 	bin/clean_ttl.py graph.ttl | sponge graph.ttl
 
-upload: $(SITE_FILES)
-	chmod g+w $^
-	scp $^ $(UPLOAD_HOST):$(UPLOAD_PATH)
+
+.PHONY: add_missing_entities
+add_missing_entities:
+	bin/missing_entities graph.ttl >> graph.ttl
+	make sort_turtle
