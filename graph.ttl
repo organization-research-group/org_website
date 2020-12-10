@@ -3522,7 +3522,7 @@
     owl:sameAs viaf:43545973, wd:Q20859597 ;
     foaf:givenname "Janet" ;
     foaf:surname "Abbate" ;
-    foaf:workInfoHomepage <https://liberalarts.vt.edu/faculty-directory/sts-faculty/janet-abbate.html> .
+    foaf:workInfoHomepage <https://liberalarts.vt.edu/departments-and-schools/department-of-science-technology-and-society/faculty/janet-abbate.html> .
 
 :person:AckerA
     a foaf:Person ;
