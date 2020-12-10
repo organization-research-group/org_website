@@ -301,6 +301,13 @@
     address:localityName "Ottawa" ;
     dc:date "October 1st to 5th, 1971" .
 
+:conference:PODS08
+    a bibo:Conference ;
+    dc:title "SIGMOD/PODS '08 International Conference on Management of Data" ;
+    address:localityName "Vancouver, Canada" ;
+    dc:date "June 9-12, 2008" ;
+    foaf:homepage <http://www.sigmod08.org/> .
+
 :conference:WebStudies2018
     a bibo:Conference ;
     dc:title "WS.2 2018 International conference on Web Studies" ;
@@ -312,6 +319,12 @@
     dc:title "Artificial Intelligence" ;
     foaf:homepage <http://www.sciencedirect.com/science/journal/00043702> ;
     bibo:issn "0004-3702" .
+
+:journal:ArchiveJournal
+    a bibo:Journal ;
+    dc:title "Archive Journal" ;
+    foaf:homepage <https://www.archivejournal.net/> ;
+    bibo:issn "2166-1189" .
 
 :journal:AIS
     a bibo:Journal ;
@@ -377,6 +390,12 @@
     dc:title "Critical Inquiry" ;
     foaf:homepage <http://criticalinquiry.uchicago.edu/> ;
     bibo:issn "0093-1896" .
+
+:journal:CulturalPolitics
+    a bibo:Journal ;
+    dc:title "Cultural Politics" ;
+    foaf:homeapge <https://read.dukeupress.edu/cultural-politics> ;
+    bibo:issn "1751-7435" .
 
 :journal:CulturalStudies
     a bibo:Journal ;
@@ -3749,6 +3768,13 @@
     foaf:surname "Bucher" ;
     foaf:homepage <http://tainabucher.com/> .
 
+:person:BunemanP
+    a foaf:Person ;
+    owl:sameAs viaf:110045336, wd:Q7173055 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Buneman" ;
+    foaf:homepage <http://homepages.inf.ed.ac.uk/opb/> .
+
 :person:ButtonG
     a foaf:Person ;
     owl:sameAs viaf:41901360 ;
@@ -3793,6 +3819,13 @@
     foaf:givenname "Tim" ;
     foaf:surname "Chartier" ;
     foaf:homepage <https://www.davidson.edu/people/tim-chartier> .
+
+:person:CheneyJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-1307-9286 ;
+    foaf:givenname "James" ;
+    foaf:surname "Cheney" ;
+    foaf:homepage <https://homepages.inf.ed.ac.uk/jcheney/> .
 
 :person:ChunW
     a foaf:Person ;
@@ -5018,6 +5051,13 @@
     foaf:surname "Svensson" ;
     foaf:homepage <http://patriksv.net/> .
 
+:person:TanW
+    a foaf:Person ;
+    owl:sameAs viaf:300112526, wd:Q18618595 ;
+    foaf:givenname "Wang-Chiew" ;
+    foaf:surname "Tan" ;
+    foaf:homepage <https://wangchiew.github.io/> .
+
 :person:TenenD
     a foaf:Person ;
     owl:sameAs viaf:4810150085884015060001 ;
@@ -5098,6 +5138,13 @@
     foaf:givenname "Niels" ;
     foaf:surname "van Doorn" ;
     foaf:workInfoHomepage <http://www.uva.nl/profiel/d/o/n.a.j.m.vandoorn/n.a.j.m.vandoorn.html> .
+
+:person:VansummerenS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7793-9049, wd:Q18618602 ;
+    foaf:givenname "Stijn" ;
+    foaf:surname "Vansummeren" ;
+    foaf:workInfoHomepage <https://cs.ulb.ac.be/members/stijn/index.html> .
 
 :person:VenuriniT
     a foaf:Person ;
@@ -5280,6 +5327,13 @@
     dc:date "2015" ;
     dc:publisher :publisher:IEEE ;
     bibo:isbn13 "978-1-4673-6656-4" .
+
+:proceedings:PODS08
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the twenty-seventh ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems" ;
+    dc:date "2008" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-60558-152-1" .
 
 :proceedings:WebStudies2018
     a bibo:Proceedings ;
@@ -5865,9 +5919,20 @@
     bibo:doi "10.1177/0163443720914028" .
 
 :reading:Buneman2008
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2020-10-30
-    a :Reading .
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1215/17432197-2795741> ;
+    dc:title "Curated databases" ;
+    dc:creator :person:BunemanP, :person:CheneyJ, :person:TanW, :person:VansummerenS ;
+    bibo:authorList (
+        :person:BunemanP
+        :person:CheneyJ
+        :person:TanW
+        :person:VansummerenS
+    ) ;
+    bibo:reproducedIn :proceedings:PODS08 ;
+    bibo:presentedAt :conference:PODS08 ;
+    bibo:pages "1-12" ;
+    bibo:doi "10.1215/17432197-2795741" .
 
 :reading:Button1994
     a :Reading, bibo:AcademicArticle ;
@@ -7279,10 +7344,57 @@
     dc:date "2018-04-13" ;
     bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
 
+
+
+
+# didn't investigate owl:sameAs
+:person:PalmerC
+    a foaf:Person ;
+    foaf:givenname "Carol L." ;
+    foaf:surname "Palmer" ;
+    foaf:workInfoHomepage <http://faculty.washington.edu/clpalmer/> .
+
+
+# didn't investigate owl:sameAs
+:person:WeberN
+    a foaf:Person ;
+    foaf:givenname "Nicholas M." ;
+    foaf:surname "Weber" ;
+    foaf:homepage <http://nicweber.info/> .
+
+
+# didn't investigate owl:sameAs
+:person:MunozT
+    a foaf:Person ;
+    foaf:givenname "Trevor" ;
+    foaf:surname "Muñoz" ;
+    foaf:homepage <http://trevormunoz.com/> .
+
+
+# didn't investigate owl:sameAs
+:person:RenearA
+    a foaf:Person ;
+    foaf:givenname "Allen H." ;
+    foaf:surname "Renear" ;
+    foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
+
+
 :reading:Palmer2013
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2020-10-30
-    a :Reading .
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Foundations of data curation: The pedagogy and practice of “purposeful work” with research data" ;
+    dc:creator :person:PalmerC, :person:WeberN, :person:MunozT, :person:RenearA ;
+    bibo:authorList (
+        :person:PalmerC
+        :person:WeberN
+        :person:MunozT
+        :person:RenearA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:ArchiveJournal
+    ] ;
+    dc:date "June 2013" ;
+    bibo:uri <https://www.archivejournal.net/essays/foundations-of-data-curation-the-pedagogy-and-practice-of-purposeful-work-with-research-data/> .
 
 :reading:Parikka2015
     a :Reading, bibo:Book ;
@@ -8106,9 +8218,22 @@
     bibo:doi "10.1007/BF00749016" .
 
 :reading:WinthropYoung2014
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2020-11-06
-    a :Reading .
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/17432197-2795741> ;
+    dc:title "The <i>Kultur</i> of cultural techniques: Conceptual inertia and the parasitic materialities of ontologization" ;
+    dc:creator :person:WinthropYoungG ;
+    bibo:authorList (
+        :person:WinthropYoungG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2014" ;
+        dc:isPartOf :journal:CulturalPolitics ;
+        bibo:volume "10" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "376-388" ;
+    bibo:doi "10.1215/17432197-2795741" .
 
 :reading:Wittkower2016
     a :Reading, :ConferencePaper ;
