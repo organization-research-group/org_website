@@ -7478,7 +7478,7 @@
         dc:isPartOf :journal:ArchiveJournal
     ] ;
     dc:date "June 2013" ;
-    bibo:uri <https://www.archivejournal.net/essays/foundations-of-data-curation-the-pedagogy-and-practice-of-purposeful-work-with-research-data/> .
+    bibo:uri "https://www.archivejournal.net/essays/foundations-of-data-curation-the-pedagogy-and-practice-of-purposeful-work-with-research-data/" .
 
 :reading:Parikka2015
     a :Reading, bibo:Book ;
