@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-01-08,
         :meeting:2020-12-18,
         :meeting:2020-12-11,
         :meeting:2020-12-04,
@@ -3532,6 +3533,21 @@
         :reading:Ebeling2016
     ) .
 
+:meeting:2021-01-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-08T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Brun2004a, :reading:Brun2004b ;
+    :schedule (
+        :reading:Brun2004a
+        :reading:Brun2004b
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3776,6 +3792,15 @@
     foaf:surname "Virgil" ;
     foaf:page <https://philpeople.org/profiles/virgil-w-brower> .
 
+:person:BrunH
+    a foaf:Person ;
+    owl:sameAs wd:Q105715, viaf:39503397 ;
+    foaf:givenname "Herbert" ;
+    foaf:surname "Brün" ;
+    foaf:page
+        <https://en.wikipedia.org/wiki/Herbert_Brün> ,
+        <https://www.discogs.com/artist/207396-Herbert-Brün> .
+
 :person:BucherT
     a foaf:Person ;
     owl:sameAs viaf:240149196476274791574 ;
@@ -3828,6 +3853,13 @@
     foaf:givenname "Erik" ;
     foaf:surname "Champion" ;
     foaf:homepage <https://erikchampion.wordpress.com/> .
+
+:person:ChandraA
+    a foaf:Person ;
+    owl:sameAs viaf:72474544 ;
+    foaf:givenname "Arun" ;
+    foaf:surname "Chandra" ;
+    foaf:homepage <https://sites.evergreen.edu/arunchandra/> .
 
 :person:ChartierT
     a foaf:Person ;
@@ -5587,6 +5619,11 @@
     foaf:name "Verlag Dokumentation" ;
     address:localityName "Pullach, Germany" .
 
+:publisher:WUP
+    a :Publisher ;
+    foaf:name "Wesleyan University Press" ;
+    address:localityName "Middletown, Connecticut" .
+
 :publisher:Wiley
     a :Publisher ;
     foaf:name "Wiley" ;
@@ -5950,6 +5987,26 @@
         bibo:issue "1"
     ] ;
     bibo:doi "10.16995/lefou.74" .
+
+:reading:Brun2004a
+    a :Reading, bibo:BookSection ;
+    dc:title "Technology and the composer" ;
+    dc:creator :person:BrunH ;
+    bibo:authorList (
+        :person:BrunH
+    ) ;
+    dc:isPartOf :volume:Brun2004 ;
+    bibo:pages "163-176" .
+
+:reading:Brun2004b
+    a :Reading, bibo:BookSection ;
+    dc:title "For anticommunication" ;
+    dc:creator :person:BrunH ;
+    bibo:authorList (
+        :person:BrunH
+    ) ;
+    dc:isPartOf :volume:Brun2004 ;
+    bibo:pages "60-70" .
 
 :reading:Bucher2020
     a :Reading, bibo:AcademicArticle ;
@@ -8368,6 +8425,16 @@
     ) ;
     bibo:isbn13 "978-0-262-02974-2", "978-0-262-52808-5" ;
     bibo:lccn "BD175 B675 2015" .
+
+:volume:Brun2004
+    a bibo:EditedBook ;
+    dc:date "2004" ;
+    dc:title "When Music Resists Meaning: The Major Writings of Herbert Brün" ;
+    dc:publisher :publisher:WUP ;
+    bibo:editor :person:ChandraA ;
+    bibo:editorList (
+        :person:ChandraA
+    ) .
 
 :volume:Carrier2011
     a bibo:EditedBook ;
