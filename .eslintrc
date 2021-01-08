@@ -27,13 +27,6 @@
     "no-underscore-dangle": 0,
     "no-use-before-define": [2, "nofunc"],
     "no-var": 2,
-    "object-curly-newline": ["error", {
-      "ObjectExpression": {
-        "multiline": true,
-        "minProperties": 3,
-        "consistent": true
-      }
-    }],
     "object-curly-spacing": ["error", "always", {
       "objectsInObjects": false,
       "arraysInObjects": false
