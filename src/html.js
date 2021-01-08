@@ -255,6 +255,7 @@ function renderPage(page) {
       h('head', [
         h('meta', { charset: 'utf-8' }),
         h('link', { rel: 'stylesheet', href: 'org.css' }),
+        h('link', { rel: 'alternate', href: 'feed.json', type: 'application/json' }),
         h('title', 'The Organization Research Group'),
       ]),
 
@@ -295,6 +296,7 @@ function renderPage(page) {
 
             h('div', [
               h('a', { href: 'graph.ttl' }, 'Graph'),
+              h('a', { href: 'feed.json' }, 'Feed'),
             ])
           ]),
         ]),

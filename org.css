@@ -20,6 +20,10 @@ footer {
     justify-content: space-between;
 }
 
+footer a {
+    margin-left: 1em;
+}
+
 .content-wrapper {
     position: relative;
     margin: auto;
