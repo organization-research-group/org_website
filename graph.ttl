@@ -320,12 +320,6 @@
     foaf:homepage <http://www.sciencedirect.com/science/journal/00043702> ;
     bibo:issn "0004-3702" .
 
-:journal:ArchiveJournal
-    a bibo:Journal ;
-    dc:title "Archive Journal" ;
-    foaf:homepage <https://www.archivejournal.net/> ;
-    bibo:issn "2166-1189" .
-
 :journal:AIS
     a bibo:Journal ;
     dc:title "AI & Society" ;
@@ -335,6 +329,12 @@
 :journal:AdvancingDigitalHumanities
     a bibo:Journal ;
     dc:title "Advancing digital humanities: research, methods, theories" .
+
+:journal:ArchiveJournal
+    a bibo:Journal ;
+    dc:title "Archive Journal" ;
+    foaf:homepage <https://www.archivejournal.net/> ;
+    bibo:issn "2166-1189" .
 
 :journal:BDS
     a bibo:Journal ;
@@ -4649,6 +4649,13 @@
     foaf:surname "Mrázek" ;
     foaf:homepage <https://lsa.umich.edu/history/people/emeritus/rdlf.html> .
 
+:person:MunozT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2616-8632 ;
+    foaf:givenname "Trevor" ;
+    foaf:surname "Muñoz" ;
+    foaf:homepage <http://trevormunoz.com/> .
+
 :person:MylonasE
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-0215-4324 ;
@@ -4714,6 +4721,13 @@
     foaf:givenname "Ben" ;
     foaf:surname "Packer" ;
     foaf:homepage <https://www.quora.com/profile/Ben-Packer-1> .
+
+:person:PalmerC
+    a foaf:Person ;
+    owl:sameAs viaf:93754580, orcid:0000-0001-7420-3765 ;
+    foaf:givenname "Carole L." ;
+    foaf:surname "Palmer" ;
+    foaf:workInfoHomepage <http://faculty.washington.edu/clpalmer/> .
 
 :person:PapanekVJ
     a foaf:Person ;
@@ -4805,6 +4819,13 @@
     foaf:givenname "D. W." ;
     foaf:surname "Randall" ;
     foaf:homepage <https://www.researchgate.net/profile/Dave_Randall> .
+
+:person:RenearA
+    a foaf:Person ;
+    owl:sameAs viaf:311203806, orcid:0000-0001-5384-4467 ;
+    foaf:givenname "Allen H." ;
+    foaf:surname "Renear" ;
+    foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
 
 :person:RibesD
     a foaf:Person ;
@@ -5187,6 +5208,13 @@
     foaf:givenname "Maxim" ;
     foaf:surname "Waldstein" ;
     foaf:page <https://auc.academia.edu/MaximWaldstein> .
+
+:person:WeberN
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-6008-3763 ;
+    foaf:givenname "Nicholas M." ;
+    foaf:surname "Weber" ;
+    foaf:homepage <http://nicweber.info/> .
 
 :person:WickettK
     a foaf:Person ;
@@ -7343,41 +7371,6 @@
     ] ;
     dc:date "2018-04-13" ;
     bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
-
-
-
-
-:person:PalmerC
-    a foaf:Person ;
-    owl:sameAs viaf:93754580, orcid:0000-0001-7420-3765 ;
-    foaf:givenname "Carole L." ;
-    foaf:surname "Palmer" ;
-    foaf:workInfoHomepage <http://faculty.washington.edu/clpalmer/> .
-
-
-:person:WeberN
-    a foaf:Person ;
-    owl:sameAs orcid:0000-0002-6008-3763 ;
-    foaf:givenname "Nicholas M." ;
-    foaf:surname "Weber" ;
-    foaf:homepage <http://nicweber.info/> .
-
-
-:person:MunozT
-    a foaf:Person ;
-    owl:sameAs orcid:0000-0002-2616-8632 ;
-    foaf:givenname "Trevor" ;
-    foaf:surname "Muñoz" ;
-    foaf:homepage <http://trevormunoz.com/> .
-
-
-:person:RenearA
-    a foaf:Person ;
-    owl:sameAs viaf:311203806, orcid:0000-0001-5384-4467 ;
-    foaf:givenname "Allen H." ;
-    foaf:surname "Renear" ;
-    foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
-
 
 :reading:Palmer2013
     a :Reading, bibo:AcademicArticle ;
