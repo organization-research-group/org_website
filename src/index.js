@@ -8,6 +8,7 @@ const fs = require('fs')
     , meetings = require('./meetings')
     , entities = require('./entities')
     , { renderArchive, renderDirectory, renderMain } = require('./html')
+    , { renderFeed } = require('./feed')
 
 const GRAPH_FILE = path.join(__dirname, '..', 'graph.ttl')
 
@@ -38,5 +39,6 @@ async function createWebsiteArchive() {
   mill.entry({ name: 'index.html' }, '' + await renderMain(grist))
   mill.entry({ name: 'archive.html' }, '' + await renderArchive(grist))
   mill.entry({ name: 'directory.html' }, '' + renderDirectory(grist))
+  mill.entry({ name: 'feed.json' }, '' + await renderFeed(grist))
   mill.pipe(process.stdout);
 }

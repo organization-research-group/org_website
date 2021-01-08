@@ -12,6 +12,7 @@ module.exports = {
   renderMain,
   renderArchive,
   renderDirectory,
+  renderMeeting,
 }
 
 function zeroPad(num) {
