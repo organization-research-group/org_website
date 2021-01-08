@@ -7347,33 +7347,33 @@
 
 
 
-# didn't investigate owl:sameAs
 :person:PalmerC
     a foaf:Person ;
-    foaf:givenname "Carol L." ;
+    owl:sameAs viaf:93754580, orcid:0000-0001-7420-3765 ;
+    foaf:givenname "Carole L." ;
     foaf:surname "Palmer" ;
     foaf:workInfoHomepage <http://faculty.washington.edu/clpalmer/> .
 
 
-# didn't investigate owl:sameAs
 :person:WeberN
     a foaf:Person ;
+    owl:sameAs orcid:0000-0002-6008-3763 ;
     foaf:givenname "Nicholas M." ;
     foaf:surname "Weber" ;
     foaf:homepage <http://nicweber.info/> .
 
 
-# didn't investigate owl:sameAs
 :person:MunozT
     a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2616-8632 ;
     foaf:givenname "Trevor" ;
     foaf:surname "Muñoz" ;
     foaf:homepage <http://trevormunoz.com/> .
 
 
-# didn't investigate owl:sameAs
 :person:RenearA
     a foaf:Person ;
+    owl:sameAs viaf:311203806, orcid:0000-0001-5384-4467 ;
     foaf:givenname "Allen H." ;
     foaf:surname "Renear" ;
     foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
