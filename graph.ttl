@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2020-12-18,
         :meeting:2020-12-11,
         :meeting:2020-12-04,
         :meeting:2020-11-27,
@@ -3517,6 +3518,20 @@
         :reading:Siskin2016
     ) .
 
+:meeting:2020-12-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-12-18T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ebeling2016 ;
+    :schedule (
+        :reading:Ebeling2016
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3993,6 +4008,13 @@
     foaf:givenname "Margaret" ;
     foaf:surname "Drouhard" ;
     foaf:homepage <https://students.washington.edu/mdrouhar/> .
+
+:person:EbelingM
+    a foaf:Person ;
+    owl:sameAs viaf:185148389412210711367, orcid:0000-0003-4208-7098 ;
+    foaf:givenname "Mary F. E." ;
+    foaf:surname "Ebeling" ;
+    foaf:homepage <https://maryebeling.net> .
 
 :person:EdwardsP
     a foaf:Person ;
@@ -6196,6 +6218,18 @@
     ] ;
     bibo:pages "1137-1160" ;
     bibo:doi "10.1016/j.artint.2007.10.012" .
+
+:reading:Ebeling2016
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.1057/978-1-137-50221-6> ;
+    bibo:doi "10.1057/978-1-137-50221-6" ;
+    dc:title "Healthcare and Big Data: Digital Specters and Phantom Objects" ;
+    dc:creator :person:EbelingM ;
+    bibo:authorList (
+        :person:EbelingM
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:Palgrave .
 
 :reading:Emerson2014
     a :Reading, bibo:Book ;
