@@ -34,6 +34,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-01-22,
+        :meeting:2021-01-15,
         :meeting:2021-01-08,
         :meeting:2020-12-18,
         :meeting:2020-12-11,
@@ -507,6 +509,12 @@
     foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2330-1643> ;
     bibo:issn "2330-1643" .
 
+:journal:JCA
+    a bibo:Journal ;
+    dc:title "Journal of Contemporary Archaeology" ;
+    foaf:homepage <https://journal.equinoxpub.com/JCA> ;
+    bibo:issn "2051-3437" .
+
 :journal:JCC
     a bibo:Journal ;
     dc:title "Journal of Computer-Mediated Communication" ;
@@ -607,6 +615,12 @@
     dc:title "Public Journal of Semiotics" ;
     foaf:homepage <http://pjos.org/> ;
     bibo:issn "1918-9907" .
+
+:journal:PNAS
+    a bibo:Journal ;
+    dc:title "Proceedings of the National Academy of Sciences" ;
+    foaf:homepage <https://www.pnas.org/> ;
+    bibo:issn "1091-6490" .
 
 :journal:RethinkingMarxism
     a bibo:Journal ;
@@ -3548,6 +3562,34 @@
         :reading:Brun2004b
     ) .
 
+:meeting:2021-01-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-15T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Farstadvoll2018 ;
+    :schedule (
+        :reading:Farstadvoll2018
+    ) .
+
+:meeting:2021-01-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-22T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Cleland2021 ;
+    :schedule (
+        :reading:Cleland2021
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3916,6 +3958,13 @@
     foaf:workInfoHomepage <http://www.depts.ttu.edu/english/general_info/directory/faculty_directory/faculty_profile_pages/clarke_detailed.php> ;
     foaf:homepage <http://www.faculty.english.ttu.edu/clarke/> .
 
+:person:ClelandC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8703-7580 ;
+    foaf:givenname "Carol E." ;
+    foaf:surname "Cleland" ;
+    foaf:homepage <https://sites.google.com/site/clelandce/> .
+
 :person:CliffL
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-2803-4512, viaf:63035107, wd:Q13515697 ;
@@ -4081,6 +4130,13 @@
     owl:sameAs viaf:274768820 ;
     foaf:givenname "Robert A." ;
     foaf:surname "Fairthorne" .
+
+:person:FarstadvollS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-6162-2063 ;
+    foaf:givenname "Stein" ;
+    foaf:surname "Farstadvoll" ;
+    foaf:homepage <https://www.researchgate.net/profile/Stein_Farstadvoll> .
 
 :person:FaziMB
     a foaf:Person ;
@@ -4275,6 +4331,13 @@
     foaf:givenname "N. Katherine" ;
     foaf:surname "Hayles" ;
     foaf:homepage <http://nkhayles.com/> .
+
+:person:HazenR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4163-8644, wd:Q7345349 ;
+    foaf:givenname "Robert M." ;
+    foaf:surname "Hazen" ;
+    foaf:homepage <http://hazen.carnegiescience.edu> .
 
 :person:HealyK
     a foaf:Person ;
@@ -4695,6 +4758,13 @@
     foaf:givenname "Evgeny" ;
     foaf:surname "Morozov" ;
     foaf:homepage <https://www.evgenymorozov.com> .
+
+:person:MorrisonS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-1712-8057 ;
+    foaf:givenname "Shaunna M." ;
+    foaf:surname "Morrison" ;
+    foaf:homepage <https://sites.google.com/view/smmorrison/> .
 
 :person:MrazekR
     a foaf:Person ;
@@ -6148,6 +6218,26 @@
     bibo:pages "34-61" ;
     bibo:doi "10.1215/9780822391388-003" .
 
+:reading:Cleland2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1073/pnas.2015370118> ;
+    dc:title "Historical natural kinds and mineralogy: Systematizing contingency in the context of necessity" ;
+    bibo:shortTitle "Historical natural kinds and mineralogy" ;
+    dc:creator :person:ClelandC, :person:HazenR, :person:MorrisonS ;
+    bibo:authorList (
+        :person:ClelandC
+        :person:HazenR
+        :person:MorrisonS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:PNAS ;
+        bibo:issue "1" ;
+        bibo:volume "118"
+    ] ;
+    bibo:doi "10.1073/pnas.2015370118" .
+
 :reading:Cope2017
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.24242/jclis.v1i1.30> ;
@@ -6374,6 +6464,24 @@
     bibo:presentedAt :conference:OCCBCK ;
     bibo:reproducedIn :proceedings:ConceptualBasis1974 ;
     bibo:pages "404-415" .
+
+:reading:Farstadvoll2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1558/jca.35117> ;
+    dc:title "Growing Concerns: Plants and Their Roots in the Past" ;
+    dc:creator :person:FarstadvollS ;
+    bibo:authorList (
+        :person:FarstadvollS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:JCA ;
+        bibo:issue "5" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "174-193" ;
+    bibo:doi "10.1558/jca.35117" .
 
 :reading:Fazi2019
     a :Reading, bibo:AcademicArticle ;
