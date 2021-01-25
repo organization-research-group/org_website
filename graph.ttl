@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-01-29,
         :meeting:2021-01-22,
         :meeting:2021-01-15,
         :meeting:2021-01-08,
@@ -3590,6 +3591,20 @@
         :reading:Cleland2021
     ) .
 
+:meeting:2021-01-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-29T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ma2020 ;
+    :schedule (
+        :reading:Ma2020
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4635,6 +4650,12 @@
     foaf:givenname "Kalle" ;
     foaf:surname "Lyytinen" ;
     foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
+
+:person:MaY
+    a foaf:Person ;
+    foaf:givenname "Yuanye" ;
+    foaf:surname "Ma" ;
+    foaf:homepage <https://sites.google.com/view/yuanyem/> .
 
 :person:MachlupF
     a foaf:Person ;
@@ -7252,6 +7273,20 @@
         bibo:issue "12"
     ] ;
     bibo:doi "10.5210/fm.v22i12.8097" .
+
+:reading:Ma2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1002/asi.24441> ;
+    dc:title "Understanding information: Adding a non‐individualistic lens" ;
+    dc:creator :person:MaY ;
+    bibo:authorList (
+        :person:MaY
+    ) ;
+    dc:isPartOf [
+        dc:date "30 December 2020" ;
+        dc:isPartOf :journal:JASIST ;
+    ] ;
+    bibo:doi "10.1002/asi.24441" .
 
 :reading:MacKenzie2002
     a :Reading, bibo:Book ;
