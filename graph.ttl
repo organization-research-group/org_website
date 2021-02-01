@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-02-05,
         :meeting:2021-01-29,
         :meeting:2021-01-22,
         :meeting:2021-01-15,
@@ -3605,6 +3606,20 @@
         :reading:Ma2020
     ) .
 
+:meeting:2021-02-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-05T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Collier2008 ;
+    :schedule (
+        :reading:Collier2008
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -3618,6 +3633,13 @@
     foaf:givenname "Amelia" ;
     foaf:surname "Acker" ;
     foaf:homepage <http://www.ameliaacker.com/> .
+
+:person:AdriaansP
+    a foaf:Person ;
+    owl:sameAs wd:Q93239622, viaf:32918925 ;
+    foaf:givenname "Pieter" ;
+    foaf:surname "Adriaans" ;
+    foaf:homepage <https://www.pieter-adriaans.com> .
 
 :person:AgreP
     a foaf:Person ;
@@ -3986,6 +4008,12 @@
     foaf:givenname "Clifford" ;
     foaf:surname "Lynch" ;
     foaf:workInfoHomepage <http://people.ischool.berkeley.edu/~clifford/> .
+
+:person:CollierJ
+    a foaf:Person ;
+    foaf:givenname "John" ;
+    foaf:surname "Collier" ;
+    foaf:homepage <https://www.researchgate.net/profile/John_Collier4> .
 
 :person:ComberR
     a foaf:Person ;
@@ -5292,6 +5320,13 @@
     foaf:givenname "Ellen" ;
     foaf:surname "Ullman" .
 
+:person:VanBenthemJ
+    a foaf:Person ;
+    owl:sameAs wd:Q1692111, viaf:94809147 ;
+    foaf:givenname "Johan" ;
+    foaf:surname "van Benthem" ;
+    foaf:homepage <https://staff.fnwi.uva.nl/j.vanbenthem/> .
+
 :person:VanDijkJ
     a foaf:Person ;
     foaf:givenname "Jelle" ;
@@ -5564,6 +5599,11 @@
     a :Publisher ;
     foaf:name "Edinburgh University Press" ;
     address:localityName "Edinburgh" .
+
+:publisher:Elsevier
+    a :Publisher ;
+    foaf:name "Elsevier" ;
+    address:localityName "Amsterdam" .
 
 :publisher:FUP
     a :Publisher ;
@@ -6258,6 +6298,18 @@
         bibo:volume "118"
     ] ;
     bibo:doi "10.1073/pnas.2015370118" .
+
+:reading:Collier2008
+    a :Reading, bibo:BookSection ;
+    dc:title "Information in biological systems" ;
+    dc:creator :person:CollierJ ;
+    bibo:authorList (
+        :person:CollierJ
+    ) ;
+    dc:isPartOf :volume:Adriaans2008 ;
+    bibo:pages "763-787" ;
+    owl:sameAs <https://doi.org/10.1016/B978-0-444-51726-5.50024-8> ;
+    bibo:doi "10.1016/B978-0-444-51726-5.50024-8" .
 
 :reading:Cope2017
     a :Reading, bibo:AcademicArticle ;
@@ -8506,6 +8558,20 @@
     ] ;
     bibo:pages "69–71" ;
     bibo:doi "10.1145/1572626.1572641" .
+
+:volume:Adriaans2008
+    a bibo:EditedBook ;
+    dc:title "Handbook of the Philosophy of Science. Volume 8: Philosophy of Information" ;
+    dc:date "2008" ;
+    dc:publisher :publisher:Elsevier ;
+    bibo:editor :person:AdriaansP, :person:VanBenthemJ ;
+    bibo:editorList (
+        :person:AdriaansP
+        :person:VanBenthemJ
+    ) ;
+    owl:sameAs <https://doi.org/10.1016/C2009-0-16481-4> ;
+    bibo:doi "10.1016/C2009-0-16481-4" ;
+    bibo:isbn13 "978-0-444-51726-5" .
 
 :volume:Becker1982
     a bibo:Book ;
