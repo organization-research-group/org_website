@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-02-12,
         :meeting:2021-02-05,
         :meeting:2021-01-29,
         :meeting:2021-01-22,
@@ -3620,6 +3621,20 @@
         :reading:Collier2008
     ) .
 
+:meeting:2021-02-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-12T11:30:00-0500"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Keller2000 ;
+    :schedule (
+        :reading:Keller2000
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4512,6 +4527,13 @@
     foaf:givenname "Hiroshi" ;
     foaf:surname "Kawakami" ;
     foaf:homepage <http://www.design.kyoto-u.ac.jp/members/kawakami/index.html> .
+
+:person:KellerE
+    a foaf:Person ;
+    owl:sameAs wd:Q239131, viaf:66491296 ;
+    foaf:givenname "Evelyn Fox" ;
+    foaf:surname "Keller" ;
+    foaf:workInfoHomepage <https://sts-program.mit.edu/people/emeriti-faculty/evelyn-fox-keller/> .
 
 :person:KellyM
     a foaf:Person ;
@@ -5624,6 +5646,11 @@
     a :Publisher ;
     foaf:name "Houghton Mifflin Harcourt" ;
     address:localityName "Boston" .
+
+:publisher:HUP
+    a :Publisher ;
+    foaf:name "Harvard University Press" ;
+    address:localityName "Cambridge, MA" .
 
 :publisher:IEEComputerSociety
     a :Publisher ;
@@ -7101,6 +7128,17 @@
     ] ;
     bibo:pages "101-112" ;
     bibo:doi "10.1007/s00146-007-0125-2" .
+
+:reading:Keller2000
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/43810893> ;
+    dc:title "The century of the gene" ;
+    dc:creator :person:KellerE ;
+    bibo:authorList (
+        :person:KellerE
+    ) ;
+    dc:date "2000" ;
+    dc:publisher :publisher:HUP .
 
 :reading:Keyes2019
     a :Reading, :ConferencePaper ;
