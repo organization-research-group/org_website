@@ -55,6 +55,54 @@
 	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
+:BookSectionShape
+    a sh:NodeShape ;
+    rdfs:label "Book section" ;
+    sh:targetClass bibo:BookSection ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Author ,
+        :Translator ,
+        :PageRange ,
+        :InBook ,
+        :DOI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:closed true .
+
+:ConferencePaperShape
+    a sh:NodeShape ;
+    rdfs:label "Conference paper" ;
+    sh:targetClass org:ConferencePaper ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Author ,
+        :PageRange ,
+        :InProceedings ,
+        :PresentedAt ,
+        :DOI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:closed true .
+
+:LectureShape
+    a sh:NodeShape ;
+    rdfs:label "Lecture" ;
+    sh:targetClass org:Lecture ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Author ,
+        :Created ,
+        :Issued ,
+        :Format ,
+        :URI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:closed true .
+
 #-- Auxiliary node shapes
 
 :ConferenceShape
@@ -67,6 +115,25 @@
         :Datestring ,
         :Homepage ;
 	sh:ignoredProperties ( rdf:type ) ;
+    sh:closed true .
+
+:EditedVolumeShape
+    a sh:NodeShape ;
+    rdfs:label "Edited volume" ;
+    sh:targetClass bibo:EditedBook ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Edition ,
+        :Editor ,
+        :Datestring ,
+        :Publisher ,
+        :ISBN10 ,
+        :ISBN13 ,
+        :URI ,
+        :DOI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :JournalShape
@@ -147,6 +214,12 @@
     sh:node :PersonShape ;
     sh:nodeKind sh:IRI .
 
+:Created
+    sh:path dc:created ;
+    sh:name "creation date" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
 :Datestring
     sh:path dc:date ;
     sh:name "date" ;
@@ -172,6 +245,12 @@
     sh:node :PersonShape ;
     sh:nodeKind sh:IRI .
 
+:Format
+    sh:path dc:format ;
+    sh:name "format" ;
+    sh:optional true ;
+    sh:datatype xsd:string .
+
 :GivenName
     sh:path foaf:givenname ;
     sh:name "given name" ;
@@ -184,6 +263,15 @@
     sh:optional true ;
     sh:nodeKind sh:IRI .
 
+:InBook
+    sh:name "in book" ;
+    sh:path dc:isPartOf ;
+    sh:or (
+        :BookShape
+        :EditedVolumeShape
+    ) ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
 :InJournalIssue
     sh:path dc:isPartOf ;
     sh:name "in issue" ;
@@ -195,6 +283,12 @@
     sh:name "in journal" ;
     sh:node :JournalShape ;
     sh:nodeKind sh:IRI .
+
+:InProceedings
+    sh:path bibo:reproducedIn ;
+    sh:name "in proceedings" ;
+    sh:node :ProceedingsShape ;
+    sh:nodeKind sh:BlankNodeOrIRI .
 
 :ISBN10
     sh:path bibo:isbn10 ;
@@ -218,6 +312,29 @@
     sh:optional true ;
     sh:datatype xsd:string .
 
+:Issued
+    sh:path dc:issued ;
+    sh:name "issued date" ;
+    sh:maxCount 1 ;
+    sh:optional true ;
+    sh:datatype xsd:string .
+
+:Issuer
+    sh:path bibo:issuer ;
+    sh:name "issuer" ;
+    sh:maxCount 1 ;
+    sh:optional true ;
+    sh:node [
+        a sh:NodeShape ;
+        rdfs:label "Issuing organization" ;
+        sh:property
+            :SingleName ,
+            :URI ;
+        sh:ignoredProperties ( rdf:type ) ;
+        sh:closed true
+    ] ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
 :Page
     sh:path foaf:page ;
     sh:name "page" ;
@@ -236,11 +353,20 @@
     sh:maxCount 1 ;
     sh:datatype xsd:string .
 
+:PresentedAt
+    sh:path bibo:presentedAt ;
+    sh:name "presented at" ;
+    sh:node :ConferenceShape ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
 :Publisher
     sh:path dc:publisher ;
     sh:name "publisher" ;
     sh:optional true ;
-    sh:node ( :PublisherShape :JournalShape ) ;
+    sh:or (
+        :PublisherShape
+        :JournalShape
+    ) ;
     sh:nodeKind sh:IRI .
 
 :Publications
