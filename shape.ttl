@@ -16,7 +16,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Conference
+:ConferenceShape
     a sh:NodeShape ;
     rdfs:label "Conference shape" ;
     sh:targetClass bibo:Conference ;
@@ -28,7 +28,7 @@
 	sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
-:Journal
+:JournalShape
     a sh:NodeShape ;
     rdfs:label "A journal, with published volumes and issues" ;
     sh:targetClass bibo:Journal ;
@@ -40,7 +40,7 @@
 	sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
-:Person
+:PersonShape
     a sh:NodeShape ;
     rdfs:label "A person" ;
     sh:targetClass foaf:Person ;
@@ -56,7 +56,23 @@
 	sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
-:Publisher
+:ProceedingsShape
+    a sh:NodeShape ;
+    rdfs:label "Conference proceedings" ;
+    sh:targetClass bibo:Proceedings ;
+    sh:property
+        :Title ,
+        :Datestring ,
+        :Editor ,
+        :DOI ,
+        :ISBN10 ,
+        :ISBN13 ,
+        :URI ,
+        :Publisher ;
+	sh:ignoredProperties ( rdf:type bibo:editorList ) ;
+    sh:closed true .
+
+:PublisherShape
     a sh:NodeShape ;
     rdfs:label "Publisher shape" ;
     sh:targetClass org:Publisher ;
@@ -75,6 +91,18 @@
     sh:maxCount 1 ;
     sh:datatype xsd:string .
 
+:DOI
+    sh:path bibo:doi ;
+    sh:name "DOI" ;
+    sh:datatype xsd:string .
+
+:Editor
+    sh:path bibo:editor ;
+    sh:name "editor" ;
+    sh:optional true ;
+    sh:node :PersonShape ;
+    sh:nodeKind sh:IRI .
+
 :GivenName
     sh:path foaf:givenname ;
     sh:name "given name" ;
@@ -86,6 +114,16 @@
     sh:name "homepage" ;
     sh:optional true ;
     sh:nodeKind sh:IRI .
+
+:ISBN10
+    sh:path bibo:isbn10 ;
+    sh:name "ISBN-10" ;
+    sh:datatype xsd:string .
+
+:ISBN13
+    sh:path bibo:isbn13 ;
+    sh:name "ISBN-13" ;
+    sh:datatype xsd:string .
 
 :ISSN
     sh:path bibo:issn ;
@@ -103,6 +141,13 @@
     sh:name "place" ;
     sh:maxCount 1 ;
     sh:datatype xsd:string .
+
+:Publisher
+    sh:path dc:publisher ;
+    sh:name "publisher" ;
+    sh:optional true ;
+    sh:node ( :PublisherShape :JournalShape ) ;
+    sh:nodeKind sh:IRI .
 
 :Publications
     sh:path foaf:publications ;
@@ -146,6 +191,11 @@
     sh:path dc:title ;
     sh:name "title" ;
     sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:URI
+    sh:path bibo:uri ;
+    sh:name "uri" ;
     sh:datatype xsd:string .
 
 :WorkHomepage
