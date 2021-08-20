@@ -728,7 +728,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-07-24T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-07-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -741,7 +741,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-07-30T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-07-30T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hjorland2015 ;
@@ -756,7 +756,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-08-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-08-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Clark1996 ;
@@ -771,7 +771,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-08-28T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-08-28T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Latour2012 ;
@@ -786,7 +786,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-09-04T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-09-04T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Day2014 ;
@@ -801,7 +801,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-09-11T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-09-11T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -814,7 +814,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-09-18T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-09-18T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Acker2015 ;
@@ -828,7 +828,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-09-25T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-09-25T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Blair2004 ;
@@ -842,7 +842,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2015-10-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2015-10-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Wobbrock2009 ;
@@ -856,7 +856,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-02-12T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-02-12T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Star1995 ;
@@ -870,7 +870,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-02-19T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-02-19T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Fairthorne1974 ;
@@ -884,7 +884,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-02-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-02-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Geiger2011 ;
@@ -898,7 +898,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-03-04T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-03-04T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -911,7 +911,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-03-25T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-03-25T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -924,7 +924,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-04-01T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-04-01T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -937,7 +937,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-04-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-04-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Fidler2016 ;
@@ -951,7 +951,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-04-22T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-04-22T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -964,7 +964,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-05-20T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-05-20T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Monteiro2012 ;
@@ -978,7 +978,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-05-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-05-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rieder2016 ;
@@ -992,7 +992,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-06-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-06-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Galey2010 ;
@@ -1006,7 +1006,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-06-10T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-06-10T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Star1989, :reading:Griesemer2016 ;
@@ -1021,7 +1021,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-06-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-06-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Shavit2011 ;
@@ -1035,7 +1035,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-06-24T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-06-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Feenberg2015 ;
@@ -1049,7 +1049,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-07-01T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-07-01T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Medina2011 ;
@@ -1064,7 +1064,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-07-08T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-07-08T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Leahu2016 ;
@@ -1078,7 +1078,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-07-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-07-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Barad2003 ;
@@ -1092,7 +1092,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-07-29T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-07-29T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Chun2016 ;
@@ -1106,7 +1106,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-08-05T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-08-05T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rouvroy2011 ;
@@ -1120,7 +1120,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-08-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-08-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1133,7 +1133,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-09-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-09-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Plantin2016 ;
@@ -1147,7 +1147,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-09-09T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-09-09T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Furner2016 ;
@@ -1161,7 +1161,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-09-16T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-09-16T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Verhoeven2014 ;
@@ -1175,7 +1175,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-09-23T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-09-23T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Kreiss2011 ;
@@ -1189,7 +1189,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-09-30T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-09-30T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hui2016 ;
@@ -1203,7 +1203,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-10-07T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-10-07T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Haraway2016 ;
@@ -1217,7 +1217,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-10-14T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-10-14T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Parikka2015 ;
@@ -1231,7 +1231,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-10-28T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-10-28T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Marcus2016 ;
@@ -1245,7 +1245,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-11-04T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-11-04T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Genosko2016 ;
@@ -1259,7 +1259,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-11-11T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-11-11T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 ;
@@ -1282,7 +1282,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-11-18T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-11-18T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Agre1994a, :reading:Mai2016 ;
@@ -1297,7 +1297,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-12-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-12-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 ;
@@ -1314,7 +1314,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2016-12-09T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2016-12-09T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Holmes2002, :reading:Rose1999 ;
@@ -1329,7 +1329,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-01-13T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-01-13T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1342,7 +1342,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-01-20T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-01-20T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1355,7 +1355,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-01-27T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-01-27T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:RoblesAnderson2016 ;
@@ -1369,7 +1369,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-02-03T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-02-03T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1382,7 +1382,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-02-10T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-02-10T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1395,7 +1395,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-02-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-02-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Cope2017, :reading:Gorichanaz2017 ;
@@ -1410,7 +1410,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-03-03T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-03-03T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Smith2016, :reading:Feinberg2017 ;
@@ -1425,7 +1425,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-03-10T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-03-10T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Passi2017 ;
@@ -1439,7 +1439,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-03-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-03-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hayles2016 ;
@@ -1453,7 +1453,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-03-24T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-03-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bratus2011 ;
@@ -1467,7 +1467,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-03-31T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-03-31T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Dennett2002 ;
@@ -1481,7 +1481,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-04-14T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-04-14T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stenner2016 ;
@@ -1495,7 +1495,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-04-21T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-04-21T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1508,7 +1508,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-04-28T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-04-28T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Flynn1997 ;
@@ -1522,7 +1522,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-05-05T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-05-05T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Dreyfus2007 ;
@@ -1536,7 +1536,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-05-12T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-05-12T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1549,7 +1549,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-05-19T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-05-19T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ciborra2004 ;
@@ -1563,7 +1563,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-05-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-05-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1576,7 +1576,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-06-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-06-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ciborra2004, :reading:Askey2017 ;
@@ -1591,7 +1591,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-06-09T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-06-09T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Nofre2014 ;
@@ -1605,7 +1605,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-06-23T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-06-23T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Wakkary2017 ;
@@ -1619,7 +1619,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-06-30T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-06-30T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Poitou1997 ;
@@ -1633,7 +1633,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-07-07T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-07-07T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Abbate2017, :reading:Turner2017 ;
@@ -1648,7 +1648,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-07-21T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-07-21T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Siegert2014 ;
@@ -1662,7 +1662,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-07-28T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-07-28T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Siegert2014 ;
@@ -1676,7 +1676,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-08-18T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-08-18T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Tenen2017 ;
@@ -1690,7 +1690,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-08-25T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-08-25T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Daston2017 ;
@@ -1704,7 +1704,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-09-01T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-09-01T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Emerson2014 ;
@@ -1718,7 +1718,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-09-08T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-09-08T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Boland2017 ;
@@ -1732,7 +1732,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-09-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-09-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bernstein1991 ;
@@ -1746,7 +1746,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-09-22T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-09-22T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Wittkower2016, :reading:Gibson1979 ;
@@ -1761,7 +1761,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-09-29T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-09-29T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Evans2016 ;
@@ -1775,7 +1775,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-10-06T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-10-06T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Levine2015 ;
@@ -1789,7 +1789,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-10-13T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-10-13T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Losee2015 ;
@@ -1803,7 +1803,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-10-27T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-10-27T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bowers1991, :reading:Healy2017 ;
@@ -1818,7 +1818,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-11-03T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-11-03T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Dork2014, :reading:Sack2000 ;
@@ -1833,7 +1833,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-11-10T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-11-10T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Simmel2014, :reading:Simmel1950 ;
@@ -1848,7 +1848,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-11-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-11-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1861,7 +1861,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-12-08T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-12-08T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Tsing2015 ;
@@ -1875,7 +1875,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2017-12-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2017-12-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Lynch2017 ;
@@ -1889,7 +1889,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-01-05T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-01-05T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Alcoff1997 ;
@@ -1903,7 +1903,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-01-12T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-01-12T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bratton2016 ;
@@ -1917,7 +1917,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-01-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-01-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Gorichanaz2016 ;
@@ -1931,7 +1931,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-02-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-02-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1944,7 +1944,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-02-09T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-02-09T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Miles2001 ;
@@ -1958,7 +1958,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-02-16T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-02-16T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Russell2014 ;
@@ -1972,7 +1972,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-02-23T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-02-23T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Naur1992 ;
@@ -1986,7 +1986,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-03-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-03-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -1999,7 +1999,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-03-09T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-03-09T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Harris2015 ;
@@ -2013,7 +2013,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-03-16T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-03-16T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Pickering1995, :reading:Waldstein2008 ;
@@ -2028,7 +2028,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-03-23T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-03-23T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Noble2018 ;
@@ -2042,7 +2042,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-03-30T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-03-30T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Noble2017, :reading:Noble2018 ;
@@ -2057,7 +2057,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-04-06T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-04-06T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:VanDoorn2017 ;
@@ -2071,7 +2071,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-04-13T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-04-13T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2084,7 +2084,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-04-20T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-04-20T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Tennis2013 ;
@@ -2098,7 +2098,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-04-27T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-04-27T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Mackenzie2017, :reading:Packer2018 ;
@@ -2113,7 +2113,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-05-04T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-05-04T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Salter2015 ;
@@ -2127,7 +2127,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-05-18T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-05-18T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Irani2018 ;
@@ -2141,7 +2141,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-05-25T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-05-25T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stevenson2016 ;
@@ -2155,7 +2155,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-06-01T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-06-01T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Benardou2017 ;
@@ -2170,7 +2170,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-06-08T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-06-08T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ribes2017 ;
@@ -2184,7 +2184,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-06-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-06-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomas2018 ;
@@ -2198,7 +2198,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-06-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-06-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomas2018 ;
@@ -2212,7 +2212,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-07-06T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-07-06T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomas2018 ;
@@ -2226,7 +2226,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-07-13T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-07-13T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomas2018, :reading:Smith2011 ;
@@ -2241,7 +2241,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-07-20T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-07-20T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomas2018 ;
@@ -2255,7 +2255,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-08-03T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-08-03T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomas2018, :reading:Grossberg2016 ;
@@ -2270,7 +2270,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-08-10T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-08-10T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Law2013 ;
@@ -2284,7 +2284,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-08-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-08-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2297,7 +2297,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-08-24T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-08-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Mrazek2002a ;
@@ -2311,7 +2311,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-08-31T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-08-31T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2324,7 +2324,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-09-07T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-09-07T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Mrazek2002b ;
@@ -2338,7 +2338,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-09-14T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-09-14T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2351,7 +2351,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-09-21T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-09-21T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:FletcherWatson2018 ;
@@ -2365,7 +2365,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-09-28T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-09-28T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2378,7 +2378,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-10-05T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-10-05T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stoler2009 ;
@@ -2392,7 +2392,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-10-12T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-10-12T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:McLuhan1967 ;
@@ -2406,7 +2406,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-10-19T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-10-19T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2419,7 +2419,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-10-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-10-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ingold2007 ;
@@ -2433,7 +2433,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-11-02T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-11-02T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2446,7 +2446,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-11-09T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-11-09T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:DeMarco2007 ;
@@ -2461,7 +2461,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-11-16T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-11-16T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2474,7 +2474,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-11-23T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-11-23T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2487,7 +2487,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-11-30T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-11-30T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2500,7 +2500,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-12-07T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-12-07T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Lee2018 ;
@@ -2514,7 +2514,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-12-14T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-12-14T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2527,7 +2527,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2018-12-21T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2018-12-21T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bernstein2018 ;
@@ -2541,7 +2541,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-01-11T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-01-11T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Fazi2019 ;
@@ -2555,7 +2555,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-01-18T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-01-18T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:VonFoerster2002a, :reading:Clarke2009a, :reading:Clarke2009b ;
@@ -2571,7 +2571,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-01-25T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-01-25T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:SpencerBrown1969 ;
@@ -2585,7 +2585,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-02-01T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-02-01T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Becker1982a ;
@@ -2599,7 +2599,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-02-08T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-02-08T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:VonFoerster2002b, :reading:VonFoerster2002c, :reading:Clarke2009a, :reading:Clarke2009b ;
@@ -2616,7 +2616,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-02-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-02-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Grimmelmann2019 ;
@@ -2630,7 +2630,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-02-22T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-02-22T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2643,7 +2643,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-03-22T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-03-22T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Lury2014 ;
@@ -2657,7 +2657,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-04-05T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-04-05T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bendell2018, :reading:Keyes2019 ;
@@ -2672,7 +2672,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-04-12T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-04-12T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Iliadis2013 ;
@@ -2686,7 +2686,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-04-19T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-04-19T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Oyama2000 ;
@@ -2700,7 +2700,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-04-26T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-04-26T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2713,7 +2713,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-05-10T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-05-10T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:MacKenzie2002, :reading:Styhre2010 ;
@@ -2728,7 +2728,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-05-17T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-05-17T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Shaw2019, :reading:Ribes2019 ;
@@ -2743,7 +2743,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-05-24T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-05-24T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Iliadis2019 ;
@@ -2757,7 +2757,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-08-23T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-08-23T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Katai2007 ;
@@ -2771,7 +2771,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-08-30T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-08-30T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Mackenzie2018 ;
@@ -2785,7 +2785,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-09-06T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-09-06T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2798,7 +2798,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-09-13T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-09-13T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Lyman1995 ;
@@ -2812,7 +2812,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-09-20T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-09-20T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Amoore2015 ;
@@ -2826,7 +2826,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-09-27T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-09-27T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2839,7 +2839,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-10-04T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-10-04T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Morozov2019 ;
@@ -2853,7 +2853,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-10-18T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-10-18T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Sack2019 ;
@@ -2867,7 +2867,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-10-25T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-10-25T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Sack2019 ;
@@ -2881,7 +2881,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-11-01T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-11-01T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Canguilhem2010 ;
@@ -2895,7 +2895,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-11-15T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-11-15T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Orr1996 ;
@@ -2909,7 +2909,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2019-11-22T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2019-11-22T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Garfinkel2008 ;
@@ -2923,7 +2923,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-01-17T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-01-17T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -2936,7 +2936,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-01-24T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-01-24T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rieder2018, :reading:Anderson2019 ;
@@ -2951,7 +2951,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-01-31T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-01-31T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Hui2019ch4 ;
@@ -2965,7 +2965,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-02-07T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-02-07T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Escobar2018intro, :reading:Escobar2018ch3 ;
@@ -2980,7 +2980,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-02-14T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-02-14T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Escobar2018ch5, :reading:Escobar2018ch6 ;
@@ -2995,7 +2995,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-02-21T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-02-21T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3008,7 +3008,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-02-28T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-02-28T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Roth2015, :reading:Lash2016 ;
@@ -3023,7 +3023,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-03-06T11:00:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-03-06T11:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3036,7 +3036,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-03-13T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-03-13T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Mirowski2017 ;
@@ -3050,7 +3050,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-03-20T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-03-20T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3063,7 +3063,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-03-27T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-03-27T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stevenson2020 ;
@@ -3077,7 +3077,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-04-03T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-04-03T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ullman1997 ;
@@ -3091,7 +3091,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-04-10T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-04-10T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Polt2019 ;
@@ -3105,7 +3105,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-04-17T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-04-17T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Polt2019 ;
@@ -3119,7 +3119,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-05-01T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-05-01T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bucher2020, :reading:Nancy2000 ;
@@ -3134,7 +3134,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-05-08T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-05-08T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Gilbert2014 ;
@@ -3148,7 +3148,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-05-15T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-05-15T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Gilbert2014 ;
@@ -3162,7 +3162,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-05-29T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-05-29T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3175,7 +3175,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-06-05T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-06-05T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Koopman2019 ;
@@ -3189,7 +3189,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-06-12T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-06-12T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Koopman2019 ;
@@ -3203,7 +3203,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-06-19T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-06-19T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rieder2020, :reading:Finn2020 ;
@@ -3218,7 +3218,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-06-26T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-06-26T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rieder2020 ;
@@ -3232,7 +3232,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-07-03T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-07-03T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Rieder2020 ;
@@ -3246,7 +3246,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-07-10T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-07-10T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Amoore2020 ;
@@ -3260,7 +3260,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-07-17T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-07-17T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Amoore2020 ;
@@ -3274,7 +3274,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-07-24T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-07-24T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Amoore2020 ;
@@ -3288,7 +3288,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-07-31T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-07-31T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3301,7 +3301,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-08-07T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-08-07T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3314,7 +3314,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-08-14T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-08-14T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3327,7 +3327,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-08-21T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-08-21T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Bender2020 ;
@@ -3349,7 +3349,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-08-21T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-08-21T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Machlup1983 ;
@@ -3363,7 +3363,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-09-04T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-09-04T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stawarska2020 ;
@@ -3377,7 +3377,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-09-18T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-09-18T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thompson2020 ;
@@ -3391,7 +3391,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-09-25T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-09-25T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Couldry2019, :reading:Calzati2020 ;
@@ -3406,7 +3406,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-10-09T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-10-09T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Thomer2020 ;
@@ -3420,7 +3420,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-10-16T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-10-16T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3433,7 +3433,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-10-23T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-10-23T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3446,7 +3446,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-10-30T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-10-30T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Buneman2008, :reading:Palmer2013 ;
@@ -3461,7 +3461,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-11-06T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-11-06T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:WinthropYoung2014 ;
@@ -3475,7 +3475,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-11-13T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-11-13T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3488,7 +3488,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-11-20T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-11-20T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3501,7 +3501,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-11-27T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-11-27T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     :schedule (
@@ -3514,7 +3514,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-12-04T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-12-04T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Brower2020 ;
@@ -3528,7 +3528,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-12-11T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-12-11T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Siskin2016 ;
@@ -3542,7 +3542,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2020-12-18T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2020-12-18T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ebeling2016 ;
@@ -3556,7 +3556,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2021-01-08T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2021-01-08T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Brun2004a, :reading:Brun2004b ;
@@ -3571,7 +3571,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2021-01-15T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2021-01-15T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Farstadvoll2018 ;
@@ -3585,7 +3585,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2021-01-22T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2021-01-22T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Cleland2021 ;
@@ -3599,7 +3599,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2021-01-29T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2021-01-29T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Ma2020 ;
@@ -3613,7 +3613,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2021-02-05T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2021-02-05T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Collier2008 ;
@@ -3627,7 +3627,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2021-02-12T11:30:00-0500"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2021-02-12T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Keller2000 ;

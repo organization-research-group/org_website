@@ -15,7 +15,7 @@ meeting_ttl_template = '''
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "{date}T11:30:00-0{offset}00"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "{date}T11:30:00-0{offset}:00"^^xsd:dateTimeStamp
         ]
     ]'''
 
