@@ -16,6 +16,27 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+#-- Shapes for general schedule
+
+:MeetingShape
+    a sh:NodeShape ;
+    rdfs:label "ORG meeting" ;
+    sh:targetClass org:Meeting ;
+    sh:property [
+        sh:path lode:involved ;
+        sh:or (
+            :AcademicArticleShape
+            :ArticleShape
+            :BookShape
+            :BookSectionShape
+            :ConferencePaperShape
+            :LectureShape
+            :PersonShape
+        )
+    ] ;
+	sh:ignoredProperties ( rdf:type lode:atTime org:schedule org:postedLinks ) ;
+    sh:closed true .
+
 #-- Shapes for types of readings
 
 :AcademicArticleShape
