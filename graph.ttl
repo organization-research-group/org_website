@@ -5546,11 +5546,6 @@
     dc:publisher :publisher:ACM ;
     bibo:isbn10 "1-58113-420-7" .
 
-:proceedings:IFLAS
-    a bibo:Proceedings ;
-    dc:title "IFLAS Occasional Papers" ;
-    bibo:uri "https://www.cumbria.ac.uk/research/centres/iflas/" .
-
 :proceedings:IRI2015
     a bibo:Proceedings ;
     dc:title "Proceedings of the 2015 IEEE International Conference on Information Reuse and Integration" ;
@@ -5982,14 +5977,18 @@
     bibo:pages "1–14" .
 
 :reading:Bendell2018
-    a :Reading, bibo:ConferencePaper ; # This was an academic article, but it was in a proceedings?
+    a :Reading, bibo:Article ;
     dc:title "Deep Adaptation: A Map for Navigating Climate Tragedy" ;
     dc:date "2018" ;
     dc:creator :person:BendellJ ;
     bibo:authorList (
         :person:BendellJ
     ) ;
-    dc:isPartOf :proceedings:IFLAS ;
+    bibo:issuer [
+        a foaf:Organization ;
+        foaf:name "IFLAS Occasional Papers" ;
+        bibo:uri "https://www.cumbria.ac.uk/research/centres/iflas/"
+    ] ;
     bibo:uri "http://web.archive.org/web/20190112162910/http://www.lifeworth.com/deepadaptation.pdf" .
 
 :reading:Bender2020

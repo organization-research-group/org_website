@@ -34,6 +34,22 @@
 	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
+:ArticleShape
+    a sh:NodeShape ;
+    rdfs:label "Some kind of published article" ;
+    sh:targetClass bibo:Article ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Datestring ,
+        :Author ,
+        :Issuer ,
+        :URI ,
+        :DOI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:closed true .
+
 :BookShape
     a sh:NodeShape ;
     rdfs:label "Book" ;
