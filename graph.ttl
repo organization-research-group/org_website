@@ -6898,9 +6898,9 @@
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
+        dc:date "January 14, 2019" ;
         dc:isPartOf :journal:PJLI
     ] ;
-    dc:date "January 14, 2019" ;
     bibo:uri "https://ssrn.com/abstract=3315703" .
 
 :reading:Grossberg2016
@@ -7015,9 +7015,9 @@
     bibo:authorList (
         :person:HolmesB
     ) ;
-    dc:date "January 2002" ;
     dc:isPartOf [
         a bibo:Issue ;
+        dc:date "January 2002" ;
         dc:isPartOf :journal:transversals
     ] ;
     bibo:uri "http://eipcp.net/transversal/1106/holmes/en" .
@@ -7064,18 +7064,18 @@
 
 :reading:Iliadis2019
     a :Reading, bibo:AcademicArticle ;
-    owl:sameas <https://doi.org/10.2139/ssrn.3326315> ;
+    owl:sameAs <https://doi.org/10.2139/ssrn.3326315> ;
     dc:title "The Tower of Babel Problem: Making Data Make Sense with Basic Formal Ontology" ;
-    dc:shortTitle "The Tower of Babel Problem" ;
+    bibo:shortTitle "The Tower of Babel Problem" ;
     dc:creator :person:IliadisA ;
     bibo:authorList (
         :person:IliadisA
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
+        dc:date "January 31, 2019" ;
         dc:isPartOf :journal:OIR
     ] ;
-    dc:date "January 31, 2019" ;
     bibo:doi "10.2139/ssrn.3326315" .
 
 :reading:Ingold2007
@@ -7274,8 +7274,13 @@
         :person:RobinsonL
         :person:BawdenD
     ) ;
-    dc:date "28 November 2018" ;
-    dc:isPartOf :journal:JASIST ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "28 November 2018" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:volume "70" ;
+        bibo:issue "3"
+    ] ;
     bibo:doi "10.1002/asi.24120" .
 
 :reading:Levine2015
@@ -7617,9 +7622,9 @@
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
+        dc:date "2017/03/13" ;
         dc:isPartOf :journal:EducauseReview
     ] ;
-    dc:date "2017/03/13" ;
     bibo:uri "https://er.educause.edu/articles/2017/3/out-of-the-black-box" .
 
 :reading:Noble2018
@@ -7691,9 +7696,9 @@
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
+        dc:date "2018-04-13" ;
         dc:isPartOf :journal:GoogleDevelopersBlog
     ] ;
-    dc:date "2018-04-13" ;
     bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
 
 :reading:Palmer2013
@@ -7708,9 +7713,9 @@
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
+        dc:date "June 2013" ;
         dc:isPartOf :journal:ArchiveJournal
     ] ;
-    dc:date "June 2013" ;
     bibo:uri "https://www.archivejournal.net/essays/foundations-of-data-curation-the-pedagogy-and-practice-of-purposeful-work-with-research-data/" .
 
 :reading:Parikka2015
