@@ -5982,7 +5982,7 @@
     bibo:pages "1–14" .
 
 :reading:Bendell2018
-    a :Reading, bibo:AcademicArticle ;
+    a :Reading, bibo:ConferencePaper ; # This was an academic article, but it was in a proceedings?
     dc:title "Deep Adaptation: A Map for Navigating Climate Tragedy" ;
     dc:date "2018" ;
     dc:creator :person:BendellJ ;
