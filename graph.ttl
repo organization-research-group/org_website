@@ -401,7 +401,7 @@
 :journal:CulturalPolitics
     a bibo:Journal ;
     dc:title "Cultural Politics" ;
-    foaf:homeapge <https://read.dukeupress.edu/cultural-politics> ;
+    foaf:homepage <https://read.dukeupress.edu/cultural-politics> ;
     bibo:issn "1751-7435" .
 
 :journal:CulturalStudies
