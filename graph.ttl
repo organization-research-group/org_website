@@ -8786,7 +8786,7 @@
     bibo:shortTitle "The study of information" ;
     dc:date "1983" ;
     dc:publisher :publisher:Wiley ;
-    dc:editor :person:MachlupF, :person:MansfieldU ;
+    bibo:editor :person:MachlupF, :person:MansfieldU ;
     bibo:editorList (
         :person:MachlupF
         :person:MansfieldU
