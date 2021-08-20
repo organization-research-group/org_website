@@ -1,0 +1,157 @@
+@prefix : <http://orgorgorgorgorg.org/shape#> .
+@prefix org: <http://orgorgorgorgorg.org/graph#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Conference
+    a sh:NodeShape ;
+    rdfs:label "Conference shape" ;
+    sh:targetClass bibo:Conference ;
+    sh:property
+        :Title ,
+        :Place ,
+        :Datestring ,
+        :Homepage ;
+	sh:ignoredProperties ( rdf:type ) ;
+    sh:closed true .
+
+:Journal
+    a sh:NodeShape ;
+    rdfs:label "A journal, with published volumes and issues" ;
+    sh:targetClass bibo:Journal ;
+    sh:property
+        :Title ,
+        :ShortTitle ,
+        :Homepage ,
+        :ISSN ;
+	sh:ignoredProperties ( rdf:type ) ;
+    sh:closed true .
+
+:Person
+    a sh:NodeShape ;
+    rdfs:label "A person" ;
+    sh:targetClass foaf:Person ;
+    sh:property
+        :SameAs ,
+        :GivenName ,
+        :SuffixName ,
+        :Surname ,
+        :Publications ,
+        :Homepage ,
+        :Page ,
+        :WorkHomepage ;
+	sh:ignoredProperties ( rdf:type ) ;
+    sh:closed true .
+
+:Publisher
+    a sh:NodeShape ;
+    rdfs:label "Publisher shape" ;
+    sh:targetClass org:Publisher ;
+    sh:property
+        :SingleName ,
+        :Place ;
+	sh:ignoredProperties ( rdf:type ) ;
+    sh:closed true .
+
+
+#-- Properties
+
+:Datestring
+    sh:path dc:date ;
+    sh:name "date" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:GivenName
+    sh:path foaf:givenname ;
+    sh:name "given name" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:Homepage
+    sh:path foaf:homepage ;
+    sh:name "homepage" ;
+    sh:optional true ;
+    sh:nodeKind sh:IRI .
+
+:ISSN
+    sh:path bibo:issn ;
+    sh:name "ISSN" ;
+    sh:datatype xsd:string .
+
+:Page
+    sh:path foaf:page ;
+    sh:name "page" ;
+    sh:optional true ;
+    sh:nodeKind sh:IRI .
+
+:Place
+    sh:path address:localityName ;
+    sh:name "place" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:Publications
+    sh:path foaf:publications ;
+    sh:name "publiactions" ;
+    sh:optional true ;
+    sh:nodeKind sh:IRI .
+
+:SameAs
+    sh:path owl:sameAs ;
+    sh:name "same as" ;
+    sh:optional true ;
+    sh:nodeKind sh:IRI .
+
+:ShortTitle
+    sh:path bibo:shortTitle ;
+    sh:name "short title" ;
+    sh:optional true ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:SingleName
+    sh:path foaf:name ;
+    sh:name "name" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:SuffixName
+    sh:path bibo:suffixName ;
+    sh:name "suffix name" ;
+    sh:optional true ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:Surname
+    sh:path foaf:surname ;
+    sh:name "surname" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:Title
+    sh:path dc:title ;
+    sh:name "title" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
+
+:WorkHomepage
+    sh:path foaf:workInfoHomepage ;
+    sh:name "homepage" ;
+    sh:maxCount 1 ;
+    sh:optional true ;
+    sh:nodeKind sh:IRI .
+
