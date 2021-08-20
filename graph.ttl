@@ -5892,7 +5892,7 @@
     a :Reading, bibo:Book ;
     owl:sameAs <https://doi.org/10.1215/9781478009276> ;
     dc:title "Cloud ethics: Algorithms and the attributes of ourselves and others" ;
-    dc:shortTitle "Cloud ethics" ;
+    bibo:shortTitle "Cloud ethics" ;
     dc:creator :person:AmooreL ;
     bibo:authorList (
         :person:AmooreL
@@ -6099,7 +6099,7 @@
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.7551/mitpress/9780262029575.001.0001> ;
     dc:title "The stack: On software and sovereignty" ;
-    dc:shortTitle "The stack" ;
+    bibo:shortTitle "The stack" ;
     dc:creator :person:BrattonB ;
     bibo:authorList (
         :person:BrattonB
@@ -6359,7 +6359,7 @@
 :reading:Couldry2019
     a :Reading, bibo:Book ;
     dc:title "Costs of connection: How data is colonizing human life and appropriating it for capitalism" ;
-    dc:shortTitle "Costs of connection" ;
+    bibo:shortTitle "Costs of connection" ;
     dc:creator :person:CouldryN, :person:MejiasU ;
     bibo:authorList (
         :person:CouldryN
@@ -7662,7 +7662,7 @@
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/34906105> ;
     dc:title "Talking About Machines: An Ethnography of a Modern Job" ;
-    dc:shortTitle "Talking About Machines" ;
+    bibo:shortTitle "Talking About Machines" ;
     dc:creator :person:OrrJ ;
     bibo:authorList (
         :person:OrrJ
@@ -7675,7 +7675,7 @@
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/873479453> ;
     dc:title "The Ontogeny of Information: Developmental Systems and Evolution" ;
-    dc:shortTitle "The Ontogeny of Information" ;
+    bibo:shortTitle "The Ontogeny of Information" ;
     dc:creator :person:OyamaS ;
     bibo:authorList (
         :person:OyamaS
@@ -7751,7 +7751,7 @@
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/832588301> ;
     dc:title "The Mangle of Practice: Time, Agency, and Science" ;
-    dc:shortTitle "The Mangle of Practice" ;
+    bibo:shortTitle "The Mangle of Practice" ;
     dc:creator :person:PickeringA ;
     bibo:authorList (
         :person:PickeringA
@@ -7973,7 +7973,7 @@
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1080/07421222.2000.11045652> ;
     dc:title "Conversation Map: An Interface for Very Large-Scale Conversations" ;
-    dc:shortTitle "Conversation Map" ;
+    bibo:shortTitle "Conversation Map" ;
     dc:creator :person:SackW ;
     bibo:authorList (
         :person:SackW
@@ -8003,7 +8003,7 @@
 :reading:Salter2015
     a :Reading, bibo:Book ;
     dc:title "Alien agency: experimental encounters with art in the making" ;
-    dc:shortTitle "Alien agency" ;
+    bibo:shortTitle "Alien agency" ;
     dc:creator :person:SalterC ;
     bibo:authorList (
         :person:SalterC
@@ -8083,7 +8083,7 @@
 :reading:Siskin2016
     a :Reading, bibo:Book ;
     dc:title "System: The shaping of modern knowledge" ;
-    dc:shortTitle "System" ;
+    bibo:shortTitle "System" ;
     dc:creator :person:SiskinC ;
     bibo:authorList (
         :person:SiskinC
@@ -8178,7 +8178,7 @@
 :reading:Stawarska2020
     a :Reading, bibo:Book ;
     dc:title "Saussure's linguistics, structuralism, and phenomenology: The <i>Course in General Linguistics</i> after a century" ;
-    dc:shortTitle "Saussure's linguistics, structuralism, and phenomenology" ;
+    bibo:shortTitle "Saussure's linguistics, structuralism, and phenomenology" ;
     dc:creator :person:StawarskaB ;
     bibo:authorList (
         :person:StawarskaB
@@ -8229,7 +8229,7 @@
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1080/24701475.2020.1725854> ;
     dc:title "Legacy systems: Internet histories of the abandoned, discontinued and forgotten" ;
-    dc:shortTitle "Legacy systems" ;
+    bibo:shortTitle "Legacy systems" ;
     dc:creator :person:StevensonM, :person:HelmondA ;
     bibo:authorList (
         :person:StevensonM
@@ -8247,7 +8247,7 @@
 :reading:Stoler2009
     a :Reading, bibo:Book ;
     dc:title "Along the Archival Grain: Epistemic Anxieties and Colonial Common Sense" ;
-    dc:shortTitle "Along the Archival Grain" ;
+    bibo:shortTitle "Along the Archival Grain" ;
     dc:creator :person:StolerAL ;
     bibo:authorList (
         :person:StolerAL
@@ -8786,7 +8786,7 @@
 :volume:Machlup1983
     a bibo:EditedBook ;
     dc:title "The study of information: Interdisciplinary messages" ;
-    dc:shortTitle "The study of information" ;
+    bibo:shortTitle "The study of information" ;
     dc:date "1983" ;
     dc:publisher :publisher:Wiley ;
     dc:editor :person:MachlupF, :person:MansfieldU ;
@@ -8798,7 +8798,7 @@
 :volume:Mrazek2002
     a bibo:Book ;
     dc:title "Engineers of Happy Land: Technology and Nationalism in a Colony" ;
-    dc:shortTitle "Engineers of Happy Land" ;
+    bibo:shortTitle "Engineers of Happy Land" ;
     dc:date "2002" ;
     dc:publisher :publisher:PUP ;
     dc:creator :person:MrazekR ;
@@ -8810,7 +8810,7 @@
 :volume:Pickering2008
     a bibo:EditedBook ;
     dc:title "The Mangle in Practice: Science, Society, and Becoming" ;
-    dc:shortTitle "The Mangle in Practice" ;
+    bibo:shortTitle "The Mangle in Practice" ;
     dc:date "2008" ;
     dc:publisher :publisher:DUP ;
     bibo:editor :person:PickeringA, :person:GuzikK ;
