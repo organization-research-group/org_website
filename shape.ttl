@@ -34,6 +34,27 @@
 	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
+:BookShape
+    a sh:NodeShape ;
+    rdfs:label "Book" ;
+    sh:targetClass bibo:Book ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Edition ,
+        :Author ,
+        :Editor ,
+        :Translator ,
+        :Datestring ,
+        :Publisher ,
+        :ISBN10 ,
+        :ISBN13 ,
+        :URI ,
+        :DOI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:closed true .
+
 #-- Auxiliary node shapes
 
 :ConferenceShape
@@ -135,6 +156,13 @@
 :DOI
     sh:path bibo:doi ;
     sh:name "DOI" ;
+    sh:optional true ;
+    sh:datatype xsd:string .
+
+:Edition
+    sh:path bibo:edition ;
+    sh:name "edition" ;
+    sh:optional true ;
     sh:datatype xsd:string .
 
 :Editor
@@ -258,6 +286,13 @@
     sh:name "title" ;
     sh:maxCount 1 ;
     sh:datatype xsd:string .
+
+:Translator
+    sh:path bibo:translator ;
+    sh:name "translator" ;
+    sh:optional true ;
+    sh:node :PersonShape ;
+    sh:nodeKind sh:IRI .
 
 :URI
     sh:path bibo:uri ;
