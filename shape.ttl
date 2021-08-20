@@ -16,6 +16,26 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+#-- Shapes for types of readings
+
+:AcademicArticleShape
+    a sh:NodeShape ;
+    rdfs:label "Academic article" ;
+    sh:targetClass bibo:AcademicArticle ;
+    sh:property
+        :SameAs ,
+        :Title ,
+        :ShortTitle ,
+        :Author ,
+        :InJournalIssue ,
+        :PageRange ,
+        :URI ,
+        :DOI ;
+	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:closed true .
+
+#-- Auxiliary node shapes
+
 :ConferenceShape
     a sh:NodeShape ;
     rdfs:label "Conference shape" ;
@@ -38,6 +58,20 @@
         :Homepage ,
         :ISSN ;
 	sh:ignoredProperties ( rdf:type ) ;
+    sh:closed true .
+
+:JournalIssueShape
+    a sh:NodeShape ;
+    rdfs:label "A journal issue" ;
+    sh:targetClass bibo:Issue ;
+    sh:property
+        :Datestring ,
+        :InJournal ,
+        :Editor ,
+        :Issue ,
+        :URI ,
+        :Volume ;
+	sh:ignoredProperties ( rdf:type bibo:editorList ) ;
     sh:closed true .
 
 :PersonShape
@@ -85,6 +119,13 @@
 
 #-- Properties
 
+:Author
+    sh:path dc:creator ;
+    sh:name "author" ;
+    sh:optional true ;
+    sh:node :PersonShape ;
+    sh:nodeKind sh:IRI .
+
 :Datestring
     sh:path dc:date ;
     sh:name "date" ;
@@ -115,6 +156,18 @@
     sh:optional true ;
     sh:nodeKind sh:IRI .
 
+:InJournalIssue
+    sh:path dc:isPartOf ;
+    sh:name "in issue" ;
+    sh:node :JournalIssueShape ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+:InJournal
+    sh:path dc:isPartOf ;
+    sh:name "in journal" ;
+    sh:node :JournalShape ;
+    sh:nodeKind sh:IRI .
+
 :ISBN10
     sh:path bibo:isbn10 ;
     sh:name "ISBN-10" ;
@@ -130,11 +183,24 @@
     sh:name "ISSN" ;
     sh:datatype xsd:string .
 
+:Issue
+    sh:path bibo:issue ;
+    sh:name "issue" ;
+    sh:maxCount 1 ;
+    sh:optional true ;
+    sh:datatype xsd:string .
+
 :Page
     sh:path foaf:page ;
     sh:name "page" ;
     sh:optional true ;
     sh:nodeKind sh:IRI .
+
+:PageRange
+    sh:path bibo:pages ;
+    sh:name "page range" ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string .
 
 :Place
     sh:path address:localityName ;
@@ -196,6 +262,13 @@
 :URI
     sh:path bibo:uri ;
     sh:name "uri" ;
+    sh:datatype xsd:string .
+
+:Volume
+    sh:path bibo:volume ;
+    sh:name "volume" ;
+    sh:maxCount 1 ;
+    sh:optional true ;
     sh:datatype xsd:string .
 
 :WorkHomepage
