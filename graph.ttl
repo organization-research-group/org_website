@@ -7030,11 +7030,10 @@
         :person:HuiY
     ) ;
     dc:date "2016" ;
-    dc:language "English" ;
     dc:publisher :publisher:UMP ;
     bibo:isbn13 "978-1-4529-4993-2" ;
     bibo:uri "https://muse.jhu.edu/book/45372" ;
-    bibo:doi: "10.5749/minnesota/9780816695515.001.0001" .
+    bibo:doi "10.5749/minnesota/9780816695515.001.0001" .
 
 :reading:Hui2019ch4
     a :Reading, bibo:BookSection ;
