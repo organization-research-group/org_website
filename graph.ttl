@@ -8673,8 +8673,7 @@
         :person:ClarkeA
         :person:BalkaE
     ) ;
-    bibo:isbn13 "978-0-262-02974-2", "978-0-262-52808-5" ;
-    bibo:lccn "BD175 B675 2015" .
+    bibo:isbn13 "978-0-262-02974-2", "978-0-262-52808-5" .
 
 :volume:Brun2004
     a bibo:EditedBook ;
