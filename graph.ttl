@@ -4381,7 +4381,7 @@
     owl:sameAs viaf:98310436, wd:Q67259 ;
     foaf:givenname "Daniel R." ;
     foaf:surname "Harris" ;
-    foaf:page "https://scholar.google.com/citations?user=cd4XPCwAAAAJ" .
+    foaf:page <https://scholar.google.com/citations?user=cd4XPCwAAAAJ> .
 
 :person:HaylesN
     a foaf:Person ;
