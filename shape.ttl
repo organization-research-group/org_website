@@ -247,7 +247,6 @@
 :Author
     sh:path dc:creator ;
     sh:name "author" ;
-    sh:optional true ;
     sh:node :PersonShape ;
     sh:nodeKind sh:IRI .
 
