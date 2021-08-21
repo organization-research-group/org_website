@@ -8361,7 +8361,7 @@
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1038/s41562-020-0924-8> ;
     dc:title "Cultural influences on word meanings revealed through large-scale semantic alignment" ;
-    dc:creator :person:ThompsonB, :person:RobertsSean, :person:LupyanG ;
+    dc:creator :person:ThompsonB, :person:RobertsS, :person:LupyanG ;
     bibo:authorList (
         :person:ThompsonB
         :person:RobertsS
