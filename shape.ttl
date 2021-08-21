@@ -34,7 +34,7 @@
             :PersonShape
         )
     ] ;
-	sh:ignoredProperties ( rdf:type lode:atTime org:schedule org:postedLinks ) ;
+    sh:ignoredProperties ( rdf:type lode:atTime org:schedule org:postedLinks ) ;
     sh:closed true .
 
 #-- Shapes for types of readings
@@ -53,7 +53,7 @@
         :URI ,
         :DOI ;
     sh:sparql :CreatorCreatorListEqualityContraint ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :ArticleShape
@@ -69,7 +69,7 @@
         :Issuer ,
         :URI ,
         :DOI ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :BookShape
@@ -90,7 +90,7 @@
         :ISBN13 ,
         :URI ,
         :DOI ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :BookSectionShape
@@ -106,7 +106,7 @@
         :PageRange ,
         :InBook ,
         :DOI ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :ConferencePaperShape
@@ -122,7 +122,7 @@
         :InProceedings ,
         :PresentedAt ,
         :DOI ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :LectureShape
@@ -138,7 +138,7 @@
         :Issued ,
         :Format ,
         :URI ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 #-- Auxiliary node shapes
@@ -152,7 +152,7 @@
         :Place ,
         :Datestring ,
         :Homepage ;
-	sh:ignoredProperties ( rdf:type ) ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
 :EditedVolumeShape
@@ -171,7 +171,7 @@
         :ISBN13 ,
         :URI ,
         :DOI ;
-	sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
 :JournalShape
@@ -183,7 +183,7 @@
         :ShortTitle ,
         :Homepage ,
         :ISSN ;
-	sh:ignoredProperties ( rdf:type ) ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
 :JournalIssueShape
@@ -197,7 +197,7 @@
         :Issue ,
         :URI ,
         :Volume ;
-	sh:ignoredProperties ( rdf:type bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:editorList ) ;
     sh:closed true .
 
 :PersonShape
@@ -213,7 +213,7 @@
         :Homepage ,
         :Page ,
         :WorkHomepage ;
-	sh:ignoredProperties ( rdf:type ) ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
 :ProceedingsShape
@@ -229,7 +229,7 @@
         :ISBN13 ,
         :URI ,
         :Publisher ;
-	sh:ignoredProperties ( rdf:type bibo:editorList ) ;
+    sh:ignoredProperties ( rdf:type bibo:editorList ) ;
     sh:closed true .
 
 :PublisherShape
@@ -239,7 +239,7 @@
     sh:property
         :SingleName ,
         :Place ;
-	sh:ignoredProperties ( rdf:type ) ;
+    sh:ignoredProperties ( rdf:type ) ;
     sh:closed true .
 
 
