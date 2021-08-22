@@ -502,24 +502,20 @@
     sh:message "Creators and author list must have identical objects" ;
     sh:prefixes :prefixes ;
     sh:select """
-SELECT ?reading
+SELECT ?reading ?missing
 WHERE {
     BIND($this AS ?reading)
 
-    OPTIONAL {
-      ?reading bibo:authorList/rdf:rest*/rdf:first ?creatorFromList
-      MINUS {
-        ?reading dc:creator ?creatorFromList
-      }
+    {
+      ?reading bibo:authorList/rdf:rest*/rdf:first ?missing
+      MINUS
+      { ?reading dc:creator ?missing }
     }
-
-    OPTIONAL {
-      ?reading dc:creator ?creator
-      MINUS {
-        ?reading bibo:authorList/rdf:rest*/rdf:first ?creator
-      }
+    UNION
+    {
+      ?reading dc:creator ?missing
+      MINUS
+      { ?reading bibo:authorList/rdf:rest*/rdf:first ?missing }
     }
 }
-GROUP BY ?reading
-HAVING (COUNT(?creator) > 0 || COUNT(?creatorFromList) > 0)
 """ .
