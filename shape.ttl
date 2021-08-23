@@ -52,7 +52,6 @@
         :PageRange ,
         :URI ,
         :DOI ;
-    sh:sparql :CreatorCreatorListEqualityContraint ;
     sh:ignoredProperties ( rdf:type bibo:authorList bibo:editorList ) ;
     sh:closed true .
 
@@ -479,43 +478,60 @@
 
 #-- SPARQL constraints
 
-:prefixes sh:declare
-    [
-        sh:prefix "org" ;
-        sh:namespace "http://orgorgorgorgorg.org/graph#"^^xsd:anyURI
-    ] ,
-    [
-        sh:prefix "bibo" ;
-        sh:namespace "http://purl.org/ontology/bibo/"^^xsd:anyURI
-    ] ,
-    [
-        sh:prefix "dc" ;
-        sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI
-    ] ,
-    [
-        sh:prefix "rdf" ;
-        sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
-    ] .
+:AuthorListMatchShape
+    a sh:NodeShape ;
+    sh:targetClass org:Reading ;
+    :unorderedPredicate dc:creator ;
+    :listPredicate bibo:authorList .
 
-:CreatorCreatorListEqualityContraint
-    a sh:SPARQLConstraint ;
-    sh:message "Creators and author list must have identical objects" ;
-    sh:prefixes :prefixes ;
-    sh:select """
-SELECT ?reading ?missing
+:EditorListMatchShape
+    a sh:NodeShape ;
+    sh:targetClass org:Reading ;
+    :unorderedPredicate bibo:editor ;
+    :listPredicate bibo:editorList .
+
+:ListMatchConstraintComponent
+	a sh:ConstraintComponent ;
+	rdfs:label "List exact match constraint component" ;
+	sh:parameter [
+		sh:path :unorderedPredicate ;
+		sh:name "unordered predicate" ;
+		sh:description "Unordered object predicate" ;
+	] ;
+	sh:parameter [
+		sh:path :listPredicate ;
+		sh:name "ordered list predicate" ;
+		sh:description "Ordered list predicate" ;
+	] ;
+	sh:labelTemplate "Unordered predicates and list must be an exact match between {?listPredicate} and {?unorderedPredicate}" ;
+	sh:nodeValidator
+        [
+            a sh:SPARQLSelectValidator ;
+            sh:prefixes [
+                sh:declare [
+                    sh:prefix "rdf" ;
+                    sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI
+                ]
+            ] ;
+            sh:message "{?missing} is not in both {?listPredicate} and {?unorderedPredicate}" ;
+            sh:select """
+SELECT ?missing ?listPredicate ?unorderedPredicate
 WHERE {
-    BIND($this AS ?reading)
-
     {
-      ?reading bibo:authorList/rdf:rest*/rdf:first ?missing
-      MINUS
-      { ?reading dc:creator ?missing }
+        $this $listPredicate ?head .
+        ?head rdf:rest*/rdf:first ?missing
+        MINUS {
+            $this $unorderedPredicate ?missing
+        }
     }
     UNION
     {
-      ?reading dc:creator ?missing
-      MINUS
-      { ?reading bibo:authorList/rdf:rest*/rdf:first ?missing }
+        $this $unorderedPredicate ?missing
+        MINUS {
+            $this $listPredicate ?head .
+            ?head rdf:rest*/rdf:first ?missing
+        }
     }
 }
-""" .
+"""
+        ] .
