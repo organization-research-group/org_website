@@ -8437,7 +8437,7 @@
     bibo:shortTitle "Doing the sheep good" ;
     dc:creator :person:VerhoevenD ;
     bibo:authorList (
-    :person:VerhoevenD
+        :person:VerhoevenD
     ) ;
     dc:isPartOf [
         a bibo:Issue ;
@@ -8445,7 +8445,7 @@
         dc:isPartOf :journal:AdvancingDigitalHumanities ;
         bibo:editorList (
             :person:ArthurP
-        :person:BodeK
+            :person:BodeK
         )
     ] ;
     bibo:pages "206-220" ;
