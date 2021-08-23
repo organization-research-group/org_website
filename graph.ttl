@@ -5784,7 +5784,7 @@
 
 :reading:Abbate2017
     a :Reading, bibo:AcademicArticle ;
-    # owl:sameAs <http://doi.org/10.1080/24701475.2017.1305836> ;
+    owl:sameAs <http://doi.org/10.1080/24701475.2017.1305836> ;
     dc:title "What and where is the Internet? (Re)defining Internet histories" ;
     dc:creator :person:AbbateJ ;
     bibo:authorList (
@@ -5792,8 +5792,7 @@
     ) ;
     dc:isPartOf :journal:InternetHistories:1:1-2 ;
     bibo:pages "8-14" ;
-    # DOI doesn't actually lead to the article, so just include the URI
-    bibo:uri "http://www.tandfonline.com/doi/abs/10.1080/24701475.2017.1305836" .
+    bibo:doi "10.1080/24701475.2017.1305836" .
 
 :reading:Acker2015
     a :Reading, bibo:AcademicArticle ;
