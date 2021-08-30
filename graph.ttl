@@ -34,6 +34,10 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-08-27,
+        :meeting:2021-08-20,
+        :meeting:2021-08-13,
+        :meeting:2021-08-06,
         :meeting:2021-02-12,
         :meeting:2021-02-05,
         :meeting:2021-01-29,
@@ -3633,6 +3637,60 @@
     lode:involved :reading:Keller2000 ;
     :schedule (
         :reading:Keller2000
+    ) .
+
+:meeting:2021-08-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-06T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2021-08-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-13T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Renn2020 ;
+    :schedule (
+        :reading:Renn2020
+    ) .
+
+:meeting:2021-08-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-20T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Renn2020 ;
+    :schedule (
+        :reading:Renn2020
+    ) .
+
+:meeting:2021-08-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-27T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Ryan's chapter on semiosis" ]
     ) .
 
 :person:AbbateJ
@@ -7805,6 +7863,27 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "47-50" ;
     bibo:doi "10.1007/BF01305844" .
+
+
+:reading:Renn2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.2307/j.ctvdf0kpk> ;
+    dc:title "The evolution of knowledge: Rethinking science for the Anthropocene" ;
+    bibo:shortTitle "The evolution of knowledge" ;
+    dc:creator :person:RennJ ;
+    bibo:authorList (
+        :person:RennJ
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:Princeton ;
+    bibo:doi "10.2307/j.ctvdf0kpk" .
+
+:person:RennJ
+    a foaf:Person ;
+    owl:sameAs viaf:59192489, wd:Q1717584, orcid:0000-0002-3681-2188 ;
+    foaf:givenname "Jürgen" ;
+    foaf:surname "Renn" ;
+    foaf:workInfoHomepage <https://www.mpg.de/331646/history-of-science-renn> .
 
 :reading:Ribes2017
     a :Reading, :ConferencePaper ;
