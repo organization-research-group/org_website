@@ -34,6 +34,12 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-03-26,
+        :meeting:2021-03-19,
+        :meeting:2021-03-12,
+        :meeting:2021-03-05,
+        :meeting:2021-02-26,
+        :meeting:2021-02-19,
         :meeting:2021-06-25,
         :meeting:2021-07-02,
         :meeting:2021-07-09,
@@ -3656,6 +3662,88 @@
         :reading:Keller2000
     ) .
 
+:meeting:2021-02-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ankeny2020 ;
+    :schedule (
+        :reading:Ankeny2020
+    ) .
+
+:meeting:2021-02-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Evan's paper on critical scholarship of AI" ]
+    ) .
+
+:meeting:2021-03-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-05T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rheinberger2010 ;
+    :schedule (
+        :reading:Rheinberger2010
+    ) .
+
+:meeting:2021-03-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-12T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-03-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rheinberger2010 ;
+    :schedule (
+        :reading:Rheinberger2010
+    ) .
+
+:meeting:2021-03-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DIgnazio2020 ;
+    :schedule (
+        :reading:DIgnazio2020
+    ) .
+
 :meeting:2021-06-25
     a :Meeting ;
     lode:atTime [
@@ -3846,6 +3934,13 @@
     foaf:givenname "Paul" ;
     foaf:surname "Anderson" ;
     foaf:workInfoHomepage <http://marinebiology.cofc.edu/about-the-program/faculty-listing/anderson-paul.php> .
+
+:person:AnkenyR
+    a foaf:Person ;
+    owl:sameAs viaf:75683838, wd:Q58450101, orcid:0000-0002-1547-6031 ;
+    foaf:givenname "Rachel" ;
+    foaf:surname "Ankeny" ;
+    foaf:workInfoHomepage <https://www.adelaide.edu.au/directory/rachel.ankeny> .
 
 :person:ArthurP
     a foaf:Person ;
@@ -4818,6 +4913,13 @@
     foaf:surname "Lee" ;
     foaf:homepage <https://poulencing.wixsite.com/deborahlee> .
 
+:person:LeonelliS
+    a foaf:Person ;
+    owl:sameAs viaf:90433686, wd:Q42617171, orcid:0000-0002-7815-6609 ;
+    foaf:givenname "Sabina" ;
+    foaf:surname "Leonelli" ;
+    foaf:workInfoHomepage <http://socialsciences.exeter.ac.uk/sociology/research/sts/egenis/staff/leonelli/> .
+
 :person:LevineC
     a foaf:Person ;
     foaf:givenname "Caroline" ;
@@ -5224,6 +5326,13 @@
     dc:title "Review of Communication" ;
     foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
     bibo:issn "1535-8593" .
+
+:person:RheinbergerH
+    a foaf:Person ;
+    owl:sameAs viaf:84204864, wd:Q1577590, orcid:0000-0003-3741-4250 ;
+    foaf:givenname "Hans-Jörg" ;
+    foaf:surname "Rheinberger" ;
+    foaf:workInfoHomepage <https://www.mpiwg-berlin.mpg.de/users/rheinbg> .
 
 :person:RibesD
     a foaf:Person ;
@@ -6125,6 +6234,19 @@
     bibo:pages "643-646" ;
     bibo:doi "10.1137/18M1183595" .
 
+:reading:Ankeny2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1017/9781108593014> ;
+    dc:title "Model Organisms" ;
+    dc:creator :person:AnkenyR, :person:LeonelliS ;
+    bibo:authorList (
+        :person:AnkenyR
+        :person:LeonelliS
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:CUP ;
+    bibo:doi "10.1017/9781108593014" .
+
 :reading:Askey2017
     a :Reading ;
     owl:sameAs <https://doi.org/10.18665/sr.303501> ;
@@ -6588,6 +6710,33 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "61-64" ;
     bibo:doi "10.1007/BF01305847" .
+
+:reading:DIgnazio2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/11805.001.0001> ;
+    dc:title "Data Feminism" ;
+    dc:creator :person:DIgnazio, :person:KleinL ;
+    bibo:authorList (
+        :person:DIgnazio
+        :person:KleinL
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/11805.001.0001" .
+
+:person:DIgnazio
+    a foaf:Person ;
+    owl:sameAs viaf:19151049887933411569, wd:Q96083446 ;
+    foaf:givenname "Catherine" ;
+    foaf:surname "D'Ignazio" ;
+    foaf:homepage <http://www.kanarinka.com/> .
+
+:person:KleinL
+    a foaf:Person ;
+    owl:sameAs viaf:134148389577810712856, wd:Q98502620, orcid:0000-0002-1511-0910 ;
+    foaf:givenname "Lauren F." ;
+    foaf:surname "Klein" ;
+    foaf:homepage <https://lklein.com/> .
 
 :reading:Damerow1996
     a :Reading, bibo:Book ;
@@ -8077,6 +8226,19 @@
     dc:date "2020" ;
     dc:publisher :publisher:Princeton ;
     bibo:doi "10.2307/j.ctvdf0kpk" .
+
+:reading:Rheinberger2010
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1215/9780822391333> ;
+    dc:title "An epistemology of the concrete: Twentieth-century histories of life" ;
+    bibo:shortTitle "An epistemology of the concrete" ;
+    dc:creator :person:RheinbergerH ;
+    bibo:authorList (
+        :person:RheinbergerH
+    ) ;
+    dc:date "2010" ;
+    dc:publisher :publisher:DUP ;
+    bibo:doi "10.1215/9780822391333" .
 
 :reading:Ribes2017
     a :Reading, :ConferencePaper ;
