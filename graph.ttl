@@ -34,6 +34,12 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-06-25,
+        :meeting:2021-07-02,
+        :meeting:2021-07-09,
+        :meeting:2021-07-16,
+        :meeting:2021-07-23,
+        :meeting:2021-07-30,
         :meeting:2021-08-27,
         :meeting:2021-08-20,
         :meeting:2021-08-13,
@@ -628,6 +634,17 @@
     dc:title "Proceedings of the National Academy of Sciences" ;
     foaf:homepage <https://www.pnas.org/> ;
     bibo:issn "1091-6490" .
+
+:journal:PhilosophyToday
+    a bibo:Journal ;
+    dc:title "Philosophy Today" ;
+    foaf:homepage <https://www.pdcnet.org/philtoday> ;
+    bibo:issn "2329-8596" .
+
+:journal:QuiParle
+    a bibo:Journal ;
+    dc:title "Qui Parle" ;
+    foaf:homepage <https://quiparle.berkeley.edu/> .
 
 :journal:RethinkingMarxism
     a bibo:Journal ;
@@ -3639,6 +3656,88 @@
         :reading:Keller2000
     ) .
 
+:meeting:2021-06-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-06-25T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2021 ;
+    :schedule (
+        :reading:Hui2021
+    ) .
+
+:meeting:2021-07-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2021-07-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Final edits for Melanie's book" ]
+    ) .
+
+:meeting:2021-07-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stevens2021 ;
+    :schedule (
+        :reading:Stevens2021
+    ) .
+
+:meeting:2021-07-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-23T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pasquinelli2021 ;
+    :schedule (
+        :reading:Pasquinelli2021
+    ) .
+
+:meeting:2021-07-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-30T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Damerow1996 ;
+    :schedule (
+        :reading:Damerow1996
+    ) .
+
 :meeting:2021-08-06
     a :Meeting ;
     lode:atTime [
@@ -4141,6 +4240,13 @@
     foaf:surname "Dallas" ;
     foaf:workInfoHomepage <https://ischool.utoronto.ca/profile/costis-dallas/> .
 
+:person:DamerowP
+    a foaf:Person ;
+    owl:sameAs viaf:266607140, wd:Q2074459 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Damerow" ;
+    foaf:workInfoHomepage <https://www.mpg.de/4987615/Infobox__Peter_Damerow> .
+
 :person:DastonL
     a foaf:Person ;
     owl:sameAs viaf:266876859, wd:Q529094 ;
@@ -4293,6 +4399,13 @@
     foaf:givenname "Sue" ;
     foaf:surname "Fletcher-Watson" ;
     foaf:workInfoHomepage <https://www.ed.ac.uk/profile/dr-sue-fletcher-watson> .
+
+:person:FloriniS
+    a foaf:Person ;
+    owl:sameAs viaf:309846384, orcid:0000-0002-8363-2622 ;
+    foaf:givenname "Sarah" ;
+    foaf:surname "Florini" ;
+    foaf:homepage <http://www.sarahflorini.com/> .
 
 :person:FlynnP
     a foaf:Person ;
@@ -4485,6 +4598,13 @@
     foaf:givenname "Birger" ;
     foaf:surname "Hjørland" .
 
+:person:HoffmannA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7950-804X ;
+    foaf:givenname "Anna Lauren" ;
+    foaf:surname "Hoffmann" ;
+    foaf:homepage <https://www.annaeveryday.com/> .
+
 :person:HoggD
     a foaf:Person ;
     foaf:givenname "David" ;
@@ -4612,6 +4732,11 @@
     foaf:givenname "Julie A." ;
     foaf:surname "Kientz" ;
     foaf:homepage <http://www.juliekientz.com/> .
+
+:person:Kluwer
+    a :Publisher ;
+    foaf:name "Kluwer Academic Publishers" ;
+    address:localityName "Dordrecht, The Netherlands" .
 
 :person:KoA
     a foaf:Person ;
@@ -4995,6 +5120,13 @@
     foaf:surname "Parikka" ;
     foaf:homepage <https://jussiparikka.net/> .
 
+:person:Pasquinelli
+    a foaf:Person ;
+    owl:sameAs viaf:249939473, wd:Q105492265, orcid: ;
+    foaf:givenname "Matteo" ;
+    foaf:surname "Pasquinelli" ;
+    foaf:homepage <http://matteopasquinelli.com/> .
+
 :person:PassiS
     a foaf:Person ;
     foaf:givenname "Samir" ;
@@ -5079,6 +5211,19 @@
     foaf:givenname "Allen H." ;
     foaf:surname "Renear" ;
     foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
+
+:person:RennJ
+    a foaf:Person ;
+    owl:sameAs viaf:59192489, wd:Q1717584, orcid:0000-0002-3681-2188 ;
+    foaf:givenname "Jürgen" ;
+    foaf:surname "Renn" ;
+    foaf:workInfoHomepage <https://www.mpg.de/331646/history-of-science-renn> .
+
+:person:ReviewOfCommunication
+    a bibo:Journal ;
+    dc:title "Review of Communication" ;
+    foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
+    bibo:issn "1535-8593" .
 
 :person:RibesD
     a foaf:Person ;
@@ -5290,6 +5435,13 @@
     foaf:givenname "Paul" ;
     foaf:surname "Stenner" ;
     foaf:homepage <http://www.open.ac.uk/people/ps7476> .
+
+:person:StevensN
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3811-9245 ;
+    foaf:givenname "Nikki" ;
+    foaf:surname "Stevens" ;
+    foaf:homepage <http://nikkistevens.com/> .
 
 :person:StevensonM
     a foaf:Person ;
@@ -6437,6 +6589,19 @@
     bibo:pages "61-64" ;
     bibo:doi "10.1007/BF01305847" .
 
+:reading:Damerow1996
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1007/978-94-015-8624-5> ;
+    dc:title "Abstraction and representation: Essays on the cultural evolution of thinking" ;
+    bibo:shortTitle "4" ;
+    dc:creator :person:DamerowP ;
+    bibo:authorList (
+        :person:DamerowP
+    ) ;
+    dc:date "1996" ;
+    dc:publisher :publisher:Kluwer ;
+    bibo:doi "10.1007/978-94-015-8624-5" .
+
 :reading:Daston2017
     a :Reading, :Lecture ;
     dc:title "Algorithms before computers: Patterns, recipes, and rules" ;
@@ -7099,6 +7264,24 @@
     bibo:authorList (
         :person:HuiY
     ) .
+
+:reading:Hui2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.5840/philtoday2021652392> ;
+    dc:title "Introduction: Philosophy after automation?" ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:PhilosophyToday ;
+        bibo:issue "2" ;
+        bibo:volume "65"
+    ] ;
+    bibo:pages "217-233" ;
+    bibo:doi "10.5840/philtoday2021652392" .
 
 :reading:Iliadis2013
     a :Reading, bibo:AcademicArticle ;
@@ -7786,6 +7969,24 @@
     bibo:isbn13 "978-1-4529-4456-2" ;
     bibo:doi "10.5749/minnesota/9780816695515.001.0001" .
 
+:reading:Pasquinelli2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/10418385-8955836> ;
+    dc:title "How to Make a Class: Hayek’s Neoliberalism and the Origins of Connectionism" ;
+    dc:creator :person:Pasquinelli ;
+    bibo:authorList (
+        :person:Pasquinelli
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:QuiParle ;
+        bibo:issue "1" ;
+        bibo:volume "30"
+    ] ;
+    bibo:pages "159-184" ;
+    bibo:doi "10.1215/10418385-8955836" .
+
 :reading:Passi2017
     a :Reading, :ConferencePaper ;
     # Add an additional field for "Online first" article (?)
@@ -7864,7 +8065,6 @@
     bibo:pages "47-50" ;
     bibo:doi "10.1007/BF01305844" .
 
-
 :reading:Renn2020
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.2307/j.ctvdf0kpk> ;
@@ -7877,13 +8077,6 @@
     dc:date "2020" ;
     dc:publisher :publisher:Princeton ;
     bibo:doi "10.2307/j.ctvdf0kpk" .
-
-:person:RennJ
-    a foaf:Person ;
-    owl:sameAs viaf:59192489, wd:Q1717584, orcid:0000-0002-3681-2188 ;
-    foaf:givenname "Jürgen" ;
-    foaf:surname "Renn" ;
-    foaf:workInfoHomepage <https://www.mpg.de/331646/history-of-science-renn> .
 
 :reading:Ribes2017
     a :Reading, :ConferencePaper ;
@@ -8281,6 +8474,26 @@
     ] ;
     bibo:pages "144–162" ;
     bibo:doi "10.1177/0959354316630619" .
+
+:reading:Stevens2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/15358593.2021.1934521> ;
+    dc:title "The unremarked optimum: whiteness, optimization, and control in the database revolution" ;
+    dc:creator :person:StevensN, :person:HoffmannA, :person:FloriniS ;
+    bibo:authorList (
+        :person:StevensN
+        :person:HoffmannA
+        :person:FloriniS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:ReviewOfCommunication ;
+        bibo:issue "2" ;
+        bibo:volume "21"
+    ] ;
+    bibo:pages "113-128" ;
+    bibo:doi "10.1080/15358593.2021.1934521" .
 
 :reading:Stevenson2016
     a :Reading, bibo:AcademicArticle ;
