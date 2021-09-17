@@ -8537,11 +8537,6 @@
     ] ;
     bibo:doi "10.1177/03063127211010972" .
 
-:reading:Putz2021
-    # FIXME: Update the details of this entry.
-    # Added automatically for meeting on 2021-05-21
-    a :Reading .
-
 :reading:Randall1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305844> ;
