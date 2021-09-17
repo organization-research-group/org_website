@@ -34,6 +34,10 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-05-28,
+        :meeting:2021-05-21,
+        :meeting:2021-05-14,
+        :meeting:2021-05-07,
         :meeting:2021-04-30,
         :meeting:2021-04-23,
         :meeting:2021-04-16,
@@ -489,6 +493,12 @@
     dc:title "Human Computer Interaction" ;
     foaf:homepage <http://www.tandfonline.com/toc/hhci20/current> ;
     bibo:issn "0737-0024" .
+
+:journal:HumanStudies
+    a bibo:Journal ;
+    dc:title "Human Studies" ;
+    foaf:homepage <https://www.springer.com/journal/10746> ;
+    bibo:issn "1572-851X" .
 
 :journal:IEEEAnnals
     a bibo:Journal ;
@@ -3825,6 +3835,60 @@
         :reading:Liu2021
     ) .
 
+:meeting:2021-05-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-07T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Watson2012 ;
+    :schedule (
+        :reading:Watson2012
+    ) .
+
+:meeting:2021-05-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-14T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-05-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Putz2021 ;
+    :schedule (
+        :reading:Putz2021
+    ) .
+
+:meeting:2021-05-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-28T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Chatting about ORG plans." ]
+    ) .
+
 :meeting:2021-06-25
     a :Meeting ;
     lode:atTime [
@@ -4273,6 +4337,13 @@
     owl:sameAs viaf:61709255, wd:Q4963278 ;
     foaf:givenname "Brian" ;
     foaf:surname "Cantwell Smith" .
+
+:person:CarlinA
+    a foaf:Person ;
+    owl:sameAs viaf:758159234797003372836, wd:Q59827449, orcid:0000-0001-5138-9384 ;
+    foaf:givenname "Andrew P." ;
+    foaf:surname "Carlin" ;
+    foaf:page <https://scholar.google.com/citations?user=TXowshwAAAAJ> .
 
 :person:CarrierM
     a foaf:Person ;
@@ -5049,6 +5120,13 @@
     foaf:surname "Lien" ;
     foaf:workInfoHomepage <https://www.sv.uio.no/sai/english/people/aca/marianel/> .
 
+:person:LiuL
+    a foaf:Person ;
+    owl:sameAs viaf:2639260, wd:Q55171446 ;
+    foaf:givenname "Lydia H." ;
+    foaf:surname "Liu" ;
+    foaf:workInfoHomepage <http://ealac.columbia.edu/lydia-h-liu/> .
+
 :person:LocastoM
     a foaf:Person ;
     foaf:givenname "Michael E." ;
@@ -5416,6 +5494,12 @@
     foaf:givenname "Mark" ;
     foaf:surname "Priestley" ;
     foaf:homepage <http://markpriestley.net> .
+
+:person:PutzO
+    a foaf:Person ;
+    owl:sameAs viaf:182027285, orcid:0000-0002-5286-9571 ;
+    foaf:givenname "Ole" ;
+    foaf:surname "Pütz" .
 
 :person:RandallD
     a foaf:Person ;
@@ -5845,6 +5929,13 @@
     foaf:givenname "Maxim" ;
     foaf:surname "Waldstein" ;
     foaf:page <https://auc.academia.edu/MaximWaldstein> .
+
+:person:WatsonR
+    a foaf:Person ;
+    owl:sameAs viaf:147150325514110090006 ;
+    foaf:givenname "Rod" ;
+    foaf:surname "Watson" ;
+    foaf:page <http://emcawiki.net/bibtex/browser.php?author=Rod+Watson&bib=emca.bib> .
 
 :person:WeberN
     a foaf:Person ;
@@ -7850,13 +7941,6 @@
     bibo:pages "425-455" ;
     bibo:doi "10.1086/713551" .
 
-:person:LiuL
-    a foaf:Person ;
-    owl:sameAs viaf:2639260, wd:Q55171446 ;
-    foaf:givenname "Lydia H." ;
-    foaf:surname "Liu" ;
-    foaf:workInfoHomepage <http://ealac.columbia.edu/lydia-h-liu/> .
-
 :reading:Losee2015
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/asi.23544> ;
@@ -8377,6 +8461,26 @@
     dc:date "2019" ;
     dc:publisher :publisher:RowmanLittlefield ;
     bibo:isbn13 "978-1-78661-050-8" .
+
+:reading:Putz2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/03063127211010972> ;
+    dc:title "Managing exactness and vagueness in computer science work: Programming and self-repair in meetings" ;
+    dc:creator :person:PutzO ;
+    bibo:authorList (
+        :person:PutzO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:SocStudSci
+    ] ;
+    bibo:doi "10.1177/03063127211010972" .
+
+:reading:Putz2021
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2021-05-21
+    a :Reading .
 
 :reading:Randall1994
     a :Reading, bibo:AcademicArticle ;
@@ -9130,6 +9234,24 @@
     ) ;
     dc:isPartOf :volume:Pickering2008 ;
     bibo:doi "10.1215/9780822390107-010" .
+
+:reading:Watson2012
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s10746-012-9233-1> ;
+    dc:title "‘Information’: Praxeological considerations" ;
+    dc:creator :person:WatsonR, :person:CarlinA ;
+    bibo:authorList (
+        :person:WatsonR
+        :person:CarlinA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2012" ;
+        dc:isPartOf :journal:HumanStudies ;
+        bibo:volume "35"
+    ] ;
+    bibo:pages "327-345" ;
+    bibo:doi "10.1007/s10746-012-9233-1" .
 
 :reading:Winograd1987
     a :Reading, bibo:AcademicArticle ;
