@@ -6241,12 +6241,13 @@
     dc:publisher :publisher:IEEE ;
     bibo:isbn13 "978-1-4673-6656-4" .
 
-:proceedings:Onward2015
+:proceedings:Onward2014
     a bibo:Proceedings ;
     dc:title "Onward! 2014: Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software" ;
     dc:date "2014" ;
     dc:publisher :publisher:IEEE ;
-    bibo:doi "10.1145/2661136" .
+    bibo:doi "10.1145/2661136" ;
+    bibo:isbn13 "978-1-4503-3210-1" .
 
 :proceedings:PODS08
     a bibo:Proceedings ;
@@ -7501,8 +7502,8 @@
         :person:GabrielR
     ) ;
     bibo:reproducedIn :proceedings:Onward2014 ;
-    bibo:reproducedIn :conference:Onward2014 ;
-    bibo:pages 301-319 ;
+    bibo:presentedAt :conference:Onward2014 ;
+    bibo:pages "301-319" ;
     bibo:doi "10.1145/2661136.2661155" .
 
 :reading:Galey2010
