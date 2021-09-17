@@ -34,6 +34,11 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-04-30,
+        :meeting:2021-04-23,
+        :meeting:2021-04-16,
+        :meeting:2021-04-09,
+        :meeting:2021-04-02,
         :meeting:2021-03-26,
         :meeting:2021-03-19,
         :meeting:2021-03-12,
@@ -323,6 +328,13 @@
     dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
     address:localityName "Ottawa" ;
     dc:date "October 1st to 5th, 1971" .
+
+:conference:Onward2014
+    a bibo:Conference ;
+    dc:title "Onward! 2014" ;
+    address:localityName "Portland, OR" ;
+    dc:date "October 20-24, 2014" ;
+    foaf:homepage <https://2014.onward-conference.org/> .
 
 :conference:PODS08
     a bibo:Conference ;
@@ -3744,6 +3756,75 @@
         :reading:DIgnazio2020
     ) .
 
+:meeting:2021-04-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Adam1998 ;
+    :schedule (
+        :reading:Adam1998
+    ) .
+
+:meeting:2021-04-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-04-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Garvey2021 ;
+    :schedule (
+        :reading:Garvey2021
+    ) .
+
+:meeting:2021-04-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-23T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gabriel2014 ;
+    :schedule (
+        :reading:Gabriel2014
+    ) .
+
+:meeting:2021-04-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-30T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Liu2021 ;
+    :schedule (
+        :reading:Liu2021
+    ) .
+
 :meeting:2021-06-25
     a :Meeting ;
     lode:atTime [
@@ -3893,6 +3974,13 @@
     foaf:givenname "Amelia" ;
     foaf:surname "Acker" ;
     foaf:homepage <http://www.ameliaacker.com/> .
+
+:person:AdamA
+    a foaf:Person ;
+    owl:sameAs viaf:14919903, wd:Q22087214 ;
+    foaf:givenname "Alison" ;
+    foaf:surname "Adam" ;
+    foaf:workInfoHomepage <https://www.shu.ac.uk/about-us/our-people/staff-profiles/alison-adam#content> .
 
 :person:AdriaansP
     a foaf:Person ;
@@ -4321,6 +4409,13 @@
     foaf:surname "Curtis" ;
     foaf:workInfoHomepage <http://it-cisq.org/bill-curtis-biography/> .
 
+:person:DIgnazio
+    a foaf:Person ;
+    owl:sameAs viaf:19151049887933411569, wd:Q96083446 ;
+    foaf:givenname "Catherine" ;
+    foaf:surname "D'Ignazio" ;
+    foaf:homepage <http://www.kanarinka.com/> .
+
 :person:DadeRobertsonM
     a foaf:Person ;
     owl:sameAs viaf:130429885 ;
@@ -4528,6 +4623,13 @@
     foaf:surname "Furner" ;
     foaf:homepage <http://www.jonathanfurner.info/> .
 
+:person:GabrielR
+    a foaf:Person ;
+    owl:sameAs viaf:56898914, wd:Q7328227 ;
+    foaf:givenname "Richard P." ;
+    foaf:surname "Gabriel" ;
+    foaf:homepage <https://dreamsongs.com/> .
+
 :person:GaleyA
     a foaf:Person ;
     owl:sameAs viaf:167429570 ;
@@ -4540,6 +4642,13 @@
     owl:sameAs viaf:108536033, wd:Q461121 ;
     foaf:givenname "Harold" ;
     foaf:surname "Garfinkel" .
+
+:person:GarveySC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7346-8873 ;
+    foaf:givenname "Shunryu Colin" ;
+    foaf:surname "Garvey" ;
+    foaf:homepage <http://www.shunryugarvey.com/> .
 
 :person:GeigerR
     a foaf:Person ;
@@ -4827,6 +4936,13 @@
     foaf:givenname "Julie A." ;
     foaf:surname "Kientz" ;
     foaf:homepage <http://www.juliekientz.com/> .
+
+:person:KleinL
+    a foaf:Person ;
+    owl:sameAs viaf:134148389577810712856, wd:Q98502620, orcid:0000-0002-1511-0910 ;
+    foaf:givenname "Lauren F." ;
+    foaf:surname "Klein" ;
+    foaf:homepage <https://lklein.com/> .
 
 :person:Kluwer
     a :Publisher ;
@@ -5872,6 +5988,13 @@
     dc:publisher :publisher:IEEE ;
     bibo:isbn13 "978-1-4673-6656-4" .
 
+:proceedings:Onward2015
+    a bibo:Proceedings ;
+    dc:title "Onward! 2014: Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:IEEE ;
+    bibo:doi "10.1145/2661136" .
+
 :proceedings:PODS08
     a bibo:Proceedings ;
     dc:title "Proceedings of the twenty-seventh ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems" ;
@@ -6130,6 +6253,19 @@
     ] ;
     bibo:pages "70-75" ;
     bibo:doi "10.1109/MAHC.2015.68" .
+
+:reading:Adam1998
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9780203005057> ;
+    dc:title "Artificial knowing: Gender and the thinking machine" ;
+    bibo:shortTitle "Artificial knowing" ;
+    dc:creator :person:AdamA ;
+    bibo:authorList (
+        :person:AdamA
+    ) ;
+    dc:date "1998" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:doi "10.4324/9780203005057" .
 
 :reading:Agre1994a
     a :Reading, bibo:AcademicArticle ;
@@ -6724,20 +6860,6 @@
     dc:publisher :publisher:MIT ;
     bibo:doi "10.7551/mitpress/11805.001.0001" .
 
-:person:DIgnazio
-    a foaf:Person ;
-    owl:sameAs viaf:19151049887933411569, wd:Q96083446 ;
-    foaf:givenname "Catherine" ;
-    foaf:surname "D'Ignazio" ;
-    foaf:homepage <http://www.kanarinka.com/> .
-
-:person:KleinL
-    a foaf:Person ;
-    owl:sameAs viaf:134148389577810712856, wd:Q98502620, orcid:0000-0002-1511-0910 ;
-    foaf:givenname "Lauren F." ;
-    foaf:surname "Klein" ;
-    foaf:homepage <https://lklein.com/> .
-
 :reading:Damerow1996
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.1007/978-94-015-8624-5> ;
@@ -7118,6 +7240,18 @@
     bibo:pages "287-306" ;
     bibo:doi "10.1007/978-3-658-14681-8_17" .
 
+:reading:Gabriel2014
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2661136.2661155> ;
+    dc:creator :person:GabrielR ;
+    bibo:authorList (
+        :person:GabrielR
+    ) ;
+    bibo:reproducedIn :proceedings:Onward2014 ;
+    bibo:reproducedIn :conference:Onward2014 ;
+    bibo:pages 301-319 ;
+    bibo:doi "10.1145/2661136.2661155" .
+
 :reading:Galey2010
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1093/llc/fqq021> ;
@@ -7148,6 +7282,24 @@
     dc:date "2008" ;
     dc:publisher :publisher:Paradigm ;
     bibo:isbn13 "978-1-61205-354-7" .
+
+:reading:Garvey2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2021.3051686> ;
+    dc:title "The “general problem solver” does not exist: Mortimer Taube and the art of AI criticism" ;
+    dc:creator :person:GarveySC ;
+    bibo:authorList (
+        :person:GarveySC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "1" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "60-73" ;
+    bibo:doi "10.1109/MAHC.2021.3051686" .
 
 :reading:Geiger2011
     a :Reading, :ConferencePaper ;
@@ -7679,6 +7831,31 @@
     ) ;
     dc:date "2015" ;
     dc:publisher :publisher:PUP .
+
+:reading:Liu2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/713551> ;
+    dc:title "Wittgenstein in the machine" ;
+    dc:creator :person:LiuL ;
+    bibo:authorList (
+        :person:LiuL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Spring 2021" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "3" ;
+        bibo:volume "47"
+    ] ;
+    bibo:pages "425-455" ;
+    bibo:doi "10.1086/713551" .
+
+:person:LiuL
+    a foaf:Person ;
+    owl:sameAs viaf:2639260, wd:Q55171446 ;
+    foaf:givenname "Lydia H." ;
+    foaf:surname "Liu" ;
+    foaf:workInfoHomepage <http://ealac.columbia.edu/lydia-h-liu/> .
 
 :reading:Losee2015
     a :Reading, bibo:AcademicArticle ;
