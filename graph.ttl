@@ -34,6 +34,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-09-17,
+        :meeting:2021-09-10,
+        :meeting:2021-09-03,
         :meeting:2021-08-27,
         :meeting:2021-08-20,
         :meeting:2021-08-13,
@@ -671,6 +674,12 @@
     dc:title "Philosophy Today" ;
     foaf:homepage <https://www.pdcnet.org/philtoday> ;
     bibo:issn "2329-8596" .
+
+:journal:QuantitativeScienceStudies
+    a bibo:Journal ;
+    dc:title "Quantitative Science Studies" ;
+    foaf:homepage <https://direct.mit.edu/qss> ;
+    bibo:issn "2641-3337" .
 
 :journal:QuiParle
     a bibo:Journal ;
@@ -4068,6 +4077,49 @@
         [ dc:description "Ryan's chapter on semiosis" ]
     ) .
 
+:meeting:2021-09-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Renn2020 ;
+    :schedule (
+        :reading:Renn2020
+    ) .
+
+:meeting:2021-09-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Young2021, :reading:Starosielski2021 ;
+    :schedule (
+        :reading:Young2021
+        :reading:Starosielski2021
+    ) .
+
+:meeting:2021-09-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Geiger2021 ;
+    :schedule (
+        :reading:Geiger2021
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4491,6 +4543,12 @@
     foaf:surname "Comber" ;
     foaf:homepage <http://robcomber.co.uk/> ;
     foaf:workInfoHomepage <https://openlab.ncl.ac.uk/people/nrc42/> .
+
+:person:CopeD
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2471-772X ;
+    foaf:givenname "Dominique" ;
+    foaf:surname "Cope" .
 
 :person:CopeJ
     a foaf:Person ;
@@ -4916,6 +4974,14 @@
     foaf:givenname "Birger" ;
     foaf:surname "Hjørland" .
 
+:person:HockenberryM
+    a foaf:Person ;
+    owl:sameAs viaf:29161329979052132376 ;
+    foaf:givenname "Matthew" ;
+    foaf:surname "Hockenberry" ;
+    foaf:page <https://supplystudies.com/> ;
+    foaf:workInfoHomepage <https://www.fordham.edu/info/29405/areas_of_specialization/11901/matthew_hockenberry> .
+
 :person:HoffmannA
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-7950-804X ;
@@ -4972,6 +5038,13 @@
     foaf:givenname "Tim" ;
     foaf:surname "Ingold" ;
     foaf:workInfoHomepage <https://www.abdn.ac.uk/socsci/people/profiles/tim.ingold> .
+
+:person:IpJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9952-4987 ;
+    foaf:givenname "Jamie" ;
+    foaf:surname "Ip" ;
+    foaf:homepage <https://jamieip.com/> .
 
 :person:IraniL
     a foaf:Person ;
@@ -5182,6 +5255,12 @@
     foaf:givenname "Robert" ;
     foaf:surname "Losee" ;
     foaf:homepage <https://ils.unc.edu/~losee/> .
+
+:person:LotoshM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0362-8947 ;
+    foaf:givenname "Marsha" ;
+    foaf:surname "Lotosh" .
 
 :person:LoveH
     a foaf:Person ;
@@ -5687,6 +5766,12 @@
     foaf:givenname "Len" ;
     foaf:surname "Sassaman" .
 
+:person:ShahA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7029-2008 ;
+    foaf:givenname "Aayush" ;
+    foaf:surname "Shah" .
+
 :person:ShavitA
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-4683-0857 ;
@@ -5774,6 +5859,14 @@
     foaf:surname "Star" ;
     foaf:homepage <http://lchc.ucsd.edu/People/lstar_bio.html> .
 
+:person:StarosielskiN
+    a foaf:Person ;
+    owl:sameAs viaf:310731262, wd:Q81228010 ;
+    foaf:givenname "Nicole" ;
+    foaf:surname "Starosielski" ;
+    foaf:page <http://www.surfacing.in/> ;
+    foaf:workInfoHomepage <https://steinhardt.nyu.edu/people/nicole-starosielski> .
+
 :person:StawarskaB
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-9971-2726, viaf:91040455 ;
@@ -5835,6 +5928,12 @@
     foaf:givenname "Wang-Chiew" ;
     foaf:surname "Tan" ;
     foaf:homepage <https://wangchiew.github.io/> .
+
+:person:TangR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4563-5192 ;
+    foaf:givenname "Rebekah" ;
+    foaf:surname "Tang" .
 
 :person:TenenD
     a foaf:Person ;
@@ -5973,6 +6072,12 @@
     foaf:surname "Waldstein" ;
     foaf:page <https://auc.academia.edu/MaximWaldstein> .
 
+:person:WangJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-1017-8908 ;
+    foaf:givenname "Jenny" ;
+    foaf:surname "Weng" .
+
 :person:WatsonR
     a foaf:Person ;
     owl:sameAs viaf:147150325514110090006 ;
@@ -6044,6 +6149,20 @@
     foaf:givenname "Juan" ;
     foaf:surname "Ye" ;
     foaf:homepage <https://sites.google.com/site/juanyeresearch/> .
+
+:person:YoungL
+    a foaf:Person ;
+    owl:sameAs viaf:611150085863815060000, orcid:0000-0003-4318-8552 ;
+    foaf:givenname "Liam Cole" ;
+    foaf:surname "Young" ;
+    foaf:workInfoHomepage <https://carleton.ca/sjc/profile/young-liam-cole/> .
+
+:person:ZiegerS
+    a foaf:Person ;
+    owl:sameAs viaf:48666606 ;
+    foaf:givenname "Susan" ;
+    foaf:surname "Zieger" ;
+    foaf:workInfoHomepage <https://profiles.ucr.edu/susan.zieger> .
 
 :proceedings:ACL2020
     a bibo:Proceedings ;
@@ -7452,6 +7571,30 @@
         dc:title "2011 44th Hawaii International Conference on System Sciences" ;
         a bibo:Conference
     ] .
+
+:reading:Geiger2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1162/qss_a_00144> ;
+    dc:title "“Garbage in, garbage out” revisited: What do machine learning application papers report about human-labeled training data?" ;
+    dc:creator :person:GeigerR, :person:CopeD, :person:IpJ, :person:LotoshM, :person:ShahA, :person:WangJ, :person:TangR ;
+    bibo:authorList (
+        :person:GeigerR
+        :person:CopeD
+        :person:IpJ
+        :person:LotoshM
+        :person:ShahA
+        :person:WangJ
+        :person:TangR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:QuantitativeScienceStudies ;
+        bibo:issue "2" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "1-33" ;
+    bibo:doi "10.1162/qss_a_00144" .
 
 :reading:Genosko2016
     a :Reading, bibo:AcademicArticle ;
@@ -8942,6 +9085,18 @@
     dc:isPartOf :volume:Star1995 ;
     bibo:pages "88-118" .
 
+:reading:Starosielski2021
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1215/9781478013037-014> ;
+    dc:title "The politics of cable supply from the British Empire to Huawei Marine" ;
+    dc:creator :person:StarosielskiN ;
+    bibo:authorList (
+        :person:StarosielskiN
+    ) ;
+    bibo:pages "190-205" ;
+    dc:isPartOf :volume:Hockenberry2021 ;
+    bibo:doi "10.1215/9781478013037-014" .
+
 :reading:Stawarska2020
     a :Reading, bibo:Book ;
     dc:title "Saussure's linguistics, structuralism, and phenomenology: The <i>Course in General Linguistics</i> after a century" ;
@@ -9407,6 +9562,18 @@
     bibo:pages "69–71" ;
     bibo:doi "10.1145/1572626.1572641" .
 
+:reading:Young2021
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1215/9781478013037-008> ;
+    dc:title "Colonization's logistical media: The ship and the document" ;
+    dc:creator :person:YoungL ;
+    bibo:authorList (
+        :person:YoungL
+    ) ;
+    bibo:pages "94-110" ;
+    dc:isPartOf :volume:Hockenberry2021 ;
+    bibo:doi "10.1215/9781478013037-008" .
+
 :volume:Adriaans2008
     a bibo:EditedBook ;
     dc:title "Handbook of the Philosophy of Science. Volume 8: Philosophy of Information" ;
@@ -9551,6 +9718,21 @@
         :person:RouvroyA
     ) ;
     bibo:isbn13 "978-0-415-72015-1" .
+
+:volume:Hockenberry2021
+    a bibo:EditedBook ;
+    owl:sameAs <http://doi.org/10.1215/9781478013037> ;
+    dc:title "Assembly codes: The logistics of media" ;
+    bibo:shortTitle "Assembly codes" ;
+    bibo:editor :person:HockenberryM, :person:StarosielskiN, :person:ZiegerS ;
+    bibo:editorList (
+        :person:HockenberryM
+        :person:StarosielskiN
+        :person:ZiegerS
+    ) ;
+    dc:date "2021" ;
+    dc:publisher :publisher:DUP ;
+    bibo:doi "10.1215/9781478013037" .
 
 :volume:Hui2019
     a bibo:Book ;
