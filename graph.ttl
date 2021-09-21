@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-09-24,
         :meeting:2021-09-17,
         :meeting:2021-09-10,
         :meeting:2021-09-03,
@@ -4120,6 +4121,20 @@
         :reading:Geiger2021
     ) .
 
+:meeting:2021-09-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Greene2021 ;
+    :schedule (
+        :reading:Greene2021
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7678,6 +7693,26 @@
         bibo:volume "1"
     ] ;
     bibo:doi "10.24242/jclis.v1i1.7" .
+
+:reading:Greene2021
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/11674.001.0001> ;
+    dc:title "The promise of access: Technology, inequality, and the political economy of hope" ;
+    bibo:shortTitle "The promise of access" ;
+    dc:creator :person:GreeneD ;
+    bibo:authorList (
+        :person:GreeneD
+    ) ;
+    dc:date "2021" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/11674.001.0001" .
+
+:person:GreeneD
+    a foaf:Person ;
+    owl:sameAs viaf:151513494 ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Greene" ;
+    foaf:homepage <http://dmgreene.net/> .
 
 :reading:Griesemer2016
     a :Reading, bibo:BookSection ;
