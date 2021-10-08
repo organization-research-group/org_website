@@ -34,6 +34,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-10-08,
+        :meeting:2021-10-01,
         :meeting:2021-09-24,
         :meeting:2021-09-17,
         :meeting:2021-09-10,
@@ -757,6 +759,12 @@
     dc:isPartOf :journal:WSQ ;
     bibo:issue "3" ;
     bibo:volume "41" .
+
+:journal:YLJ
+    a bibo:Journal ;
+    dc:title "Yale Law Journal" ;
+    bibo:issn "0044-0094" ;
+    foaf:homepage <https://www.yalelawjournal.org> .
 
 :journal:eflux
     a bibo:Journal ;
@@ -4135,6 +4143,34 @@
         :reading:Greene2021
     ) .
 
+:meeting:2021-10-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-01T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Greene2021 ;
+    :schedule (
+        :reading:Greene2021
+    ) .
+
+:meeting:2021-10-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-08T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Viljoen2020 ;
+    :schedule (
+        :reading:Viljoen2020
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4877,6 +4913,13 @@
     foaf:givenname "Sébastian" ;
     foaf:surname "Grauwin" ;
     foaf:homepage <http://www.sebastian-grauwin.com/> .
+
+:person:GreeneD
+    a foaf:Person ;
+    owl:sameAs viaf:151513494 ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Greene" ;
+    foaf:homepage <http://dmgreene.net/> .
 
 :person:GriesemerJ
     a foaf:Person ;
@@ -6058,6 +6101,14 @@
     foaf:givenname "Deb" ;
     foaf:surname "Verhoeven" ;
     foaf:homepage <https://www.debverhoeven.com/> .
+
+:person:ViljoenS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0549-9966 ;
+    foaf:givenname "Salome" ;
+    foaf:surname "Viljoen" ;
+    foaf:homepage <https://www.salomeviljoen.com> ;
+    foaf:workInfoHomepage <https://www.law.columbia.edu/faculty/salome-viljoen> .
 
 :person:VitakJ
     a foaf:Person ;
@@ -7706,13 +7757,6 @@
     dc:date "2021" ;
     dc:publisher :publisher:MIT ;
     bibo:doi "10.7551/mitpress/11674.001.0001" .
-
-:person:GreeneD
-    a foaf:Person ;
-    owl:sameAs viaf:151513494 ;
-    foaf:givenname "Daniel" ;
-    foaf:surname "Greene" ;
-    foaf:homepage <http://dmgreene.net/> .
 
 :reading:Griesemer2016
     a :Reading, bibo:BookSection ;
@@ -9431,6 +9475,22 @@
     ] ;
     bibo:pages "206-220" ;
     bibo:uri "http://dro.deakin.edu.au/view/DU:30070005" .
+
+:reading:Viljoen2020
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Democratic Data: A Relational Theory For Data Governance" ;
+    bibo:shortTitle "Democratic Data" ;
+    dc:creator :person:ViljoenS ;
+    bibo:authorList (
+        :person:ViljoenS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:YLJ
+    ] ;
+    bibo:doi "10.2139/ssrn.3727562" ;
+    bibo:uri "https://doi.org/10.2139/ssrn.3727562" .
 
 :reading:VonFoerster2002a
     a :Reading, bibo:BookSection ;
