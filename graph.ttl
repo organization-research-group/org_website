@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2021-10-15,
         :meeting:2021-10-08,
         :meeting:2021-10-01,
         :meeting:2021-09-24,
@@ -4171,6 +4172,20 @@
         :reading:Viljoen2020
     ) .
 
+:meeting:2021-10-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-15T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vismann2008a ;
+    :schedule (
+        :reading:Vismann2008a
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6109,6 +6124,13 @@
     foaf:surname "Viljoen" ;
     foaf:homepage <https://www.salomeviljoen.com> ;
     foaf:workInfoHomepage <https://www.law.columbia.edu/faculty/salome-viljoen> .
+
+:person:VismannC
+    a foaf:Person ;
+    owl:sameAs wd:Q1133451 , viaf:55029890 ;
+    foaf:givenname "Cornelia" ;
+    foaf:surname "Vismann" ;
+    foaf:page <https://de.wikipedia.org/wiki/Cornelia_Vismann> .
 
 :person:VitakJ
     a foaf:Person ;
@@ -9492,6 +9514,16 @@
     bibo:doi "10.2139/ssrn.3727562" ;
     bibo:uri "https://doi.org/10.2139/ssrn.3727562" .
 
+:reading:Vismann2008a
+    a :Reading, bibo:BookSection ;
+    dc:title "Law's writing lessons" ;
+    dc:creator :person:VismannC ;
+    bibo:authorList (
+        :person:VismannC
+    ) ;
+    dc:isPartOf :volume:Vismann2008 ;
+    bibo:pages "1-38"  .
+
 :reading:VonFoerster2002a
     a :Reading, bibo:BookSection ;
     dc:title "Images of Reality" ;
@@ -9910,6 +9942,14 @@
     bibo:editorList (
         :person:StarS
     ) .
+
+:volume:Vismann2008
+    a bibo:Book ;
+    bibo:isbn13 "9780804751506" ;
+    dc:date "2008" ;
+    dc:title "Files: Law and Media Technology" ;
+    dc:publisher :publisher:SUP ;
+    bibo:translator :person:WinthropYoungG .
 
 :volume:VonFoerster2002
     a bibo:Book ;
