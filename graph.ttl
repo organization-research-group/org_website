@@ -34,6 +34,17 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-01-21,
+        :meeting:2021-12-17,
+        :meeting:2021-12-10,
+        :meeting:2021-12-03,
+        :meeting:2021-11-26,
+        :meeting:2021-11-19,
+        :meeting:2021-11-12,
+        :meeting:2021-11-05,
+        :meeting:2021-10-29,
+        :meeting:2021-10-22,
+        :meeting:2021-11-19,
         :meeting:2021-10-15,
         :meeting:2021-10-08,
         :meeting:2021-10-01,
@@ -298,6 +309,13 @@
     dc:date "May 4-May 9, 2019" ;
     foaf:homepage <https://chi2019.acm.org/> .
 
+:conference:CHI2020
+    a bibo:Conference ;
+    dc:title "CHI '20: CHI Conference on Human Factors in Computing Systems" ;
+    address:localityName "Honolulu" ;
+    dc:date "2020" ;
+    foaf:homepage <https://chi2020.acm.org/> .
+
 :conference:COLIS10
     a bibo:Conference ;
     dc:title "Conceptions of Library and Information Science 10th international conference" ;
@@ -510,6 +528,12 @@
     foaf:homepage <https://www.springer.com/journal/10746> ;
     bibo:issn "1572-851X" .
 
+:journal:Hypatia
+    a bibo:Journal ;
+    dc:title "Hypatia" ;
+    foaf:homepage <http://hypatiaphilosophy.org/> ;
+    bibo:issn "0887-5367" .
+
 :journal:IEEEAnnals
     a bibo:Journal ;
     dc:title "IEEE Annals of the History of Computing" ;
@@ -695,6 +719,12 @@
     dc:title "Rethinking Marxism" ;
     foaf:homepage <http://www.rethinkingmarxism.org/> ;
     bibo:issn "0893-5696" .
+
+:journal:ReviewOfCommunication
+    a bibo:Journal ;
+    dc:title "Review of Communication" ;
+    foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
+    bibo:issn "1535-8593" .
 
 :journal:STH
     a bibo:Journal ;
@@ -4186,6 +4216,145 @@
         :reading:Vismann2008a
     ) .
 
+:meeting:2021-10-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-22T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vismann2008b ;
+    :schedule (
+        :reading:Vismann2008b
+    ) .
+
+:meeting:2021-10-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-29T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vismann2008c ;
+    :schedule (
+        :reading:Vismann2008c
+    ) .
+
+:meeting:2021-11-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-05T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:LeGuin2020, :reading:Sofia2000 ;
+    :schedule (
+        :reading:LeGuin2020
+        :reading:Sofia2000
+    ) .
+
+:meeting:2021-11-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-12T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Parisi2021 ;
+    :schedule (
+        :reading:Parisi2021
+    ) .
+
+:meeting:2021-11-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description """Tarkovsky’s <i>Mirror</i> <a href="https://cseees.unc.edu/event/movie-night-mirror-ussr-1975/">at the Varsity Theatre</a>""" ]
+    ) .
+
+:meeting:2021-11-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-12-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-12-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Radio2021 ;
+    :schedule (
+        :reading:Radio2021
+    ) .
+
+:meeting:2021-12-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-12-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Arawjo2020 ;
+    :schedule (
+        :reading:Arawjo2020
+    ) .
+
+:meeting:2021-12-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-12-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ernst2016 ;
+    :schedule (
+        :reading:Ernst2016
+    ) .
+
+:meeting:2022-01-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-01-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Moor2016 ;
+    :schedule (
+        :reading:Moor2016
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4254,6 +4423,12 @@
     foaf:givenname "Rachel" ;
     foaf:surname "Ankeny" ;
     foaf:workInfoHomepage <https://www.adelaide.edu.au/directory/rachel.ankeny> .
+
+:person:ArawjoI
+    a foaf:Person ;
+    foaf:givenname "Ian" ;
+    foaf:surname "Arawjo" ;
+    foaf:homepage <http://ianarawjo.com/> .
 
 :person:ArthurP
     a foaf:Person ;
@@ -4761,6 +4936,14 @@
     foaf:surname "Emerson" ;
     foaf:homepage <https://loriemerson.net/> .
 
+:person:ErnstW
+    a foaf:Person ;
+    owl:sameAs viaf:61524922, wd:Q126003, orcid: ;
+    foaf:givenname "Wolgang" ;
+    foaf:surname "Ernst" ;
+    foaf:workInfoHomepage <https://www.musikundmedien.hu-berlin.de/de/medienwissenschaft/medientheorien/prof.-dr.-wolfgang-ernst> ;
+    foaf:page <https://monoskop.org/Wolfgang_Ernst> .
+
 :person:EscobarA
     a foaf:Person ;
     owl:sameAs wd:Q4801729, viaf:34576079 ;
@@ -5157,6 +5340,12 @@
     foaf:surname "Jun" ;
     foaf:homepage <http://www.nathanjun.com/> .
 
+:person:KalwaraJ
+    a foaf:Person ;
+    foaf:givenname "James" ;
+    foaf:surname "Kalwara" ;
+    foaf:page <https://www.semanticscholar.org/author/James-Kalwara/113847837> .
+
 :person:KataiO
     a foaf:Person ;
     owl:sameAs viaf:111764376 ;
@@ -5275,6 +5464,13 @@
     foaf:givenname "John" ;
     foaf:surname "Law" ;
     foaf:homepage <http://heterogeneities.net/> .
+
+:person:LeGuinU
+    a foaf:Person ;
+    owl:sameAs viaf:101734435, wd:Q181659 ;
+    foaf:givenname "Ursula K." ;
+    foaf:surname "Le Guin" ;
+    foaf:homepage <https://www.ursulakleguin.com/> .
 
 :person:LeahuL
     a foaf:Person ;
@@ -5485,6 +5681,13 @@
     foaf:surname "Monteiro" ;
     foaf:homepage <https://www.idi.ntnu.no/~ericm/> .
 
+:person:MoorR
+    a foaf:Person ;
+    owl:sameAs viaf:3757148997684159870003 ;
+    foaf:givenname "Robert" ;
+    foaf:surname "Moor" ;
+    foaf:homepage <https://www.robertmoor.com/> .
+
 :person:MooreD
     a foaf:Person ;
     owl:sameAs wd:Q5224125 ;
@@ -5611,6 +5814,13 @@
     foaf:surname "Parikka" ;
     foaf:homepage <https://jussiparikka.net/> .
 
+:person:ParisiL
+    a foaf:Person ;
+    owl:sameAs viaf:461146634282841930173 ;
+    foaf:givenname "Luciana" ;
+    foaf:surname "Parisi" ;
+    foaf:workInfoHomepage <https://scholars.duke.edu/person/Luciana.Parisi> .
+
 :person:Pasquinelli
     a foaf:Person ;
     owl:sameAs viaf:249939473, wd:Q105492265, orcid: ;
@@ -5696,6 +5906,13 @@
     foaf:givenname "Ole" ;
     foaf:surname "Pütz" .
 
+:person:RadioE
+    a foaf:Person ;
+    owl:sameAs viaf:, wd:Q50355312, orcid:0000-0003-0734-1978 ;
+    foaf:givenname "Erik" ;
+    foaf:surname "Radio" ;
+    foaf:homepage <https://erikradio.github.io/> .
+
 :person:RandallD
     a foaf:Person ;
     foaf:givenname "D. W." ;
@@ -5715,12 +5932,6 @@
     foaf:givenname "Jürgen" ;
     foaf:surname "Renn" ;
     foaf:workInfoHomepage <https://www.mpg.de/331646/history-of-science-renn> .
-
-:person:ReviewOfCommunication
-    a bibo:Journal ;
-    dc:title "Review of Communication" ;
-    foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
-    bibo:issn "1535-8593" .
 
 :person:RheinbergerH
     a foaf:Person ;
@@ -5904,6 +6115,13 @@
     foaf:givenname "Daniel Warren" ;
     foaf:surname "Smith" ;
     foaf:homepage <https://www.cla.purdue.edu/philosophy/directory/?p=daniel_smith> .
+
+:person:SofiaZ
+    a foaf:Person ;
+    owl:sameAs viaf:29227959, wd:Q67782833 ;
+    foaf:givenname "Zoë" ;
+    foaf:surname "Sofia" ;
+    foaf:workInfoHomepage <https://www.westernsydney.edu.au/ics/people/adjunct_researchers/zoe_sofoulis> .
 
 :person:SorrentinoM
     a foaf:Person ;
@@ -6270,7 +6488,15 @@
     dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '19)" ;
     dc:date "2019" ;
     dc:publisher :publisher:ACM ;
-    bibo:isbn13 "978-1-4503-5970-2 " .
+    bibo:isbn13 "978-1-4503-5970-2" .
+
+:proceedings:CHI2020
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems" ;
+    dc:date "2020" ;
+    dc:publisher :publisher:ACM ;
+    bibo:doi "10.1145/3313831" ;
+    bibo:isbn13 "978-1-4503-6708-0" .
 
 :proceedings:COLIS10
     a bibo:Proceedings ;
@@ -6441,6 +6667,11 @@
     foaf:name "IEEE" ;
     address:localityName "Piscataway" .
 
+:publisher:IGNOTA
+    a :Publisher ;
+    foaf:name "Ignota Books" ;
+    address:localityName "London" .
+
 :publisher:Kluwer
     a :Publisher ;
     foaf:name "Kluwer Academic" ;
@@ -6520,6 +6751,11 @@
     a :Publisher ;
     foaf:name "Stanford University Press" ;
     address:localityName "Stanford, CA" .
+
+:publisher:SimonSchuster
+    a :Publisher ;
+    foaf:name "Simon & Schuster" ;
+    address:localityName "New York" .
 
 :publisher:SomethingElse
     a :Publisher ;
@@ -6724,6 +6960,18 @@
     dc:date "2020" ;
     dc:publisher :publisher:CUP ;
     bibo:doi "10.1017/9781108593014" .
+
+:reading:Arawjo2020
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/3313831.3376731> ;
+    dc:creator :person:ArawjoI ;
+    bibo:authorList (
+        :person:ArawjoI
+    ) ;
+    bibo:reproducedIn :proceedings:CHI2020 ;
+    bibo:presentedAt :conference:CHI2020 ;
+    bibo:pages "1-15" ;
+    bibo:doi "10.1145/3313831.3376731" .
 
 :reading:Askey2017
     a :Reading ;
@@ -7321,6 +7569,18 @@
     ) ;
     dc:date "2014" ;
     dc:publisher :publisher:UMP .
+
+:reading:Ernst2016
+    a :Reading, bibo:Book ;
+    dc:title "Chronopoetics: The temporal being and operativity of technological media" ;
+    bibo:shortTitle "Chronopoetics" ;
+    dc:creator :person:ErnstW ;
+    bibo:authorList (
+        :person:ErnstW
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:RowmanLittlefield ;
+    bibo:isbn13 "978-1-78348-572-7" .
 
 :reading:Escobar2018ch3
     a :Reading, bibo:BookSection ;
@@ -8168,6 +8428,16 @@
     bibo:pages "363-378" ;
     bibo:doi "10.1177/0306312712456947" .
 
+:reading:LeGuin2020
+    a :Reading, bibo:Book ;
+    dc:title "The carrier bag theory of fiction" ;
+    dc:creator :person:LeGuinU ;
+    bibo:authorList (
+        :person:LeGuinU
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:IGNOTA .
+
 :reading:Leahu2016
     a :Reading, :ConferencePaper ;
     owl:sameAs <http://doi.org/10.1145/2901790.2901840> ;
@@ -8484,6 +8754,17 @@
     bibo:pages "575-607" ;
     bibo:doi "10.1007/s10606-012-9167-1" .
 
+:reading:Moor2016
+    a :Reading, bibo:Book ;
+    dc:title "On trails: An exploration" ;
+    bibo:shortTitle "On trails" ;
+    dc:creator :person:MoorR ;
+    bibo:authorList (
+        :person:MoorR
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:SimonSchuster .
+
 :reading:Moore2013
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1353/wsq.2013.0087> ;
@@ -8667,6 +8948,24 @@
     bibo:isbn13 "978-1-4529-4456-2" ;
     bibo:doi "10.5749/minnesota/9780816695515.001.0001" .
 
+:reading:Parisi2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/02632764211048548> ;
+    dc:title "Interactive computation and artificial epistemologies" ;
+    dc:creator :person:ParisiL ;
+    bibo:authorList (
+        :person:ParisiL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "7-8" ;
+        bibo:volume "38"
+    ] ;
+    bibo:pages "1-21" ;
+    bibo:doi "10.1177/02632764211048548" .
+
 :reading:Pasquinelli2021
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1215/10418385-8955836> ;
@@ -8782,6 +9081,23 @@
     ] ;
     bibo:doi "10.1177/03063127211010972" .
 
+:reading:Radio2021
+    #FIXME: preprint?
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-02-2021-0037> ;
+    dc:title "The trajectory of linked data in late capitalism" ;
+    dc:creator :person:RadioE, :person:KalwaraJ ;
+    bibo:authorList (
+        :person:RadioE
+        :person:KalwaraJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:JDOC ;
+    ] ;
+    bibo:doi "10.1108/JD-02-2021-0037" .
+
 :reading:Randall1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/BF01305844> ;
@@ -8805,7 +9121,7 @@
         :person:RennJ
     ) ;
     dc:date "2020" ;
-    dc:publisher :publisher:Princeton ;
+    dc:publisher :publisher:PUP ;
     bibo:doi "10.2307/j.ctvdf0kpk" .
 
 :reading:Rheinberger2010
@@ -9134,6 +9450,24 @@
     ] ;
     bibo:pages "57-75" ;
     bibo:doi "10.1215/00265667-3630844" .
+
+:reading:Sofia2000
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/hyp.2000.0029> ;
+    dc:title "Container technologies" ;
+    dc:creator :person:SofiaZ ;
+    bibo:authorList (
+        :person:SofiaZ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:Hypatia ;
+        bibo:volume "15" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "181-201" ;
+    bibo:doi "10.1353/hyp.2000.0029" .
 
 :reading:Spade2013
     a :Reading, bibo:AcademicArticle ;
@@ -9523,6 +9857,26 @@
     ) ;
     dc:isPartOf :volume:Vismann2008 ;
     bibo:pages "1-38"  .
+
+:reading:Vismann2008b
+    a :Reading, bibo:BookSection ;
+    dc:title "From translating to legislating" ;
+    dc:creator :person:VismannC ;
+    bibo:authorList (
+        :person:VismannC
+    ) ;
+    dc:isPartOf :volume:Vismann2008 ;
+    bibo:pages "39-70"  .
+
+:reading:Vismann2008c
+    a :Reading, bibo:BookSection ;
+    dc:title "From documents to records" ;
+    dc:creator :person:VismannC ;
+    bibo:authorList (
+        :person:VismannC
+    ) ;
+    dc:isPartOf :volume:Vismann2008 ;
+    bibo:pages "71-101"  .
 
 :reading:VonFoerster2002a
     a :Reading, bibo:BookSection ;
