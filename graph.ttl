@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-01-28,
         :meeting:2022-01-21,
         :meeting:2021-12-17,
         :meeting:2021-12-10,
@@ -4348,6 +4349,20 @@
         time:hasBeginning [
             a time:Instant ;
             time:inXSDDateTimeStamp "2022-01-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Moor2016 ;
+    :schedule (
+        :reading:Moor2016
+    ) .
+
+:meeting:2022-01-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-01-28T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Moor2016 ;
