@@ -301,7 +301,7 @@ function renderPage(page) {
           ]),
         ]),
 
-        // h('script', { type: 'text/javascript', src: 'org.js' }),
+        h('script', { type: 'text/javascript', src: 'org.js' }),
       ]),
 
     ])

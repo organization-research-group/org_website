@@ -29,6 +29,7 @@ footer a {
     margin: auto;
     max-width: 760px;
     padding: 1em 0;
+    background: #fffffff0
 }
 
 a {
@@ -226,6 +227,7 @@ h1 {
 
 /* ---- The animation ---- */
 
+/*
 .org-o {
     animation: change-letter 6s ease-in-out 0s infinite;
 }
@@ -237,6 +239,7 @@ h1 {
 .org-g {
     animation: change-letter 6s ease-in-out 4s infinite;
 }
+*/
 
 @keyframes change-letter {
     0% { color: black; }

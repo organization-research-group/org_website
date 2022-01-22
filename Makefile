@@ -4,7 +4,7 @@ UPLOAD_HOST ?= orgorgorgorgorg.org
 UPLOAD_PATH ?= /home/ptgolden/apps/org_home/
 
 # Files that will be included in the tarball
-STATIC_DEPS = org.css graph.ttl
+STATIC_DEPS = org.css graph.ttl org.js
 
 # Files that generate the tarball
 SITE_SCRIPTS := $(wildcard src/*js)
