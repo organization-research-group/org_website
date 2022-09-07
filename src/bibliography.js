@@ -20,7 +20,14 @@ exports.generate = function getBibEntries(store) {
     const items = {}
 
     store.getSubjects(expandNS('rdf:type'), expandNS(type)).forEach($bibItem => {
-      const csl = fn(store, $bibItem)
+      let csl
+
+      try {
+        csl = fn(store, $bibItem)
+      } catch (e) {
+        console.error(`Error error converting ${$bibItem.id} to CSL`)
+        throw e;
+      }
 
       const html = new Cite(csl).get({
         type: 'html',
@@ -31,7 +38,7 @@ exports.generate = function getBibEntries(store) {
       items[$bibItem.id] = { html, csl }
     })
 
-    return Object.assign({}, acc, items)
+    return { ...acc, ...items }
   }, {})
 }
 
