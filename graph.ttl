@@ -5232,7 +5232,7 @@
 
 :person:ErnstW
     a foaf:Person ;
-    owl:sameAs viaf:61524922, wd:Q126003, orcid: ;
+    owl:sameAs viaf:61524922, wd:Q126003 ;
     foaf:givenname "Wolgang" ;
     foaf:surname "Ernst" ;
     foaf:workInfoHomepage <https://www.musikundmedien.hu-berlin.de/de/medienwissenschaft/medientheorien/prof.-dr.-wolfgang-ernst> ;
@@ -6157,7 +6157,7 @@
 
 :person:Pasquinelli
     a foaf:Person ;
-    owl:sameAs viaf:249939473, wd:Q105492265, orcid: ;
+    owl:sameAs viaf:249939473, wd:Q105492265 ;
     foaf:givenname "Matteo" ;
     foaf:surname "Pasquinelli" ;
     foaf:homepage <http://matteopasquinelli.com/> .
