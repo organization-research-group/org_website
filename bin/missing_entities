@@ -12,6 +12,7 @@ function getCheckList(prefixes) {
   return new Map([
     [ expandNS('dc:creator'), expandNS('foaf:Person') ],
     [ expandNS('bibo:editor'), expandNS('foaf:Person') ],
+    [ expandNS('bibo:translator'), expandNS('foaf:Person') ],
     [ expandNS('dc:isPartOf'), null ],
     [ expandNS('dc:publisher'), expandNS(':Publisher') ],
     [ expandNS('bibo:reproducedIn'), expandNS('bibo:Proceedings') ],
