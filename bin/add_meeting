@@ -29,7 +29,7 @@ schedule_ttl_template = ''' ;
 
 reading_ttl_template = '''
 {key}
-    # FIXME: Update the details of this entry.
+    # FILLME: Update the details of this entry.
     # Added automatically for meeting on {date}
     a :Reading .
 '''

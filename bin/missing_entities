@@ -53,7 +53,7 @@ function shorten(str, prefixes) {
 function printEntity(node, type, prefixes) {
   console.log(`
 ${shorten(node.id, prefixes)}
-    # FIXME: Fill in missing entity
+    # FILLME: Fill in missing entity
     a ${type == null ? 'rdf:nil' : shorten(type.id, prefixes)} .
 `)
 }
