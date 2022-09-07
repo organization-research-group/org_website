@@ -34,6 +34,11 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-07-01,
+        :meeting:2022-06-24,
+        :meeting:2022-06-17,
+        :meeting:2022-06-10,
+        :meeting:2022-06-03,
         :meeting:2022-06-03,
         :meeting:2022-04-29,
         :meeting:2022-04-15,
@@ -713,6 +718,12 @@
     dc:title "Proceedings of the National Academy of Sciences" ;
     foaf:homepage <https://www.pnas.org/> ;
     bibo:issn "1091-6490" .
+
+:journal:PhilosophyAndTechnology
+    a bibo:Journal ;
+    dc:title "Philosophy & Technology" ;
+    foaf:homepage <https://www.springer.com/journal/13347> ;
+    bibo:issn "2210-5441" .
 
 :journal:PhilosophyToday
     a bibo:Journal ;
@@ -4532,6 +4543,76 @@
         :reading:West2022
     ) .
 
+:meeting:2022-06-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wright2021 ;
+    :schedule (
+        :reading:Wright2021
+    ) .
+
+:meeting:2022-06-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wright2021 ;
+    :schedule (
+        :reading:Wright2021
+    ) .
+
+:meeting:2022-06-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wright2021 ;
+    :schedule (
+        :reading:Wright2021
+    ) .
+
+:meeting:2022-06-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Angus2019 ;
+    :schedule (
+        :reading:Angus2019
+    ) .
+
+:meeting:2022-07-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-07-01T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Brock2020 ;
+    :schedule (
+        :reading:Brock2020
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4593,6 +4674,13 @@
     foaf:givenname "Paul" ;
     foaf:surname "Anderson" ;
     foaf:workInfoHomepage <http://marinebiology.cofc.edu/about-the-program/faculty-listing/anderson-paul.php> .
+
+:person:AngusI
+    a foaf:Person ;
+    owl:sameAs viaf:110306620, wd:Q16142490 ;
+    foaf:givenname "Ian" ;
+    foaf:surname "Angus" ;
+    foaf:workInfoHomepage <https://sfu.academia.edu/IanAngus> .
 
 :person:AnkenyR
     a foaf:Person ;
@@ -4809,6 +4897,14 @@
     foaf:givenname "Sergey" ;
     foaf:surname "Bratus" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~sergey/> .
+
+:person:BrockA
+    a foaf:Person ;
+    owl:sameAs viaf:28156130948358311545, wd:, orcid:0000-0001-6084-9995 ;
+    foaf:givenname "André" ;
+    foaf:surname "Brock" ;
+    foaf:workInfoHomepage <https://iac.gatech.edu/people/person/andre-brock> ;
+    foaf:page <https://andrebrock.academia.edu/> .
 
 :person:BrowerV
     a foaf:Person ;
@@ -6709,6 +6805,13 @@
     foaf:givenname "Kurt H." ;
     foaf:surname "Wolff" .
 
+:person:WrightS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3928-420X ;
+    foaf:givenname "Steve" ;
+    foaf:surname "Wright" ;
+    foaf:workInfoHomepage <https://research.monash.edu/en/persons/steven-wright> .
+
 :person:YeJ
     a foaf:Person ;
     foaf:givenname "Juan" ;
@@ -6855,6 +6958,11 @@
     a :Publisher ;
     foaf:name "Allen & Unwin" ;
     address:localityName "London" .
+
+:publisher:Brill
+    a :Publisher ;
+    foaf:name "Brill" ;
+    address:localityName "Leiden" .
 
 :publisher:CUP
     a :Publisher ;
@@ -7222,6 +7330,24 @@
     bibo:pages "643-646" ;
     bibo:doi "10.1137/18M1183595" .
 
+:reading:Angus2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s13347-018-0324-4> ;
+    dc:title "Logic of subsumption, logic of invention: Marx, Marcuse, and Simondon" ;
+    dc:creator :person:AngusI ;
+    bibo:authorList (
+        :person:AngusI
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:PhilosophyAndTechnology ;
+        bibo:issue "" ;
+        bibo:volume "32"
+    ] ;
+    bibo:pages "613–625" ;
+    bibo:doi "10.1007/s13347-018-0324-4" .
+
 :reading:Ankeny2020
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.1017/9781108593014> ;
@@ -7493,6 +7619,24 @@
         bibo:volume "36"
     ] ;
     bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
+
+:reading:Brock2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.18574/nyu/9781479820375.001.0001> ;
+    dc:title "Distributed blackness: African American cybercultures" ;
+    bibo:shortTitle "Distributed blackness" ;
+    dc:creator :person:BrockA ;
+    bibo:authorList (
+        :person:BrockA
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:NYUP ;
+    bibo:doi "10.18574/nyu/9781479820375.001.0001" .
+
+:reading:Brock2020
+    # FILLME: Update the details of this entry.
+    # Added automatically for meeting on 2022-07-01
+    a :Reading .
 
 :reading:Brower2020
     a :Reading, bibo:AcademicArticle ;
@@ -10445,6 +10589,19 @@
     ] ;
     bibo:pages "69–71" ;
     bibo:doi "10.1145/1572626.1572641" .
+
+:reading:Wright2021
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1163/9789004471542> ;
+    dc:title "The weight of the printed word: Text, context and miltancy in <i>Operaismo</i>" ;
+    bibo:shortTitle "The weight of the printed word" ;
+    dc:creator :person:WrightS ;
+    bibo:authorList (
+        :person:WrightS
+    ) ;
+    dc:date "2021" ;
+    dc:publisher :publisher:Brill ;
+    bibo:doi "10.1163/9789004471542" .
 
 :reading:Young2021
     a :Reading, bibo:BookSection ;
