@@ -34,6 +34,16 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-06-03,
+        :meeting:2022-04-29,
+        :meeting:2022-04-15,
+        :meeting:2022-04-08,
+        :meeting:2022-03-11,
+        :meeting:2022-03-04,
+        :meeting:2022-02-25,
+        :meeting:2022-02-11,
+        :meeting:2022-02-11,
+        :meeting:2022-02-04,
         :meeting:2022-01-28,
         :meeting:2022-01-21,
         :meeting:2021-12-17,
@@ -669,6 +679,12 @@
     foaf:homepage <https://www.nature.com/nathumbehav/> ;
     bibo:issn "2397-3374" .
 
+:journal:NewLeftReview
+    a bibo:Journal ;
+    dc:title "New Left Review" ;
+    foaf:homepage <https://newleftreview.org/> ;
+    bibo:issn "0028-6060" .
+
 :journal:NewMediaSociety
     a bibo:Journal ;
     dc:title "New Media & Society" ;
@@ -738,6 +754,12 @@
     dc:title "Science in Context" ;
     foaf:homepage <https://www.cambridge.org/core/journals/science-in-context> ;
     bibo:issn "0269-8897" .
+
+:journal:Semiotica
+    a bibo:Journal ;
+    dc:title "Semiotica" ;
+    foaf:homepage <https://www.degruyter.com/journal/key/semi/html> ;
+    bibo:issn "1613-3692" .
 
 :journal:Signs
     a bibo:Journal ;
@@ -4370,6 +4392,146 @@
         :reading:Moor2016
     ) .
 
+:meeting:2022-02-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-04T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koch2018, :reading:Bernard2018 ;
+    :schedule (
+        :reading:Koch2018
+        :reading:Bernard2018
+    ) .
+
+:meeting:2022-02-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-11T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2022-02-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-11T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VonUexkull1982, :reading:WinthropYoung2010 ;
+    :schedule (
+        :reading:VonUexkull1982
+        :reading:WinthropYoung2010
+    ) .
+
+:meeting:2022-02-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-25T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tsing2022 ;
+    :schedule (
+        :reading:Tsing2022
+    ) .
+
+:meeting:2022-03-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-03-04T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description """Attend <a href="https://www.eventbrite.com/e/revolutionary-mathematics-ai-statistics-and-the-logic-of-capitalism-tickets-273074752937">panel discussion</a> of Justin Joque\u2019s book <i>Revolutionary mathematics: Artificial intelligence, statistics, and the logic of capitalism</i>.""" ]
+    ) .
+
+:meeting:2022-03-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-03-11T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Joque2022 ;
+    :schedule (
+        :reading:Joque2022
+    ) .
+
+:meeting:2022-04-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-04-08T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bergman2018 ;
+    :schedule (
+        :reading:Bergman2018
+    ) .
+
+:meeting:2022-04-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-04-15T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Apel1981 ;
+    :schedule (
+        :reading:Apel1981
+    ) .
+
+:meeting:2022-04-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-04-29T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Morozov2022 ;
+    :schedule (
+        :reading:Morozov2022
+    ) .
+
+:meeting:2022-06-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:West2022 ;
+    :schedule (
+        :reading:West2022
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4522,6 +4684,20 @@
     foaf:surname "Benford" ;
     foaf:homepage <https://stevebenford.wordpress.com/> ;
     foaf:workInfoHomepage <https://www.nottingham.ac.uk/computerscience/people/steve.benford> .
+
+:person:BergmanM
+    a foaf:Person ;
+    owl:sameAs viaf:45662184, orcid:0000-0003-3697-2752 ;
+    foaf:givenname "Michael K." ;
+    foaf:surname "Bergman" ;
+    foaf:homepage <https://www.mkbergman.com/> .
+
+:person:BernardA
+    a foaf:Person ;
+    owl:sameAs viaf:37140871, wd:Q26234680 ;
+    foaf:givenname "Andreas" ;
+    foaf:surname "Bernard" ;
+    foaf:workInfoHomepage <https://www.leuphana.de/en/institutes/icam/team/andreas-bernard.html> .
 
 :person:BernsteinM
     a foaf:Person ;
@@ -4729,6 +4905,13 @@
     foaf:givenname "James" ;
     foaf:surname "Cheney" ;
     foaf:homepage <https://homepages.inf.ed.ac.uk/jcheney/> .
+
+:person:ChrulewM
+    a foaf:Person ;
+    owl:sameAs viaf:315720085 ;
+    foaf:givenname "Matthew" ;
+    foaf:surname "Chrulew" ;
+    foaf:workInfoHomepage <https://staffportal.curtin.edu.au/staff/profile/view/matthew-chrulew-7e9e90a9/> .
 
 :person:ChunW
     a foaf:Person ;
@@ -5341,6 +5524,13 @@
     foaf:givenname "Jack" ;
     foaf:surname "Jones" .
 
+:person:JoqueJ
+    a foaf:Person ;
+    owl:sameAs viaf:44149617055903752418 ;
+    foaf:givenname "Justin" ;
+    foaf:surname "Joque" ;
+    foaf:homepage <http://www.justinjoque.com/> .
+
 :person:JoyceM
     a foaf:Person ;
     owl:sameAs viaf:12423304, wd:Q727045 ;
@@ -5419,6 +5609,12 @@
     foaf:surname "Ko" ;
     foaf:homepage <http://faculty.washington.edu/ajko/> .
 
+:person:KochM
+    a foaf:Person ;
+    foaf:givenname "Matthias" ;
+    foaf:surname "Koch" ;
+    foaf:workInfoHomepage <https://www.leuphana.de/en/research-centers/cdc/people/fellows/matthias-koch.html> .
+
 :person:KollerA
     a foaf:Person ;
     foaf:givenname "Alexander" ;
@@ -5438,6 +5634,13 @@
     foaf:givenname "Daniel" ;
     foaf:surname "Kreiss" ;
     foaf:homepage <https://danielkreiss.com/> .
+
+:person:KroisJ
+    a foaf:Person ;
+    owl:sameAs viaf:17914413, wd:Q1275299 ;
+    foaf:givenname "John M." ;
+    foaf:surname "Krois" ;
+    foaf:page <https://de.wikipedia.org/wiki/John_Michael_Krois> .
 
 :person:LagozeC
     a foaf:Person ;
@@ -5499,6 +5702,13 @@
     foaf:givenname "Deborah" ;
     foaf:surname "Lee" ;
     foaf:homepage <https://poulencing.wixsite.com/deborahlee> .
+
+:person:LeekerM
+    a foaf:Person ;
+    owl:sameAs viaf:42075767 ;
+    foaf:givenname "Martina" ;
+    foaf:surname "Leeker" ;
+    foaf:homepage <https://martina-leeker.de/> .
 
 :person:LeonelliS
     a foaf:Person ;
@@ -5790,11 +6000,24 @@
     foaf:surname "Nordmann" ;
     foaf:workInfoHomepage <www.philosophie.tu-darmstadt.de/nordmann>.
 
+:person:ONeilJ
+    a foaf:Person ;
+    owl:sameAs viaf:322146936683913781305 ;
+    foaf:givenname "Joseph D." ;
+    foaf:surname "O'Neil" .
+
 :person:OrrJ
     a foaf:Person ;
     owl:sameAs viaf:115984089 ;
     foaf:givenname "Julian" ;
     foaf:surname "Orr" .
+
+:person:OttoApelK
+    a foaf:Person ;
+    owl:sameAs viaf:108277989, wd:Q58853 ;
+    foaf:givenname "Karl-Otto" ;
+    foaf:surname "Apel" ;
+    foaf:homepage <https://web.archive.org/web/20210617174055/http://www.karl-otto-apel.de/> .
 
 :person:OyamaS
     a foaf:Person ;
@@ -6322,6 +6545,13 @@
     foaf:surname "van Dijk" ;
     foaf:workInfoHomepage <https://people.utwente.nl/jelle.vandijk> .
 
+:person:VanDoorenT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9710-6682, viaf:68333149 ;
+    foaf:givenname "Thom" ;
+    foaf:surname "van Dooren ";
+    foaf:homepage <https://www.thomvandooren.org/> .
+
 :person:VanDoornN
     a foaf:Person ;
     owl:sameAs viaf:304924835 ;
@@ -6379,6 +6609,13 @@
     foaf:surname "von Foerster" ;
     foaf:homepage <https://www.univie.ac.at/constructivism/HvF.htm> .
 
+:person:VonUexkull
+    a foaf:Person ;
+    owl:sameAs viaf:49319199, wd:Q511513 ;
+    foaf:givenname "Jakob" ;
+    foaf:surname "von Uexküll" ;
+    foaf:page <https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll> .
+
 :person:WakefordN
     a foaf:Person ;
     owl:sameAs viaf:220452036 ;
@@ -6412,6 +6649,13 @@
     foaf:givenname "Nicholas M." ;
     foaf:surname "Weber" ;
     foaf:homepage <http://nicweber.info/> .
+
+:person:WestSM
+    a foaf:Person ;
+    owl:sameAs viaf:1241155832959733490009, orcid:0000-0002-3947-6896 ;
+    foaf:givenname "Sarah Myers" ;
+    foaf:surname "West" ;
+    foaf:homepage <https://www.sarahmyerswest.com/> .
 
 :person:WickettK
     a foaf:Person ;
@@ -6802,10 +7046,20 @@
     foaf:name "University of Minnesota Press" ;
     address:localityName "Minneapolis" .
 
+:publisher:UMassP
+    a :Publisher ;
+    foaf:name "University of Massachusetts Press" ;
+    address:localityName "Amherst" .
+
 :publisher:Verlag
     a :Publisher ;
     foaf:name "Verlag Dokumentation" ;
     address:localityName "Pullach, Germany" .
+
+:publisher:Verso
+    a :Publisher ;
+    foaf:name "Verso" ;
+    address:localityName "New York" .
 
 :publisher:WUP
     a :Publisher ;
@@ -6816,6 +7070,11 @@
     a :Publisher ;
     foaf:name "Wiley" ;
     address:localityName "New York" .
+
+:publisher:meson
+    a :Publisher ;
+    foaf:name "meson press" ;
+    address:localityName "Lüneburg, Germany" .
 
 :reading:Abbate2017
     a :Reading, bibo:AcademicArticle ;
@@ -6976,6 +7235,18 @@
     dc:publisher :publisher:CUP ;
     bibo:doi "10.1017/9781108593014" .
 
+:reading:Apel1981
+    # FIXME: reprint?
+    a :Reading, bibo:Book ;
+    dc:title "Charles Peirce: From Pragmatism to Pragmaticism" ;
+    dc:creator :person:OttoApelK ;
+    bibo:authorList (
+        :person:OttoApelK
+    ) ;
+    bibo:translator :person:KroisJ ;
+    dc:date "1981" ;
+    dc:publisher :publisher:UMassP .
+
 :reading:Arawjo2020
     a :Reading, :ConferencePaper ;
     owl:sameAs <http://doi.org/10.1145/3313831.3376731> ;
@@ -7076,6 +7347,29 @@
     bibo:presentedAt :conference:ACL2020 ;
     bibo:pages "5185-5198" ;
     bibo:doi "10.18653/v1/2020.acl-main.463" .
+
+:reading:Bergman2018
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1007/978-3-319-98092-8> ;
+    dc:title "A knowledge representation practionary: Guidelines based on Charles Saunders Peirce" ;
+    bibo:shortTitle "A knowledge representation practionary" ;
+    dc:creator :person:BergmanM ;
+    bibo:authorList (
+        :person:BergmanM
+    ) ;
+    dc:date "2018" ;
+    dc:publisher :publisher:Springer ;
+    bibo:doi "10.1007/978-3-319-98092-8" .
+
+:reading:Bernard2018
+    a :Reading, bibo:BookSection ;
+    dc:title "The total archive: On the function of non-knowledge in digital cultures" ;
+    dc:creator :person:BernardA ;
+    bibo:authorList (
+        :person:BernardA
+    ) ;
+    dc:isPartOf :volume:Bernard2018 ;
+    bibo:pages "19–38" .
 
 :reading:Bernstein1991
     a :Reading, :ConferencePaper ;
@@ -8301,6 +8595,17 @@
     bibo:pages "1-19" ;
     bibo:doi "10.28968/cftt.v4i1.243" .
 
+:reading:Joque2022
+    a :Reading, bibo:Book ;
+    dc:title "Revolutionary mathematics: Artificial intelligence, statistics, and the logic of capitalism" ;
+    bibo:shortTitle "Revolutionary mathematics" ;
+    dc:creator :person:JoqueJ ;
+    bibo:authorList (
+        :person:JoqueJ
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:Verso .
+
 :reading:Katai2007
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/s00146-007-0125-2> ;
@@ -8347,6 +8652,16 @@
     bibo:presentedAt :conference:CHI2019 ;
     bibo:reproducedIn :proceedings:CHI2019 ;
     bibo:doi "10.1145/3290605.3300569" .
+
+:reading:Koch2018
+    a :Reading, bibo:BookSection ;
+    dc:title "Introduction: Non-knowledge and digital cultures" ;
+    dc:creator :person:KochM ;
+    bibo:authorList (
+        :person:KochM
+    ) ;
+    dc:isPartOf :volume:Bernard2018 ;
+    bibo:pages "11–18" .
 
 :reading:Koopman2019
     a :Reading, bibo:Book ;
@@ -8806,6 +9121,21 @@
         bibo:issue "116/117"
     ] ;
     bibo:uri "https://newleftreview.org/issues/II116/articles/evgeny-morozov-digital-socialism" .
+
+:reading:Morozov2022
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Critique of techno feudal reason" ;
+    dc:creator :person:MorozovE ;
+    bibo:authorList (
+        :person:MorozovE
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Jan/Apr 2022" ;
+        dc:isPartOf :journal:NewLeftReview ;
+        bibo:volume "133/134"
+    ] ;
+    bibo:pages "89-126" .
 
 :reading:Mrazek2002a
     a :Reading, bibo:BookSection ;
@@ -9783,6 +10113,18 @@
     dc:publisher :publisher:PUP ;
     bibo:doi "10.1515/9781400873548" .
 
+:reading:Tsing2022
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1215/9781478022664-002> ;
+    dc:title "The socialty of birds: Reflections on ontological edge effects" ;
+    dc:creator :person:TsingA ;
+    bibo:authorList (
+        :person:TsingA
+    ) ;
+    dc:isPartOf :volume:VanDooren2022 ;
+    bibo:pages "15-32" ;
+    bibo:doi "10.1215/9781478022664-002" .
+
 :reading:Turner2017
     a :Reading, bibo:AcademicArticle ;
     # owl:sameAs <http://doi.org/10.1080/24701475.2017.1307540> ;
@@ -9926,6 +10268,24 @@
     dc:isPartOf :volume:VonFoerster2002 ;
     bibo:pages "101-116" .
 
+:reading:VonUexkull1982
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "The theory of meaning" ;
+    dc:creator :person:VonUexkull ;
+    bibo:authorList (
+        :person:VonUexkull
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1982" ;
+        bibo:issue "1" ;
+        bibo:volume "42" ;
+        dc:isPartOf :journal:Semiotica
+    ] ;
+    bibo:pages "25-82" ;
+    bibo:doi "10.1515/semi.1982.42.1.25" ;
+    bibo:uri "https://doi.org/10.1515/semi.1982.42.1.25" .
+
 :reading:Wakkary2017
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-23
@@ -9959,6 +10319,24 @@
     ] ;
     bibo:pages "327-345" ;
     bibo:doi "10.1007/s10746-012-9233-1" .
+
+:reading:West2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/03063127221078314> ;
+    dc:title "Cryptography as information control" ;
+    dc:creator :person:WestSM ;
+    bibo:authorList (
+        :person:WestSM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:SocStudSci ;
+        bibo:issue "3" ;
+        bibo:volume "52"
+    ] ;
+    bibo:pages "353-375" ;
+    bibo:doi "10.1177/03063127221078314" .
 
 :reading:Winograd1987
     a :Reading, bibo:AcademicArticle ;
@@ -9995,6 +10373,15 @@
     ] ;
     bibo:pages "191-197" ;
     bibo:doi "10.1007/BF00749016" .
+
+:reading:WinthropYoung2010
+    a :Reading, bibo:BookSection ;
+    dc:title "Bubbles and webs: A backdoor stroll through the readings of Uexküll" ;
+    dc:creator :person:WinthropYoungG ;
+    bibo:authorList (
+        :person:WinthropYoungG
+    ) ;
+    dc:isPartOf :volume:VonUexkull2010 .
 
 :reading:WinthropYoung2014
     a :Reading, bibo:AcademicArticle ;
@@ -10110,6 +10497,18 @@
     ) ;
     bibo:doi "10.4324/9781315575278" ;
     bibo:isbn13 "978-1-317-15652-9" .
+
+:volume:Bernard2018
+    a bibo:EditedBook ;
+    dc:title "Non-knowledge digital cultures" ;
+    dc:date "2018" ;
+    dc:publisher :publisher:meson ;
+    bibo:editor :person:BodenM, :person:KochM, :person:LeekerM ;
+    bibo:editorList (
+        :person:BodenM
+        :person:KochM
+        :person:LeekerM
+    ) .
 
 :volume:Boden1996
     a bibo:EditedBook ;
@@ -10312,7 +10711,22 @@
         :person:StarS
     ) .
 
+:volume:VanDooren2022
+    a bibo:Book ;
+    owl:sameAs <https://doi.org/10.1215/9781478022664> ;
+    bibo:isbn13 "978-1-4780-2266-4" ;
+    dc:title "Kin: Thinking with Deborah Bird Rose" ;
+    dc:publisher :publisher:DUP ;
+    dc:date "2022" ;
+    bibo:editor :person:VanDoorenT, :person:ChrulewM ;
+    bibo:editorList (
+        :person:VanDoorenT
+        :person:ChrulewM
+    ) ;
+    bibo:doi "10.1215/9781478022664" .
+
 :volume:Vismann2008
+    # FIXME: No author/editor?
     a bibo:Book ;
     bibo:isbn13 "9780804751506" ;
     dc:date "2008" ;
@@ -10330,4 +10744,16 @@
     bibo:authorList (
         :person:VonFoersterH
         :person:PoerksenB
+    ) .
+
+:volume:VonUexkull2010
+    a bibo:Book ;
+    bibo:isbn13 "978-0-8166-5900-5" ;
+    dc:date "2010" ;
+    dc:title "A forway into the worlds of Animals and Humans" ;
+    dc:publisher :publisher:UMP ;
+    dc:creator :person:VonUexkull ;
+    bibo:translator :person:ONeilJ ;
+    bibo:authorList (
+        :person:VonUexkull
     ) .
