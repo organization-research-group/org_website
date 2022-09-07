@@ -34,6 +34,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-08-26,
+        :meeting:2022-08-19,
+        :meeting:2022-07-08,
         :meeting:2022-07-01,
         :meeting:2022-06-24,
         :meeting:2022-06-17,
@@ -430,6 +433,12 @@
     dc:title "The British Journal of Sociology" ;
     foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-4446> ;
     bibo:issn "1468-4446" .
+
+:journal:CCQ
+    a bibo:Journal ;
+    dc:title "Cataloging & classification quarterly" ;
+    foaf:homepage <https://www.tandfonline.com/journals/wccq20> ;
+    bibo:issn "1544-4554" .
 
 :journal:CPO
     a bibo:Journal ;
@@ -4613,6 +4622,48 @@
         :reading:Brock2020
     ) .
 
+:meeting:2022-07-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-07-08T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DeGroat2014 ;
+    :schedule (
+        :reading:DeGroat2014
+    ) .
+
+:meeting:2022-08-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-08-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gray2018 ;
+    :schedule (
+        :reading:Gray2018
+    ) .
+
+:meeting:2022-08-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-08-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dander2022 ;
+    :schedule (
+        :reading:Dander2022
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -4808,6 +4859,13 @@
     foaf:surname "Best" ;
     foaf:homepage <https://english.berkeley.edu/users/15> .
 
+:person:BettingerP
+    a foaf:Person ;
+    owl:sameAs viaf:260976162, orcid:0000-0001-7389-1412 ;
+    foaf:givenname "Patrick" ;
+    foaf:surname "Bettinger" ;
+    foaf:homepage <http://www.patrick-bettinger.de/> .
+
 :person:BielbyJ
     a foaf:Person ;
     owl:sameAs viaf:218147118097526340176 ;
@@ -4868,6 +4926,13 @@
     foaf:givenname "Dominique" ;
     foaf:surname "Boullier" ;
     foaf:homepage <https://sites.google.com/site/dominiqueboullier/home> .
+
+:person:BounegruL
+    a foaf:Person ;
+    owl:sameAs viaf:250684192, wd:Q96053548, orcid:0000-0003-0198-5158 ;
+    foaf:givenname "Liliana" ;
+    foaf:surname "Bounegru" ;
+    foaf:homepage <https://lilianabounegru.org/> .
 
 :person:BowersM
     a foaf:Person ;
@@ -5144,6 +5209,13 @@
     foaf:surname "Damerow" ;
     foaf:workInfoHomepage <https://www.mpg.de/4987615/Infobox__Peter_Damerow> .
 
+:person:DanderV
+    a foaf:Person ;
+    owl:sameAs viaf:311187118, orcid:0000-0001-9978-8405 ;
+    foaf:givenname "Valentin" ;
+    foaf:surname "Dander" ;
+    foaf:workInfoHomepage <https://www.fhchp.de/personen/prof-dr-valentin-dander/> .
+
 :person:DastonL
     a foaf:Person ;
     owl:sameAs viaf:266876859, wd:Q529094 ;
@@ -5157,6 +5229,14 @@
     foaf:givenname "Ronald E" ;
     foaf:surname "Day" ;
     foaf:homepage <http://info.slis.indiana.edu/~roday/> .
+
+:person:DeGroatG
+    a foaf:Person ;
+    owl:sameAs viaf:, wd:, orcid:0000-0003-1904-0558 ;
+    foaf:givenname "Greta" ;
+    foaf:surname "de Groat" ;
+    foaf:workInfoHomepage <https://profiles.stanford.edu/greta-de-groat> ;
+    foaf:homepage <https://web.stanford.edu/~gdegroat/> .
 
 :person:DeJaegherH
     a foaf:Person ;
@@ -5379,6 +5459,13 @@
     foaf:surname "Genosko" ;
     foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
 
+:person:GerlitzC
+    a foaf:Person ;
+    owl:sameAs viaf:37154196757020111693, orcid:0000-0002-5716-9355 ;
+    foaf:givenname "Carolin" ;
+    foaf:surname "Gerlitz" ;
+    foaf:workInfoHomepage <https://www.uni-siegen.de/phil/medienwissenschaft/personal/lehrende/gerlitz_carolin/> .
+
 :person:GibsonJ
     a foaf:Person ;
     owl:sameAs viaf:12396941, wd:Q737823 ;
@@ -5405,6 +5492,13 @@
     foaf:givenname "Sébastian" ;
     foaf:surname "Grauwin" ;
     foaf:homepage <http://www.sebastian-grauwin.com/> .
+
+:person:GrayJ
+    a foaf:Person ;
+    owl:sameAs viaf:264144930322254441110, wd:Q47502184, orcid:0000-0001-6668-5899 ;
+    foaf:givenname "Jonathan" ;
+    foaf:surname "Gray" ;
+    foaf:homepage <https://jonathangray.org/> .
 
 :person:GreeneD
     a foaf:Person ;
@@ -5897,6 +5991,13 @@
     foaf:givenname "Yuanye" ;
     foaf:surname "Ma" ;
     foaf:homepage <https://sites.google.com/view/yuanyem/> .
+
+:person:MacgilchristF
+    a foaf:Person ;
+    owl:sameAs viaf:169718360, orcid:0000-0002-2828-4127 ;
+    foaf:givenname "Felicitas" ;
+    foaf:surname "Macgilchrist" ;
+    foaf:homepage <https://www.gei.de/en/institut/personen/details/felicitas-macgilchrist> .
 
 :person:MachlupF
     a foaf:Person ;
@@ -7074,6 +7175,11 @@
     foaf:name "Palgrave Macmillan" ;
     address:localityName "Cham, Switzerland" .
 
+:publisher:PalgraveP
+    a :Publisher ;
+    foaf:name "Palgrave Pivot Cham" ;
+    address:localityName "Cham, Switzerland" .
+
 :publisher:Paradigm
     a :Publisher ;
     foaf:name "Paradigm Publishers" ;
@@ -7633,11 +7739,6 @@
     dc:publisher :publisher:NYUP ;
     bibo:doi "10.18574/nyu/9781479820375.001.0001" .
 
-:reading:Brock2020
-    # FILLME: Update the details of this entry.
-    # Added automatically for meeting on 2022-07-01
-    a :Reading .
-
 :reading:Brower2020
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.16995/lefou.74> ;
@@ -7916,6 +8017,19 @@
     dc:publisher :publisher:Kluwer ;
     bibo:doi "10.1007/978-94-015-8624-5" .
 
+:reading:Dander2022
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1007/978-3-030-84343-4_3> ;
+    dc:title "School of data and shifting forms of political subjectivity" ;
+    dc:creator :person:DanderV, :person:MacgilchristF ;
+    bibo:authorList (
+        :person:DanderV
+        :person:MacgilchristF
+    ) ;
+    bibo:pages "45–69" ;
+    dc:isPartOf :volume:Bettinger2022 ;
+    bibo:doi "10.1007/978-3-030-84343-4_3" .
+
 :reading:Daston2017
     a :Reading, :Lecture ;
     dc:title "Algorithms before computers: Patterns, recipes, and rules" ;
@@ -7937,6 +8051,24 @@
     ) ;
     dc:date "2014" ;
     dc:publisher :publisher:MIT .
+
+:reading:DeGroat2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01639374.2014.954297> ;
+    dc:title "A history of video game cataloging in U.S. libraries" ;
+    dc:creator :person:DeGroatG ;
+    bibo:authorList (
+        :person:DeGroatG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2015" ;
+        dc:isPartOf :journal:CCQ ;
+        bibo:issue "2" ;
+        bibo:volume "53 "
+    ] ;
+    bibo:pages "135–156" ;
+    bibo:doi "10.1080/01639374.2014.954297" .
 
 :reading:DeMarco2007
     a :Reading, bibo:AcademicArticle ;
@@ -8479,6 +8611,25 @@
         bibo:volume "1"
     ] ;
     bibo:doi "10.24242/jclis.v1i1.7" .
+
+:reading:Gray2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/2053951718786316> ;
+    dc:title "Data infrastructure literacy" ;
+    dc:creator :person:GrayJ, :person:GerlitzC, :person:BounegruL ;
+    bibo:authorList (
+        :person:GrayJ
+        :person:GerlitzC
+        :person:BounegruL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:issue "2" ;
+        bibo:volume "5"
+    ] ;
+    bibo:doi "10.1177/2053951718786316" .
 
 :reading:Greene2021
     a :Reading, bibo:Book ;
@@ -10666,6 +10817,18 @@
         :person:KochM
         :person:LeekerM
     ) .
+
+:volume:Bettinger2022
+    a bibo:EditedBook ;
+    owl:sameAs <http://doi.org/10.1007/978-3-030-84343-4> ;
+    dc:title "Educational perspectives on mediality and subjectivation" ;
+    bibo:editor :person:BettingerP ;
+    bibo:editorList (
+        :person:BettingerP
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:PalgraveP ;
+    bibo:doi "10.1007/978-3-030-84343-4" .
 
 :volume:Boden1996
     a bibo:EditedBook ;
