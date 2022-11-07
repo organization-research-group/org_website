@@ -34,6 +34,16 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-11-11,
+        :meeting:2022-11-04,
+        :meeting:2022-10-28,
+        :meeting:2022-10-21,
+        :meeting:2022-10-14,
+        :meeting:2022-10-07,
+        :meeting:2022-09-30,
+        :meeting:2022-09-16,
+        :meeting:2022-09-09,
+        :meeting:2022-09-02,
         :meeting:2022-08-26,
         :meeting:2022-08-19,
         :meeting:2022-07-08,
@@ -546,6 +556,12 @@
     dc:title "Human Computer Interaction" ;
     foaf:homepage <http://www.tandfonline.com/toc/hhci20/current> ;
     bibo:issn "0737-0024" .
+
+:journal:HistoryAndTheory
+    a bibo:Journal ;
+    dc:title "History & Theory" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/14682303> ;
+    bibo:issn "1468-2303" .
 
 :journal:HumanStudies
     a bibo:Journal ;
@@ -4664,6 +4680,145 @@
         :reading:Dander2022
     ) .
 
+:meeting:2022-09-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Crooks2021 ;
+    :schedule (
+        :reading:Crooks2021
+    ) .
+
+:meeting:2022-09-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hong2022 ;
+    :schedule (
+        :reading:Hong2022
+    ) .
+
+:meeting:2022-09-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Simondon2016 ;
+    :schedule (
+        :reading:Simondon2016
+    ) .
+
+:meeting:2022-09-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-30T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Virtual field trip to <a href=\"https://re-compute.info/\">re:compute symposium</a>" ]
+    ) .
+
+:meeting:2022-10-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-07T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Montoya2022 ;
+    :schedule (
+        :reading:Montoya2022
+    ) .
+
+:meeting:2022-10-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-14T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Montoya2022 ;
+    :schedule (
+        :reading:Montoya2022
+    ) .
+
+:meeting:2022-10-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-10-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-28T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-11-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-04T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-11-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-11T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5169,10 +5324,24 @@
     foaf:surname "Couldry" ;
     foaf:homepage <http://www.nickcouldry.org/> .
 
+:person:CrooksR
+    a foaf:Person ;
+    owl:sameAs wd:Q53505750, orcid:0000-0001-7514-7021 ;
+    foaf:givenname "Roderic" ;
+    foaf:surname "Crooks" ;
+    foaf:homepage <https://www.rncrooks.info/> .
+
 :person:CunninghamN
     a foaf:Person ;
     foaf:givenname "Nathan" ;
     foaf:surname "Cunningham" .
+
+:person:CurrieM
+    a foaf:Person ;
+    owl:sameAs viaf:671164782071908600003 ;
+    foaf:givenname "Morgan" ;
+    foaf:surname "Currie" ;
+    foaf:homepage <https://www.morgancurrie.com/> .
 
 :person:CurtisB
     a foaf:Person ;
@@ -5649,6 +5818,13 @@
     foaf:surname "Holmes" ;
     foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
 
+:person:HongS
+    a foaf:Person ;
+    owl:sameAs viaf:9812148753716341320006, orcid:0000-0002-8243-4974 ;
+    foaf:givenname "Sun-ha" ;
+    foaf:surname "Hong" ;
+    foaf:homepage <0000-0002-8243-4974> .
+
 :person:HoyJ
     a foaf:Person ;
     foaf:givenname "Josephine" ;
@@ -5804,6 +5980,13 @@
     foaf:givenname "Matthias" ;
     foaf:surname "Koch" ;
     foaf:workInfoHomepage <https://www.leuphana.de/en/research-centers/cdc/people/fellows/matthias-koch.html> .
+
+:person:KockelmanP
+    a foaf:Person ;
+    owl:sameAs viaf:101397774, wd:Q112488827 ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Kockelman" ;
+    foaf:homepage <http://www.envorganism.org/> .
 
 :person:KollerA
     a foaf:Person ;
@@ -6102,6 +6285,13 @@
     foaf:givenname "Eric" ;
     foaf:surname "Monteiro" ;
     foaf:homepage <https://www.idi.ntnu.no/~ericm/> .
+
+:person:MontoyaR
+    a foaf:Person ;
+    owl:sameAs viaf:3163810673138822746, wd:, orcid:0000-0001-6841-0768 ;
+    foaf:givenname "Robert D." ;
+    foaf:surname "Montoya" ;
+    foaf:homepage <https://robertdmontoya.com/> .
 
 :person:MoorR
     a foaf:Person ;
@@ -6529,6 +6719,13 @@
     owl:sameAs viaf:39384262, wd:Q76849 ;
     foaf:givenname "Georg" ;
     foaf:surname "Simmel" .
+
+:person:SimondonG
+    a foaf:Person ;
+    owl:sameAs viaf:12340592, wd:Q1345582 ;
+    foaf:givenname "Gilbert" ;
+    foaf:surname "Simondon" ;
+    foaf:page <https://en.wikipedia.org/wiki/Gilbert_Simondon> .
 
 :person:SiskinC
     a foaf:Person ;
@@ -7265,6 +7462,11 @@
     foaf:name "University of Massachusetts Press" ;
     address:localityName "Amherst" .
 
+:publisher:Univocal
+    a :Publisher ;
+    foaf:name "Univocal" ;
+    address:localityName "Minneapolis" .
+
 :publisher:Verlag
     a :Publisher ;
     foaf:name "Verlag Dokumentation" ;
@@ -7978,6 +8180,25 @@
     dc:date "2019" ;
     dc:publisher :publisher:SUP ;
     bibo:isbn13 "9781503609754" .
+
+:reading:Crooks2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01972243.2021.1920081> ;
+    dc:title "Numbers will not save us: Agonistic data practices" ;
+    dc:creator :person:CrooksR, :person:CurrieM ;
+    bibo:authorList (
+        :person:CrooksR
+        :person:CurrieM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:InformationSociety ;
+        bibo:issue "4" ;
+        bibo:volume "37"
+    ] ;
+    bibo:pages "201-213" ;
+    bibo:doi "10.1080/01972243.2021.1920081" .
 
 :reading:Curtis1994
     a :Reading, bibo:AcademicArticle ;
@@ -8787,6 +9008,24 @@
     ] ;
     bibo:uri "http://eipcp.net/transversal/1106/holmes/en" .
 
+:reading:Hong2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/hith.12269> ;
+    dc:title "Predictions without futures" ;
+    dc:creator :person:HongS ;
+    bibo:authorList (
+        :person:HongS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 2022" ;
+        dc:isPartOf :journal:HistoryAndTheory ;
+        bibo:issue "3" ;
+        bibo:volume "61"
+    ] ;
+    bibo:pages "371-390" ;
+    bibo:doi "10.1111/hith.12269" .
+
 :reading:Hui2016
     a :Reading, bibo:Book ;
     dc:title "On the Existence of Digital Objects" ;
@@ -8957,6 +9196,19 @@
     ) ;
     dc:isPartOf :volume:Bernard2018 ;
     bibo:pages "11–18" .
+
+:reading:Kockelman2017
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780190636531.001.0001> ;
+    dc:title "The art of interpretation in the age of computation" ;
+    bibo:shortTitle "" ;
+    dc:creator :person:KockelmanP ;
+    bibo:authorList (
+        :person:KockelmanP
+    ) ;
+    dc:date "2017" ;
+    dc:publisher :publisher:OUP ;
+    bibo:doi "10.1093/acprof:oso/9780190636531.001.0001" .
 
 :reading:Koopman2019
     a :Reading, bibo:Book ;
@@ -9378,6 +9630,19 @@
     ] ;
     bibo:pages "575-607" ;
     bibo:doi "10.1007/s10606-012-9167-1" .
+
+:reading:Montoya2022
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/12245.001.0001> ;
+    dc:title "Power of position: Classification and the biodiversity sciences" ;
+    bibo:shortTitle "Power of position" ;
+    dc:creator :person:MontoyaR ;
+    bibo:authorList (
+        :person:MontoyaR
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/12245.001.0001" .
 
 :reading:Moor2016
     a :Reading, bibo:Book ;
@@ -10047,6 +10312,16 @@
     ] ;
     bibo:pages "87-92" ;
     bibo:doi "10.1177/0263276414531052" .
+
+:reading:Simondon2016
+    a :Reading, bibo:Book ;
+    dc:title "On the modes of existence of technical objects" ;
+    dc:creator :person:SimondonG ;
+    bibo:authorList (
+        :person:SimondonG
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:Univocal .
 
 :reading:Siskin2016
     a :Reading, bibo:Book ;
