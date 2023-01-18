@@ -34,6 +34,13 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2022-01-20,
+        :meeting:2023-01-13,
+        :meeting:2022-12-16,
+        :meeting:2022-12-09,
+        :meeting:2022-12-02,
+        :meeting:2022-11-25,
+        :meeting:2022-11-18,
         :meeting:2022-11-11,
         :meeting:2022-11-04,
         :meeting:2022-10-28,
@@ -426,6 +433,12 @@
     a bibo:Journal ;
     dc:title "Advancing digital humanities: research, methods, theories" .
 
+:journal:AmericanAnthropologist
+    a bibo:Journal ;
+    dc:title "American Anthropologist" ;
+    foaf:homepage <https://www.americananthropologist.org/> ;
+    bibo:issn "1548-1433" .
+
 :journal:ArchiveJournal
     a bibo:Journal ;
     dc:title "Archive Journal" ;
@@ -504,6 +517,12 @@
     dc:title "Cultural Studies" ;
     foaf:homepage <https://www.tandfonline.com/toc/rcus20/current> ;
     bibo:issn "1466-4348" .
+
+:journal:DSH
+    a bibo:Journal ;
+    dc:title "Digital Scholarship in the Humanities" ;
+    foaf:homepage <https://academic.oup.com/dsh> ;
+    bibo:issn "2055-768X" .
 
 :journal:EJIS
     a bibo:Journal ;
@@ -4400,6 +4419,20 @@
         :reading:Ernst2016
     ) .
 
+:meeting:2022-01-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-01-20T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tatarchenko2021B ;
+    :schedule (
+        :reading:Tatarchenko2021B
+    ) .
+
 :meeting:2022-01-21
     a :Meeting ;
     lode:atTime [
@@ -4817,6 +4850,90 @@
     lode:involved :reading:Kockelman2017 ;
     :schedule (
         :reading:Kockelman2017
+    ) .
+
+:meeting:2022-11-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-18T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Roach2022 ;
+    :schedule (
+        :reading:Roach2022
+    ) .
+
+:meeting:2022-11-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-25T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Garfinkel1986 ;
+    :schedule (
+        :reading:Garfinkel1986
+    ) .
+
+:meeting:2022-12-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-12-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Button2022 ;
+    :schedule (
+        :reading:Button2022
+    ) .
+
+:meeting:2022-12-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-12-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Button2022 ;
+    :schedule (
+        :reading:Button2022
+    ) .
+
+:meeting:2022-12-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-12-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Goodwin1994 ;
+    :schedule (
+        :reading:Goodwin1994
+    ) .
+
+:meeting:2023-01-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-01-13T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tatarchenko2021A ;
+    :schedule (
+        :reading:Tatarchenko2021A
     ) .
 
 :person:AbbateJ
@@ -5420,6 +5537,14 @@
     foaf:surname "De Marco" ;
     foaf:workInfoHomepage <https://www.uni.li/en/who-s-who/@@person_detail/22831.67> .
 
+:person:DeMolL
+    a foaf:Person ;
+    owl:sameAs viaf:49155564101713002485, orcid:0000-0001-8520-2493 ;
+    foaf:givenname "Liesbeth" ;
+    foaf:surname "De Mol" ;
+    foaf:workInfoHomepage <https://pro.univ-lille.fr/liesbeth-de-mol> ;
+    foaf:page <https://dblp.org/pid/02/3353.html> .
+
 :person:DennettD
     a foaf:Person ;
     owl:sameAs viaf:99825560, wd:Q215263 ;
@@ -5647,6 +5772,14 @@
     foaf:givenname "Jeremy" ;
     foaf:surname "Gilbert" ;
     foaf:homepage <https://www.jeremygilbert.org/> .
+
+:person:GoodwinC
+    a foaf:Person ;
+    owl:sameAs viaf:94360232, wd:Q26722651, orcid: ;
+    foaf:givenname "Charles" ;
+    foaf:surname "Goodwin" ;
+    foaf:homepage <http://www.sscnet.ucla.edu/clic/cgoodwin/> ;
+    foaf:workInfoHomepage <https://comm.ucla.edu/person/charles-goodwin/> .
 
 :person:GorichanazT
     a foaf:Person ;
@@ -6579,6 +6712,13 @@
     foaf:surname "Rieder" ;
     foaf:homepage <http://thepoliticsofsystems.net/> .
 
+:person:RoachR
+    a foaf:Person ;
+    owl:sameAs viaf:311786586, orcid:0000-0002-8102-4287 ;
+    foaf:givenname "Rebecca" ;
+    foaf:surname "Roach" ;
+    foaf:workInfoHomepage <https://www.birmingham.ac.uk/staff/profiles/english/roach-rebecca.aspx> .
+
 :person:RobertsS
     a foaf:Person ;
     foaf:givenname "Sarah T." ;
@@ -6655,6 +6795,13 @@
     foaf:homepage <https://people.ucsc.edu/~wsack/> ;
     foaf:workInfoHomepage <http://film.ucsc.edu/faculty/warren_sack> .
 
+:person:SacksH
+    a foaf:Person ;
+    owl:sameAs viaf:79135093, wd:Q745034 ;
+    foaf:givenname "Harvey" ;
+    foaf:surname "Sacks" ;
+    foaf:page <https://en.wikipedia.org/wiki/Harvey_Sacks> .
+
 :person:SalterC
     a foaf:Person ;
     owl:sameAs viaf:86250151 ;
@@ -6680,6 +6827,13 @@
     owl:sameAs orcid:0000-0002-7029-2008 ;
     foaf:givenname "Aayush" ;
     foaf:surname "Shah" .
+
+:person:SharrockW
+    a foaf:Person ;
+    owl:sameAs viaf:22273870, wd:Q116174613 ;
+    foaf:givenname "Wes" ;
+    foaf:surname "Sharrock" ;
+    foaf:page <https://philpeople.org/profiles/wes-sharrock> .
 
 :person:ShavitA
     a foaf:Person ;
@@ -6857,6 +7011,13 @@
     owl:sameAs orcid:0000-0003-4563-5192 ;
     foaf:givenname "Rebekah" ;
     foaf:surname "Tang" .
+
+:person:TatarchenkoK
+    a foaf:Person ;
+    owl:sameAs viaf:2587159521658833070004, orcid:0000-0002-6548-3467 ;
+    foaf:givenname "Ksenia" ;
+    foaf:surname "Tatarchenko" ;
+    foaf:workInfoHomepage <https://faculty.smu.edu.sg/profile/ksenia-tatarchenko-1676> .
 
 :person:TenenD
     a foaf:Person ;
@@ -7115,6 +7276,13 @@
     foaf:givenname "Juan" ;
     foaf:surname "Ye" ;
     foaf:homepage <https://sites.google.com/site/juanyeresearch/> .
+
+:person:YermakovaA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-4019-2313 ;
+    foaf:givenname "Anya" ;
+    foaf:surname "Yermakova" ;
+    foaf:homepage <http://www.anyayermakova.com/> .
 
 :person:YoungL
     a foaf:Person ;
@@ -8023,6 +8191,21 @@
     bibo:pages "39-42" ;
     bibo:doi "10.1007/BF01305842" .
 
+:reading:Button2022
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781003220794> ;
+    dc:title "Ethnomethodology, conversational analysis and constructive analysis: On formal structures and practical action" ;
+    bibo:shortTitle "Ethnomethodology, conversational analysis and constructive analysis" ;
+    dc:creator :person:ButtonG, :person:LynchM, :person:SharrockW ;
+    bibo:authorList (
+        :person:ButtonG
+        :person:LynchM
+        :person:SharrockW
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:doi "10.4324/9781003220794" .
+
 :reading:Calzati2020
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1177/1527476420957267> ;
@@ -8679,6 +8862,17 @@
     bibo:pages "405-424" ;
     bibo:doi "10.1093/llc/fqq021" .
 
+:reading:Garfinkel1986
+    a :Reading, bibo:BookSection ;
+    dc:title "On formal structures of practical actions" ;
+    dc:creator :person:GarfinkelH, :person:SacksH ;
+    bibo:authorList (
+        :person:GarfinkelH
+        :person:SacksH
+    ) ;
+    bibo:pages "157-189" ;
+    dc:isPartOf :volume:Garfinkel1986 .
+
 :reading:Garfinkel2008
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/934409002> ;
@@ -8794,6 +8988,24 @@
     dc:publisher :publisher:Pluto ;
     bibo:isbn13 "978-1-84964-976-6" ;
     bibo:doi "10.2307/j.ctt183p7m6" .
+
+:reading:Goodwin1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1525/aa.1994.96.3.02a00100> ;
+    dc:title "Professional vision" ;
+    dc:creator :person:GoodwinC ;
+    bibo:authorList (
+        :person:GoodwinC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1994" ;
+        dc:isPartOf :journal:AmericanAnthropologist ;
+        bibo:issue "3" ;
+        bibo:volume "96"
+    ] ;
+    bibo:pages "606-633" ;
+    bibo:doi "10.1525/aa.1994.96.3.02a00100" .
 
 :reading:Gorichanaz2016
     a :Reading, bibo:AcademicArticle ;
@@ -10138,6 +10350,23 @@
     dc:publisher :publisher:AUP ;
     bibo:doi "10.2307/j.ctv12sdvf1" .
 
+:reading:Roach2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1093/llc/fqac066> ;
+    dc:title "Expanding the history of humanities computing: Hugh Kenner’s conversational criticism" ;
+    dc:creator :person:RoachR ;
+    bibo:authorList (
+        :person:RoachR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:DSH ;
+        bibo:volume "00"
+    ] ;
+    bibo:pages "1-17" ;
+    bibo:doi "10.1093/llc/fqac066" .
+
 :reading:RoblesAnderson2016
     a :Reading, bibo:AcademicArticle ;
     dc:title "“One damn slide after another”: PowerPoint at every occasion for speech" ;
@@ -10595,6 +10824,46 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "85-95" ;
     bibo:doi "10.1007/BF01305852" .
+
+:reading:Tatarchenko2021A
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2021.3126649> ;
+    dc:title "Russian logics and the culture of impossible: Part I–Recovering intelligentsia logics" ;
+    dc:creator :person:TatarchenkoK, :person:YermakovaA, :person:DeMolL ;
+    bibo:authorList (
+        :person:TatarchenkoK
+        :person:YermakovaA
+        :person:DeMolL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "4" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "43-56" ;
+    bibo:doi "10.1109/MAHC.2021.3126649" .
+
+:reading:Tatarchenko2021B
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2021.3135714> ;
+    dc:title "Russian logics and the culture of impossible: Part II–Reinterpreting algorithmic rationality" ;
+    dc:creator :person:TatarchenkoK, :person:YermakovaA, :person:DeMolL ;
+    bibo:authorList (
+        :person:TatarchenkoK
+        :person:YermakovaA
+        :person:DeMolL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "4" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "57-69" ;
+    bibo:doi "10.1109/MAHC.2021.3135714" .
 
 :reading:Tenen2017
     a :Reading, bibo:Book ;
@@ -11197,6 +11466,16 @@
     bibo:authorList (
         :person:EscobarA
     ) .
+
+:volume:Garfinkel1986
+    a bibo:EditedBook ;
+    dc:title "Ethnomethodological studies of work" ;
+    bibo:editor :person:GarfinkelH ;
+    bibo:editorList (
+        :person:GarfinkelH
+    ) ;
+    dc:date "1986" ;
+    dc:publisher :publisher:Routledge .
 
 :volume:Hildebrandt2011
     a bibo:EditedBook ;
