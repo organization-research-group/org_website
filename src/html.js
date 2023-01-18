@@ -297,6 +297,7 @@ function renderPage(page) {
             h('div', [
               h('a', { href: 'graph.ttl' }, 'Graph'),
               h('a', { href: 'feed.json' }, 'Feed'),
+              h('a', { href: 'https://github.com/organization-research-group/org_website' }, 'Source'),
             ])
           ]),
         ]),
