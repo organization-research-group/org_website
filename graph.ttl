@@ -34,6 +34,12 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-03-03,
+        :meeting:2023-02-24,
+        :meeting:2023-02-17,
+        :meeting:2023-02-10,
+        :meeting:2023-02-03,
+        :meeting:2023-01-27,
         :meeting:2023-01-20,
         :meeting:2023-01-13,
         :meeting:2022-12-16,
@@ -4936,6 +4942,91 @@
         :reading:Tatarchenko2021B
     ) .
 
+:meeting:2023-01-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-01-27T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ginzburg2004 ;
+    :schedule (
+        :reading:Ginzburg2004
+    ) .
+
+:meeting:2023-02-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Barker2023 ;
+    :schedule (
+        :reading:Barker2023
+    ) .
+
+:meeting:2023-02-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Serres2015 ;
+    :schedule (
+        :reading:Serres2015
+    ) .
+
+:meeting:2023-02-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bishop2022 ;
+    :schedule (
+        :reading:Bishop2022
+        [ dc:description """Read an additional article from the special section <a href="https://journals.sagepub.com/toc/tcs/39/7-8">Bernard Stiegler and the Internation Project: Computational practices and circumscribed futures</a>.""" ]
+    ) .
+
+:meeting:2023-02-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Iliadis2023 ;
+    :schedule (
+        :reading:Iliadis2023
+    ) .
+
+:meeting:2023-03-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wickett2023 ;
+    :schedule (
+        :reading:Wickett2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5045,6 +5136,13 @@
     foaf:surname "Barad" ;
     foaf:homepage <https://people.ucsc.edu/~kbarad/> .
 
+:person:BarkerT
+    a foaf:Person ;
+    owl:sameAs viaf:233151759, orcid:0000-0003-0382-8025 ;
+    foaf:givenname "Timothy" ;
+    foaf:surname "Barker" ;
+    foaf:workInfoHomepage <https://www.gla.ac.uk/schools/cca/staff/timothybarker/> .
+
 :person:BawdenD
     a foaf:Person ;
     owl:sameAs viaf:2620117 ;
@@ -5144,6 +5242,13 @@
     foaf:givenname "Jared" ;
     foaf:surname "Bielby" ;
     foaf:homepage <https://www.jaredbielby.com/> .
+
+:person:BishopR
+    a foaf:Person ;
+    owl:sameAs viaf:261594317, wd:Q112543367, orcid:0000-0003-0164-3457 ;
+    foaf:givenname "Ryan" ;
+    foaf:surname "Bishop" ;
+    foaf:workInfoHomepage <https://www.southampton.ac.uk/people/5x8ffs/professor-ryan-bishop> .
 
 :person:BlackS
     a foaf:Person ;
@@ -5773,6 +5878,13 @@
     foaf:surname "Gilbert" ;
     foaf:homepage <https://www.jeremygilbert.org/> .
 
+:person:GinzburgC
+    a foaf:Person ;
+    owl:sameAs viaf:108148905, wd:Q355251 ;
+    foaf:givenname "Carlo" ;
+    foaf:surname "Ginzburg" ;
+    foaf:homepage <https://web.archive.org/web/20120716205625/http://www.sscnet.ucla.edu/history/ginzburg/> .
+
 :person:GoodwinC
     a foaf:Person ;
     owl:sameAs viaf:94360232, wd:Q26722651, orcid: ;
@@ -6056,6 +6168,12 @@
     foaf:givenname "Osamu" ;
     foaf:surname "Katai" ;
     foaf:homepage <https://www.researchgate.net/profile/Osamu_Katai> .
+
+:person:KavakliS
+    a foaf:Person ;
+    foaf:givenname "Sezgi Başak" ;
+    foaf:surname "Kavaklı" ;
+    foaf:workInfoHomepage <https://klein.temple.edu/directory/sezgi-basak-kavakli> .
 
 :person:KawakamiH
     a foaf:Person ;
@@ -6822,6 +6940,13 @@
     foaf:givenname "Len" ;
     foaf:surname "Sassaman" .
 
+:person:SerresM
+    a foaf:Person ;
+    owl:sameAs viaf:76322799, wd:Q364456 ;
+    foaf:givenname "Michel" ;
+    foaf:surname "Serres" ;
+    foaf:page <http://michelserres.blogspot.com/> .
+
 :person:ShahA
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-7029-2008 ;
@@ -6897,10 +7022,10 @@
 
 :person:SmithD
     a foaf:Person ;
-    owl:sameAs viaf:16932461 ;
+    owl:sameAs viaf:16932461, wd:Q104606621 ;
     foaf:givenname "Daniel Warren" ;
     foaf:surname "Smith" ;
-    foaf:homepage <https://www.cla.purdue.edu/philosophy/directory/?p=daniel_smith> .
+    foaf:page <https://philpeople.org/profiles/daniel-w-smith> .
 
 :person:SofiaZ
     a foaf:Person ;
@@ -6964,6 +7089,12 @@
     foaf:givenname "Nikki" ;
     foaf:surname "Stevens" ;
     foaf:homepage <http://nikkistevens.com/> .
+
+:person:StevensW
+    a foaf:Person ;
+    foaf:givenname "Wesley" ;
+    foaf:surname "Stevens" ;
+    foaf:workInfoHomepage <https://sc.edu/study/colleges_schools/cic/faculty-staff/stevens_wesley_elizabeth.php> .
 
 :person:StevensonM
     a foaf:Person ;
@@ -7898,6 +8029,24 @@
     bibo:pages "801–831" ;
     bibo:doi "10.1086/345321" .
 
+:reading:Barker2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/02632764221140825> ;
+    dc:title "Michael Serres and the philosophy of technology" ;
+    dc:creator :person:BarkerT ;
+    bibo:authorList (
+        :person:BarkerT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:TCS
+        # bibo:issue "" ;
+        # bibo:volume ""
+    ] ;
+    bibo:pages "1-16" ;
+    bibo:doi "10.1177/02632764221140825" .
+
 :reading:Becker1982a
     a :Reading, bibo:BookSection ;
     dc:title "Art worlds and collective activity" ;
@@ -8001,6 +8150,24 @@
     bibo:presentedAt :conference:WebStudies2018 ;
     bibo:pages "5-11" ;
     bibo:doi "10.1145/3240431.3240433" .
+
+:reading:Bishop2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/02632764221141804> ;
+    dc:title "Bernard Stiegler and the Internation Project: An introduction" ;
+    dc:creator :person:BishopR ;
+    bibo:authorList (
+        :person:BishopR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "7-8" ;
+        bibo:volume "39"
+    ] ;
+    bibo:pages "5-17" ;
+    bibo:doi "10.1177/02632764221141804" .
 
 :reading:Blair2004
     a :Reading, bibo:AcademicArticle ;
@@ -8989,6 +9156,24 @@
     bibo:isbn13 "978-1-84964-976-6" ;
     bibo:doi "10.2307/j.ctt183p7m6" .
 
+:reading:Ginzburg2004
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/421161> ;
+    dc:title "Family resemblances and family trees: Two cognitive metaphors" ;
+    dc:creator :person:GinzburgC ;
+    bibo:authorList (
+        :person:GinzburgC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Spring 2004" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "3" ;
+        bibo:volume "30"
+    ] ;
+    bibo:pages "537-556" ;
+    bibo:doi "10.1086/421161" .
+
 :reading:Goodwin1994
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1525/aa.1994.96.3.02a00100> ;
@@ -9310,6 +9495,25 @@
         dc:isPartOf :journal:OIR
     ] ;
     bibo:doi "10.2139/ssrn.3326315" .
+
+:reading:Iliadis2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.24744> ;
+    dc:title "One schema to rule them all: How Schema.org models the world of search" ;
+    dc:creator :person:IliadisA, :person:AckerA, :person:StevensW, :person:KavakliS ;
+    bibo:authorList (
+        :person:IliadisA
+        :person:AckerA
+        :person:StevensW
+        :person:KavakliS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:JASIST
+    ] ;
+    bibo:pages "1-64" ;
+    bibo:doi "10.1002/asi.24744" .
 
 :reading:Ingold2007
     a :Reading, bibo:Book ;
@@ -10474,6 +10678,18 @@
     dc:publisher :publisher:MIT ;
     bibo:isbn13 "978-0-2620-2846-2" .
 
+:reading:Serres2015
+    a :Reading, bibo:Book ;
+    dc:title "Thumbelina: The culture and technology of Millenials" ;
+    bibo:shortTitle "Thumbelina" ;
+    dc:creator :person:SerresM ;
+    bibo:authorList (
+        :person:SerresM
+    ) ;
+    bibo:translator :person:SmithD ;
+    dc:date "2015" ;
+    dc:publisher :publisher:RowmanLittlefield .
+
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
     dc:title "Transforming objects into data: how minute technicalities of recording “species location” entrench a basic challenge for biodiversity" ;
@@ -11176,6 +11392,22 @@
     ] ;
     bibo:pages "353-375" ;
     bibo:doi "10.1177/03063127221078314" .
+
+:reading:Wickett2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.24745> ;
+    dc:title "Critical data modeling and the basic representation model" ;
+    dc:creator :person:WickettK ;
+    bibo:authorList (
+        :person:WickettK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:JASIST ;
+    ] ;
+    bibo:pages "1-11" ;
+    bibo:doi "10.1002/asi.24745" .
 
 :reading:Winograd1987
     a :Reading, bibo:AcademicArticle ;
