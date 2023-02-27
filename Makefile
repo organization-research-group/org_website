@@ -60,6 +60,6 @@ add_missing_entities:
 	bin/missing_entities graph.ttl >> graph.ttl
 	make sort_turtle
 
-.PHONY: validate
-validate:
+.PHONY: check
+check:
 	shacl v -s shape.ttl -d graph.ttl
