@@ -34,6 +34,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-03-17,
+        :meeting:2023-03-10,
         :meeting:2023-03-03,
         :meeting:2023-02-24,
         :meeting:2023-02-17,
@@ -803,6 +805,12 @@
     dc:title "Review of Communication" ;
     foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
     bibo:issn "1535-8593" .
+
+:journal:SI
+    a bibo:Journal ;
+    dc:title "Sociological Inquiry" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/1475682x> ;
+    bibo:issn "1475-682X" .
 
 :journal:STH
     a bibo:Journal ;
@@ -5027,6 +5035,34 @@
         :reading:Wickett2023
     ) .
 
+:meeting:2023-03-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Poirier2021 ;
+    :schedule (
+        :reading:Poirier2021
+    ) .
+
+:meeting:2023-03-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Smith1974 ;
+    :schedule (
+        :reading:Smith1974
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6750,6 +6786,13 @@
     foaf:surname "Poerksen" ;
     foaf:workInfoHomepage <https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/philosophie-rhetorik-medien/institute-of-media-studies/institute/staff/poerksen-bernhard-prof-dr/> .
 
+:person:PoirierL
+    a foaf:Person ;
+    owl:sameAs viaf:47157468013322322941 , orcid:0000-0001-9307-5834 ;
+    foaf:givenname "Lindsay" ;
+    foaf:surname "Poirier" ;
+    foaf:workInfoHomepage <https://www.smith.edu/academics/faculty/lindsay-poirier> .
+
 :person:PolanyiK
     a foaf:Person ;
     owl:sameAs viaf:77112818 , wd:Q318029 ;
@@ -7026,6 +7069,13 @@
     foaf:givenname "Daniel Warren" ;
     foaf:surname "Smith" ;
     foaf:page <https://philpeople.org/profiles/daniel-w-smith> .
+
+:person:SmithDorothy
+    a foaf:Person ;
+    owl:sameAs viaf:110114552, wd:Q545915 ;
+    foaf:givenname "Dorothy" ;
+    foaf:surname "Smith" ;
+    foaf:page <https://en.wikipedia.org/wiki/Dorothy_E._Smith> .
 
 :person:SofiaZ
     a foaf:Person ;
@@ -10369,6 +10419,23 @@
     ] ;
     bibo:doi "10.1177/20539517211007510" .
 
+:reading:Poirier2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1177/20539517211029322> ;
+    dc:title "Reading datasets: Strategies for interpreting the politics of data signification" ;
+    dc:creator :person:PoirierL ;
+    bibo:authorList (
+        :person:PoirierL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:issue "2" ;
+        bibo:volume "8"
+    ] ;
+    bibo:doi "10.1177/20539517211029322" .
+
 :reading:Poitou1997
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-30
@@ -10779,6 +10846,23 @@
     dc:date "2016" ;
     dc:publisher :publisher:MIT ;
     bibo:isbn13 "978-0-262-03531-6" .
+
+:reading:Smith1974
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1111/j.1475-682X.1974.tb01159.x> ;
+    dc:title "The social construction of documentary reality" ;
+    dc:creator :person:SmithDorothy ;
+    bibo:authorList (
+        :person:SmithDorothy
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1975" ;
+        dc:isPartOf :journal:SI ;
+        bibo:issue "4" ;
+        bibo:volume "44"
+    ] ;
+    bibo:doi "10.1111/j.1475-682X.1974.tb01159.x" .
 
 :reading:Smith2011
     a :Reading, bibo:BookSection ;
