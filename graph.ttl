@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-03-24,
         :meeting:2023-03-17,
         :meeting:2023-03-10,
         :meeting:2023-03-03,
@@ -561,6 +562,12 @@
     dc:title "Emergence: Complexity and Organization" ;
     foaf:homepage <https://journal.emergentpublications.com> ;
     bibo:issn "15213250" .
+
+:journal:FIP
+    a bibo:Journal ;
+    dc:title "Frontiers in Psychology" ;
+    foaf:homepage <https://www.frontiersin.org/journals/psychology> ;
+    bibo:issn "1664-1078" .
 
 :journal:FirstMonday
     a bibo:Journal ;
@@ -5063,6 +5070,20 @@
         :reading:Smith1974
     ) .
 
+:meeting:2023-03-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stewart2014 ;
+    :schedule (
+        :reading:Stewart2014
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7152,6 +7173,12 @@
     foaf:givenname "Michael" ;
     foaf:surname "Stevenson" ;
     foaf:homepage <https://hcommons.org/members/mstevenson/> .
+
+:person:StewartJ
+    a foaf:Person ;
+    owl:sameAs viaf:84982383 ;
+    foaf:givenname "John" ;
+    foaf:surname "Stewart" .
 
 :person:StolerAL
     a foaf:Person ;
@@ -11065,6 +11092,23 @@
         bibo:issue "1" ;
     ] ;
     bibo:doi "10.1080/24701475.2020.1725854" .
+
+:reading:Stewart2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.3389/fpsyg.2014.00654> ;
+    dc:title "An enquiry concerning the nature of conceptual categories: A case-study on the social dimensions of human cognition" ;
+    dc:creator :person:StewartJ ;
+    bibo:authorList (
+        :person:StewartJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2014" ;
+        dc:isPartOf :journal:FIP ;
+        bibo:volume "5"
+    ] ;
+    bibo:pages "1-13" ;
+    bibo:doi "10.3389/fpsyg.2014.00654" .
 
 :reading:Stoler2009
     a :Reading, bibo:Book ;
