@@ -34,6 +34,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-04-14,
+        :meeting:2023-04-07,
+        :meeting:2023-03-31,
         :meeting:2023-03-24,
         :meeting:2023-03-17,
         :meeting:2023-03-10,
@@ -5077,6 +5080,45 @@
         time:hasBeginning [
             a time:Instant ;
             time:inXSDDateTimeStamp "2023-03-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting—extended spring break." ]
+    ) .
+
+:meeting:2023-03-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-31T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting—extended spring break." ]
+    ) .
+
+:meeting:2023-04-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-07T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting—extended spring break." ]
+    ) .
+
+:meeting:2023-04-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-14T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Stewart2014 ;
