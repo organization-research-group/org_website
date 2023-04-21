@@ -34,6 +34,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-04-28,
         :meeting:2023-04-21,
         :meeting:2023-04-14,
         :meeting:2023-04-07,
@@ -5141,6 +5142,20 @@
         :reading:Sacks1972
     ) .
 
+:meeting:2023-04-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-28T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Labov1973 ;
+    :schedule (
+        :reading:Labov1973
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5235,6 +5250,12 @@
     foaf:givenname "Jillian" ;
     foaf:surname "Báez" ;
     foaf:homepage <https://csivc.csi.cuny.edu/mediaculture/files/faculty/baez.html> .
+
+:person:BaileyCJ
+  a foaf:Person ;
+  owl:sameAs viaf:54169058 ;
+  foaf:givenname "Charles-James" ;
+  foaf:surname "Bailey" .
 
 :person:BalkaE
     a foaf:Person ;
@@ -6394,6 +6415,13 @@
     foaf:surname "Krois" ;
     foaf:page <https://de.wikipedia.org/wiki/John_Michael_Krois> .
 
+:person:LabovW
+  a foaf:Person ;
+  owl:sameAs viaf:71454698 , wd:Q357923 ;
+  foaf:givenname "William" ;
+  foaf:surname "Labov" ;
+  foaf:homepage <https://www.ling.upenn.edu/~wlabov/home.html> .
+
 :person:LagozeC
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-5281-5215 ;
@@ -7122,6 +7150,13 @@
     foaf:surname "Shubina" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~ashubina/> .
 
+:person:ShuyR
+    a foaf:Person ;
+    owl:sameAs viaf:86105642 , wd:Q18738864 ;
+    foaf:givenname "Roger" ;
+    foaf:surname "Shuy" ;
+    foaf:homepage <http://www.rogershuy.com> .
+
 :person:SiegertB
     a foaf:Person ;
     owl:sameAs viaf:66760106, wd:Q110715 ;
@@ -7758,6 +7793,11 @@
     a :Publisher ;
     foaf:name "The Free Press" ;
     address:localityName "Glencoe, Illinois" .
+
+:publisher:GUP
+    a :Publisher ;
+    foaf:name "Georgetown University Press" ;
+    address:localityName "Washington, DC" .
 
 :publisher:HMH
     a :Publisher ;
@@ -9813,6 +9853,16 @@
     bibo:pages "243-259" ;
     bibo:doi "10.1177/1461444810370951" .
 
+:reading:Labov1973
+    a :Reading , bibo:BookSection ;
+    dc:title "The boundaries of words and their meanings" ;
+    dc:creator :person:LabovW ;
+    bibo:authorList (
+        :person:LabovW
+    ) ;
+    dc:isPartOf :volume:Bailey1973 ;
+    bibo:pages "29–62" .
+
 :reading:Lash2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1177/0263276415623063> ;
@@ -11769,6 +11819,18 @@
     owl:sameAs <https://doi.org/10.1016/C2009-0-16481-4> ;
     bibo:doi "10.1016/C2009-0-16481-4" ;
     bibo:isbn13 "978-0-444-51726-5" .
+
+:volume:Bailey1973
+  a bibo:Book ;
+  dc:title "New Ways of Analyzing Variation in English" ;
+  dc:date "1973" ;
+  dc:publisher :publisher:GUP ;
+  bibo:editor :person:BaileyCJ , :person:ShuyR ;
+  bibo:editorList (
+    :person:BaileyCJ
+    :person:ShuyR
+  ) ;
+  bibo:isbn10 "0878402055" .
 
 :volume:Becker1982
     a bibo:Book ;
