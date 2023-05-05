@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-05-12,
         :meeting:2023-05-05,
         :meeting:2023-04-28,
         :meeting:2023-04-21,
@@ -860,6 +861,12 @@
     dc:title "Social Studies of Science" ;
     foaf:homepage <http://journals.sagepub.com/home/sss> ;
     bibo:issn "0306-3127" .
+
+:journal:Sociologica
+    a bibo:Journal ;
+    dc:title "Sociologica" ;
+    foaf:homepage <https://sociologica.unibo.it> ;
+    bibo:issn "19718853" .
 
 :journal:SociologicalTheory
     a bibo:Journal ;
@@ -5178,6 +5185,20 @@
         :reading:Piantadosi2022
     ) .
 
+:meeting:2023-05-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-05-12T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:JohnMathews2022 ;
+    :schedule (
+        :reading:JohnMathews2022
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5559,6 +5580,13 @@
     owl:sameAs viaf:61709255, wd:Q4963278 ;
     foaf:givenname "Brian" ;
     foaf:surname "Cantwell Smith" .
+
+:person:CardonD
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3892-9611 , viaf:122350486 , wd:Q15131143 ;
+    foaf:givenname "Dominique" ;
+    foaf:surname "Cardon" ;
+    foaf:workInfoHomepage <https://medialab.sciencespo.fr/en/people/dominique-cardon/> .
 
 :person:CarlinA
     a foaf:Person ;
@@ -6307,6 +6335,13 @@
     foaf:givenname "Pablo" ;
     foaf:surname "Jensen" ;
     foaf:homepage <http://perso.ens-lyon.fr/pablo.jensen/> .
+
+:person:JohnMathewsJM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8049-1222 , viaf:68164476343825911136 ;
+    foaf:givenname "Jean-Marie" ;
+    foaf:surname "John-Mathews" ;
+    foaf:homepage <https://www.jeanmarie-johnmathews.com/> .
 
 :person:JonesJ
     a foaf:Person ;
@@ -9785,6 +9820,25 @@
     ] ;
     bibo:pages "1-19" ;
     bibo:doi "10.28968/cftt.v4i1.243" .
+
+:reading:JohnMathews2022
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.6092/issn.1971-8853/15931> ;
+    dc:title "The Crisis of Social Categories in the Age of AI" ;
+    dc:creator :person:JohnMathewsJM , :person:CardonD ;
+    bibo:authorList (
+        :person:JohnMathewsJM
+        :person:CardonD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:Sociologica ;
+        bibo:volume "1613-3692" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "5–16" ;
+    bibo:doi "10.6092/issn.1971-8853/15931" .
 
 :reading:Joque2022
     a :Reading, bibo:Book ;
