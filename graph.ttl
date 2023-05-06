@@ -9834,7 +9834,7 @@
         a bibo:Issue ;
         dc:date "2022" ;
         dc:isPartOf :journal:Sociologica ;
-        bibo:volume "1613-3692" ;
+        bibo:volume "16" ;
         bibo:issue "3"
     ] ;
     bibo:pages "5–16" ;
