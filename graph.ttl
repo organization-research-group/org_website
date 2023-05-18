@@ -5205,7 +5205,7 @@
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2023-05-12T11:30:00-05:00"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2023-05-19T11:30:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:JohnMathews2022 ;
