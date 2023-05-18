@@ -7787,7 +7787,7 @@
     dc:title "NeurIPS 2022 Workshop on Neuro Causal and Symbolic AI (nCSI)" ;
     dc:date "2022" ;
     dc:publisher :publisher:NeurIPS ;
-    bibo:uri <https://neurips.cc/virtual/2022/workshop/50011> .
+    bibo:uri "https://neurips.cc/virtual/2022/workshop/50011" .
 
 :proceedings:Onward2014
     a bibo:Proceedings ;
