@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-06-02,
         :meeting:2023-05-26,
         :meeting:2023-05-19,
         :meeting:2023-05-12,
@@ -716,6 +717,12 @@
     dc:title "Journal of Management Information Systems" ;
     foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
     bibo:issn "0742-1222", "1557-928X" .
+
+:journal:JRC
+    a bibo:Journal ;
+    dc:title "ACM Journal on Responsible Computing" ;
+    foaf:homepage <https://dl.acm.org/journal/jrc> ;
+    bibo:issn "2832-0565" .
 
 :journal:KO
     a bibo:Journal ;
@@ -5234,6 +5241,20 @@
         :reading:JohnMathews2022b
     ) .
 
+:meeting:2023-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-06-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:McMillanMajor2023 ;
+    :schedule (
+        :reading:McMillanMajor2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6037,6 +6058,14 @@
     foaf:givenname "Jo" ;
     foaf:surname "Freeman" .
 
+:person:FriedmanB
+    a foaf:Person ;
+    owl:sameAs viaf:77828351 , wd:Q95183473 , dblp:20\/2143 ;
+    foaf:givenname "Batya" ;
+    foaf:surname "Friedman" ;
+    foaf:homepage <https://vsdesign.org> ;
+    foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/batya> .
+
 :person:FurnerJ
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-8839-9930, viaf:47494786 ;
@@ -6752,6 +6781,13 @@
     owl:sameAs viaf:14198 , wd:Q193871 ;
     foaf:givenname "Marshall" ;
     foaf:surname "McLuhan" .
+
+:person:McMillanMajorA
+    a foaf:Person ;
+    owl:sameAs wd:Q117721206 , orcid:0000-0003-2257-9618 , dblp:284\/7880 ;
+    foaf:givenname "Angelina" ;
+    foaf:surname "McMillan-Major" ;
+    foaf:homepage <https://sites.google.com/uw.edu/angelinamcmillan-major/home> .
 
 :person:MedinaE
     a foaf:Person ;
@@ -10356,6 +10392,23 @@
     ) ;
     dc:date "1967" ;
     dc:publisher :publisher:SomethingElse .
+
+:reading:McMillanMajor2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1145/3594737> ;
+    dc:title "Data Statements: From Technical Concept to Community Practice" ;
+    dc:creator :person:McMillanMajorA , :person:BenderE , :person:FriedmanB ;
+    bibo:authorList (
+        :person:McMillanMajorA
+        :person:BenderE
+        :person:FriedmanB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "08 May 2023" ;
+        dc:isPartOf :journal:JRC ;
+    ] ;
+    bibo:doi "10.1145/3594737" .
 
 :reading:Medina2011
     a :Reading, bibo:Book ;
