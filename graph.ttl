@@ -5302,7 +5302,7 @@
         ]
     ] ;
     :schedule (
-        [ dc:description "No meeting." ]
+        [ dc:description "No meeting; next week we'll continue reading <i>Selling the American People</i>." ]
     ) .
 
 :meeting:2023-08-25
