@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-08-25,
         :meeting:2023-08-18,
         :meeting:2023-08-11,
         :meeting:2023-08-04,
