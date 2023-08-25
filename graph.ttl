@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-09-01,
         :meeting:2023-08-25,
         :meeting:2023-08-18,
         :meeting:2023-08-11,
@@ -5320,6 +5321,20 @@
         :reading:McGuigan2023
     ) .
 
+:meeting:2023-09-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Warner2023 ;
+    :schedule (
+        :reading:Warner2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7725,6 +7740,13 @@
     owl:sameAs orcid:0000-0002-1017-8908 ;
     foaf:givenname "Jenny" ;
     foaf:surname "Weng" .
+
+:person:WarnerJ
+    a foaf:Person ;
+    owl:sameAs viaf:12561344 , wd:Q112554378 , orcid:0000-0001-9845-8586 ;
+    foaf:givenname "Julian" ;
+    foaf:surname "Warner" ;
+    foaf:workInfoHomepage <https://www.qub.ac.uk/schools/QueensManagementSchool/People/AcademicStaff/AllAcademicStaffProfiles/Warner.html> .
 
 :person:WatsonR
     a foaf:Person ;
@@ -11949,6 +11971,19 @@
     ) ;
     dc:isPartOf :volume:Pickering2008 ;
     bibo:doi "10.1215/9780822390107-010" .
+
+:reading:Warner2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1108/JD-03-2023-0057> ;
+    dc:title "The spectrum of semantic and syntactic labour" ;
+    dc:creator :person:WarnerJ ;
+    bibo:authorList ( :person:WarnerJ ) ;
+    dc:isPartOf [
+       a bibo:Issue ;
+       dc:date "2023" ;
+       dc:isPartOf :journal:JDOC
+    ] ;
+    bibo:doi "10.1108/JD-03-2023-0057" .
 
 :reading:Watson2012
     a :Reading, bibo:AcademicArticle ;
