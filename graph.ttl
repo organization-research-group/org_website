@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-09-15,
         :meeting:2023-09-08,
         :meeting:2023-09-01,
         :meeting:2023-08-25,
@@ -5350,6 +5351,20 @@
         :reading:Rieder2023
     ) .
 
+:meeting:2023-09-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Seaver2022 ;
+    :schedule (
+        :reading:Seaver2022
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7360,6 +7375,13 @@
     owl:sameAs viaf:20913252, wd:Q523530 ;
     foaf:givenname "Len" ;
     foaf:surname "Sassaman" .
+
+:person:SeaverN
+    a foaf:Person ;
+    owl:sameAs viaf:316003929 , orcid:0000-0002-3913-1134 ;
+    foaf:givenname "Nick" ;
+    foaf:surname "Seaver" ;
+    foaf:homepage <https://nickseaver.net> .
 
 :person:SerresM
     a foaf:Person ;
@@ -11308,6 +11330,17 @@
     dc:date "2015" ;
     dc:publisher :publisher:MIT ;
     bibo:isbn13 "978-0-2620-2846-2" .
+
+:reading:Seaver2022
+    a :Reading, bibo:Book ;
+    dc:title "Computing Taste: Algorithms and the Makers of Music Recommendation" ;
+    bibo:shortTitle "Computing Taste" ;
+    dc:creator :person:SeaverN ;
+    bibo:authorList (
+        :person:SeaverN
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:UCP .
 
 :reading:Serres2015
     a :Reading, bibo:Book ;
