@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-09-22,
         :meeting:2023-09-15,
         :meeting:2023-09-08,
         :meeting:2023-09-01,
@@ -5365,6 +5366,20 @@
         :reading:Seaver2022
     ) .
 
+:meeting:2023-09-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Day2023 ;
+    :schedule (
+        :reading:Day2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5978,6 +5993,13 @@
     foaf:givenname "Ronald E" ;
     foaf:surname "Day" ;
     foaf:homepage <http://info.slis.indiana.edu/~roday/> .
+
+:person:DayS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9822-9094 , wd:Q58186532 , viaf:34783044 ;
+    foaf:givenname "Sophie" ;
+    foaf:surname "Day" ;
+    foaf:workInfoHomepage <https://www.gold.ac.uk/anthropology/staff/s-day/> .
 
 :person:DeGroatG
     a foaf:Person ;
@@ -7792,6 +7814,13 @@
     foaf:givenname "Jenny" ;
     foaf:surname "Weng" .
 
+:person:WardH
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8238-5036 , wd:Q43193512 ;
+    foaf:givenname "Helen" ;
+    foaf:surname "Ward" ;
+    foaf:workInfoHomepage <https://www.imperial.ac.uk/people/h.ward> .
+
 :person:WarnerJ
     a foaf:Person ;
     owl:sameAs viaf:12561344 , wd:Q112554378 , orcid:0000-0001-9845-8586 ;
@@ -9121,6 +9150,26 @@
     ) ;
     dc:date "2014" ;
     dc:publisher :publisher:MIT .
+
+:reading:Day2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/1600910X.2022.2098352> ;
+    dc:title "Personalization: a new political arithmetic?" ;
+    dc:creator :person:DayS , :person:LuryC , :person:WardH ;
+    bibo:authorList (
+        :person:DayS
+        :person:LuryC
+        :person:WardH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:Distinktion ;
+        bibo:issue "2" ;
+        bibo:volume "24"
+    ] ;
+    bibo:pages "167–194" ;
+    bibo:doi "10.1080/1600910X.2022.2098352" .
 
 :reading:DeGroat2014
     a :Reading, bibo:AcademicArticle ;
