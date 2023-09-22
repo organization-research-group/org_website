@@ -60,7 +60,7 @@ function bookSection(store, uri) {
       title: [$chapter, 'dc:title'],
       page: [$chapter, 'bibo:pages'],
       URI: [$chapter, 'bibo:uri'],
-      DOI: [$chapter, 'bibo:doi'],
+      DOI: [[$chapter, 'bibo:doi'], [$book, 'bibo:doi']],
       author: [$chapter, 'bibo:authorList'],
       'container-title': [$book, 'dc:title'],
       issued: [$book, 'dc:date'],
