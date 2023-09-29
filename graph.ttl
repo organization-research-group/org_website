@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-10-06,
         :meeting:2023-09-29,
         :meeting:2023-09-22,
         :meeting:2023-09-15,
@@ -5395,6 +5396,20 @@
         :reading:Gal2016
     ) .
 
+:meeting:2023-10-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Petras2023 ;
+    :schedule (
+        :reading:Petras2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7202,6 +7217,13 @@
     foaf:givenname "Katy E." ;
     foaf:surname "Pearce" ;
     foaf:homepage <http://www.katypearce.net/> .
+
+:person:PetrasV
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8113-1509 , viaf:1730150172747900180000 ;
+    foaf:givenname "Vivien" ;
+    foaf:surname "Petras" ;
+    foaf:workInfoHomepage <https://www.ibi.hu-berlin.de/en/about-us/people/petras> .
 
 :person:PiantadosiS
     a foaf:Person ;
@@ -11007,6 +11029,21 @@
     bibo:presentedAt :conference:CSCW2017 ;
     bibo:pages "2436–2447" ;
     bibo:doi "10.1145/2998181.2998331" .
+
+:reading:Petras2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-04-2023-0074> ;
+    dc:title "The identity of information science" ;
+    dc:creator :person:PetrasV ;
+    bibo:authorList (
+        :person:PetrasV
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:JDOC
+    ] ;
+    bibo:doi "10.1108/JD-04-2023-0074" .
 
 :reading:Piantadosi2022
     a :Reading, :ConferencePaper ;
