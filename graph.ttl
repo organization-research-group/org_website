@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-10-13,
         :meeting:2023-10-06,
         :meeting:2023-09-29,
         :meeting:2023-09-22,
@@ -757,6 +758,12 @@
     dc:title "Liberal Education" ;
     foaf:homepage <https://www.aacu.org/liberaleducation> ;
     bibo:issn "0024-1822" .
+
+:journal:LibTrends
+    a bibo:Journal ;
+    dc:title "Library Trends" ;
+    foaf:homepage <https://muse.jhu.edu/pub/1/journal/334> ;
+    bibo:issn "1559-0682" .
 
 :journal:MCS
     a bibo:Journal ;
@@ -5410,6 +5417,20 @@
         :reading:Petras2023
     ) .
 
+:meeting:2023-10-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bates2018 ;
+    :schedule (
+        :reading:Bates2018
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5538,6 +5559,13 @@
     foaf:givenname "Timothy" ;
     foaf:surname "Barker" ;
     foaf:workInfoHomepage <https://www.gla.ac.uk/schools/cca/staff/timothybarker/> .
+
+:person:BatesM
+    a foaf:Person ;
+    owl:sameAs viaf:94420353 , wd:Q6757112 ;
+    foaf:givenname "Marcia" ;
+    foaf:surname "Bates" ;
+    foaf:homepage <https://pages.gseis.ucla.edu/faculty/bates/> .
 
 :person:BawdenD
     a foaf:Person ;
@@ -8632,6 +8660,24 @@
     ] ;
     bibo:pages "1-16" ;
     bibo:doi "10.1177/02632764221140825" .
+
+:reading:Bates2018
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/lib.2018.0002> ;
+    dc:title "Concepts for the study of information embodiment" ;
+    dc:creator :person:BatesM ;
+    bibo:authorList (
+        :person:BatesM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:LibTrends ;
+        bibo:issue "3" ;
+        bibo:volume "66"
+    ] ;
+    bibo:pages "239-266" ;
+    bibo:doi "10.1353/lib.2018.0002" .
 
 :reading:Becker1982a
     a :Reading, bibo:BookSection ;
