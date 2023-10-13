@@ -35,6 +35,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2023-10-27,
+        :meeting:2023-10-20,
         :meeting:2023-10-13,
         :meeting:2023-10-06,
         :meeting:2023-09-29,
@@ -923,6 +925,11 @@
     dc:title "Theory, Culture & Society" ;
     foaf:homepage <http://journals.sagepub.com/home/tcs> ;
     bibo:issn "02632764", "14603616" .
+
+:journal:TCT
+    a bibo:Journal ;
+    dc:title "Transformer Circuits Thread" ;
+    foaf:homepage <https://transformer-circuits.pub> .
 
 :journal:TNM
     a bibo:Journal ;
@@ -5431,6 +5438,33 @@
         :reading:Bates2018
     ) .
 
+:meeting:2023-10-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Fall break; no meeting." ]
+    ) .
+
+:meeting:2023-10-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bricken2023 ;
+    :schedule (
+        :reading:Bricken2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5566,6 +5600,12 @@
     foaf:givenname "Marcia" ;
     foaf:surname "Bates" ;
     foaf:homepage <https://pages.gseis.ucla.edu/faculty/bates/> .
+
+:person:BatsonJ
+    a foaf:Person ;
+    foaf:givenname "Joshua" ;
+    foaf:surname "Batson" ;
+    foaf:homepage <https://www.linkedin.com/in/joshua-batson-63ab9a82> .
 
 :person:BawdenD
     a foaf:Person ;
@@ -5764,6 +5804,12 @@
     foaf:surname "Bratus" ;
     foaf:homepage <http://www.cs.dartmouth.edu/~sergey/> .
 
+:person:BrickenT
+    a foaf:Person ;
+    foaf:givenname "Trenton" ;
+    foaf:surname "Bricken" ;
+    foaf:homepage <https://www.trentonbricken.com> .
+
 :person:BrockA
     a foaf:Person ;
     owl:sameAs viaf:28156130948358311545, wd:, orcid:0000-0001-6084-9995 ;
@@ -5874,6 +5920,12 @@
     foaf:givenname "Tim" ;
     foaf:surname "Chartier" ;
     foaf:homepage <https://www.davidson.edu/people/tim-chartier> .
+
+:person:ChenB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Chen" ;
+    foaf:homepage <https://beta.vero.site> .
 
 :person:CheneyJ
     a foaf:Person ;
@@ -6617,6 +6669,12 @@
     foaf:givenname "Pablo" ;
     foaf:surname "Jensen" ;
     foaf:homepage <http://perso.ens-lyon.fr/pablo.jensen/> .
+
+:person:JermynA
+    a foaf:Person ;
+    foaf:givenname "Adam" ;
+    foaf:surname "Jermyn" ;
+    foaf:homepage <https://adamjermyn.com> .
 
 :person:JohnMathewsJM
     a foaf:Person ;
@@ -7727,6 +7785,12 @@
     foaf:givenname "Ksenia" ;
     foaf:surname "Tatarchenko" ;
     foaf:workInfoHomepage <https://faculty.smu.edu.sg/profile/ksenia-tatarchenko-1676> .
+
+:person:TempletonA
+    a foaf:Person ;
+    foaf:givenname "Adly" ;
+    foaf:surname "Templeton" ;
+    foaf:homepage <https://www.linkedin.com/in/adly-templeton-64005a136> .
 
 :person:TenenD
     a foaf:Person ;
@@ -8894,6 +8958,26 @@
         bibo:volume "36"
     ] ;
     bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
+
+:reading:Bricken2023
+    # FILLME: Update the details of this entry.
+    # Added automatically for meeting on 2023-10-27
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Towards monosemanticity: decomposing language models with dictionary learnin" ;
+    bibo:shortTitle "Towards monosemanticity" ;
+    dc:creator :person:BrickenT , :person:TempletonA , :person:BatsonJ , :person:ChenB , :person:JermynA ;
+    bibo:authorList (
+    :person:BrickenT
+    :person:TempletonA
+    :person:BatsonJ
+    :person:ChenB
+    :person:JermynA
+    ) ;
+    dc:isPartOf [
+       dc:date "2023" ;
+       dc:isPartOf :journal:TCT ;
+    ] ;
+    bibo:uri "https://transformer-circuits.pub/2023/monosemantic-features/" .
 
 :reading:Brock2020
     a :Reading, bibo:Book ;
