@@ -35,6 +35,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-01-12,
+        :meeting:2024-01-05,
         :meeting:2023-12-15,
         :meeting:2023-12-08,
         :meeting:2023-11-24,
@@ -508,6 +510,12 @@
     dc:title "Cataloging & classification quarterly" ;
     foaf:homepage <https://www.tandfonline.com/journals/wccq20> ;
     bibo:issn "1544-4554" .
+
+:journal:CF
+    a bibo:Journal ;
+    dc:title "Constructivist Foundations" ;
+    foaf:homepage <https://constructivist.info> ;
+    bibo:issn "1782-348X" .
 
 :journal:CPO
     a bibo:Journal ;
@@ -5568,6 +5576,34 @@
         [ dc:description "No further meetings until 2024." ]
     ) .
 
+:meeting:2024-01-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Woodward2023 ;
+    :schedule (
+        :reading:Woodward2023
+    ) .
+
+:meeting:2024-01-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Krippendorff2023 ;
+    :schedule (
+        :reading:Krippendorff2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6922,6 +6958,13 @@
     foaf:surname "Kreiss" ;
     foaf:homepage <https://danielkreiss.com/> .
 
+:person:KrippendorffK
+    a foaf:Person ;
+    owl:sameAs viaf:304280275 , wd:Q6419923 ;
+    foaf:givenname "Klaus" ;
+    foaf:surname "Krippendorff" ;
+    foaf:page <https://www.asc.upenn.edu/news-events/news/klaus-krippendorff-phd-pioneer-content-analysis-and-cybernetics-dies-90> .
+
 :person:KroisJ
     a foaf:Person ;
     owl:sameAs viaf:17914413, wd:Q1275299 ;
@@ -7617,6 +7660,13 @@
     foaf:surname "Russell" ;
     foaf:homepage <http://arussell.org> .
 
+:person:RuyerR
+    a foaf:Person ;
+    owl:sameAs wd:Q3055498 , viaf:29540211 ;
+    foaf:givenname "Raymond" ;
+    foaf:surname "Ruyer" ;
+    foaf:page <https://en.wikipedia.org/wiki/Raymond_Ruyer> .
+
 :person:SackW
     a foaf:Person ;
     owl:sameAs viaf:190146284394615331476 ;
@@ -8167,6 +8217,13 @@
     owl:sameAs viaf:98310436, wd:Q67259 ;
     foaf:givenname "Kurt H." ;
     foaf:surname "Wolff" .
+
+:person:WoodwardA
+    a foaf:Person ;
+    owl:sameAs viaf:83476948 , orcid:0000-0002-1447-4114 ;
+    foaf:givenname "Ashley" ;
+    foaf:surname "Wooodward" ;
+    foaf:workInfoHomepage <https://www.dundee.ac.uk/people/ashley-woodward> .
 
 :person:WrightS
     a foaf:Person ;
@@ -10578,6 +10635,22 @@
     bibo:pages "243-259" ;
     bibo:doi "10.1177/1461444810370951" .
 
+:reading:Krippendorff2023
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "A critical cybernetics" ;
+    dc:creator :person:KrippendorffK ;
+    bibo:authorList (
+        :person:KrippendorffK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:CF ;
+        bibo:issue "1" ;
+        bibo:volume "19"
+    ] ;
+    bibo:pages "82-93".
+
 :reading:Labov1973
     a :Reading , bibo:BookSection ;
     dc:title "The boundaries of words and their meanings" ;
@@ -12652,6 +12725,18 @@
     bibo:pages "69–71" ;
     bibo:doi "10.1145/1572626.1572641" .
 
+:reading:Woodward2023
+    # FILLME: Update the details of this entry.
+    # Added automatically for meeting on 2024-01-05
+    a :Reading , bibo:BookSection ;
+    dc:title "Raymond Ruyer and the Philosophy of Information" ;
+    dc:creator :person:WoodwardA ;
+    bibo:authorList (
+        :person:WoodwardA
+    ) ;
+    bibo:pages "vii-xxiii" ;
+    dc:isPartOf :volume:Ruyer2023 .
+
 :reading:Wright2021
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.1163/9789004471542> ;
@@ -12979,6 +13064,16 @@
         :person:PickeringA
         :person:GuzikK
     ) .
+
+:volume:Ruyer2023
+    a bibo:Book ;
+    dc:title "Cybernetics and the Origin of Information" ;
+    dc:creator :person:RuyerR ;
+    bibo:authorList (
+        :person:RuyerR
+    ) ;
+    dc:date "2023" ;
+    dc:publisher :publisher:RowmanLittlefield .
 
 :volume:Star1995
     a bibo:EditedBook ;
