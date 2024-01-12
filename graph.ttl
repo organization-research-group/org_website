@@ -507,7 +507,7 @@
 
 :journal:CCQ
     a bibo:Journal ;
-    dc:title "Cataloging & classification quarterly" ;
+    dc:title "Cataloging & Classification Quarterly" ;
     foaf:homepage <https://www.tandfonline.com/journals/wccq20> ;
     bibo:issn "1544-4554" .
 
