@@ -9167,8 +9167,6 @@
     bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
 
 :reading:Bricken2023
-    # FILLME: Update the details of this entry.
-    # Added automatically for meeting on 2023-10-27
     a :Reading , bibo:AcademicArticle ;
     dc:title "Towards monosemanticity: decomposing language models with dictionary learnin" ;
     bibo:shortTitle "Towards monosemanticity" ;
@@ -12784,8 +12782,6 @@
     bibo:doi "10.1145/1572626.1572641" .
 
 :reading:Woodward2023
-    # FILLME: Update the details of this entry.
-    # Added automatically for meeting on 2024-01-05
     a :Reading , bibo:BookSection ;
     dc:title "Raymond Ruyer and the Philosophy of Information" ;
     dc:creator :person:WoodwardA ;
