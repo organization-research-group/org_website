@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-01-19,
         :meeting:2024-01-12,
         :meeting:2024-01-05,
         :meeting:2023-12-15,
@@ -516,6 +517,11 @@
     dc:title "Constructivist Foundations" ;
     foaf:homepage <https://constructivist.info> ;
     bibo:issn "1782-348X" .
+
+:journal:CHK
+    a bibo:Journal ;
+    dc:title "Cybernetics & Human Knowing" ;
+    foaf:homepage <https://chkjournal.com> .
 
 :journal:CPO
     a bibo:Journal ;
@@ -5604,6 +5610,21 @@
         :reading:Krippendorff2023
     ) .
 
+:meeting:2024-01-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mead1968, :reading:Krippendorff2008 ;
+    :schedule (
+        :reading:Mead1968
+        :reading:Krippendorff2008
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7225,6 +7246,13 @@
     foaf:surname "McMillan-Major" ;
     foaf:homepage <https://sites.google.com/uw.edu/angelinamcmillan-major/home> .
 
+:person:MeadM
+    a foaf:Person ;
+    owl:sameAs viaf:44302511 , wd:Q180099 ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Mead" ;
+    foaf:page <https://www.loc.gov/exhibits/mead/> .
+
 :person:MedinaE
     a foaf:Person ;
     owl:sameAs viaf:170241863 ;
@@ -8581,6 +8609,11 @@
 :publisher:SomethingElse
     a :Publisher ;
     foaf:name "Something Else Press" ;
+    address:localityName "New York" .
+
+:publisher:Spartan
+    a :Publisher ;
+    foaf:name "Spartan Books" ;
     address:localityName "New York" .
 
 :publisher:Springer
@@ -10635,6 +10668,22 @@
     bibo:pages "243-259" ;
     bibo:doi "10.1177/1461444810370951" .
 
+:reading:Krippendorff2008
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Social organizations as reconstitutable networks of conversations" ;
+    dc:creator :person:KrippendorffK ;
+    bibo:authorList (
+        :person:KrippendorffK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2008" ;
+        dc:isPartOf :journal:CHK ;
+        bibo:issue "3–4" ;
+        bibo:volume "15"
+    ] ;
+    bibo:pages "149–161".
+
 :reading:Krippendorff2023
     a :Reading , bibo:AcademicArticle ;
     dc:title "A critical cybernetics" ;
@@ -11034,6 +11083,15 @@
         dc:isPartOf :journal:JRC ;
     ] ;
     bibo:doi "10.1145/3594737" .
+
+:reading:Mead1968
+    a :Reading , bibo:BookSection ;
+    dc:title "Cybernetics of cybernetics" ;
+    dc:creator :person:MeadM ;
+    bibo:authorList (
+        :person:MeadM
+    ) ;
+    dc:isPartOf :volume:VonFoerster1968 .
 
 :reading:Medina2011
     a :Reading, bibo:Book ;
@@ -13107,6 +13165,16 @@
     dc:title "Files: Law and Media Technology" ;
     dc:publisher :publisher:SUP ;
     bibo:translator :person:WinthropYoungG .
+
+:volume:VonFoerster1968
+    a bibo:EditedBook ;
+    dc:date "1968" ;
+    dc:title "Purposive Systems" ;
+    dc:publisher :publisher:Spartan ;
+    bibo:editor :person:VonFoersterH ;
+    bibo:editorList (
+        :person:VonFoersterH
+    ) .
 
 :volume:VonFoerster2002
     a bibo:Book ;
