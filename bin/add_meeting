@@ -86,7 +86,7 @@ Add arbitrary HTML by just typing a string.
 
         old_ttl = ''.join([l for l in open(BIB_FILENAME)])
 
-        pattern = re.compile('    :meetings \[')
+        pattern = re.compile(r"    :meetings \[")
 
         new_ttl = ''
 
