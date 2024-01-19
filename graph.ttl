@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-01-26,
         :meeting:2024-01-19,
         :meeting:2024-01-12,
         :meeting:2024-01-05,
@@ -934,6 +935,12 @@
     dc:title "Sociological Theory" ;
     foaf:homepage <http://journals.sagepub.com/home/stx> ;
     bibo:issn "14679558" .
+
+:journal:Subjectivity
+    a bibo:Journal ;
+    dc:title "Subjectivity" ;
+    foaf:homepage <https://www.palgrave.com/gp/journal/41286> ;
+    bibo:issn "1755-635X" .
 
 :journal:TAC
     a bibo:Journal ;
@@ -5625,6 +5632,20 @@
         :reading:Krippendorff2008
     ) .
 
+:meeting:2024-01-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pedwell2023 ;
+    :schedule (
+        :reading:Pedwell2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7484,6 +7505,13 @@
     foaf:givenname "Katy E." ;
     foaf:surname "Pearce" ;
     foaf:homepage <http://www.katypearce.net/> .
+
+:person:PedwellC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4651-5766 , wd:Q112264500 , viaf:91027264 ;
+    foaf:givenname "Carolyn" ;
+    foaf:surname "Pedwell" ;
+    foaf:workInfoHomepage <https://www.kent.ac.uk/social-policy-sociology-social-research/people/1930/pedwell-carolyn> .
 
 :person:PetrasV
     a foaf:Person ;
@@ -11434,6 +11462,24 @@
     bibo:presentedAt :conference:CSCW2017 ;
     bibo:pages "2436–2447" ;
     bibo:doi "10.1145/2998181.2998331" .
+
+:reading:Pedwell2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1057/s41286-023-00170-x> ;
+    dc:title "Intuition as a “trained thing”: sensing, thinking, and speculating in computational cultures" ;
+    bibo:shortTitle "Intuition as a “trained thing”" ;
+    dc:creator :person:PedwellC ;
+    bibo:authorList (
+        :person:PedwellC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        bibo:volume "30" ;
+        dc:isPartOf :journal:Subjectivity ;
+    ] ;
+    bibo:pages "348–372" ;
+    bibo:doi "10.1057/s41286-023-00170-x" .
 
 :reading:Petras2023
     a :Reading, bibo:AcademicArticle ;
