@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-02-02,
         :meeting:2024-01-26,
         :meeting:2024-01-19,
         :meeting:2024-01-12,
@@ -5646,6 +5647,20 @@
         :reading:Pedwell2023
     ) .
 
+:meeting:2024-02-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bergson2023IV ;
+    :schedule (
+        :reading:Bergson2023IV
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5845,6 +5860,13 @@
     foaf:givenname "Michael K." ;
     foaf:surname "Bergman" ;
     foaf:homepage <https://www.mkbergman.com/> .
+
+:person:BergsonH
+    a foaf:Person ;
+    owl:sameAs viaf:61541730 , wd:Q42156 ;
+    foaf:givenname "Henri" ;
+    foaf:surname "Bergson" ;
+    foaf:page <https://plato.stanford.edu/entries/bergson/> .
 
 :person:BernardA
     a foaf:Person ;
@@ -7027,6 +7049,13 @@
     foaf:givenname "Carl" ;
     foaf:surname "Lagoze" ;
     foaf:homepage <https://www.si.umich.edu/people/carl-lagoze> .
+
+:person:LandesD
+    a foaf:Person ;
+    owl:sameAs viaf:171912949 , wd:Q79031434 ;
+    foaf:givenname "Donald" ;
+    foaf:surname "Landes" ;
+    foaf:homepage <https://www.donaldlandes.com> .
 
 :person:LangvilleA
     a foaf:Person ;
@@ -9042,6 +9071,17 @@
     dc:date "2018" ;
     dc:publisher :publisher:Springer ;
     bibo:doi "10.1007/978-3-319-98092-8" .
+
+:reading:Bergson2023IV
+    a :Reading , bibo:BookSection ;
+    dc:title "The cinematographic mechanism of thought and the mechanistic illusion. A glance at the history of systems. Real becoming and false evolutionism" ;
+    bibo:shortTitle "The cinematographic mechanism of thought and the mechanistic illusion" ;
+    dc:creator :person:BergsonH ;
+    bibo:authorList (
+        :person:BergsonH
+    ) ;
+    dc:isPartOf :volume:Bergson2023 ;
+    bibo:pages "238-316" .
 
 :reading:Bernard2018
     a :Reading, bibo:BookSection ;
@@ -12913,6 +12953,20 @@
     ) ;
     bibo:doi "10.4324/9781315575278" ;
     bibo:isbn13 "978-1-317-15652-9" .
+
+:volume:Bergson2023
+    a bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781315537818> ;
+    dc:title "Creative Evolution" ;
+    dc:date "2023" ;
+    dc:publisher :publisher:Routledge ;
+    dc:creator :person:BergsonH ;
+    bibo:authorList (
+        :person:BergsonH
+    ) ;
+    bibo:translator :person:LandesD ;
+    bibo:doi "10.4324/9781315537818" ;
+    bibo:isbn13 "978-1-315-53781-8" .
 
 :volume:Bernard2018
     a bibo:EditedBook ;
