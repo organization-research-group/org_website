@@ -35,6 +35,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-02-16,
+        :meeting:2024-02-09,
         :meeting:2024-02-02,
         :meeting:2024-01-26,
         :meeting:2024-01-19,
@@ -889,6 +891,11 @@
     dc:title "Review of Communication" ;
     foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
     bibo:issn "1535-8593" .
+
+:journal:SERRC
+    a bibo:Journal ;
+    dc:title "Social Epistemology Review and Reply Collective" ;
+    foaf:homepage <https://social-epistemology.com> .
 
 :journal:SI
     a bibo:Journal ;
@@ -5661,6 +5668,34 @@
         :reading:Bergson2023IV
     ) .
 
+:meeting:2024-02-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hayles2024 ;
+    :schedule (
+        :reading:Hayles2024
+    ) .
+
+:meeting:2024-02-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ingold2024 ;
+    :schedule (
+        :reading:Ingold2024
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6729,7 +6764,7 @@
     owl:sameAs viaf:27082380, wd:Q4953004 ;
     foaf:givenname "N. Katherine" ;
     foaf:surname "Hayles" ;
-    foaf:homepage <http://nkhayles.com/> .
+    foaf:workInfoHomepage <https://english.ucla.edu/people-faculty/hayles-katherine-n/> .
 
 :person:HazenR
     a foaf:Person ;
@@ -8552,6 +8587,11 @@
     a :Publisher ;
     foaf:name "Harvard University Press" ;
     address:localityName "Cambridge, MA" .
+
+:publisher:Hanart
+    a :Publisher ;
+    foaf:name "Hanart Press" ;
+    foaf:homepage <https://hanart.press> .
 
 :publisher:IEEComputerSociety
     a :Publisher ;
@@ -10387,6 +10427,16 @@
     bibo:pages "32-55" ;
     bibo:doi "10.1086/688293" .
 
+:reading:Hayles2024
+    a :Reading , bibo:BookSection ;
+    dc:title "Detoxifying cybernetics: from homeostasis to autopoiesis and beyond" ;
+    dc:isPartOf :volume:Hui2024 ;
+    dc:creator :person:HaylesN ;
+    bibo:authorList (
+        :person:HaylesN
+    ) ;
+    bibo:pages "85-99" .
+
 :reading:Healy2017
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1177/0735275117709046> ;
@@ -10561,6 +10611,22 @@
     dc:date "2007" ;
     dc:publisher :publisher:Routledge ;
     bibo:isbn13 "9780415424264" .
+
+:reading:Ingold2024
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "On being tasked with the problem of inhabiting the page" ;
+    dc:creator :person:IngoldT ;
+    bibo:authorList (
+        :person:IngoldT
+    ) ;
+    dc:isPartOf [
+       a bibo:Issue ;
+       dc:date "2024" ;
+       dc:isPartOf :journal:SERRC ;
+       bibo:volume "13" ;
+       bibo:issue "2"
+    ] ;
+    bibo:uri "https://social-epistemology.com/2024/02/02/on-being-tasked-with-the-problem-of-inhabiting-the-page-tim-ingold/" . 
 
 :reading:Irani2018
     a :Reading, bibo:AcademicArticle ;
@@ -13155,6 +13221,16 @@
     dc:publisher :publisher:RL ;
     dc:creator :person:HuiY ;
     bibo:authorList (
+        :person:HuiY
+    ) .
+
+:volume:Hui2024
+    a bibo:EditedBook ;
+    dc:title "Cybernetics for the 21st Century Vol. 1: Epistemological Reconstruction" ;
+    dc:date "2024" ;
+    dc:publisher :publisher:Hanart ;
+    bibo:editor :person:HuiY ;
+    bibo:editorList (
         :person:HuiY
     ) .
 
