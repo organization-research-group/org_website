@@ -35,6 +35,8 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-03-01,
+        :meeting:2024-02-23,
         :meeting:2024-02-16,
         :meeting:2024-02-09,
         :meeting:2024-02-02,
@@ -606,6 +608,12 @@
     foaf:homepage <https://www.press.jhu.edu/journals/elh> ;
     bibo:issn "1080-6547" .
 
+:journal:EPT
+    a bibo:Journal ;
+    dc:title "Educational Philosophy and Theory" ;
+    foaf:homepage <https://www.tandfonline.com/journals/rept20> ;
+    bibo:issn "1469-5812" .
+
 :journal:EconSoc
     a bibo:Journal ;
     dc:title "Economy and Society" ;
@@ -629,6 +637,12 @@
     dc:title "Frontiers in Psychology" ;
     foaf:homepage <https://www.frontiersin.org/journals/psychology> ;
     bibo:issn "1664-1078" .
+
+:journal:FOS
+    a bibo:Journal ;
+    dc:title "Foundations of Science" ;
+    foaf:homepage <https://link.springer.com/journal/10699> ;
+    bibo:issn "1572-8471" .
 
 :journal:FirstMonday
     a bibo:Journal ;
@@ -5696,6 +5710,34 @@
         :reading:Ingold2024
     ) .
 
+:meeting:2024-02-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Marin2018 ;
+    :schedule (
+        :reading:Marin2018
+    ) .
+
+:meeting:2024-03-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Possati2022 ;
+    :schedule (
+        :reading:Possati2022
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7298,6 +7340,20 @@
     foaf:surname "Marcus" ;
     foaf:homepage <http://english.columbia.edu/people/profile/393> .
 
+:person:MarinL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8283-947X ;
+    foaf:givenname "Lavinia" ;
+    foaf:surname "Marin" ;
+    foaf:homepage <https://www.laviniamarin.eu> .
+
+:person:MasscheleinJ
+    a foaf:Person ;
+    owl:sameAs viaf:24841030 , wd:Q55232073 ;
+    foaf:givenname "Jan" ;
+    foaf:surname "Masschelein" ;
+    foaf:workInfoHomepage <https://ppw.kuleuven.be/ecs/english/team/Team/00008954> .
+
 :person:MatamorosFernandezA
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-2149-3820 ;
@@ -7645,6 +7701,13 @@
     foaf:surname "Polt" ;
     foaf:homepage <https://site.xavier.edu/polt/typewriters/> .
 
+:person:PossatiL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7110-6107 ;
+    foaf:givenname "Luca" ;
+    foaf:surname "Possati" ;
+    foaf:workInfoHomepage <https://research.tudelft.nl/en/persons/lm-possati> .
+
 :person:PriestleyM
     a foaf:Person ;
     foaf:givenname "Mark" ;
@@ -7908,6 +7971,12 @@
     foaf:givenname "Gilbert" ;
     foaf:surname "Simondon" ;
     foaf:page <https://en.wikipedia.org/wiki/Gilbert_Simondon> .
+
+:person:SimonsM
+    a foaf:Person ;
+    foaf:givenname "Maarten" ;
+    foaf:surname "Simons" ;
+    foaf:workInfoHomepage <https://ppw.kuleuven.be/ecs/english/team/Team/00011538> .
 
 :person:SiskinC
     a foaf:Person ;
@@ -11170,6 +11239,26 @@
     bibo:pages "1-21" ;
     bibo:doi "10.1525/rep.2016.135.1.1" .
 
+:reading:Marin2018
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/00131857.2017.1323624> ;
+    dc:title "Page, text and screen in the university: Revisiting the Illich hypothesis" ;
+    dc:creator :person:MarinL , :person:MasscheleinJ , :person:SimonsM ;
+    bibo:authorList (
+        :person:MarinL
+        :person:MasscheleinJ
+        :person:SimonsM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:EPT ;
+        bibo:issue "1" ;
+        bibo:volume "50"
+    ] ;
+    bibo:pages "49-60" ;
+    bibo:doi "10.1080/00131857.2017.1323624" .
+
 :reading:McGuigan2023
     a :Reading , bibo:Book ;
     owl:sameAs <https://doi.org/10.7551/mitpress/13562.001.0001> , <http://www.worldcat.org/oclc/1353637583> ;
@@ -11697,6 +11786,22 @@
     dc:date "2019" ;
     dc:publisher :publisher:RowmanLittlefield ;
     bibo:isbn13 "978-1-78661-050-8" .
+
+:reading:Possati2022
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s10699-022-09878-6> ;
+    dc:title "From Turing to Peirce. A semiotic interpretation of computation" ;
+    dc:creator :person:PossatiL ;
+    bibo:authorList (
+        :person:PossatiL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:FOS ;
+        bibo:volume "28"
+    ] ;
+    bibo:doi "10.1007/s10699-022-09878-6" .
 
 :reading:Putz2021
     a :Reading, bibo:AcademicArticle ;
