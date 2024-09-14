@@ -35,6 +35,26 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-09-20,
+        :meeting:2024-09-13,
+        :meeting:2024-09-06,
+        :meeting:2024-08-30,
+        :meeting:2024-08-23,
+        :meeting:2024-07-26,
+        :meeting:2024-07-19,
+        :meeting:2024-06-21,
+        :meeting:2024-06-14,
+        :meeting:2024-06-07,
+        :meeting:2024-05-17,
+        :meeting:2024-05-10,
+        :meeting:2024-05-03,
+        :meeting:2024-04-26,
+        :meeting:2024-04-19,
+        :meeting:2024-04-12,
+        :meeting:2024-04-05,
+        :meeting:2024-03-29,
+        :meeting:2024-03-22,
+        :meeting:2024-03-15,
         :meeting:2024-03-08,
         :meeting:2024-03-01,
         :meeting:2024-02-23,
@@ -992,6 +1012,11 @@
     a bibo:Journal ;
     dc:title "Theory & Psychology" ;
     foaf:homepage <http://journals.sagepub.com/home/tap> .
+
+:journal:ValuationStudies
+    a bibo:Journal ;
+    dc:title "Valuation Studies" ;
+    foaf:homepage <https://journal.ep.liu.se/valuationstudies> .
 
 :journal:WSQ
     a bibo:Journal ;
@@ -5753,6 +5778,283 @@
         :reading:Possati2023a
     ) .
 
+:meeting:2024-03-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-03-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker2023 ;
+    :schedule (
+        :reading:Becker2023
+    ) .
+
+:meeting:2024-03-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker2023 ;
+    :schedule (
+        :reading:Becker2023
+    ) .
+
+:meeting:2024-04-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-04-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker2023 ;
+    :schedule (
+        :reading:Becker2023
+    ) .
+
+:meeting:2024-04-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Jacobsen2024 ;
+    :schedule (
+        :reading:Jacobsen2024
+    ) .
+
+:meeting:2024-04-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-05-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-05-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:HindSeitz2024 ;
+    :schedule (
+        :reading:HindSeitz2024
+    ) .
+
+:meeting:2024-05-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-05-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lury2024 ;
+    :schedule (
+        :reading:Lury2024
+    ) .
+
+:meeting:2024-05-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-05-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Liu2023 ;
+    :schedule (
+        :reading:Liu2023
+    ) .
+
+:meeting:2024-06-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-06-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Berlant2011 ;
+    :schedule (
+        :reading:Berlant2011
+    ) .
+
+:meeting:2024-06-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-06-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Berlant2011 ;
+    :schedule (
+        :reading:Berlant2011
+    ) .
+
+:meeting:2024-06-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-06-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Berlant2011 ;
+    :schedule (
+        :reading:Berlant2011
+    ) .
+
+:meeting:2024-07-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-07-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:FrankWilson2020 ;
+    :schedule (
+        :reading:FrankWilson2020
+    ) .
+
+:meeting:2024-07-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-07-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:FrankWilson2020 ;
+    :schedule (
+        :reading:FrankWilson2020
+    ) .
+
+:meeting:2024-08-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-08-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tomkins1963 ;
+    :schedule (
+        :reading:Tomkins1963
+    ) .
+
+:meeting:2024-08-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-08-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vogl2022 ;
+    :schedule (
+        :reading:Vogl2022
+    ) .
+
+:meeting:2024-09-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vogl2022 ;
+    :schedule (
+        :reading:Vogl2022
+    ) .
+
+:meeting:2024-09-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:PrykeAllen2000 ;
+    :schedule (
+        :reading:PrykeAllen2000
+    ) .
+
+:meeting:2024-09-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koopman2024 ;
+    :schedule (
+        :reading:Koopman2024
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -5800,6 +6102,13 @@
     foaf:givenname "Linda Martín" ;
     foaf:surname "Alcoff" ;
     foaf:homepage <http://www.alcoff.com/> .
+
+:person:AllenJ
+    a foaf:Person ;
+    owl:sameAs viaf:109778465 ;
+    foaf:givenname "John" ;
+    foaf:surname "Allen" ;
+    foaf:workInfoHomepage <https://www.open.ac.uk/people/jra2> .
 
 :person:AmooreL
     a foaf:Person ;
@@ -5902,6 +6211,12 @@
     foaf:surname "Bawden" ;
     foaf:workInfoHomepage <https://www.city.ac.uk/people/academics/david-bawden> .
 
+:person:BeckerC
+    a foaf:Person ;
+    foaf:givenname "Christoph" ;
+    foaf:surname "Becker" ;
+    foaf:homepage <https://www.christoph-becker.info> .
+
 :person:BeckerH
     a foaf:Person ;
     owl:sameAs viaf:34466274 , wd:Q718736 ;
@@ -5959,6 +6274,13 @@
     foaf:givenname "Henri" ;
     foaf:surname "Bergson" ;
     foaf:page <https://plato.stanford.edu/entries/bergson/> .
+
+:person:BerlantL
+    a foaf:Person ;
+    owl:sameAs wd:Q12237573 ;
+    foaf:givenname "Lauren" ;
+    foaf:surname "Berlant" ;
+    foaf:page <https://en.wikipedia.org/wiki/Lauren_Berlant> .
 
 :person:BernardA
     a foaf:Person ;
@@ -6590,6 +6912,13 @@
     foaf:surname "Flynn" ;
     foaf:homepage <http://blogs.silmaril.ie/peter/>, <http://research.ucc.ie/profiles/H505/pflynn> .
 
+:person:FrankA
+    a foaf:Person ;
+    owl:sameAs viaf:5300159248464104870006 ;
+    foaf:givenname "Adam" ;
+    foaf:surname "Frank" ;
+    foaf:workInfoHomepage <https://english.ubc.ca/profile/adam-j-frank/> .
+
 :person:FrauenbergerC
     a foaf:Person ;
     foaf:givenname "Christopher" ;
@@ -6861,6 +7190,13 @@
     foaf:surname "Hill" ;
     foaf:homepage <https://fh295.github.io> .
 
+:person:HindS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8347-3695 ;
+    foaf:givenname "Sam" ;
+    foaf:surname "Hind" ;
+    foaf:homepage <https://samhind.com> .
+
 :person:HjorlandB
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-9535-1732, viaf:33277453, wd:Q4916221 ;
@@ -6964,6 +7300,13 @@
     foaf:givenname "Steven" ;
     foaf:surname "Jackson" ;
     foaf:homepage <https://sjackson.infosci.cornell.edu/> .
+
+:person:JacobsenB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-6656-8892 ;
+    foaf:givenname "Benjamin" ;
+    foaf:surname "Jacobsen" ;
+    foaf:workInfoHomepage <https://www.york.ac.uk/sociology/people/benjamin-jacobsen/> .
 
 :person:JensenP
     a foaf:Person ;
@@ -7423,6 +7766,13 @@
     foaf:surname "Mejias" ;
     foaf:homepage <https://blog.ulisesmejias.com/> .
 
+:person:MessickS
+    a foaf:Person ;
+    owl:sameAs wd:Q7412179 , viaf:232936937 ;
+    foaf:givenname "Samuel" ;
+    foaf:surname "Messick" ;
+    foaf:page <https://en.wikipedia.org/wiki/Samuel_Messick> .
+
 :person:MilesA
     a foaf:Person ;
     foaf:givenname "Adrian" ;
@@ -7729,6 +8079,13 @@
     foaf:surname "Priestley" ;
     foaf:homepage <http://markpriestley.net> .
 
+:person:PrykeM
+    a foaf:Person ;
+    owl:sameAs viaf:116567482 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Pryke" ;
+    foaf:workInfoHomepage <https://www.open.ac.uk/people/mdp5> .
+
 :person:PutzO
     a foaf:Person ;
     owl:sameAs viaf:182027285, orcid:0000-0002-5286-9571 ;
@@ -7907,6 +8264,13 @@
     foaf:surname "Seaver" ;
     foaf:homepage <https://nickseaver.net> .
 
+:person:SeitzT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7147-1278 ;
+    foaf:givenname "Tatjana" ;
+    foaf:surname "Seitz" ;
+    foaf:page <https://www.linkedin.com/in/tatjana-seitz/> .
+
 :person:SerresM
     a foaf:Person ;
     owl:sameAs viaf:76322799, wd:Q364456 ;
@@ -7979,6 +8343,12 @@
     owl:sameAs viaf:39384262, wd:Q76849 ;
     foaf:givenname "Georg" ;
     foaf:surname "Simmel" .
+
+:person:SimonA
+    a foaf:Person ;
+    foaf:givenname "Andre" ;
+    foaf:surname "Simon" ;
+    foaf:page <https://www.linkedin.com/in/andre-simon-762b6663/> .
 
 :person:SimondonG
     a foaf:Person ;
@@ -8205,6 +8575,20 @@
     foaf:surname "Timmermans" ;
     foaf:homepage <http://www.stefantimmermans.com/> .
 
+:person:TironiM
+    a foaf:Person ;
+    owl:sameAs viaf:306485297 ;
+    foaf:givenname "Martín" ;
+    foaf:surname "Tironi" ;
+    foaf:workInfoHomepage <https://diseno.uc.cl/persona/tironi-martin/> .
+
+:person:TomkinsS
+    a foaf:Person ;
+    owl:sameAs wd:Q571698 , viaf:32109548 ;
+    foaf:givenname "Silvan" ;
+    foaf:surname "Tomkins" ;
+    foaf:page <https://en.wikipedia.org/wiki/Silvan_Tomkins> .
+
 :person:TreemJ
     a foaf:Person ;
     foaf:givenname "Jeffrey W." ;
@@ -8230,6 +8614,12 @@
     owl:sameAs viaf:72247376, wd:Q5365042 ;
     foaf:givenname "Ellen" ;
     foaf:surname "Ullman" .
+
+:person:ValderramaM
+    a foaf:Person ;
+    foaf:givenname "Matías" ;
+    foaf:surname "Valderrama " ;
+    foaf:workInfoHomepage <https://warwick.ac.uk/fac/cross_fac/cim/people/matias-valderrama/> .
 
 :person:VanBenthemJ
     a foaf:Person ;
@@ -8301,6 +8691,13 @@
     foaf:surname "Vitak" ;
     foaf:homepage <https://jessicavitak.com/> .
 
+:person:VoglJ
+    a foaf:Person ;
+    owl:sameAs viaf:71522982 , wd:Q1708148 ;
+    foaf:givenname "Joseph" ;
+    foaf:surname "Vogl" ;
+    foaf:homepage <https://josephvogl.de/> .
+
 :person:VonFoersterH
     a foaf:Person ;
     owl:sameAs viaf:29663298, wd:Q78688 ;
@@ -8342,6 +8739,12 @@
     foaf:surname "Ward" ;
     foaf:workInfoHomepage <https://www.imperial.ac.uk/people/h.ward> .
 
+:person:WarkS
+    a foaf:Person ;
+    foaf:givenname "Scott" ;
+    foaf:surname "Wark" ;
+    foaf:workInfoHomepage <https://www.gold.ac.uk/visual-cultures/staff/wark-scott/> .
+
 :person:WarnerJ
     a foaf:Person ;
     owl:sameAs viaf:12561344 , wd:Q112554378 , orcid:0000-0001-9845-8586 ;
@@ -8382,6 +8785,13 @@
     owl:sameAs wd:Q27252, viaf:60907032 ;
     foaf:givenname "Robin" ;
     foaf:surname "Williams" .
+
+:person:WilsonE
+    a foaf:Person ;
+    owl:sameAs wd:Q47488092 ;
+    foaf:givenname "Elizabeth" ;
+    foaf:surname "Wilson" ;
+    foaf:workInfoHomepage <https://wgss.emory.edu/people/biography/wilson-elizabeth.html> .
 
 :person:WinogradT
     a foaf:Person ;
@@ -8751,6 +9161,11 @@
     a :Publisher ;
     foaf:name "Pluto Press" ;
     address:localityName "London" .
+
+:publisher:Polity
+    a :Publisher ;
+    foaf:name "Polity" ;
+    address:localityName "Cambridge" .
 
 :publisher:PsychologyPress
     a :Publisher ;
@@ -9141,6 +9556,14 @@
     dc:isPartOf :volume:Becker1982 ;
     bibo:pages "1–39" .
 
+:reading:Becker2023
+    a :Reading , bibo:Book ;
+    dc:title "Insolvent: How to Reorient Computing for Just Sustainability" ;
+    dc:creator :person:BeckerC ;
+    bibo:authorList ( :person:BeckerC ) ;
+    dc:date "2023" ;
+    dc:publisher :publisher:MIT .
+
 :reading:Benardou2017
     a :Reading, bibo:BookSection ;
     dc:title "Introduction: a critique of digital practices and research infrastructures" ;
@@ -9206,6 +9629,14 @@
     ) ;
     dc:isPartOf :volume:Bergson2023 ;
     bibo:pages "238-316" .
+
+:reading:Berlant2011
+    a :Reading , bibo:Book ;
+    dc:title "Cruel Optimism" ;
+    dc:creator :person:BerlantL ;
+    bibo:authorList ( :person:BerlantL ) ;
+    dc:date "2011" ;
+    dc:publisher :publisher:DUP .
 
 :reading:Bernard2018
     a :Reading, bibo:BookSection ;
@@ -10106,6 +10537,17 @@
     bibo:pages "614-621" ;
     bibo:doi "10.1002/(SICI)1097-4571(199707)48:7<614::AID-ASI8>3.0.CO;2-W" .
 
+:reading:FrankWilson2020
+    a :Reading , bibo:Book ;
+    dc:title "A Sylvan Tomkins Handbook: Foundations for Affect Theory" ;
+    dc:creator :person:FrankA , :person:WilsonE ;
+    bibo:authorList (
+        :person:FrankA
+        :person:WilsonE
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:UMP .
+
 :reading:Freeman2013
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1353/wsq.2013.0072> ;
@@ -10539,6 +10981,24 @@
     bibo:pages "118-127" ;
     bibo:doi "10.1177/0735275117709046" .
 
+:reading:HindSeitz2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/13548565221133248> ;
+    dc:title "Cynical technical practice: From AI to APIs" ;
+    dc:creator :person:HindS , :person:SeitzT ;
+    bibo:authorList (
+        :person:HindS
+        :person:SeitzT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        bibo:volume "30" ;
+        bibo:issue "1" ;
+        dc:isPartOf :journal:Convergence
+    ] ;
+    bibo:doi "10.1177/13548565221133248" .
+
 :reading:Hjorland2015
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/asi.23250> ;
@@ -10710,7 +11170,7 @@
        bibo:volume "13" ;
        bibo:issue "2"
     ] ;
-    bibo:uri "https://social-epistemology.com/2024/02/02/on-being-tasked-with-the-problem-of-inhabiting-the-page-tim-ingold/" . 
+    bibo:uri "https://social-epistemology.com/2024/02/02/on-being-tasked-with-the-problem-of-inhabiting-the-page-tim-ingold/" .
 
 :reading:Irani2018
     a :Reading, bibo:AcademicArticle ;
@@ -10729,6 +11189,19 @@
     ] ;
     bibo:pages "1-19" ;
     bibo:doi "10.28968/cftt.v4i1.243" .
+
+:reading:Jacobsen2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764231225768> ;
+    dc:title "The logic of the synthetic supplement in algorithmic societies" ;
+    dc:creator :person:JacobsenB ;
+    bibo:authorList ( :person:JacobsenB ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:TCS
+    ] ;
+    bibo:doi "10.1177/02632764231225768" .
 
 :reading:JohnMathews2022a
     a :Reading , bibo:AcademicArticle ;
@@ -10862,6 +11335,23 @@
     dc:date "2019" ;
     dc:publisher :publisher:CUP ;
     bibo:doi "10.7208/chicago/9780226626611.001.0001" .
+
+:reading:Koopman2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764231162251> ;
+    dc:title "From Galton’s pride to Du Bois’s pursuit: The formats of data-driven inequality" ;
+    bibo:shortTitle "The formats of data-driven inequality" ;
+    dc:creator :person:KoopmanC ;
+    bibo:authorList ( :person:KoopmanC ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue 1 ;
+        bibo:volume 41
+    ] ;
+    bibo:pages "59–78" ;
+    bibo:doi "10.1177/02632764231162251" .
 
 :reading:Kreiss2011
     a :Reading, bibo:AcademicArticle ;
@@ -11058,6 +11548,22 @@
     bibo:pages "425-455" ;
     bibo:doi "10.1086/713551" .
 
+:reading:Liu2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1086/726293> ;
+    dc:title "After Turing: How philosophy migrated to the AI lab" ;
+    dc:creator :person:LiuL ;
+    bibo:authorList ( :person:LiuL ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Autumn 2023" ;
+        bibo:volume "50" ;
+        bibo:issue "1" ;
+        dc:isPartOf :journal:CriticalInquiry
+    ] ;
+    bibo:pages "2-30" ;
+    bibo:doi "10.1086/726293" .
+
 :reading:Losee2015
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/asi.23544> ;
@@ -11088,6 +11594,28 @@
         :person:WakefordN
     ) ;
     bibo:isbn13 "9780415721103" .
+
+:reading:Lury2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.3384/VS.2001-5992.2024.11.1.38-59> ;
+    dc:title "Lessons in relevance from the prototyping of a recommendation app" ;
+    dc:creator :person:LuryC , :person:DayS , :person:SimonA , :person:TironiM , :person:ValderramaM , :person:WarkS ;
+    bibo:authorList (
+        :person:LuryC
+        :person:DayS
+        :person:SimonA
+        :person:TironiM
+        :person:ValderramaM
+        :person:WarkS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-05-02" ;
+        dc:isPartOf :journal:ValuationStudies ;
+        bibo:volume "11" ;
+        bibo:issn "1"
+    ] ;
+    bibo:doi "10.3384/VS.2001-5992.2024.11.1.38-59" .
 
 :reading:Lyman1995
     a :Reading, bibo:AcademicArticle ;
@@ -11833,6 +12361,26 @@
         bibo:volume "28"
     ] ;
     bibo:doi "10.1007/s10699-022-09878-6" .
+
+:reading:PrykeAllen2000
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/030851400360497> ;
+    dc:title "Monetized time-space: derivatives – money’s ‘new imaginary’?" ;
+    bibo:shortTitle "Monetized time-space" ;
+    dc:creator :person:PrykeM , :person:AllenJ ;
+    bibo:authorList (
+        :person:PrykeM
+        :person:AllenJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:EconSoc ;
+        bibo:volume "29" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "264–284" ;
+    bibo:doi "10.1080/030851400360497" .
 
 :reading:Putz2021
     a :Reading, bibo:AcademicArticle ;
@@ -12695,6 +13243,25 @@
     bibo:pages "1029-1038" ;
     bibo:doi "10.1038/s41562-020-0924-8" .
 
+:reading:Tomkins1963
+    a :Reading , bibo:BookSection ;
+    dc:title "Simulation of personality: The interrelationships between affect, memory, thinking, perception, and action" ;
+    bibo:shortTitle "Simulation of personality" ;
+    dc:creator :person:TomkinsS ;
+    bibo:authorList ( :person:TomkinsS ) ;
+    dc:isPartOf [
+        a bibo:Book ;
+        dc:date "1963" ;
+        dc:publisher :publisher:Wiley ;
+        dc:title "Computer Simulation of Personality: Frontier of Psychological Theory" ;
+        bibo:editor :person:TomkinsS , :person:MessickS ;
+        bibo:editorList (
+            :person:TomkinsS
+            :person:MessickS
+        )
+    ] ;
+    bibo:pages "3–57" .
+
 :reading:Tsing2015
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.1515/9781400873548> ;
@@ -12828,6 +13395,14 @@
     ) ;
     dc:isPartOf :volume:Vismann2008 ;
     bibo:pages "71-101"  .
+
+:reading:Vogl2022
+    a :Reading , bibo:Book ;
+    dc:title "Capital and Ressentiment: A Brief Theory of the Present" ;
+    dc:creator :person:VoglJ ;
+    bibo:authorList ( :person:VoglJ ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:Polity .
 
 :reading:VonFoerster2002a
     a :Reading, bibo:BookSection ;
