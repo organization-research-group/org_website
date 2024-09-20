@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-09-27,
         :meeting:2024-09-20,
         :meeting:2024-09-13,
         :meeting:2024-09-06,
@@ -442,6 +443,13 @@
     address:localityName "Brisbane, Australia" ;
     dc:date "June 4-8 2016" ;
     foaf:homepage <http://www.dis2016.org/> .
+
+:conference:FACCT23
+    a bibo:Conference ;
+    dc:title "FAccT '23: the 2023 ACM Conference on Fairness, Accountability, and Transparency" ;
+    address:localityName "Chicago" ;
+    dc:date "June 12-15, 2023" ;
+    foaf:homepage <https://facctconference.org/2023/> .
 
 :conference:Hypertext1991
     a bibo:Conference ;
@@ -6055,6 +6063,20 @@
         :reading:Koopman2024
     ) .
 
+:meeting:2024-09-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Valdivia2023 ;
+    :schedule (
+        :reading:Valdivia2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -8520,6 +8542,13 @@
     foaf:surname "Tatarchenko" ;
     foaf:workInfoHomepage <https://faculty.smu.edu.sg/profile/ksenia-tatarchenko-1676> .
 
+:person:TazzioliM
+    a foaf:Person ;
+    foaf:givenname "Martina" ;
+    foaf:surname "Tazzioli" ;
+    owl:sameAs orcid:0000-0003-0866-7611 ;
+    foaf:workInfoHomepage <https://www.unibo.it/sitoweb/martina.tazzioli> .
+
 :person:TeilG
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-5536-5459 , viaf:27310566 ;
@@ -8620,6 +8649,13 @@
     foaf:givenname "Matías" ;
     foaf:surname "Valderrama " ;
     foaf:workInfoHomepage <https://warwick.ac.uk/fac/cross_fac/cim/people/matias-valderrama/> .
+
+:person:ValdiviaA
+    a foaf:Person ;
+    foaf:givenname "Ana" ;
+    foaf:surname "Valdivia" ;
+    owl:sameAs orcid:0000-0001-8214-8380 ;
+    foaf:homepage <https://www.avaldivia.com> .
 
 :person:VanBenthemJ
     a foaf:Person ;
@@ -8930,6 +8966,13 @@
     dc:date "2016" ;
     dc:publisher :publisher:ACM ;
     bibo:isbn13 "978-1-4503-4031-1" .
+
+:proceedings:FACCT23
+    a bibo:Proceedings ;
+    dc:title "FAccT '23: Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency" ;
+    dc:date "12 June 2023" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "9798400701924" .
 
 :proceedings:HICSS2011
     a bibo:Proceedings ;
@@ -13310,6 +13353,20 @@
     ) ;
     dc:date "2010" ;
     dc:publisher :publisher:CityLights .
+
+:reading:Valdivia2023
+    a :Reading , :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/3593013.3594047> ;
+    dc:title "Datafication genealogies beyond algorithmic fairness: Making up racialised subjects" ;
+    bibo:shortTitle "Datafication genealogies beyond algorithmic fairness" ;
+    dc:creator :person:ValdiviaA , :person:TazzioliM ;
+    bibo:authorList (
+        :person:ValdiviaA
+        :person:TazzioliM
+    ) ;
+    bibo:reproducedIn :proceedings:FACCT23 ;
+    bibo:presentedAt :conference:FACCT23 ;
+    bibo:doi "10.1145/3593013.3594047" .
 
 :reading:VanDoorn2017
     a :Reading, bibo:AcademicArticle ;
