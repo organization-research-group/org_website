@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-10-04,
         :meeting:2024-09-27,
         :meeting:2024-09-20,
         :meeting:2024-09-13,
@@ -6077,6 +6078,20 @@
         :reading:Valdivia2023
     ) .
 
+:meeting:2024-10-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Doganova2024 ;
+    :schedule (
+        :reading:Doganova2024
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6798,6 +6813,13 @@
     foaf:givenname "Kristin N." ;
     foaf:surname "Dew" ;
     foaf:homepage <https://kristindew.com/> .
+
+:person:DoganovaL
+    a foaf:Person ;
+    owl:sameAs viaf:213368336 , wd:Q127206269 ;
+    foaf:givenname "Liliana" ;
+    foaf:surname "Doganova" ;
+    foaf:workInfoHomepage <https://www.csi.minesparis.psl.eu/en/people/researchers/liliana-doganova/> .
 
 :person:DorkM
     a foaf:Person ;
@@ -9310,6 +9332,11 @@
     foaf:name "Wiley" ;
     address:localityName "New York" .
 
+:publisher:Zone
+    a :Publisher ;
+    foaf:name "Zone Books" ;
+    address:localityName "Brooklyn, New York" .
+
 :publisher:meson
     a :Publisher ;
     foaf:name "meson press" ;
@@ -10277,6 +10304,15 @@
     ) ;
     dc:isPartOf :volume:Clapin2002 ;
     bibo:pages "222-292" .
+
+:reading:Doganova2024
+    a :Reading , bibo:Book ;
+    dc:title "Discounting the Future: The Ascendancy of a Political Technology" ;
+    bibo:shortTitle "Discounting the Future" ;
+    dc:creator :person:DoganovaL ;
+    bibo:authorList ( :person:DoganovaL ) ;
+    dc:date "2024" ;
+    dc:publisher :publisher:Zone .
 
 :reading:Dork2014
     a :Reading, :ConferencePaper ;
