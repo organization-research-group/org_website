@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-10-18,
         :meeting:2024-10-11,
         :meeting:2024-10-04,
         :meeting:2024-09-27,
@@ -6100,6 +6101,20 @@
         time:hasBeginning [
             a time:Instant ;
             time:inXSDDateTimeStamp "2024-10-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Doganova2024 ;
+    :schedule (
+        :reading:Doganova2024
+    ) .
+
+:meeting:2024-10-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-18T10:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Doganova2024 ;
