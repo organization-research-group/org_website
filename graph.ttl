@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-10-25,
         :meeting:2024-10-18,
         :meeting:2024-10-11,
         :meeting:2024-10-04,
@@ -977,6 +978,12 @@
     dc:title "Social Studies of Science" ;
     foaf:homepage <http://journals.sagepub.com/home/sss> ;
     bibo:issn "0306-3127" .
+
+:journal:SocialText
+    a bibo:Journal ;
+    dc:title "Social Text" ;
+    foaf:homepage <https://read.dukeupress.edu/social-text/> ;
+    bibo:issn "1527-1951" .
 
 :journal:Sociologica
     a bibo:Journal ;
@@ -6122,6 +6129,20 @@
         :reading:Doganova2024
     ) .
 
+:meeting:2024-10-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dobson2023 ;
+    :schedule (
+        :reading:Dobson2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6843,6 +6864,13 @@
     foaf:givenname "Kristin N." ;
     foaf:surname "Dew" ;
     foaf:homepage <https://kristindew.com/> .
+
+:person:DobsonJ
+    a foaf:Person ;
+    owl:sameAs viaf:187144782706114501587 ;
+    foaf:givenname "James" ;
+    foaf:surname "Dobson" ;
+    foaf:homepage <https://jeddobson.github.io> .
 
 :person:DoganovaL
     a foaf:Person ;
@@ -10334,6 +10362,24 @@
     ) ;
     dc:isPartOf :volume:Clapin2002 ;
     bibo:pages "222-292" .
+
+:reading:Dobson2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1215/01642472-10613653> ;
+    dc:title "Objective Vision: Confusing the Subject of Computer Vision" ;
+    dc:creator :person:DobsonJ ;
+    bibo:authorList (
+        :person:DobsonJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 01 2023" ;
+        dc:isPartOf :journal:SocialText ;
+        bibo:volume "41" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "35-55" ;
+    bibo:doi "10.1215/01642472-10613653" .
 
 :reading:Doganova2024
     a :Reading , bibo:Book ;
