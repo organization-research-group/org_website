@@ -35,6 +35,9 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2024-11-01,
+        :meeting:2024-11-15,
+        :meeting:2024-11-08,
         :meeting:2024-10-25,
         :meeting:2024-10-18,
         :meeting:2024-10-11,
@@ -6143,6 +6146,47 @@
         :reading:Dobson2023
     ) .
 
+:meeting:2024-11-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-11-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Trace2024 ;
+    :schedule (
+        :reading:Trace2024
+    ) .
+
+:meeting:2024-11-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2023 ;
+    :schedule (
+        :reading:Hui2023
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6552,6 +6596,13 @@
     foaf:givenname "Peter" ;
     foaf:surname "Buneman" ;
     foaf:homepage <http://homepages.inf.ed.ac.uk/opb/> .
+
+:person:BurnettDG
+    a foaf:Person ;
+    owl:sameAs wd:Q16201486 ;
+    foaf:givenname "D. Graham" ;
+    foaf:surname "Burnett" ;
+    foaf:homepage <https://dgrahamburnett.net> .
 
 :person:ButtonG
     a foaf:Person ;
@@ -7313,6 +7364,12 @@
     foaf:page <https://supplystudies.com/> ;
     foaf:workInfoHomepage <https://www.fordham.edu/info/29405/areas_of_specialization/11901/matthew_hockenberry> .
 
+:person:HodgesJ
+    a foaf:Person ;
+    foaf:givenname "James" ;
+    foaf:surname "Hodges" ;
+    foaf:homepage <https://www.jameshodges.net> .
+
 :person:HoffmannA
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-7950-804X ;
@@ -7355,6 +7412,13 @@
     foaf:givenname "Lorna M." ;
     foaf:surname "Hughes" ;
     foaf:homepage <http://lornamhughes.blogspot.com/> .
+
+:person:HuiA
+    a foaf:Person ;
+    owl:sameAs wd:Q105099699 , viaf:260985779 ;
+    foaf:givenname "Alexandra" ;
+    foaf:surname "Hui" ;
+    foaf:workInfoHomepage <https://www.history.msstate.edu/directory/aeh230> .
 
 :person:HuiY
     a foaf:Person ;
@@ -8493,6 +8557,13 @@
     foaf:surname "Smith" ;
     foaf:page <https://en.wikipedia.org/wiki/Dorothy_E._Smith> .
 
+:person:SmithJEH
+    a foaf:Person ;
+    owl:sameAs wd:Q22089058 ;
+    foaf:givenname "Justin E. H." ;
+    foaf:surname "Smith" ;
+    foaf:homepage <https://www.the-hinternet.com> .
+
 :person:SofiaZ
     a foaf:Person ;
     owl:sameAs viaf:29227959, wd:Q67782833 ;
@@ -8697,6 +8768,13 @@
     foaf:givenname "Silvan" ;
     foaf:surname "Tomkins" ;
     foaf:page <https://en.wikipedia.org/wiki/Silvan_Tomkins> .
+
+:person:TraceC
+    a foaf:Person ;
+    owl:sameAs wd:Q91690818 ;
+    foaf:givenname "Ciaran" ;
+    foaf:surname "Trace" ;
+    foaf:homepage <https://www.ischool.utexas.edu/~cbtrace/> .
 
 :person:TreemJ
     a foaf:Person ;
@@ -9144,6 +9222,11 @@
     a :Publisher ;
     foaf:name "City Lights" ;
     address:localityName "San Francisco" .
+
+:publisher:ColumbiaUP
+    a :Publisher ;
+    foaf:name "Columbia University Press" ;
+    address:localityName "New York" .
 
 :publisher:Continuum
     a :Publisher ;
@@ -11246,6 +11329,16 @@
     ] ;
     bibo:pages "217-233" ;
     bibo:doi "10.5840/philtoday2021652392" .
+
+:reading:Hui2023
+    a :Reading , bibo:BookSection ;
+    dc:title "Paying attention to the birds: Ornithologists and listening" ;
+    dc:creator :person:HuiA ;
+    bibo:authorList (
+        :person:HuiA
+    ) ;
+    dc:isPartOf :volume:Burnett2023 ;
+    bibo:pages "63–80" .
 
 :reading:Iliadis2013
     a :Reading, bibo:AcademicArticle ;
@@ -13417,6 +13510,24 @@
     ] ;
     bibo:pages "3–57" .
 
+:reading:Trace2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/1369118X.2023.2255656> ;
+    dc:title "Algorithmic futures: the intersection of algorithms and evidentiary work" ;
+    dc:creator :person:TraceC, :person:HodgesJ ;
+    bibo:authorList (
+        :person:TraceC
+        :person:HodgesJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:InformationCommunicationSociety ;
+        bibo:volume "27" ;
+        bibo:issue "7"
+    ] ;
+    bibo:doi "10.1080/1369118X.2023.2255656" .
+
 :reading:Tsing2015
     a :Reading, bibo:Book ;
     owl:sameAs <http://doi.org/10.1515/9781400873548> ;
@@ -13982,6 +14093,20 @@
     bibo:editorList (
         :person:ChandraA
     ) .
+
+:volume:Burnett2023
+    a bibo:EditedBook ;
+    owl:sameAs <https://doi.org/10.7312/burn21118> ;
+    dc:title "Scenes of Attention" ;
+    dc:date "2023" ;
+    dc:publisher :publisher:ColumbiaUP ;
+    bibo:editor :person:BurnettDG , :person:SmithJEH ;
+    bibo:editorList (
+        :person:BurnettDG
+        :person:SmithJEH
+    ) ;
+    bibo:isbn13 "9780231558785" ;
+    bibo:doi "10.7312/burn21118" .
 
 :volume:Carr2016
     a bibo:EditedBook ;
