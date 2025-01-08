@@ -35,6 +35,11 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2025-01-10,
+        :meeting:2024-12-13,
+        :meeting:2024-12-06,
+        :meeting:2024-11-29,
+        :meeting:2024-11-22,
         :meeting:2024-11-01,
         :meeting:2024-11-15,
         :meeting:2024-11-08,
@@ -535,6 +540,12 @@
     dc:title "Archive Journal" ;
     foaf:homepage <https://www.archivejournal.net/> ;
     bibo:issn "2166-1189" .
+
+:journal:arXiv
+    a bibo:Journal ;
+    dc:title "arXiv" ;
+    foaf:homepage <https://arxiv.org> ;
+    bibo:issn "2331-8422" .
 
 :journal:BDS
     a bibo:Journal ;
@@ -6187,6 +6198,74 @@
         :reading:Hui2023
     ) .
 
+:meeting:2024-11-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Voss2024 ;
+    :schedule (
+        :reading:Voss2024
+    ) .
+
+:meeting:2024-11-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Thanksgiving holiday." ]
+    ) .
+
+:meeting:2024-12-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-12-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-12-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-12-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Voss2024 ;
+    :schedule (
+        :reading:Voss2024
+    ) .
+
+:meeting:2025-01-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Chen2024 ;
+    :schedule (
+        :reading:Chen2024
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6683,6 +6762,13 @@
     foaf:surname "Chen" ;
     foaf:homepage <https://beta.vero.site> .
 
+:person:ChenN
+    a foaf:Person ;
+    foaf:givenname "Nuo" ;
+    foaf:surname "Chen" ;
+    owl:sameAs orcid:0000-0001-8600-8203 ;
+    foaf:homepage <https://nuochenpku.github.io> .
+
 :person:CheneyJ
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-1307-9286 ;
@@ -6929,6 +7015,12 @@
     foaf:givenname "Liliana" ;
     foaf:surname "Doganova" ;
     foaf:workInfoHomepage <https://www.csi.minesparis.psl.eu/en/people/researchers/liliana-doganova/> .
+
+:person:DongX
+    owl:sameAs orcid:0000-0002-4788-9279 ;
+    foaf:givenname "Xiaoyu" ;
+    foaf:surname "Dong" ;
+    a foaf:Person .
 
 :person:DorkM
     a foaf:Person ;
@@ -7746,12 +7838,26 @@
     foaf:surname "Lien" ;
     foaf:workInfoHomepage <https://www.sv.uio.no/sai/english/people/aca/marianel/> .
 
+:person:LiuJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3643-2182 ;
+    foaf:givenname "Jiqun" ;
+    foaf:surname "Liu" ;
+    foaf:homepage <https://jiqunl.github.io/me/> .
+
 :person:LiuL
     a foaf:Person ;
     owl:sameAs viaf:2639260, wd:Q55171446 ;
     foaf:givenname "Lydia H." ;
     foaf:surname "Liu" ;
     foaf:workInfoHomepage <http://ealac.columbia.edu/lydia-h-liu/> .
+
+:person:LiuQ
+    a foaf:Person ;
+    foaf:givenname "Qijiong" ;
+    foaf:surname "Liu" ;
+    owl:sameAs orcid:0000-0001-6087-383X ;
+    foaf:homepage <https://liu.qijiong.work> .
 
 :person:LocastoM
     a foaf:Person ;
@@ -8403,6 +8509,13 @@
     foaf:surname "Sacks" ;
     foaf:page <https://en.wikipedia.org/wiki/Harvey_Sacks> .
 
+:person:SakaiT
+    a foaf:Person ;
+    foaf:givenname "Tetsuya " ;
+    foaf:surname "Sakai" ;
+    owl:sameAs orcid:0000-0002-6720-963X ;
+    foaf:homepage <http://sakailab.com/tetsuya/> .
+
 :person:SalterC
     a foaf:Person ;
     owl:sameAs viaf:86250151 ;
@@ -8906,6 +9019,13 @@
     foaf:surname "von Uexküll" ;
     foaf:page <https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll> .
 
+:person:VossG
+    a foaf:Person ;
+    owl:sameAs viaf:1673152637805220220008 ;
+    foaf:givenname "Georgina" ;
+    foaf:surname "Voss" ;
+    foaf:page <https://gsvoss.com> .
+
 :person:WakefordN
     a foaf:Person ;
     owl:sameAs viaf:220452036 ;
@@ -9039,6 +9159,13 @@
     foaf:givenname "Steve" ;
     foaf:surname "Wright" ;
     foaf:workInfoHomepage <https://research.monash.edu/en/persons/steven-wright> .
+
+:person:WuXM
+    a foaf:Person ;
+    foaf:givenname "Xiao-Ming" ;
+    foaf:surname "Wu" ;
+    owl:sameAs orcid:0000-0002-3130-0554 ;
+    foaf:homepage <http://www4.comp.polyu.edu.hk/~csxmwu/> .
 
 :person:YeJ
     a foaf:Person ;
@@ -10155,6 +10282,26 @@
     dc:date "2010" ;
     dc:publisher :publisher:FUP ;
     bibo:isbn13 "9780823229260" .
+
+:reading:Chen2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2409.16022> ;
+    dc:title "AI Can Be Cognitively Biased: An Exploratory Study on Threshold Priming in LLM-Based Batch Relevance Assessment" ;
+    dc:creator :person:ChenN , :person:LiuJ , :person:DongX , :person:LiuQ , :person:SakaiT , :person:WuXM ;
+    bibo:authorList (
+        :person:ChenN
+        :person:LiuJ
+        :person:DongX
+        :person:LiuQ
+        :person:SakaiT
+        :person:WuXM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2409.16022" .
 
 :reading:Chun2016
     a :Reading, bibo:AcademicArticle ;
@@ -13734,6 +13881,16 @@
     bibo:pages "25-82" ;
     bibo:doi "10.1515/semi.1982.42.1.25" ;
     bibo:uri "https://doi.org/10.1515/semi.1982.42.1.25" .
+
+:reading:Voss2024
+    # FILLME: Update the details of this entry.
+    # Added automatically for meeting on 2024-11-22
+    a :Reading , bibo:Book ;
+    dc:title "Systems Ultra: Making Sense of Technology in a Complex World" ;
+    dc:creator :person:VossG ;
+    bibo:authorList ( :person:VossG ) ;
+    dc:date "2024" ;
+    dc:publisher :publisher:Verso .
 
 :reading:Wakkary2017
     # FIXME: Update the details of this entry.
