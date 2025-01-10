@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2025-01-17,
         :meeting:2025-01-10,
         :meeting:2024-12-13,
         :meeting:2024-12-06,
@@ -540,12 +541,6 @@
     dc:title "Archive Journal" ;
     foaf:homepage <https://www.archivejournal.net/> ;
     bibo:issn "2166-1189" .
-
-:journal:arXiv
-    a bibo:Journal ;
-    dc:title "arXiv" ;
-    foaf:homepage <https://arxiv.org> ;
-    bibo:issn "2331-8422" .
 
 :journal:BDS
     a bibo:Journal ;
@@ -1068,6 +1063,12 @@
     dc:title "Yale Law Journal" ;
     bibo:issn "0044-0094" ;
     foaf:homepage <https://www.yalelawjournal.org> .
+
+:journal:arXiv
+    a bibo:Journal ;
+    dc:title "arXiv" ;
+    foaf:homepage <https://arxiv.org> ;
+    bibo:issn "2331-8422" .
 
 :journal:eflux
     a bibo:Journal ;
@@ -6266,6 +6267,20 @@
         :reading:Chen2024
     ) .
 
+:meeting:2025-01-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Offert2024 ;
+    :schedule (
+        :reading:Offert2024
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6688,6 +6703,13 @@
     owl:sameAs viaf:41901360 ;
     foaf:givenname "Graham" ;
     foaf:surname "Button" .
+
+:person:CaiQ
+    a foaf:Person .
+    owl:sameAs orcid:0000-0002-5570-5919 ;
+    foaf:givenname "Qiaoyu" ;
+    foaf:surname "Cai" ;
+    foaf:homepage <https://caiqiaoyu.wordpress.com> .
 
 :person:CalzatiS
     a foaf:Person ;
@@ -7664,6 +7686,12 @@
     foaf:surname "Kientz" ;
     foaf:homepage <http://www.juliekientz.com/> .
 
+:person:KimP
+    a foaf:Person ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Kim" ;
+    foaf:workInfoHomepage <https://www.moles.washington.edu/student/paul-kim/> .
+
 :person:KleinL
     a foaf:Person ;
     owl:sameAs viaf:134148389577810712856, wd:Q98502620, orcid:0000-0002-1511-0910 ;
@@ -8183,6 +8211,13 @@
     owl:sameAs viaf:322146936683913781305 ;
     foaf:givenname "Joseph D." ;
     foaf:surname "O'Neil" .
+
+:person:OffertF
+    a foaf:Person ;
+    owl:sameAs wd:Q107176176 , orcid:0000-0002-4757-8147 ;
+    foaf:givenname "Fabian" ;
+    foaf:surname "Offert" ;
+    foaf:homepage <https://zentralwerkstatt.org> .
 
 :person:OrrJ
     a foaf:Person ;
@@ -12457,6 +12492,23 @@
         bibo:volume "55"
     ] ;
     bibo:doi "10.1353/tech.2014.0031" .
+
+:reading:Offert2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2405.09788> ;
+    dc:title "Synthesizing Proteins on the Graphics Card. Protein Folding and the Limits of Critical AI Studies" ;
+    dc:creator :person:OffertF , :person:KimP , :person:CaiQ ;
+    bibo:authorList (
+        :person:OffertF
+        :person:KimP
+        :person:CaiQ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2405.09788" .
 
 :reading:Orr1996
     a :Reading, bibo:Book ;
