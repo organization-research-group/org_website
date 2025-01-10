@@ -6705,7 +6705,7 @@
     foaf:surname "Button" .
 
 :person:CaiQ
-    a foaf:Person .
+    a foaf:Person ;
     owl:sameAs orcid:0000-0002-5570-5919 ;
     foaf:givenname "Qiaoyu" ;
     foaf:surname "Cai" ;
