@@ -35,6 +35,7 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2025-01-24,
         :meeting:2025-01-17,
         :meeting:2025-01-10,
         :meeting:2024-12-13,
@@ -685,6 +686,11 @@
     dc:title "Foundations of Science" ;
     foaf:homepage <https://link.springer.com/journal/10699> ;
     bibo:issn "1572-8471" .
+
+:journal:FabianOffertBlog
+    a bibo:Journal ;
+    dc:title "Fabian Offert → Blog" ;
+    foaf:homepage <https://zentralwerkstatt.squarespace.com/blog/> .
 
 :journal:FirstMonday
     a bibo:Journal ;
@@ -6281,6 +6287,21 @@
         :reading:Offert2024
     ) .
 
+:meeting:2025-01-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OffertDhaliwal2024, :reading:Offert2017 ;
+    :schedule (
+        :reading:OffertDhaliwal2024
+        :reading:Offert2017
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7023,6 +7044,13 @@
     foaf:givenname "Kristin N." ;
     foaf:surname "Dew" ;
     foaf:homepage <https://kristindew.com/> .
+
+:person:DhaliwalRS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9826-0614 ;
+    foaf:givenname "Ranjodh Singh" ;
+    foaf:surname "Dhaliwal" ;
+    foaf:homepage <https://ranjodhdhaliwal.com> .
 
 :person:DobsonJ
     a foaf:Person ;
@@ -12493,6 +12521,20 @@
     ] ;
     bibo:doi "10.1353/tech.2014.0031" .
 
+:reading:Offert2017
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Intuition and Epistemology of High-Dimensional Vector Space" ;
+    dc:creator :person:OffertF ;
+    bibo:authorList (
+      :person:OffertF
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017-02-20" ;
+        dc:isPartOf :journal:FabianOffertBlog
+    ] ;
+    bibo:uri "https://zentralwerkstatt.squarespace.com/blog/vsm" .
+
 :reading:Offert2024
     a :Reading , bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.48550/arXiv.2405.09788> ;
@@ -12509,6 +12551,22 @@
         dc:isPartOf :journal:arXiv
     ] ;
     bibo:doi "10.48550/arXiv.2405.09788" .
+
+:reading:OffertDhaliwal2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2411.18833> ;
+    dc:title "The Method of Critical AI Studies, A Propaedeutic" ;
+    dc:creator :person:OffertF , :person:DhaliwalRS ;
+    bibo:authorList (
+        :person:OffertF
+        :person:DhaliwalRS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "November 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2411.18833" .
 
 :reading:Orr1996
     a :Reading, bibo:Book ;
