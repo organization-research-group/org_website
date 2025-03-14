@@ -156,12 +156,32 @@ async function renderMain(grist) {
           '.'
         ]),
 
-        h('p', [
-          h('a', {
-            href: 'mailto:listmanager@listserv.unc.edu?body=subscribe%20org',
-          }, 'Subscribe'),
-          ' to our email list for announcements and general discussion.',
-        ])
+        h("p", [
+          h(
+            "a",
+            {
+              href: "mailto:listmanager@listserv.unc.edu?body=subscribe%20org",
+            },
+            "Subscribe",
+          ),
+          " to our email list or follow us on ",
+          h(
+            "a",
+            {
+              href: "https://bsky.app/profile/orgorgorgorgorg.bsky.social",
+            },
+            "Bluesky",
+          ),
+          " or ",
+          h(
+            "a",
+            {
+              href: "https://mastodon.social/@orgorgorgorgorg",
+            },
+            "Mastodon",
+          ),
+          " for announcements and general discussion.",
+        ]),
       ]),
 
       h('section#current', [
