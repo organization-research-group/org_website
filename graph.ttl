@@ -35,14 +35,25 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2025-01-10,
+        :meeting:2025-01-17,
+        :meeting:2025-01-24,
+        :meeting:2025-01-31,
         :meeting:2025-02-07,
         :meeting:2025-02-14,
         :meeting:2025-02-21,
         :meeting:2025-03-07,
-        :meeting:2025-01-31,
-        :meeting:2025-01-24,
-        :meeting:2025-01-17,
-        :meeting:2025-01-10,
+        :meeting:2025-03-14,
+        :meeting:2025-03-21,
+        :meeting:2025-03-28,
+        :meeting:2025-04-04,
+        :meeting:2025-04-11,
+        :meeting:2025-04-18,
+        :meeting:2025-05-02,
+        :meeting:2025-05-09,
+        :meeting:2025-05-16,
+        :meeting:2025-05-23,
+        :meeting:2025-05-30,
         :meeting:2024-12-13,
         :meeting:2024-12-06,
         :meeting:2024-11-29,
@@ -519,6 +530,12 @@
     dc:title "WS.2 2018 International conference on Web Studies" ;
     address:localityName "Paris" ;
     dc:date "October 3-5, 2018" .
+
+:journal:ACMTransWeb
+    a bibo:Journal ;
+    dc:title "ACM Transactions on the Web" ;
+    foaf:homepage <https://dl.acm.org/journal/tweb> ;
+    bibo:issn "1559-1131" .
 
 :journal:AI
     a bibo:Journal ;
@@ -1106,6 +1123,12 @@
 :journal:transversals
     a bibo:Journal ;
     dc:title "transversals" .
+
+:journal:tripleC
+    a bibo:Journal ;
+    dc:title "tripleC: Communication, Capitalism & Critique" ;
+    foaf:homepage <https://www.triple-c.at> ;
+    bibo:issn "1726-670X" .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6377,6 +6400,160 @@
         :reading:Rotman2008
     ) .
 
+:meeting:2025-03-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BakHerrie2025 ;
+    :schedule (
+        :reading:BakHerrie2025
+    ) .
+
+:meeting:2025-03-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BakHerrie2025 ;
+    :schedule (
+        :reading:BakHerrie2025
+    ) .
+
+:meeting:2025-03-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-28T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Schwarz2025 ;
+    :schedule (
+        :reading:Schwarz2025
+    ) .
+
+:meeting:2025-04-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:ShahBender2024 ;
+    :schedule (
+        :reading:ShahBender2024
+    ) .
+
+:meeting:2025-04-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:SorensenBB2024 ;
+    :schedule (
+        :reading:SorensenBB2024
+    ) .
+
+:meeting:2025-04-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-18T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GuoS2020 ;
+    :schedule (
+        :reading:GuoS2020
+    ) .
+
+:meeting:2025-05-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GuoS2020 ;
+    :schedule (
+        :reading:GuoS2020
+    ) .
+
+:meeting:2025-05-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6485,6 +6662,13 @@
   foaf:givenname "Charles-James" ;
   foaf:surname "Bailey" .
 
+:person:BakHerrieM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4412-9896 ;
+    foaf:givenname "Maja" ;
+    foaf:surname "Bak Herrie" ;
+    foaf:homepage <https://pure.au.dk/portal/en/persons/mbh@cc.au.dk> .
+
 :person:BalagueC
   a foaf:Person ;
   owl:sameAs wd:Q118372562 , viaf:257127801 ;
@@ -6574,6 +6758,13 @@
     foaf:givenname "Emily M." ;
     foaf:surname "Bender" ;
     foaf:workInfoHomepage <https://faculty.washington.edu/ebender/> .
+
+:person:BenderEM
+    a foaf:Person ;
+    foaf:givenname "Emily M." ;
+    foaf:surname "Bender" ;
+    foaf:homepage <https://faculty.washington.edu/ebender/> ;
+    foaf:mbox <ebender@uw.edu> .
 
 :person:BenfordS
     a foaf:Person ;
@@ -7467,6 +7658,13 @@
     foaf:surname "Gumperz" ;
     foaf:page <https://en.wikipedia.org/wiki/John_J._Gumperz> .
 
+:person:GuoS
+    a foaf:Person ;
+    foaf:givenname "Shaohua" ;
+    foaf:surname "Guo" ;
+    foaf:homepage <https://www.carleton.edu/directory/sguo/> ;
+    foaf:mbox <sguo@carleton.edu> .
+
 :person:GuzikK
     a foaf:Person ;
     owl:sameAs viaf:48607995 ;
@@ -8335,6 +8533,13 @@
     foaf:surname "Apel" ;
     foaf:homepage <https://web.archive.org/web/20210617174055/http://www.karl-otto-apel.de/> .
 
+:person:OverwijkJ
+    a foaf:Person ;
+    foaf:givenname "Jan" ;
+    foaf:surname "Overwijk" ;
+    foaf:homepage <https://www.ifs.uni-frankfurt.de/people-detail/jan-overwijk.html> ;
+    foaf:mbox <overwijk@em.uni-frankfurt.de> .
+
 :person:OyamaS
     a foaf:Person ;
     owl:sameAs viaf:66712131, wd:Q7648260 ;
@@ -8686,6 +8891,13 @@
     foaf:givenname "Len" ;
     foaf:surname "Sassaman" .
 
+:person:SchwarzO
+    a foaf:Person ;
+    foaf:givenname "Ori" ;
+    foaf:surname "Schwarz" ;
+    foaf:homepage <https://sociology.biu.ac.il/en/node/1557> ;
+    foaf:mbox <ori.schwarz@biu.ac.il> .
+
 :person:SeaverN
     a foaf:Person ;
     owl:sameAs viaf:316003929 , orcid:0000-0002-3913-1134 ;
@@ -8712,6 +8924,13 @@
     owl:sameAs orcid:0000-0002-7029-2008 ;
     foaf:givenname "Aayush" ;
     foaf:surname "Shah" .
+
+:person:ShahC
+    a foaf:Person ;
+    foaf:givenname "Chirag" ;
+    foaf:surname "Shah" ;
+    foaf:homepage <https://ischool.uw.edu/people/faculty/profile/chirags> ;
+    foaf:mbox <chirags@uw.edu> .
 
 :person:SharrockW
     a foaf:Person ;
@@ -8833,6 +9052,13 @@
     foaf:givenname "Zoë" ;
     foaf:surname "Sofia" ;
     foaf:workInfoHomepage <https://www.westernsydney.edu.au/ics/people/adjunct_researchers/zoe_sofoulis> .
+
+:person:SorensenBB
+    a foaf:Person ;
+    foaf:givenname "Søren" ;
+    foaf:surname "Bøgh Sørensen" ;
+    foaf:homepage <https://www.cbs.dk/en/research/departments-and-centres/department-of-management-society-and-communication/staff/sobsmsc> ;
+    foaf:mbox <sobs.msc@cbs.dk> .
 
 :person:SorrentinoM
     a foaf:Person ;
@@ -9978,6 +10204,18 @@
     dc:isPartOf :journal:WSQ:41:3 ;
     bibo:pages "253-256" ;
     bibo:doi "10.1353/wsq.2013.0082" .
+
+:reading:BakHerrie2025
+    a :Reading, bibo:Book ;
+    dc:title "Thinking Through Data: How Outliers, Aggregates, and Patterns Shape Perception" ;
+    dc:creator :person:BakHerrieM ;
+    bibo:authorList (
+        :person:BakHerrieM
+    ) ;
+    dc:publisher :publisher:SUP ;
+    dc:date "2025" ;
+    bibo:isbn "9781503639874" ;
+    foaf:homepage <https://www.sup.org/books/thinking-through-data> .
 
 :reading:Barad2003
     a :Reading, bibo:AcademicArticle ;
@@ -11443,6 +11681,18 @@
     bibo:pages "1001-1028" ;
     bibo:doi "10.1080/09502386.2016.1173476" .
 
+:reading:GuoS2020
+    a :Reading, bibo:Book ;
+    dc:title "The Evolution of the Chinese Internet: Creative Visibility in the Digital Public" ;
+    dc:creator :person:GuoS ;
+    bibo:authorList (
+        :person:GuoS
+    ) ;
+    dc:publisher :publisher:SUP ;
+    dc:date "2020" ;
+    bibo:isbn "9781503614437" ;
+    foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
+
 :reading:Haraway2016
     a :Reading, bibo:AcademicArticle ;
     dc:title "Tentacular Thinking: Anthropocene, Capitalocene, Chthulucene" ;
@@ -12686,6 +12936,18 @@
     dc:publisher :publisher:CornellUP ;
     bibo:isbn13 "9780801483905" .
 
+:reading:OverwijkJ2025
+    a :Reading, bibo:Book ;
+    dc:title "Cybernetic Capitalism: A Critical Theory of the Incommunicable" ;
+    dc:creator :person:OverwijkJ ;
+    bibo:authorList (
+        :person:OverwijkJ
+    ) ;
+    dc:publisher :publisher:FUP ;
+    dc:date "2025-01-07" ;
+    bibo:isbn "9781531508937" ;
+    foaf:homepage <https://fordhampress.com/cybernetic-capitalism-hb-9781531508920.html> .
+
 :reading:Oyama2000
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/873479453> ;
@@ -13339,6 +13601,21 @@
     dc:publisher :publisher:MIT ;
     bibo:isbn13 "978-0-2620-2846-2" .
 
+:reading:Schwarz2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764251322062> ;
+    dc:title "The post-choice society: Algorithmic prediction and the decentring of choice" ;
+    dc:creator :person:SchwarzO ;
+    bibo:authorList (
+        :person:SchwarzO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:TCS
+    ] ;
+    bibo:doi "10.1177/02632764251322062" .
+
 :reading:Seaver2022
     a :Reading, bibo:Book ;
     dc:title "Computing Taste: Algorithms and the Makers of Music Recommendation" ;
@@ -13361,6 +13638,26 @@
     bibo:translator :person:SmithD ;
     dc:date "2015" ;
     dc:publisher :publisher:RowmanLittlefield .
+
+:reading:ShahBender2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1145/3649468> ;
+    dc:title "Envisioning Information Access Systems: What Makes for Good Tools and a Healthy Web?" ;
+    dc:creator :person:ShahC, :person:BenderEM ;
+    bibo:authorList (
+        :person:ShahC
+        :person:BenderEM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:ACMTransWeb ;
+        bibo:volume "18" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "1-24" ;
+    bibo:doi "10.1145/3649468" ;
+    dc:publisher :publisher:ACM .
 
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
@@ -13517,6 +13814,24 @@
     ] ;
     bibo:pages "181-201" ;
     bibo:doi "10.1353/hyp.2000.0029" .
+
+:reading:SorensenBB2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.31269/triplec.v22i2.1475> ;
+    dc:title "Value and Productive Labour in the Era of Digital Technologies: Revisiting the Digital Labour Debate" ;
+    dc:creator :person:SorensenBB ;
+    bibo:authorList (
+        :person:SorensenBB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-08-12" ;
+        dc:isPartOf :journal:tripleC ;
+        bibo:volume "22" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "498-517" ;
+    bibo:doi "10.31269/triplec.v22i2.1475" .
 
 :reading:Spade2013
     a :Reading, bibo:AcademicArticle ;
