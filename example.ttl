@@ -43,6 +43,8 @@
         :meeting:2025-02-14,
         :meeting:2025-02-21,
         :meeting:2025-03-07,
+        :meeting:2025-03-14,
+        :meeting:2025-03-21,
         .
 
 :journal:CriticalInquiry
@@ -175,6 +177,34 @@
         :reading:Rotman2008
     ) .
 
+:meeting:2025-03-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BakHerrie2025 ;
+    :schedule (
+        :reading:BakHerrie2025
+    ) .
+
+:meeting:2025-03-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BakHerrie2025 ;
+    :schedule (
+        :reading:BakHerrie2025
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -214,6 +244,13 @@
     foaf:surname "Rotman" ;
     foaf:homepage <http://users.wowway.com/~brian_rotman/> .
 
+:person:BakHerrieM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4412-9896 ;
+    foaf:givenname "Maja" ;
+    foaf:surname "Bak Herrie" ;
+    foaf:homepage <https://pure.au.dk/portal/en/persons/mbh@cc.au.dk> .
+
 :publisher:UCPress
     a :Publisher ;
     dc:title "UC Press" ;
@@ -223,6 +260,11 @@
     a :Publisher ;
     dc:title "Duke University Press" ;
     foaf:homepage <https://www.dukeupress.edu> .
+
+:publisher:StanfordUP
+    a :Publisher ;
+    dc:title "Stanford University Press" ;
+    foaf:homepage <https://www.sup.org> .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
@@ -333,3 +375,15 @@
     bibo:isbn "9780822342007" ;
     bibo:doi "10.1215/9780822389118" ;
     foaf:homepage <https://www.dukeupress.edu/becoming-beside-ourselves> .
+
+:reading:BakHerrie2025
+    a :Reading, bibo:Book ;
+    dc:title "Thinking Through Data: How Outliers, Aggregates, and Patterns Shape Perception" ;
+    dc:creator :person:BakHerrieM ;
+    bibo:authorList (
+        :person:BakHerrieM
+    ) ;
+    dc:publisher :publisher:StanfordUP ;
+    dc:date "2025" ;
+    bibo:isbn "9781503639874" ;
+    foaf:homepage <https://www.sup.org/books/thinking-through-data> .
