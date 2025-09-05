@@ -48,6 +48,8 @@
         :meeting:2025-03-28,
         :meeting:2025-04-04,
         :meeting:2025-04-11,
+        :meeting:2025-04-18,
+        :meeting:2025-05-02,
         .
 
 :journal:CriticalInquiry
@@ -268,6 +270,34 @@
         :reading:SorensenBB2024
     ) .
 
+:meeting:2025-04-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-18T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GuoS2020 ;
+    :schedule (
+        :reading:GuoS2020
+    ) .
+
+:meeting:2025-05-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GuoS2020 ;
+    :schedule (
+        :reading:GuoS2020
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -341,6 +371,13 @@
     foaf:surname "Bøgh Sørensen" ;
     foaf:homepage <https://www.cbs.dk/en/research/departments-and-centres/department-of-management-society-and-communication/staff/sobsmsc> ;
     foaf:mbox <sobs.msc@cbs.dk> .
+
+:person:GuoS
+    a foaf:Person ;
+    foaf:givenname "Shaohua" ;
+    foaf:surname "Guo" ;
+    foaf:homepage <https://www.carleton.edu/directory/sguo/> ;
+    foaf:mbox <sguo@carleton.edu> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -536,3 +573,15 @@
     ] ;
     bibo:pages "498-517" ;
     bibo:doi "10.31269/triplec.v22i2.1475" .
+
+:reading:GuoS2020
+    a :Reading, bibo:Book ;
+    dc:title "The Evolution of the Chinese Internet: Creative Visibility in the Digital Public" ;
+    dc:creator :person:GuoS ;
+    bibo:authorList (
+        :person:GuoS
+    ) ;
+    dc:publisher :publisher:StanfordUP ;
+    dc:date "2020" ;
+    bibo:isbn "9781503614437" ;
+    foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
