@@ -690,7 +690,10 @@
 :person:GallowayA
     a foaf:Person ;
     foaf:givenname "Alexander" ;
-    foaf:surname "Galloway" .
+    foaf:surname "Galloway" ;
+    foaf:givenname "Alexander R." ;
+    foaf:homepage <https://steinhardt.nyu.edu/people/alexander-galloway> ;
+    foaf:mbox <galloway@nyu.edu> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -726,6 +729,11 @@
     a :Publisher ;
     dc:title "University of Minnesota Press" ;
     foaf:homepage <https://www.upress.umn.edu> .
+
+:publisher:UChicagoPress
+    a :Publisher ;
+    dc:title "University of Chicago Press" ;
+    foaf:homepage <https://www.journals.uchicago.edu> .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
@@ -1018,4 +1026,12 @@
     bibo:authorList (
         :person:GallowayA
     ) ;
-    dc:date "2025" .
+    dc:date "2025" ;
+    owl:sameAs <https://doi.org/10.1086/717324> ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:CriticalInquiry
+    ] ;
+    bibo:doi "10.1086/717324" ;
+    dc:publisher :publisher:UChicagoPress .
