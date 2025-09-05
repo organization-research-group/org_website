@@ -35,6 +35,10 @@
 :ORG-UNC
     a :Org;
     :meeting
+        :meeting:2025-02-07,
+        :meeting:2025-02-14,
+        :meeting:2025-02-21,
+        :meeting:2025-03-07,
         :meeting:2025-01-31,
         :meeting:2025-01-24,
         :meeting:2025-01-17,
@@ -6317,6 +6321,62 @@
         :reading:Dhaliwal2022
     ) .
 
+:meeting:2025-02-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-02-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sadowski2025 ;
+    :schedule (
+        :reading:Sadowski2025
+    ) .
+
+:meeting:2025-02-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-02-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sadowski2025 ;
+    :schedule (
+        :reading:Sadowski2025
+    ) .
+
+:meeting:2025-02-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-02-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rotman2008 ;
+    :schedule (
+        :reading:Rotman2008
+    ) .
+
+:meeting:2025-03-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rotman2008 ;
+    :schedule (
+        :reading:Rotman2008
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -8545,6 +8605,12 @@
     foaf:surname "Roth" ;
     foaf:homepage <https://web.stanford.edu/~alroth/> .
 
+:person:RotmanB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Rotman" ;
+    foaf:workInfoHomepage <https://comparativestudies.osu.edu/people/rotman.3> .
+
 :person:RouvroyA
     a foaf:Person ;
     owl:sameAs viaf:53597499 ;
@@ -8586,6 +8652,12 @@
     foaf:givenname "Harvey" ;
     foaf:surname "Sacks" ;
     foaf:page <https://en.wikipedia.org/wiki/Harvey_Sacks> .
+
+:person:SadowskiJ
+    a foaf:Person ;
+    foaf:givenname "Jathan" ;
+    foaf:surname "Sadowski" ;
+    foaf:homepage <https://www.jathansadowski.com> .
 
 :person:SakaiT
     a foaf:Person ;
@@ -13167,6 +13239,19 @@
     dc:publisher :publisher:HMH ;
     bibo:isbn13 "9780544291133" .
 
+:reading:Rotman2008
+    a :Reading, bibo:Book ;
+    dc:title "Becoming Beside Ourselves: The Alphabet, Ghosts, and Distributed Human Being" ;
+    dc:creator :person:RotmanB ;
+    bibo:authorList (
+        :person:RotmanB
+    ) ;
+    dc:publisher :publisher:DUP ;
+    dc:date "2008" ;
+    bibo:isbn "9780822342007" ;
+    bibo:doi "10.1215/9780822389118" ;
+    foaf:homepage <https://www.dukeupress.edu/becoming-beside-ourselves> .
+
 :reading:Rouvroy2011
     a :Reading, bibo:BookSection ;
     dc:title "Technology, virtuality and utopia: Governmentality in an age of autonomic computing" ;
@@ -13229,6 +13314,18 @@
     ) ;
     bibo:pages "325-345" ;
     dc:isPartOf :volume:Gumperz1972 .
+
+:reading:Sadowski2025
+    a :Reading, bibo:Book ;
+    dc:title "The Mechanic and the Luddite: A Ruthless Criticism of Technology and Capitalism" ;
+    dc:creator :person:SadowskiJ ;
+    bibo:authorList (
+        :person:SadowskiJ
+    ) ;
+    dc:publisher :publisher:UCalP ;
+    dc:date "2025" ;
+    bibo:isbn "9780520398085" ;
+    foaf:homepage <https://www.ucpress.edu/book/9780520398078/the-mechanic-and-the-luddite> .
 
 :reading:Salter2015
     a :Reading, bibo:Book ;
