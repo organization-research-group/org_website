@@ -56,6 +56,7 @@
         :meeting:2025-05-30,
         :meeting:2025-06-06,
         :meeting:2025-06-13,
+        :meeting:2025-06-20,
         .
 
 :journal:CriticalInquiry
@@ -394,6 +395,20 @@
         :reading:DiazA2023
     ) .
 
+:meeting:2025-06-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:HansenMBN2024 ;
+    :schedule (
+        :reading:HansenMBN2024
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -512,6 +527,13 @@
     foaf:givenname "Alan" ;
     foaf:surname "Díaz Alva" ;
     foaf:homepage <https://leuphana.academia.edu/AlanDiaz> .
+
+:person:HansenMBN
+    a foaf:Person ;
+    foaf:givenname "Mark B. N." ;
+    foaf:surname "Hansen" ;
+    foaf:homepage <https://scholars.duke.edu/person/mark.hansen> ;
+    foaf:mbox <mark.hansen@duke.edu> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -772,3 +794,21 @@
     ] ;
     bibo:pages "37-76" ;
     bibo:doi "10.70064/mt.v7i2.587" .
+
+:reading:HansenMBN2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.70064/mt.v8i2.1116> ;
+    dc:title "The Contingency of Process, or Why There Is No Computation-in-itself" ;
+    dc:creator :person:HansenMBN ;
+    bibo:authorList (
+        :person:HansenMBN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-12-18" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "8" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "13-36" ;
+    bibo:doi "10.70064/mt.v8i2.1116" .
