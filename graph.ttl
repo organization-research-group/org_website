@@ -54,6 +54,18 @@
         :meeting:2025-05-16,
         :meeting:2025-05-23,
         :meeting:2025-05-30,
+        :meeting:2025-06-06,
+        :meeting:2025-06-13,
+        :meeting:2025-06-20,
+        :meeting:2025-06-27,
+        :meeting:2025-07-11,
+        :meeting:2025-07-25,
+        :meeting:2025-08-01,
+        :meeting:2025-08-15,
+        :meeting:2025-08-22,
+        :meeting:2025-08-29,
+        :meeting:2025-09-05,
+        :meeting:2025-09-12,
         :meeting:2024-12-13,
         :meeting:2024-12-06,
         :meeting:2024-11-29,
@@ -887,6 +899,12 @@
     dc:title "SIAM Journal on Mathematics of Data Science" ;
     foaf:homepage <https://epubs.siam.org/loi/sjmdaq> ;
     bibo:issn "2577-0187" .
+
+:journal:MediaTheory
+    a bibo:Journal ;
+    dc:title "Media Theory" ;
+    foaf:homepage <https://journalcontent.mediatheoryjournal.org/> ;
+    bibo:issn "2557-826X" .
 
 :journal:MinnesotaReview
     a bibo:Journal ;
@@ -6554,6 +6572,173 @@
         :reading:OverwijkJ2025
     ) .
 
+:meeting:2025-06-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:KumarCLS2025 ;
+    :schedule (
+        :reading:KumarCLS2025
+    ) .
+
+:meeting:2025-06-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DiazA2023 ;
+    :schedule (
+        :reading:DiazA2023
+    ) .
+
+:meeting:2025-06-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:HansenMBN2024 ;
+    :schedule (
+        :reading:HansenMBN2024
+    ) .
+
+:meeting:2025-06-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GrossR2025 ;
+    :schedule (
+        :reading:GrossR2025
+    ) .
+
+:meeting:2025-07-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-07-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "For today we will read in-progress work from Melanie." ]
+    ) .
+
+:meeting:2025-07-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-07-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-09-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-09-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GallowayA2025 ;
+    :schedule (
+        :reading:GallowayA2025
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -6763,8 +6948,7 @@
     a foaf:Person ;
     foaf:givenname "Emily M." ;
     foaf:surname "Bender" ;
-    foaf:homepage <https://faculty.washington.edu/ebender/> ;
-    foaf:mbox <ebender@uw.edu> .
+    foaf:homepage <https://faculty.washington.edu/ebender/> .
 
 :person:BenfordS
     a foaf:Person ;
@@ -7148,6 +7332,12 @@
     foaf:surname "Lynch" ;
     foaf:workInfoHomepage <http://people.ischool.berkeley.edu/~clifford/> .
 
+:person:CluneJ
+    a foaf:Person ;
+    foaf:givenname "Jeff" ;
+    foaf:surname "Clune" ;
+    foaf:homepage <http://jeffclune.com> .
+
 :person:CollierJ
     a foaf:Person ;
     foaf:givenname "John" ;
@@ -7317,6 +7507,12 @@
     foaf:givenname "Ranjodh Singh" ;
     foaf:surname "Dhaliwal" ;
     foaf:homepage <https://ranjodhdhaliwal.com> .
+
+:person:DiazA
+    a foaf:Person ;
+    foaf:givenname "Alan" ;
+    foaf:surname "Díaz Alva" ;
+    foaf:homepage <https://leuphana.academia.edu/AlanDiaz> .
 
 :person:DobsonJ
     a foaf:Person ;
@@ -7528,6 +7724,13 @@
     foaf:surname "Galey" ;
     foaf:homepage <http://individual.utoronto.ca/alangaley/> .
 
+:person:GallowayA
+    a foaf:Person ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Galloway" ;
+    foaf:givenname "Alexander R." ;
+    foaf:homepage <https://steinhardt.nyu.edu/people/alexander-galloway> .
+
 :person:GarfinkelH
     a foaf:Person ;
     owl:sameAs viaf:108536033, wd:Q461121 ;
@@ -7639,6 +7842,13 @@
     foaf:surname "Grimmelmann" ;
     foaf:homepage <https://james.grimmelmann.net> .
 
+:person:GrossR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4433-8428 ;
+    foaf:givenname "Richard" ;
+    foaf:surname "Groß" ;
+    foaf:homepage <https://tu-dresden.de/gsw/phil/iso/tuk/forschung/doc/richard-gross> .
+
 :person:GrossbergL
     a foaf:Person ;
     owl:sameAs viaf:94221539, wd:Q5488594 ;
@@ -7663,7 +7873,7 @@
     foaf:givenname "Shaohua" ;
     foaf:surname "Guo" ;
     foaf:homepage <https://www.carleton.edu/directory/sguo/> ;
-    foaf:mbox <sguo@carleton.edu> .
+    .
 
 :person:GuzikK
     a foaf:Person ;
@@ -8058,6 +8268,13 @@
     foaf:surname "Krois" ;
     foaf:page <https://de.wikipedia.org/wiki/John_Michael_Krois> .
 
+:person:KumarA
+    a foaf:Person ;
+    foaf:givenname "Akarsh" ;
+    foaf:surname "Kumar" ;
+    foaf:homepage <https://akarshkumar.com> ;
+    .
+
 :person:LabovW
   a foaf:Person ;
   owl:sameAs viaf:71454698 , wd:Q357923 ;
@@ -8139,6 +8356,12 @@
     foaf:givenname "Martina" ;
     foaf:surname "Leeker" ;
     foaf:homepage <https://martina-leeker.de/> .
+
+:person:LehmanJ
+    a foaf:Person ;
+    foaf:givenname "Joel" ;
+    foaf:surname "Lehman" ;
+    foaf:homepage <https://joellehman.com> .
 
 :person:LempertM
     a foaf:Person ;
@@ -8538,7 +8761,7 @@
     foaf:givenname "Jan" ;
     foaf:surname "Overwijk" ;
     foaf:homepage <https://www.ifs.uni-frankfurt.de/people-detail/jan-overwijk.html> ;
-    foaf:mbox <overwijk@em.uni-frankfurt.de> .
+    .
 
 :person:OyamaS
     a foaf:Person ;
@@ -8896,7 +9119,7 @@
     foaf:givenname "Ori" ;
     foaf:surname "Schwarz" ;
     foaf:homepage <https://sociology.biu.ac.il/en/node/1557> ;
-    foaf:mbox <ori.schwarz@biu.ac.il> .
+    .
 
 :person:SeaverN
     a foaf:Person ;
@@ -8930,7 +9153,7 @@
     foaf:givenname "Chirag" ;
     foaf:surname "Shah" ;
     foaf:homepage <https://ischool.uw.edu/people/faculty/profile/chirags> ;
-    foaf:mbox <chirags@uw.edu> .
+    .
 
 :person:SharrockW
     a foaf:Person ;
@@ -9058,7 +9281,7 @@
     foaf:givenname "Søren" ;
     foaf:surname "Bøgh Sørensen" ;
     foaf:homepage <https://www.cbs.dk/en/research/departments-and-centres/department-of-management-society-and-communication/staff/sobsmsc> ;
-    foaf:mbox <sobs.msc@cbs.dk> .
+    .
 
 :person:SorrentinoM
     a foaf:Person ;
@@ -9079,6 +9302,12 @@
     owl:sameAs viaf:35259416 , wd:Q1508271 ;
     foaf:givenname "George" ;
     foaf:surname "Spencer-Brown" .
+
+:person:StanleyKO
+    a foaf:Person ;
+    foaf:givenname "Kenneth O." ;
+    foaf:surname "Stanley" ;
+    foaf:homepage <https://www.kenstanley.net> .
 
 :person:StarS
     a foaf:Person ;
@@ -9448,6 +9677,12 @@
     foaf:givenname "Rod" ;
     foaf:surname "Watson" ;
     foaf:page <http://emcawiki.net/bibtex/browser.php?author=Rod+Watson&bib=emca.bib> .
+
+:person:WeatherbyL
+    a foaf:Person ;
+    foaf:givenname "Leif" ;
+    foaf:surname "Weatherby" ;
+    foaf:homepage <https://as.nyu.edu/faculty/leif-allison-reid-weatherby.html> .
 
 :person:WeberN
     a foaf:Person ;
@@ -10999,6 +11234,24 @@
     bibo:pages "1-27" ;
     bibo:doi "10.1086/721167" .
 
+:reading:DiazA2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.70064/mt.v7i2.587> ;
+    dc:title "Technics and Contingency: Ontological Productivity in Computation" ;
+    dc:creator :person:DiazA ;
+    bibo:authorList (
+        :person:DiazA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023-12-18" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "7" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "37-76" ;
+    bibo:doi "10.70064/mt.v7i2.587" .
+
 :reading:Dobson2023
     a :Reading , bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1215/01642472-10613653> ;
@@ -11405,6 +11658,23 @@
     bibo:pages "405-424" ;
     bibo:doi "10.1093/llc/fqq021" .
 
+:reading:GallowayA2025
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Golden age of analog" ;
+    dc:creator :person:GallowayA ;
+    bibo:authorList (
+        :person:GallowayA
+    ) ;
+    dc:date "2025" ;
+    owl:sameAs <https://doi.org/10.1086/717324> ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:CriticalInquiry
+    ] ;
+    bibo:doi "10.1086/717324" ;
+    dc:publisher :publisher:UCP .
+
 :reading:Garfinkel1986
     a :Reading, bibo:BookSection ;
     dc:title "On formal structures of practical actions" ;
@@ -11662,6 +11932,25 @@
     ] ;
     bibo:uri "https://ssrn.com/abstract=3315703" .
 
+:reading:GrossR2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s00146-024-02079-8> ;
+    dc:title "Stochastic contingency machines feeding on meaning: on the computational determination of social reality in machine learning" ;
+    dc:creator :person:GrossR ;
+    bibo:authorList (
+        :person:GrossR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "April 2025" ;
+        dc:isPartOf :journal:AIS ;
+        bibo:volume "40" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "2055-2068" ;
+    bibo:doi "10.1007/s00146-024-02079-8" ;
+    dc:publisher :publisher:Springer .
+
 :reading:Grossberg2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1080/09502386.2016.1173476> ;
@@ -11692,6 +11981,24 @@
     dc:date "2020" ;
     bibo:isbn "9781503614437" ;
     foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
+
+:reading:HansenMBN2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.70064/mt.v8i2.1116> ;
+    dc:title "The Contingency of Process, or Why There Is No Computation-in-itself" ;
+    dc:creator :person:HansenM ;
+    bibo:authorList (
+        :person:HansenM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-12-18" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "8" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "13-36" ;
+    bibo:doi "10.70064/mt.v8i2.1116" .
 
 :reading:Haraway2016
     a :Reading, bibo:AcademicArticle ;
@@ -12218,6 +12525,24 @@
         bibo:volume "19"
     ] ;
     bibo:pages "82-93".
+
+:reading:KumarCLS2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2505.11581> ;
+    dc:title "Questioning Representational Optimism in Deep Learning: The Fractured Entangled Representation Hypothesis" ;
+    dc:creator :person:KumarA, :person:CluneJ, :person:LehmanJ, :person:StanleyKO ;
+    bibo:authorList (
+        :person:KumarA
+        :person:CluneJ
+        :person:LehmanJ
+        :person:StanleyKO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "May 2025" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2505.11581" .
 
 :reading:Labov1973
     a :Reading , bibo:BookSection ;
@@ -14493,6 +14818,18 @@
     ] ;
     bibo:pages "327-345" ;
     bibo:doi "10.1007/s10746-012-9233-1" .
+
+:reading:WeatherbyL2025
+    a :Reading, bibo:Book ;
+    dc:title "Language Machines: Cultural AI and the End of Remainder Humanism" ;
+    dc:creator :person:WeatherbyL ;
+    bibo:authorList (
+        :person:WeatherbyL
+    ) ;
+    dc:publisher :publisher:UMP ;
+    dc:date "2025-06-24" ;
+    bibo:isbn "9781452973517" ;
+    foaf:homepage <https://www.upress.umn.edu/9781452973517/language-machines/> .
 
 :reading:West2022
     a :Reading, bibo:AcademicArticle ;
