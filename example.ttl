@@ -59,6 +59,13 @@
         :meeting:2025-06-20,
         :meeting:2025-06-27,
         :meeting:2025-07-11,
+        :meeting:2025-07-25,
+        :meeting:2025-08-01,
+        :meeting:2025-08-15,
+        :meeting:2025-08-22,
+        :meeting:2025-08-29,
+        :meeting:2025-09-05,
+        :meeting:2025-09-12,
         .
 
 :journal:CriticalInquiry
@@ -441,6 +448,104 @@
         ]
     ] .
 
+:meeting:2025-07-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-07-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-09-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-09-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GallowayA2025 ;
+    :schedule (
+        :reading:GallowayA2025
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -575,6 +680,18 @@
     foaf:homepage <https://tu-dresden.de/gsw/schauflerlab/die-institution/team/richard-gross> ;
     foaf:mbox <richard.gross@tu-dresden.de> .
 
+:person:WeatherbyL
+    a foaf:Person ;
+    foaf:givenname "Leif" ;
+    foaf:surname "Weatherby" ;
+    foaf:homepage <https://as.nyu.edu/faculty/leif-allison-reid-weatherby.html> ;
+    foaf:mbox <leif.weatherby@nyu.edu> .
+
+:person:GallowayA
+    a foaf:Person ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Galloway" .
+
 :publisher:UCPress
     a :Publisher ;
     dc:title "UC Press" ;
@@ -604,6 +721,11 @@
     a :Publisher ;
     dc:title "Springer Nature" ;
     foaf:homepage <https://www.springer.com> .
+
+:publisher:MinnesotaUP
+    a :Publisher ;
+    dc:title "University of Minnesota Press" ;
+    foaf:homepage <https://www.upress.umn.edu> .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
@@ -876,3 +998,24 @@
     bibo:pages "2055-2068" ;
     bibo:doi "10.1007/s00146-024-02079-8" ;
     dc:publisher :publisher:Springer .
+
+:reading:WeatherbyL2025
+    a :Reading, bibo:Book ;
+    dc:title "Language Machines: Cultural AI and the End of Remainder Humanism" ;
+    dc:creator :person:WeatherbyL ;
+    bibo:authorList (
+        :person:WeatherbyL
+    ) ;
+    dc:publisher :publisher:MinnesotaUP ;
+    dc:date "2025-06-24" ;
+    bibo:isbn "9781452973517" ;
+    foaf:homepage <https://www.upress.umn.edu/9781452973517/language-machines/> .
+
+:reading:GallowayA2025
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Golden age of analog" ;
+    dc:creator :person:GallowayA ;
+    bibo:authorList (
+        :person:GallowayA
+    ) ;
+    dc:date "2025" .
