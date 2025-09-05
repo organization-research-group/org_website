@@ -1,0 +1,228 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ConferencePaper
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Article .
+
+:Lecture
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Document .
+
+:Publisher
+    a rdf:Class ;
+    rdfs:isSubClassOf foaf:Organization .
+
+:schedule
+    a rdf:Property .
+
+# -- Begin bibliography --
+
+:ORG-UNC
+    a :Org;
+    :meeting
+        :meeting:2025-01-31,
+        :meeting:2025-01-24,
+        :meeting:2025-01-17,
+        :meeting:2025-01-10,
+        .
+
+:journal:CriticalInquiry
+    a bibo:Journal ;
+    dc:title "Critical Inquiry" ;
+    foaf:homepage <http://criticalinquiry.uchicago.edu/> ;
+    bibo:issn "0093-1896" .
+
+:journal:FabianOffertBlog
+    a bibo:Journal ;
+    dc:title "Fabian Offert → Blog" ;
+    foaf:homepage <https://zentralwerkstatt.squarespace.com/blog/> .
+
+:journal:arXiv
+    a bibo:Journal ;
+    dc:title "arXiv" ;
+    foaf:homepage <https://arxiv.org> ;
+    bibo:issn "2331-8422" .
+
+:meeting:2025-01-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Chen2024 ;
+    :schedule (
+        :reading:Chen2024
+    ) .
+
+:meeting:2025-01-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Offert2024 ;
+    :schedule (
+        :reading:Offert2024
+    ) .
+
+:meeting:2025-01-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OffertDhaliwal2024, :reading:Offert2017 ;
+    :schedule (
+        :reading:OffertDhaliwal2024
+        :reading:Offert2017
+    ) .
+
+:meeting:2025-01-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-31T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dhaliwal2022 ;
+    :schedule (
+        :reading:Dhaliwal2022
+    ) .
+
+:person:ChenB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Chen" ;
+    foaf:homepage <https://beta.vero.site> .
+
+:person:ChenN
+    a foaf:Person ;
+    foaf:givenname "Nuo" ;
+    foaf:surname "Chen" ;
+    owl:sameAs orcid:0000-0001-8600-8203 ;
+    foaf:homepage <https://nuochenpku.github.io> .
+
+:person:DhaliwalRS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9826-0614 ;
+    foaf:givenname "Ranjodh Singh" ;
+    foaf:surname "Dhaliwal" ;
+    foaf:homepage <https://ranjodhdhaliwal.com> .
+
+:person:OffertF
+    a foaf:Person ;
+    owl:sameAs wd:Q107176176 , orcid:0000-0002-4757-8147 ;
+    foaf:givenname "Fabian" ;
+    foaf:surname "Offert" ;
+    foaf:homepage <https://zentralwerkstatt.org> .
+
+:reading:Chen2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2409.16022> ;
+    dc:title "AI Can Be Cognitively Biased: An Exploratory Study on Threshold Priming in LLM-Based Batch Relevance Assessment" ;
+    dc:creator :person:ChenN , :person:LiuJ , :person:DongX , :person:LiuQ , :person:SakaiT , :person:WuXM ;
+    bibo:authorList (
+        :person:ChenN
+        :person:LiuJ
+        :person:DongX
+        :person:LiuQ
+        :person:SakaiT
+        :person:WuXM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2409.16022" .
+
+:reading:Dhaliwal2022
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1086/721167> ;
+    dc:title "On Addressability, or What Even Is Computation?" ;
+    dc:creator :person:DhaliwalRS ;
+    bibo:authorList (
+        :person:DhaliwalRS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Autumn 2022" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:volume "49" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "1-27" ;
+    bibo:doi "10.1086/721167" .
+
+:reading:Offert2017
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Intuition and Epistemology of High-Dimensional Vector Space" ;
+    dc:creator :person:OffertF ;
+    bibo:authorList (
+      :person:OffertF
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017-02-20" ;
+        dc:isPartOf :journal:FabianOffertBlog
+    ] ;
+    bibo:uri "https://zentralwerkstatt.squarespace.com/blog/vsm" .
+
+:reading:Offert2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2405.09788> ;
+    dc:title "Synthesizing Proteins on the Graphics Card. Protein Folding and the Limits of Critical AI Studies" ;
+    dc:creator :person:OffertF , :person:KimP , :person:CaiQ ;
+    bibo:authorList (
+        :person:OffertF
+        :person:KimP
+        :person:CaiQ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2405.09788" .
+
+:reading:OffertDhaliwal2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2411.18833> ;
+    dc:title "The Method of Critical AI Studies, A Propaedeutic" ;
+    dc:creator :person:OffertF , :person:DhaliwalRS ;
+    bibo:authorList (
+        :person:OffertF
+        :person:DhaliwalRS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "November 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2411.18833" .
