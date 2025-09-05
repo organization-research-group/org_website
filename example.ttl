@@ -50,6 +50,10 @@
         :meeting:2025-04-11,
         :meeting:2025-04-18,
         :meeting:2025-05-02,
+        :meeting:2025-05-09,
+        :meeting:2025-05-16,
+        :meeting:2025-05-23,
+        :meeting:2025-05-30,
         .
 
 :journal:CriticalInquiry
@@ -298,6 +302,62 @@
         :reading:GuoS2020
     ) .
 
+:meeting:2025-05-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -379,6 +439,13 @@
     foaf:homepage <https://www.carleton.edu/directory/sguo/> ;
     foaf:mbox <sguo@carleton.edu> .
 
+:person:OverwijkJ
+    a foaf:Person ;
+    foaf:givenname "Jan" ;
+    foaf:surname "Overwijk" ;
+    foaf:homepage <https://www.ifs.uni-frankfurt.de/people-detail/jan-overwijk.html> ;
+    foaf:mbox <overwijk@em.uni-frankfurt.de> .
+
 :publisher:UCPress
     a :Publisher ;
     dc:title "UC Press" ;
@@ -398,6 +465,11 @@
     a :Publisher ;
     dc:title "Association for Computing Machinery" ;
     foaf:homepage <https://www.acm.org> .
+
+:publisher:FordhamUP
+    a :Publisher ;
+    dc:title "Fordham University Press" ;
+    foaf:homepage <https://fordhampress.com> .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
@@ -585,3 +657,15 @@
     dc:date "2020" ;
     bibo:isbn "9781503614437" ;
     foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
+
+:reading:OverwijkJ2025
+    a :Reading, bibo:Book ;
+    dc:title "Cybernetic Capitalism: A Critical Theory of the Incommunicable" ;
+    dc:creator :person:OverwijkJ ;
+    bibo:authorList (
+        :person:OverwijkJ
+    ) ;
+    dc:publisher :publisher:FordhamUP ;
+    dc:date "2025-01-07" ;
+    bibo:isbn "9781531508937" ;
+    foaf:homepage <https://fordhampress.com/cybernetic-capitalism-hb-9781531508920.html> .
