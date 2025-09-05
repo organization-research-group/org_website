@@ -57,6 +57,7 @@
         :meeting:2025-06-06,
         :meeting:2025-06-13,
         :meeting:2025-06-20,
+        :meeting:2025-06-27,
         .
 
 :journal:CriticalInquiry
@@ -99,6 +100,12 @@
     dc:title "Media Theory" ;
     foaf:homepage <https://journalcontent.mediatheoryjournal.org/> ;
     bibo:issn "2557-826X" .
+
+:journal:AISociety
+    a bibo:Journal ;
+    dc:title "AI & Society" ;
+    foaf:homepage <https://www.springer.com/journal/146> ;
+    bibo:issn "0951-5666" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -409,6 +416,20 @@
         :reading:HansenMBN2024
     ) .
 
+:meeting:2025-06-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GrossR2025 ;
+    :schedule (
+        :reading:GrossR2025
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -535,6 +556,14 @@
     foaf:homepage <https://scholars.duke.edu/person/mark.hansen> ;
     foaf:mbox <mark.hansen@duke.edu> .
 
+:person:GrossR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4433-8428 ;
+    foaf:givenname "Richard" ;
+    foaf:surname "Groß" ;
+    foaf:homepage <https://tu-dresden.de/gsw/schauflerlab/die-institution/team/richard-gross> ;
+    foaf:mbox <richard.gross@tu-dresden.de> .
+
 :publisher:UCPress
     a :Publisher ;
     dc:title "UC Press" ;
@@ -559,6 +588,11 @@
     a :Publisher ;
     dc:title "Fordham University Press" ;
     foaf:homepage <https://fordhampress.com> .
+
+:publisher:Springer
+    a :Publisher ;
+    dc:title "Springer Nature" ;
+    foaf:homepage <https://www.springer.com> .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
@@ -812,3 +846,22 @@
     ] ;
     bibo:pages "13-36" ;
     bibo:doi "10.70064/mt.v8i2.1116" .
+
+:reading:GrossR2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s00146-024-02079-8> ;
+    dc:title "Stochastic contingency machines feeding on meaning: on the computational determination of social reality in machine learning" ;
+    dc:creator :person:GrossR ;
+    bibo:authorList (
+        :person:GrossR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "April 2025" ;
+        dc:isPartOf :journal:AISociety ;
+        bibo:volume "40" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "2055-2068" ;
+    bibo:doi "10.1007/s00146-024-02079-8" ;
+    dc:publisher :publisher:Springer .
