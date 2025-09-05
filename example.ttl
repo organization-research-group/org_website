@@ -45,6 +45,7 @@
         :meeting:2025-03-07,
         :meeting:2025-03-14,
         :meeting:2025-03-21,
+        :meeting:2025-03-28,
         .
 
 :journal:CriticalInquiry
@@ -63,6 +64,12 @@
     dc:title "arXiv" ;
     foaf:homepage <https://arxiv.org> ;
     bibo:issn "2331-8422" .
+
+:journal:TheoryCultureSociety
+    a bibo:Journal ;
+    dc:title "Theory, Culture & Society" ;
+    foaf:homepage <https://journals.sagepub.com/home/tcs> ;
+    bibo:issn "0263-2764" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -205,6 +212,20 @@
         :reading:BakHerrie2025
     ) .
 
+:meeting:2025-03-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-28T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Schwarz2025 ;
+    :schedule (
+        :reading:Schwarz2025
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -250,6 +271,13 @@
     foaf:givenname "Maja" ;
     foaf:surname "Bak Herrie" ;
     foaf:homepage <https://pure.au.dk/portal/en/persons/mbh@cc.au.dk> .
+
+:person:SchwarzO
+    a foaf:Person ;
+    foaf:givenname "Ori" ;
+    foaf:surname "Schwarz" ;
+    foaf:homepage <https://sociology.biu.ac.il/en/node/1557> ;
+    foaf:mbox <ori.schwarz@biu.ac.il> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -387,3 +415,18 @@
     dc:date "2025" ;
     bibo:isbn "9781503639874" ;
     foaf:homepage <https://www.sup.org/books/thinking-through-data> .
+
+:reading:Schwarz2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764251322062> ;
+    dc:title "The post-choice society: Algorithmic prediction and the decentring of choice" ;
+    dc:creator :person:SchwarzO ;
+    bibo:authorList (
+        :person:SchwarzO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:TheoryCultureSociety
+    ] ;
+    bibo:doi "10.1177/02632764251322062" .
