@@ -47,6 +47,7 @@
         :meeting:2025-03-21,
         :meeting:2025-03-28,
         :meeting:2025-04-04,
+        :meeting:2025-04-11,
         .
 
 :journal:CriticalInquiry
@@ -77,6 +78,12 @@
     dc:title "ACM Transactions on the Web" ;
     foaf:homepage <https://dl.acm.org/journal/tweb> ;
     bibo:issn "1559-1131" .
+
+:journal:tripleC
+    a bibo:Journal ;
+    dc:title "tripleC: Communication, Capitalism & Critique" ;
+    foaf:homepage <https://www.triple-c.at> ;
+    bibo:issn "1726-670X" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -247,6 +254,20 @@
         :reading:ShahBender2024
     ) .
 
+:meeting:2025-04-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:SorensenBB2024 ;
+    :schedule (
+        :reading:SorensenBB2024
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -313,6 +334,13 @@
     foaf:surname "Bender" ;
     foaf:homepage <https://faculty.washington.edu/ebender/> ;
     foaf:mbox <ebender@uw.edu> .
+
+:person:SorensenBB
+    a foaf:Person ;
+    foaf:givenname "Søren" ;
+    foaf:surname "Bøgh Sørensen" ;
+    foaf:homepage <https://www.cbs.dk/en/research/departments-and-centres/department-of-management-society-and-communication/staff/sobsmsc> ;
+    foaf:mbox <sobs.msc@cbs.dk> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -490,3 +518,21 @@
     bibo:pages "1-24" ;
     bibo:doi "10.1145/3649468" ;
     dc:publisher :publisher:ACM .
+
+:reading:SorensenBB2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.31269/triplec.v22i2.1475> ;
+    dc:title "Value and Productive Labour in the Era of Digital Technologies: Revisiting the Digital Labour Debate" ;
+    dc:creator :person:SorensenBB ;
+    bibo:authorList (
+        :person:SorensenBB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-08-12" ;
+        dc:isPartOf :journal:tripleC ;
+        bibo:volume "22" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "498-517" ;
+    bibo:doi "10.31269/triplec.v22i2.1475" .
