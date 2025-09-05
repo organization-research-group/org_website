@@ -46,6 +46,7 @@
         :meeting:2025-03-14,
         :meeting:2025-03-21,
         :meeting:2025-03-28,
+        :meeting:2025-04-04,
         .
 
 :journal:CriticalInquiry
@@ -70,6 +71,12 @@
     dc:title "Theory, Culture & Society" ;
     foaf:homepage <https://journals.sagepub.com/home/tcs> ;
     bibo:issn "0263-2764" .
+
+:journal:ACMTransWeb
+    a bibo:Journal ;
+    dc:title "ACM Transactions on the Web" ;
+    foaf:homepage <https://dl.acm.org/journal/tweb> ;
+    bibo:issn "1559-1131" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -226,6 +233,20 @@
         :reading:Schwarz2025
     ) .
 
+:meeting:2025-04-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:ShahBender2024 ;
+    :schedule (
+        :reading:ShahBender2024
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -279,6 +300,20 @@
     foaf:homepage <https://sociology.biu.ac.il/en/node/1557> ;
     foaf:mbox <ori.schwarz@biu.ac.il> .
 
+:person:ShahC
+    a foaf:Person ;
+    foaf:givenname "Chirag" ;
+    foaf:surname "Shah" ;
+    foaf:homepage <https://ischool.uw.edu/people/faculty/profile/chirags> ;
+    foaf:mbox <chirags@uw.edu> .
+
+:person:BenderEM
+    a foaf:Person ;
+    foaf:givenname "Emily M." ;
+    foaf:surname "Bender" ;
+    foaf:homepage <https://faculty.washington.edu/ebender/> ;
+    foaf:mbox <ebender@uw.edu> .
+
 :publisher:UCPress
     a :Publisher ;
     dc:title "UC Press" ;
@@ -293,6 +328,11 @@
     a :Publisher ;
     dc:title "Stanford University Press" ;
     foaf:homepage <https://www.sup.org> .
+
+:publisher:ACM
+    a :Publisher ;
+    dc:title "Association for Computing Machinery" ;
+    foaf:homepage <https://www.acm.org> .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
@@ -430,3 +470,23 @@
         dc:isPartOf :journal:TheoryCultureSociety
     ] ;
     bibo:doi "10.1177/02632764251322062" .
+
+:reading:ShahBender2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1145/3649468> ;
+    dc:title "Envisioning Information Access Systems: What Makes for Good Tools and a Healthy Web?" ;
+    dc:creator :person:ShahC, :person:BenderEM ;
+    bibo:authorList (
+        :person:ShahC
+        :person:BenderEM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:ACMTransWeb ;
+        bibo:volume "18" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "1-24" ;
+    bibo:doi "10.1145/3649468" ;
+    dc:publisher :publisher:ACM .
