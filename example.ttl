@@ -54,6 +54,7 @@
         :meeting:2025-05-16,
         :meeting:2025-05-23,
         :meeting:2025-05-30,
+        :meeting:2025-06-06,
         .
 
 :journal:CriticalInquiry
@@ -358,6 +359,20 @@
         :reading:OverwijkJ2025
     ) .
 
+:meeting:2025-06-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:KumarCLS2025 ;
+    :schedule (
+        :reading:KumarCLS2025
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -445,6 +460,31 @@
     foaf:surname "Overwijk" ;
     foaf:homepage <https://www.ifs.uni-frankfurt.de/people-detail/jan-overwijk.html> ;
     foaf:mbox <overwijk@em.uni-frankfurt.de> .
+
+:person:KumarA
+    a foaf:Person ;
+    foaf:givenname "Akarsh" ;
+    foaf:surname "Kumar" ;
+    foaf:homepage <https://akarshkumar.com> ;
+    foaf:mbox <akarshkumar0101@gmail.com> .
+
+:person:CluneJ
+    a foaf:Person ;
+    foaf:givenname "Jeff" ;
+    foaf:surname "Clune" ;
+    foaf:homepage <http://jeffclune.com> .
+
+:person:LehmanJ
+    a foaf:Person ;
+    foaf:givenname "Joel" ;
+    foaf:surname "Lehman" ;
+    foaf:homepage <https://joellehman.com> .
+
+:person:StanleyKO
+    a foaf:Person ;
+    foaf:givenname "Kenneth O." ;
+    foaf:surname "Stanley" ;
+    foaf:homepage <https://www.kenstanley.net> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -669,3 +709,21 @@
     dc:date "2025-01-07" ;
     bibo:isbn "9781531508937" ;
     foaf:homepage <https://fordhampress.com/cybernetic-capitalism-hb-9781531508920.html> .
+
+:reading:KumarCLS2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2505.11581> ;
+    dc:title "Questioning Representational Optimism in Deep Learning: The Fractured Entangled Representation Hypothesis" ;
+    dc:creator :person:KumarA, :person:CluneJ, :person:LehmanJ, :person:StanleyKO ;
+    bibo:authorList (
+        :person:KumarA
+        :person:CluneJ
+        :person:LehmanJ
+        :person:StanleyKO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "May 2025" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2505.11581" .
