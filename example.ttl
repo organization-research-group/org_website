@@ -55,6 +55,7 @@
         :meeting:2025-05-23,
         :meeting:2025-05-30,
         :meeting:2025-06-06,
+        :meeting:2025-06-13,
         .
 
 :journal:CriticalInquiry
@@ -91,6 +92,12 @@
     dc:title "tripleC: Communication, Capitalism & Critique" ;
     foaf:homepage <https://www.triple-c.at> ;
     bibo:issn "1726-670X" .
+
+:journal:MediaTheory
+    a bibo:Journal ;
+    dc:title "Media Theory" ;
+    foaf:homepage <https://journalcontent.mediatheoryjournal.org/> ;
+    bibo:issn "2557-826X" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -373,6 +380,20 @@
         :reading:KumarCLS2025
     ) .
 
+:meeting:2025-06-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DiazA2023 ;
+    :schedule (
+        :reading:DiazA2023
+    ) .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -485,6 +506,12 @@
     foaf:givenname "Kenneth O." ;
     foaf:surname "Stanley" ;
     foaf:homepage <https://www.kenstanley.net> .
+
+:person:DiazA
+    a foaf:Person ;
+    foaf:givenname "Alan" ;
+    foaf:surname "Díaz Alva" ;
+    foaf:homepage <https://leuphana.academia.edu/AlanDiaz> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -727,3 +754,21 @@
         dc:isPartOf :journal:arXiv
     ] ;
     bibo:doi "10.48550/arXiv.2505.11581" .
+
+:reading:DiazA2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.70064/mt.v7i2.587> ;
+    dc:title "Technics and Contingency: Ontological Productivity in Computation" ;
+    dc:creator :person:DiazA ;
+    bibo:authorList (
+        :person:DiazA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023-12-18" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "7" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "37-76" ;
+    bibo:doi "10.70064/mt.v7i2.587" .
