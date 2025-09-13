@@ -66,6 +66,7 @@
         :meeting:2025-08-29,
         :meeting:2025-09-05,
         :meeting:2025-09-12,
+        :meeting:2025-09-19,
         :meeting:2024-12-13,
         :meeting:2024-12-06,
         :meeting:2024-11-29,
@@ -941,6 +942,12 @@
     dc:title "Online Information Review" ;
     foaf:homepage <http://www.emeraldgrouppublishing.com/OIR.htm> ;
     bibo:issn "1468-4527" .
+
+:journal:OrbisLitterarum
+    a bibo:Journal ;
+    dc:title "Orbis Litterarum" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/16000730> ;
+    bibo:issn "0105-7510" .
 
 :journal:PJLI
     a bibo:Journal ;
@@ -6739,6 +6746,20 @@
         :reading:GallowayA2025
     ) .
 
+:meeting:2025-09-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BoysenB2018 ;
+    :schedule (
+        :reading:BoysenB2018
+    ) .
+
 :person:AbbateJ
     a foaf:Person ;
     owl:sameAs viaf:43545973, wd:Q20859597 ;
@@ -7103,6 +7124,12 @@
     foaf:givenname "Geoffrey C." ;
     foaf:surname "Bowker" ;
     foaf:homepage <http://www.ics.uci.edu/~gbowker/> .
+
+:person:BoysenB
+    a foaf:Person ;
+    foaf:givenname "Benjamin" ;
+    foaf:surname "Boysen" ;
+    foaf:homepage <https://independent.academia.edu/BenjaminBoysen> .
 
 :person:BrattonB
     a foaf:Person ;
@@ -10715,6 +10742,25 @@
     ) ;
     dc:isPartOf :volume:Bowers1991 ;
     bibo:pages "333-350" .
+
+:reading:BoysenB2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1111/oli.12174> ;
+    dc:title "The embarrassment of being human: A critique of new materialism and object-oriented ontology" ;
+    dc:creator :person:BoysenB ;
+    bibo:authorList (
+        :person:BoysenB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:OrbisLitterarum ;
+        bibo:volume "73" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "225-242" ;
+    bibo:doi "10.1111/oli.12174" ;
+    dc:publisher :publisher:Wiley .
 
 :reading:Bratton2016
     a :Reading, bibo:Book ;
