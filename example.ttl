@@ -66,6 +66,7 @@
         :meeting:2025-08-29,
         :meeting:2025-09-05,
         :meeting:2025-09-12,
+        :meeting:2025-09-19,
         .
 
 :journal:CriticalInquiry
@@ -114,6 +115,12 @@
     dc:title "AI & Society" ;
     foaf:homepage <https://www.springer.com/journal/146> ;
     bibo:issn "0951-5666" .
+
+:journal:OrbisLitterarum
+    a bibo:Journal ;
+    dc:title "Orbis Litterarum" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/16000730> ;
+    bibo:issn "0105-7510" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -546,6 +553,27 @@
         :reading:GallowayA2025
     ) .
 
+:meeting:2025-09-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BoysenB2018 ;
+    :schedule (
+        :reading:BoysenB2018
+    ) .
+
+:person:BoysenB
+    a foaf:Person ;
+    foaf:givenname "Benjamin" ;
+    foaf:surname "Boysen" ;
+    foaf:homepage <https://independent.academia.edu/BenjaminBoysen> ;
+    foaf:mbox <benjamin.boysen@outlook.dk> .
+
 :person:ChenB
     a foaf:Person ;
     foaf:givenname "Brian" ;
@@ -734,6 +762,30 @@
     a :Publisher ;
     dc:title "University of Chicago Press" ;
     foaf:homepage <https://www.journals.uchicago.edu> .
+
+:publisher:Wiley
+    a :Publisher ;
+    dc:title "Wiley" ;
+    foaf:homepage <https://www.wiley.com> .
+
+:reading:BoysenB2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1111/oli.12174> ;
+    dc:title "The embarrassment of being human: A critique of new materialism and object-oriented ontology" ;
+    dc:creator :person:BoysenB ;
+    bibo:authorList (
+        :person:BoysenB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:OrbisLitterarum ;
+        bibo:volume "73" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "225-242" ;
+    bibo:doi "10.1111/oli.12174" ;
+    dc:publisher :publisher:Wiley .
 
 :reading:Chen2024
     a :Reading, bibo:AcademicArticle ;
