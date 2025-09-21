@@ -67,6 +67,7 @@
         :meeting:2025-09-05,
         :meeting:2025-09-12,
         :meeting:2025-09-19,
+        :meeting:2025-09-26,
         .
 
 :journal:CriticalInquiry
@@ -121,6 +122,12 @@
     dc:title "Orbis Litterarum" ;
     foaf:homepage <https://onlinelibrary.wiley.com/journal/16000730> ;
     bibo:issn "0105-7510" .
+
+:journal:InterdisciplinaryScienceReviews
+    a bibo:Journal ;
+    dc:title "Interdisciplinary Science Reviews" ;
+    foaf:homepage <https://www.tandfonline.com/journals/yisr20> ;
+    bibo:issn "0308-0188" .
 
 :meeting:2025-01-10
     a :Meeting ;
@@ -567,6 +574,20 @@
         :reading:BoysenB2018
     ) .
 
+:meeting:2025-09-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GastaldiPellissier2021 ;
+    :schedule (
+        :reading:GastaldiPellissier2021
+    ) .
+
 :person:BoysenB
     a foaf:Person ;
     foaf:givenname "Benjamin" ;
@@ -722,6 +743,19 @@
     foaf:givenname "Alexander R." ;
     foaf:homepage <https://steinhardt.nyu.edu/people/alexander-galloway> ;
     foaf:mbox <galloway@nyu.edu> .
+
+:person:GastaldiJL
+    a foaf:Person ;
+    foaf:givenname "Jean-Louis" ;
+    foaf:surname "Gastaldi" ;
+    foaf:homepage <https://www.giannigastaldi.com> .
+
+:person:PellissierL
+    a foaf:Person ;
+    foaf:givenname "Luc" ;
+    foaf:surname "Pellissier" ;
+    foaf:homepage <https://lacl.fr/~lpellissier/> ;
+    foaf:mbox <luc.pellissier@u-pec.fr> .
 
 :publisher:UCPress
     a :Publisher ;
@@ -1087,3 +1121,22 @@
     ] ;
     bibo:doi "10.1086/717324" ;
     dc:publisher :publisher:UChicagoPress .
+
+:reading:GastaldiPellissier2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/03080188.2021.1890484> ;
+    dc:title "The calculus of language: explicit representation of emergent linguistic structure through type-theoretical paradigms" ;
+    dc:creator :person:GastaldiJL, :person:PellissierL ;
+    bibo:authorList (
+        :person:GastaldiJL
+        :person:PellissierL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:InterdisciplinaryScienceReviews ;
+        bibo:volume "46" ;
+        bibo:issue "4"
+    ] ;
+    bibo:pages "569–590" ;
+    bibo:doi "10.1080/03080188.2021.1890484" .
