@@ -1,6 +1,7 @@
 # Readings
 
-9/26 10AM Gastaldi, J. L., & Pellissier, L. (2021). The calculus of
-language: explicit representation of emergent linguistic structure
-through type-theoretical paradigms. Interdisciplinary Science Reviews,
-46(4), 569–590. <https://doi.org/10.1080/03080188.2021.1890484>
+10/3 No meeting.
+
+10/10 10AM Gunkel, D. The différance engine: large language models and poststructuralism. AI & Soc (2025). https://doi.org/10.1007/s00146-025-02640-z
+
+
