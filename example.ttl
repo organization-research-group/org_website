@@ -574,19 +574,44 @@
         :reading:BoysenB2018
     ) .
 
-:meeting:2025-09-26
+:meeting:2025-10-10
     a :Meeting ;
     lode:atTime [
         a time:Interval ;
         time:hasBeginning [
             a time:Instant ;
-            time:inXSDDateTimeStamp "2025-09-26T10:00:00-05:00"^^xsd:dateTimeStamp
+            time:inXSDDateTimeStamp "2025-10-10T10:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
-    lode:involved :reading:GastaldiPellissier2021 ;
+    lode:involved :reading:Gunkel2025 ;
     :schedule (
-        :reading:GastaldiPellissier2021
+        :reading:Gunkel2025
     ) .
+
+:reading:Gunkel2025
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "The différance engine: large language models and poststructuralism" ;
+    dc:creator :person:GunkelDJ ;
+    bibo:authorList (
+        :person:GunkelDJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:AISociety
+    ] ;
+    bibo:doi "10.1007/s00146-025-02640-z" ;
+    dc:publisher :publisher:Springer ;
+    bibo:abstract """This essay argues that large language models (LLMs), such as GPT-type transformer architectures, actualize Jacques Derrida's concept of différance. Originally introduced within the context of poststructuralist theory and semiotics, différance designates the way meaning is produced through a system of differences and deferrals, rather than stable reference. Drawing on this framework, the essay examines how LLMs generate meaningful content by calculating statistical differences across massive textual corpora---foregrounding processes of spacing, temporalization, and trace. It proposes that LLMs can be understood as "différance engines" that computationally enact the very mechanisms Derrida theorized. In addition to tracing these points of intersection, the essay reflects on the philosophical consequences of this alignment, including challenges to logocentrism, authorship, and the metaphysics of presence. It then addresses three potential criticisms of this approach, arguing that the use of Derrida's work in this context is not a misappropriation, but a continuation and reiteration of its logic. And it concludes by identifying three systemic limitations and by charting opportunities for future research in this domain. The essay thus shows, on the one hand, how LLMs can be read through poststructuralist theory, and on the other, how poststructuralist theory can be clarified and rendered accessible through the technical operations of contemporary AI.""" ;
+    dc:subject "Artificial intelligence", "Différance", "Jacques Derrida", "Large language models", "Philosophy of technology", "Poststructuralism", "Semiotics" .
+
+:person:GunkelDJ
+    a foaf:Person ;
+    foaf:givenname "David J." ;
+    foaf:surname "Gunkel" ;
+    foaf:homepage <http://gunkelweb.com/> ;
+    foaf:mbox <dgunkel@niu.edu> ;
+    foaf:organization "Northern Illinois University" .
 
 :person:BoysenB
     a foaf:Person ;
