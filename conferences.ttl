@@ -1,0 +1,122 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:conference:ACL2020
+    a bibo:Conference ;
+    dc:title "The 58th Annual Meeting of the Association for Computational Linguistics" ;
+    address:localityName "Online" ;
+    dc:date "July 5-10, 2020" ;
+    foaf:homepage <https://acl2020.org/> .
+
+:conference:CHI2014
+    a bibo:Conference ;
+    dc:title "SIGCHI Conference on Human Factors in Computing Systems 2014" ;
+    address:localityName "Toronto, Canada" ;
+    dc:date "April 26-May 1, 2014" ;
+    foaf:homepage <https://chi2014.acm.org/> .
+
+:conference:CHI2019
+    a bibo:Conference ;
+    dc:title "SIGCHI Conference on Human Factors in Computing Systems 2019" ;
+    address:localityName "Glasgow, Scotland" ;
+    dc:date "May 4-May 9, 2019" ;
+    foaf:homepage <https://chi2019.acm.org/> .
+
+:conference:CHI2020
+    a bibo:Conference ;
+    dc:title "CHI '20: CHI Conference on Human Factors in Computing Systems" ;
+    address:localityName "Honolulu" ;
+    dc:date "2020" ;
+    foaf:homepage <https://chi2020.acm.org/> .
+
+:conference:COLIS10
+    a bibo:Conference ;
+    dc:title "Conceptions of Library and Information Science 10th international conference" ;
+    address:localityName "Ljubljana, Slovenia" ;
+    dc:date "June 16-19, 2019" ;
+    foaf:homepage <http://oddelki.ff.uni-lj.si/biblio/colis/>.
+
+:conference:CSCW2017
+    a bibo:Conference ;
+    dc:title "The 20th ACM Conference on Computer-Supported Cooperative Work and Social Computing" ;
+    address:localityName "Portland, Oregon" ;
+    dc:date "February 25 - March 1, 2017" ;
+    foaf:homepage <https://cscw.acm.org/2017/>.
+
+:conference:DIS2016
+    a bibo:Conference ;
+    dc:title "Designing Interactive Systems 2016" ;
+    address:localityName "Brisbane, Australia" ;
+    dc:date "June 4-8 2016" ;
+    foaf:homepage <http://www.dis2016.org/> .
+
+:conference:FACCT23
+    a bibo:Conference ;
+    dc:title "FAccT '23: the 2023 ACM Conference on Fairness, Accountability, and Transparency" ;
+    address:localityName "Chicago" ;
+    dc:date "June 12-15, 2023" ;
+    foaf:homepage <https://facctconference.org/2023/> .
+
+:conference:Hypertext1991
+    a bibo:Conference ;
+    dc:title "The third annual ACM conference on Hypertext" ;
+    address:localityName "San Antonio, Texas" ;
+    dc:date "December 15 - 18, 1991" .
+
+:conference:Hypertext2001
+    a bibo:Conference ;
+    dc:title "The twelfth annual ACM conference on Hypertext" ;
+    address:localityName "Aarhus, Denmark" ;
+    dc:date "August 14 - 18, 2001" .
+
+:conference:IRI2015
+    a bibo:Conference ;
+    dc:title "2015 IEEE 16th International Conference on Information Reuse and Integration" ;
+    address:localityName "Redwood City, California" ;
+    dc:date "August 13-15, 2015" .
+
+:conference:NCSIWS
+    a bibo:Conference ;
+    dc:title "NeurIPS 2022 Workshop on Neuro Causal and Symbolic AI (nCSI)" ;
+    dc:date "December 9, 2022" ;
+    foaf:homepage <https://ncsi.cause-lab.net/ncsi> .
+
+:conference:OCCBCK
+    a bibo:Conference ;
+    dc:title "Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
+    address:localityName "Ottawa" ;
+    dc:date "October 1st to 5th, 1971" .
+
+:conference:Onward2014
+    a bibo:Conference ;
+    dc:title "Onward! 2014" ;
+    address:localityName "Portland, OR" ;
+    dc:date "October 20-24, 2014" ;
+    foaf:homepage <https://2014.onward-conference.org/> .
+
+:conference:PODS08
+    a bibo:Conference ;
+    dc:title "SIGMOD/PODS '08 International Conference on Management of Data" ;
+    address:localityName "Vancouver, Canada" ;
+    dc:date "June 9-12, 2008" ;
+    foaf:homepage <http://www.sigmod08.org/> .
+
+:conference:WebStudies2018
+    a bibo:Conference ;
+    dc:title "WS.2 2018 International conference on Web Studies" ;
+    address:localityName "Paris" ;
+    dc:date "October 3-5, 2018" .

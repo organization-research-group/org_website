@@ -1,0 +1,6074 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:schedule
+    a rdf:Property .
+
+:ORG-UNC
+    a :Org;
+    :meeting
+        :meeting:2015-07-24,
+        :meeting:2015-07-30,
+        :meeting:2015-08-17,
+        :meeting:2015-08-28,
+        :meeting:2015-09-04,
+        :meeting:2015-09-11,
+        :meeting:2015-09-18,
+        :meeting:2015-09-25,
+        :meeting:2015-10-02,
+        :meeting:2016-02-12,
+        :meeting:2016-02-19,
+        :meeting:2016-02-26,
+        :meeting:2016-03-04,
+        :meeting:2016-03-25,
+        :meeting:2016-04-01,
+        :meeting:2016-04-15,
+        :meeting:2016-04-22,
+        :meeting:2016-05-20,
+        :meeting:2016-05-26,
+        :meeting:2016-06-02,
+        :meeting:2016-06-10,
+        :meeting:2016-06-17,
+        :meeting:2016-06-24,
+        :meeting:2016-07-01,
+        :meeting:2016-07-08,
+        :meeting:2016-07-15,
+        :meeting:2016-07-29,
+        :meeting:2016-08-05,
+        :meeting:2016-08-26,
+        :meeting:2016-09-02,
+        :meeting:2016-09-09,
+        :meeting:2016-09-16,
+        :meeting:2016-09-23,
+        :meeting:2016-09-30,
+        :meeting:2016-10-07,
+        :meeting:2016-10-14,
+        :meeting:2016-10-28,
+        :meeting:2016-11-04,
+        :meeting:2016-11-11,
+        :meeting:2016-11-18,
+        :meeting:2016-12-02,
+        :meeting:2016-12-09,
+        :meeting:2017-01-13,
+        :meeting:2017-01-20,
+        :meeting:2017-01-27,
+        :meeting:2017-02-03,
+        :meeting:2017-02-10,
+        :meeting:2017-02-17,
+        :meeting:2017-03-03,
+        :meeting:2017-03-10,
+        :meeting:2017-03-17,
+        :meeting:2017-03-24,
+        :meeting:2017-03-31,
+        :meeting:2017-04-14,
+        :meeting:2017-04-21,
+        :meeting:2017-04-28,
+        :meeting:2017-05-05,
+        :meeting:2017-05-12,
+        :meeting:2017-05-19,
+        :meeting:2017-05-26,
+        :meeting:2017-06-02,
+        :meeting:2017-06-09,
+        :meeting:2017-06-23,
+        :meeting:2017-06-30,
+        :meeting:2017-07-07,
+        :meeting:2017-07-21,
+        :meeting:2017-07-28,
+        :meeting:2017-08-18,
+        :meeting:2017-08-25,
+        :meeting:2017-09-01,
+        :meeting:2017-09-08,
+        :meeting:2017-09-15,
+        :meeting:2017-09-22,
+        :meeting:2017-09-29,
+        :meeting:2017-10-06,
+        :meeting:2017-10-13,
+        :meeting:2017-10-27,
+        :meeting:2017-11-03,
+        :meeting:2017-11-10,
+        :meeting:2017-11-17,
+        :meeting:2017-12-08,
+        :meeting:2017-12-15,
+        :meeting:2018-01-05,
+        :meeting:2018-01-12,
+        :meeting:2018-01-26,
+        :meeting:2018-02-02,
+        :meeting:2018-02-09,
+        :meeting:2018-02-16,
+        :meeting:2018-02-23,
+        :meeting:2018-03-02,
+        :meeting:2018-03-09,
+        :meeting:2018-03-16,
+        :meeting:2018-03-23,
+        :meeting:2018-03-30,
+        :meeting:2018-04-06,
+        :meeting:2018-04-13,
+        :meeting:2018-04-20,
+        :meeting:2018-04-27,
+        :meeting:2018-05-04,
+        :meeting:2018-05-18,
+        :meeting:2018-05-25,
+        :meeting:2018-06-01,
+        :meeting:2018-06-08,
+        :meeting:2018-06-15,
+        :meeting:2018-06-15,
+        :meeting:2018-07-06,
+        :meeting:2018-07-13,
+        :meeting:2018-07-20,
+        :meeting:2018-08-03,
+        :meeting:2018-08-10,
+        :meeting:2018-08-17,
+        :meeting:2018-08-24,
+        :meeting:2018-08-31,
+        :meeting:2018-09-07,
+        :meeting:2018-09-14,
+        :meeting:2018-09-21,
+        :meeting:2018-09-28,
+        :meeting:2018-10-05,
+        :meeting:2018-10-12,
+        :meeting:2018-10-19,
+        :meeting:2018-10-26,
+        :meeting:2018-11-02,
+        :meeting:2018-11-09,
+        :meeting:2018-11-16,
+        :meeting:2018-11-23,
+        :meeting:2018-11-30,
+        :meeting:2018-12-07,
+        :meeting:2018-12-14,
+        :meeting:2018-12-21,
+        :meeting:2019-01-11,
+        :meeting:2019-01-18,
+        :meeting:2019-01-25,
+        :meeting:2019-02-01,
+        :meeting:2019-02-08,
+        :meeting:2019-02-15,
+        :meeting:2019-02-22,
+        :meeting:2019-03-22,
+        :meeting:2019-04-05,
+        :meeting:2019-04-12,
+        :meeting:2019-04-19,
+        :meeting:2019-04-26,
+        :meeting:2019-05-10,
+        :meeting:2019-05-17,
+        :meeting:2019-05-24,
+        :meeting:2019-08-23,
+        :meeting:2019-08-30,
+        :meeting:2019-09-06,
+        :meeting:2019-09-13,
+        :meeting:2019-09-20,
+        :meeting:2019-09-27,
+        :meeting:2019-10-04,
+        :meeting:2019-10-18,
+        :meeting:2019-10-25,
+        :meeting:2019-11-01,
+        :meeting:2019-11-15,
+        :meeting:2019-11-22,
+        :meeting:2020-01-17,
+        :meeting:2020-01-24,
+        :meeting:2020-01-31,
+        :meeting:2020-02-07,
+        :meeting:2020-02-14,
+        :meeting:2020-02-21,
+        :meeting:2020-02-28,
+        :meeting:2020-03-06,
+        :meeting:2020-03-13,
+        :meeting:2020-03-20,
+        :meeting:2020-03-27,
+        :meeting:2020-04-03,
+        :meeting:2020-04-10,
+        :meeting:2020-04-17,
+        :meeting:2020-05-01,
+        :meeting:2020-05-08,
+        :meeting:2020-05-15,
+        :meeting:2020-05-29,
+        :meeting:2020-06-05,
+        :meeting:2020-06-12,
+        :meeting:2020-06-19,
+        :meeting:2020-06-26,
+        :meeting:2020-07-03,
+        :meeting:2020-07-10,
+        :meeting:2020-07-17,
+        :meeting:2020-07-24,
+        :meeting:2020-07-31,
+        :meeting:2020-08-07,
+        :meeting:2020-08-14,
+        :meeting:2020-08-21,
+        :meeting:2020-08-21,
+        :meeting:2020-09-04,
+        :meeting:2020-09-18,
+        :meeting:2020-09-25,
+        :meeting:2020-10-09,
+        :meeting:2020-10-16,
+        :meeting:2020-10-23,
+        :meeting:2020-10-30,
+        :meeting:2020-11-06,
+        :meeting:2020-11-13,
+        :meeting:2020-11-20,
+        :meeting:2020-11-27,
+        :meeting:2020-12-04,
+        :meeting:2020-12-11,
+        :meeting:2020-12-18,
+        :meeting:2021-01-08,
+        :meeting:2021-01-15,
+        :meeting:2021-01-22,
+        :meeting:2021-01-29,
+        :meeting:2021-02-05,
+        :meeting:2021-02-12,
+        :meeting:2021-02-19,
+        :meeting:2021-02-26,
+        :meeting:2021-03-05,
+        :meeting:2021-03-12,
+        :meeting:2021-03-19,
+        :meeting:2021-03-26,
+        :meeting:2021-04-02,
+        :meeting:2021-04-09,
+        :meeting:2021-04-16,
+        :meeting:2021-04-23,
+        :meeting:2021-04-30,
+        :meeting:2021-05-07,
+        :meeting:2021-05-14,
+        :meeting:2021-05-21,
+        :meeting:2021-05-28,
+        :meeting:2021-06-04,
+        :meeting:2021-06-11,
+        :meeting:2021-06-18,
+        :meeting:2021-06-25,
+        :meeting:2021-07-02,
+        :meeting:2021-07-09,
+        :meeting:2021-07-16,
+        :meeting:2021-07-23,
+        :meeting:2021-07-30,
+        :meeting:2021-08-06,
+        :meeting:2021-08-13,
+        :meeting:2021-08-20,
+        :meeting:2021-08-27,
+        :meeting:2021-09-03,
+        :meeting:2021-09-10,
+        :meeting:2021-09-17,
+        :meeting:2021-09-24,
+        :meeting:2021-10-01,
+        :meeting:2021-10-08,
+        :meeting:2021-10-15,
+        :meeting:2021-10-22,
+        :meeting:2021-10-29,
+        :meeting:2021-11-05,
+        :meeting:2021-11-12,
+        :meeting:2021-11-19,
+        :meeting:2021-11-19,
+        :meeting:2021-11-26,
+        :meeting:2021-12-03,
+        :meeting:2021-12-10,
+        :meeting:2021-12-17,
+        :meeting:2022-01-21,
+        :meeting:2022-01-28,
+        :meeting:2022-02-04,
+        :meeting:2022-02-11,
+        :meeting:2022-02-11,
+        :meeting:2022-02-25,
+        :meeting:2022-03-04,
+        :meeting:2022-03-11,
+        :meeting:2022-04-08,
+        :meeting:2022-04-15,
+        :meeting:2022-04-29,
+        :meeting:2022-06-03,
+        :meeting:2022-06-03,
+        :meeting:2022-06-10,
+        :meeting:2022-06-17,
+        :meeting:2022-06-24,
+        :meeting:2022-07-01,
+        :meeting:2022-07-08,
+        :meeting:2022-08-19,
+        :meeting:2022-08-26,
+        :meeting:2022-09-02,
+        :meeting:2022-09-09,
+        :meeting:2022-09-16,
+        :meeting:2022-09-30,
+        :meeting:2022-10-07,
+        :meeting:2022-10-14,
+        :meeting:2022-10-21,
+        :meeting:2022-10-28,
+        :meeting:2022-11-04,
+        :meeting:2022-11-11,
+        :meeting:2022-11-18,
+        :meeting:2022-11-25,
+        :meeting:2022-12-02,
+        :meeting:2022-12-09,
+        :meeting:2022-12-16,
+        :meeting:2023-01-13,
+        :meeting:2023-01-20,
+        :meeting:2023-01-27,
+        :meeting:2023-02-03,
+        :meeting:2023-02-10,
+        :meeting:2023-02-17,
+        :meeting:2023-02-24,
+        :meeting:2023-03-03,
+        :meeting:2023-03-10,
+        :meeting:2023-03-17,
+        :meeting:2023-03-24,
+        :meeting:2023-03-31,
+        :meeting:2023-04-07,
+        :meeting:2023-04-14,
+        :meeting:2023-04-21,
+        :meeting:2023-04-28,
+        :meeting:2023-05-05,
+        :meeting:2023-05-12,
+        :meeting:2023-05-19,
+        :meeting:2023-05-26,
+        :meeting:2023-06-02,
+        :meeting:2023-08-04,
+        :meeting:2023-08-11,
+        :meeting:2023-08-18,
+        :meeting:2023-08-25,
+        :meeting:2023-09-01,
+        :meeting:2023-09-08,
+        :meeting:2023-09-15,
+        :meeting:2023-09-22,
+        :meeting:2023-09-29,
+        :meeting:2023-10-06,
+        :meeting:2023-10-13,
+        :meeting:2023-10-20,
+        :meeting:2023-10-27,
+        :meeting:2023-11-03,
+        :meeting:2023-11-10,
+        :meeting:2023-11-17,
+        :meeting:2023-11-24,
+        :meeting:2023-12-01,
+        :meeting:2023-12-08,
+        :meeting:2023-12-15,
+        :meeting:2024-01-05,
+        :meeting:2024-01-12,
+        :meeting:2024-01-19,
+        :meeting:2024-01-26,
+        :meeting:2024-02-02,
+        :meeting:2024-02-09,
+        :meeting:2024-02-16,
+        :meeting:2024-02-23,
+        :meeting:2024-03-01,
+        :meeting:2024-03-08,
+        :meeting:2024-03-15,
+        :meeting:2024-03-22,
+        :meeting:2024-03-29,
+        :meeting:2024-04-05,
+        :meeting:2024-04-12,
+        :meeting:2024-04-19,
+        :meeting:2024-04-26,
+        :meeting:2024-05-03,
+        :meeting:2024-05-10,
+        :meeting:2024-05-17,
+        :meeting:2024-06-07,
+        :meeting:2024-06-14,
+        :meeting:2024-06-21,
+        :meeting:2024-07-19,
+        :meeting:2024-07-26,
+        :meeting:2024-08-23,
+        :meeting:2024-08-30,
+        :meeting:2024-09-06,
+        :meeting:2024-09-13,
+        :meeting:2024-09-20,
+        :meeting:2024-09-27,
+        :meeting:2024-10-04,
+        :meeting:2024-10-11,
+        :meeting:2024-10-18,
+        :meeting:2024-10-25,
+        :meeting:2024-11-01,
+        :meeting:2024-11-08,
+        :meeting:2024-11-15,
+        :meeting:2024-11-22,
+        :meeting:2024-11-29,
+        :meeting:2024-12-06,
+        :meeting:2024-12-13,
+        :meeting:2025-01-10,
+        :meeting:2025-01-17,
+        :meeting:2025-01-24,
+        :meeting:2025-01-31,
+        :meeting:2025-02-07,
+        :meeting:2025-02-14,
+        :meeting:2025-02-21,
+        :meeting:2025-03-07,
+        :meeting:2025-03-14,
+        :meeting:2025-03-21,
+        :meeting:2025-03-28,
+        :meeting:2025-04-04,
+        :meeting:2025-04-11,
+        :meeting:2025-04-18,
+        :meeting:2025-05-02,
+        :meeting:2025-05-09,
+        :meeting:2025-05-16,
+        :meeting:2025-05-23,
+        :meeting:2025-05-30,
+        :meeting:2025-06-06,
+        :meeting:2025-06-13,
+        :meeting:2025-06-20,
+        :meeting:2025-06-27,
+        :meeting:2025-07-11,
+        :meeting:2025-07-25,
+        :meeting:2025-08-01,
+        :meeting:2025-08-15,
+        :meeting:2025-08-22,
+        :meeting:2025-08-29,
+        :meeting:2025-09-05,
+        :meeting:2025-09-12,
+        :meeting:2025-09-19,
+        :meeting:2025-09-26,
+        :meeting:2025-10-03,
+        :meeting:2025-10-10 .
+
+:meeting:2015-07-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-07-24T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Patrick's article on “Periodo assertion as nanopublication” for <i>PeerJ Computer Science</i>" ]
+    ) .
+
+:meeting:2015-07-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-07-30T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hjorland2015 ;
+    :schedule (
+        [ dc:description "Melanie's syllabus for INLS720" ]
+        :reading:Hjorland2015
+    ) .
+
+:meeting:2015-08-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-08-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Clark1996 ;
+    :schedule (
+        [ dc:description "Debbie and Jacob's DCMI poster analyzing metadata job keywords" ]
+        :reading:Clark1996
+    ) .
+
+:meeting:2015-08-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-08-28T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Latour2012 ;
+    :schedule (
+        [ dc:description "Jacob's Knowledge Organization literature review." ]
+        :reading:Latour2012
+    ) .
+
+:meeting:2015-09-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-04T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Day2014 ;
+    :schedule (
+        :reading:Day2014
+        [ dc:description "Chapters [[ FIXME ]] " ]
+    ) .
+
+:meeting:2015-09-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-11T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper for CHI" ]
+    ) .
+
+:meeting:2015-09-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-18T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Acker2015 ;
+    :schedule (
+        :reading:Acker2015
+    ) .
+
+:meeting:2015-09-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-09-25T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Blair2004 ;
+    :schedule (
+        :reading:Blair2004
+    ) .
+
+:meeting:2015-10-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2015-10-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wobbrock2009 ;
+    :schedule (
+        :reading:Wobbrock2009
+    ) .
+
+:meeting:2016-02-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-12T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Star1995 ;
+    :schedule (
+        :reading:Star1995
+    ) .
+
+:meeting:2016-02-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-19T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Fairthorne1974 ;
+    :schedule (
+        :reading:Fairthorne1974
+    ) .
+
+:meeting:2016-02-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-02-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Geiger2011 ;
+    :schedule (
+        :reading:Geiger2011
+    ) .
+
+:meeting:2016-03-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-03-04T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Field trip: Attend <a href=\"http://chat16.web.unc.edu/\">CHAT Festival</a>" ]
+    ) .
+
+:meeting:2016-03-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-03-25T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper, “The value of discernment”" ]
+    ) .
+
+:meeting:2016-04-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-01T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Think of possible topics for an ORG study" ]
+    ) .
+
+:meeting:2016-04-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Fidler2016 ;
+    :schedule (
+        :reading:Fidler2016
+    ) .
+
+:meeting:2016-04-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-04-22T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Think of possible topics for an ORG study" ]
+    ) .
+
+:meeting:2016-05-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-05-20T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Monteiro2012 ;
+    :schedule (
+        :reading:Monteiro2012
+    ) .
+
+:meeting:2016-05-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-05-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2016 ;
+    :schedule (
+        :reading:Rieder2016
+    ) .
+
+:meeting:2016-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Galey2010 ;
+    :schedule (
+        :reading:Galey2010
+    ) .
+
+:meeting:2016-06-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-10T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Star1989, :reading:Griesemer2016 ;
+    :schedule (
+        :reading:Star1989
+        :reading:Griesemer2016
+    ) .
+
+:meeting:2016-06-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Shavit2011 ;
+    :schedule (
+        :reading:Shavit2011
+    ) .
+
+:meeting:2016-06-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-06-24T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Feenberg2015 ;
+    :schedule (
+        :reading:Feenberg2015
+    ) .
+
+:meeting:2016-07-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-01T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Medina2011 ;
+    :schedule (
+        :reading:Medina2011
+        [ dc:description "FIXME: chapters" ]
+    ) .
+
+:meeting:2016-07-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-08T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Leahu2016 ;
+    :schedule (
+        :reading:Leahu2016
+    ) .
+
+:meeting:2016-07-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Barad2003 ;
+    :schedule (
+        :reading:Barad2003
+    ) .
+
+:meeting:2016-07-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-07-29T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Chun2016 ;
+    :schedule (
+        :reading:Chun2016
+    ) .
+
+:meeting:2016-08-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-08-05T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rouvroy2011 ;
+    :schedule (
+        :reading:Rouvroy2011
+    ) .
+
+:meeting:2016-08-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-08-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Melanie's paper, “A design perspective on data”" ]
+    ) .
+
+:meeting:2016-09-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Plantin2016 ;
+    :schedule (
+        :reading:Plantin2016
+    ) .
+
+:meeting:2016-09-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-09T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Furner2016 ;
+    :schedule (
+        :reading:Furner2016
+    ) .
+
+:meeting:2016-09-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-16T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Verhoeven2014 ;
+    :schedule (
+        :reading:Verhoeven2014
+    ) .
+
+:meeting:2016-09-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-23T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kreiss2011 ;
+    :schedule (
+        :reading:Kreiss2011
+    ) .
+
+:meeting:2016-09-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-09-30T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2016 ;
+    :schedule (
+        :reading:Hui2016
+    ) .
+
+:meeting:2016-10-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-07T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Haraway2016 ;
+    :schedule (
+        :reading:Haraway2016
+    ) .
+
+:meeting:2016-10-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-14T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Parikka2015 ;
+    :schedule (
+        :reading:Parikka2015
+    ) .
+
+:meeting:2016-10-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-10-28T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Marcus2016 ;
+    :schedule (
+        :reading:Marcus2016
+    ) .
+
+:meeting:2016-11-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-04T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Genosko2016 ;
+    :schedule (
+        :reading:Genosko2016
+    ) .
+
+:meeting:2016-11-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-11T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Winograd1987, :reading:Suchman1993, :reading:Winograd1993, :reading:Agre1994b, :reading:Button1994, :reading:Randall1994, :reading:Curtis1994, :reading:Lynch1994, :reading:Bogen1994, :reading:Suchman1994 ;
+    :schedule (
+        :reading:Winograd1987
+        :reading:Suchman1993
+        :reading:Winograd1993
+        :reading:Agre1994b
+        :reading:Button1994
+        :reading:Randall1994
+        :reading:Curtis1994
+        :reading:Lynch1994
+        :reading:Bogen1994
+        :reading:Suchman1994
+    ) .
+
+:meeting:2016-11-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-11-18T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Agre1994a, :reading:Mai2016 ;
+    :schedule (
+        :reading:Agre1994a
+        :reading:Mai2016
+    ) .
+
+:meeting:2016-12-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-12-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Freeman2013, :reading:Spade2013, :reading:Baez2013, :reading:Moore2013 ;
+    :schedule (
+        :reading:Freeman2013
+        :reading:Spade2013
+        :reading:Baez2013
+        :reading:Moore2013
+    ) .
+
+:meeting:2016-12-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2016-12-09T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Holmes2002, :reading:Rose1999 ;
+    :schedule (
+        :reading:Holmes2002
+        :reading:Rose1999
+    ) .
+
+:meeting:2017-01-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-13T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Patrick&apos;s syllabus for <a href=\"https://ptgolden.org/740syllabus.html\">INLS 740 (Digital Libraries)</a>" ]
+    ) .
+
+:meeting:2017-01-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-20T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "<a href=\"http://savageminds.org/2017/01/12/society-must-be-defended-a-read-in-on-20-january-2017/\">http://savageminds.org/2017/01/12/society-must-be-defended-a-read-in-on-20-january-2017/</a>" ]
+    ) .
+
+:meeting:2017-01-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-01-27T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:RoblesAnderson2016 ;
+    :schedule (
+        :reading:RoblesAnderson2016
+    ) .
+
+:meeting:2017-02-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-03T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting-- attend <a href=\"https://www.bitcurator.net/nlp4arc\">nlp4arc</a>" ]
+    ) .
+
+:meeting:2017-02-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-10T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Community check-in: a chance to tell everyone what you&apos;ve been working on, your recent successes, your terrible setbacks" ]
+    ) .
+
+:meeting:2017-02-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-02-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Cope2017, :reading:Gorichanaz2017 ;
+    :schedule (
+        :reading:Cope2017
+        :reading:Gorichanaz2017
+    ) .
+
+:meeting:2017-03-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-03T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Smith2016, :reading:Feinberg2017 ;
+    :schedule (
+        :reading:Smith2016
+        :reading:Feinberg2017
+    ) .
+
+:meeting:2017-03-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-10T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Passi2017 ;
+    :schedule (
+        :reading:Passi2017
+    ) .
+
+:meeting:2017-03-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hayles2016 ;
+    :schedule (
+        :reading:Hayles2016
+    ) .
+
+:meeting:2017-03-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-24T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bratus2011 ;
+    :schedule (
+        :reading:Bratus2011
+    ) .
+
+:meeting:2017-03-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-03-31T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dennett2002 ;
+    :schedule (
+        :reading:Dennett2002
+    ) .
+
+:meeting:2017-04-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-14T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stenner2016 ;
+    :schedule (
+        :reading:Stenner2016
+    ) .
+
+:meeting:2017-04-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-21T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting: SILS <a href=\"http://info4socialgood.web.unc.edu\">Symposium on Information for Social Good</a>" ]
+    ) .
+
+:meeting:2017-04-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-04-28T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Flynn1997 ;
+    :schedule (
+        :reading:Flynn1997
+    ) .
+
+:meeting:2017-05-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-05T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dreyfus2007 ;
+    :schedule (
+        :reading:Dreyfus2007
+    ) .
+
+:meeting:2017-05-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-12T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting: end-of-semester institutional collapse" ]
+    ) .
+
+:meeting:2017-05-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-19T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ciborra2004 ;
+    :schedule (
+        :reading:Ciborra2004
+    ) .
+
+:meeting:2017-05-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-05-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Draft of Debbie's paper: \u201cProblematizing metadata\u201d" ]
+    ) .
+
+:meeting:2017-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ciborra2004, :reading:Askey2017 ;
+    :schedule (
+        :reading:Ciborra2004
+        :reading:Askey2017
+    ) .
+
+:meeting:2017-06-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-09T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Nofre2014 ;
+    :schedule (
+        :reading:Nofre2014
+    ) .
+
+:meeting:2017-06-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-23T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wakkary2017 ;
+    :schedule (
+        :reading:Wakkary2017
+    ) .
+
+:meeting:2017-06-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-06-30T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Poitou1997 ;
+    :schedule (
+        :reading:Poitou1997
+    ) .
+
+:meeting:2017-07-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-07T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Abbate2017, :reading:Turner2017 ;
+    :schedule (
+        :reading:Abbate2017
+        :reading:Turner2017
+    ) .
+
+:meeting:2017-07-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-21T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siegert2014 ;
+    :schedule (
+        :reading:Siegert2014
+    ) .
+
+:meeting:2017-07-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-07-28T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siegert2014 ;
+    :schedule (
+        :reading:Siegert2014
+    ) .
+
+:meeting:2017-08-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-18T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tenen2017 ;
+    :schedule (
+        :reading:Tenen2017
+    ) .
+
+:meeting:2017-08-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-08-25T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Daston2017 ;
+    :schedule (
+        :reading:Daston2017
+    ) .
+
+:meeting:2017-09-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-01T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Emerson2014 ;
+    :schedule (
+        :reading:Emerson2014
+    ) .
+
+:meeting:2017-09-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-08T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Boland2017 ;
+    :schedule (
+        :reading:Boland2017
+    ) .
+
+:meeting:2017-09-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bernstein1991 ;
+    :schedule (
+        :reading:Bernstein1991
+    ) .
+
+:meeting:2017-09-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-22T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wittkower2016, :reading:Gibson1979 ;
+    :schedule (
+        :reading:Wittkower2016
+        :reading:Gibson1979
+    ) .
+
+:meeting:2017-09-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-09-29T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Evans2016 ;
+    :schedule (
+        :reading:Evans2016
+    ) .
+
+:meeting:2017-10-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-06T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Levine2015 ;
+    :schedule (
+        :reading:Levine2015
+    ) .
+
+:meeting:2017-10-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-13T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Losee2015 ;
+    :schedule (
+        :reading:Losee2015
+    ) .
+
+:meeting:2017-10-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-10-27T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bowers1991, :reading:Healy2017 ;
+    :schedule (
+        :reading:Bowers1991
+        :reading:Healy2017
+    ) .
+
+:meeting:2017-11-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-03T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dork2014, :reading:Sack2000 ;
+    :schedule (
+        :reading:Dork2014
+        :reading:Sack2000
+    ) .
+
+:meeting:2017-11-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-10T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Simmel2014, :reading:Simmel1950 ;
+    :schedule (
+        :reading:Simmel2014
+        :reading:Simmel1950
+    ) .
+
+:meeting:2017-11-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-11-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting-- attend <a href=\"https://fhi.duke.edu/events/futures-literature-science-and-media-symposium-honoring-professor-n-katherine-hayles\">https://fhi.duke.edu/events/futures-literature-science-and-media-symposium-honoring-professor-n-katherine-hayles</a>" ]
+    ) .
+
+:meeting:2017-12-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-12-08T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tsing2015 ;
+    :schedule (
+        :reading:Tsing2015
+    ) .
+
+:meeting:2017-12-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2017-12-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lynch2017 ;
+    :schedule (
+        :reading:Lynch2017
+    ) .
+
+:meeting:2018-01-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-05T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Alcoff1997 ;
+    :schedule (
+        :reading:Alcoff1997
+    ) .
+
+:meeting:2018-01-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-12T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bratton2016 ;
+    :schedule (
+        :reading:Bratton2016
+    ) .
+
+:meeting:2018-01-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-01-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gorichanaz2016 ;
+    :schedule (
+        :reading:Gorichanaz2016
+    ) .
+
+:meeting:2018-02-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; in the afternoon go to a talk at Duke by Leif Weatherby on <a href=\"https://german.duke.edu/events/\u201cdata-capital-hayek-cybernetics-and-german-idealism\">Data Capital: Hayek, Cybernetics, and German Idealism</a>." ]
+    ) .
+
+:meeting:2018-02-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-09T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Miles2001 ;
+    :schedule (
+        :reading:Miles2001
+    ) .
+
+:meeting:2018-02-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-16T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Russell2014 ;
+    :schedule (
+        :reading:Russell2014
+    ) .
+
+:meeting:2018-02-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-02-23T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Naur1992 ;
+    :schedule (
+        :reading:Naur1992
+    ) .
+
+:meeting:2018-03-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2018-03-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-09T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Harris2015 ;
+    :schedule (
+        :reading:Harris2015
+    ) .
+
+:meeting:2018-03-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-16T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pickering1995, :reading:Waldstein2008 ;
+    :schedule (
+        :reading:Pickering1995
+        :reading:Waldstein2008
+    ) .
+
+:meeting:2018-03-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-23T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Noble2018 ;
+    :schedule (
+        :reading:Noble2018
+    ) .
+
+:meeting:2018-03-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-03-30T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Noble2017, :reading:Noble2018 ;
+    :schedule (
+        :reading:Noble2018
+        :reading:Noble2017
+    ) .
+
+:meeting:2018-04-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-04-06T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VanDoorn2017 ;
+    :schedule (
+        :reading:VanDoorn2017
+    ) .
+
+:meeting:2018-04-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-04-13T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting\u2014go to the <a href=\"http://info4socialgood2018.web.unc.edu\">Symposium on Information for Social Good</a>!" ]
+    ) .
+
+:meeting:2018-04-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-04-20T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tennis2013 ;
+    :schedule (
+        :reading:Tennis2013
+    ) .
+
+:meeting:2018-04-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-04-27T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mackenzie2017, :reading:Packer2018 ;
+    :schedule (
+        :reading:Mackenzie2017
+        :reading:Packer2018
+    ) .
+
+:meeting:2018-05-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-05-04T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Salter2015 ;
+    :schedule (
+        :reading:Salter2015
+    ) .
+
+:meeting:2018-05-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-05-18T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Irani2018 ;
+    :schedule (
+        :reading:Irani2018
+    ) .
+
+:meeting:2018-05-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-05-25T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stevenson2016 ;
+    :schedule (
+        :reading:Stevenson2016
+    ) .
+
+:meeting:2018-06-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-06-01T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Benardou2017 ;
+    :schedule (
+        [ dc:description "Patrick\u2019s application to the CSCW Doctoral Consortium" ]
+        :reading:Benardou2017
+    ) .
+
+:meeting:2018-06-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-06-08T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ribes2017 ;
+    :schedule (
+        :reading:Ribes2017
+    ) .
+
+:meeting:2018-06-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-06-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomas2018 ;
+    :schedule (
+        :reading:Thomas2018
+    ) .
+
+:meeting:2018-06-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-06-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomas2018 ;
+    :schedule (
+        :reading:Thomas2018
+    ) .
+
+:meeting:2018-07-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-07-06T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomas2018 ;
+    :schedule (
+        :reading:Thomas2018
+    ) .
+
+:meeting:2018-07-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-07-13T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomas2018, :reading:Smith2011 ;
+    :schedule (
+        :reading:Thomas2018
+        :reading:Smith2011
+    ) .
+
+:meeting:2018-07-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-07-20T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomas2018 ;
+    :schedule (
+        :reading:Thomas2018
+    ) .
+
+:meeting:2018-08-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-03T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomas2018, :reading:Grossberg2016 ;
+    :schedule (
+        :reading:Thomas2018
+        :reading:Grossberg2016
+    ) .
+
+:meeting:2018-08-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-10T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Law2013 ;
+    :schedule (
+        :reading:Law2013
+    ) .
+
+:meeting:2018-08-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2018-08-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-24T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mrazek2002a ;
+    :schedule (
+        :reading:Mrazek2002a
+    ) .
+
+:meeting:2018-08-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-08-31T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2018-09-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-07T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mrazek2002b ;
+    :schedule (
+        :reading:Mrazek2002b
+    ) .
+
+:meeting:2018-09-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-14T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting due to <a href=\"https://en.wikipedia.org/wiki/Hurricane_Florence\">Hurricane Florence</a>." ]
+    ) .
+
+:meeting:2018-09-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-21T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:FletcherWatson2018 ;
+    :schedule (
+        :reading:FletcherWatson2018
+    ) .
+
+:meeting:2018-09-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-09-28T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting due to <a href=\"https://sils.unc.edu/events/2018/5-min-madness\">5-Minute Madness</a>." ]
+    ) .
+
+:meeting:2018-10-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-05T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stoler2009 ;
+    :schedule (
+        :reading:Stoler2009
+    ) .
+
+:meeting:2018-10-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-12T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:McLuhan1967 ;
+    :schedule (
+        :reading:McLuhan1967
+    ) .
+
+:meeting:2018-10-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-19T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Fall break - no meeting" ]
+    ) .
+
+:meeting:2018-10-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-10-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ingold2007 ;
+    :schedule (
+        :reading:Ingold2007
+    ) .
+
+:meeting:2018-11-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-02T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Center for Faculty Excellence event - no meeting" ]
+    ) .
+
+:meeting:2018-11-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-09T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DeMarco2007 ;
+    :schedule (
+        [ dc:description "Patrick\u2019s paper on <i>Florilegia</i> for the Future of Scholarly Publishing workshop post-proceedings" ]
+        :reading:DeMarco2007
+    ) .
+
+:meeting:2018-11-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-16T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Lots of people traveling - no meeting" ]
+    ) .
+
+:meeting:2018-11-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-23T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Thanksgiving - no meeting" ]
+    ) .
+
+:meeting:2018-11-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-11-30T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Melanie\u2019s recent CHI submission" ]
+    ) .
+
+:meeting:2018-12-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-12-07T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lee2018 ;
+    :schedule (
+        :reading:Lee2018
+    ) .
+
+:meeting:2018-12-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-12-14T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Elliott's paper \u201cEnduring Ephemerality in Temporal Infrastructure\u201d" ]
+    ) .
+
+:meeting:2018-12-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2018-12-21T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bernstein2018 ;
+    :schedule (
+        :reading:Bernstein2018
+    ) .
+
+:meeting:2019-01-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-01-11T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Fazi2019 ;
+    :schedule (
+        :reading:Fazi2019
+    ) .
+
+:meeting:2019-01-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-01-18T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VonFoerster2002a, :reading:Clarke2009a, :reading:Clarke2009b ;
+    :schedule (
+        :reading:VonFoerster2002a
+        :reading:Clarke2009a
+        :reading:Clarke2009b
+    ) .
+
+:meeting:2019-01-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-01-25T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:SpencerBrown1969 ;
+    :schedule (
+        :reading:SpencerBrown1969
+    ) .
+
+:meeting:2019-02-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-02-01T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker1982a ;
+    :schedule (
+        :reading:Becker1982a
+    ) .
+
+:meeting:2019-02-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-02-08T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VonFoerster2002b, :reading:VonFoerster2002c, :reading:Clarke2009a, :reading:Clarke2009b ;
+    :schedule (
+        :reading:VonFoerster2002b
+        :reading:VonFoerster2002c
+        :reading:Clarke2009a
+        :reading:Clarke2009b
+    ) .
+
+:meeting:2019-02-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-02-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Grimmelmann2019 ;
+    :schedule (
+        :reading:Grimmelmann2019
+    ) .
+
+:meeting:2019-02-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-02-22T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "SILS PhD student admit day - no meeting." ]
+    ) .
+
+:meeting:2019-03-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-03-22T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lury2014 ;
+    :schedule (
+        :reading:Lury2014
+    ) .
+
+:meeting:2019-04-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-05T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bendell2018, :reading:Keyes2019 ;
+    :schedule (
+        :reading:Bendell2018
+        :reading:Keyes2019
+    ) .
+
+:meeting:2019-04-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-12T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Iliadis2013 ;
+    :schedule (
+        :reading:Iliadis2013
+    ) .
+
+:meeting:2019-04-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-19T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Oyama2000 ;
+    :schedule (
+        :reading:Oyama2000
+    ) .
+
+:meeting:2019-04-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-04-26T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; attend the <a href=\"https://info4socialgood.web.unc.edu/\">Symposium on Information for Social Good</a>" ]
+    ) .
+
+:meeting:2019-05-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-05-10T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:MacKenzie2002, :reading:Styhre2010 ;
+    :schedule (
+        :reading:MacKenzie2002
+        :reading:Styhre2010
+    ) .
+
+:meeting:2019-05-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-05-17T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Shaw2019, :reading:Ribes2019 ;
+    :schedule (
+        :reading:Shaw2019
+        :reading:Ribes2019
+    ) .
+
+:meeting:2019-05-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-05-24T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Iliadis2019 ;
+    :schedule (
+        :reading:Iliadis2019
+    ) .
+
+:meeting:2019-08-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-08-23T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Katai2007 ;
+    :schedule (
+        :reading:Katai2007
+    ) .
+
+:meeting:2019-08-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-08-30T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mackenzie2018 ;
+    :schedule (
+        :reading:Mackenzie2018
+    ) .
+
+:meeting:2019-09-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-06T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; Patrick and Ryan went to <a href=\"https://convention2.allacademic.com/one/ssss/4s19/index.php?cmd=Online+Program+View+Session&selected_session_id=1546522\">4S</a>" ]
+    ) .
+
+:meeting:2019-09-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-13T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lyman1995 ;
+    :schedule (
+        :reading:Lyman1995
+    ) .
+
+:meeting:2019-09-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-20T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2015 ;
+    :schedule (
+        :reading:Amoore2015
+    ) .
+
+:meeting:2019-09-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-09-27T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2019-10-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-10-04T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Morozov2019 ;
+    :schedule (
+        :reading:Morozov2019
+    ) .
+
+:meeting:2019-10-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-10-18T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sack2019 ;
+    :schedule (
+        :reading:Sack2019
+    ) .
+
+:meeting:2019-10-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-10-25T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sack2019 ;
+    :schedule (
+        :reading:Sack2019
+    ) .
+
+:meeting:2019-11-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-11-01T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Canguilhem2010 ;
+    :schedule (
+        :reading:Canguilhem2010
+    ) .
+
+:meeting:2019-11-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-11-15T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Orr1996 ;
+    :schedule (
+        :reading:Orr1996
+    ) .
+
+:meeting:2019-11-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2019-11-22T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Garfinkel2008 ;
+    :schedule (
+        :reading:Garfinkel2008
+    ) .
+
+:meeting:2020-01-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-01-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Elliott Hauser will give a talk on \"How Systems Make It So: Algorithms, Information, and Truth.\"" ]
+    ) .
+
+:meeting:2020-01-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-01-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2018, :reading:Anderson2019 ;
+    :schedule (
+        :reading:Rieder2018
+        :reading:Anderson2019
+    ) .
+
+:meeting:2020-01-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-01-31T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2019ch4 ;
+    :schedule (
+        :reading:Hui2019ch4
+    ) .
+
+:meeting:2020-02-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-07T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Escobar2018intro, :reading:Escobar2018ch3 ;
+    :schedule (
+        :reading:Escobar2018intro
+        :reading:Escobar2018ch3
+    ) .
+
+:meeting:2020-02-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-14T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Escobar2018ch5, :reading:Escobar2018ch6 ;
+    :schedule (
+        :reading:Escobar2018ch5
+        :reading:Escobar2018ch6
+    ) .
+
+:meeting:2020-02-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "For today we will read two new chapters from Melanie's book-in-progress." ]
+    ) .
+
+:meeting:2020-02-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-02-28T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Roth2015, :reading:Lash2016 ;
+    :schedule (
+        :reading:Roth2015
+        :reading:Lash2016
+    ) .
+
+:meeting:2020-03-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-06T11:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2020-03-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-13T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mirowski2017 ;
+    :schedule (
+        :reading:Mirowski2017
+    ) .
+
+:meeting:2020-03-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-20T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2020-03-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-03-27T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stevenson2020 ;
+    :schedule (
+        :reading:Stevenson2020
+    ) .
+
+:meeting:2020-04-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-04-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ullman1997 ;
+    :schedule (
+        :reading:Ullman1997
+    ) .
+
+:meeting:2020-04-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-04-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Polt2019 ;
+    :schedule (
+        :reading:Polt2019
+    ) .
+
+:meeting:2020-04-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-04-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Polt2019 ;
+    :schedule (
+        :reading:Polt2019
+    ) .
+
+:meeting:2020-05-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-01T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bucher2020, :reading:Nancy2000 ;
+    :schedule (
+        :reading:Bucher2020
+        :reading:Nancy2000
+    ) .
+
+:meeting:2020-05-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-08T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gilbert2014 ;
+    :schedule (
+        :reading:Gilbert2014
+    ) .
+
+:meeting:2020-05-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-15T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gilbert2014 ;
+    :schedule (
+        :reading:Gilbert2014
+    ) .
+
+:meeting:2020-05-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-05-29T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Two more chapter's from Melanie's book in progress." ]
+    ) .
+
+:meeting:2020-06-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-05T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koopman2019 ;
+    :schedule (
+        :reading:Koopman2019
+    ) .
+
+:meeting:2020-06-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-12T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koopman2019 ;
+    :schedule (
+        :reading:Koopman2019
+    ) .
+
+:meeting:2020-06-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2020, :reading:Finn2020 ;
+    :schedule (
+        :reading:Rieder2020
+        :reading:Finn2020
+    ) .
+
+:meeting:2020-06-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-06-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2020 ;
+    :schedule (
+        :reading:Rieder2020
+    ) .
+
+:meeting:2020-07-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-03T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2020 ;
+    :schedule (
+        :reading:Rieder2020
+    ) .
+
+:meeting:2020-07-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-10T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2020 ;
+    :schedule (
+        :reading:Amoore2020
+    ) .
+
+:meeting:2020-07-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-17T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2020 ;
+    :schedule (
+        :reading:Amoore2020
+    ) .
+
+:meeting:2020-07-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-24T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Amoore2020 ;
+    :schedule (
+        :reading:Amoore2020
+    ) .
+
+:meeting:2020-07-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-07-31T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2020-08-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-07T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Double postponement." ]
+    ) .
+
+:meeting:2020-08-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-14T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Another chapter from Melanie's book in progress." ]
+    ) .
+
+:meeting:2020-08-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bender2020 ;
+    :schedule (
+        :reading:Bender2020
+    ) ;
+    :postedLinks (
+        <https://www.youtube.com/watch?v=zE1J9JxqhFo>
+        <http://svr91.edns1.com/~culturem/index.php/cm/article/view/429/446>
+        <https://www.youtube.com/watch?v=S6wnHsEoTmc>
+        <https://media.unito.it/?content=9248&fbclid=IwAR0HmhG9QQBBPqG4PnK4vOAVcsZq2xXuIbts_YiXUe7dm8_4TfCvMFkbQEk>
+        <https://socialsystemstheory.com/2020/08/13/language-is-not-informational-or-communicational/>
+        <https://physics.nyu.edu/sokal/SocialText_reply_LF.pdf>
+    ) .
+
+:meeting:2020-08-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-08-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Machlup1983 ;
+    :schedule (
+        :reading:Machlup1983
+    ) .
+
+:meeting:2020-09-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-09-04T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stawarska2020 ;
+    :schedule (
+        :reading:Stawarska2020
+    ) .
+
+:meeting:2020-09-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-09-18T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thompson2020 ;
+    :schedule (
+        :reading:Thompson2020
+    ) .
+
+:meeting:2020-09-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-09-25T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Couldry2019, :reading:Calzati2020 ;
+    :schedule (
+        :reading:Couldry2019
+        :reading:Calzati2020
+    ) .
+
+:meeting:2020-10-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Thomer2020 ;
+    :schedule (
+        :reading:Thomer2020
+    ) .
+
+:meeting:2020-10-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2020-10-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-23T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting (ASIS&T)" ]
+    ) .
+
+:meeting:2020-10-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-10-30T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Buneman2008, :reading:Palmer2013 ;
+    :schedule (
+        :reading:Buneman2008
+        :reading:Palmer2013
+    ) .
+
+:meeting:2020-11-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-06T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WinthropYoung2014 ;
+    :schedule (
+        :reading:WinthropYoung2014
+    ) .
+
+:meeting:2020-11-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-13T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "A revised chapter from Melanie's book in progress" ]
+    ) .
+
+:meeting:2020-11-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-20T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting (grading)" ]
+    ) .
+
+:meeting:2020-11-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-11-27T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting (Thanksgiving)" ]
+    ) .
+
+:meeting:2020-12-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-12-04T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Brower2020 ;
+    :schedule (
+        :reading:Brower2020
+    ) .
+
+:meeting:2020-12-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-12-11T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Siskin2016 ;
+    :schedule (
+        :reading:Siskin2016
+    ) .
+
+:meeting:2020-12-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2020-12-18T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ebeling2016 ;
+    :schedule (
+        :reading:Ebeling2016
+    ) .
+
+:meeting:2021-01-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-08T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Brun2004a, :reading:Brun2004b ;
+    :schedule (
+        :reading:Brun2004a
+        :reading:Brun2004b
+    ) .
+
+:meeting:2021-01-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-15T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Farstadvoll2018 ;
+    :schedule (
+        :reading:Farstadvoll2018
+    ) .
+
+:meeting:2021-01-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-22T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Cleland2021 ;
+    :schedule (
+        :reading:Cleland2021
+    ) .
+
+:meeting:2021-01-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-01-29T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ma2020 ;
+    :schedule (
+        :reading:Ma2020
+    ) .
+
+:meeting:2021-02-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-05T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Collier2008 ;
+    :schedule (
+        :reading:Collier2008
+    ) .
+
+:meeting:2021-02-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-12T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Keller2000 ;
+    :schedule (
+        :reading:Keller2000
+    ) .
+
+:meeting:2021-02-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ankeny2020 ;
+    :schedule (
+        :reading:Ankeny2020
+    ) .
+
+:meeting:2021-02-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-02-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Evan's paper on critical scholarship of AI" ]
+    ) .
+
+:meeting:2021-03-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-05T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rheinberger2010 ;
+    :schedule (
+        :reading:Rheinberger2010
+    ) .
+
+:meeting:2021-03-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-12T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-03-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-19T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rheinberger2010 ;
+    :schedule (
+        :reading:Rheinberger2010
+    ) .
+
+:meeting:2021-03-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-03-26T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DIgnazio2020 ;
+    :schedule (
+        :reading:DIgnazio2020
+    ) .
+
+:meeting:2021-04-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Adam1998 ;
+    :schedule (
+        :reading:Adam1998
+    ) .
+
+:meeting:2021-04-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-04-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Garvey2021 ;
+    :schedule (
+        :reading:Garvey2021
+    ) .
+
+:meeting:2021-04-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-23T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gabriel2014 ;
+    :schedule (
+        :reading:Gabriel2014
+    ) .
+
+:meeting:2021-04-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-04-30T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Liu2021 ;
+    :schedule (
+        :reading:Liu2021
+    ) .
+
+:meeting:2021-05-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-07T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Watson2012 ;
+    :schedule (
+        :reading:Watson2012
+    ) .
+
+:meeting:2021-05-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-14T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-05-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-21T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Putz2021 ;
+    :schedule (
+        :reading:Putz2021
+    ) .
+
+:meeting:2021-05-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-05-28T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Chatting about ORG plans." ]
+    ) .
+
+:meeting:2021-06-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-06-04T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-06-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-06-11T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-06-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-06-18T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Plantin2021 ;
+    :schedule (
+        :reading:Plantin2021
+    ) .
+
+:meeting:2021-06-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-06-25T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2021 ;
+    :schedule (
+        :reading:Hui2021
+    ) .
+
+:meeting:2021-07-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-02T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2021-07-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-09T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Final edits for Melanie's book" ]
+    ) .
+
+:meeting:2021-07-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-16T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stevens2021 ;
+    :schedule (
+        :reading:Stevens2021
+    ) .
+
+:meeting:2021-07-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-23T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pasquinelli2021 ;
+    :schedule (
+        :reading:Pasquinelli2021
+    ) .
+
+:meeting:2021-07-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-07-30T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Damerow1996 ;
+    :schedule (
+        :reading:Damerow1996
+    ) .
+
+:meeting:2021-08-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-06T11:30:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting" ]
+    ) .
+
+:meeting:2021-08-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Renn2020 ;
+    :schedule (
+        :reading:Renn2020
+    ) .
+
+:meeting:2021-08-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Renn2020 ;
+    :schedule (
+        :reading:Renn2020
+    ) .
+
+:meeting:2021-08-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-08-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Ryan's chapter on semiosis" ]
+    ) .
+
+:meeting:2021-09-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Renn2020 ;
+    :schedule (
+        :reading:Renn2020
+    ) .
+
+:meeting:2021-09-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Young2021, :reading:Starosielski2021 ;
+    :schedule (
+        :reading:Young2021
+        :reading:Starosielski2021
+    ) .
+
+:meeting:2021-09-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Geiger2021 ;
+    :schedule (
+        :reading:Geiger2021
+    ) .
+
+:meeting:2021-09-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-09-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Greene2021 ;
+    :schedule (
+        :reading:Greene2021
+    ) .
+
+:meeting:2021-10-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Greene2021 ;
+    :schedule (
+        :reading:Greene2021
+    ) .
+
+:meeting:2021-10-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Viljoen2020 ;
+    :schedule (
+        :reading:Viljoen2020
+    ) .
+
+:meeting:2021-10-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vismann2008a ;
+    :schedule (
+        :reading:Vismann2008a
+    ) .
+
+:meeting:2021-10-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vismann2008b ;
+    :schedule (
+        :reading:Vismann2008b
+    ) .
+
+:meeting:2021-10-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-10-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vismann2008c ;
+    :schedule (
+        :reading:Vismann2008c
+    ) .
+
+:meeting:2021-11-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:LeGuin2020, :reading:Sofia2000 ;
+    :schedule (
+        :reading:LeGuin2020
+        :reading:Sofia2000
+    ) .
+
+:meeting:2021-11-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Parisi2021 ;
+    :schedule (
+        :reading:Parisi2021
+    ) .
+
+:meeting:2021-11-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description """Tarkovsky’s <i>Mirror</i> <a href="https://cseees.unc.edu/event/movie-night-mirror-ussr-1975/">at the Varsity Theatre</a>""" ]
+    ) .
+
+:meeting:2021-11-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-11-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2021-12-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-12-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Radio2021 ;
+    :schedule (
+        :reading:Radio2021
+    ) .
+
+:meeting:2021-12-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-12-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Arawjo2020 ;
+    :schedule (
+        :reading:Arawjo2020
+    ) .
+
+:meeting:2021-12-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2021-12-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ernst2016 ;
+    :schedule (
+        :reading:Ernst2016
+    ) .
+
+:meeting:2022-01-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-01-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Moor2016 ;
+    :schedule (
+        :reading:Moor2016
+    ) .
+
+:meeting:2022-01-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-01-28T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Moor2016 ;
+    :schedule (
+        :reading:Moor2016
+    ) .
+
+:meeting:2022-02-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koch2018, :reading:Bernard2018 ;
+    :schedule (
+        :reading:Koch2018
+        :reading:Bernard2018
+    ) .
+
+:meeting:2022-02-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2022-02-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:VonUexkull1982, :reading:WinthropYoung2010 ;
+    :schedule (
+        :reading:VonUexkull1982
+        :reading:WinthropYoung2010
+    ) .
+
+:meeting:2022-02-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-02-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tsing2022 ;
+    :schedule (
+        :reading:Tsing2022
+    ) .
+
+:meeting:2022-03-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-03-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description """Attend <a href="https://www.eventbrite.com/e/revolutionary-mathematics-ai-statistics-and-the-logic-of-capitalism-tickets-273074752937">panel discussion</a> of Justin Joque\u2019s book <i>Revolutionary mathematics: Artificial intelligence, statistics, and the logic of capitalism</i>.""" ]
+    ) .
+
+:meeting:2022-03-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-03-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Joque2022 ;
+    :schedule (
+        :reading:Joque2022
+    ) .
+
+:meeting:2022-04-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-04-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bergman2018 ;
+    :schedule (
+        :reading:Bergman2018
+    ) .
+
+:meeting:2022-04-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-04-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Apel1981 ;
+    :schedule (
+        :reading:Apel1981
+    ) .
+
+:meeting:2022-04-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-04-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Morozov2022 ;
+    :schedule (
+        :reading:Morozov2022
+    ) .
+
+:meeting:2022-06-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:West2022 ;
+    :schedule (
+        :reading:West2022
+    ) .
+
+:meeting:2022-06-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wright2021 ;
+    :schedule (
+        :reading:Wright2021
+    ) .
+
+:meeting:2022-06-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wright2021 ;
+    :schedule (
+        :reading:Wright2021
+    ) .
+
+:meeting:2022-06-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wright2021 ;
+    :schedule (
+        :reading:Wright2021
+    ) .
+
+:meeting:2022-06-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-06-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Angus2019 ;
+    :schedule (
+        :reading:Angus2019
+    ) .
+
+:meeting:2022-07-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-07-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Brock2020 ;
+    :schedule (
+        :reading:Brock2020
+    ) .
+
+:meeting:2022-07-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-07-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DeGroat2014 ;
+    :schedule (
+        :reading:DeGroat2014
+    ) .
+
+:meeting:2022-08-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-08-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gray2018 ;
+    :schedule (
+        :reading:Gray2018
+    ) .
+
+:meeting:2022-08-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-08-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dander2022 ;
+    :schedule (
+        :reading:Dander2022
+    ) .
+
+:meeting:2022-09-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Crooks2021 ;
+    :schedule (
+        :reading:Crooks2021
+    ) .
+
+:meeting:2022-09-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hong2022 ;
+    :schedule (
+        :reading:Hong2022
+    ) .
+
+:meeting:2022-09-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Simondon2016 ;
+    :schedule (
+        :reading:Simondon2016
+    ) .
+
+:meeting:2022-09-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-09-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Virtual field trip to <a href=\"https://re-compute.info/\">re:compute symposium</a>" ]
+    ) .
+
+:meeting:2022-10-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Montoya2022 ;
+    :schedule (
+        :reading:Montoya2022
+    ) .
+
+:meeting:2022-10-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Montoya2022 ;
+    :schedule (
+        :reading:Montoya2022
+    ) .
+
+:meeting:2022-10-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-10-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-10-28T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-11-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-11-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Kockelman2017 ;
+    :schedule (
+        :reading:Kockelman2017
+    ) .
+
+:meeting:2022-11-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-18T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Roach2022 ;
+    :schedule (
+        :reading:Roach2022
+    ) .
+
+:meeting:2022-11-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-11-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Garfinkel1986 ;
+    :schedule (
+        :reading:Garfinkel1986
+    ) .
+
+:meeting:2022-12-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-12-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Button2022 ;
+    :schedule (
+        :reading:Button2022
+    ) .
+
+:meeting:2022-12-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-12-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Button2022 ;
+    :schedule (
+        :reading:Button2022
+    ) .
+
+:meeting:2022-12-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2022-12-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Goodwin1994 ;
+    :schedule (
+        :reading:Goodwin1994
+    ) .
+
+:meeting:2023-01-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-01-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tatarchenko2021A ;
+    :schedule (
+        :reading:Tatarchenko2021A
+    ) .
+
+:meeting:2023-01-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-01-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tatarchenko2021B ;
+    :schedule (
+        :reading:Tatarchenko2021B
+    ) .
+
+:meeting:2023-01-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-01-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ginzburg2004 ;
+    :schedule (
+        :reading:Ginzburg2004
+    ) .
+
+:meeting:2023-02-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Barker2023 ;
+    :schedule (
+        :reading:Barker2023
+    ) .
+
+:meeting:2023-02-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Serres2015 ;
+    :schedule (
+        :reading:Serres2015
+    ) .
+
+:meeting:2023-02-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bishop2022 ;
+    :schedule (
+        :reading:Bishop2022
+        [ dc:description """Read an additional article from the special section <a href="https://journals.sagepub.com/toc/tcs/39/7-8">Bernard Stiegler and the Internation Project: Computational practices and circumscribed futures</a>.""" ]
+    ) .
+
+:meeting:2023-02-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-02-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Iliadis2023 ;
+    :schedule (
+        :reading:Iliadis2023
+    ) .
+
+:meeting:2023-03-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wickett2023 ;
+    :schedule (
+        :reading:Wickett2023
+    ) .
+
+:meeting:2023-03-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Poirier2021 ;
+    :schedule (
+        :reading:Poirier2021
+    ) .
+
+:meeting:2023-03-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Smith1974 ;
+    :schedule (
+        :reading:Smith1974
+    ) .
+
+:meeting:2023-03-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting—extended spring break." ]
+    ) .
+
+:meeting:2023-03-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-03-31T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting—extended spring break." ]
+    ) .
+
+:meeting:2023-04-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting—extended spring break." ]
+    ) .
+
+:meeting:2023-04-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stewart2014 ;
+    :schedule (
+        :reading:Stewart2014
+    ) .
+
+:meeting:2023-04-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sacks1972 ;
+    :schedule (
+        :reading:Sacks1972
+    ) .
+
+:meeting:2023-04-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-04-28T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Labov1973 ;
+    :schedule (
+        :reading:Labov1973
+    ) .
+
+:meeting:2023-05-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-05-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Piantadosi2022 ;
+    :schedule (
+        :reading:Piantadosi2022
+    ) .
+
+:meeting:2023-05-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-05-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2023-05-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-05-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:JohnMathews2022a ;
+    :schedule (
+        :reading:JohnMathews2022a
+    ) .
+
+:meeting:2023-05-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-05-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:JohnMathews2022b ;
+    :schedule (
+        :reading:JohnMathews2022b
+    ) .
+
+:meeting:2023-06-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-06-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:McMillanMajor2023 ;
+    :schedule (
+        :reading:McMillanMajor2023
+    ) .
+
+:meeting:2023-08-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-08-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mackenzie2023 ;
+    :schedule (
+        :reading:Mackenzie2023
+    ) .
+
+:meeting:2023-08-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-08-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:McGuigan2023 ;
+    :schedule (
+        :reading:McGuigan2023
+    ) .
+
+:meeting:2023-08-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-08-18T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting; next week we'll continue reading <i>Selling the American People</i>." ]
+    ) .
+
+:meeting:2023-08-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-08-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:McGuigan2023 ;
+    :schedule (
+        :reading:McGuigan2023
+    ) .
+
+:meeting:2023-09-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Warner2023 ;
+    :schedule (
+        :reading:Warner2023
+    ) .
+
+:meeting:2023-09-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rieder2023 ;
+    :schedule (
+        :reading:Rieder2023
+    ) .
+
+:meeting:2023-09-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Seaver2022 ;
+    :schedule (
+        :reading:Seaver2022
+    ) .
+
+:meeting:2023-09-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Day2023 ;
+    :schedule (
+        :reading:Day2023
+    ) .
+
+:meeting:2023-09-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-09-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gal2016 ;
+    :schedule (
+        :reading:Gal2016
+    ) .
+
+:meeting:2023-10-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Petras2023 ;
+    :schedule (
+        :reading:Petras2023
+    ) .
+
+:meeting:2023-10-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bates2018 ;
+    :schedule (
+        :reading:Bates2018
+    ) .
+
+:meeting:2023-10-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Fall break; no meeting." ]
+    ) .
+
+:meeting:2023-10-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-10-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bricken2023 ;
+    :schedule (
+        :reading:Bricken2023
+    ) .
+
+:meeting:2023-11-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-11-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hauser2023 ;
+    :schedule (
+        :reading:Hauser2023
+    ) .
+
+:meeting:2023-11-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-11-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pasquinelli2023 ;
+    :schedule (
+        :reading:Pasquinelli2023
+    ) .
+
+:meeting:2023-11-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-11-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pasquinelli2023 ;
+    :schedule (
+        :reading:Pasquinelli2023
+    ) .
+
+:meeting:2023-11-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-11-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2023-12-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-12-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pasquinelli2023 ;
+    :schedule (
+        :reading:Pasquinelli2023
+    ) .
+
+:meeting:2023-12-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-12-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Teil2023 ;
+    :schedule (
+        :reading:Teil2023
+    ) .
+
+:meeting:2023-12-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2023-12-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No further meetings until 2024." ]
+    ) .
+
+:meeting:2024-01-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Woodward2023 ;
+    :schedule (
+        :reading:Woodward2023
+    ) .
+
+:meeting:2024-01-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Krippendorff2023 ;
+    :schedule (
+        :reading:Krippendorff2023
+    ) .
+
+:meeting:2024-01-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Mead1968, :reading:Krippendorff2008 ;
+    :schedule (
+        :reading:Mead1968
+        :reading:Krippendorff2008
+    ) .
+
+:meeting:2024-01-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-01-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Pedwell2023 ;
+    :schedule (
+        :reading:Pedwell2023
+    ) .
+
+:meeting:2024-02-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bergson2023IV ;
+    :schedule (
+        :reading:Bergson2023IV
+    ) .
+
+:meeting:2024-02-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hayles2024 ;
+    :schedule (
+        :reading:Hayles2024
+    ) .
+
+:meeting:2024-02-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Ingold2024 ;
+    :schedule (
+        :reading:Ingold2024
+    ) .
+
+:meeting:2024-02-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-02-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Marin2018 ;
+    :schedule (
+        :reading:Marin2018
+    ) .
+
+:meeting:2024-03-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Possati2023b ;
+    :schedule (
+        :reading:Possati2023b
+    ) .
+
+:meeting:2024-03-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Possati2023a ;
+    :schedule (
+        :reading:Possati2023a
+    ) .
+
+:meeting:2024-03-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-03-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker2023 ;
+    :schedule (
+        :reading:Becker2023
+    ) .
+
+:meeting:2024-03-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-03-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker2023 ;
+    :schedule (
+        :reading:Becker2023
+    ) .
+
+:meeting:2024-04-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-04-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Becker2023 ;
+    :schedule (
+        :reading:Becker2023
+    ) .
+
+:meeting:2024-04-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Jacobsen2024 ;
+    :schedule (
+        :reading:Jacobsen2024
+    ) .
+
+:meeting:2024-04-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-04-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-05-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-05-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:HindSeitz2024 ;
+    :schedule (
+        :reading:HindSeitz2024
+    ) .
+
+:meeting:2024-05-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-05-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Lury2024 ;
+    :schedule (
+        :reading:Lury2024
+    ) .
+
+:meeting:2024-05-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-05-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Liu2023 ;
+    :schedule (
+        :reading:Liu2023
+    ) .
+
+:meeting:2024-06-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-06-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Berlant2011 ;
+    :schedule (
+        :reading:Berlant2011
+    ) .
+
+:meeting:2024-06-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-06-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Berlant2011 ;
+    :schedule (
+        :reading:Berlant2011
+    ) .
+
+:meeting:2024-06-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-06-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Berlant2011 ;
+    :schedule (
+        :reading:Berlant2011
+    ) .
+
+:meeting:2024-07-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-07-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:FrankWilson2020 ;
+    :schedule (
+        :reading:FrankWilson2020
+    ) .
+
+:meeting:2024-07-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-07-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:FrankWilson2020 ;
+    :schedule (
+        :reading:FrankWilson2020
+    ) .
+
+:meeting:2024-08-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-08-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tomkins1963 ;
+    :schedule (
+        :reading:Tomkins1963
+    ) .
+
+:meeting:2024-08-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-08-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vogl2022 ;
+    :schedule (
+        :reading:Vogl2022
+    ) .
+
+:meeting:2024-09-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Vogl2022 ;
+    :schedule (
+        :reading:Vogl2022
+    ) .
+
+:meeting:2024-09-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:PrykeAllen2000 ;
+    :schedule (
+        :reading:PrykeAllen2000
+    ) .
+
+:meeting:2024-09-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Koopman2024 ;
+    :schedule (
+        :reading:Koopman2024
+    ) .
+
+:meeting:2024-09-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-09-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Valdivia2023 ;
+    :schedule (
+        :reading:Valdivia2023
+    ) .
+
+:meeting:2024-10-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Doganova2024 ;
+    :schedule (
+        :reading:Doganova2024
+    ) .
+
+:meeting:2024-10-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Doganova2024 ;
+    :schedule (
+        :reading:Doganova2024
+    ) .
+
+:meeting:2024-10-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-18T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Doganova2024 ;
+    :schedule (
+        :reading:Doganova2024
+    ) .
+
+:meeting:2024-10-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-10-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dobson2023 ;
+    :schedule (
+        :reading:Dobson2023
+    ) .
+
+:meeting:2024-11-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-11-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-08T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Trace2024 ;
+    :schedule (
+        :reading:Trace2024
+    ) .
+
+:meeting:2024-11-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Hui2023 ;
+    :schedule (
+        :reading:Hui2023
+    ) .
+
+:meeting:2024-11-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Voss2024 ;
+    :schedule (
+        :reading:Voss2024
+    ) .
+
+:meeting:2024-11-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-11-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "Thanksgiving holiday." ]
+    ) .
+
+:meeting:2024-12-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-12-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2024-12-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2024-12-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Voss2024 ;
+    :schedule (
+        :reading:Voss2024
+    ) .
+
+:meeting:2025-01-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Chen2024 ;
+    :schedule (
+        :reading:Chen2024
+    ) .
+
+:meeting:2025-01-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-17T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Offert2024 ;
+    :schedule (
+        :reading:Offert2024
+    ) .
+
+:meeting:2025-01-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-24T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OffertDhaliwal2024, :reading:Offert2017 ;
+    :schedule (
+        :reading:OffertDhaliwal2024
+        :reading:Offert2017
+    ) .
+
+:meeting:2025-01-31
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-01-31T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Dhaliwal2022 ;
+    :schedule (
+        :reading:Dhaliwal2022
+    ) .
+
+:meeting:2025-02-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-02-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sadowski2025 ;
+    :schedule (
+        :reading:Sadowski2025
+    ) .
+
+:meeting:2025-02-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-02-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Sadowski2025 ;
+    :schedule (
+        :reading:Sadowski2025
+    ) .
+
+:meeting:2025-02-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-02-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rotman2008 ;
+    :schedule (
+        :reading:Rotman2008
+    ) .
+
+:meeting:2025-03-07
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-07T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Rotman2008 ;
+    :schedule (
+        :reading:Rotman2008
+    ) .
+
+:meeting:2025-03-14
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-14T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BakHerrie2025 ;
+    :schedule (
+        :reading:BakHerrie2025
+    ) .
+
+:meeting:2025-03-21
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-21T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BakHerrie2025 ;
+    :schedule (
+        :reading:BakHerrie2025
+    ) .
+
+:meeting:2025-03-28
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-03-28T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Schwarz2025 ;
+    :schedule (
+        :reading:Schwarz2025
+    ) .
+
+:meeting:2025-04-04
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-04T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:ShahBender2024 ;
+    :schedule (
+        :reading:ShahBender2024
+    ) .
+
+:meeting:2025-04-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:SorensenBB2024 ;
+    :schedule (
+        :reading:SorensenBB2024
+    ) .
+
+:meeting:2025-04-18
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-04-18T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GuoS2020 ;
+    :schedule (
+        :reading:GuoS2020
+    ) .
+
+:meeting:2025-05-02
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-02T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GuoS2020 ;
+    :schedule (
+        :reading:GuoS2020
+    ) .
+
+:meeting:2025-05-09
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-09T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-16
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-16T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-23
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-23T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-05-30
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-05-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:OverwijkJ2025 ;
+    :schedule (
+        :reading:OverwijkJ2025
+    ) .
+
+:meeting:2025-06-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:KumarCLS2025 ;
+    :schedule (
+        :reading:KumarCLS2025
+    ) .
+
+:meeting:2025-06-13
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-13T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:DiazA2023 ;
+    :schedule (
+        :reading:DiazA2023
+    ) .
+
+:meeting:2025-06-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-20T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:HansenMBN2024 ;
+    :schedule (
+        :reading:HansenMBN2024
+    ) .
+
+:meeting:2025-06-27
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-06-27T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GrossR2025 ;
+    :schedule (
+        :reading:GrossR2025
+    ) .
+
+:meeting:2025-07-11
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-07-11T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "For today we will read in-progress work from Melanie." ]
+    ) .
+
+:meeting:2025-07-25
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-07-25T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-01T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-15
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-15T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-22
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-22T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-08-29
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-08-29T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-09-05
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-05T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:WeatherbyL2025 ;
+    :schedule (
+        :reading:WeatherbyL2025
+    ) .
+
+:meeting:2025-09-12
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-12T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GallowayA2025 ;
+    :schedule (
+        :reading:GallowayA2025
+    ) .
+
+:meeting:2025-09-19
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-19T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:BoysenB2018 ;
+    :schedule (
+        :reading:BoysenB2018
+    ) .
+
+:meeting:2025-09-26
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-09-26T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:GastaldiPellissier2021 ;
+    :schedule (
+        :reading:GastaldiPellissier2021
+    ) .
+
+:meeting:2025-10-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-10-03T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2025-10-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2025-10-10T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Gunkel2025 ;
+    :schedule (
+        :reading:Gunkel2025
+    ) .

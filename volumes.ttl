@@ -1,0 +1,434 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume:Adriaans2008
+    a bibo:EditedBook ;
+    dc:title "Handbook of the Philosophy of Science. Volume 8: Philosophy of Information" ;
+    dc:date "2008" ;
+    dc:publisher :publisher:Elsevier ;
+    bibo:editor :person:AdriaansP, :person:VanBenthemJ ;
+    bibo:editorList (
+        :person:AdriaansP
+        :person:VanBenthemJ
+    ) ;
+    owl:sameAs <https://doi.org/10.1016/C2009-0-16481-4> ;
+    bibo:doi "10.1016/C2009-0-16481-4" ;
+    bibo:isbn13 "978-0-444-51726-5" .
+
+:volume:Bailey1973
+  a bibo:Book ;
+  dc:title "New Ways of Analyzing Variation in English" ;
+  dc:date "1973" ;
+  dc:publisher :publisher:GUP ;
+  bibo:editor :person:BaileyCJ , :person:ShuyR ;
+  bibo:editorList (
+    :person:BaileyCJ
+    :person:ShuyR
+  ) ;
+  bibo:isbn10 "0878402055" .
+
+:volume:Becker1982
+    a bibo:Book ;
+    dc:title "Art Worlds" ;
+    dc:date "1982" ;
+    dc:publisher :publisher:UCalP ;
+    dc:creator :person:BeckerH ;
+    bibo:authorList (
+        :person:BeckerH
+    ) ;
+    bibo:isbn10 "0520043863" .
+
+:volume:Benardou2017
+    a bibo:EditedBook ;
+    dc:title "Cultural Heritage Infrastructures in Digital Humanities" ;
+    dc:date "2017" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:editor :person:BenardouA, :person:ChampionE, :person:DallasC, :person:HughesL ;
+    bibo:editorList (
+        :person:BenardouA
+        :person:ChampionE
+        :person:DallasC
+        :person:HughesL
+    ) ;
+    bibo:doi "10.4324/9781315575278" ;
+    bibo:isbn13 "978-1-317-15652-9" .
+
+:volume:Bergson2023
+    a bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781315537818> ;
+    dc:title "Creative Evolution" ;
+    dc:date "2023" ;
+    dc:publisher :publisher:Routledge ;
+    dc:creator :person:BergsonH ;
+    bibo:authorList (
+        :person:BergsonH
+    ) ;
+    bibo:translator :person:LandesD ;
+    bibo:doi "10.4324/9781315537818" ;
+    bibo:isbn13 "978-1-315-53781-8" .
+
+:volume:Bernard2018
+    a bibo:EditedBook ;
+    dc:title "Non-knowledge digital cultures" ;
+    dc:date "2018" ;
+    dc:publisher :publisher:meson ;
+    bibo:editor :person:BodenM, :person:KochM, :person:LeekerM ;
+    bibo:editorList (
+        :person:BodenM
+        :person:KochM
+        :person:LeekerM
+    ) .
+
+:volume:Bettinger2022
+    a bibo:EditedBook ;
+    owl:sameAs <http://doi.org/10.1007/978-3-030-84343-4> ;
+    dc:title "Educational perspectives on mediality and subjectivation" ;
+    bibo:editor :person:BettingerP ;
+    bibo:editorList (
+        :person:BettingerP
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:PalgraveP ;
+    bibo:doi "10.1007/978-3-030-84343-4" .
+
+:volume:Boden1996
+    a bibo:EditedBook ;
+    dc:title "The Philosophy of Artificial Life" ;
+    dc:date "1996" ;
+    dc:publisher :publisher:OUP ;
+    bibo:editor :person:BodenM ;
+    bibo:editorList (
+        :person:BodenM
+    ) .
+
+:volume:Bowers1991
+    a bibo:EditedBook ;
+    dc:title "Studies in computer supported cooperative work" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:NorthHollandPublishingCo ;
+    bibo:editor :person:BowersM, :person:BenfordS ;
+    bibo:editorList (
+        :person:BowersM
+        :person:BenfordS
+    ) .
+
+:volume:Bowker2015
+    a bibo:EditedBook ;
+    dc:date "2015" ;
+    dc:publisher :publisher:MIT ;
+    dc:title "Boundary objects and beyond: working with Leigh Star" ;
+    bibo:editor :person:BowkerG, :person:TimmermansS, :person:ClarkeA, :person:BalkaE ;
+    bibo:editorList (
+        :person:BowkerG
+        :person:TimmermansS
+        :person:ClarkeA
+        :person:BalkaE
+    ) ;
+    bibo:isbn13 "978-0-262-02974-2", "978-0-262-52808-5" .
+
+:volume:Brun2004
+    a bibo:EditedBook ;
+    dc:date "2004" ;
+    dc:title "When Music Resists Meaning: The Major Writings of Herbert Brün" ;
+    dc:publisher :publisher:WUP ;
+    bibo:editor :person:ChandraA ;
+    bibo:editorList (
+        :person:ChandraA
+    ) .
+
+:volume:Burnett2023
+    a bibo:EditedBook ;
+    owl:sameAs <https://doi.org/10.7312/burn21118> ;
+    dc:title "Scenes of Attention" ;
+    dc:date "2023" ;
+    dc:publisher :publisher:ColumbiaUP ;
+    bibo:editor :person:BurnettDG , :person:SmithJEH ;
+    bibo:editorList (
+        :person:BurnettDG
+        :person:SmithJEH
+    ) ;
+    bibo:isbn13 "9780231558785" ;
+    bibo:doi "10.7312/burn21118" .
+
+:volume:Carr2016
+    a bibo:EditedBook ;
+    owl:sameAs <https://doi.org/10.1525/luminos.15> ;
+    dc:title "Scale: Discourse and Dimensions of Social Life" ;
+    dc:date "2016" ;
+    dc:publisher :publisher:UCalP ;
+    bibo:editor :person:CarrES, :person:LempertM ;
+    bibo:editorList (
+        :person:CarrES
+        :person:LempertM
+    ) ;
+    bibo:isbn13 "978-0-520-96543-0" ;
+    bibo:doi "10.1525/luminos.15" .
+
+:volume:Carrier2011
+    a bibo:EditedBook ;
+    dc:title "Science in the context of application: Methodological change, conceptual transformation, cultural reorientation" ;
+    dc:date "2011" ;
+    dc:publisher :publisher:Springer ;
+    bibo:editor :person:CarrierM, :person:NordmannA ;
+    bibo:editorList (
+        :person:CarrierM
+        :person:NordmannA
+    ) ;
+    bibo:isbn13 "978-90-481-9050-8" .
+
+:volume:Clapin2002
+    a bibo:EditedBook ;
+    dc:date "2002" ;
+    dc:title "Philosophy of Mental Representation" ;
+    dc:publisher :publisher:OUP ;
+    bibo:editor :person:ClapinH ;
+    bibo:editorList (
+        :person:ClapinH
+    ) .
+
+:volume:Clarke2009
+    a bibo:EditedBook ;
+    owl:sameAs <https://doi.org/10.1215/9780822391388> ;
+    bibo:doi "10.1215/9780822391388" ;
+    bibo:isbn13 "978-0-8223-9138-8" ;
+    dc:date "2009" ;
+    dc:title "Emergence and Embodiment: New Essays on Second-Order Systems Theory" ;
+    dc:publisher :publisher:DUP ;
+    bibo:editor :person:ClarkeB, :person:HansenM ;
+    bibo:editorList (
+        :person:ClarkeB
+        :person:HansenM
+    ) .
+
+:volume:Escobar2018
+    a bibo:Book ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816> ;
+    dc:title "Designs for the Pluriverse: Radical Interdependence, Autonomy, and the Making of Worlds" ;
+    bibo:shortTitle "Designs for the Pluriverse" ;
+    dc:date "2018" ;
+    dc:publisher :publisher:DUP ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:volume:Garfinkel1986
+    a bibo:EditedBook ;
+    dc:title "Ethnomethodological studies of work" ;
+    bibo:editor :person:GarfinkelH ;
+    bibo:editorList (
+        :person:GarfinkelH
+    ) ;
+    dc:date "1986" ;
+    dc:publisher :publisher:Routledge .
+
+:volume:Gumperz1972
+    a bibo:EditedBook ;
+    dc:title "Directions in Sociolinguistics: The Ethnography of Communication" ;
+    dc:date "1972" ;
+    dc:publisher :publisher:HRW ;
+    bibo:editor :person:GumperzJ , :person:HymesD ;
+    bibo:editorList (
+        :person:GumperzJ
+        :person:HymesD
+    ) ;
+    bibo:isbn10 "0-03-077745-3" .
+
+:volume:Hildebrandt2011
+    a bibo:EditedBook ;
+    dc:title "Law, human agency and autonomic computing: the philosophy of law meets the philosophy of technology" ;
+    dc:date "2011" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:editor :person:HildebrandtM, :person:RouvroyA ;
+    bibo:editorList (
+        :person:HildebrandtM
+        :person:RouvroyA
+    ) ;
+    bibo:isbn13 "978-0-415-72015-1" .
+
+:volume:Hockenberry2021
+    a bibo:EditedBook ;
+    owl:sameAs <http://doi.org/10.1215/9781478013037> ;
+    dc:title "Assembly codes: The logistics of media" ;
+    bibo:shortTitle "Assembly codes" ;
+    bibo:editor :person:HockenberryM, :person:StarosielskiN, :person:ZiegerS ;
+    bibo:editorList (
+        :person:HockenberryM
+        :person:StarosielskiN
+        :person:ZiegerS
+    ) ;
+    dc:date "2021" ;
+    dc:publisher :publisher:DUP ;
+    bibo:doi "10.1215/9781478013037" .
+
+:volume:Hui2019
+    a bibo:Book ;
+    dc:title "Recursivity and Contingency" ;
+    dc:date "2019" ;
+    dc:publisher :publisher:RL ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) .
+
+:volume:Hui2024
+    a bibo:EditedBook ;
+    dc:title "Cybernetics for the 21st Century Vol. 1: Epistemological Reconstruction" ;
+    dc:date "2024" ;
+    dc:publisher :publisher:Hanart ;
+    bibo:editor :person:HuiY ;
+    bibo:editorList (
+        :person:HuiY
+    ) .
+
+:volume:Jun2011
+    a bibo:EditedBook ;
+    dc:title "Deleuze and Ethics" ;
+    dc:date "2011" ;
+    dc:publisher :publisher:EdinburghUP ;
+    bibo:editor :person:JunN, :person:SmithD ;
+    bibo:editorList (
+        :person:JunN
+        :person:SmithD
+    ) ;
+    bibo:isbn13 "9780748641178" ;
+    bibo:doi "10.3366/edinburgh/9780748641178.001.0001" .
+
+:volume:Kelly2016
+    a bibo:EditedBook ;
+    dc:title "Information Cultures in the Digital Age" ;
+    dc:date "2016" ;
+    dc:publisher :publisher:SpringerFW ;
+    bibo:editor :person:KellyM, :person:BielbyJ ;
+    bibo:editorList (
+        :person:KellyM
+        :person:BielbyJ
+    ) ;
+    bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
+
+:volume:Machlup1983
+    a bibo:EditedBook ;
+    dc:title "The study of information: Interdisciplinary messages" ;
+    bibo:shortTitle "The study of information" ;
+    dc:date "1983" ;
+    dc:publisher :publisher:Wiley ;
+    bibo:editor :person:MachlupF, :person:MansfieldU ;
+    bibo:editorList (
+        :person:MachlupF
+        :person:MansfieldU
+    ) .
+
+:volume:Mrazek2002
+    a bibo:Book ;
+    dc:title "Engineers of Happy Land: Technology and Nationalism in a Colony" ;
+    bibo:shortTitle "Engineers of Happy Land" ;
+    dc:date "2002" ;
+    dc:publisher :publisher:PUP ;
+    dc:creator :person:MrazekR ;
+    bibo:authorList (
+        :person:MrazekR
+    ) ;
+    bibo:isbn10 "0-691-09161-7", "0-691-09162-5" .
+
+:volume:Pickering2008
+    a bibo:EditedBook ;
+    dc:title "The Mangle in Practice: Science, Society, and Becoming" ;
+    bibo:shortTitle "The Mangle in Practice" ;
+    dc:date "2008" ;
+    dc:publisher :publisher:DUP ;
+    bibo:editor :person:PickeringA, :person:GuzikK ;
+    bibo:editorList (
+        :person:PickeringA
+        :person:GuzikK
+    ) .
+
+:volume:Ruyer2023
+    a bibo:Book ;
+    dc:title "Cybernetics and the Origin of Information" ;
+    dc:creator :person:RuyerR ;
+    bibo:authorList (
+        :person:RuyerR
+    ) ;
+    dc:date "2023" ;
+    dc:publisher :publisher:RowmanLittlefield .
+
+:volume:Star1995
+    a bibo:EditedBook ;
+    dc:title "Ecologies of Knowledge: Work and Politics in Science and Technology" ;
+    dc:date "1995" ;
+    dc:publisher :publisher:SUNY ;
+    bibo:editor :person:StarS ;
+    bibo:editorList (
+        :person:StarS
+    ) .
+
+:volume:VanDooren2022
+    a bibo:Book ;
+    owl:sameAs <https://doi.org/10.1215/9781478022664> ;
+    bibo:isbn13 "978-1-4780-2266-4" ;
+    dc:title "Kin: Thinking with Deborah Bird Rose" ;
+    dc:publisher :publisher:DUP ;
+    dc:date "2022" ;
+    bibo:editor :person:VanDoorenT, :person:ChrulewM ;
+    bibo:editorList (
+        :person:VanDoorenT
+        :person:ChrulewM
+    ) ;
+    bibo:doi "10.1215/9781478022664" .
+
+:volume:Vismann2008
+    # FIXME: No author/editor?
+    a bibo:Book ;
+    bibo:isbn13 "9780804751506" ;
+    dc:date "2008" ;
+    dc:title "Files: Law and Media Technology" ;
+    dc:publisher :publisher:SUP ;
+    bibo:translator :person:WinthropYoungG .
+
+:volume:VonFoerster1968
+    a bibo:EditedBook ;
+    dc:date "1968" ;
+    dc:title "Purposive Systems" ;
+    dc:publisher :publisher:Spartan ;
+    bibo:editor :person:VonFoersterH ;
+    bibo:editorList (
+        :person:VonFoersterH
+    ) .
+
+:volume:VonFoerster2002
+    a bibo:Book ;
+    bibo:isbn10 "0-306-46752-6" ;
+    dc:date "2002" ;
+    dc:title "Understanding Systems: Conversations on Epistemology and Ethics" ;
+    dc:publisher :publisher:Kluwer, :publisher:Plenum ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) .
+
+:volume:VonUexkull2010
+    a bibo:Book ;
+    bibo:isbn13 "978-0-8166-5900-5" ;
+    dc:date "2010" ;
+    dc:title "A forway into the worlds of Animals and Humans" ;
+    dc:publisher :publisher:UMP ;
+    dc:creator :person:VonUexkull ;
+    bibo:translator :person:ONeilJ ;
+    bibo:authorList (
+        :person:VonUexkull
+    ) .

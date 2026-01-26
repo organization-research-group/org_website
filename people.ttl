@@ -1,0 +1,3102 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:person:AbbateJ
+    a foaf:Person ;
+    owl:sameAs viaf:43545973, wd:Q20859597 ;
+    foaf:givenname "Janet" ;
+    foaf:surname "Abbate" ;
+    foaf:workInfoHomepage <https://liberalarts.vt.edu/departments-and-schools/department-of-science-technology-and-society/faculty/janet-abbate.html> .
+
+:person:AckerA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5332-0487 ;
+    foaf:givenname "Amelia" ;
+    foaf:surname "Acker" ;
+    foaf:homepage <http://www.ameliaacker.com/> .
+
+:person:AdamA
+    a foaf:Person ;
+    owl:sameAs viaf:14919903, wd:Q22087214 ;
+    foaf:givenname "Alison" ;
+    foaf:surname "Adam" ;
+    foaf:workInfoHomepage <https://www.shu.ac.uk/about-us/our-people/staff-profiles/alison-adam#content> .
+
+:person:AdriaansP
+    a foaf:Person ;
+    owl:sameAs wd:Q93239622, viaf:32918925 ;
+    foaf:givenname "Pieter" ;
+    foaf:surname "Adriaans" ;
+    foaf:homepage <https://www.pieter-adriaans.com> .
+
+:person:AgreP
+    a foaf:Person ;
+    owl:sameAs viaf:7529977, wd:Q7183485 ;
+    foaf:givenname "Philip E." ;
+    foaf:surname "Agre" ;
+    foaf:homepage <http://polaris.gseis.ucla.edu/pagre/> .
+
+:person:AlbertsG
+    a foaf:Person ;
+    foaf:givenname "Gerard" ;
+    foaf:surname "Alberts" ;
+    foaf:workInfoHomepage <http://www.uva.nl/en/profile/a/l/g.alberts/g.alberts.html> .
+
+:person:AlcoffL
+    a foaf:Person ;
+    owl:sameAs viaf:39539108, wd:Q6551801 ;
+    foaf:givenname "Linda Martín" ;
+    foaf:surname "Alcoff" ;
+    foaf:homepage <http://www.alcoff.com/> .
+
+:person:AllenJ
+    a foaf:Person ;
+    owl:sameAs viaf:109778465 ;
+    foaf:givenname "John" ;
+    foaf:surname "Allen" ;
+    foaf:workInfoHomepage <https://www.open.ac.uk/people/jra2> .
+
+:person:AmooreL
+    a foaf:Person ;
+    owl:sameAs viaf:73215314 ;
+    foaf:givenname "Louise" ;
+    foaf:surname "Amoore" ;
+    foaf:workInfoHomepage <https://www.dur.ac.uk/geography/staff/geogstaffhidden/?id=2710> .
+
+:person:AndersonP
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8408-3944 ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Anderson" ;
+    foaf:workInfoHomepage <http://marinebiology.cofc.edu/about-the-program/faculty-listing/anderson-paul.php> .
+
+:person:AngusI
+    a foaf:Person ;
+    owl:sameAs viaf:110306620, wd:Q16142490 ;
+    foaf:givenname "Ian" ;
+    foaf:surname "Angus" ;
+    foaf:workInfoHomepage <https://sfu.academia.edu/IanAngus> .
+
+:person:AnkenyR
+    a foaf:Person ;
+    owl:sameAs viaf:75683838, wd:Q58450101, orcid:0000-0002-1547-6031 ;
+    foaf:givenname "Rachel" ;
+    foaf:surname "Ankeny" ;
+    foaf:workInfoHomepage <https://www.adelaide.edu.au/directory/rachel.ankeny> .
+
+:person:ArawjoI
+    a foaf:Person ;
+    foaf:givenname "Ian" ;
+    foaf:surname "Arawjo" ;
+    foaf:homepage <http://ianarawjo.com/> .
+
+:person:ArthurP
+    a foaf:Person ;
+    owl:sameAs viaf:29684467 ;
+    foaf:givenname "Paul Longley" ;
+    foaf:surname "Arthur" ;
+    foaf:homepage <http://www.paularthur.com/> .
+
+:person:BaezJ
+    a foaf:Person ;
+    foaf:givenname "Jillian" ;
+    foaf:surname "Báez" ;
+    foaf:homepage <https://csivc.csi.cuny.edu/mediaculture/files/faculty/baez.html> .
+
+:person:BaileyCJ
+  a foaf:Person ;
+  owl:sameAs viaf:54169058 ;
+  foaf:givenname "Charles-James" ;
+  foaf:surname "Bailey" .
+
+:person:BakHerrieM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4412-9896 ;
+    foaf:givenname "Maja" ;
+    foaf:surname "Bak Herrie" ;
+    foaf:homepage <https://pure.au.dk/portal/en/persons/mbh@cc.au.dk> .
+
+:person:BalagueC
+  a foaf:Person ;
+  owl:sameAs wd:Q118372562 , viaf:257127801 ;
+  foaf:givenname "Christine" ;
+  foaf:surname "Balagué" ;
+  foaf:workInfoHomepage <https://objetsconnectes.wp.imt.fr/en/equipe/christine-balague/> .
+
+:person:BalkaE
+    a foaf:Person ;
+    owl:sameAs viaf:102712044 ;
+    foaf:givenname "Ellen" ;
+    foaf:surname "Balka" ;
+    foaf:homepage <http://www.sfu.ca/~ellenb/> .
+
+:person:BaradK
+    a foaf:Person ;
+    owl:sameAs viaf:18822822, wd:Q443431 ;
+    foaf:givenname "Karen" ;
+    foaf:surname "Barad" ;
+    foaf:homepage <https://people.ucsc.edu/~kbarad/> .
+
+:person:BarkerT
+    a foaf:Person ;
+    owl:sameAs viaf:233151759, orcid:0000-0003-0382-8025 ;
+    foaf:givenname "Timothy" ;
+    foaf:surname "Barker" ;
+    foaf:workInfoHomepage <https://www.gla.ac.uk/schools/cca/staff/timothybarker/> .
+
+:person:BatesM
+    a foaf:Person ;
+    owl:sameAs viaf:94420353 , wd:Q6757112 ;
+    foaf:givenname "Marcia" ;
+    foaf:surname "Bates" ;
+    foaf:homepage <https://pages.gseis.ucla.edu/faculty/bates/> .
+
+:person:BatsonJ
+    a foaf:Person ;
+    foaf:givenname "Joshua" ;
+    foaf:surname "Batson" ;
+    foaf:homepage <https://www.linkedin.com/in/joshua-batson-63ab9a82> .
+
+:person:BawdenD
+    a foaf:Person ;
+    owl:sameAs viaf:2620117 ;
+    foaf:givenname "David" ;
+    foaf:surname "Bawden" ;
+    foaf:workInfoHomepage <https://www.city.ac.uk/people/academics/david-bawden> .
+
+:person:BeckerC
+    a foaf:Person ;
+    foaf:givenname "Christoph" ;
+    foaf:surname "Becker" ;
+    foaf:homepage <https://www.christoph-becker.info> .
+
+:person:BeckerH
+    a foaf:Person ;
+    owl:sameAs viaf:34466274 , wd:Q718736 ;
+    foaf:givenname "Howard S" ;
+    foaf:surname "Becker" ;
+    foaf:homepage <https://howardsbecker.com> .
+
+:person:BehrenshausenB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8346-6567 ;
+    foaf:givenname "Bryan" ;
+    foaf:surname "Behrenshausen" ;
+    foaf:homepage <http://www.semioticrobotic.net/> .
+
+:person:BenardouA
+    a foaf:Person ;
+    owl:sameAs viaf:98150468302804171513 ;
+    foaf:givenname "Agiatis" ;
+    foaf:surname "Benardou" ;
+    foaf:workInfoHomepage <http://www.dcu.gr/en/%ce%b1%ce%b3%ce%b9%ce%ac%cf%84%ce%b9%cf%82-%ce%bc%cf%80%ce%b5%ce%bd%ce%ac%cf%81%ce%b4%ce%bf%cf%85/> .
+
+:person:BendellJ
+    a foaf:Person ;
+    owl:sameAs viaf:46930616 ;
+    foaf:givenname "Jem" ;
+    foaf:surname "Bendell" ;
+    foaf:homepage <https://jembendell.com> ;
+    foaf:workInfoHomepage <https://www.cumbria.ac.uk/study/academic-staff/all-staff-members/iflas/professor-jem-bendell.php> .
+
+:person:BenderE
+    a foaf:Person ;
+    owl:sameAs viaf:16600136, wd:Q33122366 ;
+    foaf:givenname "Emily M." ;
+    foaf:surname "Bender" ;
+    foaf:workInfoHomepage <https://faculty.washington.edu/ebender/> .
+
+:person:BenderEM
+    a foaf:Person ;
+    foaf:givenname "Emily M." ;
+    foaf:surname "Bender" ;
+    foaf:homepage <https://faculty.washington.edu/ebender/> .
+
+:person:BenfordS
+    a foaf:Person ;
+    owl:sameAs viaf:21245837 ;
+    foaf:givenname "Steven D." ;
+    foaf:surname "Benford" ;
+    foaf:homepage <https://stevebenford.wordpress.com/> ;
+    foaf:workInfoHomepage <https://www.nottingham.ac.uk/computerscience/people/steve.benford> .
+
+:person:BergmanM
+    a foaf:Person ;
+    owl:sameAs viaf:45662184, orcid:0000-0003-3697-2752 ;
+    foaf:givenname "Michael K." ;
+    foaf:surname "Bergman" ;
+    foaf:homepage <https://www.mkbergman.com/> .
+
+:person:BergsonH
+    a foaf:Person ;
+    owl:sameAs viaf:61541730 , wd:Q42156 ;
+    foaf:givenname "Henri" ;
+    foaf:surname "Bergson" ;
+    foaf:page <https://plato.stanford.edu/entries/bergson/> .
+
+:person:BerlantL
+    a foaf:Person ;
+    owl:sameAs wd:Q12237573 ;
+    foaf:givenname "Lauren" ;
+    foaf:surname "Berlant" ;
+    foaf:page <https://en.wikipedia.org/wiki/Lauren_Berlant> .
+
+:person:BernardA
+    a foaf:Person ;
+    owl:sameAs viaf:37140871, wd:Q26234680 ;
+    foaf:givenname "Andreas" ;
+    foaf:surname "Bernard" ;
+    foaf:workInfoHomepage <https://www.leuphana.de/en/institutes/icam/team/andreas-bernard.html> .
+
+:person:BernsteinM
+    a foaf:Person ;
+    # I think this viaf ID is right?
+    owl:sameAs viaf:212157024 ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Bernstein" ;
+    foaf:homepage <http://www.markbernstein.org/> .
+
+:person:BessingerJB
+    a foaf:Person ;
+    owl:sameAs viaf:64132806 ;
+    foaf:givenname "Jess B." ;
+    foaf:surname "Bessinger" .
+
+:person:BestS
+    a foaf:Person ;
+    owl:sameAs viaf:286613059 ;
+    foaf:givenname "Stephen" ;
+    foaf:surname "Best" ;
+    foaf:homepage <https://english.berkeley.edu/users/15> .
+
+:person:BettingerP
+    a foaf:Person ;
+    owl:sameAs viaf:260976162, orcid:0000-0001-7389-1412 ;
+    foaf:givenname "Patrick" ;
+    foaf:surname "Bettinger" ;
+    foaf:homepage <http://www.patrick-bettinger.de/> .
+
+:person:BielbyJ
+    a foaf:Person ;
+    owl:sameAs viaf:218147118097526340176 ;
+    foaf:givenname "Jared" ;
+    foaf:surname "Bielby" ;
+    foaf:homepage <https://www.jaredbielby.com/> .
+
+:person:BishopR
+    a foaf:Person ;
+    owl:sameAs viaf:261594317, wd:Q112543367, orcid:0000-0003-0164-3457 ;
+    foaf:givenname "Ryan" ;
+    foaf:surname "Bishop" ;
+    foaf:workInfoHomepage <https://www.southampton.ac.uk/people/5x8ffs/professor-ryan-bishop> .
+
+:person:BlackS
+    a foaf:Person ;
+    foaf:givenname "Suzanne" ;
+    foaf:surname "Black" .
+
+:person:BlairA
+    a foaf:Person ;
+    owl:sameAs wd:Q4766521, viaf:61677205 ;
+    foaf:givenname "Ann" ;
+    foaf:surname "Blair" ;
+    foaf:homepage <https://projects.iq.harvard.edu/ablair> .
+
+:person:BodeK
+    a foaf:Person ;
+    owl:sameAs viaf:91155370, orcid:0000-0003-3561-9332 ;
+    foaf:givenname "Katherine" ;
+    foaf:surname "Bode" ;
+    foaf:homepage <http://katherinebode.wordpress.com/> .
+
+:person:BodenM
+    a foaf:Person ;
+    owl:sameAs wd:Q6759197, viaf:85307202 ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Boden" ;
+    foaf:homepage <http://users.sussex.ac.uk/~maggieb/> .
+
+:person:BogenD
+    a foaf:Person ;
+    foaf:givenname "David" ;
+    foaf:surname "Bogen" ;
+    foaf:homepage <https://www.mica.edu/About_MICA/People/Administration/David_Bogen.html> .
+
+:person:BolandR
+    a foaf:Person ;
+    owl:sameAs viaf:34597719 ;
+    foaf:givenname "Richard J." ;
+    foaf:surname "Boland" ;
+    bibo:suffixName "Jr." ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/richard-boland-jr> .
+
+:person:BolterJ
+    a foaf:Person ;
+    owl:sameAs viaf:94367912, wd:Q93037 ;
+    foaf:givenname "Jay David" ;
+    foaf:surname "Bolter" ;
+    foaf:homepage <http://www.jdbolter.net/> .
+
+:person:BoullierD
+    a foaf:Person ;
+    owl:sameAs wd:Q3035013, viaf:27061533 ;
+    foaf:givenname "Dominique" ;
+    foaf:surname "Boullier" ;
+    foaf:homepage <https://sites.google.com/site/dominiqueboullier/home> .
+
+:person:BounegruL
+    a foaf:Person ;
+    owl:sameAs viaf:250684192, wd:Q96053548, orcid:0000-0003-0198-5158 ;
+    foaf:givenname "Liliana" ;
+    foaf:surname "Bounegru" ;
+    foaf:homepage <https://lilianabounegru.org/> .
+
+:person:BowersM
+    a foaf:Person ;
+    owl:sameAs viaf:164544053 ;
+    foaf:givenname "John M." ;
+    foaf:surname "Bowers" ;
+    foaf:homepage <http://www.jmbowers.net/> ;
+    foaf:workInfoHomepage <http://www.ncl.ac.uk/sacs/staff/profile/johnbowers.html> .
+
+:person:BowkerG
+    a foaf:Person ;
+    owl:sameAs viaf:59236925, wd:Q3101066 ;
+    foaf:givenname "Geoffrey C." ;
+    foaf:surname "Bowker" ;
+    foaf:homepage <http://www.ics.uci.edu/~gbowker/> .
+
+:person:BoysenB
+    a foaf:Person ;
+    foaf:givenname "Benjamin" ;
+    foaf:surname "Boysen" ;
+    foaf:homepage <https://independent.academia.edu/BenjaminBoysen> .
+
+:person:BrattonB
+    a foaf:Person ;
+    owl:sameAs viaf:315175159, wd:Q4888739 ;
+    foaf:givenname "Benjamin H." ;
+    foaf:surname "Bratton" ;
+    foaf:homepage <http://www.bratton.info/> .
+
+:person:BratusS
+    a foaf:Person ;
+    owl:sameAs viaf:306149617058503751950 ;
+    foaf:givenname "Sergey" ;
+    foaf:surname "Bratus" ;
+    foaf:homepage <http://www.cs.dartmouth.edu/~sergey/> .
+
+:person:BrickenT
+    a foaf:Person ;
+    foaf:givenname "Trenton" ;
+    foaf:surname "Bricken" ;
+    foaf:homepage <https://www.trentonbricken.com> .
+
+:person:BrockA
+    a foaf:Person ;
+    owl:sameAs viaf:28156130948358311545, wd:, orcid:0000-0001-6084-9995 ;
+    foaf:givenname "André" ;
+    foaf:surname "Brock" ;
+    foaf:workInfoHomepage <https://iac.gatech.edu/people/person/andre-brock> ;
+    foaf:page <https://andrebrock.academia.edu/> .
+
+:person:BrowerV
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5316-3565, viaf:44160362609763500146 ;
+    foaf:givenname "Virgil W." ;
+    foaf:surname "Virgil" ;
+    foaf:page <https://philpeople.org/profiles/virgil-w-brower> .
+
+:person:BrunH
+    a foaf:Person ;
+    owl:sameAs wd:Q105715, viaf:39503397 ;
+    foaf:givenname "Herbert" ;
+    foaf:surname "Brün" ;
+    foaf:page
+        <https://en.wikipedia.org/wiki/Herbert_Brün> ,
+        <https://www.discogs.com/artist/207396-Herbert-Brün> .
+
+:person:BucherT
+    a foaf:Person ;
+    owl:sameAs viaf:240149196476274791574 ;
+    foaf:givenname "Taina" ;
+    foaf:surname "Bucher" ;
+    foaf:homepage <http://tainabucher.com/> .
+
+:person:BunemanP
+    a foaf:Person ;
+    owl:sameAs viaf:110045336, wd:Q7173055 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Buneman" ;
+    foaf:homepage <http://homepages.inf.ed.ac.uk/opb/> .
+
+:person:BurnettDG
+    a foaf:Person ;
+    owl:sameAs wd:Q16201486 ;
+    foaf:givenname "D. Graham" ;
+    foaf:surname "Burnett" ;
+    foaf:homepage <https://dgrahamburnett.net> .
+
+:person:ButtonG
+    a foaf:Person ;
+    owl:sameAs viaf:41901360 ;
+    foaf:givenname "Graham" ;
+    foaf:surname "Button" .
+
+:person:CaiQ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5570-5919 ;
+    foaf:givenname "Qiaoyu" ;
+    foaf:surname "Cai" ;
+    foaf:homepage <https://caiqiaoyu.wordpress.com> .
+
+:person:CalzatiS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-4590-6709, viaf:11155409687108742002 ;
+    foaf:givenname "Stefano" ;
+    foaf:surname "Calzati" ;
+    foaf:workInfoHomepage <https://www.etis.ee/CV/Stefano_Calzati/eng> .
+
+:person:CanguilhemG
+    a foaf:Person ;
+    owl:sameAs viaf:41837558, wd:Q433741 ;
+    foaf:givenname "Georges" ;
+    foaf:surname "Canguilhem" .
+
+:person:CantwellSmithB
+    a foaf:Person ;
+    owl:sameAs viaf:61709255, wd:Q4963278 ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Cantwell Smith" .
+
+:person:CardonD
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3892-9611 , viaf:122350486 , wd:Q15131143 ;
+    foaf:givenname "Dominique" ;
+    foaf:surname "Cardon" ;
+    foaf:workInfoHomepage <https://medialab.sciencespo.fr/en/people/dominique-cardon/> .
+
+:person:CarlinA
+    a foaf:Person ;
+    owl:sameAs viaf:758159234797003372836, wd:Q59827449, orcid:0000-0001-5138-9384 ;
+    foaf:givenname "Andrew P." ;
+    foaf:surname "Carlin" ;
+    foaf:page <https://scholar.google.com/citations?user=TXowshwAAAAJ> .
+
+:person:CarrES
+    a foaf:Person ;
+    owl:sameAs viaf:120449357 ;
+    foaf:givenname "E. Summerson" ;
+    foaf:surname "Carr" ;
+    foaf:workInfoHomepage <https://anthropology.uchicago.edu/content/e-summerson-carr> .
+
+:person:CarrierM
+    a foaf:Person ;
+    owl:sameAs viaf:266650531, wd:Q1543817 ;
+    foaf:givenname "Martin" ;
+    foaf:surname "Carrier" ;
+    foaf:homepage <https://www.uni-bielefeld.de/philosophie/personen/carrier/> .
+
+:person:ChampionE
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5362-6176, viaf:169588369 ;
+    foaf:givenname "Erik" ;
+    foaf:surname "Champion" ;
+    foaf:homepage <https://erikchampion.wordpress.com/> .
+
+:person:ChandraA
+    a foaf:Person ;
+    owl:sameAs viaf:72474544 ;
+    foaf:givenname "Arun" ;
+    foaf:surname "Chandra" ;
+    foaf:homepage <https://sites.evergreen.edu/arunchandra/> .
+
+:person:ChartierT
+    a foaf:Person ;
+    foaf:givenname "Tim" ;
+    foaf:surname "Chartier" ;
+    foaf:homepage <https://www.davidson.edu/people/tim-chartier> .
+
+:person:ChenB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Chen" ;
+    foaf:homepage <https://beta.vero.site> .
+
+:person:ChenN
+    a foaf:Person ;
+    foaf:givenname "Nuo" ;
+    foaf:surname "Chen" ;
+    owl:sameAs orcid:0000-0001-8600-8203 ;
+    foaf:homepage <https://nuochenpku.github.io> .
+
+:person:CheneyJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-1307-9286 ;
+    foaf:givenname "James" ;
+    foaf:surname "Cheney" ;
+    foaf:homepage <https://homepages.inf.ed.ac.uk/jcheney/> .
+
+:person:ChrulewM
+    a foaf:Person ;
+    owl:sameAs viaf:315720085 ;
+    foaf:givenname "Matthew" ;
+    foaf:surname "Chrulew" ;
+    foaf:workInfoHomepage <https://staffportal.curtin.edu.au/staff/profile/view/matthew-chrulew-7e9e90a9/> .
+
+:person:ChunW
+    a foaf:Person ;
+    owl:sameAs wd:Q23883713 ;
+    foaf:givenname "Wendy Hui Kyong" ;
+    foaf:surname "Chun" ;
+    foaf:homepage <http://www.brown.edu/Departments/MCM/people/chun/> .
+
+:person:CiborraC
+    a foaf:Person ;
+    owl:sameAs viaf:41910748, wd:Q5129344 ;
+    foaf:givenname "Claudio" ;
+    foaf:surname "Ciborra" ;
+    foaf:homepage <https://web.archive.org/web/20050301000649/http://personal.lse.ac.uk:80/ciborrac/> .
+
+:person:ClapinH
+    a foaf:Person ;
+    owl:sameAs viaf:10064544 ;
+    foaf:givenname "Hugh" ;
+    foaf:surname "Clapin" .
+
+:person:ClarkA
+    a foaf:Person ;
+    owl:sameAs viaf:34595527, wd:Q4760523 ;
+    foaf:givenname "Andy" ;
+    foaf:surname "Clark" ;
+    foaf:workInfoHomepage <http://www.ed.ac.uk/profile/andy-clark> .
+
+:person:ClarkeA
+    a foaf:Person ;
+    owl:sameAs viaf:56711028 ;
+    foaf:givenname "Adele E." ;
+    foaf:surname "Clarke" ;
+    foaf:workInfoHomepage <http://profiles.ucsf.edu/adele.clarke> .
+
+:person:ClarkeB
+    a foaf:Person ;
+    owl:sameAs viaf:113421281 ;
+    foaf:givenname "Bruce" ;
+    foaf:surname "Clarke" ;
+    foaf:workInfoHomepage <http://www.depts.ttu.edu/english/general_info/directory/faculty_directory/faculty_profile_pages/clarke_detailed.php> ;
+    foaf:homepage <http://www.faculty.english.ttu.edu/clarke/> .
+
+:person:ClelandC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8703-7580 ;
+    foaf:givenname "Carol E." ;
+    foaf:surname "Cleland" ;
+    foaf:homepage <https://sites.google.com/site/clelandce/> .
+
+:person:CliffL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2803-4512, viaf:63035107, wd:Q13515697 ;
+    foaf:givenname "Clifford" ;
+    foaf:surname "Lynch" ;
+    foaf:workInfoHomepage <http://people.ischool.berkeley.edu/~clifford/> .
+
+:person:CluneJ
+    a foaf:Person ;
+    foaf:givenname "Jeff" ;
+    foaf:surname "Clune" ;
+    foaf:homepage <http://jeffclune.com> .
+
+:person:CollierJ
+    a foaf:Person ;
+    foaf:givenname "John" ;
+    foaf:surname "Collier" ;
+    foaf:homepage <https://www.researchgate.net/profile/John_Collier4> .
+
+:person:ComberR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3127-1917 ;
+    foaf:givenname "Rob" ;
+    foaf:surname "Comber" ;
+    foaf:homepage <http://robcomber.co.uk/> ;
+    foaf:workInfoHomepage <https://openlab.ncl.ac.uk/people/nrc42/> .
+
+:person:CopeD
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2471-772X ;
+    foaf:givenname "Dominique" ;
+    foaf:surname "Cope" .
+
+:person:CopeJ
+    a foaf:Person ;
+    foaf:givenname "Jonathan" ;
+    foaf:surname "Cope" ;
+    foaf:homepage <https://jonathancope.commons.gc.cuny.edu/> .
+
+:person:CorominaO
+    a foaf:Person ;
+    foaf:givenname "Òscar" ;
+    foaf:surname "Coromina" ;
+    foaf:homepage <http://www.oscarcoromina.com> .
+
+:person:CouldryN
+    a foaf:Person ;
+    owl:sameAs viaf:117153249, wd:Q62559683 ;
+    foaf:givenname "Nick" ;
+    foaf:surname "Couldry" ;
+    foaf:homepage <http://www.nickcouldry.org/> .
+
+:person:CrooksR
+    a foaf:Person ;
+    owl:sameAs wd:Q53505750, orcid:0000-0001-7514-7021 ;
+    foaf:givenname "Roderic" ;
+    foaf:surname "Crooks" ;
+    foaf:homepage <https://www.rncrooks.info/> .
+
+:person:CunninghamN
+    a foaf:Person ;
+    foaf:givenname "Nathan" ;
+    foaf:surname "Cunningham" .
+
+:person:CurrieM
+    a foaf:Person ;
+    owl:sameAs viaf:671164782071908600003 ;
+    foaf:givenname "Morgan" ;
+    foaf:surname "Currie" ;
+    foaf:homepage <https://www.morgancurrie.com/> .
+
+:person:CurtisB
+    a foaf:Person ;
+    owl:sameAs wd:Q16120588 ;
+    foaf:givenname "Bill" ;
+    foaf:surname "Curtis" ;
+    foaf:workInfoHomepage <http://it-cisq.org/bill-curtis-biography/> .
+
+:person:DIgnazio
+    a foaf:Person ;
+    owl:sameAs viaf:19151049887933411569, wd:Q96083446 ;
+    foaf:givenname "Catherine" ;
+    foaf:surname "D'Ignazio" ;
+    foaf:homepage <http://www.kanarinka.com/> .
+
+:person:DadeRobertsonM
+    a foaf:Person ;
+    owl:sameAs viaf:130429885 ;
+    foaf:givenname "Martyn" ;
+    foaf:surname "Dade-Robertson" ;
+    foaf:workInfoHomepage <http://www.ncl.ac.uk/apl/staff/profile/martyndade-robertson.html> .
+
+:person:DallasC
+    a foaf:Person ;
+    owl:sameAs viaf:90150468275804171538 ;
+    foaf:givenname "Costis" ;
+    foaf:surname "Dallas" ;
+    foaf:workInfoHomepage <https://ischool.utoronto.ca/profile/costis-dallas/> .
+
+:person:DamerowP
+    a foaf:Person ;
+    owl:sameAs viaf:266607140, wd:Q2074459 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Damerow" ;
+    foaf:workInfoHomepage <https://www.mpg.de/4987615/Infobox__Peter_Damerow> .
+
+:person:DanderV
+    a foaf:Person ;
+    owl:sameAs viaf:311187118, orcid:0000-0001-9978-8405 ;
+    foaf:givenname "Valentin" ;
+    foaf:surname "Dander" ;
+    foaf:workInfoHomepage <https://www.fhchp.de/personen/prof-dr-valentin-dander/> .
+
+:person:DastonL
+    a foaf:Person ;
+    owl:sameAs viaf:266876859, wd:Q529094 ;
+    foaf:givenname "Lorraine" ;
+    foaf:surname "Daston" ;
+    foaf:workInfoHomepage <https://www.mpiwg-berlin.mpg.de/en/users/ldaston> .
+
+:person:DayR
+    a foaf:Person ;
+    owl:sameAs viaf:71647760, wd:Q24196086 ;
+    foaf:givenname "Ronald E" ;
+    foaf:surname "Day" ;
+    foaf:homepage <http://info.slis.indiana.edu/~roday/> .
+
+:person:DayS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9822-9094 , wd:Q58186532 , viaf:34783044 ;
+    foaf:givenname "Sophie" ;
+    foaf:surname "Day" ;
+    foaf:workInfoHomepage <https://www.gold.ac.uk/anthropology/staff/s-day/> .
+
+:person:DeGroatG
+    a foaf:Person ;
+    owl:sameAs viaf:, wd:, orcid:0000-0003-1904-0558 ;
+    foaf:givenname "Greta" ;
+    foaf:surname "de Groat" ;
+    foaf:workInfoHomepage <https://profiles.stanford.edu/greta-de-groat> ;
+    foaf:homepage <https://web.stanford.edu/~gdegroat/> .
+
+:person:DeJaegherH
+    a foaf:Person ;
+    foaf:givenname "Hanne" ;
+    foaf:surname "De Jaegher" ;
+    foaf:homepage <https://hannedejaegher.net> .
+
+:person:DeMarcoM
+    a foaf:Person ;
+    owl:sameAs viaf:172774101 ;
+    foaf:givenname "Marco" ;
+    foaf:surname "De Marco" ;
+    foaf:workInfoHomepage <https://www.uni.li/en/who-s-who/@@person_detail/22831.67> .
+
+:person:DeMolL
+    a foaf:Person ;
+    owl:sameAs viaf:49155564101713002485, orcid:0000-0001-8520-2493 ;
+    foaf:givenname "Liesbeth" ;
+    foaf:surname "De Mol" ;
+    foaf:workInfoHomepage <https://pro.univ-lille.fr/liesbeth-de-mol> ;
+    foaf:page <https://dblp.org/pid/02/3353.html> .
+
+:person:DennettD
+    a foaf:Person ;
+    owl:sameAs viaf:99825560, wd:Q215263 ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Dennett" ;
+    foaf:workInfoHomepage <http://ase.tufts.edu/cogstud/dennett/> .
+
+:person:DewK
+    a foaf:Person ;
+    foaf:givenname "Kristin N." ;
+    foaf:surname "Dew" ;
+    foaf:homepage <https://kristindew.com/> .
+
+:person:DhaliwalRS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9826-0614 ;
+    foaf:givenname "Ranjodh Singh" ;
+    foaf:surname "Dhaliwal" ;
+    foaf:homepage <https://ranjodhdhaliwal.com> .
+
+:person:DiazA
+    a foaf:Person ;
+    foaf:givenname "Alan" ;
+    foaf:surname "Díaz Alva" ;
+    foaf:homepage <https://leuphana.academia.edu/AlanDiaz> .
+
+:person:DobsonJ
+    a foaf:Person ;
+    owl:sameAs viaf:187144782706114501587 ;
+    foaf:givenname "James" ;
+    foaf:surname "Dobson" ;
+    foaf:homepage <https://jeddobson.github.io> .
+
+:person:DoganovaL
+    a foaf:Person ;
+    owl:sameAs viaf:213368336 , wd:Q127206269 ;
+    foaf:givenname "Liliana" ;
+    foaf:surname "Doganova" ;
+    foaf:workInfoHomepage <https://www.csi.minesparis.psl.eu/en/people/researchers/liliana-doganova/> .
+
+:person:DongX
+    owl:sameAs orcid:0000-0002-4788-9279 ;
+    foaf:givenname "Xiaoyu" ;
+    foaf:surname "Dong" ;
+    a foaf:Person .
+
+:person:DorkM
+    a foaf:Person ;
+    foaf:givenname "Marian" ;
+    foaf:surname "Dörk" ;
+    foaf:homepage <http://mariandoerk.de/> ;
+    foaf:workInfoHomepage <https://uclab.fh-potsdam.de/people/marian-doerk/> .
+
+:person:DragosB
+    a foaf:Person ;
+    foaf:givenname "Bogdan" ;
+    foaf:surname "Dragos" .
+
+:person:DreyfusH
+    a foaf:Person ;
+    owl:sameAs viaf:29544900, wd:Q971585 ;
+    foaf:givenname "Hubert L." ;
+    foaf:surname "Dreyfus" ;
+    foaf:homepage <http://socrates.berkeley.edu/~hdreyfus/> .
+
+:person:DrouhardM
+    a foaf:Person ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Drouhard" ;
+    foaf:homepage <https://students.washington.edu/mdrouhar/> .
+
+:person:EbelingM
+    a foaf:Person ;
+    owl:sameAs viaf:185148389412210711367, orcid:0000-0003-4208-7098 ;
+    foaf:givenname "Mary F. E." ;
+    foaf:surname "Ebeling" ;
+    foaf:homepage <https://maryebeling.net> .
+
+:person:EdwardsP
+    a foaf:Person ;
+    owl:sameAs viaf:44518799 ;
+    foaf:givenname "Paul N." ;
+    foaf:surname "Edwards" ;
+    foaf:homepage <http://pne.people.si.umich.edu/> .
+
+:person:EmersonL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7085-2370, viaf:12016619 ;
+    foaf:givenname "Lori" ;
+    foaf:surname "Emerson" ;
+    foaf:homepage <https://loriemerson.net/> .
+
+:person:ErnstW
+    a foaf:Person ;
+    owl:sameAs viaf:61524922, wd:Q126003 ;
+    foaf:givenname "Wolgang" ;
+    foaf:surname "Ernst" ;
+    foaf:workInfoHomepage <https://www.musikundmedien.hu-berlin.de/de/medienwissenschaft/medientheorien/prof.-dr.-wolfgang-ernst> ;
+    foaf:page <https://monoskop.org/Wolfgang_Ernst> .
+
+:person:EscobarA
+    a foaf:Person ;
+    owl:sameAs wd:Q4801729, viaf:34576079 ;
+    foaf:givenname "Arturo" ;
+    foaf:surname "Escobar" ;
+    foaf:homepage <https://web.archive.org/web/20140529035041/http://aescobar.web.unc.edu/> .
+
+:person:EvansS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5218-2190 ;
+    foaf:givenname "Sandra K." ;
+    foaf:surname "Evans" ;
+    foaf:homepage <https://sandrakevans.com/> .
+
+:person:FairthorneR
+    a foaf:Person ;
+    owl:sameAs viaf:274768820 ;
+    foaf:givenname "Robert A." ;
+    foaf:surname "Fairthorne" .
+
+:person:FarstadvollS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-6162-2063 ;
+    foaf:givenname "Stein" ;
+    foaf:surname "Farstadvoll" ;
+    foaf:homepage <https://www.researchgate.net/profile/Stein_Farstadvoll> .
+
+:person:FaziMB
+    a foaf:Person ;
+    owl:sameAs viaf:15154257983624152758 ;
+    foaf:givenname "M. Beatrice" ;
+    foaf:surname "Fazi" ;
+    foaf:workInfoHomepage <http://www.sussex.ac.uk/profiles/378975> .
+
+:person:FeenbergA
+    a foaf:Person ;
+    owl:sameAs viaf:8513718, wd:Q2846598 ;
+    foaf:givenname "Andrew" ;
+    foaf:surname "Feenberg" ;
+    foaf:homepage <https://www.sfu.ca/~andrewf/> .
+
+:person:FeinbergM
+    a foaf:Person ;
+    owl:sameAs viaf:88462492 ;
+    foaf:givenname "Melanie" ;
+    foaf:surname "Feinberg" ;
+    foaf:homepage <https://ils.unc.edu/~mfeinber/> .
+
+:person:FidlerB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2882-5915 ;
+    foaf:givenname "Bradley" ;
+    foaf:surname "Fidler" ;
+    foaf:homepage <http://brfidler.com/> .
+
+:person:FinnM
+    a foaf:Person ;
+    foaf:givenname "Megan" ;
+    foaf:surname "Finn" ;
+    foaf:homepage <https://meganfinn.org/> .
+
+:person:FletcherWatsonS
+    a foaf:Person ;
+    foaf:givenname "Sue" ;
+    foaf:surname "Fletcher-Watson" ;
+    foaf:workInfoHomepage <https://www.ed.ac.uk/profile/dr-sue-fletcher-watson> .
+
+:person:FloriniS
+    a foaf:Person ;
+    owl:sameAs viaf:309846384, orcid:0000-0002-8363-2622 ;
+    foaf:givenname "Sarah" ;
+    foaf:surname "Florini" ;
+    foaf:homepage <http://www.sarahflorini.com/> .
+
+:person:FlynnP
+    a foaf:Person ;
+    owl:sameAs owl:0000-0003-4203-4199 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Flynn" ;
+    foaf:homepage <http://blogs.silmaril.ie/peter/>, <http://research.ucc.ie/profiles/H505/pflynn> .
+
+:person:FrankA
+    a foaf:Person ;
+    owl:sameAs viaf:5300159248464104870006 ;
+    foaf:givenname "Adam" ;
+    foaf:surname "Frank" ;
+    foaf:workInfoHomepage <https://english.ubc.ca/profile/adam-j-frank/> .
+
+:person:FrauenbergerC
+    a foaf:Person ;
+    foaf:givenname "Christopher" ;
+    foaf:surname "Frauenberger" ;
+    foaf:workInfoHomepage <http://igw.tuwien.ac.at/hci/people/CFrauenberger> .
+
+:person:FreemanJ
+    a foaf:Person ;
+    owl:sameAs viaf:39489658, wd:Q2403438 ;
+    foaf:givenname "Jo" ;
+    foaf:surname "Freeman" .
+
+:person:FriedmanB
+    a foaf:Person ;
+    owl:sameAs viaf:77828351 , wd:Q95183473 , dblp:20\/2143 ;
+    foaf:givenname "Batya" ;
+    foaf:surname "Friedman" ;
+    foaf:homepage <https://vsdesign.org> ;
+    foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/batya> .
+
+:person:FurnerJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8839-9930, viaf:47494786 ;
+    foaf:givenname "Jonathan" ;
+    foaf:surname "Furner" ;
+    foaf:homepage <http://www.jonathanfurner.info/> .
+
+:person:GabrielR
+    a foaf:Person ;
+    owl:sameAs viaf:56898914, wd:Q7328227 ;
+    foaf:givenname "Richard P." ;
+    foaf:surname "Gabriel" ;
+    foaf:homepage <https://dreamsongs.com/> .
+
+:person:GalS
+    a foaf:Person ;
+    owl:sameAs viaf:118141100 , wd:Q7647863 ;
+    foaf:givenname "Susan" ;
+    foaf:surname "Gal" ;
+    foaf:workInfoHomepage <https://anthropology.uchicago.edu/people/faculty/susan-gal> .
+
+:person:GaleyA
+    a foaf:Person ;
+    owl:sameAs viaf:167429570 ;
+    foaf:givenname "Alan" ;
+    foaf:surname "Galey" ;
+    foaf:homepage <http://individual.utoronto.ca/alangaley/> .
+
+:person:GallowayA
+    a foaf:Person ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Galloway" ;
+    foaf:givenname "Alexander R." ;
+    foaf:homepage <https://steinhardt.nyu.edu/people/alexander-galloway> .
+
+:person:GarfinkelH
+    a foaf:Person ;
+    owl:sameAs viaf:108536033, wd:Q461121 ;
+    foaf:givenname "Harold" ;
+    foaf:surname "Garfinkel" .
+
+:person:GarveySC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7346-8873 ;
+    foaf:givenname "Shunryu Colin" ;
+    foaf:surname "Garvey" ;
+    foaf:homepage <http://www.shunryugarvey.com/> .
+
+:person:GastaldiJL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0494-5266 ;
+    foaf:givenname "Jean-Louis" ;
+    foaf:surname "Gastaldi" ;
+    foaf:homepage <https://www.giannigastaldi.com> .
+
+:person:GeigerR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7215-0532 ;
+    foaf:givenname "R. S." ;
+    foaf:surname "Geiger" ;
+    foaf:homepage <http://stuartgeiger.com/> .
+
+:person:GenoskoG
+    a foaf:Person ;
+    owl:sameAs viaf:11003213 ;
+    foaf:givenname "Gary" ;
+    foaf:surname "Genosko" ;
+    foaf:workInfoHomepage <http://socialscienceandhumanities.uoit.ca/cdms/faculty/gary-genosko.php> .
+
+:person:GerlitzC
+    a foaf:Person ;
+    owl:sameAs viaf:37154196757020111693, orcid:0000-0002-5716-9355 ;
+    foaf:givenname "Carolin" ;
+    foaf:surname "Gerlitz" ;
+    foaf:workInfoHomepage <https://www.uni-siegen.de/phil/medienwissenschaft/personal/lehrende/gerlitz_carolin/> .
+
+:person:GibsonJ
+    a foaf:Person ;
+    owl:sameAs viaf:12396941, wd:Q737823 ;
+    foaf:givenname "James Jerome" ;
+    foaf:surname "Gibson" .
+
+:person:GilbertJ
+    a foaf:Person ;
+    owl:sameAs viaf:32173405 ;
+    foaf:givenname "Jeremy" ;
+    foaf:surname "Gilbert" ;
+    foaf:homepage <https://www.jeremygilbert.org/> .
+
+:person:GinzburgC
+    a foaf:Person ;
+    owl:sameAs viaf:108148905, wd:Q355251 ;
+    foaf:givenname "Carlo" ;
+    foaf:surname "Ginzburg" ;
+    foaf:homepage <https://web.archive.org/web/20120716205625/http://www.sscnet.ucla.edu/history/ginzburg/> .
+
+:person:GoodwinC
+    a foaf:Person ;
+    owl:sameAs viaf:94360232, wd:Q26722651, orcid: ;
+    foaf:givenname "Charles" ;
+    foaf:surname "Goodwin" ;
+    foaf:homepage <http://www.sscnet.ucla.edu/clic/cgoodwin/> ;
+    foaf:workInfoHomepage <https://comm.ucla.edu/person/charles-goodwin/> .
+
+:person:GordonG
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7067-1964 , viaf:305811824 ;
+    foaf:givenname "Geoff" ;
+    foaf:surname "Gordon" ;
+    foaf:workInfoHomepage <https://www.asser.nl/ihcl-platform/about-ihcl-platform/who-is-who/GeoffGordon> .
+
+:person:GorichanazT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0226-7799 ;
+    foaf:givenname "Tim" ;
+    foaf:surname "Gorichanaz" ;
+    foaf:homepage <http://timgorichanaz.com/> .
+
+:person:GrauwinS
+    a foaf:Person ;
+    owl:sameAs viaf:284964592 ;
+    foaf:givenname "Sébastian" ;
+    foaf:surname "Grauwin" ;
+    foaf:homepage <http://www.sebastian-grauwin.com/> .
+
+:person:GrayJ
+    a foaf:Person ;
+    owl:sameAs viaf:264144930322254441110, wd:Q47502184, orcid:0000-0001-6668-5899 ;
+    foaf:givenname "Jonathan" ;
+    foaf:surname "Gray" ;
+    foaf:homepage <https://jonathangray.org/> .
+
+:person:GreeneD
+    a foaf:Person ;
+    owl:sameAs viaf:151513494 ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Greene" ;
+    foaf:homepage <http://dmgreene.net/> .
+
+:person:GriesemerJ
+    a foaf:Person ;
+    owl:sameAs wd:Q6141630, viaf:296627405 ;
+    foaf:givenname "James R." ;
+    foaf:surname "Griesemer" ;
+    foaf:homepage <http://griesemer.ucdavis.edu/> .
+
+:person:GrimmelmannJ
+    a foaf:Person ;
+    owl:sameAs viaf:296721073 ;
+    foaf:givenname "James" ;
+    foaf:surname "Grimmelmann" ;
+    foaf:homepage <https://james.grimmelmann.net> .
+
+:person:GrossR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4433-8428 ;
+    foaf:givenname "Richard" ;
+    foaf:surname "Groß" ;
+    foaf:homepage <https://tu-dresden.de/gsw/phil/iso/tuk/forschung/doc/richard-gross> .
+
+:person:GrossbergL
+    a foaf:Person ;
+    owl:sameAs viaf:94221539, wd:Q5488594 ;
+    foaf:givenname "Lawrence" ;
+    foaf:surname "Grossberg" ;
+    foaf:workInfoHomepage <https://comm.unc.edu/people/department-faculty/lawrence-grossberg/> .
+
+:person:GuajardoCespedesM
+    a foaf:Person ;
+    foaf:givenname "Mario" ;
+    foaf:surname "Guajardo-Céspedes" .
+
+:person:GumperzJ
+    a foaf:Person ;
+    owl:sameAs viaf:19712179 , wd:Q9236948 ;
+    foaf:givenname "John" ;
+    foaf:surname "Gumperz" ;
+    foaf:page <https://en.wikipedia.org/wiki/John_J._Gumperz> .
+
+:person:GunkelDJ
+    a foaf:Person ;
+    foaf:givenname "David J." ;
+    foaf:surname "Gunkel" ;
+    foaf:homepage <http://gunkelweb.com/> .
+
+:person:GuoS
+    a foaf:Person ;
+    foaf:givenname "Shaohua" ;
+    foaf:surname "Guo" ;
+    foaf:homepage <https://www.carleton.edu/directory/sguo/> ;
+    .
+
+:person:GuzikK
+    a foaf:Person ;
+    owl:sameAs viaf:48607995 ;
+    foaf:givenname "Keith" ;
+    foaf:surname "Guzik" ;
+    foaf:workInfoHomepage <https://clas.ucdenver.edu/directory/faculty-staff/keith_guzik> .
+
+:person:HalpernY
+    a foaf:Person ;
+    foaf:givenname "Yoni" ;
+    foaf:surname "Halpern" ;
+    foaf:homepage <https://cs.nyu.edu/~halpern/> .
+
+:person:HansenM
+    a foaf:Person ;
+    owl:sameAs viaf:62626903, wd:Q17745931 ;
+    foaf:givenname "Mark B. N." ;
+    foaf:surname "Hansen" ;
+    foaf:workInfoHomepage <https://literature.duke.edu/people/mark-bn-hansen> .
+
+:person:HansethO
+    a foaf:Person ;
+    owl:sameAs viaf:51131650 ;
+    foaf:givenname "Ole" ;
+    foaf:surname "Hanseth" ;
+    foaf:homepage <https://folk.uio.no/oleha/> .
+
+:person:HarawayD
+    a foaf:Person ;
+    owl:sameAs viaf:91665330, wd:Q253407 ;
+    foaf:givenname "Donna" ;
+    foaf:surname "Haraway" ;
+    foaf:homepage <https://people.ucsc.edu/~haraway/> .
+
+:person:HarrisD
+    a foaf:Person ;
+    owl:sameAs viaf:98310436, wd:Q67259 ;
+    foaf:givenname "Daniel R." ;
+    foaf:surname "Harris" ;
+    foaf:page <https://scholar.google.com/citations?user=cd4XPCwAAAAJ> .
+
+:person:HauserE
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2547-0952 ;
+    foaf:givenname "Elliott" ;
+    foaf:surname "Hauser" ;
+    foaf:homepage <https://elliotthauser.com> .
+
+:person:HaylesN
+    a foaf:Person ;
+    owl:sameAs viaf:27082380, wd:Q4953004 ;
+    foaf:givenname "N. Katherine" ;
+    foaf:surname "Hayles" ;
+    foaf:workInfoHomepage <https://english.ucla.edu/people-faculty/hayles-katherine-n/> .
+
+:person:HazenR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4163-8644, wd:Q7345349 ;
+    foaf:givenname "Robert M." ;
+    foaf:surname "Hazen" ;
+    foaf:homepage <http://hazen.carnegiescience.edu> .
+
+:person:HealyK
+    a foaf:Person ;
+    owl:sameAs wd:Q6405389 ;
+    foaf:givenname "Kieran" ;
+    foaf:surname "Healy" ;
+    foaf:homepage <https://kieranhealy.org/> .
+
+:person:HelmondA
+    a foaf:Person ;
+    owl:sameAs
+        orcid:0000-0003-4327-4012,
+        viaf:263147266778335481392,
+        wd:Q64853874 ;
+    foaf:givenname "Anne" ;
+    foaf:surname "Helmond" ;
+    foaf:homepage <https://www.annehelmond.nl> .
+
+:person:HildebrandtM
+    a foaf:Person ;
+    owl:sameAs viaf:65702387 ;
+    foaf:givenname "Mireille" ;
+    foaf:surname "Hildebrandt" ;
+    foaf:workInfoHomepage <https://www.vub.ac.be/LSTS/members/hildebrandt/> .
+
+:person:HillF
+    a foaf:Person ;
+    owl:sameAs dblp:116\/0509 , orcid:0000-0002-6712-1718 ;
+    foaf:givenname "Felix" ;
+    foaf:surname "Hill" ;
+    foaf:homepage <https://fh295.github.io> .
+
+:person:HindS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8347-3695 ;
+    foaf:givenname "Sam" ;
+    foaf:surname "Hind" ;
+    foaf:homepage <https://samhind.com> .
+
+:person:HjorlandB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9535-1732, viaf:33277453, wd:Q4916221 ;
+    foaf:givenname "Birger" ;
+    foaf:surname "Hjørland" .
+
+:person:HockenberryM
+    a foaf:Person ;
+    owl:sameAs viaf:29161329979052132376 ;
+    foaf:givenname "Matthew" ;
+    foaf:surname "Hockenberry" ;
+    foaf:page <https://supplystudies.com/> ;
+    foaf:workInfoHomepage <https://www.fordham.edu/info/29405/areas_of_specialization/11901/matthew_hockenberry> .
+
+:person:HodgesJ
+    a foaf:Person ;
+    foaf:givenname "James" ;
+    foaf:surname "Hodges" ;
+    foaf:homepage <https://www.jameshodges.net> .
+
+:person:HoffmannA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7950-804X ;
+    foaf:givenname "Anna Lauren" ;
+    foaf:surname "Hoffmann" ;
+    foaf:homepage <https://www.annaeveryday.com/> .
+
+:person:HoggD
+    a foaf:Person ;
+    foaf:givenname "David" ;
+    foaf:surname "Hogg" .
+
+:person:HollisCC
+    a foaf:Person ;
+    foaf:givenname "Carol C." ;
+    foaf:surname "Hollis" .
+
+:person:HolmesB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Holmes" ;
+    foaf:workInfoHomepage <http://egs.edu/faculty/brian-holmes> .
+
+:person:HongS
+    a foaf:Person ;
+    owl:sameAs viaf:9812148753716341320006, orcid:0000-0002-8243-4974 ;
+    foaf:givenname "Sun-ha" ;
+    foaf:surname "Hong" ;
+    foaf:homepage <0000-0002-8243-4974> .
+
+:person:HoyJ
+    a foaf:Person ;
+    foaf:givenname "Josephine" ;
+    foaf:surname "Hoy" ;
+    foaf:homepage <http://www.josephinehoy.com> .
+
+:person:HughesL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8928-0341, viaf:50289206 ;
+    foaf:givenname "Lorna M." ;
+    foaf:surname "Hughes" ;
+    foaf:homepage <http://lornamhughes.blogspot.com/> .
+
+:person:HuiA
+    a foaf:Person ;
+    owl:sameAs wd:Q105099699 , viaf:260985779 ;
+    foaf:givenname "Alexandra" ;
+    foaf:surname "Hui" ;
+    foaf:workInfoHomepage <https://www.history.msstate.edu/directory/aeh230> .
+
+:person:HuiY
+    a foaf:Person ;
+    owl:sameAs viaf:315173378 ;
+    foaf:givenname "Yuk" ;
+    foaf:surname "Hui" ;
+    foaf:homepage <http://www.digitalmilieu.net/yuk/> .
+
+:person:HymesD
+    a foaf:Person ;
+    owl:sameAs viaf:71410639 , wd:Q973276 ;
+    foaf:givenname "Dell" ;
+    foaf:surname "Hymes" ;
+    foaf:page <https://en.wikipedia.org/wiki/Dell_Hymes> .
+
+:person:IliadisA
+    a foaf:Person ;
+    foaf:givenname "Andrew" ;
+    foaf:surname "Iliadis" ;
+    foaf:homepage <http://andrewiliadis.com> ;
+    foaf:workInfoHomepage <https://klein.temple.edu/faculty/andrew-iliadis> .
+
+:person:IngoldT
+    a foaf:Person ;
+    owl:sameAs viaf:108921732, wd:Q2073266 ;
+    foaf:givenname "Tim" ;
+    foaf:surname "Ingold" ;
+    foaf:workInfoHomepage <https://www.abdn.ac.uk/socsci/people/profiles/tim.ingold> .
+
+:person:IpJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9952-4987 ;
+    foaf:givenname "Jamie" ;
+    foaf:surname "Ip" ;
+    foaf:homepage <https://jamieip.com/> .
+
+:person:IraniL
+    a foaf:Person ;
+    foaf:givenname "Lilly" ;
+    foaf:surname "Irani" ;
+    foaf:workInfoHomepage <https://quote.ucsd.edu/lirani/> .
+
+:person:JacksonS
+    a foaf:Person ;
+    foaf:givenname "Steven" ;
+    foaf:surname "Jackson" ;
+    foaf:homepage <https://sjackson.infosci.cornell.edu/> .
+
+:person:JacobsenB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-6656-8892 ;
+    foaf:givenname "Benjamin" ;
+    foaf:surname "Jacobsen" ;
+    foaf:workInfoHomepage <https://www.york.ac.uk/sociology/people/benjamin-jacobsen/> .
+
+:person:JensenP
+    a foaf:Person ;
+    owl:sameAs wd:Q3359977, viaf:39559512 ;
+    foaf:givenname "Pablo" ;
+    foaf:surname "Jensen" ;
+    foaf:homepage <http://perso.ens-lyon.fr/pablo.jensen/> .
+
+:person:JermynA
+    a foaf:Person ;
+    foaf:givenname "Adam" ;
+    foaf:surname "Jermyn" ;
+    foaf:homepage <https://adamjermyn.com> .
+
+:person:JohnMathewsJM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8049-1222 , viaf:68164476343825911136 ;
+    foaf:givenname "Jean-Marie" ;
+    foaf:surname "John-Mathews" ;
+    foaf:homepage <https://www.jeanmarie-johnmathews.com/> .
+
+:person:JonesJ
+    a foaf:Person ;
+    foaf:givenname "Jack" ;
+    foaf:surname "Jones" .
+
+:person:JoqueJ
+    a foaf:Person ;
+    owl:sameAs viaf:44149617055903752418 ;
+    foaf:givenname "Justin" ;
+    foaf:surname "Joque" ;
+    foaf:homepage <http://www.justinjoque.com/> .
+
+:person:JoyceM
+    a foaf:Person ;
+    owl:sameAs viaf:12423304, wd:Q727045 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Joyce" ;
+    foaf:workInfoHomepage <http://faculty.vassar.edu/mijoyce/> .
+
+:person:JunN
+    a foaf:Person ;
+    owl:sameAs viaf:86249599 ;
+    foaf:givenname "Nathan" ;
+    foaf:surname "Jun" ;
+    foaf:homepage <http://www.nathanjun.com/> .
+
+:person:KalwaraJ
+    a foaf:Person ;
+    foaf:givenname "James" ;
+    foaf:surname "Kalwara" ;
+    foaf:page <https://www.semanticscholar.org/author/James-Kalwara/113847837> .
+
+:person:KataiO
+    a foaf:Person ;
+    owl:sameAs viaf:111764376 ;
+    foaf:givenname "Osamu" ;
+    foaf:surname "Katai" ;
+    foaf:homepage <https://www.researchgate.net/profile/Osamu_Katai> .
+
+:person:KavakliS
+    a foaf:Person ;
+    foaf:givenname "Sezgi Başak" ;
+    foaf:surname "Kavaklı" ;
+    foaf:workInfoHomepage <https://klein.temple.edu/directory/sezgi-basak-kavakli> .
+
+:person:KawakamiH
+    a foaf:Person ;
+    foaf:givenname "Hiroshi" ;
+    foaf:surname "Kawakami" ;
+    foaf:homepage <http://www.design.kyoto-u.ac.jp/members/kawakami/index.html> .
+
+:person:KellerE
+    a foaf:Person ;
+    owl:sameAs wd:Q239131, viaf:66491296 ;
+    foaf:givenname "Evelyn Fox" ;
+    foaf:surname "Keller" ;
+    foaf:workInfoHomepage <https://sts-program.mit.edu/people/emeriti-faculty/evelyn-fox-keller/> .
+
+:person:KellyM
+    a foaf:Person ;
+    foaf:givenname "Matthew" ;
+    foaf:surname "Kelly" ;
+    foaf:workInfoHomepage <https://staffportal.curtin.edu.au/staff/profile/view/Matthew.Kelly> ;
+    foaf:publications <https://scholar.google.com/citations?user=RCbZXx4AAAAJ>  .
+
+:person:KeyesO
+    a foaf:Person ;
+    foaf:givenname "Os" ;
+    foaf:surname "Keyes" ;
+    foaf:homepage <https://ironholds.org> .
+
+:person:KientzJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7437-7861 ;
+    foaf:givenname "Julie A." ;
+    foaf:surname "Kientz" ;
+    foaf:homepage <http://www.juliekientz.com/> .
+
+:person:KimP
+    a foaf:Person ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Kim" ;
+    foaf:workInfoHomepage <https://www.moles.washington.edu/student/paul-kim/> .
+
+:person:KleinL
+    a foaf:Person ;
+    owl:sameAs viaf:134148389577810712856, wd:Q98502620, orcid:0000-0002-1511-0910 ;
+    foaf:givenname "Lauren F." ;
+    foaf:surname "Klein" ;
+    foaf:homepage <https://lklein.com/> .
+
+:person:KoA
+    a foaf:Person ;
+    foaf:givenname "Andrew J." ;
+    foaf:surname "Ko" ;
+    foaf:homepage <http://faculty.washington.edu/ajko/> .
+
+:person:KochM
+    a foaf:Person ;
+    foaf:givenname "Matthias" ;
+    foaf:surname "Koch" ;
+    foaf:workInfoHomepage <https://www.leuphana.de/en/research-centers/cdc/people/fellows/matthias-koch.html> .
+
+:person:KockelmanP
+    a foaf:Person ;
+    owl:sameAs viaf:101397774, wd:Q112488827 ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Kockelman" ;
+    foaf:homepage <http://www.envorganism.org/> .
+
+:person:KollerA
+    a foaf:Person ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Koller" ;
+    foaf:homepage <http://www.coli.uni-saarland.de/~koller/> .
+
+:person:KoopmanC
+    a foaf:Person ;
+    owl:sameAs viaf:86239633 ;
+    foaf:givenname "Colin" ;
+    foaf:surname "Koopman" ;
+    foaf:homepage <https://pages.uoregon.edu/koopman/> .
+
+:person:KreissD
+    a foaf:Person ;
+    owl:sameAs viaf:171118811, orcid:0000-0003-2533-195X ;
+    foaf:givenname "Daniel" ;
+    foaf:surname "Kreiss" ;
+    foaf:homepage <https://danielkreiss.com/> .
+
+:person:KrippendorffK
+    a foaf:Person ;
+    owl:sameAs viaf:304280275 , wd:Q6419923 ;
+    foaf:givenname "Klaus" ;
+    foaf:surname "Krippendorff" ;
+    foaf:page <https://www.asc.upenn.edu/news-events/news/klaus-krippendorff-phd-pioneer-content-analysis-and-cybernetics-dies-90> .
+
+:person:KroisJ
+    a foaf:Person ;
+    owl:sameAs viaf:17914413, wd:Q1275299 ;
+    foaf:givenname "John M." ;
+    foaf:surname "Krois" ;
+    foaf:page <https://de.wikipedia.org/wiki/John_Michael_Krois> .
+
+:person:KumarA
+    a foaf:Person ;
+    foaf:givenname "Akarsh" ;
+    foaf:surname "Kumar" ;
+    foaf:homepage <https://akarshkumar.com> ;
+    .
+
+:person:LabovW
+  a foaf:Person ;
+  owl:sameAs viaf:71454698 , wd:Q357923 ;
+  foaf:givenname "William" ;
+  foaf:surname "Labov" ;
+  foaf:homepage <https://www.ling.upenn.edu/~wlabov/home.html> .
+
+:person:LagozeC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5281-5215 ;
+    foaf:givenname "Carl" ;
+    foaf:surname "Lagoze" ;
+    foaf:homepage <https://www.si.umich.edu/people/carl-lagoze> .
+
+:person:LandesD
+    a foaf:Person ;
+    owl:sameAs viaf:171912949 , wd:Q79031434 ;
+    foaf:givenname "Donald" ;
+    foaf:surname "Landes" ;
+    foaf:homepage <https://www.donaldlandes.com> .
+
+:person:LangvilleA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7689-4061, viaf:71708161 ;
+    foaf:givenname "Amy" ;
+    foaf:surname "Langville" ;
+    foaf:homepage <http://langvillea.people.cofc.edu> .
+
+:person:LashS
+    a foaf:Person ;
+    owl:sameAs viaf:101640437, wd:Q552135 ;
+    foaf:givenname "Scott" ;
+    foaf:surname "Lash" ;
+    foaf:page <https://en.wikipedia.org/wiki/Scott_Lash> .
+
+:person:LathamK
+    a foaf:Person ;
+    foaf:givenname "Kiersten F." ;
+    foaf:surname "Latham" ;
+    foaf:homepage <http://kentstate.academia.edu/KierstenFLatham> .
+
+:person:LatourB
+    a foaf:Person ;
+    owl:sameAs wd:Q355237, viaf:109228530 ;
+    foaf:givenname "Bruno" ;
+    foaf:surname "Latour" ;
+    foaf:homepage <http://www.bruno-latour.fr/> .
+
+:person:LawJ
+    a foaf:Person ;
+    owl:sameAs viaf:94183647, wd:Q645685 ;
+    foaf:givenname "John" ;
+    foaf:surname "Law" ;
+    foaf:homepage <http://heterogeneities.net/> .
+
+:person:LeGuinU
+    a foaf:Person ;
+    owl:sameAs viaf:101734435, wd:Q181659 ;
+    foaf:givenname "Ursula K." ;
+    foaf:surname "Le Guin" ;
+    foaf:homepage <https://www.ursulakleguin.com/> .
+
+:person:LeahuL
+    a foaf:Person ;
+    owl:sameAs <http://dblp.org/pers/l/Leahu:Lucian> ;
+    foaf:givenname "Lucian" ;
+    foaf:surname "Leahu" ;
+    foaf:workInfoHomepage <https://pure.itu.dk/portal/en/persons/lucian-leahu(55d34e51-05c7-460b-9918-067e3401e65c).html> .
+
+:person:LeeD
+    a foaf:Person ;
+    foaf:givenname "Deborah" ;
+    foaf:surname "Lee" ;
+    foaf:homepage <https://poulencing.wixsite.com/deborahlee> .
+
+:person:LeekerM
+    a foaf:Person ;
+    owl:sameAs viaf:42075767 ;
+    foaf:givenname "Martina" ;
+    foaf:surname "Leeker" ;
+    foaf:homepage <https://martina-leeker.de/> .
+
+:person:LehmanJ
+    a foaf:Person ;
+    foaf:givenname "Joel" ;
+    foaf:surname "Lehman" ;
+    foaf:homepage <https://joellehman.com> .
+
+:person:LempertM
+    a foaf:Person ;
+    owl:sameAs viaf:16498183 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Lempert" ;
+    foaf:workInfoHomepage <https://lsa.umich.edu/anthro/people/faculty/linguistic-faculty/mlemp.html> .
+
+:person:LeonelliS
+    a foaf:Person ;
+    owl:sameAs viaf:90433686, wd:Q42617171, orcid:0000-0002-7815-6609 ;
+    foaf:givenname "Sabina" ;
+    foaf:surname "Leonelli" ;
+    foaf:workInfoHomepage <http://socialsciences.exeter.ac.uk/sociology/research/sts/egenis/staff/leonelli/> .
+
+:person:LevineC
+    a foaf:Person ;
+    foaf:givenname "Caroline" ;
+    foaf:surname "Levine" ;
+    foaf:workInfoHomepage <http://as.cornell.edu/caroline-levine-0> .
+
+:person:LienM
+    a foaf:Person ;
+    owl:sameAs viaf:46913656 ;
+    foaf:givenname "Marianne Elisabeth" ;
+    foaf:surname "Lien" ;
+    foaf:workInfoHomepage <https://www.sv.uio.no/sai/english/people/aca/marianel/> .
+
+:person:LiuJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3643-2182 ;
+    foaf:givenname "Jiqun" ;
+    foaf:surname "Liu" ;
+    foaf:homepage <https://jiqunl.github.io/me/> .
+
+:person:LiuL
+    a foaf:Person ;
+    owl:sameAs viaf:2639260, wd:Q55171446 ;
+    foaf:givenname "Lydia H." ;
+    foaf:surname "Liu" ;
+    foaf:workInfoHomepage <http://ealac.columbia.edu/lydia-h-liu/> .
+
+:person:LiuQ
+    a foaf:Person ;
+    foaf:givenname "Qijiong" ;
+    foaf:surname "Liu" ;
+    owl:sameAs orcid:0000-0001-6087-383X ;
+    foaf:homepage <https://liu.qijiong.work> .
+
+:person:LocastoM
+    a foaf:Person ;
+    foaf:givenname "Michael E." ;
+    foaf:surname "Locasto" ;
+    foaf:homepage <http://pages.cpsc.ucalgary.ca/~locasto/> .
+
+:person:LoseeR
+    a foaf:Person ;
+    owl:sameAs viaf:93305170 ;
+    foaf:givenname "Robert" ;
+    foaf:surname "Losee" ;
+    foaf:homepage <https://ils.unc.edu/~losee/> .
+
+:person:LotoshM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0362-8947 ;
+    foaf:givenname "Marsha" ;
+    foaf:surname "Lotosh" .
+
+:person:LoveH
+    a foaf:Person ;
+    owl:sameAs viaf:48676613 ;
+    foaf:givenname "Heather" ;
+    foaf:surname "Love" ;
+    foaf:homepage <https://www.english.upenn.edu/people/heather-k-love> .
+
+:person:LupyanG
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8441-7433, viaf:24408753, wd:Q41667787 ;
+    foaf:givenname "Gary" ;
+    foaf:surname "Lupyan" ;
+    foaf:workInfoHomepage <https://psych.wisc.edu/staff/lupyan-gary/> .
+
+:person:LuryC
+    a foaf:Person ;
+    owl:sameAs viaf:7491199, wd:Q63367351 ;
+    foaf:givenname "Celia" ;
+    foaf:surname "Lury" ;
+    foaf:workInfoHomepage <https://warwick.ac.uk/fac/cross_fac/cim/people/celia-lury/> .
+
+:person:LymanP
+    a foaf:Person ;
+    owl:sameAs viaf:31778045, wd:Q1616033 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Lyman" ;
+    foaf:homepage <https://en.wikipedia.org/wiki/Peter_Lyman> .
+
+:person:LynchM
+    a foaf:Person ;
+    owl:sameAs wd:Q3308334, viaf:90696806 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Lynch" .
+
+:person:LyytinenK
+    a foaf:Person ;
+    foaf:givenname "Kalle" ;
+    foaf:surname "Lyytinen" ;
+    foaf:workInfoHomepage <https://weatherhead.case.edu/faculty/kalle-lyytinen> .
+
+:person:MaY
+    a foaf:Person ;
+    foaf:givenname "Yuanye" ;
+    foaf:surname "Ma" ;
+    foaf:homepage <https://sites.google.com/view/yuanyem/> .
+
+:person:MacgilchristF
+    a foaf:Person ;
+    owl:sameAs viaf:169718360, orcid:0000-0002-2828-4127 ;
+    foaf:givenname "Felicitas" ;
+    foaf:surname "Macgilchrist" ;
+    foaf:homepage <https://www.gei.de/en/institut/personen/details/felicitas-macgilchrist> .
+
+:person:MachlupF
+    a foaf:Person ;
+    owl:sameAs viaf:101860744, wd:Q78604 ;
+    foaf:givenname "Fritz" ;
+    foaf:surname "Machlup" .
+
+:person:MackenzieA
+    a foaf:Person ;
+    owl:sameAs viaf:40514317 ;
+    foaf:givenname "Adrian" ;
+    foaf:surname "Mackenzie" ;
+    foaf:workInfoHomepage <https://researchers.anu.edu.au/researchers/mackenzie-a> .
+
+:person:MagneeM
+    a foaf:Person ;
+    foaf:givenname "Maurice" ;
+    foaf:surname "Magnée" ;
+    foaf:workInfoHomepage <https://www.han.nl/onderzoek/kennismaken/han-sociaal/lectoraat/levensloopbegeleiding-bij-autisme/team/onderzoekers/maurice-magnee/> .
+
+:person:MaiJ
+    a foaf:Person ;
+    owl:sameAs wd:Q28762574, orcid:0000-0002-3053-8675 ;
+    foaf:givenname "Jens-Erik" ;
+    foaf:surname "Mai" ;
+    foaf:homepage <http://www.jenserikmai.info/> .
+
+:person:MansfieldU
+    a foaf:Person ;
+    owl:sameAs viaf:14835690;
+    foaf:givenname "Una" ;
+    foaf:surname "Mansfield" .
+
+:person:MarcusS
+    a foaf:Person ;
+    owl:sameAs viaf:116550455, wd:Q18062238 ;
+    foaf:givenname "Sharon" ;
+    foaf:surname "Marcus" ;
+    foaf:homepage <http://english.columbia.edu/people/profile/393> .
+
+:person:MarinL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8283-947X ;
+    foaf:givenname "Lavinia" ;
+    foaf:surname "Marin" ;
+    foaf:homepage <https://www.laviniamarin.eu> .
+
+:person:MasscheleinJ
+    a foaf:Person ;
+    owl:sameAs viaf:24841030 , wd:Q55232073 ;
+    foaf:givenname "Jan" ;
+    foaf:surname "Masschelein" ;
+    foaf:workInfoHomepage <https://ppw.kuleuven.be/ecs/english/team/Team/00008954> .
+
+:person:MatamorosFernandezA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2149-3820 ;
+    foaf:givenname "Ariadna" ;
+    foaf:surname "Matamoros Fernández" ;
+    foaf:workInfoHomepage <https://staff.qut.edu.au/staff/ariadna.matamorosfernandez> .
+
+:person:McCraneyK
+    a foaf:Person ;
+    foaf:givenname "Kevin" ;
+    foaf:surname "McCraney" ;
+    foaf:homepage <http://krmc.me/> .
+
+:person:McGuiganL
+    a foaf:Person ;
+    owl:sameAs viaf:300914966 , orcid:0000-0003-3157-2944 ;
+    foaf:givenname "Lee" ;
+    foaf:surname "McGuigan" ;
+    foaf:workInfoHomepage <http://hussman.unc.edu/directory/faculty/lee-mcguigan> .
+
+:person:McLuhanM
+    a foaf:Person ;
+    owl:sameAs viaf:14198 , wd:Q193871 ;
+    foaf:givenname "Marshall" ;
+    foaf:surname "McLuhan" .
+
+:person:McMillanMajorA
+    a foaf:Person ;
+    owl:sameAs wd:Q117721206 , orcid:0000-0003-2257-9618 , dblp:284\/7880 ;
+    foaf:givenname "Angelina" ;
+    foaf:surname "McMillan-Major" ;
+    foaf:homepage <https://sites.google.com/uw.edu/angelinamcmillan-major/home> .
+
+:person:MeadM
+    a foaf:Person ;
+    owl:sameAs viaf:44302511 , wd:Q180099 ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Mead" ;
+    foaf:page <https://www.loc.gov/exhibits/mead/> .
+
+:person:MedinaE
+    a foaf:Person ;
+    owl:sameAs viaf:170241863 ;
+    foaf:givenname "Eden" ;
+    foaf:surname "Medina" ;
+    foaf:homepage <https://www.informatics.indiana.edu/edenm/> .
+
+:person:MejiasU
+    a foaf:Person ;
+    owl:sameAs viaf:300110986 ;
+    foaf:givenname "Ulises A." ;
+    foaf:surname "Mejias" ;
+    foaf:homepage <https://blog.ulisesmejias.com/> .
+
+:person:MessickS
+    a foaf:Person ;
+    owl:sameAs wd:Q7412179 , viaf:232936937 ;
+    foaf:givenname "Samuel" ;
+    foaf:surname "Messick" ;
+    foaf:page <https://en.wikipedia.org/wiki/Samuel_Messick> .
+
+:person:MilesA
+    a foaf:Person ;
+    foaf:givenname "Adrian" ;
+    foaf:surname "Miles" ;
+    foaf:homepage <http://web.archive.org/web/20180222142812/http://vogmae.net.au> .
+
+:person:MinamizonoK
+    a foaf:Person ;
+    foaf:givenname "Katsushi" ;
+    foaf:surname "Minamizono" ;
+    foaf:homepage <https://www.linkedin.com/in/katsushi-minamizono-141923b4> .
+
+:person:MirowskiP
+    a foaf:Person ;
+    owl:sameAs viaf:85305161 , wd:Q1167460 ;
+    foaf:givenname "Philip" ;
+    foaf:surname "Mirowski" ;
+    foaf:workInfoHomepage <https://reilly.nd.edu/people/faculty/philip-mirowski/> .
+
+:person:MitchellM
+    a foaf:Person ;
+    foaf:givenname "Margaret" ;
+    foaf:surname "Mitchell" ;
+    foaf:homepage <http://www.m-mitchell.com> .
+
+:person:MonteiroE
+    a foaf:Person ;
+    owl:sameAs viaf:304926794 ;
+    foaf:givenname "Eric" ;
+    foaf:surname "Monteiro" ;
+    foaf:homepage <https://www.idi.ntnu.no/~ericm/> .
+
+:person:MontoyaR
+    a foaf:Person ;
+    owl:sameAs viaf:3163810673138822746, wd:, orcid:0000-0001-6841-0768 ;
+    foaf:givenname "Robert D." ;
+    foaf:surname "Montoya" ;
+    foaf:homepage <https://robertdmontoya.com/> .
+
+:person:MoorR
+    a foaf:Person ;
+    owl:sameAs viaf:3757148997684159870003 ;
+    foaf:givenname "Robert" ;
+    foaf:surname "Moor" ;
+    foaf:homepage <https://www.robertmoor.com/> .
+
+:person:MooreD
+    a foaf:Person ;
+    owl:sameAs wd:Q5224125 ;
+    foaf:givenname "Darnell L." ;
+    foaf:surname "Moore" ;
+    foaf:homepage <http://darnellmoore.squarespace.com/> .
+
+:person:MorganC
+    a foaf:Person ;
+    foaf:givenname "Colin" ;
+    foaf:surname "Morgan" .
+
+:person:MorozovE
+    a foaf:Person ;
+    owl:sameAs wd:Q93054, viaf:152687617 ;
+    foaf:givenname "Evgeny" ;
+    foaf:surname "Morozov" ;
+    foaf:homepage <https://www.evgenymorozov.com> .
+
+:person:MorrisonS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-1712-8057 ;
+    foaf:givenname "Shaunna M." ;
+    foaf:surname "Morrison" ;
+    foaf:homepage <https://sites.google.com/view/smmorrison/> .
+
+:person:MrazekR
+    a foaf:Person ;
+    owl:sameAs wd:Q19731667 , viaf:102452101 ;
+    foaf:givenname "Rudolf" ;
+    foaf:surname "Mrázek" ;
+    foaf:homepage <https://lsa.umich.edu/history/people/emeritus/rdlf.html> .
+
+:person:MunozT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2616-8632 ;
+    foaf:givenname "Trevor" ;
+    foaf:surname "Muñoz" ;
+    foaf:homepage <http://trevormunoz.com/> .
+
+:person:MylonasE
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-0215-4324 ;
+    foaf:givenname "Elli" ;
+    foaf:surname "Mylonas" ;
+    foaf:workInfoHomepage <https://library.brown.edu/cds/elli-mylonas/> .
+
+:person:NancyJ
+    a foaf:Person ;
+    owl:sameAs wd:Q503017, viaf:103617048 ;
+    foaf:givenname "Jean-Luc" ;
+    foaf:surname "Nancy" .
+
+:person:NaurP
+    a foaf:Person ;
+    owl:sameAs viaf:37424500, wd:Q92618 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Naur" ;
+    foaf:homepage <http://web.archive.org/web/20180222150441/http://www.naur.com> .
+
+:person:NikKhahE
+    a foaf:Person;
+    owl:sameAs viaf:19424769 ;
+    foaf:givenname "Edward" ;
+    foaf:surname "Nik-Khah" ;
+    foaf:workInfoHomepage <https://directory.roanoke.edu/faculty/164> .
+
+:person:NobleS
+    a foaf:Person ;
+    owl:sameAs viaf:20146285338215370371 ;
+    foaf:givenname "Safiya Umoja" ;
+    foaf:surname "Noble" ;
+    foaf:homepage <https://safiyaunoble.com> .
+
+:person:NofreD
+    a foaf:Person ;
+    foaf:givenname "David" ;
+    foaf:surname "Nofre" ;
+    foaf:homepage <https://www.researchgate.net/profile/David_Nofre> .
+
+:person:NordmannA
+    a foaf:Person ;
+    owl:sameAs viaf:115023610 ;
+    foaf:givenname "Alfred" ;
+    foaf:surname "Nordmann" ;
+    foaf:workInfoHomepage <www.philosophie.tu-darmstadt.de/nordmann>.
+
+:person:ONeilJ
+    a foaf:Person ;
+    owl:sameAs viaf:322146936683913781305 ;
+    foaf:givenname "Joseph D." ;
+    foaf:surname "O'Neil" .
+
+:person:OffertF
+    a foaf:Person ;
+    owl:sameAs wd:Q107176176 , orcid:0000-0002-4757-8147 ;
+    foaf:givenname "Fabian" ;
+    foaf:surname "Offert" ;
+    foaf:homepage <https://zentralwerkstatt.org> .
+
+:person:OrrJ
+    a foaf:Person ;
+    owl:sameAs viaf:115984089 ;
+    foaf:givenname "Julian" ;
+    foaf:surname "Orr" .
+
+:person:OttoApelK
+    a foaf:Person ;
+    owl:sameAs viaf:108277989, wd:Q58853 ;
+    foaf:givenname "Karl-Otto" ;
+    foaf:surname "Apel" ;
+    foaf:homepage <https://web.archive.org/web/20210617174055/http://www.karl-otto-apel.de/> .
+
+:person:OverwijkJ
+    a foaf:Person ;
+    foaf:givenname "Jan" ;
+    foaf:surname "Overwijk" ;
+    foaf:homepage <https://www.ifs.uni-frankfurt.de/people-detail/jan-overwijk.html> ;
+    .
+
+:person:OyamaS
+    a foaf:Person ;
+    owl:sameAs viaf:66712131, wd:Q7648260 ;
+    foaf:givenname "Susan" ;
+    foaf:surname "Oyama" ;
+    foaf:workInfoHomepage <https://www.gc.cuny.edu/Page-Elements/Academics-Research-Centers-Initiatives/Doctoral-Programs/Psychology/Faculty-Bios/Susan-Oyama> .
+
+:person:PackerB
+    a foaf:Person ;
+    foaf:givenname "Ben" ;
+    foaf:surname "Packer" ;
+    foaf:homepage <https://www.quora.com/profile/Ben-Packer-1> .
+
+:person:PalmerC
+    a foaf:Person ;
+    owl:sameAs viaf:93754580, orcid:0000-0001-7420-3765 ;
+    foaf:givenname "Carole L." ;
+    foaf:surname "Palmer" ;
+    foaf:workInfoHomepage <http://faculty.washington.edu/clpalmer/> .
+
+:person:PapanekVJ
+    a foaf:Person ;
+    owl:sameAs viaf:108315176 , wd:Q89542 ;
+    foaf:givenname "Victor J." ;
+    foaf:surname "Papanek" .
+
+:person:ParikkaJ
+    a foaf:Person ;
+    owl:sameAs viaf:48673156, wd:Q6315657 ;
+    foaf:givenname "Jussi" ;
+    foaf:surname "Parikka" ;
+    foaf:homepage <https://jussiparikka.net/> .
+
+:person:ParisiL
+    a foaf:Person ;
+    owl:sameAs viaf:461146634282841930173 ;
+    foaf:givenname "Luciana" ;
+    foaf:surname "Parisi" ;
+    foaf:workInfoHomepage <https://scholars.duke.edu/person/Luciana.Parisi> .
+
+:person:Pasquinelli
+    a foaf:Person ;
+    owl:sameAs viaf:249939473, wd:Q105492265 ;
+    foaf:givenname "Matteo" ;
+    foaf:surname "Pasquinelli" ;
+    foaf:homepage <http://matteopasquinelli.com/> .
+
+:person:PassiS
+    a foaf:Person ;
+    foaf:givenname "Samir" ;
+    foaf:surname "Passi" ;
+    foaf:homepage <http://www.samirpassi.com/> .
+
+:person:PattersonM
+    a foaf:Person ;
+    owl:sameAs wd:Q14105 ;
+    foaf:givenname "Meredith L." ;
+    foaf:surname "Patterson" .
+
+:person:PearceK
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3837-5305 ;
+    foaf:givenname "Katy E." ;
+    foaf:surname "Pearce" ;
+    foaf:homepage <http://www.katypearce.net/> .
+
+:person:PedwellC
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4651-5766 , wd:Q112264500 , viaf:91027264 ;
+    foaf:givenname "Carolyn" ;
+    foaf:surname "Pedwell" ;
+    foaf:workInfoHomepage <https://www.kent.ac.uk/social-policy-sociology-social-research/people/1930/pedwell-carolyn> .
+
+:person:PellissierL
+    a foaf:Person ;
+    foaf:givenname "Luc" ;
+    foaf:surname "Pellissier" ;
+    foaf:homepage <https://lacl.fr/~lpellissier/> .
+
+:person:PetrasV
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-8113-1509 , viaf:1730150172747900180000 ;
+    foaf:givenname "Vivien" ;
+    foaf:surname "Petras" ;
+    foaf:workInfoHomepage <https://www.ibi.hu-berlin.de/en/about-us/people/petras> .
+
+:person:PiantadosiS
+    a foaf:Person ;
+    owl:sameAs wd:Q86991208 ;
+    foaf:givenname "Steven" ;
+    foaf:surname "Piantadosi" ;
+    foaf:homepage <http://colala.berkeley.edu/people/piantadosi/> .
+
+:person:PickeringA
+    a foaf:Person ;
+    owl:sameAs viaf:28274197, wd:Q2846705 ;
+    foaf:givenname "Andrew" ;
+    foaf:surname "Pickering" ;
+    foaf:workInfoHomepage <http://socialsciences.exeter.ac.uk/sociology/staff/pickering/> .
+
+:person:PiotukhV
+    a foaf:Person ;
+    owl:sameAs viaf:314897182 ;
+    foaf:givenname "Volha" ;
+    foaf:surname "Piotukh" .
+
+:person:PlantinJ
+    a foaf:Person ;
+    owl:sameAs viaf:299928249 ;
+    foaf:givenname "Jean-Christophe" ;
+    foaf:surname "Plantin" ;
+    foaf:homepage <http://www.lse.ac.uk/media@lse/WhosWho/AcademicStaff/JC-Plantin.aspx> .
+
+:person:PoerksenB
+    a foaf:Person ;
+    owl:sameAs viaf:39594382, wd:Q825753 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Poerksen" ;
+    foaf:workInfoHomepage <https://uni-tuebingen.de/en/faculties/faculty-of-humanities/departments/philosophie-rhetorik-medien/institute-of-media-studies/institute/staff/poerksen-bernhard-prof-dr/> .
+
+:person:PoirierL
+    a foaf:Person ;
+    owl:sameAs viaf:47157468013322322941 , orcid:0000-0001-9307-5834 ;
+    foaf:givenname "Lindsay" ;
+    foaf:surname "Poirier" ;
+    foaf:workInfoHomepage <https://www.smith.edu/academics/faculty/lindsay-poirier> .
+
+:person:PolanyiK
+    a foaf:Person ;
+    owl:sameAs viaf:77112818 , wd:Q318029 ;
+    foaf:givenname "Karl" ;
+    foaf:surname "Polanyi" .
+
+:person:PollockN
+    a foaf:Person ;
+    owl:sameAs viaf:9212031 ;
+    foaf:givenname "Neil" ;
+    foaf:surname "Pollock" ;
+    foaf:homepage <https://www.business-school.ed.ac.uk/about/people/84/Neil/Pollock> .
+
+:person:PoltR
+    a foaf:Person ;
+    owl:sameAs wd:Q7328471, viaf:69210655, orcid:0000-0003-3782-2617 ;
+    foaf:givenname "Richard" ;
+    foaf:surname "Polt" ;
+    foaf:homepage <https://site.xavier.edu/polt/typewriters/> .
+
+:person:PossatiL
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7110-6107 ;
+    foaf:givenname "Luca" ;
+    foaf:surname "Possati" ;
+    foaf:workInfoHomepage <https://research.tudelft.nl/en/persons/lm-possati> .
+
+:person:PriestleyM
+    a foaf:Person ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Priestley" ;
+    foaf:homepage <http://markpriestley.net> .
+
+:person:PrykeM
+    a foaf:Person ;
+    owl:sameAs viaf:116567482 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Pryke" ;
+    foaf:workInfoHomepage <https://www.open.ac.uk/people/mdp5> .
+
+:person:PutzO
+    a foaf:Person ;
+    owl:sameAs viaf:182027285, orcid:0000-0002-5286-9571 ;
+    foaf:givenname "Ole" ;
+    foaf:surname "Pütz" .
+
+:person:RadioE
+    a foaf:Person ;
+    owl:sameAs viaf:, wd:Q50355312, orcid:0000-0003-0734-1978 ;
+    foaf:givenname "Erik" ;
+    foaf:surname "Radio" ;
+    foaf:homepage <https://erikradio.github.io/> .
+
+:person:RandallD
+    a foaf:Person ;
+    foaf:givenname "D. W." ;
+    foaf:surname "Randall" ;
+    foaf:homepage <https://www.researchgate.net/profile/Dave_Randall> .
+
+:person:RenearA
+    a foaf:Person ;
+    owl:sameAs viaf:311203806, orcid:0000-0001-5384-4467 ;
+    foaf:givenname "Allen H." ;
+    foaf:surname "Renear" ;
+    foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
+
+:person:RennJ
+    a foaf:Person ;
+    owl:sameAs viaf:59192489, wd:Q1717584, orcid:0000-0002-3681-2188 ;
+    foaf:givenname "Jürgen" ;
+    foaf:surname "Renn" ;
+    foaf:workInfoHomepage <https://www.mpg.de/331646/history-of-science-renn> .
+
+:person:RheinbergerH
+    a foaf:Person ;
+    owl:sameAs viaf:84204864, wd:Q1577590, orcid:0000-0003-3741-4250 ;
+    foaf:givenname "Hans-Jörg" ;
+    foaf:surname "Rheinberger" ;
+    foaf:workInfoHomepage <https://www.mpiwg-berlin.mpg.de/users/rheinbg> .
+
+:person:RibesD
+    a foaf:Person ;
+    owl:sameAs wd:Q29033066 ;
+    foaf:givenname "David" ;
+    foaf:surname "Ribes" ;
+    foaf:homepage <http://www.davidribes.com/> .
+
+:person:RiederB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-2404-9277 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Rieder" ;
+    foaf:workInfoHomepage <https://www.uva.nl/en/profile/r/i/b.rieder/b.rieder.html> .
+
+:person:RoachR
+    a foaf:Person ;
+    owl:sameAs viaf:311786586, orcid:0000-0002-8102-4287 ;
+    foaf:givenname "Rebecca" ;
+    foaf:surname "Roach" ;
+    foaf:workInfoHomepage <https://www.birmingham.ac.uk/staff/profiles/english/roach-rebecca.aspx> .
+
+:person:RobertsS
+    a foaf:Person ;
+    foaf:givenname "Sarah T." ;
+    foaf:surname "Roberts" ;
+    foaf:homepage <https://illusionofvolition.com> .
+
+:person:RobertsSean
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5990-9161 ;
+    foaf:givenname "Seán G." ;
+    foaf:surname "Roberts" ;
+    foaf:workInfoHomepage <https://research-information.bris.ac.uk/en/persons/sean-g-roberts> .
+
+:person:RobinsonL
+    a foaf:Person ;
+    owl:sameAs viaf:162963207, wd:Q60362435 ;
+    foaf:givenname "Lyn" ;
+    foaf:surname "Robinson" ;
+    foaf:homepage <https://thelynxiblog.com> ;
+    foaf:workInfoHomepage <https://www.city.ac.uk/people/academics/lyn-robinson> .
+
+:person:RoblesAndersonE
+    a foaf:Person ;
+    foaf:givenname "Erica" ;
+    foaf:surname "Robles-Anderson" ;
+    foaf:workInfoHomepage <http://steinhardt.nyu.edu/faculty/Erica_Robles-Anderson> .
+
+:person:RoseN
+    a foaf:Person ;
+    owl:sameAs viaf:69699, wd:Q539879 ;
+    foaf:givenname "Nikolas" ;
+    foaf:surname "Rose" ;
+    foaf:homepage <http://nikolasrose.com/> .
+
+:person:RosnerD
+    a foaf:Person ;
+    owl:sameAs viaf:13150565705506252782 ;
+    foaf:givenname "Daniela K." ;
+    foaf:surname "Rosner" ;
+    foaf:homepage <http://www.danielarosner.com/> .
+
+:person:RothA
+    a foaf:Person ;
+    owl:sameAs viaf:109190323, wd:Q28542 ;
+    foaf:givenname "Alvin" ;
+    foaf:surname "Roth" ;
+    foaf:homepage <https://web.stanford.edu/~alroth/> .
+
+:person:RotmanB
+    a foaf:Person ;
+    foaf:givenname "Brian" ;
+    foaf:surname "Rotman" ;
+    foaf:workInfoHomepage <https://comparativestudies.osu.edu/people/rotman.3> .
+
+:person:RouvroyA
+    a foaf:Person ;
+    owl:sameAs viaf:53597499 ;
+    foaf:givenname "Antoinette" ;
+    foaf:surname "Rouvroy" ;
+    foaf:publications <https://works.bepress.com/antoinette_rouvroy/> .
+
+:person:RueckerS
+    a foaf:Person ;
+    owl:sameAs viaf:165153459, orcid:0000-0003-0099-1687 ;
+    foaf:givenname "Stan" ;
+    foaf:surname "Ruecker" .
+
+:person:RussellA
+    a foaf:Person ;
+    owl:sameAs viaf:307422034 ;
+    foaf:givenname "Andrew L." ;
+    foaf:surname "Russell" ;
+    foaf:homepage <http://arussell.org> .
+
+:person:RuyerR
+    a foaf:Person ;
+    owl:sameAs wd:Q3055498 , viaf:29540211 ;
+    foaf:givenname "Raymond" ;
+    foaf:surname "Ruyer" ;
+    foaf:page <https://en.wikipedia.org/wiki/Raymond_Ruyer> .
+
+:person:SackW
+    a foaf:Person ;
+    owl:sameAs viaf:190146284394615331476 ;
+    foaf:givenname "Warren" ;
+    foaf:surname "Sack" ;
+    foaf:homepage <https://people.ucsc.edu/~wsack/> ;
+    foaf:workInfoHomepage <http://film.ucsc.edu/faculty/warren_sack> .
+
+:person:SacksH
+    a foaf:Person ;
+    owl:sameAs viaf:79135093, wd:Q745034 ;
+    foaf:givenname "Harvey" ;
+    foaf:surname "Sacks" ;
+    foaf:page <https://en.wikipedia.org/wiki/Harvey_Sacks> .
+
+:person:SadowskiJ
+    a foaf:Person ;
+    foaf:givenname "Jathan" ;
+    foaf:surname "Sadowski" ;
+    foaf:homepage <https://www.jathansadowski.com> .
+
+:person:SakaiT
+    a foaf:Person ;
+    foaf:givenname "Tetsuya " ;
+    foaf:surname "Sakai" ;
+    owl:sameAs orcid:0000-0002-6720-963X ;
+    foaf:homepage <http://sakailab.com/tetsuya/> .
+
+:person:SalterC
+    a foaf:Person ;
+    owl:sameAs viaf:86250151 ;
+    foaf:givenname "Chris" ;
+    foaf:surname "Salter" ;
+    foaf:homepage <http://www.chrissalter.com/> .
+
+:person:SandvigC
+    a foaf:Person ;
+    owl:sameAs viaf:186145542448096640602, orcid:0000-0002-9025-536X ;
+    foaf:givenname "Christian" ;
+    foaf:surname "Sandvig" ;
+    foaf:homepage <http://www-personal.umich.edu/~csandvig/> .
+
+:person:SassamanL
+    a foaf:Person ;
+    owl:sameAs viaf:20913252, wd:Q523530 ;
+    foaf:givenname "Len" ;
+    foaf:surname "Sassaman" .
+
+:person:SchwarzO
+    a foaf:Person ;
+    foaf:givenname "Ori" ;
+    foaf:surname "Schwarz" ;
+    foaf:homepage <https://sociology.biu.ac.il/en/node/1557> ;
+    .
+
+:person:SeaverN
+    a foaf:Person ;
+    owl:sameAs viaf:316003929 , orcid:0000-0002-3913-1134 ;
+    foaf:givenname "Nick" ;
+    foaf:surname "Seaver" ;
+    foaf:homepage <https://nickseaver.net> .
+
+:person:SeitzT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7147-1278 ;
+    foaf:givenname "Tatjana" ;
+    foaf:surname "Seitz" ;
+    foaf:page <https://www.linkedin.com/in/tatjana-seitz/> .
+
+:person:SerresM
+    a foaf:Person ;
+    owl:sameAs viaf:76322799, wd:Q364456 ;
+    foaf:givenname "Michel" ;
+    foaf:surname "Serres" ;
+    foaf:page <http://michelserres.blogspot.com/> .
+
+:person:ShahA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7029-2008 ;
+    foaf:givenname "Aayush" ;
+    foaf:surname "Shah" .
+
+:person:ShahC
+    a foaf:Person ;
+    foaf:givenname "Chirag" ;
+    foaf:surname "Shah" ;
+    foaf:homepage <https://ischool.uw.edu/people/faculty/profile/chirags> ;
+    .
+
+:person:SharrockW
+    a foaf:Person ;
+    owl:sameAs viaf:22273870, wd:Q116174613 ;
+    foaf:givenname "Wes" ;
+    foaf:surname "Sharrock" ;
+    foaf:page <https://philpeople.org/profiles/wes-sharrock> .
+
+:person:ShavitA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-4683-0857 ;
+    foaf:givenname "Ayelet" ;
+    foaf:surname "Shavit" ;
+    foaf:workInfoHomepage <http://english.telhai.ac.il/content/dr-ayelet-shavit> .
+
+:person:ShawR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5486-159X ;
+    foaf:givenname "Ryan" ;
+    foaf:surname "Shaw" ;
+    foaf:homepage <https://aeshin.org> ;
+    foaf:workInfoHomepage <https://sils.unc.edu/people/faculty/profiles/Ryan-Shaw> .
+
+:person:ShioseT
+    a foaf:Person ;
+    foaf:givenname "Takayuki" ;
+    foaf:surname "Shiose" ;
+    foaf:homepage <http://designinnovation.jp/people/introduction/shiose.html> .
+
+:person:Shubina
+    a foaf:Person ;
+    foaf:givenname "Anna" ;
+    foaf:surname "Shubina" ;
+    foaf:homepage <http://www.cs.dartmouth.edu/~ashubina/> .
+
+:person:ShuyR
+    a foaf:Person ;
+    owl:sameAs viaf:86105642 , wd:Q18738864 ;
+    foaf:givenname "Roger" ;
+    foaf:surname "Shuy" ;
+    foaf:homepage <http://www.rogershuy.com> .
+
+:person:SiegertB
+    a foaf:Person ;
+    owl:sameAs viaf:66760106, wd:Q110715 ;
+    foaf:givenname "Bernhard" ;
+    foaf:surname "Siegert" .
+
+:person:SilenoG
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-5155-9021 ;
+    foaf:givenname "Giovanni" ;
+    foaf:surname "Sileno" ;
+    foaf:homepage <https://gsileno.net> .
+
+:person:SimmelG
+    a foaf:Person ;
+    owl:sameAs viaf:39384262, wd:Q76849 ;
+    foaf:givenname "Georg" ;
+    foaf:surname "Simmel" .
+
+:person:SimonA
+    a foaf:Person ;
+    foaf:givenname "Andre" ;
+    foaf:surname "Simon" ;
+    foaf:page <https://www.linkedin.com/in/andre-simon-762b6663/> .
+
+:person:SimondonG
+    a foaf:Person ;
+    owl:sameAs viaf:12340592, wd:Q1345582 ;
+    foaf:givenname "Gilbert" ;
+    foaf:surname "Simondon" ;
+    foaf:page <https://en.wikipedia.org/wiki/Gilbert_Simondon> .
+
+:person:SimonsM
+    a foaf:Person ;
+    foaf:givenname "Maarten" ;
+    foaf:surname "Simons" ;
+    foaf:workInfoHomepage <https://ppw.kuleuven.be/ecs/english/team/Team/00011538> .
+
+:person:SiskinC
+    a foaf:Person ;
+    owl:sameAs viaf:11321860 ;
+    foaf:givenname "Clifford" ;
+    foaf:surname "Siskin" ;
+    foaf:workInfoHomepage <https://as.nyu.edu/content/nyu-as/as/faculty/clifford-siskin.html> .
+
+:person:SmithB
+    a foaf:Person ;
+    owl:sameAs viaf:46432, wd:Q4858975 ;
+    foaf:givenname "Barbara Herrnstein" ;
+    foaf:surname "Smith" ;
+    foaf:homepage <https://english.duke.edu/people/barbara-h-smith> .
+
+:person:SmithD
+    a foaf:Person ;
+    owl:sameAs viaf:16932461, wd:Q104606621 ;
+    foaf:givenname "Daniel Warren" ;
+    foaf:surname "Smith" ;
+    foaf:page <https://philpeople.org/profiles/daniel-w-smith> .
+
+:person:SmithDorothy
+    a foaf:Person ;
+    owl:sameAs viaf:110114552, wd:Q545915 ;
+    foaf:givenname "Dorothy" ;
+    foaf:surname "Smith" ;
+    foaf:page <https://en.wikipedia.org/wiki/Dorothy_E._Smith> .
+
+:person:SmithJEH
+    a foaf:Person ;
+    owl:sameAs wd:Q22089058 ;
+    foaf:givenname "Justin E. H." ;
+    foaf:surname "Smith" ;
+    foaf:homepage <https://www.the-hinternet.com> .
+
+:person:SofiaZ
+    a foaf:Person ;
+    owl:sameAs viaf:29227959, wd:Q67782833 ;
+    foaf:givenname "Zoë" ;
+    foaf:surname "Sofia" ;
+    foaf:workInfoHomepage <https://www.westernsydney.edu.au/ics/people/adjunct_researchers/zoe_sofoulis> .
+
+:person:SorensenBB
+    a foaf:Person ;
+    foaf:givenname "Søren" ;
+    foaf:surname "Bøgh Sørensen" ;
+    foaf:homepage <https://www.cbs.dk/en/research/departments-and-centres/department-of-management-society-and-communication/staff/sobsmsc> ;
+    .
+
+:person:SorrentinoM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-7222-6338, viaf:55831070 ;
+    foaf:givenname "Maddalena" ;
+    foaf:surname "Sorrentino" ;
+    foaf:workInfoHomepage <http://www.unimi.it/chiedove/ENG/schedaPersonaXML.jsp?matricola=16130> .
+
+:person:SpadeD
+    a foaf:Person ;
+    owl:sameAs viaf:170374343, wd:Q5246478 ;
+    foaf:givenname "Dean" ;
+    foaf:surname "Spade" ;
+    foaf:homepage <http://www.deanspade.net/> .
+
+:person:SpencerBrownG
+    a foaf:Person ;
+    owl:sameAs viaf:35259416 , wd:Q1508271 ;
+    foaf:givenname "George" ;
+    foaf:surname "Spencer-Brown" .
+
+:person:StanleyKO
+    a foaf:Person ;
+    foaf:givenname "Kenneth O." ;
+    foaf:surname "Stanley" ;
+    foaf:homepage <https://www.kenstanley.net> .
+
+:person:StarS
+    a foaf:Person ;
+    owl:sameAs wd:Q3505585, viaf:92811280 ;
+    foaf:givenname "Susan Leigh" ;
+    foaf:surname "Star" ;
+    foaf:homepage <http://lchc.ucsd.edu/People/lstar_bio.html> .
+
+:person:StarosielskiN
+    a foaf:Person ;
+    owl:sameAs viaf:310731262, wd:Q81228010 ;
+    foaf:givenname "Nicole" ;
+    foaf:surname "Starosielski" ;
+    foaf:page <http://www.surfacing.in/> ;
+    foaf:workInfoHomepage <https://steinhardt.nyu.edu/people/nicole-starosielski> .
+
+:person:StawarskaB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9971-2726, viaf:91040455 ;
+    foaf:givenname "Beata" ;
+    foaf:surname "Stawarska" ;
+    foaf:workInfoHomepage <https://philosophy.uoregon.edu/profile/stawarsk/> .
+
+:person:StennerP
+    a foaf:Person ;
+    owl:sameAs viaf:19559999 ;
+    foaf:givenname "Paul" ;
+    foaf:surname "Stenner" ;
+    foaf:homepage <http://www.open.ac.uk/people/ps7476> .
+
+:person:StevensN
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3811-9245 ;
+    foaf:givenname "Nikki" ;
+    foaf:surname "Stevens" ;
+    foaf:homepage <http://nikkistevens.com/> .
+
+:person:StevensW
+    a foaf:Person ;
+    foaf:givenname "Wesley" ;
+    foaf:surname "Stevens" ;
+    foaf:workInfoHomepage <https://sc.edu/study/colleges_schools/cic/faculty-staff/stevens_wesley_elizabeth.php> .
+
+:person:StevensonM
+    a foaf:Person ;
+    owl:sameAs viaf:305818191 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Stevenson" ;
+    foaf:homepage <https://hcommons.org/members/mstevenson/> .
+
+:person:StewartJ
+    a foaf:Person ;
+    owl:sameAs viaf:84982383 ;
+    foaf:givenname "John" ;
+    foaf:surname "Stewart" .
+
+:person:StolerAL
+    a foaf:Person ;
+    owl:sameAs wd:Q16203101, viaf:263247736 ;
+    foaf:givenname "Ann Laura" ;
+    foaf:surname "Stoler" ;
+    foaf:workInfoHomepage <https://www.newschool.edu/lang/faculty/Ann-Stoler/> .
+
+:person:StyhreA
+    a foaf:Person ;
+    owl:sameAs viaf:43679267, orcid:0000-0002-8347-2665 ;
+    foaf:givenname "Alexander" ;
+    foaf:surname "Styhre" ;
+    foaf:workInfoHomepage <https://fek.handels.gu.se/english/about-the-department/staff?languageId=100001&userId=xstyal> .
+
+:person:SuchmanL
+    a foaf:Person ;
+    owl:sameAs viaf:13809022, wd:Q3266022 ;
+    foaf:givenname "Lucy" ;
+    foaf:surname "Suchman" ;
+    foaf:homepage <http://www.lancaster.ac.uk/sociology/about-us/people/lucy-suchman> .
+
+:person:SvenssonP
+    a foaf:Person ;
+    foaf:givenname "Patrik" ;
+    foaf:surname "Svensson" ;
+    foaf:homepage <http://patriksv.net/> .
+
+:person:TanW
+    a foaf:Person ;
+    owl:sameAs viaf:300112526, wd:Q18618595 ;
+    foaf:givenname "Wang-Chiew" ;
+    foaf:surname "Tan" ;
+    foaf:homepage <https://wangchiew.github.io/> .
+
+:person:TangR
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4563-5192 ;
+    foaf:givenname "Rebekah" ;
+    foaf:surname "Tang" .
+
+:person:TatarchenkoK
+    a foaf:Person ;
+    owl:sameAs viaf:2587159521658833070004, orcid:0000-0002-6548-3467 ;
+    foaf:givenname "Ksenia" ;
+    foaf:surname "Tatarchenko" ;
+    foaf:workInfoHomepage <https://faculty.smu.edu.sg/profile/ksenia-tatarchenko-1676> .
+
+:person:TazzioliM
+    a foaf:Person ;
+    foaf:givenname "Martina" ;
+    foaf:surname "Tazzioli" ;
+    owl:sameAs orcid:0000-0003-0866-7611 ;
+    foaf:workInfoHomepage <https://www.unibo.it/sitoweb/martina.tazzioli> .
+
+:person:TeilG
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5536-5459 , viaf:27310566 ;
+    foaf:givenname "Geneviève" ;
+    foaf:surname "Teil" ;
+    foaf:homepage <https://www.researchgate.net/profile/Genevieve-Teil> .
+
+:person:TempletonA
+    a foaf:Person ;
+    foaf:givenname "Adly" ;
+    foaf:surname "Templeton" ;
+    foaf:homepage <https://www.linkedin.com/in/adly-templeton-64005a136> .
+
+:person:TenenD
+    a foaf:Person ;
+    owl:sameAs viaf:4810150085884015060001 ;
+    foaf:givenname "Dennis" ;
+    foaf:surname "Tenen" ;
+    foaf:homepage <http://denten.plaintext.in/> .
+
+:person:TennisJ
+    a foaf:Person ;
+    owl:sameAs viaf:271507113 ;
+    foaf:givenname "Joseph T." ;
+    foaf:surname "Tennis" ;
+    foaf:homepage <https://joseph-t-tennis.squarespace.com> ;
+    foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/jtennis> .
+
+:person:ThomasN
+    a foaf:Person ;
+    foaf:givenname "Neal" ;
+    foaf:surname "Thomas" ;
+    foaf:homepage <http://www.hivemedia.ca> .
+
+:person:ThomerA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-6238-3498, wd:Q47502207 ;
+    foaf:givenname "Andrea K." ;
+    foaf:surname "Thomer" ;
+    foaf:homepage <https://www.akthomer.com/> .
+
+:person:ThompsonB
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7348-3531 ;
+    foaf:givenname "Bill" ;
+    foaf:surname "Thompson" ;
+    foaf:homepage <https://billdthompson.github.io/> .
+
+:person:TimmermansS
+    a foaf:Person ;
+    owl:sameAs viaf:8521206 ;
+    foaf:givenname "Stefan" ;
+    foaf:surname "Timmermans" ;
+    foaf:homepage <http://www.stefantimmermans.com/> .
+
+:person:TironiM
+    a foaf:Person ;
+    owl:sameAs viaf:306485297 ;
+    foaf:givenname "Martín" ;
+    foaf:surname "Tironi" ;
+    foaf:workInfoHomepage <https://diseno.uc.cl/persona/tironi-martin/> .
+
+:person:TomkinsS
+    a foaf:Person ;
+    owl:sameAs wd:Q571698 , viaf:32109548 ;
+    foaf:givenname "Silvan" ;
+    foaf:surname "Tomkins" ;
+    foaf:page <https://en.wikipedia.org/wiki/Silvan_Tomkins> .
+
+:person:TraceC
+    a foaf:Person ;
+    owl:sameAs wd:Q91690818 ;
+    foaf:givenname "Ciaran" ;
+    foaf:surname "Trace" ;
+    foaf:homepage <https://www.ischool.utexas.edu/~cbtrace/> .
+
+:person:TreemJ
+    a foaf:Person ;
+    foaf:givenname "Jeffrey W." ;
+    foaf:surname "Treem" ;
+    foaf:homepage <http://jeffreytreem.com/> .
+
+:person:TsingA
+    a foaf:Person ;
+    owl:sameAs viaf:10002035, wd:Q21821411 ;
+    foaf:givenname "Anna Lowenhaupt" ;
+    foaf:surname "Tsing" ;
+    foaf:workInfoHomepage <https://anthro.ucsc.edu/faculty/singleton.php?&singleton=true&cruz_id=atsing> .
+
+:person:TurnerF
+    a foaf:Person ;
+    owl:sameAs viaf:340652, wd:Q5496435 ;
+    foaf:givenname "Fred" ;
+    foaf:surname "Turner" ;
+    foaf:homepage <http://fredturner.stanford.edu/> .
+
+:person:UllmanE
+    a foaf:Person ;
+    owl:sameAs viaf:72247376, wd:Q5365042 ;
+    foaf:givenname "Ellen" ;
+    foaf:surname "Ullman" .
+
+:person:ValderramaM
+    a foaf:Person ;
+    foaf:givenname "Matías" ;
+    foaf:surname "Valderrama " ;
+    foaf:workInfoHomepage <https://warwick.ac.uk/fac/cross_fac/cim/people/matias-valderrama/> .
+
+:person:ValdiviaA
+    a foaf:Person ;
+    foaf:givenname "Ana" ;
+    foaf:surname "Valdivia" ;
+    owl:sameAs orcid:0000-0001-8214-8380 ;
+    foaf:homepage <https://www.avaldivia.com> .
+
+:person:VanBenthemJ
+    a foaf:Person ;
+    owl:sameAs wd:Q1692111, viaf:94809147 ;
+    foaf:givenname "Johan" ;
+    foaf:surname "van Benthem" ;
+    foaf:homepage <https://staff.fnwi.uva.nl/j.vanbenthem/> .
+
+:person:VanDijkJ
+    a foaf:Person ;
+    foaf:givenname "Jelle" ;
+    foaf:surname "van Dijk" ;
+    foaf:workInfoHomepage <https://people.utwente.nl/jelle.vandijk> .
+
+:person:VanDoorenT
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9710-6682, viaf:68333149 ;
+    foaf:givenname "Thom" ;
+    foaf:surname "van Dooren ";
+    foaf:homepage <https://www.thomvandooren.org/> .
+
+:person:VanDoornN
+    a foaf:Person ;
+    owl:sameAs viaf:304924835 ;
+    foaf:givenname "Niels" ;
+    foaf:surname "van Doorn" ;
+    foaf:workInfoHomepage <http://www.uva.nl/profiel/d/o/n.a.j.m.vandoorn/n.a.j.m.vandoorn.html> .
+
+:person:VansummerenS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-7793-9049, wd:Q18618602 ;
+    foaf:givenname "Stijn" ;
+    foaf:surname "Vansummeren" ;
+    foaf:workInfoHomepage <https://cs.ulb.ac.be/members/stijn/index.html> .
+
+:person:VenuriniT
+    a foaf:Person ;
+    owl:sameAs viaf:304924835 ;
+    foaf:givenname "Tommaso" ;
+    foaf:surname "Venturini" ;
+    foaf:homepage <http://www.tommasoventurini.it/> .
+
+:person:VerhoevenD
+    a foaf:Person ;
+    owl:sameAs wd:Q5247794, viaf:48769109, orcid:0000-0003-3680-3561 ;
+    foaf:givenname "Deb" ;
+    foaf:surname "Verhoeven" ;
+    foaf:homepage <https://www.debverhoeven.com/> .
+
+:person:ViljoenS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0549-9966 ;
+    foaf:givenname "Salome" ;
+    foaf:surname "Viljoen" ;
+    foaf:homepage <https://www.salomeviljoen.com> ;
+    foaf:workInfoHomepage <https://www.law.columbia.edu/faculty/salome-viljoen> .
+
+:person:VismannC
+    a foaf:Person ;
+    owl:sameAs wd:Q1133451 , viaf:55029890 ;
+    foaf:givenname "Cornelia" ;
+    foaf:surname "Vismann" ;
+    foaf:page <https://de.wikipedia.org/wiki/Cornelia_Vismann> .
+
+:person:VitakJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-9362-9032 ;
+    foaf:givenname "Jessica" ;
+    foaf:surname "Vitak" ;
+    foaf:homepage <https://jessicavitak.com/> .
+
+:person:VoglJ
+    a foaf:Person ;
+    owl:sameAs viaf:71522982 , wd:Q1708148 ;
+    foaf:givenname "Joseph" ;
+    foaf:surname "Vogl" ;
+    foaf:homepage <https://josephvogl.de/> .
+
+:person:VonFoersterH
+    a foaf:Person ;
+    owl:sameAs viaf:29663298, wd:Q78688 ;
+    foaf:givenname "Heinz" ;
+    foaf:surname "von Foerster" ;
+    foaf:homepage <https://www.univie.ac.at/constructivism/HvF.htm> .
+
+:person:VonUexkull
+    a foaf:Person ;
+    owl:sameAs viaf:49319199, wd:Q511513 ;
+    foaf:givenname "Jakob" ;
+    foaf:surname "von Uexküll" ;
+    foaf:page <https://en.wikipedia.org/wiki/Jakob_Johann_von_Uexk%C3%BCll> .
+
+:person:VossG
+    a foaf:Person ;
+    owl:sameAs viaf:1673152637805220220008 ;
+    foaf:givenname "Georgina" ;
+    foaf:surname "Voss" ;
+    foaf:page <https://gsvoss.com> .
+
+:person:WakefordN
+    a foaf:Person ;
+    owl:sameAs viaf:220452036 ;
+    foaf:givenname "Nina" ;
+    foaf:surname "Wakeford" ;
+    foaf:homepage <https://www.gold.ac.uk/sociology/staff/wakeford-nina/> .
+
+:person:WaldsteinM
+    a foaf:Person ;
+    owl:sameAs viaf:273055176 ;
+    foaf:givenname "Maxim" ;
+    foaf:surname "Waldstein" ;
+    foaf:page <https://auc.academia.edu/MaximWaldstein> .
+
+:person:WangJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-1017-8908 ;
+    foaf:givenname "Jenny" ;
+    foaf:surname "Weng" .
+
+:person:WardH
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0001-8238-5036 , wd:Q43193512 ;
+    foaf:givenname "Helen" ;
+    foaf:surname "Ward" ;
+    foaf:workInfoHomepage <https://www.imperial.ac.uk/people/h.ward> .
+
+:person:WarkS
+    a foaf:Person ;
+    foaf:givenname "Scott" ;
+    foaf:surname "Wark" ;
+    foaf:workInfoHomepage <https://www.gold.ac.uk/visual-cultures/staff/wark-scott/> .
+
+:person:WarnerJ
+    a foaf:Person ;
+    owl:sameAs viaf:12561344 , wd:Q112554378 , orcid:0000-0001-9845-8586 ;
+    foaf:givenname "Julian" ;
+    foaf:surname "Warner" ;
+    foaf:workInfoHomepage <https://www.qub.ac.uk/schools/QueensManagementSchool/People/AcademicStaff/AllAcademicStaffProfiles/Warner.html> .
+
+:person:WatsonR
+    a foaf:Person ;
+    owl:sameAs viaf:147150325514110090006 ;
+    foaf:givenname "Rod" ;
+    foaf:surname "Watson" ;
+    foaf:page <http://emcawiki.net/bibtex/browser.php?author=Rod+Watson&bib=emca.bib> .
+
+:person:WeatherbyL
+    a foaf:Person ;
+    foaf:givenname "Leif" ;
+    foaf:surname "Weatherby" ;
+    foaf:homepage <https://as.nyu.edu/faculty/leif-allison-reid-weatherby.html> .
+
+:person:WeberN
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-6008-3763 ;
+    foaf:givenname "Nicholas M." ;
+    foaf:surname "Weber" ;
+    foaf:homepage <http://nicweber.info/> .
+
+:person:WestSM
+    a foaf:Person ;
+    owl:sameAs viaf:1241155832959733490009, orcid:0000-0002-3947-6896 ;
+    foaf:givenname "Sarah Myers" ;
+    foaf:surname "West" ;
+    foaf:homepage <https://www.sarahmyerswest.com/> .
+
+:person:WickettK
+    a foaf:Person ;
+    owl:sameAs wd:Q62576259 ;
+    foaf:givenname "Karen M." ;
+    foaf:surname "Wickett" ;
+    foaf:workInfoHomepage <https://ischool.illinois.edu/people/karen-wickett> .
+
+:person:WilliamsR
+    a foaf:Person ;
+    owl:sameAs wd:Q27252, viaf:60907032 ;
+    foaf:givenname "Robin" ;
+    foaf:surname "Williams" .
+
+:person:WilsonE
+    a foaf:Person ;
+    owl:sameAs wd:Q47488092 ;
+    foaf:givenname "Elizabeth" ;
+    foaf:surname "Wilson" ;
+    foaf:workInfoHomepage <https://wgss.emory.edu/people/biography/wilson-elizabeth.html> .
+
+:person:WinogradT
+    a foaf:Person ;
+    owl:sameAs viaf:36948575, wd:Q92826 ;
+    foaf:givenname "Terry" ;
+    foaf:surname "Winograd" ;
+    foaf:homepage <https://hci.stanford.edu/winograd/> .
+
+:person:WinthropYoungG
+    a foaf:Person ;
+    owl:sameAs viaf:119473466 ;
+    foaf:givenname "Geoffrey" ;
+    foaf:surname "Winthrop-Young" ;
+    foaf:workInfoHomepage <http://cenes.ubc.ca/people/geoffrey-winthrop-young/> .
+
+:person:WittkowerD
+    a foaf:Person ;
+    owl:sameAs viaf:63483601 ;
+    foaf:givenname "Dylan E." ;
+    foaf:surname "Wittkower" ;
+    foaf:workInfoHomepage <https://www.odu.edu/directory/people/d/dwittkow> .
+
+:person:WobbrockJ
+    a foaf:Person ;
+    foaf:givenname "Jacob O." ;
+    foaf:surname "Wobbrock" ;
+    foaf:homepage <https://faculty.washington.edu/wobbrock/> .
+
+:person:WojciechowskiJ
+    a foaf:Person ;
+    owl:sameAs viaf:73903272, wd:Q28354404 ;
+    foaf:givenname "Jerzy A." ;
+    foaf:surname "Wojciechowski" .
+
+:person:WolffK
+    a foaf:Person ;
+    owl:sameAs viaf:98310436, wd:Q67259 ;
+    foaf:givenname "Kurt H." ;
+    foaf:surname "Wolff" .
+
+:person:WoodwardA
+    a foaf:Person ;
+    owl:sameAs viaf:83476948 , orcid:0000-0002-1447-4114 ;
+    foaf:givenname "Ashley" ;
+    foaf:surname "Wooodward" ;
+    foaf:workInfoHomepage <https://www.dundee.ac.uk/people/ashley-woodward> .
+
+:person:WrightS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3928-420X ;
+    foaf:givenname "Steve" ;
+    foaf:surname "Wright" ;
+    foaf:workInfoHomepage <https://research.monash.edu/en/persons/steven-wright> .
+
+:person:WuXM
+    a foaf:Person ;
+    foaf:givenname "Xiao-Ming" ;
+    foaf:surname "Wu" ;
+    owl:sameAs orcid:0000-0002-3130-0554 ;
+    foaf:homepage <http://www4.comp.polyu.edu.hk/~csxmwu/> .
+
+:person:YeJ
+    a foaf:Person ;
+    foaf:givenname "Juan" ;
+    foaf:surname "Ye" ;
+    foaf:homepage <https://sites.google.com/site/juanyeresearch/> .
+
+:person:YermakovaA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-4019-2313 ;
+    foaf:givenname "Anya" ;
+    foaf:surname "Yermakova" ;
+    foaf:homepage <http://www.anyayermakova.com/> .
+
+:person:YoungL
+    a foaf:Person ;
+    owl:sameAs viaf:611150085863815060000, orcid:0000-0003-4318-8552 ;
+    foaf:givenname "Liam Cole" ;
+    foaf:surname "Young" ;
+    foaf:workInfoHomepage <https://carleton.ca/sjc/profile/young-liam-cole/> .
+
+:person:ZiegerS
+    a foaf:Person ;
+    owl:sameAs viaf:48666606 ;
+    foaf:givenname "Susan" ;
+    foaf:surname "Zieger" ;
+    foaf:workInfoHomepage <https://profiles.ucr.edu/susan.zieger> .

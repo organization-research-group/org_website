@@ -1,0 +1,137 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:proceedings:ACL2020
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics" ;
+    dc:date "2020" ;
+    dc:publisher :publisher:ACL .
+
+:proceedings:CHI2014
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '14)" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-2473-1" .
+
+:proceedings:CHI2019
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '19)" ;
+    dc:date "2019" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-5970-2" .
+
+:proceedings:CHI2020
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems" ;
+    dc:date "2020" ;
+    dc:publisher :publisher:ACM ;
+    bibo:doi "10.1145/3313831" ;
+    bibo:isbn13 "978-1-4503-6708-0" .
+
+:proceedings:COLIS10
+    a bibo:Proceedings ;
+    dc:title "Proceedings of CoLIS: 10th International Conference on Conceptions of Library and Information Science" ;
+    dc:date "2019" ;
+    dc:publisher :journal:IR .
+
+:proceedings:CSCW2017
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
+    dc:date "2017" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-4335-0" .
+
+:proceedings:ConceptualBasis1974
+    a bibo:Proceedings ;
+    dc:title "Conceptual Basis of the Classification of Knowledge: Proceedings of the Ottawa Conference on the Conceptual Basis of the Classification of Knowledge" ;
+    dc:date "1974" ;
+    dc:publisher :publisher:Verlag ;
+    bibo:editor :person:WojciechowskiJ ;
+    bibo:editorList (
+        :person:WojciechowskiJ
+    ) .
+
+:proceedings:DIS2016
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2016 ACM Conference on Designing Interactive Systems" ;
+    dc:date "2016" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-4031-1" .
+
+:proceedings:FACCT23
+    a bibo:Proceedings ;
+    dc:title "FAccT '23: Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency" ;
+    dc:date "12 June 2023" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "9798400701924" .
+
+:proceedings:HICSS2011
+    a bibo:Proceedings ;
+    dc:date "January 2011" ;
+    dc:title "Proceedings of the 2011 44th Hawaii International Conference on System Sciences" ;
+    dc:publisher :publisher:IEEComputerSociety .
+
+:proceedings:Hypertext1991
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the third annual ACM conference on Hypertext" ;
+    dc:date "1991" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-0-89791-461-1" .
+
+:proceedings:Hypertext2001
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the twelfth annual ACM conference on Hypertext" ;
+    dc:date "2001" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn10 "1-58113-420-7" .
+
+:proceedings:IRI2015
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2015 IEEE International Conference on Information Reuse and Integration" ;
+    dc:date "2015" ;
+    dc:publisher :publisher:IEEE ;
+    bibo:isbn13 "978-1-4673-6656-4" .
+
+:proceedings:NCSIWS
+    a bibo:Proceedings ;
+    dc:title "NeurIPS 2022 Workshop on Neuro Causal and Symbolic AI (nCSI)" ;
+    dc:date "2022" ;
+    dc:publisher :publisher:NeurIPS ;
+    bibo:uri "https://neurips.cc/virtual/2022/workshop/50011" .
+
+:proceedings:Onward2014
+    a bibo:Proceedings ;
+    dc:title "Onward! 2014: Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming & Software" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:IEEE ;
+    bibo:doi "10.1145/2661136" ;
+    bibo:isbn13 "978-1-4503-3210-1" .
+
+:proceedings:PODS08
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the twenty-seventh ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems" ;
+    dc:date "2008" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-60558-152-1" .
+
+:proceedings:WebStudies2018
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the 2nd International Conference on Web Studies" ;
+    dc:date "2018" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-1-4503-6438-6" .

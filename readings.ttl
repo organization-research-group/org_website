@@ -1,0 +1,4865 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ConferencePaper
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Article .
+
+:Lecture
+    a rdf:Class ;
+    rdfs:isSubClassOf bibo:Document .
+
+:reading:Abbate2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/24701475.2017.1305836> ;
+    dc:title "What and where is the Internet? (Re)defining Internet histories" ;
+    dc:creator :person:AbbateJ ;
+    bibo:authorList (
+        :person:AbbateJ
+    ) ;
+    dc:isPartOf :journal:InternetHistories:1:1-2 ;
+    bibo:pages "8-14" ;
+    bibo:doi "10.1080/24701475.2017.1305836" .
+
+:reading:Acker2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2015.68> ;
+    dc:title "Toward a Hermeneutics of Data" ;
+    dc:creator :person:AckerA ;
+    bibo:authorList (
+        :person:AckerA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "July 2015" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "3" ;
+        bibo:volume "37"
+    ] ;
+    bibo:pages "70-75" ;
+    bibo:doi "10.1109/MAHC.2015.68" .
+
+:reading:Adam1998
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9780203005057> ;
+    dc:title "Artificial knowing: Gender and the thinking machine" ;
+    bibo:shortTitle "Artificial knowing" ;
+    dc:creator :person:AdamA ;
+    bibo:authorList (
+        :person:AdamA
+    ) ;
+    dc:date "1998" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:doi "10.4324/9780203005057" .
+
+:reading:Agre1994a
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01972243.1994.9960162> ;
+    dc:title "Surveillance and capture: Two models of privacy" ;
+    bibo:shortTitle "Surveillance and capture" ;
+    dc:creator :person:AgreP ;
+    bibo:authorList (
+        :person:AgreP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "April 1, 1994" ;
+        dc:isPartOf :journal:InformationSociety ;
+        bibo:issue "2" ;
+        bibo:volume "10"
+    ] ;
+    bibo:pages "101-127" ;
+    bibo:doi "10.1080/01972243.1994.9960162" .
+
+:reading:Agre1994b
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305840> ;
+    dc:title "Accountability and discipline: A comment on Suchman and Winograd" ;
+    bibo:shortTitle "Accountability and discipline" ;
+    dc:creator :person:AgreP ;
+    bibo:authorList (
+        :person:AgreP
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "31-35" ;
+    bibo:doi "10.1007/BF01305840" .
+
+:reading:Alcoff1997
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1017/S0269889700002556> ;
+    dc:title "Immanent  Truth" ;
+    dc:creator :person:AlcoffL ;
+    bibo:authorList (
+        :person:AlcoffL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1997" ;
+        dc:isPartOf :journal:ScienceInContext ;
+        bibo:volume "10" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "97-112" ;
+    bibo:doi "10.1017/S0269889700002556" .
+
+:reading:Amoore2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/03085147.2015.1043793> ;
+    dc:title "Life beyond big data: governing with little analytics" ;
+    bibo:shortTitle "Life beyond big data" ;
+    dc:creator :person:AmooreL, :person:PiotukhV ;
+    bibo:authorList (
+        :person:AmooreL
+        :person:PiotukhV
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "August 2015" ;
+        dc:isPartOf :journal:EconSoc ;
+        bibo:volume "44" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "341-366" ;
+    bibo:doi "10.1080/03085147.2015.1043793" .
+
+:reading:Amoore2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.1215/9781478009276> ;
+    dc:title "Cloud ethics: Algorithms and the attributes of ourselves and others" ;
+    bibo:shortTitle "Cloud ethics" ;
+    dc:creator :person:AmooreL ;
+    bibo:authorList (
+        :person:AmooreL
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:DUP ;
+    bibo:doi "10.1215/9781478009276" .
+
+:reading:Anderson2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1137/18M1183595> ;
+    dc:title "The rankability of data" ;
+    dc:creator :person:AndersonP, :person:ChartierT, :person:LangvilleA ;
+    bibo:authorList (
+        :person:AndersonP
+        :person:ChartierT
+        :person:LangvilleA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:MDS ;
+        bibo:issue "1" ;
+        bibo:volume "1"
+    ] ;
+    bibo:pages "643-646" ;
+    bibo:doi "10.1137/18M1183595" .
+
+:reading:Angus2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s13347-018-0324-4> ;
+    dc:title "Logic of subsumption, logic of invention: Marx, Marcuse, and Simondon" ;
+    dc:creator :person:AngusI ;
+    bibo:authorList (
+        :person:AngusI
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:PhilosophyAndTechnology ;
+        bibo:issue "" ;
+        bibo:volume "32"
+    ] ;
+    bibo:pages "613–625" ;
+    bibo:doi "10.1007/s13347-018-0324-4" .
+
+:reading:Ankeny2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1017/9781108593014> ;
+    dc:title "Model Organisms" ;
+    dc:creator :person:AnkenyR, :person:LeonelliS ;
+    bibo:authorList (
+        :person:AnkenyR
+        :person:LeonelliS
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:CUP ;
+    bibo:doi "10.1017/9781108593014" .
+
+:reading:Apel1981
+    # FIXME: reprint?
+    a :Reading, bibo:Book ;
+    dc:title "Charles Peirce: From Pragmatism to Pragmaticism" ;
+    dc:creator :person:OttoApelK ;
+    bibo:authorList (
+        :person:OttoApelK
+    ) ;
+    bibo:translator :person:KroisJ ;
+    dc:date "1981" ;
+    dc:publisher :publisher:UMassP .
+
+:reading:Arawjo2020
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/3313831.3376731> ;
+    dc:creator :person:ArawjoI ;
+    bibo:authorList (
+        :person:ArawjoI
+    ) ;
+    bibo:reproducedIn :proceedings:CHI2020 ;
+    bibo:presentedAt :conference:CHI2020 ;
+    bibo:pages "1-15" ;
+    bibo:doi "10.1145/3313831.3376731" .
+
+:reading:Askey2017
+    a :Reading ;
+    owl:sameAs <https://doi.org/10.18665/sr.303501> ;
+    dc:title "Finding a Way from the Margins to the Middle: Library Information Technology, Leadership, and Culture" ;
+    bibo:doi "https://doi.org/10.18665/sr.303501" .
+
+:reading:Baez2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0082> ;
+    dc:title "Structurelessness 2.0" ;
+    dc:creator :person:BaezJ ;
+    bibo:authorList (
+        :person:BaezJ
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "253-256" ;
+    bibo:doi "10.1353/wsq.2013.0082" .
+
+:reading:BakHerrie2025
+    a :Reading, bibo:Book ;
+    dc:title "Thinking Through Data: How Outliers, Aggregates, and Patterns Shape Perception" ;
+    dc:creator :person:BakHerrieM ;
+    bibo:authorList (
+        :person:BakHerrieM
+    ) ;
+    dc:publisher :publisher:SUP ;
+    dc:date "2025" ;
+    bibo:isbn "9781503639874" ;
+    foaf:homepage <https://www.sup.org/books/thinking-through-data> .
+
+:reading:Barad2003
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/345321> ;
+    dc:title "Posthumanist performativity: Toward an understanding of how matter comes to matter" ;
+    bibo:shortTitle "Posthumanist performativity" ;
+    dc:creator :person:BaradK ;
+    bibo:authorList (
+        :person:BaradK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2003" ;
+        dc:isPartOf :journal:Signs ;
+        bibo:issue "3" ;
+        bibo:volume "28"
+    ] ;
+    bibo:pages "801–831" ;
+    bibo:doi "10.1086/345321" .
+
+:reading:Barker2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/02632764221140825> ;
+    dc:title "Michael Serres and the philosophy of technology" ;
+    dc:creator :person:BarkerT ;
+    bibo:authorList (
+        :person:BarkerT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:TCS
+        # bibo:issue "" ;
+        # bibo:volume ""
+    ] ;
+    bibo:pages "1-16" ;
+    bibo:doi "10.1177/02632764221140825" .
+
+:reading:Bates2018
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/lib.2018.0002> ;
+    dc:title "Concepts for the study of information embodiment" ;
+    dc:creator :person:BatesM ;
+    bibo:authorList (
+        :person:BatesM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:LibTrends ;
+        bibo:issue "3" ;
+        bibo:volume "66"
+    ] ;
+    bibo:pages "239-266" ;
+    bibo:doi "10.1353/lib.2018.0002" .
+
+:reading:Becker1982a
+    a :Reading, bibo:BookSection ;
+    dc:title "Art worlds and collective activity" ;
+    dc:creator :person:BeckerH ;
+    bibo:authorList (
+        :person:BeckerH
+    ) ;
+    dc:isPartOf :volume:Becker1982 ;
+    bibo:pages "1–39" .
+
+:reading:Becker2023
+    a :Reading , bibo:Book ;
+    dc:title "Insolvent: How to Reorient Computing for Just Sustainability" ;
+    dc:creator :person:BeckerC ;
+    bibo:authorList ( :person:BeckerC ) ;
+    dc:date "2023" ;
+    dc:publisher :publisher:MIT .
+
+:reading:Benardou2017
+    a :Reading, bibo:BookSection ;
+    dc:title "Introduction: a critique of digital practices and research infrastructures" ;
+    dc:creator :person:BenardouA, :person:ChampionE, :person:DallasC, :person:HughesL ;
+    bibo:authorList (
+        :person:BenardouA
+        :person:ChampionE
+        :person:DallasC
+        :person:HughesL
+    ) ;
+    dc:isPartOf :volume:Benardou2017 ;
+    bibo:pages "1–14" .
+
+:reading:Bendell2018
+    a :Reading, bibo:Article ;
+    dc:title "Deep Adaptation: A Map for Navigating Climate Tragedy" ;
+    dc:date "2018" ;
+    dc:creator :person:BendellJ ;
+    bibo:authorList (
+        :person:BendellJ
+    ) ;
+    bibo:issuer [
+        a foaf:Organization ;
+        foaf:name "IFLAS Occasional Papers" ;
+        bibo:uri "https://www.cumbria.ac.uk/research/centres/iflas/"
+    ] ;
+    bibo:uri "http://web.archive.org/web/20190112162910/http://www.lifeworth.com/deepadaptation.pdf" .
+
+:reading:Bender2020
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.18653/v1/2020.acl-main.463> ;
+    dc:title "Climbing towards NLU: On meaning, form, and understanding in the Age of Data" ;
+    dc:creator :person:BenderE, :person:KollerA ;
+    bibo:authorList (
+        :person:BenderE
+        :person:KollerA
+    ) ;
+    bibo:reproducedIn :proceedings:ACL2020 ;
+    bibo:presentedAt :conference:ACL2020 ;
+    bibo:pages "5185-5198" ;
+    bibo:doi "10.18653/v1/2020.acl-main.463" .
+
+:reading:Bergman2018
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1007/978-3-319-98092-8> ;
+    dc:title "A knowledge representation practionary: Guidelines based on Charles Saunders Peirce" ;
+    bibo:shortTitle "A knowledge representation practionary" ;
+    dc:creator :person:BergmanM ;
+    bibo:authorList (
+        :person:BergmanM
+    ) ;
+    dc:date "2018" ;
+    dc:publisher :publisher:Springer ;
+    bibo:doi "10.1007/978-3-319-98092-8" .
+
+:reading:Bergson2023IV
+    a :Reading , bibo:BookSection ;
+    dc:title "The cinematographic mechanism of thought and the mechanistic illusion. A glance at the history of systems. Real becoming and false evolutionism" ;
+    bibo:shortTitle "The cinematographic mechanism of thought and the mechanistic illusion" ;
+    dc:creator :person:BergsonH ;
+    bibo:authorList (
+        :person:BergsonH
+    ) ;
+    dc:isPartOf :volume:Bergson2023 ;
+    bibo:pages "238-316" .
+
+:reading:Berlant2011
+    a :Reading , bibo:Book ;
+    dc:title "Cruel Optimism" ;
+    dc:creator :person:BerlantL ;
+    bibo:authorList ( :person:BerlantL ) ;
+    dc:date "2011" ;
+    dc:publisher :publisher:DUP .
+
+:reading:Bernard2018
+    a :Reading, bibo:BookSection ;
+    dc:title "The total archive: On the function of non-knowledge in digital cultures" ;
+    dc:creator :person:BernardA ;
+    bibo:authorList (
+        :person:BernardA
+    ) ;
+    dc:isPartOf :volume:Bernard2018 ;
+    bibo:pages "19–38" .
+
+:reading:Bernstein1991
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/122974.122999> ;
+    dc:title "Architectures for volatile hypertext" ;
+    dc:creator :person:BernsteinM, :person:BolterJ, :person:JoyceM, :person:MylonasE ;
+    bibo:authorList (
+        :person:BernsteinM
+        :person:BolterJ
+        :person:JoyceM
+        :person:MylonasE
+    ) ;
+    bibo:reproducedIn :proceedings:Hypertext1991 ;
+    bibo:presentedAt :conference:Hypertext1991 ;
+    bibo:pages "243-260" ;
+    bibo:doi "10.1145/122974.122999" .
+
+:reading:Bernstein2018
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/3240431.3240433> ;
+    dc:title "Links: Exercises In Style" ;
+    dc:creator :person:BernsteinM ;
+    bibo:authorList (
+        :person:BernsteinM
+    ) ;
+    bibo:reproducedIn :proceedings:WebStudies2018 ;
+    bibo:presentedAt :conference:WebStudies2018 ;
+    bibo:pages "5-11" ;
+    bibo:doi "10.1145/3240431.3240433" .
+
+:reading:Bishop2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/02632764221141804> ;
+    dc:title "Bernard Stiegler and the Internation Project: An introduction" ;
+    dc:creator :person:BishopR ;
+    bibo:authorList (
+        :person:BishopR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "7-8" ;
+        bibo:volume "39"
+    ] ;
+    bibo:pages "5-17" ;
+    bibo:doi "10.1177/02632764221141804" .
+
+:reading:Blair2004
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/427303> ;
+    dc:title "Note Taking as an Art of Transmission" ;
+    dc:creator :person:BlairA ;
+    bibo:authorList (
+        :person:BlairA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "09/2004" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "1" ;
+        bibo:volume "31"
+    ] ;
+    bibo:pages "85-107" ;
+    bibo:doi "10.1086/427303" .
+
+:reading:Bogen1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305851> ;
+    dc:title "“Do Winograd and Flores have politics?”" ;
+    bibo:shortTitle "“Do Winograd and Flores have politics?" ;
+    dc:creator :person:BogenD ;
+    bibo:authorList (
+        :person:BogenD
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "79-83" ;
+    bibo:doi "10.1007/BF01305851" .
+
+:reading:Boland2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1057/s41303-017-0043-4> ;
+    dc:title "The limits to language in doing systems design" ;
+    dc:creator :person:BolandR, :person:LyytinenK ;
+    bibo:authorList (
+        :person:BolandR
+        :person:LyytinenK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:EJIS ;
+        dc:date "May 2017" ;
+        bibo:volume "26" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "248-259" ;
+    bibo:doi "10.1057/s41303-017-0043-4" .
+
+:reading:Bowers1991
+    a :Reading, bibo:BookSection ;
+    dc:title "The Janus Faces of Design: Some Critical Questions for CSCW" ;
+    dc:creator :person:BowersM ;
+    bibo:authorList (
+        :person:BowersM
+    ) ;
+    dc:isPartOf :volume:Bowers1991 ;
+    bibo:pages "333-350" .
+
+:reading:BoysenB2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1111/oli.12174> ;
+    dc:title "The embarrassment of being human: A critique of new materialism and object-oriented ontology" ;
+    dc:creator :person:BoysenB ;
+    bibo:authorList (
+        :person:BoysenB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:OrbisLitterarum ;
+        bibo:volume "73" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "225-242" ;
+    bibo:doi "10.1111/oli.12174" ;
+    dc:publisher :publisher:Wiley .
+
+:reading:Bratton2016
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/9780262029575.001.0001> ;
+    dc:title "The stack: On software and sovereignty" ;
+    bibo:shortTitle "The stack" ;
+    dc:creator :person:BrattonB ;
+    bibo:authorList (
+        :person:BrattonB
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/9780262029575.001.0001" .
+
+:reading:Bratus2011
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Exploit Programming: From Buffer Overflows to “Weird Machines” and Theory of Computation" ;
+    bibo:shortTitle "Exploit Programming" ;
+    dc:creator :person:BratusS, :person:LocastoM, :person:PattersonM, :person:SassamanL, :person:Shubina ;
+    bibo:authorList (
+        :person:BratusS
+        :person:LocastoM
+        :person:PattersonM
+        :person:SassamanL
+        :person:Shubina
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2011" ;
+        dc:isPartOf :journal:login ;
+        bibo:issue "6" ;
+        bibo:volume "36"
+    ] ;
+    bibo:uri "https://www.usenix.org/publications/login/december-2011-volume-36-number-6/exploit-programming-buffer-overflows-weird" .
+
+:reading:Bricken2023
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Towards monosemanticity: decomposing language models with dictionary learnin" ;
+    bibo:shortTitle "Towards monosemanticity" ;
+    dc:creator :person:BrickenT , :person:TempletonA , :person:BatsonJ , :person:ChenB , :person:JermynA ;
+    bibo:authorList (
+    :person:BrickenT
+    :person:TempletonA
+    :person:BatsonJ
+    :person:ChenB
+    :person:JermynA
+    ) ;
+    dc:isPartOf [
+       dc:date "2023" ;
+       dc:isPartOf :journal:TCT ;
+    ] ;
+    bibo:uri "https://transformer-circuits.pub/2023/monosemantic-features/" .
+
+:reading:Brock2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.18574/nyu/9781479820375.001.0001> ;
+    dc:title "Distributed blackness: African American cybercultures" ;
+    bibo:shortTitle "Distributed blackness" ;
+    dc:creator :person:BrockA ;
+    bibo:authorList (
+        :person:BrockA
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:NYUP ;
+    bibo:doi "10.18574/nyu/9781479820375.001.0001" .
+
+:reading:Brower2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.16995/lefou.74> ;
+    dc:title "Genealogy of algorithms: Datafication as transvaluation" ;
+    dc:creator :person:BrowerV ;
+    bibo:authorList (
+        :person:BrowerV
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:Foucaldien ;
+        bibo:volume "6" ;
+        bibo:issue "1"
+    ] ;
+    bibo:doi "10.16995/lefou.74" .
+
+:reading:Brun2004a
+    a :Reading, bibo:BookSection ;
+    dc:title "Technology and the composer" ;
+    dc:creator :person:BrunH ;
+    bibo:authorList (
+        :person:BrunH
+    ) ;
+    dc:isPartOf :volume:Brun2004 ;
+    bibo:pages "163-176" .
+
+:reading:Brun2004b
+    a :Reading, bibo:BookSection ;
+    dc:title "For anticommunication" ;
+    dc:creator :person:BrunH ;
+    bibo:authorList (
+        :person:BrunH
+    ) ;
+    dc:isPartOf :volume:Brun2004 ;
+    bibo:pages "60-70" .
+
+:reading:Bucher2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0163443720914028> ;
+    dc:title "Nothing to disconnect from? Being singular plural in an age of machine learning" ;
+    dc:creator :person:BucherT ;
+    bibo:authorList (
+        :person:BucherT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:MCS ;
+        bibo:volume "42" ;
+        bibo:issue "4"
+    ] ;
+    bibo:doi "10.1177/0163443720914028" .
+
+:reading:Buneman2008
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1215/17432197-2795741> ;
+    dc:title "Curated databases" ;
+    dc:creator :person:BunemanP, :person:CheneyJ, :person:TanW, :person:VansummerenS ;
+    bibo:authorList (
+        :person:BunemanP
+        :person:CheneyJ
+        :person:TanW
+        :person:VansummerenS
+    ) ;
+    bibo:reproducedIn :proceedings:PODS08 ;
+    bibo:presentedAt :conference:PODS08 ;
+    bibo:pages "1-12" ;
+    bibo:doi "10.1215/17432197-2795741" .
+
+:reading:Button1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305842> ;
+    dc:title "What's wrong with speech-act theory" ;
+    dc:creator :person:ButtonG ;
+    bibo:authorList (
+        :person:ButtonG
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "39-42" ;
+    bibo:doi "10.1007/BF01305842" .
+
+:reading:Button2022
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781003220794> ;
+    dc:title "Ethnomethodology, conversational analysis and constructive analysis: On formal structures and practical action" ;
+    bibo:shortTitle "Ethnomethodology, conversational analysis and constructive analysis" ;
+    dc:creator :person:ButtonG, :person:LynchM, :person:SharrockW ;
+    bibo:authorList (
+        :person:ButtonG
+        :person:LynchM
+        :person:SharrockW
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:doi "10.4324/9781003220794" .
+
+:reading:Calzati2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1527476420957267> ;
+    dc:title "Decolonising “data colonialism”: Propositions for investigating the Realpolitik of today’s networked ecology" ;
+    dc:creator :person:CalzatiS ;
+    bibo:authorList (
+        :person:CalzatiS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:TNM
+    ] ;
+    bibo:pages "1-16" ;
+    bibo:doi "10.1177/1527476420957267" .
+
+:reading:Canguilhem2010
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/916875318> ;
+    dc:title "Knowledge of Life" ;
+    dc:creator :person:CanguilhemG ;
+    bibo:authorList (
+        :person:CanguilhemG
+    ) ;
+    dc:date "2010" ;
+    dc:publisher :publisher:FUP ;
+    bibo:isbn13 "9780823229260" .
+
+:reading:Chen2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2409.16022> ;
+    dc:title "AI Can Be Cognitively Biased: An Exploratory Study on Threshold Priming in LLM-Based Batch Relevance Assessment" ;
+    dc:creator :person:ChenN , :person:LiuJ , :person:DongX , :person:LiuQ , :person:SakaiT , :person:WuXM ;
+    bibo:authorList (
+        :person:ChenN
+        :person:LiuJ
+        :person:DongX
+        :person:LiuQ
+        :person:SakaiT
+        :person:WuXM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2409.16022" .
+
+:reading:Chun2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/elh.2016.0011> ;
+    dc:title "Big Data as Drama" ;
+    dc:creator :person:ChunW ;
+    bibo:authorList (
+        :person:ChunW
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016/06/22" ;
+        dc:isPartOf :journal:ELH ;
+        bibo:issue "2" ;
+        bibo:volume "83"
+    ] ;
+    bibo:pages "363-382" ;
+    bibo:doi "10.1353/elh.2016.0011" .
+
+:reading:Ciborra2004
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780199275267.001.0001> ;
+    dc:title "The labyrinths of information: Challenging the wisdom of systems" ;
+    bibo:shortTitle "The labyrinths of information" ;
+    dc:creator :person:CiborraC ;
+    bibo:authorList (
+        :person:CiborraC
+    ) ;
+    dc:date "2004" ;
+    dc:publisher :publisher:OUP ;
+    bibo:isbn13 "978-0-19-927526-7" ;
+    bibo:doi "10.1093/acprof:oso/9780199275267.001.0001" .
+
+:reading:Clark1996
+    a :Reading, bibo:BookSection ;
+    dc:title "Happy Couplings: Emergence and Explanatory Interlock" ;
+    dc:creator :person:ClarkA ;
+    bibo:authorList (
+        :person:ClarkA
+    ) ;
+    dc:isPartOf :volume:Kelly2016 ;
+    bibo:pages "262-281" .
+
+:reading:Clarke2009a
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822391388-001> ;
+    dc:title "Introduction: Neocybernetic Emergence" ;
+    dc:creator :person:ClarkeB, :person:HansenM ;
+    bibo:authorList (
+        :person:ClarkeB
+        :person:HansenM
+    ) ;
+    dc:isPartOf :volume:Clarke2009 ;
+    bibo:pages "1-25" ;
+    bibo:doi "10.1215/9780822391388-001" .
+
+:reading:Clarke2009b
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822391388-003> ;
+    dc:title "Heinz von Foerster's Demons: The Emergence of Second-Order Systems Theory" ;
+    dc:creator :person:ClarkeB ;
+    bibo:authorList (
+        :person:ClarkeB
+    ) ;
+    dc:isPartOf :volume:Clarke2009 ;
+    bibo:pages "34-61" ;
+    bibo:doi "10.1215/9780822391388-003" .
+
+:reading:Cleland2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1073/pnas.2015370118> ;
+    dc:title "Historical natural kinds and mineralogy: Systematizing contingency in the context of necessity" ;
+    bibo:shortTitle "Historical natural kinds and mineralogy" ;
+    dc:creator :person:ClelandC, :person:HazenR, :person:MorrisonS ;
+    bibo:authorList (
+        :person:ClelandC
+        :person:HazenR
+        :person:MorrisonS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:PNAS ;
+        bibo:issue "1" ;
+        bibo:volume "118"
+    ] ;
+    bibo:doi "10.1073/pnas.2015370118" .
+
+:reading:Collier2008
+    a :Reading, bibo:BookSection ;
+    dc:title "Information in biological systems" ;
+    dc:creator :person:CollierJ ;
+    bibo:authorList (
+        :person:CollierJ
+    ) ;
+    dc:isPartOf :volume:Adriaans2008 ;
+    bibo:pages "763-787" ;
+    owl:sameAs <https://doi.org/10.1016/B978-0-444-51726-5.50024-8> ;
+    bibo:doi "10.1016/B978-0-444-51726-5.50024-8" .
+
+:reading:Cope2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.24242/jclis.v1i1.30> ;
+    dc:title "Four Theses for Critical Library and Information Studies: A Manifesto" ;
+    bibo:shortTitle "Four Theses for Critical Library and Information Studies" ;
+    dc:creator :person:CopeJ ;
+    bibo:authorList (
+        :person:CopeJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017/01/31" ;
+        dc:isPartOf :journal:JCLIS ;
+        bibo:issue "1" ;
+        bibo:volume "1"
+    ] ;
+    bibo:doi "10.24242/jclis.v1i1.30" .
+
+:reading:Couldry2019
+    a :Reading, bibo:Book ;
+    dc:title "Costs of connection: How data is colonizing human life and appropriating it for capitalism" ;
+    bibo:shortTitle "Costs of connection" ;
+    dc:creator :person:CouldryN, :person:MejiasU ;
+    bibo:authorList (
+        :person:CouldryN
+        :person:MejiasU
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:SUP ;
+    bibo:isbn13 "9781503609754" .
+
+:reading:Crooks2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01972243.2021.1920081> ;
+    dc:title "Numbers will not save us: Agonistic data practices" ;
+    dc:creator :person:CrooksR, :person:CurrieM ;
+    bibo:authorList (
+        :person:CrooksR
+        :person:CurrieM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:InformationSociety ;
+        bibo:issue "4" ;
+        bibo:volume "37"
+    ] ;
+    bibo:pages "201-213" ;
+    bibo:doi "10.1080/01972243.2021.1920081" .
+
+:reading:Curtis1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305847> ;
+    dc:title "Can speech acts walk the talk?" ;
+    dc:creator :person:CurtisB ;
+    bibo:authorList (
+        :person:CurtisB
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "61-64" ;
+    bibo:doi "10.1007/BF01305847" .
+
+:reading:DIgnazio2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/11805.001.0001> ;
+    dc:title "Data Feminism" ;
+    dc:creator :person:DIgnazio, :person:KleinL ;
+    bibo:authorList (
+        :person:DIgnazio
+        :person:KleinL
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/11805.001.0001" .
+
+:reading:Damerow1996
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1007/978-94-015-8624-5> ;
+    dc:title "Abstraction and representation: Essays on the cultural evolution of thinking" ;
+    bibo:shortTitle "4" ;
+    dc:creator :person:DamerowP ;
+    bibo:authorList (
+        :person:DamerowP
+    ) ;
+    dc:date "1996" ;
+    dc:publisher :publisher:Kluwer ;
+    bibo:doi "10.1007/978-94-015-8624-5" .
+
+:reading:Dander2022
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1007/978-3-030-84343-4_3> ;
+    dc:title "School of data and shifting forms of political subjectivity" ;
+    dc:creator :person:DanderV, :person:MacgilchristF ;
+    bibo:authorList (
+        :person:DanderV
+        :person:MacgilchristF
+    ) ;
+    bibo:pages "45–69" ;
+    dc:isPartOf :volume:Bettinger2022 ;
+    bibo:doi "10.1007/978-3-030-84343-4_3" .
+
+:reading:Daston2017
+    a :Reading, :Lecture ;
+    dc:title "Algorithms before computers: Patterns, recipes, and rules" ;
+    dc:creator :person:DastonL ;
+    bibo:authorList (
+        :person:DastonL
+    ) ;
+    dc:created "19 April 2017" ;
+    dc:issued "28 April 2017" ;
+    dc:format "Video" ;
+    bibo:uri "https://www.youtube.com/watch?v=pqoSMWnWTwA" .
+
+:reading:Day2014
+    a :Reading, bibo:Book ;
+    dc:title "Indexing It All: The Subject in the Age of Documentation, Information, and Data" ;
+    dc:creator :person:DayR ;
+    bibo:authorList (
+        :person:DayR
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:MIT .
+
+:reading:Day2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/1600910X.2022.2098352> ;
+    dc:title "Personalization: a new political arithmetic?" ;
+    dc:creator :person:DayS , :person:LuryC , :person:WardH ;
+    bibo:authorList (
+        :person:DayS
+        :person:LuryC
+        :person:WardH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:Distinktion ;
+        bibo:issue "2" ;
+        bibo:volume "24"
+    ] ;
+    bibo:pages "167–194" ;
+    bibo:doi "10.1080/1600910X.2022.2098352" .
+
+:reading:DeGroat2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01639374.2014.954297> ;
+    dc:title "A history of video game cataloging in U.S. libraries" ;
+    dc:creator :person:DeGroatG ;
+    bibo:authorList (
+        :person:DeGroatG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2015" ;
+        dc:isPartOf :journal:CCQ ;
+        bibo:issue "2" ;
+        bibo:volume "53 "
+    ] ;
+    bibo:pages "135–156" ;
+    bibo:doi "10.1080/01639374.2014.954297" .
+
+:reading:DeMarco2007
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1057/palgrave.jit.2000070> ;
+    dc:title "Sowing the seeds of IS cultivation in public service organisations" ;
+    dc:creator :person:DeMarcoM, :person:SorrentinoM ;
+    bibo:authorList (
+        :person:DeMarcoM
+        :person:SorrentinoM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "June 2007" ;
+        dc:isPartOf :journal:JIT ;
+        bibo:volume "22" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "184-194" ;
+    bibo:doi "10.1057/palgrave.jit.2000070" .
+
+:reading:Dennett2002
+    a :Reading, bibo:BookSection ;
+    dc:title "Brian Cantwell Smith on evolution, objectivity, and intentionality" ;
+    dc:creator :person:DennettD, :person:CantwellSmithB ;
+    bibo:authorList (
+        :person:DennettD
+        :person:CantwellSmithB
+    ) ;
+    dc:isPartOf :volume:Clapin2002 ;
+    bibo:pages "222-292" .
+
+:reading:Dhaliwal2022
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1086/721167> ;
+    dc:title "On Addressability, or What Even Is Computation?" ;
+    dc:creator :person:DhaliwalRS ;
+    bibo:authorList (
+        :person:DhaliwalRS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Autumn 2022" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:volume "49" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "1-27" ;
+    bibo:doi "10.1086/721167" .
+
+:reading:DiazA2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.70064/mt.v7i2.587> ;
+    dc:title "Technics and Contingency: Ontological Productivity in Computation" ;
+    dc:creator :person:DiazA ;
+    bibo:authorList (
+        :person:DiazA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023-12-18" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "7" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "37-76" ;
+    bibo:doi "10.70064/mt.v7i2.587" .
+
+:reading:Dobson2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1215/01642472-10613653> ;
+    dc:title "Objective Vision: Confusing the Subject of Computer Vision" ;
+    dc:creator :person:DobsonJ ;
+    bibo:authorList (
+        :person:DobsonJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 01 2023" ;
+        dc:isPartOf :journal:SocialText ;
+        bibo:volume "41" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "35-55" ;
+    bibo:doi "10.1215/01642472-10613653" .
+
+:reading:Doganova2024
+    a :Reading , bibo:Book ;
+    dc:title "Discounting the Future: The Ascendancy of a Political Technology" ;
+    bibo:shortTitle "Discounting the Future" ;
+    dc:creator :person:DoganovaL ;
+    bibo:authorList ( :person:DoganovaL ) ;
+    dc:date "2024" ;
+    dc:publisher :publisher:Zone .
+
+:reading:Dork2014
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2556288.2557083> ;
+    dc:title "Monadic exploration: seeing the whole through its parts" ;
+    dc:creator :person:DorkM, :person:ComberR, :person:DadeRobertsonM ;
+    bibo:authorList (
+        :person:DorkM
+        :person:ComberR
+        :person:DadeRobertsonM
+    ) ;
+    bibo:reproducedIn :proceedings:CHI2014 ;
+    bibo:presentedAt :conference:CHI2014 ;
+    bibo:pages "1535-1544" ;
+    bibo:doi "10.1145/2556288.2557083" .
+
+:reading:Dreyfus2007
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1016/j.artint.2007.10.012> ;
+    dc:title "Why Heideggerian AI failed and how fixing it would require making it more Heideggerian" ;
+    dc:creator :person:DreyfusH ;
+    bibo:authorList (
+        :person:DreyfusH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 1, 2007" ;
+        dc:isPartOf :journal:AI ;
+        bibo:issue "18" ;
+        bibo:volume "171"
+    ] ;
+    bibo:pages "1137-1160" ;
+    bibo:doi "10.1016/j.artint.2007.10.012" .
+
+:reading:Ebeling2016
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.1057/978-1-137-50221-6> ;
+    bibo:doi "10.1057/978-1-137-50221-6" ;
+    dc:title "Healthcare and Big Data: Digital Specters and Phantom Objects" ;
+    dc:creator :person:EbelingM ;
+    bibo:authorList (
+        :person:EbelingM
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:Palgrave .
+
+:reading:Emerson2014
+    a :Reading, bibo:Book ;
+    dc:title "Reading writing interfaces: From the digital to the bookbound" ;
+    dc:creator :person:EmersonL ;
+    bibo:authorList (
+        :person:EmersonL
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:UMP .
+
+:reading:Ernst2016
+    a :Reading, bibo:Book ;
+    dc:title "Chronopoetics: The temporal being and operativity of technological media" ;
+    bibo:shortTitle "Chronopoetics" ;
+    dc:creator :person:ErnstW ;
+    bibo:authorList (
+        :person:ErnstW
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:RowmanLittlefield ;
+    bibo:isbn13 "978-1-78348-572-7" .
+
+:reading:Escobar2018ch3
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-004> ;
+    bibo:doi "10.1215/9780822371816-004" ;
+    dc:title "In the Background of Our Culture: Rationalism, Ontological Dualism, and Relationality" ;
+    bibo:shortTitle "Rationalism, Ontological Dualism, and Relationality" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018ch5
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-006> ;
+    bibo:doi "10.1215/9780822371816-006" ;
+    dc:title "Design for Transitions" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018ch6
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-007> ;
+    bibo:doi "10.1215/9780822371816-007" ;
+    dc:title "Autonomous Design and the Politics of Relationality and the Communal" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Escobar2018intro
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822371816-001> ;
+    bibo:doi "10.1215/9780822371816-001" ;
+    dc:title "Introduction" ;
+    dc:isPartOf :volume:Escobar2018 ;
+    dc:creator :person:EscobarA ;
+    bibo:authorList (
+        :person:EscobarA
+    ) .
+
+:reading:Evans2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/jcc4.12180> ;
+    dc:title "Explicating Affordances: A Conceptual Framework for Understanding Affordances in Communication Research" ;
+    dc:creator :person:EvansS, :person:PearceK, :person:VitakJ, :person:TreemJ ;
+    bibo:authorList (
+        :person:EvansS
+        :person:PearceK
+        :person:VitakJ
+        :person:TreemJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "26 December 2016" ;
+        dc:isPartOf :journal:JCC ;
+        bibo:volume "22" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "35-52" ;
+    bibo:doi "10.1111/jcc4.12180" .
+
+:reading:Fairthorne1974
+    a :Reading, :ConferencePaper ;
+    dc:title "Temporal structure in bibliographic classification" ;
+    dc:creator :person:FairthorneR ;
+    bibo:authorList (
+        :person:FairthorneR
+    ) ;
+    bibo:presentedAt :conference:OCCBCK ;
+    bibo:reproducedIn :proceedings:ConceptualBasis1974 ;
+    bibo:pages "404-415" .
+
+:reading:Farstadvoll2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1558/jca.35117> ;
+    dc:title "Growing Concerns: Plants and Their Roots in the Past" ;
+    dc:creator :person:FarstadvollS ;
+    bibo:authorList (
+        :person:FarstadvollS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:JCA ;
+        bibo:issue "5" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "174-193" ;
+    bibo:doi "10.1558/jca.35117" .
+
+:reading:Fazi2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0263276418770243> ;
+    dc:title "Digital Aesthetics: The Discrete and the Continuous" ;
+    dc:creator :person:FaziMB ;
+    bibo:authorList (
+        :person:FaziMB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "1" ;
+        bibo:volume "36"
+    ] ;
+    bibo:pages "3-26" ;
+    bibo:doi "10.1177/0263276418770243" .
+
+:reading:Feenberg2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/08935696.2015.1076968> ;
+    dc:title "Lukács's Theory of Reification and Contemporary Social Movements" ;
+    dc:creator :person:FeenbergA ;
+    bibo:authorList (
+        :person:FeenbergA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "October 2, 2015" ;
+        dc:isPartOf :journal:RethinkingMarxism ;
+        bibo:issue "4" ;
+        bibo:volume "27"
+    ] ;
+    bibo:pages "490-507" ;
+    bibo:doi "10.1080/08935696.2015.1076968" .
+
+:reading:Feinberg2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-03-2016-0030> ;
+    dc:title "Reading databases: slow information interactions beyond the retrieval paradigm" ;
+    bibo:shortTitle "Reading databases" ;
+    dc:creator :person:FeinbergM ;
+    bibo:authorList (
+        :person:FeinbergM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "February 22, 2017" ;
+        dc:isPartOf :journal:JDOC ;
+        bibo:issue "2" ;
+        bibo:volume "73"
+    ] ;
+    bibo:pages "336-356" ;
+    bibo:doi "10.1108/JD-03-2016-0030" .
+
+:reading:Fidler2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23660> ;
+    dc:title "Metadata, infrastructure, and computer-mediated communication in historical perspective" ;
+    dc:creator :person:FidlerB, :person:AckerA ;
+    bibo:authorList (
+        :person:FidlerB
+        :person:AckerA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "February 1, 2017" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:issue "2" ;
+        bibo:volume "68"
+    ] ;
+    bibo:pages "412-422" ;
+    bibo:doi "10.1002/asi.23660" .
+
+:reading:Finn2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.24242/jclis.v3i1.137> ;
+    dc:title "Troubled worlds: A course syllabus about information work and the Anthropocene" ;
+    dc:creator :person:FinnM, :person:RosnerD, :person:BlackS, :person:CunninghamN, :person:DewK, :person:HoyJ, :person:McCraneyK, :person:MorganC ;
+    bibo:authorList (
+        :person:FinnM
+        :person:RosnerD
+        :person:BlackS
+        :person:CunninghamN
+        :person:DewK
+        :person:HoyJ
+        :person:McCraneyK
+        :person:MorganC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:JCLIS ;
+        bibo:volume "3" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:doi "10.24242/jclis.v3i1.137" .
+
+:reading:FletcherWatson2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1145/3243461> ;
+    dc:title "Diversity Computing" ;
+    dc:creator :person:FletcherWatsonS, :person:DeJaegherH, :person:VanDijkJ, :person:FrauenbergerC, :person:MagneeM, :person:YeJ ;
+    bibo:authorList (
+        :person:FletcherWatsonS
+        :person:DeJaegherH
+        :person:VanDijkJ
+        :person:FrauenbergerC
+        :person:MagneeM
+        :person:YeJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September–October 2018" ;
+        dc:isPartOf :journal:interactions ;
+        bibo:issue "5" ;
+        bibo:volume "25"
+    ] ;
+    bibo:pages "28-33" ;
+    bibo:doi "10.1145/3243461" .
+
+:reading:Flynn1997
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/(SICI)1097-4571(199707)48:7%3c614::AID-ASI8%3e3.0.CO;2-W> ;
+    dc:title "W[h]ither the web? The extension or replacement of HTML" ;
+    bibo:shortTitle "W[h]ither the web?" ;
+    dc:creator :person:FlynnP ;
+    bibo:authorList (
+        :person:FlynnP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "July 1, 1997" ;
+        dc:isPartOf :journal:JASIS ;
+        bibo:issue "7" ;
+        bibo:volume "48"
+    ] ;
+    bibo:pages "614-621" ;
+    bibo:doi "10.1002/(SICI)1097-4571(199707)48:7<614::AID-ASI8>3.0.CO;2-W" .
+
+:reading:FrankWilson2020
+    a :Reading , bibo:Book ;
+    dc:title "A Sylvan Tomkins Handbook: Foundations for Affect Theory" ;
+    dc:creator :person:FrankA , :person:WilsonE ;
+    bibo:authorList (
+        :person:FrankA
+        :person:WilsonE
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:UMP .
+
+:reading:Freeman2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0072> ;
+    dc:title "The Tyranny of Structurelessness" ;
+    dc:creator :person:FreemanJ ;
+    bibo:authorList (
+        :person:FreemanJ
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "231-246" ;
+    bibo:doi "10.1353/wsq.2013.0072" .
+
+:reading:Furner2016
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1007/978-3-658-14681-8_17> ;
+    dc:title "“Data”: The data" ;
+    bibo:shortTitle "“Data”" ;
+    dc:creator :person:FurnerJ ;
+    bibo:authorList (
+        :person:FurnerJ
+    ) ;
+    dc:isPartOf :volume:Kelly2016 ;
+    bibo:pages "287-306" ;
+    bibo:doi "10.1007/978-3-658-14681-8_17" .
+
+:reading:Gabriel2014
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2661136.2661155> ;
+    dc:creator :person:GabrielR ;
+    bibo:authorList (
+        :person:GabrielR
+    ) ;
+    bibo:reproducedIn :proceedings:Onward2014 ;
+    bibo:presentedAt :conference:Onward2014 ;
+    bibo:pages "301-319" ;
+    bibo:doi "10.1145/2661136.2661155" .
+
+:reading:Gal2016
+    a :Reading, bibo:BookSection ;
+    dc:title "Scale-Making: Comparison and Perspective as Ideological Projects" ;
+    dc:creator :person:GalS ;
+    bibo:authorList (
+        :person:GalS
+    ) ;
+    dc:isPartOf :volume:Carr2016 ;
+    bibo:pages "91-111" .
+
+:reading:Galey2010
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1093/llc/fqq021> ;
+    dc:title "How a prototype argues" ;
+    dc:creator :person:GaleyA, :person:RueckerS ;
+    bibo:authorList (
+        :person:GaleyA
+        :person:RueckerS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2010/12/01" ;
+        dc:isPartOf :journal:LLC ;
+        bibo:issue "4" ;
+        bibo:volume "25"
+    ] ;
+    bibo:pages "405-424" ;
+    bibo:doi "10.1093/llc/fqq021" .
+
+:reading:GallowayA2025
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Golden age of analog" ;
+    dc:creator :person:GallowayA ;
+    bibo:authorList (
+        :person:GallowayA
+    ) ;
+    dc:date "2025" ;
+    owl:sameAs <https://doi.org/10.1086/717324> ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:CriticalInquiry
+    ] ;
+    bibo:doi "10.1086/717324" ;
+    dc:publisher :publisher:UCP .
+
+:reading:Garfinkel1986
+    a :Reading, bibo:BookSection ;
+    dc:title "On formal structures of practical actions" ;
+    dc:creator :person:GarfinkelH, :person:SacksH ;
+    bibo:authorList (
+        :person:GarfinkelH
+        :person:SacksH
+    ) ;
+    bibo:pages "157-189" ;
+    dc:isPartOf :volume:Garfinkel1986 .
+
+:reading:Garfinkel2008
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/934409002> ;
+    dc:title "Toward a Sociological Theory of Information" ;
+    dc:creator :person:GarfinkelH ;
+    bibo:authorList (
+        :person:GarfinkelH
+    );
+    dc:date "2008" ;
+    dc:publisher :publisher:Paradigm ;
+    bibo:isbn13 "978-1-61205-354-7" .
+
+:reading:Garvey2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2021.3051686> ;
+    dc:title "The “general problem solver” does not exist: Mortimer Taube and the art of AI criticism" ;
+    dc:creator :person:GarveySC ;
+    bibo:authorList (
+        :person:GarveySC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "1" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "60-73" ;
+    bibo:doi "10.1109/MAHC.2021.3051686" .
+
+:reading:GastaldiPellissier2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/03080188.2021.1890484> ;
+    dc:title "The calculus of language: explicit representation of emergent linguistic structure through type-theoretical paradigms" ;
+    dc:creator :person:GastaldiJL, :person:PellissierL ;
+    bibo:authorList (
+        :person:GastaldiJL
+        :person:PellissierL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:InterdisciplinaryScienceReviews ;
+        bibo:volume "46" ;
+        bibo:issue "4"
+    ] ;
+    bibo:pages "569–590" ;
+    bibo:doi "10.1080/03080188.2021.1890484" .
+
+:reading:Geiger2011
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/HICSS.2011.455> ;
+    dc:title "Trace Ethnography: Following Coordination through Documentary Practices" ;
+    bibo:shortTitle "Trace Ethnography" ;
+    dc:creator :person:GeigerR, :person:RibesD ;
+    bibo:authorList (
+        :person:GeigerR
+        :person:RibesD
+    ) ;
+    bibo:reproducedIn :proceedings:HICSS2011 ;
+    bibo:pages "1-10" ;
+    bibo:doi "10.1109/HICSS.2011.455" ;
+    bibo:presentedAt [
+        dc:title "2011 44th Hawaii International Conference on System Sciences" ;
+        a bibo:Conference
+    ] .
+
+:reading:Geiger2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1162/qss_a_00144> ;
+    dc:title "“Garbage in, garbage out” revisited: What do machine learning application papers report about human-labeled training data?" ;
+    dc:creator :person:GeigerR, :person:CopeD, :person:IpJ, :person:LotoshM, :person:ShahA, :person:WangJ, :person:TangR ;
+    bibo:authorList (
+        :person:GeigerR
+        :person:CopeD
+        :person:IpJ
+        :person:LotoshM
+        :person:ShahA
+        :person:WangJ
+        :person:TangR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:QuantitativeScienceStudies ;
+        bibo:issue "2" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "1-33" ;
+    bibo:doi "10.1162/qss_a_00144" .
+
+:reading:Genosko2016
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "A-signifying semiotics" ;
+    dc:creator :person:GenoskoG ;
+    bibo:authorList (
+        :person:GenoskoG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2008" ;
+        dc:isPartOf :journal:PJOS ;
+        bibo:volume "2" ;
+        bibo:issue "1"
+    ] ;
+    bibo:uri "http://journals.lub.lu.se/ojs/index.php/pjos/article/view/8822" .
+
+:reading:Gibson1979
+    # FIXME: make this a chapter, not the whole book
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.4324/9781315740218> ;
+    dc:title "The ecological approach to visual perception" ;
+    dc:creator :person:GibsonJ ;
+    bibo:authorList (
+        :person:GibsonJ
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PsychologyPress ;
+    bibo:isbn13 "978-1-315-74021-8" ;
+    bibo:doi "10.4324/9781315740218" .
+
+:reading:Gilbert2014
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.2307/j.ctt183p7m6> ;
+    dc:title "Common ground: Democracy and collectivity in an age of individualism" ;
+    bibo:shortTitle "Common ground" ;
+    dc:creator :person:GilbertJ ;
+    bibo:authorList (
+        :person:GilbertJ
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:Pluto ;
+    bibo:isbn13 "978-1-84964-976-6" ;
+    bibo:doi "10.2307/j.ctt183p7m6" .
+
+:reading:Ginzburg2004
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/421161> ;
+    dc:title "Family resemblances and family trees: Two cognitive metaphors" ;
+    dc:creator :person:GinzburgC ;
+    bibo:authorList (
+        :person:GinzburgC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Spring 2004" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "3" ;
+        bibo:volume "30"
+    ] ;
+    bibo:pages "537-556" ;
+    bibo:doi "10.1086/421161" .
+
+:reading:Goodwin1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1525/aa.1994.96.3.02a00100> ;
+    dc:title "Professional vision" ;
+    dc:creator :person:GoodwinC ;
+    bibo:authorList (
+        :person:GoodwinC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1994" ;
+        dc:isPartOf :journal:AmericanAnthropologist ;
+        bibo:issue "3" ;
+        bibo:volume "96"
+    ] ;
+    bibo:pages "606-633" ;
+    bibo:doi "10.1525/aa.1994.96.3.02a00100" .
+
+:reading:Gorichanaz2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-01-2016-0007> ;
+    dc:title "Document phenomenology: a framework for holistic analysis" ;
+    bibo:shortTitle "Document phenomenology" ;
+    dc:creator :person:GorichanazT, :person:LathamK ;
+    bibo:authorList (
+        :person:GorichanazT
+        :person:LathamK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:JDOC ;
+        bibo:volume "72" ;
+        bibo:issue "6"
+    ] ;
+    bibo:pages "1114-1133" ;
+    bibo:doi "10.1108/JD-01-2016-0007" .
+
+:reading:Gorichanaz2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.24242/jclis.v1i1.7> ;
+    dc:title "Minting the Obverse: Library and Information Studies as a One-Sided Coin" ;
+    bibo:shortTitle "Minting the Obverse" ;
+    dc:creator :person:GorichanazT ;
+    bibo:authorList (
+        :person:GorichanazT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017/01/31" ;
+        dc:isPartOf :journal:JCLIS ;
+        bibo:issue "1" ;
+        bibo:volume "1"
+    ] ;
+    bibo:doi "10.24242/jclis.v1i1.7" .
+
+:reading:Gray2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/2053951718786316> ;
+    dc:title "Data infrastructure literacy" ;
+    dc:creator :person:GrayJ, :person:GerlitzC, :person:BounegruL ;
+    bibo:authorList (
+        :person:GrayJ
+        :person:GerlitzC
+        :person:BounegruL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:issue "2" ;
+        bibo:volume "5"
+    ] ;
+    bibo:doi "10.1177/2053951718786316" .
+
+:reading:Greene2021
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/11674.001.0001> ;
+    dc:title "The promise of access: Technology, inequality, and the political economy of hope" ;
+    bibo:shortTitle "The promise of access" ;
+    dc:creator :person:GreeneD ;
+    bibo:authorList (
+        :person:GreeneD
+    ) ;
+    dc:date "2021" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/11674.001.0001" .
+
+:reading:Griesemer2016
+    a :Reading, bibo:BookSection ;
+    dc:title "Sharing Spaces, Crossing Boundaries" ;
+    dc:creator :person:GriesemerJ ;
+    bibo:authorList (
+        :person:GriesemerJ
+    ) ;
+    dc:isPartOf :volume:Bowker2015 ;
+    bibo:pages "201-218" .
+
+:reading:Grimmelmann2019
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "All Smart Contracts Are Ambiguous" ;
+    dc:creator :person:GrimmelmannJ ;
+    bibo:authorList (
+        :person:GrimmelmannJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 14, 2019" ;
+        dc:isPartOf :journal:PJLI
+    ] ;
+    bibo:uri "https://ssrn.com/abstract=3315703" .
+
+:reading:GrossR2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s00146-024-02079-8> ;
+    dc:title "Stochastic contingency machines feeding on meaning: on the computational determination of social reality in machine learning" ;
+    dc:creator :person:GrossR ;
+    bibo:authorList (
+        :person:GrossR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "April 2025" ;
+        dc:isPartOf :journal:AIS ;
+        bibo:volume "40" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "2055-2068" ;
+    bibo:doi "10.1007/s00146-024-02079-8" ;
+    dc:publisher :publisher:Springer .
+
+:reading:Grossberg2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/09502386.2016.1173476> ;
+    dc:title "Cultural Studies and Deleuze-Guattari, Part 2: From Affect to Conjunctures" ;
+    dc:creator :person:GrossbergL, :person:BehrenshausenB ;
+    bibo:authorList (
+        :person:GrossbergL
+        :person:BehrenshausenB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:CulturalStudies ;
+        bibo:volume "30" ;
+        bibo:issue "6"
+    ] ;
+    bibo:pages "1001-1028" ;
+    bibo:doi "10.1080/09502386.2016.1173476" .
+
+:reading:Gunkel2025
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "The différance engine: large language models and poststructuralism" ;
+    dc:creator :person:GunkelDJ ;
+    bibo:authorList (
+        :person:GunkelDJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:AIS
+    ] ;
+    bibo:doi "10.1007/s00146-025-02640-z" ;
+    dc:publisher :publisher:Springer .
+
+:reading:GuoS2020
+    a :Reading, bibo:Book ;
+    dc:title "The Evolution of the Chinese Internet: Creative Visibility in the Digital Public" ;
+    dc:creator :person:GuoS ;
+    bibo:authorList (
+        :person:GuoS
+    ) ;
+    dc:publisher :publisher:SUP ;
+    dc:date "2020" ;
+    bibo:isbn "9781503614437" ;
+    foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
+
+:reading:HansenMBN2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.70064/mt.v8i2.1116> ;
+    dc:title "The Contingency of Process, or Why There Is No Computation-in-itself" ;
+    dc:creator :person:HansenM ;
+    bibo:authorList (
+        :person:HansenM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-12-18" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "8" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "13-36" ;
+    bibo:doi "10.70064/mt.v8i2.1116" .
+
+:reading:Haraway2016
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Tentacular Thinking: Anthropocene, Capitalocene, Chthulucene" ;
+    dc:creator :person:HarawayD ;
+    bibo:authorList (
+        :person:HarawayD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 2016" ;
+        dc:isPartOf :journal:eflux ;
+        bibo:volume "75"
+    ] ;
+    bibo:uri "http://www.e-flux.com/journal/75/67125/tentacular-thinking-anthropocene-capitalocene-chthulucene/" .
+
+:reading:Harris2015
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/IRI.2015.65> ;
+    dc:title "Modeling Reusable and Interoperable Faceted Browsing Systems with Category Theory" ;
+    dc:creator :person:HarrisD ;
+    bibo:authorList (
+        :person:HarrisD
+    ) ;
+    bibo:presentedAt :conference:IRI2015 ;
+    bibo:reproducedIn :proceedings:IRI2015 ;
+    bibo:pages "388–395" ;
+    bibo:doi "10.1109/IRI.2015.65" .
+
+:reading:Hauser2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/688293> ;
+    dc:title "Facts in the machine: Systems of record and the performance of sociotechnical truth" ;
+    bibo:shortTitle "Facts in the machine" ;
+    dc:creator :person:HauserE ;
+    bibo:authorList (
+        :person:HauserE
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "07 August 2023" ;
+        dc:isPartOf :journal:JASIST
+    ] ;
+    bibo:doi "10.1002/asi.24820" .
+
+:reading:Hayles2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/688293> ;
+    dc:title "Cognitive Assemblages: Technical Agency and Human Interactions" ;
+    bibo:shortTitle "Cognitive Assemblages" ;
+    dc:creator :person:HaylesN ;
+    bibo:authorList (
+        :person:HaylesN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 1, 2016" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "1" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "32-55" ;
+    bibo:doi "10.1086/688293" .
+
+:reading:Hayles2024
+    a :Reading , bibo:BookSection ;
+    dc:title "Detoxifying cybernetics: from homeostasis to autopoiesis and beyond" ;
+    dc:isPartOf :volume:Hui2024 ;
+    dc:creator :person:HaylesN ;
+    bibo:authorList (
+        :person:HaylesN
+    ) ;
+    bibo:pages "85-99" .
+
+:reading:Healy2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0735275117709046> ;
+    dc:title "Fuck Nuance" ;
+    dc:creator :person:HealyK ;
+    bibo:authorList (
+        :person:HealyK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017" ;
+        dc:isPartOf :journal:SociologicalTheory ;
+        bibo:volume "35" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "118-127" ;
+    bibo:doi "10.1177/0735275117709046" .
+
+:reading:HindSeitz2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/13548565221133248> ;
+    dc:title "Cynical technical practice: From AI to APIs" ;
+    dc:creator :person:HindS , :person:SeitzT ;
+    bibo:authorList (
+        :person:HindS
+        :person:SeitzT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        bibo:volume "30" ;
+        bibo:issue "1" ;
+        dc:isPartOf :journal:Convergence
+    ] ;
+    bibo:doi "10.1177/13548565221133248" .
+
+:reading:Hjorland2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23250> ;
+    dc:title "Classical databases and knowledge organization: A case for boolean retrieval and human decision-making during searches" ;
+    bibo:shortTitle "Classical databases and knowledge organization" ;
+    dc:creator :person:HjorlandB ;
+    bibo:authorList (
+        :person:HjorlandB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "August 1, 2015" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:issue "8" ;
+        bibo:volume "66"
+    ] ;
+    bibo:pages "1559-1575" ;
+    bibo:doi "10.1002/asi.23250" .
+
+:reading:Holmes2002
+    # FIXME: Metadata here could definitely be amended/cleaned up... Kind of a
+    # confusing case.
+    a :Reading, bibo:AcademicArticle ; # FIXME: This is a web journal, maybe not an "Academic" journal?
+    dc:title "The flexible personality: For a new cultural critique" ;
+    dc:creator :person:HolmesB ;
+    bibo:authorList (
+        :person:HolmesB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 2002" ;
+        dc:isPartOf :journal:transversals
+    ] ;
+    bibo:uri "http://eipcp.net/transversal/1106/holmes/en" .
+
+:reading:Hong2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/hith.12269> ;
+    dc:title "Predictions without futures" ;
+    dc:creator :person:HongS ;
+    bibo:authorList (
+        :person:HongS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "September 2022" ;
+        dc:isPartOf :journal:HistoryAndTheory ;
+        bibo:issue "3" ;
+        bibo:volume "61"
+    ] ;
+    bibo:pages "371-390" ;
+    bibo:doi "10.1111/hith.12269" .
+
+:reading:Hui2016
+    a :Reading, bibo:Book ;
+    dc:title "On the Existence of Digital Objects" ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:UMP ;
+    bibo:isbn13 "978-1-4529-4993-2" ;
+    bibo:uri "https://muse.jhu.edu/book/45372" ;
+    bibo:doi "10.5749/minnesota/9780816695515.001.0001" .
+
+:reading:Hui2019ch4
+    a :Reading, bibo:BookSection ;
+    dc:title "Organizing Inorganic" ;
+    dc:isPartOf :volume:Hui2019 ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) .
+
+:reading:Hui2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.5840/philtoday2021652392> ;
+    dc:title "Introduction: Philosophy after automation?" ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:PhilosophyToday ;
+        bibo:issue "2" ;
+        bibo:volume "65"
+    ] ;
+    bibo:pages "217-233" ;
+    bibo:doi "10.5840/philtoday2021652392" .
+
+:reading:Hui2023
+    a :Reading , bibo:BookSection ;
+    dc:title "Paying attention to the birds: Ornithologists and listening" ;
+    dc:creator :person:HuiA ;
+    bibo:authorList (
+        :person:HuiA
+    ) ;
+    dc:isPartOf :volume:Burnett2023 ;
+    bibo:pages "63–80" .
+
+:reading:Iliadis2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.7275/R59884XW> ;
+    dc:title "Informational Ontology: The Meaning of Gilbert Simondon’s Concept of Individuation" ;
+    dc:creator :person:IliadisA ;
+    bibo:authorList (
+        :person:IliadisA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2013" ;
+        dc:isPartOf :journal:CPO ;
+        bibo:volume "2" ;
+        bibo:issue "1"
+    ] ;
+    bibo:doi "10.7275/R59884XW" .
+
+:reading:Iliadis2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.2139/ssrn.3326315> ;
+    dc:title "The Tower of Babel Problem: Making Data Make Sense with Basic Formal Ontology" ;
+    bibo:shortTitle "The Tower of Babel Problem" ;
+    dc:creator :person:IliadisA ;
+    bibo:authorList (
+        :person:IliadisA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 31, 2019" ;
+        dc:isPartOf :journal:OIR
+    ] ;
+    bibo:doi "10.2139/ssrn.3326315" .
+
+:reading:Iliadis2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.24744> ;
+    dc:title "One schema to rule them all: How Schema.org models the world of search" ;
+    dc:creator :person:IliadisA, :person:AckerA, :person:StevensW, :person:KavakliS ;
+    bibo:authorList (
+        :person:IliadisA
+        :person:AckerA
+        :person:StevensW
+        :person:KavakliS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:JASIST
+    ] ;
+    bibo:pages "1-64" ;
+    bibo:doi "10.1002/asi.24744" .
+
+:reading:Ingold2007
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/762459510> ;
+    dc:title "Lines: A brief history" ;
+    dc:creator :person:IngoldT ;
+    bibo:authorList (
+        :person:IngoldT
+    ) ;
+    dc:date "2007" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:isbn13 "9780415424264" .
+
+:reading:Ingold2024
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "On being tasked with the problem of inhabiting the page" ;
+    dc:creator :person:IngoldT ;
+    bibo:authorList (
+        :person:IngoldT
+    ) ;
+    dc:isPartOf [
+       a bibo:Issue ;
+       dc:date "2024" ;
+       dc:isPartOf :journal:SERRC ;
+       bibo:volume "13" ;
+       bibo:issue "2"
+    ] ;
+    bibo:uri "https://social-epistemology.com/2024/02/02/on-being-tasked-with-the-problem-of-inhabiting-the-page-tim-ingold/" .
+
+:reading:Irani2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.28968/cftt.v4i1.243> ;
+    dc:title "“Design Thinking”: Defending Silicon Valley at the Apex of Global Labor Hierarchies" ;
+    dc:creator :person:IraniL ;
+    bibo:authorList (
+        :person:IraniL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018-05-07" ;
+        dc:isPartOf :journal:Catalyst ;
+        bibo:volume "4" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "1-19" ;
+    bibo:doi "10.28968/cftt.v4i1.243" .
+
+:reading:Jacobsen2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764231225768> ;
+    dc:title "The logic of the synthetic supplement in algorithmic societies" ;
+    dc:creator :person:JacobsenB ;
+    bibo:authorList ( :person:JacobsenB ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:TCS
+    ] ;
+    bibo:doi "10.1177/02632764231225768" .
+
+:reading:JohnMathews2022a
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.6092/issn.1971-8853/15931> ;
+    dc:title "The Crisis of Social Categories in the Age of AI" ;
+    dc:creator :person:JohnMathewsJM , :person:CardonD ;
+    bibo:authorList (
+        :person:JohnMathewsJM
+        :person:CardonD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:Sociologica ;
+        bibo:volume "16" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "5–16" ;
+    bibo:doi "10.6092/issn.1971-8853/15931" .
+
+:reading:JohnMathews2022b
+    a :Reading  , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s10551-022-05055-8> ;
+    dc:title "From Reality to World. A Critical Perspective on AI Fairness" ;
+    dc:creator :person:JohnMathewsJM , :person:CardonD , :person:BalagueC ;
+    bibo:authorList (
+        :person:JohnMathewsJM
+        :person:CardonD
+        :person:BalagueC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:JBusEthics ;
+        bibo:volume "178" ;
+        bibo:issue "4"
+    ] ;
+    bibo:pages "945–959" ;
+    bibo:doi "10.1007/s10551-022-05055-8" .
+
+:reading:Joque2022
+    a :Reading, bibo:Book ;
+    dc:title "Revolutionary mathematics: Artificial intelligence, statistics, and the logic of capitalism" ;
+    bibo:shortTitle "Revolutionary mathematics" ;
+    dc:creator :person:JoqueJ ;
+    bibo:authorList (
+        :person:JoqueJ
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:Verso .
+
+:reading:Katai2007
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s00146-007-0125-2> ;
+    dc:title "System design of ‘‘Ba’’-like stages for improvisational acts via Leibnizian space–time and Peirce’s existential graph concepts" ;
+    dc:creator :person:KataiO, :person:MinamizonoK, :person:ShioseT, :person:KawakamiH ;
+    bibo:authorList (
+        :person:KataiO
+        :person:MinamizonoK
+        :person:ShioseT
+        :person:KawakamiH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2007" ;
+        dc:isPartOf :journal:AIS ;
+        bibo:volume "22" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "101-112" ;
+    bibo:doi "10.1007/s00146-007-0125-2" .
+
+:reading:Keller2000
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/43810893> ;
+    dc:title "The century of the gene" ;
+    dc:creator :person:KellerE ;
+    bibo:authorList (
+        :person:KellerE
+    ) ;
+    dc:date "2000" ;
+    dc:publisher :publisher:HUP .
+
+:reading:Keyes2019
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/3290605.3300569> ;
+    dc:title "Human-Computer Insurrection: Notes on an Anarchist HCI" ;
+    bibo:shortTitle "Human-Computer Insurrection" ;
+    dc:creator :person:KeyesO, :person:HoyJ, :person:DrouhardM ;
+    bibo:authorList (
+        :person:KeyesO
+        :person:HoyJ
+        :person:DrouhardM
+    ) ;
+    bibo:presentedAt :conference:CHI2019 ;
+    bibo:reproducedIn :proceedings:CHI2019 ;
+    bibo:doi "10.1145/3290605.3300569" .
+
+:reading:Koch2018
+    a :Reading, bibo:BookSection ;
+    dc:title "Introduction: Non-knowledge and digital cultures" ;
+    dc:creator :person:KochM ;
+    bibo:authorList (
+        :person:KochM
+    ) ;
+    dc:isPartOf :volume:Bernard2018 ;
+    bibo:pages "11–18" .
+
+:reading:Kockelman2017
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1093/acprof:oso/9780190636531.001.0001> ;
+    dc:title "The art of interpretation in the age of computation" ;
+    bibo:shortTitle "" ;
+    dc:creator :person:KockelmanP ;
+    bibo:authorList (
+        :person:KockelmanP
+    ) ;
+    dc:date "2017" ;
+    dc:publisher :publisher:OUP ;
+    bibo:doi "10.1093/acprof:oso/9780190636531.001.0001" .
+
+:reading:Koopman2019
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.7208/chicago/9780226626611.001.0001> ;
+    dc:title "How we became our data: A genealogy of the informational person" ;
+    bibo:shortTitle "How we became our data" ;
+    dc:creator :person:KoopmanC ;
+    bibo:authorList (
+        :person:KoopmanC
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:CUP ;
+    bibo:doi "10.7208/chicago/9780226626611.001.0001" .
+
+:reading:Koopman2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764231162251> ;
+    dc:title "From Galton’s pride to Du Bois’s pursuit: The formats of data-driven inequality" ;
+    bibo:shortTitle "The formats of data-driven inequality" ;
+    dc:creator :person:KoopmanC ;
+    bibo:authorList ( :person:KoopmanC ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue 1 ;
+        bibo:volume 41
+    ] ;
+    bibo:pages "59–78" ;
+    bibo:doi "10.1177/02632764231162251" .
+
+:reading:Kreiss2011
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1461444810370951> ;
+    dc:title "The limits of peer production: Some reminders from Max Weber for the network society" ;
+    bibo:shortTitle "The limits of peer production" ;
+    dc:creator :person:KreissD, :person:FinnM, :person:TurnerF ;
+    bibo:authorList (
+        :person:KreissD
+        :person:FinnM
+        :person:TurnerF
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "03/2011" ;
+        dc:isPartOf :journal:NewMediaSociety ;
+        bibo:issue "2" ;
+        bibo:volume "13"
+    ] ;
+    bibo:pages "243-259" ;
+    bibo:doi "10.1177/1461444810370951" .
+
+:reading:Krippendorff2008
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Social organizations as reconstitutable networks of conversations" ;
+    dc:creator :person:KrippendorffK ;
+    bibo:authorList (
+        :person:KrippendorffK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2008" ;
+        dc:isPartOf :journal:CHK ;
+        bibo:issue "3–4" ;
+        bibo:volume "15"
+    ] ;
+    bibo:pages "149–161".
+
+:reading:Krippendorff2023
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "A critical cybernetics" ;
+    dc:creator :person:KrippendorffK ;
+    bibo:authorList (
+        :person:KrippendorffK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:CF ;
+        bibo:issue "1" ;
+        bibo:volume "19"
+    ] ;
+    bibo:pages "82-93".
+
+:reading:KumarCLS2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2505.11581> ;
+    dc:title "Questioning Representational Optimism in Deep Learning: The Fractured Entangled Representation Hypothesis" ;
+    dc:creator :person:KumarA, :person:CluneJ, :person:LehmanJ, :person:StanleyKO ;
+    bibo:authorList (
+        :person:KumarA
+        :person:CluneJ
+        :person:LehmanJ
+        :person:StanleyKO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "May 2025" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2505.11581" .
+
+:reading:Labov1973
+    a :Reading , bibo:BookSection ;
+    dc:title "The boundaries of words and their meanings" ;
+    dc:creator :person:LabovW ;
+    bibo:authorList (
+        :person:LabovW
+    ) ;
+    dc:isPartOf :volume:Bailey1973 ;
+    bibo:pages "29–62" .
+
+:reading:Lash2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0263276415623063> ;
+    dc:title "An interview with Philip Mirowski" ;
+    dc:creator :person:LashS, :person:DragosB, :person:MirowskiP ;
+    bibo:authorList (
+        :person:LashS
+        :person:DragosB
+        :person:MirowskiP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "6" ;
+        bibo:volume "33"
+    ] ;
+    bibo:pages "123-140" ;
+    bibo:doi "10.1177/0263276415623063" .
+
+:reading:Latour2012
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1111/j.1468-4446.2012.01428.x> ;
+    dc:title "‘The whole is always smaller than its parts’ – a digital test of Gabriel Tardes' monads" ;
+    dc:creator :person:LatourB, :person:JensenP, :person:VenuriniT, :person:GrauwinS, :person:BoullierD ;
+    bibo:authorList (
+        :person:LatourB
+        :person:JensenP
+        :person:VenuriniT
+        :person:GrauwinS
+        :person:BoullierD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 1, 2012" ;
+        dc:isPartOf :journal:BJS ;
+        bibo:issue "4" ;
+        bibo:volume "63"
+    ] ;
+    bibo:pages "590-615" ;
+    bibo:doi "10.1111/j.1468-4446.2012.01428.x" .
+
+:reading:Law2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0306312712456947> ;
+    dc:title "Slippery: Field notes in empirical ontology" ;
+    dc:creator :person:LawJ, :person:LienM ;
+    bibo:authorList (
+        :person:LawJ
+        :person:LienM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2013" ;
+        dc:isPartOf :journal:SocStudSci ;
+        bibo:volume "43" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "363-378" ;
+    bibo:doi "10.1177/0306312712456947" .
+
+:reading:LeGuin2020
+    a :Reading, bibo:Book ;
+    dc:title "The carrier bag theory of fiction" ;
+    dc:creator :person:LeGuinU ;
+    bibo:authorList (
+        :person:LeGuinU
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:IGNOTA .
+
+:reading:Leahu2016
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2901790.2901840> ;
+    dc:title "Ontological Surprises: A Relational Perspective on Machine Learning" ;
+    bibo:shortTitle "Ontological Surprises" ;
+    dc:creator :person:LeahuL ;
+    bibo:authorList (
+        :person:LeahuL
+    ) ;
+    bibo:presentedAt :conference:DIS2016 ;
+    bibo:reproducedIn :proceedings:DIS2016 ;
+    bibo:pages "182–186" ;
+    bibo:doi "10.1145/2901790.2901840" .
+
+:reading:Lee2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1002/asi.24120> ;
+    dc:title "Modeling the relationship between scientific and bibliographic classification for music" ;
+    dc:creator :person:LeeD, :person:RobinsonL, :person:BawdenD ;
+    bibo:authorList (
+        :person:LeeD
+        :person:RobinsonL
+        :person:BawdenD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "28 November 2018" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:volume "70" ;
+        bibo:issue "3"
+    ] ;
+    bibo:doi "10.1002/asi.24120" .
+
+:reading:Levine2015
+    a :Reading, bibo:Book ;
+    dc:title "Forms: Whole, rhythm, hierarchy, network" ;
+    dc:creator :person:LevineC ;
+    bibo:authorList (
+        :person:LevineC
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PUP .
+
+:reading:Liu2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1086/713551> ;
+    dc:title "Wittgenstein in the machine" ;
+    dc:creator :person:LiuL ;
+    bibo:authorList (
+        :person:LiuL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Spring 2021" ;
+        dc:isPartOf :journal:CriticalInquiry ;
+        bibo:issue "3" ;
+        bibo:volume "47"
+    ] ;
+    bibo:pages "425-455" ;
+    bibo:doi "10.1086/713551" .
+
+:reading:Liu2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1086/726293> ;
+    dc:title "After Turing: How philosophy migrated to the AI lab" ;
+    dc:creator :person:LiuL ;
+    bibo:authorList ( :person:LiuL ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Autumn 2023" ;
+        bibo:volume "50" ;
+        bibo:issue "1" ;
+        dc:isPartOf :journal:CriticalInquiry
+    ] ;
+    bibo:pages "2-30" ;
+    bibo:doi "10.1086/726293" .
+
+:reading:Losee2015
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.23544> ;
+    dc:title "Thesaurus structure, descriptive parameters, and scale" ;
+    dc:creator :person:LoseeR ;
+    bibo:authorList (
+        :person:LoseeR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "13 May 2015" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:volume "67" ;
+        bibo:issue "9" ;
+    ] ;
+    bibo:doi "10.1002/asi.23544" ;
+    bibo:pages "2156-2165" .
+
+:reading:Lury2014
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/881063017> ;
+    dc:title "Inventive Methods: The Happening of the Social" ;
+    dc:date "2014" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:editor :person:LuryC, :person:WakefordN ;
+    bibo:editorList (
+        :person:LuryC
+        :person:WakefordN
+    ) ;
+    bibo:isbn13 "9780415721103" .
+
+:reading:Lury2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.3384/VS.2001-5992.2024.11.1.38-59> ;
+    dc:title "Lessons in relevance from the prototyping of a recommendation app" ;
+    dc:creator :person:LuryC , :person:DayS , :person:SimonA , :person:TironiM , :person:ValderramaM , :person:WarkS ;
+    bibo:authorList (
+        :person:LuryC
+        :person:DayS
+        :person:SimonA
+        :person:TironiM
+        :person:ValderramaM
+        :person:WarkS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-05-02" ;
+        dc:isPartOf :journal:ValuationStudies ;
+        bibo:volume "11" ;
+        bibo:issn "1"
+    ] ;
+    bibo:doi "10.3384/VS.2001-5992.2024.11.1.38-59" .
+
+:reading:Lyman1995
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "What is computer literacy and what is its place in liberal education?" ;
+    dc:creator :person:LymanP ;
+    bibo:authorList (
+        :person:LymanP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Summer 1995" ;
+        dc:isPartOf :journal:LibEd ;
+        bibo:volume "81" ;
+        bibo:issue "3" ;
+    ] ;
+    bibo:pages "4-15" .
+
+:reading:Lynch1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305848> ;
+    dc:title "On making explicit" ;
+    dc:creator :person:LynchM ;
+    bibo:authorList (
+        :person:LynchM
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "65-68" ;
+    bibo:doi "10.1007/BF01305848" .
+
+:reading:Lynch2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.5210/fm.v22i12.8097> ;
+    dc:title "Stewardship in the “Age of Algorithms”" ;
+    dc:creator :person:CliffL ;
+    bibo:authorList (
+        :person:CliffL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "4 December 2017" ;
+        dc:isPartOf :journal:FirstMonday ;
+        bibo:volume "22" ;
+        bibo:issue "12"
+    ] ;
+    bibo:doi "10.5210/fm.v22i12.8097" .
+
+:reading:Ma2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1002/asi.24441> ;
+    dc:title "Understanding information: Adding a non‐individualistic lens" ;
+    dc:creator :person:MaY ;
+    bibo:authorList (
+        :person:MaY
+    ) ;
+    dc:isPartOf [
+        dc:date "30 December 2020" ;
+        dc:isPartOf :journal:JASIST ;
+    ] ;
+    bibo:doi "10.1002/asi.24441" .
+
+:reading:MacKenzie2002
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/64555493> ;
+    dc:title "Transductions: Bodies and Machines at Speed" ;
+    bibo:shortTitle "Transductions" ;
+    dc:creator :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:date "2002" ;
+    dc:publisher :publisher:Continuum .
+
+:reading:Machlup1983
+    a :Reading, bibo:BookSection ;
+    dc:title "Cultural diversity in studies of information" ;
+    dc:creator :person:MachlupF, :person:MansfieldU ;
+    bibo:authorList (
+        :person:MachlupF
+        :person:MansfieldU
+    ) ;
+    dc:isPartOf :volume:Machlup1983 ;
+    bibo:pages "3–56" .
+
+:reading:Mackenzie2017
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1017932995> ;
+    dc:title "Machine learners: archaeology of a data practice" ;
+    bibo:shortTitle "Machine learners" ;
+    dc:creator :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:date "2017" ;
+    dc:publisher :publisher:MIT .
+
+:reading:Mackenzie2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/2053951718778310> ;
+    dc:title "Personalization and probabilities: Impersonal propensities in online grocery shopping" ;
+    bibo:shortTitle "Personalization and probabilities" ;
+    dc:creator :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January-June 2018" ;
+        dc:isPartOf :journal:BDS ;
+    ] ;
+    bibo:pages "1-15" ;
+    bibo:doi "10.1177/2053951718778310" .
+
+:reading:Mackenzie2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/1600910X.2023.2185874> ;
+    dc:title "Some-any: approximating personalization in contemporary ensembles" ;
+    dc:created :person:MackenzieA ;
+    bibo:authorList (
+        :person:MackenzieA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:Distinktion ;
+    ] ;
+    bibo:doi "10.1080/1600910X.2023.2185874" .
+
+:reading:Mai2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/01972243.2016.1153010> ;
+    dc:title "Big data privacy: The datafication of personal information" ;
+    bibo:shortTitle "Big data privacy" ;
+    dc:creator :person:MaiJ ;
+    bibo:authorList (
+        :person:MaiJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "May 26, 2016" ;
+        dc:isPartOf :journal:InformationSociety ;
+        bibo:issue "3" ;
+        bibo:volume "32" ;
+    ] ;
+    bibo:pages "192-199" ;
+    bibo:doi "10.1080/01972243.2016.1153010" .
+
+:reading:Marcus2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1525/rep.2016.135.1.1> ;
+    dc:title "Building a Better Description" ;
+    dc:creator :person:MarcusS, :person:LoveH, :person:BestS ;
+    bibo:authorList (
+        :person:MarcusS
+        :person:LoveH
+        :person:BestS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016/08/01" ;
+        dc:isPartOf :journal:representations ;
+        bibo:issue "1" ;
+        bibo:volume "135"
+    ] ;
+    bibo:pages "1-21" ;
+    bibo:doi "10.1525/rep.2016.135.1.1" .
+
+:reading:Marin2018
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/00131857.2017.1323624> ;
+    dc:title "Page, text and screen in the university: Revisiting the Illich hypothesis" ;
+    dc:creator :person:MarinL , :person:MasscheleinJ , :person:SimonsM ;
+    bibo:authorList (
+        :person:MarinL
+        :person:MasscheleinJ
+        :person:SimonsM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:EPT ;
+        bibo:issue "1" ;
+        bibo:volume "50"
+    ] ;
+    bibo:pages "49-60" ;
+    bibo:doi "10.1080/00131857.2017.1323624" .
+
+:reading:McGuigan2023
+    a :Reading , bibo:Book ;
+    owl:sameAs <https://doi.org/10.7551/mitpress/13562.001.0001> , <http://www.worldcat.org/oclc/1353637583> ;
+    dc:title "Selling the American People: Advertising, Optimization, and the Origins of Adtech" ;
+    bibo:shortTitle "Selling the American People" ;
+    dc:creator :person:McGuiganL ;
+    bibo:authorList (
+        :person:McGuiganL
+    ) ;
+    dc:date "2023" ;
+    dc:publisher :publisher:MIT .
+
+:reading:McLuhan1967
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/228434618> ;
+    dc:title "Verbi-voco-visual Explorations" ;
+    dc:creator :person:McLuhanM, :person:PapanekVJ, :person:BessingerJB, :person:PolanyiK, :person:HollisCC, :person:HoggD, :person:JonesJ ;
+    bibo:authorList (
+        :person:McLuhanM
+        :person:PapanekVJ
+        :person:BessingerJB
+        :person:PolanyiK
+        :person:HollisCC
+        :person:HoggD
+        :person:JonesJ
+    ) ;
+    dc:date "1967" ;
+    dc:publisher :publisher:SomethingElse .
+
+:reading:McMillanMajor2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1145/3594737> ;
+    dc:title "Data Statements: From Technical Concept to Community Practice" ;
+    dc:creator :person:McMillanMajorA , :person:BenderE , :person:FriedmanB ;
+    bibo:authorList (
+        :person:McMillanMajorA
+        :person:BenderE
+        :person:FriedmanB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "08 May 2023" ;
+        dc:isPartOf :journal:JRC ;
+    ] ;
+    bibo:doi "10.1145/3594737" .
+
+:reading:Mead1968
+    a :Reading , bibo:BookSection ;
+    dc:title "Cybernetics of cybernetics" ;
+    dc:creator :person:MeadM ;
+    bibo:authorList (
+        :person:MeadM
+    ) ;
+    dc:isPartOf :volume:VonFoerster1968 .
+
+:reading:Medina2011
+    a :Reading, bibo:Book ;
+    dc:title "Introduction: Political and Technological Visions" ;
+    dc:creator :person:MedinaE ;
+    bibo:authorList (
+        :person:MedinaE
+    ) ;
+    dc:date "2011" ;
+    dc:publisher :publisher:MIT .
+
+:reading:Miles2001
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/504216.504236> ;
+    dc:title "Hypertext structure as the evenyt of connection" ;
+    dc:creator :person:MilesA ;
+    bibo:authorList (
+        :person:MilesA
+    ) ;
+    bibo:reproducedIn :proceedings:Hypertext2001 ;
+    bibo:presentedAt :conference:Hypertext2001 ;
+    bibo:pages "61-68" ;
+    bibo:doi "10.1145/504216.504236" .
+
+:reading:Mirowski2017
+    a :Reading, bibo:Book ;
+    dc:title "The knowledge we have lost in information: The history of information in modern economics" ;
+    bibo:shortTitle "The knowledge we have lost in information" ;
+    dc:creator :person:MirowskiP, :person:NikKhahE ;
+    bibo:authorList (
+        :person:MirowskiP
+        :person:NikKhahE
+    ) ;
+    dc:date "2017" ;
+    dc:publisher :publisher:OUP ;
+    bibo:isbn13 "9780190270056" .
+
+:reading:Monteiro2012
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s10606-012-9167-1> ;
+    dc:title "From Artefacts to Infrastructures" ;
+    dc:creator :person:MonteiroE, :person:PollockN, :person:HansethO, :person:WilliamsR ;
+    bibo:authorList (
+        :person:MonteiroE
+    :person:PollockN
+    :person:HansethO
+    :person:WilliamsR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2012/06/06" ;
+        dc:isPartOf :journal:CSCW ;
+        bibo:issue "4-6" ;
+        bibo:volume "22"
+    ] ;
+    bibo:pages "575-607" ;
+    bibo:doi "10.1007/s10606-012-9167-1" .
+
+:reading:Montoya2022
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.7551/mitpress/12245.001.0001> ;
+    dc:title "Power of position: Classification and the biodiversity sciences" ;
+    bibo:shortTitle "Power of position" ;
+    dc:creator :person:MontoyaR ;
+    bibo:authorList (
+        :person:MontoyaR
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:MIT ;
+    bibo:doi "10.7551/mitpress/12245.001.0001" .
+
+:reading:Moor2016
+    a :Reading, bibo:Book ;
+    dc:title "On trails: An exploration" ;
+    bibo:shortTitle "On trails" ;
+    dc:creator :person:MoorR ;
+    bibo:authorList (
+        :person:MoorR
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:SimonSchuster .
+
+:reading:Moore2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0087> ;
+    dc:title "Structurelessness, Structure, and Queer Movements" ;
+    dc:creator :person:MooreD ;
+    bibo:authorList (
+        :person:MooreD
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "257-260" ;
+    bibo:doi "10.1353/wsq.2013.0087" .
+
+:reading:Morozov2019
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Digital Socialism? The Calculation Debate in the Age of Big Data" ;
+    dc:creator :person:MorozovE ;
+    bibo:authorList (
+        :person:MorozovE
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Mar/June 2019" ;
+        dc:isPartOf :journal:NLR ;
+        bibo:issue "116/117"
+    ] ;
+    bibo:uri "https://newleftreview.org/issues/II116/articles/evgeny-morozov-digital-socialism" .
+
+:reading:Morozov2022
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Critique of techno feudal reason" ;
+    dc:creator :person:MorozovE ;
+    bibo:authorList (
+        :person:MorozovE
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "Jan/Apr 2022" ;
+        dc:isPartOf :journal:NewLeftReview ;
+        bibo:volume "133/134"
+    ] ;
+    bibo:pages "89-126" .
+
+:reading:Mrazek2002a
+    a :Reading, bibo:BookSection ;
+    dc:title "Language as Asphalt" ;
+    dc:isPartOf :volume:Mrazek2002 ;
+    bibo:pages "1–42" .
+
+:reading:Mrazek2002b
+    a :Reading, bibo:BookSection ;
+    dc:title "Let Us Become Radio Mechanics" ;
+    dc:isPartOf :volume:Mrazek2002 ;
+    bibo:pages "161–192" .
+
+:reading:Nancy2000
+    # FIXME: Make this a chapter out of the book
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://www.worldcat.org/oclc/1170551908> ;
+    dc:title "Being singular plural" ;
+    dc:creator :person:NancyJ ;
+    bibo:authorList (
+        :person:NancyJ
+    ) ;
+    dc:date "2000" ;
+    dc:publisher :publisher:SUP ;
+    bibo:isbn13 "9780804739740" .
+
+:reading:Naur1992
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/23253583> ;
+    dc:title "Computing, a human activity" ;
+    dc:creator :person:NaurP ;
+    bibo:authorList (
+        :person:NaurP
+    ) ;
+    dc:date "1992" ;
+    dc:publisher :publisher:ACM ;
+    bibo:isbn13 "978-0-20158-069-3" .
+
+:reading:Noble2017
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Out of the Black Box" ;
+    dc:creator :person:NobleS , :person:RobertsS ;
+    bibo:authorList (
+        :person:NobleS
+        :person:RobertsS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017/03/13" ;
+        dc:isPartOf :journal:EducauseReview
+    ] ;
+    bibo:uri "https://er.educause.edu/articles/2017/3/out-of-the-black-box" .
+
+:reading:Noble2018
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/987591529> ;
+    dc:title "Algorithms of Oppression: How Search Engines Reinforce Racism" ;
+    dc:creator :person:NobleS ;
+    bibo:authorList (
+        :person:NobleS
+    ) ;
+    dc:date "2018" ;
+    dc:publisher :publisher:NYUP ;
+    bibo:isbn13 "978-1-4798-3724-3" .
+
+:reading:Nofre2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/tech.2014.0031> ;
+    dc:title "When Technology Became Language: The Origins of the Linguistic Conception of Computer Programming, 1950–1960" ;
+    dc:creator :person:NofreD, :person:PriestleyM, :person:AlbertsG ;
+    bibo:authorList (
+        :person:NofreD
+        :person:PriestleyM
+        :person:AlbertsG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 2014" ;
+        dc:isPartOf :journal:TAC ;
+        bibo:issue "1" ;
+        bibo:volume "55"
+    ] ;
+    bibo:doi "10.1353/tech.2014.0031" .
+
+:reading:Offert2017
+    a :Reading , bibo:AcademicArticle ;
+    dc:title "Intuition and Epistemology of High-Dimensional Vector Space" ;
+    dc:creator :person:OffertF ;
+    bibo:authorList (
+      :person:OffertF
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017-02-20" ;
+        dc:isPartOf :journal:FabianOffertBlog
+    ] ;
+    bibo:uri "https://zentralwerkstatt.squarespace.com/blog/vsm" .
+
+:reading:Offert2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2405.09788> ;
+    dc:title "Synthesizing Proteins on the Graphics Card. Protein Folding and the Limits of Critical AI Studies" ;
+    dc:creator :person:OffertF , :person:KimP , :person:CaiQ ;
+    bibo:authorList (
+        :person:OffertF
+        :person:KimP
+        :person:CaiQ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "December 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2405.09788" .
+
+:reading:OffertDhaliwal2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2411.18833> ;
+    dc:title "The Method of Critical AI Studies, A Propaedeutic" ;
+    dc:creator :person:OffertF , :person:DhaliwalRS ;
+    bibo:authorList (
+        :person:OffertF
+        :person:DhaliwalRS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "November 2024" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2411.18833" .
+
+:reading:Orr1996
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/34906105> ;
+    dc:title "Talking About Machines: An Ethnography of a Modern Job" ;
+    bibo:shortTitle "Talking About Machines" ;
+    dc:creator :person:OrrJ ;
+    bibo:authorList (
+        :person:OrrJ
+    );
+    dc:date "1996" ;
+    dc:publisher :publisher:CornellUP ;
+    bibo:isbn13 "9780801483905" .
+
+:reading:OverwijkJ2025
+    a :Reading, bibo:Book ;
+    dc:title "Cybernetic Capitalism: A Critical Theory of the Incommunicable" ;
+    dc:creator :person:OverwijkJ ;
+    bibo:authorList (
+        :person:OverwijkJ
+    ) ;
+    dc:publisher :publisher:FUP ;
+    dc:date "2025-01-07" ;
+    bibo:isbn "9781531508937" ;
+    foaf:homepage <https://fordhampress.com/cybernetic-capitalism-hb-9781531508920.html> .
+
+:reading:Oyama2000
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/873479453> ;
+    dc:title "The Ontogeny of Information: Developmental Systems and Evolution" ;
+    bibo:shortTitle "The Ontogeny of Information" ;
+    dc:creator :person:OyamaS ;
+    bibo:authorList (
+        :person:OyamaS
+    );
+    dc:date "2000" ;
+    dc:publisher :publisher:DUP ;
+    bibo:isbn13 "9780822324669" .
+
+:reading:Packer2018
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Text embedding models contain bias. Here's why that matters." ;
+    dc:creator :person:PackerB, :person:HalpernY, :person:GuajardoCespedesM, :person:MitchellM ;
+    bibo:authorList (
+      :person:PackerB
+      :person:HalpernY
+      :person:GuajardoCespedesM
+      :person:MitchellM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018-04-13" ;
+        dc:isPartOf :journal:GoogleDevelopersBlog
+    ] ;
+    bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
+
+:reading:Palmer2013
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Foundations of data curation: The pedagogy and practice of “purposeful work” with research data" ;
+    dc:creator :person:PalmerC, :person:WeberN, :person:MunozT, :person:RenearA ;
+    bibo:authorList (
+        :person:PalmerC
+        :person:WeberN
+        :person:MunozT
+        :person:RenearA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "June 2013" ;
+        dc:isPartOf :journal:ArchiveJournal
+    ] ;
+    bibo:uri "https://www.archivejournal.net/essays/foundations-of-data-curation-the-pedagogy-and-practice-of-purposeful-work-with-research-data/" .
+
+:reading:Parikka2015
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.5749/minnesota/9780816695515.001.0001> ;
+    dc:title "A Geology of Media" ;
+    dc:creator :person:ParikkaJ ;
+    bibo:authorList (
+        :person:ParikkaJ
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:UMP ;
+    bibo:isbn13 "978-1-4529-4456-2" ;
+    bibo:doi "10.5749/minnesota/9780816695515.001.0001" .
+
+:reading:Parisi2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/02632764211048548> ;
+    dc:title "Interactive computation and artificial epistemologies" ;
+    dc:creator :person:ParisiL ;
+    bibo:authorList (
+        :person:ParisiL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:issue "7-8" ;
+        bibo:volume "38"
+    ] ;
+    bibo:pages "1-21" ;
+    bibo:doi "10.1177/02632764211048548" .
+
+:reading:Pasquinelli2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/10418385-8955836> ;
+    dc:title "How to Make a Class: Hayek’s Neoliberalism and the Origins of Connectionism" ;
+    dc:creator :person:Pasquinelli ;
+    bibo:authorList (
+        :person:Pasquinelli
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:QuiParle ;
+        bibo:issue "1" ;
+        bibo:volume "30"
+    ] ;
+    bibo:pages "159-184" ;
+    bibo:doi "10.1215/10418385-8955836" .
+
+:reading:Pasquinelli2023
+    a :Reading , bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1353949626> ;
+    dc:title "The Eye of the Master: A Social History of Artificial Intelligence" ;
+    bibo:shortTitle "The Eye of the Master" ;
+    dc:creator :person:Pasquinelli ;
+    bibo:authorList (
+        :person:Pasquinelli
+    ) ;
+    dc:date "2023" ;
+    dc:publisher :publisher:Verso ;
+    bibo:isbn13 "9781788730068" .
+
+:reading:Passi2017
+    a :Reading, :ConferencePaper ;
+    # Add an additional field for "Online first" article (?)
+    owl:sameAs <http://doi.org/10.1145/2998181.2998331> ;
+    dc:title "Data Vision: Learning to See Through Algorithmic Abstraction" ;
+    bibo:shortTitle "Data Vision" ;
+    dc:creator :person:PassiS, :person:JacksonS ;
+    bibo:authorList (
+        :person:PassiS
+        :person:JacksonS
+    ) ;
+    bibo:reproducedIn :proceedings:CSCW2017 ;
+    bibo:presentedAt :conference:CSCW2017 ;
+    bibo:pages "2436–2447" ;
+    bibo:doi "10.1145/2998181.2998331" .
+
+:reading:Pedwell2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1057/s41286-023-00170-x> ;
+    dc:title "Intuition as a “trained thing”: sensing, thinking, and speculating in computational cultures" ;
+    bibo:shortTitle "Intuition as a “trained thing”" ;
+    dc:creator :person:PedwellC ;
+    bibo:authorList (
+        :person:PedwellC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        bibo:volume "30" ;
+        dc:isPartOf :journal:Subjectivity ;
+    ] ;
+    bibo:pages "348–372" ;
+    bibo:doi "10.1057/s41286-023-00170-x" .
+
+:reading:Petras2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-04-2023-0074> ;
+    dc:title "The identity of information science" ;
+    dc:creator :person:PetrasV ;
+    bibo:authorList (
+        :person:PetrasV
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:JDOC
+    ] ;
+    bibo:doi "10.1108/JD-04-2023-0074" .
+
+:reading:Piantadosi2022
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2208.02957> ;
+    dc:title "Meaning without reference in large language models" ;
+    dc:creator :person:PiantadosiS , :person:HillF ;
+    bibo:authorList (
+        :person:PiantadosiS
+        :person:HillF
+    ) ;
+    bibo:presentedAt :conference:NCSIWS ;
+    bibo:reproducedIn :proceedings:NCSIWS ;
+    bibo:doi "10.48550/arXiv.2208.02957" .
+
+:reading:Pickering1995
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/832588301> ;
+    dc:title "The Mangle of Practice: Time, Agency, and Science" ;
+    bibo:shortTitle "The Mangle of Practice" ;
+    dc:creator :person:PickeringA ;
+    bibo:authorList (
+        :person:PickeringA
+    ) ;
+    dc:date "1995" ;
+    dc:publisher :publisher:UCP ;
+    bibo:isbn13 "978-0-2266-6802-4" .
+
+:reading:Plantin2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1461444816661553> ;
+    dc:title "Infrastructure studies meet platform studies in the age of Google and Facebook" ;
+    dc:creator :person:PlantinJ, :person:LagozeC, :person:EdwardsP, :person:SandvigC ;
+    bibo:authorList (
+        :person:PlantinJ
+    :person:LagozeC
+    :person:EdwardsP
+    :person:SandvigC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:NewMediaSociety ;
+    ] ;
+    bibo:doi "10.1177/1461444816661553" .
+
+:reading:Plantin2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/20539517211007510> ;
+    dc:title "The data archive as factory: Alienation and resistance of data processors" ;
+    dc:creator :person:PlantinJ ;
+    bibo:authorList (
+        :person:PlantinJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:issue "1" ;
+        bibo:volume "8"
+    ] ;
+    bibo:doi "10.1177/20539517211007510" .
+
+:reading:Poirier2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1177/20539517211029322> ;
+    dc:title "Reading datasets: Strategies for interpreting the politics of data signification" ;
+    dc:creator :person:PoirierL ;
+    bibo:authorList (
+        :person:PoirierL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:issue "2" ;
+        bibo:volume "8"
+    ] ;
+    bibo:doi "10.1177/20539517211029322" .
+
+:reading:Poitou1997
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-30
+    a :Reading .
+
+:reading:Polt2019
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1127536312> ;
+    dc:title "Time and trauma: Thinking through Heidegger in the thirties" ;
+    bibo:shortTitle "Time and trauma" ;
+    dc:creator :person:PoltR ;
+    bibo:authorList (
+        :person:PoltR
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:RowmanLittlefield ;
+    bibo:isbn13 "978-1-78661-050-8" .
+
+:reading:Possati2023a
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s00146-021-01379-7> ;
+    dc:title "Psychoanalyzing artificial intelligence: the case of Replika" ;
+    dc:creator :person:PossatiL ;
+    bibo:authorList (
+        :person:PossatiL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:AIS ;
+        bibo:volume "38"
+    ] ;
+    bibo:doi "10.1007/s00146-021-01379-7" .
+
+:reading:Possati2023b
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s10699-022-09878-6> ;
+    dc:title "From Turing to Peirce. A semiotic interpretation of computation" ;
+    dc:creator :person:PossatiL ;
+    bibo:authorList (
+        :person:PossatiL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:FOS ;
+        bibo:volume "28"
+    ] ;
+    bibo:doi "10.1007/s10699-022-09878-6" .
+
+:reading:PrykeAllen2000
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/030851400360497> ;
+    dc:title "Monetized time-space: derivatives – money’s ‘new imaginary’?" ;
+    bibo:shortTitle "Monetized time-space" ;
+    dc:creator :person:PrykeM , :person:AllenJ ;
+    bibo:authorList (
+        :person:PrykeM
+        :person:AllenJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:EconSoc ;
+        bibo:volume "29" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "264–284" ;
+    bibo:doi "10.1080/030851400360497" .
+
+:reading:Putz2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/03063127211010972> ;
+    dc:title "Managing exactness and vagueness in computer science work: Programming and self-repair in meetings" ;
+    dc:creator :person:PutzO ;
+    bibo:authorList (
+        :person:PutzO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:SocStudSci
+    ] ;
+    bibo:doi "10.1177/03063127211010972" .
+
+:reading:Radio2021
+    #FIXME: preprint?
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1108/JD-02-2021-0037> ;
+    dc:title "The trajectory of linked data in late capitalism" ;
+    dc:creator :person:RadioE, :person:KalwaraJ ;
+    bibo:authorList (
+        :person:RadioE
+        :person:KalwaraJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:JDOC ;
+    ] ;
+    bibo:doi "10.1108/JD-02-2021-0037" .
+
+:reading:Randall1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305844> ;
+    dc:title "A comment on Lucy Suchman's “Do categories have politics?”" ;
+    bibo:shortTitle "A comment on Lucy Suchman's “do categories have politics?" ;
+    dc:creator :person:RandallD ;
+    bibo:authorList (
+        :person:RandallD
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "47-50" ;
+    bibo:doi "10.1007/BF01305844" .
+
+:reading:Renn2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.2307/j.ctvdf0kpk> ;
+    dc:title "The evolution of knowledge: Rethinking science for the Anthropocene" ;
+    bibo:shortTitle "The evolution of knowledge" ;
+    dc:creator :person:RennJ ;
+    bibo:authorList (
+        :person:RennJ
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:PUP ;
+    bibo:doi "10.2307/j.ctvdf0kpk" .
+
+:reading:Rheinberger2010
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1215/9780822391333> ;
+    dc:title "An epistemology of the concrete: Twentieth-century histories of life" ;
+    bibo:shortTitle "An epistemology of the concrete" ;
+    dc:creator :person:RheinbergerH ;
+    bibo:authorList (
+        :person:RheinbergerH
+    ) ;
+    dc:date "2010" ;
+    dc:publisher :publisher:DUP ;
+    bibo:doi "10.1215/9780822391333" .
+
+:reading:Ribes2017
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1145/2998181.2998344> ;
+    dc:title "Notes on the Concept of Data Interoperability: Cases from an Ecology of AIDS Research Infrastructures" ;
+    bibo:shortTitle "Notes on the Concept of Data Interoperability" ;
+    dc:creator :person:RibesD ;
+    bibo:authorList (
+        :person:RibesD
+    ) ;
+    bibo:reproducedIn [
+        a bibo:Proceedings ;
+        dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
+        dc:date "2017" ;
+        dc:publisher :publisher:ACM ;
+        bibo:isbn13 "978-1-4503-4335-0"
+    ] ;
+    bibo:presentedAt [
+        a bibo:Conference ;
+        dc:title "Computer Supported Cooperative Work and Social Computing (CSCW ’17)" ;
+        address:localityName "Portland, OR" ;
+        dc:date "February 25–March 1, 2017" ;
+        foaf:homepage <http://cscw.acm.org/2017/>
+    ] ;
+    bibo:doi "10.1145/2998181.2998344" .
+
+:reading:Ribes2019
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0162243918798899> ;
+    dc:title "STS, Meet Data Science, Once Again" ;
+    dc:creator :person:RibesD ;
+    bibo:authorList (
+        :person:RibesD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2019" ;
+        dc:isPartOf :journal:STH ;
+        bibo:issue "3" ;
+        bibo:volume "44"
+    ] ;
+    bibo:pages "514-539" ;
+    bibo:doi "10.1177/0162243918798899" .
+
+:reading:Rieder2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/1369118X.2016.1181195> ;
+    dc:title "Scrutinizing an algorithmic technique: the Bayes classifier as interested reading of reality" ;
+    bibo:shortTitle "Scrutinizing an algorithmic technique" ;
+    dc:creator :person:RiederB ;
+    bibo:authorList (
+        :person:RiederB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "January 2, 2017" ;
+        dc:isPartOf :journal:InformationCommunicationSociety ;
+        bibo:issue "1" ;
+        bibo:volume "20"
+    ] ;
+    bibo:pages "100-117" ;
+    bibo:doi "10.1080/1369118X.2016.1181195" .
+
+:reading:Rieder2018
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/1354856517736982> ;
+    dc:title "From ranking algorithms to ‘ranking cultures’: Investigating the modulation of visibility in YouTube search results" ;
+    bibo:shortTitle "From ranking algorithms to ‘ranking cultures’" ;
+    dc:creator :person:RiederB, :person:MatamorosFernandezA, :person:CorominaO ;
+    bibo:authorList (
+        :person:RiederB
+        :person:MatamorosFernandezA
+        :person:CorominaO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2018" ;
+        dc:isPartOf :journal:Convergence ;
+        bibo:issue "1" ;
+        bibo:volume "24"
+    ] ;
+    bibo:pages "50-68" ;
+    bibo:doi "10.1177/1354856517736982" .
+
+:reading:Rieder2020
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.2307/j.ctv12sdvf1> ;
+    dc:title "Engines of order: A mechanology of algorithmic techniques" ;
+    bibo:shortTitle "Engines of order" ;
+    dc:creator :person:RiederB ;
+    bibo:authorList (
+        :person:RiederB
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:AUP ;
+    bibo:doi "10.2307/j.ctv12sdvf1" .
+
+:reading:Rieder2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.6092/issn.1971-8853/15910> ;
+    dc:title "Mapping Value(s) in AI: Methodological Directions for Examining Normativity in Complex Technical Systems" ;
+    dc:shortTitle "Mapping Value(s) in AI" ;
+    dc:creator :person:RiederB , :person:GordonG , :person:SilenoG ;
+    bibo:authorList (
+        :person:RiederB
+        :person:GordonG
+        :person:SilenoG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:Sociologica ;
+        bibo:volume "16" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "51–83" ;
+    bibo:doi "10.6092/issn.1971-8853/15910" .
+
+:reading:Roach2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1093/llc/fqac066> ;
+    dc:title "Expanding the history of humanities computing: Hugh Kenner’s conversational criticism" ;
+    dc:creator :person:RoachR ;
+    bibo:authorList (
+        :person:RoachR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:DSH ;
+        bibo:volume "00"
+    ] ;
+    bibo:pages "1-17" ;
+    bibo:doi "10.1093/llc/fqac066" .
+
+:reading:RoblesAnderson2016
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "“One damn slide after another”: PowerPoint at every occasion for speech" ;
+    dc:creator :person:RoblesAndersonE, :person:SvenssonP ;
+    bibo:authorList (
+        :person:RoblesAndersonE
+        :person:SvenssonP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ; # maybe?
+        dc:isPartOf :journal:ComputationalCulture ;
+        bibo:uri "http://computationalculture.net/issue-five" ;
+        bibo:volume "1" ; # maybe?
+        bibo:issue "5" ;
+    ] .
+
+:reading:Rose1999
+    a :Reading, bibo:Book ;
+    dc:title "Governing the soul: the shaping of the private self" ;
+    bibo:shortTitle "Governing the soul" ;
+    dc:creator :person:RoseN ;
+    bibo:authorList (
+        :person:RoseN
+    ) ;
+    dc:date "1999" ;
+    dc:publisher :publisher:FreeAssociation ;
+    bibo:edition "2nd ed." ;
+    bibo:isbn13 "978-1-85343-443-3" .
+
+:reading:Roth2015
+    a :Reading, bibo:Book ;
+    dc:title "Who gets what and why: The new economics of matchmaking and market design" ;
+    bibo:shortTitle "Who gets what and why" ;
+    dc:creator :person:RothA ;
+    bibo:authorList (
+        :person:RothA
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:HMH ;
+    bibo:isbn13 "9780544291133" .
+
+:reading:Rotman2008
+    a :Reading, bibo:Book ;
+    dc:title "Becoming Beside Ourselves: The Alphabet, Ghosts, and Distributed Human Being" ;
+    dc:creator :person:RotmanB ;
+    bibo:authorList (
+        :person:RotmanB
+    ) ;
+    dc:publisher :publisher:DUP ;
+    dc:date "2008" ;
+    bibo:isbn "9780822342007" ;
+    bibo:doi "10.1215/9780822389118" ;
+    foaf:homepage <https://www.dukeupress.edu/becoming-beside-ourselves> .
+
+:reading:Rouvroy2011
+    a :Reading, bibo:BookSection ;
+    dc:title "Technology, virtuality and utopia: Governmentality in an age of autonomic computing" ;
+    dc:creator :person:RouvroyA ;
+    bibo:authorList (
+        :person:RouvroyA
+    ) ;
+    dc:isPartOf :volume:Hildebrandt2011 .
+
+:reading:Russell2014
+    a :Reading, bibo:Book ;
+    owl:sameAs <https://doi.org/10.1017/CBO9781139856553> ;
+    dc:title "Open standards and the digital age" ;
+    dc:creator :person:RussellA ;
+    bibo:authorList (
+        :person:RussellA
+    ) ;
+    dc:date "2014" ;
+    dc:publisher :publisher:CUP ;
+    bibo:isbn13 "978-1-13985-655-3" ;
+    bibo:doi "10.1017/CBO9781139856553" .
+
+:reading:Sack2000
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/07421222.2000.11045652> ;
+    dc:title "Conversation Map: An Interface for Very Large-Scale Conversations" ;
+    bibo:shortTitle "Conversation Map" ;
+    dc:creator :person:SackW ;
+    bibo:authorList (
+        :person:SackW
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:JMIS ;
+        bibo:volume "17" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "73-92" ;
+    bibo:doi "10.1080/07421222.2000.11045652" .
+
+:reading:Sack2019
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1111739261> ;
+    dc:title "The Software Arts" ;
+    dc:creator :person:SackW ;
+    bibo:authorList (
+        :person:SackW
+    ) ;
+    dc:date "2019" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "978-0-262-03970-3" .
+
+:reading:Sacks1972
+    a :Reading, bibo:BookSection ;
+    dc:title "On the analyzability of stories by children" ;
+    dc:creator :person:SacksH ;
+    bibo:authorList (
+        :person:SacksH
+    ) ;
+    bibo:pages "325-345" ;
+    dc:isPartOf :volume:Gumperz1972 .
+
+:reading:Sadowski2025
+    a :Reading, bibo:Book ;
+    dc:title "The Mechanic and the Luddite: A Ruthless Criticism of Technology and Capitalism" ;
+    dc:creator :person:SadowskiJ ;
+    bibo:authorList (
+        :person:SadowskiJ
+    ) ;
+    dc:publisher :publisher:UCalP ;
+    dc:date "2025" ;
+    bibo:isbn "9780520398085" ;
+    foaf:homepage <https://www.ucpress.edu/book/9780520398078/the-mechanic-and-the-luddite> .
+
+:reading:Salter2015
+    a :Reading, bibo:Book ;
+    dc:title "Alien agency: experimental encounters with art in the making" ;
+    bibo:shortTitle "Alien agency" ;
+    dc:creator :person:SalterC ;
+    bibo:authorList (
+        :person:SalterC
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "978-0-2620-2846-2" .
+
+:reading:Schwarz2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764251322062> ;
+    dc:title "The post-choice society: Algorithmic prediction and the decentring of choice" ;
+    dc:creator :person:SchwarzO ;
+    bibo:authorList (
+        :person:SchwarzO
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:TCS
+    ] ;
+    bibo:doi "10.1177/02632764251322062" .
+
+:reading:Seaver2022
+    a :Reading, bibo:Book ;
+    dc:title "Computing Taste: Algorithms and the Makers of Music Recommendation" ;
+    bibo:shortTitle "Computing Taste" ;
+    dc:creator :person:SeaverN ;
+    bibo:authorList (
+        :person:SeaverN
+    ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:UCP .
+
+:reading:Serres2015
+    a :Reading, bibo:Book ;
+    dc:title "Thumbelina: The culture and technology of Millenials" ;
+    bibo:shortTitle "Thumbelina" ;
+    dc:creator :person:SerresM ;
+    bibo:authorList (
+        :person:SerresM
+    ) ;
+    bibo:translator :person:SmithD ;
+    dc:date "2015" ;
+    dc:publisher :publisher:RowmanLittlefield .
+
+:reading:ShahBender2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1145/3649468> ;
+    dc:title "Envisioning Information Access Systems: What Makes for Good Tools and a Healthy Web?" ;
+    dc:creator :person:ShahC, :person:BenderEM ;
+    bibo:authorList (
+        :person:ShahC
+        :person:BenderEM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:ACMTransWeb ;
+        bibo:volume "18" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "1-24" ;
+    bibo:doi "10.1145/3649468" ;
+    dc:publisher :publisher:ACM .
+
+:reading:Shavit2011
+    a :Reading, bibo:BookSection ;
+    dc:title "Transforming objects into data: how minute technicalities of recording “species location” entrench a basic challenge for biodiversity" ;
+    dc:creator :person:ShavitA, :person:GriesemerJ ;
+    bibo:authorList (
+        :person:ShavitA
+        :person:GriesemerJ
+    ) ;
+    dc:isPartOf :volume:Carrier2011 .
+
+:reading:Shaw2019
+    a :Reading, :ConferencePaper ;
+    dc:title "The Missing Profession: Toward an Institution of Critical Technical Practice" ;
+    bibo:shortTitle "The Missing Profession" ;
+    dc:creator :person:ShawR ;
+    bibo:authorList (
+        :person:ShawR
+    ) ;
+    bibo:presentedAt :conference:COLIS10 ;
+    bibo:reproducedIn :proceedings:COLIS10 .
+
+:reading:Siegert2014
+    # TODO: Should translator go into CSL JSON?
+    a :Reading, bibo:Book ;
+    dc:title "Cultural techniques: Grids, filters, doors, and other articulations of the real" ;
+    bibo:shortTitle "Cultural techniques" ;
+    dc:creator :person:SiegertB ;
+    bibo:authorList (
+        :person:SiegertB
+    ) ;
+    bibo:translator :person:WinthropYoungG ;
+    dc:date "December 2014" ;
+    dc:publisher :publisher:FUP ;
+    bibo:isbn13 "978-0-8232-6376-9" .
+
+:reading:Simmel1950
+    a :Reading, bibo:Book ;
+    dc:title "The Sociology of Georg Simmel" ;
+    dc:creator :person:SimmelG ;
+    bibo:editor :person:WolffK ;
+    bibo:translator :person:WolffK ;
+    bibo:editorList (
+        :person:WolffK
+    ) ;
+    bibo:authorList (
+        :person:SimmelG
+    ) ;
+    dc:date "1950" ;
+    dc:publisher :publisher:FreePress .
+
+:reading:Simmel2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0263276414531052> ;
+    dc:title "On Art Exhibitions" ;
+    dc:creator :person:SimmelG ;
+    bibo:authorList (
+        :person:SimmelG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2015" ;
+        dc:isPartOf :journal:TCS ;
+        bibo:volume "32" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "87-92" ;
+    bibo:doi "10.1177/0263276414531052" .
+
+:reading:Simondon2016
+    a :Reading, bibo:Book ;
+    dc:title "On the modes of existence of technical objects" ;
+    dc:creator :person:SimondonG ;
+    bibo:authorList (
+        :person:SimondonG
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:Univocal .
+
+:reading:Siskin2016
+    a :Reading, bibo:Book ;
+    dc:title "System: The shaping of modern knowledge" ;
+    bibo:shortTitle "System" ;
+    dc:creator :person:SiskinC ;
+    bibo:authorList (
+        :person:SiskinC
+    ) ;
+    dc:date "2016" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "978-0-262-03531-6" .
+
+:reading:Smith1974
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1111/j.1475-682X.1974.tb01159.x> ;
+    dc:title "The social construction of documentary reality" ;
+    dc:creator :person:SmithDorothy ;
+    bibo:authorList (
+        :person:SmithDorothy
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1975" ;
+        dc:isPartOf :journal:SI ;
+        bibo:issue "4" ;
+        bibo:volume "44"
+    ] ;
+    bibo:doi "10.1111/j.1475-682X.1974.tb01159.x" .
+
+:reading:Smith2011
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.3366/edinburgh/9780748641178.003.0008> ;
+    dc:title "Deleuze and the Question of Desire: Towards an Immanent Theory of Ethics" ;
+    bibo:shortTitle "Deleuze and the Question of Desire" ;
+    dc:creator :person:SmithD ;
+    bibo:authorList (
+        :person:SmithD
+    ) ;
+    dc:isPartOf :volume:Jun2011 ;
+    bibo:pages "123-140" .
+
+:reading:Smith2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/00265667-3630844> ;
+    dc:title "What Was “Close Reading”? A Century of Method in Literary Studies" ;
+    bibo:shortTitle "What Was “Close Reading”?" ;
+    dc:creator :person:SmithB ;
+    bibo:authorList (
+        :person:SmithB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "01/01/2016" ;
+        dc:isPartOf :journal:MinnesotaReview ;
+        bibo:issue "87" ;
+        bibo:volume "2016"
+    ] ;
+    bibo:pages "57-75" ;
+    bibo:doi "10.1215/00265667-3630844" .
+
+:reading:Sofia2000
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/hyp.2000.0029> ;
+    dc:title "Container technologies" ;
+    dc:creator :person:SofiaZ ;
+    bibo:authorList (
+        :person:SofiaZ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2000" ;
+        dc:isPartOf :journal:Hypatia ;
+        bibo:volume "15" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "181-201" ;
+    bibo:doi "10.1353/hyp.2000.0029" .
+
+:reading:SorensenBB2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.31269/triplec.v22i2.1475> ;
+    dc:title "Value and Productive Labour in the Era of Digital Technologies: Revisiting the Digital Labour Debate" ;
+    dc:creator :person:SorensenBB ;
+    bibo:authorList (
+        :person:SorensenBB
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024-08-12" ;
+        dc:isPartOf :journal:tripleC ;
+        bibo:volume "22" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "498-517" ;
+    bibo:doi "10.31269/triplec.v22i2.1475" .
+
+:reading:Spade2013
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1353/wsq.2013.0077> ;
+    dc:title "Being Together, After Nonprofitization" ;
+    dc:creator :person:SpadeD ;
+    bibo:authorList (
+        :person:SpadeD
+    ) ;
+    dc:isPartOf :journal:WSQ:41:3 ;
+    bibo:pages "247-252" ;
+    bibo:doi "10.1353/wsq.2013.0077" .
+
+:reading:SpencerBrown1969
+    a :Reading, bibo:Book ;
+    dc:title "Laws of Form" ;
+    dc:creator :person:SpencerBrownG ;
+    bibo:authorList (
+        :person:SpencerBrownG
+    ) ;
+    dc:date "1969" ;
+    dc:publisher :publisher:AllenUnwin .
+
+:reading:Star1989
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/030631289019003001> ;
+    dc:title "Institutional Ecology, 'Translations' and Boundary Objects: Amateurs and Professionals in Berkeley's Museum of Vertebrate Zoology, 1907-39" ;
+    bibo:shortTitle "Institutional Ecology, 'Translations' and Boundary Objects" ;
+    dc:creator :person:StarS, :person:GriesemerJ ;
+    bibo:authorList (
+        :person:StarS
+        :person:GriesemerJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1989" ;
+        dc:isPartOf :journal:SocStudSci ;
+        bibo:issue "3" ;
+        bibo:volume "19"
+    ] ;
+    bibo:pages "387-420" ;
+    bibo:doi "10.1177/030631289019003001" .
+
+:reading:Star1995
+    a :Reading, bibo:BookSection ;
+    dc:title "The Politics of Formal Representation: Wizards, Gurus, and Organizational Complexity" ;
+    dc:creator :person:StarS ;
+    bibo:authorList (
+        :person:StarS
+    ) ;
+    dc:isPartOf :volume:Star1995 ;
+    bibo:pages "88-118" .
+
+:reading:Starosielski2021
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1215/9781478013037-014> ;
+    dc:title "The politics of cable supply from the British Empire to Huawei Marine" ;
+    dc:creator :person:StarosielskiN ;
+    bibo:authorList (
+        :person:StarosielskiN
+    ) ;
+    bibo:pages "190-205" ;
+    dc:isPartOf :volume:Hockenberry2021 ;
+    bibo:doi "10.1215/9781478013037-014" .
+
+:reading:Stawarska2020
+    a :Reading, bibo:Book ;
+    dc:title "Saussure's linguistics, structuralism, and phenomenology: The <i>Course in General Linguistics</i> after a century" ;
+    bibo:shortTitle "Saussure's linguistics, structuralism, and phenomenology" ;
+    dc:creator :person:StawarskaB ;
+    bibo:authorList (
+        :person:StawarskaB
+    ) ;
+    dc:date "2020" ;
+    dc:publisher :publisher:Palgrave ;
+    bibo:isbn13 "978-3-030-43097-9" .
+
+:reading:Stenner2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/0959354316630619> ;
+    dc:title "On standards and values: Between finite actuality and infinite possibility" ;
+    bibo:shortTitle "On standards and values" ;
+    dc:creator :person:StennerP ;
+    bibo:authorList (
+        :person:StennerP
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:TheoryPsychology ;
+        bibo:issue "2" ;
+        bibo:volume "26"
+    ] ;
+    bibo:pages "144–162" ;
+    bibo:doi "10.1177/0959354316630619" .
+
+:reading:Stevens2021
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1080/15358593.2021.1934521> ;
+    dc:title "The unremarked optimum: whiteness, optimization, and control in the database revolution" ;
+    dc:creator :person:StevensN, :person:HoffmannA, :person:FloriniS ;
+    bibo:authorList (
+        :person:StevensN
+        :person:HoffmannA
+        :person:FloriniS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:ReviewOfCommunication ;
+        bibo:issue "2" ;
+        bibo:volume "21"
+    ] ;
+    bibo:pages "113-128" ;
+    bibo:doi "10.1080/15358593.2021.1934521" .
+
+:reading:Stevenson2016
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/1461444814555950> ;
+    dc:title "Rethinking the participatory web: A history of HotWired's “new publishing paradigm,” 1994–1997" ;
+    bibo:shortTitle "Rethinking the participatory web" ;
+    dc:creator :person:StevensonM ;
+    bibo:authorList (
+        :person:StevensonM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2016" ;
+        dc:isPartOf :journal:NewMediaSociety ;
+        bibo:volume "18" ;
+        bibo:issue "7"
+    ] ;
+    bibo:pages "1331–1346" ;
+    bibo:doi "10.1177/1461444814555950" .
+
+:reading:Stevenson2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/24701475.2020.1725854> ;
+    dc:title "Legacy systems: Internet histories of the abandoned, discontinued and forgotten" ;
+    bibo:shortTitle "Legacy systems" ;
+    dc:creator :person:StevensonM, :person:HelmondA ;
+    bibo:authorList (
+        :person:StevensonM
+        :person:HelmondA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:InternetHistories ;
+        bibo:volume "4" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:doi "10.1080/24701475.2020.1725854" .
+
+:reading:Stewart2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.3389/fpsyg.2014.00654> ;
+    dc:title "An enquiry concerning the nature of conceptual categories: A case-study on the social dimensions of human cognition" ;
+    dc:creator :person:StewartJ ;
+    bibo:authorList (
+        :person:StewartJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2014" ;
+        dc:isPartOf :journal:FIP ;
+        bibo:volume "5"
+    ] ;
+    bibo:pages "1-13" ;
+    bibo:doi "10.3389/fpsyg.2014.00654" .
+
+:reading:Stoler2009
+    a :Reading, bibo:Book ;
+    dc:title "Along the Archival Grain: Epistemic Anxieties and Colonial Common Sense" ;
+    bibo:shortTitle "Along the Archival Grain" ;
+    dc:creator :person:StolerAL ;
+    bibo:authorList (
+        :person:StolerAL
+    ) ;
+    dc:date "2009" ;
+    dc:publisher :publisher:PUP ;
+    bibo:isbn13 "978-0-691-01578-1", "978-0-691-01577-4" .
+
+:reading:Styhre2010
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "The Concept Of Transduction And Its Use In Organization Studies" ;
+    dc:creator :person:StyhreA ;
+    bibo:authorList (
+        :person:StyhreA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2010" ;
+        dc:isPartOf :journal:Emergence ;
+        bibo:issue "3" ;
+        bibo:volume "12"
+    ] ;
+    bibo:pages "115-131" .
+
+:reading:Suchman1993
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF00749015> ;
+    dc:title "Do categories have politics?" ;
+    dc:creator :person:SuchmanL ;
+    bibo:authorList (
+        :person:SuchmanL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1993/09/01" ;
+        dc:isPartOf :journal:CSCW ;
+        bibo:issue "3" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "177-190" ;
+    bibo:doi "10.1007/BF00749015" .
+
+:reading:Suchman1994
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF01305852> ;
+    dc:title "Speech acts and voices: Response to Winograd et al." ;
+    bibo:shortTitle "Speech acts and voices" ;
+    dc:creator :person:SuchmanL ;
+    bibo:authorList (
+        :person:SuchmanL
+    ) ;
+    dc:isPartOf :journal:CSCW:3:1 ;
+    bibo:pages "85-95" ;
+    bibo:doi "10.1007/BF01305852" .
+
+:reading:Tatarchenko2021A
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2021.3126649> ;
+    dc:title "Russian logics and the culture of impossible: Part I–Recovering intelligentsia logics" ;
+    dc:creator :person:TatarchenkoK, :person:YermakovaA, :person:DeMolL ;
+    bibo:authorList (
+        :person:TatarchenkoK
+        :person:YermakovaA
+        :person:DeMolL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "4" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "43-56" ;
+    bibo:doi "10.1109/MAHC.2021.3126649" .
+
+:reading:Tatarchenko2021B
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1109/MAHC.2021.3135714> ;
+    dc:title "Russian logics and the culture of impossible: Part II–Reinterpreting algorithmic rationality" ;
+    dc:creator :person:TatarchenkoK, :person:YermakovaA, :person:DeMolL ;
+    bibo:authorList (
+        :person:TatarchenkoK
+        :person:YermakovaA
+        :person:DeMolL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2021" ;
+        dc:isPartOf :journal:IEEEAnnals ;
+        bibo:issue "4" ;
+        bibo:volume "43"
+    ] ;
+    bibo:pages "57-69" ;
+    bibo:doi "10.1109/MAHC.2021.3135714" .
+
+:reading:Teil2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764231203185> ;
+    dc:title "Why do experts and amateurs diverge in their tastings? A pragmatic analysis of perception" ;
+    bibo:shortTitle "Why do experts and amateurs diverge in their tastings?" ;
+    dc:creator :person:TeilG ;
+    bibo:authorList (
+        :person:TeilG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "November 17, 2023" ;
+        dc:isPartOf :journal:TCS
+    ] ;
+    bibo:doi "10.1177/02632764231203185" .
+
+:reading:Tenen2017
+    a :Reading, bibo:Book ;
+    dc:title "Plain text: The poetics of computation" ;
+    dc:creator :person:TenenD ;
+    bibo:authorList (
+        :person:TenenD
+    ) ;
+    dc:date "June 2017" ;
+    dc:publisher :publisher:SUP .
+
+:reading:Tennis2013
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Ethos and ideology of knowledge organization: toward precepts for an engaged knowledge organization" ;
+    dc:creator :person:TennisJ ;
+    bibo:authorList (
+         :person:TennisJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2013" ;
+        dc:isPartOf :journal:KO ;
+        bibo:issue "1" ;
+        bibo:volume "40"
+    ] ;
+    bibo:pages "42-49" ;
+    bibo:uri "http://hdl.handle.net/1773/37978" .
+
+:reading:Thomas2018
+    a :Reading, bibo:Book ;
+    dc:title "Becoming-Social in a Networked Age" ;
+    dc:creator :person:ThomasN ;
+    bibo:authorList (
+        :person:ThomasN
+    ) ;
+    dc:date "2018" ;
+    dc:publisher :publisher:Routledge ;
+    bibo:isbn13 "9781138719026" .
+
+:reading:Thomer2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/2053951720934838> ;
+    dc:title "Relational data paradigms: What do we learn by taking the materiality of databases seriously?" ;
+    dc:creator :person:ThomerA, :person:WickettK ;
+    bibo:authorList (
+        :person:ThomerA
+        :person:WickettK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:BDS ;
+        bibo:volume "7" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:doi "10.1177/2053951720934838" .
+
+:reading:Thompson2020
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1038/s41562-020-0924-8> ;
+    dc:title "Cultural influences on word meanings revealed through large-scale semantic alignment" ;
+    dc:creator :person:ThompsonB, :person:RobertsS, :person:LupyanG ;
+    bibo:authorList (
+        :person:ThompsonB
+        :person:RobertsS
+        :person:LupyanG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:NatureHumanBehavior ;
+        bibo:issue "4" ;
+    ] ;
+    bibo:pages "1029-1038" ;
+    bibo:doi "10.1038/s41562-020-0924-8" .
+
+:reading:Tomkins1963
+    a :Reading , bibo:BookSection ;
+    dc:title "Simulation of personality: The interrelationships between affect, memory, thinking, perception, and action" ;
+    bibo:shortTitle "Simulation of personality" ;
+    dc:creator :person:TomkinsS ;
+    bibo:authorList ( :person:TomkinsS ) ;
+    dc:isPartOf [
+        a bibo:Book ;
+        dc:date "1963" ;
+        dc:publisher :publisher:Wiley ;
+        dc:title "Computer Simulation of Personality: Frontier of Psychological Theory" ;
+        bibo:editor :person:TomkinsS , :person:MessickS ;
+        bibo:editorList (
+            :person:TomkinsS
+            :person:MessickS
+        )
+    ] ;
+    bibo:pages "3–57" .
+
+:reading:Trace2024
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/1369118X.2023.2255656> ;
+    dc:title "Algorithmic futures: the intersection of algorithms and evidentiary work" ;
+    dc:creator :person:TraceC, :person:HodgesJ ;
+    bibo:authorList (
+        :person:TraceC
+        :person:HodgesJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:InformationCommunicationSociety ;
+        bibo:volume "27" ;
+        bibo:issue "7"
+    ] ;
+    bibo:doi "10.1080/1369118X.2023.2255656" .
+
+:reading:Tsing2015
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1515/9781400873548> ;
+    dc:title "The mushroom at the end of the world: On the possibility of life in capitalist ruins" ;
+    dc:creator :person:TsingA ;
+    bibo:authorList (
+        :person:TsingA
+    ) ;
+    dc:date "2015" ;
+    dc:publisher :publisher:PUP ;
+    bibo:doi "10.1515/9781400873548" .
+
+:reading:Tsing2022
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1215/9781478022664-002> ;
+    dc:title "The socialty of birds: Reflections on ontological edge effects" ;
+    dc:creator :person:TsingA ;
+    bibo:authorList (
+        :person:TsingA
+    ) ;
+    dc:isPartOf :volume:VanDooren2022 ;
+    bibo:pages "15-32" ;
+    bibo:doi "10.1215/9781478022664-002" .
+
+:reading:Turner2017
+    a :Reading, bibo:AcademicArticle ;
+    # owl:sameAs <http://doi.org/10.1080/24701475.2017.1307540> ;
+    dc:title "Can we write a cultural history of the Internet? If so, how?" ;
+    dc:creator :person:TurnerF ;
+    bibo:authorList (
+        :person:TurnerF
+    ) ;
+    dc:isPartOf :journal:InternetHistories:1:1-2 ;
+    bibo:pages "39-46" ;
+    # DOI doesn't actually lead to the article, so just include the URI
+    bibo:uri "http://www.tandfonline.com/doi/full/10.1080/24701475.2017.1307540" .
+
+:reading:Ullman1997
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://www.worldcat.org/oclc/1170487286> ;
+    dc:title "Close to the machine: Technophilia and its discontents" ;
+    bibo:shortTitle "Close to the machine" ;
+    dc:creator :person:UllmanE ;
+    bibo:authorList (
+        :person:UllmanE
+    ) ;
+    dc:date "2010" ;
+    dc:publisher :publisher:CityLights .
+
+:reading:Valdivia2023
+    a :Reading , :ConferencePaper ;
+    owl:sameAs <https://doi.org/10.1145/3593013.3594047> ;
+    dc:title "Datafication genealogies beyond algorithmic fairness: Making up racialised subjects" ;
+    bibo:shortTitle "Datafication genealogies beyond algorithmic fairness" ;
+    dc:creator :person:ValdiviaA , :person:TazzioliM ;
+    bibo:authorList (
+        :person:ValdiviaA
+        :person:TazzioliM
+    ) ;
+    bibo:reproducedIn :proceedings:FACCT23 ;
+    bibo:presentedAt :conference:FACCT23 ;
+    bibo:doi "10.1145/3593013.3594047" .
+
+:reading:VanDoorn2017
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/1369118X.2017.1294194> ;
+    dc:title "Platform labor: on the gendered and racialized exploitation of low-income service work in the ‘on-demand’ economy" ;
+    bibo:shortTitle "Platform labor" ;
+    dc:creator :person:VanDoornN ;
+    bibo:authorList (
+         :person:VanDoornN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2017" ;
+        dc:isPartOf :journal:InformationCommunicationSociety ;
+        bibo:issue "6" ;
+        bibo:volume "20"
+    ] ;
+    bibo:pages "898-914" ;
+    bibo:doi "10.1080/1369118X.2017.1294194" .
+
+:reading:Verhoeven2014
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Doing the sheep good: facilitating engagement in digital humanities and creative arts research" ;
+    bibo:shortTitle "Doing the sheep good" ;
+    dc:creator :person:VerhoevenD ;
+    bibo:authorList (
+        :person:VerhoevenD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2014/01/01" ;
+        dc:isPartOf :journal:AdvancingDigitalHumanities ;
+        bibo:editorList (
+            :person:ArthurP
+            :person:BodeK
+        )
+    ] ;
+    bibo:pages "206-220" ;
+    bibo:uri "http://dro.deakin.edu.au/view/DU:30070005" .
+
+:reading:Viljoen2020
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Democratic Data: A Relational Theory For Data Governance" ;
+    bibo:shortTitle "Democratic Data" ;
+    dc:creator :person:ViljoenS ;
+    bibo:authorList (
+        :person:ViljoenS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:YLJ
+    ] ;
+    bibo:doi "10.2139/ssrn.3727562" ;
+    bibo:uri "https://doi.org/10.2139/ssrn.3727562" .
+
+:reading:Vismann2008a
+    a :Reading, bibo:BookSection ;
+    dc:title "Law's writing lessons" ;
+    dc:creator :person:VismannC ;
+    bibo:authorList (
+        :person:VismannC
+    ) ;
+    dc:isPartOf :volume:Vismann2008 ;
+    bibo:pages "1-38"  .
+
+:reading:Vismann2008b
+    a :Reading, bibo:BookSection ;
+    dc:title "From translating to legislating" ;
+    dc:creator :person:VismannC ;
+    bibo:authorList (
+        :person:VismannC
+    ) ;
+    dc:isPartOf :volume:Vismann2008 ;
+    bibo:pages "39-70"  .
+
+:reading:Vismann2008c
+    a :Reading, bibo:BookSection ;
+    dc:title "From documents to records" ;
+    dc:creator :person:VismannC ;
+    bibo:authorList (
+        :person:VismannC
+    ) ;
+    dc:isPartOf :volume:Vismann2008 ;
+    bibo:pages "71-101"  .
+
+:reading:Vogl2022
+    a :Reading , bibo:Book ;
+    dc:title "Capital and Ressentiment: A Brief Theory of the Present" ;
+    dc:creator :person:VoglJ ;
+    bibo:authorList ( :person:VoglJ ) ;
+    dc:date "2022" ;
+    dc:publisher :publisher:Polity .
+
+:reading:VonFoerster2002a
+    a :Reading, bibo:BookSection ;
+    dc:title "Images of Reality" ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) ;
+    dc:isPartOf :volume:VonFoerster2002 ;
+    bibo:pages "17-63" .
+
+:reading:VonFoerster2002b
+    a :Reading, bibo:BookSection ;
+    dc:title "Perspectives in Practice" ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) ;
+    dc:isPartOf :volume:VonFoerster2002 ;
+    bibo:pages "65-100" .
+
+:reading:VonFoerster2002c
+    a :Reading, bibo:BookSection ;
+    dc:title "Cybernetics" ;
+    dc:creator :person:VonFoersterH, :person:PoerksenB ;
+    bibo:authorList (
+        :person:VonFoersterH
+        :person:PoerksenB
+    ) ;
+    dc:isPartOf :volume:VonFoerster2002 ;
+    bibo:pages "101-116" .
+
+:reading:VonUexkull1982
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "The theory of meaning" ;
+    dc:creator :person:VonUexkull ;
+    bibo:authorList (
+        :person:VonUexkull
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1982" ;
+        bibo:issue "1" ;
+        bibo:volume "42" ;
+        dc:isPartOf :journal:Semiotica
+    ] ;
+    bibo:pages "25-82" ;
+    bibo:doi "10.1515/semi.1982.42.1.25" ;
+    bibo:uri "https://doi.org/10.1515/semi.1982.42.1.25" .
+
+:reading:Voss2024
+    # FILLME: Update the details of this entry.
+    # Added automatically for meeting on 2024-11-22
+    a :Reading , bibo:Book ;
+    dc:title "Systems Ultra: Making Sense of Technology in a Complex World" ;
+    dc:creator :person:VossG ;
+    bibo:authorList ( :person:VossG ) ;
+    dc:date "2024" ;
+    dc:publisher :publisher:Verso .
+
+:reading:Wakkary2017
+    # FIXME: Update the details of this entry.
+    # Added automatically for meeting on 2017-06-23
+    a :Reading .
+
+:reading:Waldstein2008
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1215/9780822390107-010> ;
+    dc:title "The Mangle of Practice or the Empire of Signs: Toward a Dialogue between Science Studies and Soviet Semiotics" ;
+    dc:creator :person:WaldsteinM ;
+    bibo:authorList (
+        :person:WaldsteinM
+    ) ;
+    dc:isPartOf :volume:Pickering2008 ;
+    bibo:doi "10.1215/9780822390107-010" .
+
+:reading:Warner2023
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1108/JD-03-2023-0057> ;
+    dc:title "The spectrum of semantic and syntactic labour" ;
+    dc:creator :person:WarnerJ ;
+    bibo:authorList ( :person:WarnerJ ) ;
+    dc:isPartOf [
+       a bibo:Issue ;
+       dc:date "2023" ;
+       dc:isPartOf :journal:JDOC
+    ] ;
+    bibo:doi "10.1108/JD-03-2023-0057" .
+
+:reading:Watson2012
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/s10746-012-9233-1> ;
+    dc:title "‘Information’: Praxeological considerations" ;
+    dc:creator :person:WatsonR, :person:CarlinA ;
+    bibo:authorList (
+        :person:WatsonR
+        :person:CarlinA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2012" ;
+        dc:isPartOf :journal:HumanStudies ;
+        bibo:volume "35"
+    ] ;
+    bibo:pages "327-345" ;
+    bibo:doi "10.1007/s10746-012-9233-1" .
+
+:reading:WeatherbyL2025
+    a :Reading, bibo:Book ;
+    dc:title "Language Machines: Cultural AI and the End of Remainder Humanism" ;
+    dc:creator :person:WeatherbyL ;
+    bibo:authorList (
+        :person:WeatherbyL
+    ) ;
+    dc:publisher :publisher:UMP ;
+    dc:date "2025-06-24" ;
+    bibo:isbn "9781452973517" ;
+    foaf:homepage <https://www.upress.umn.edu/9781452973517/language-machines/> .
+
+:reading:West2022
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/03063127221078314> ;
+    dc:title "Cryptography as information control" ;
+    dc:creator :person:WestSM ;
+    bibo:authorList (
+        :person:WestSM
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2022" ;
+        dc:isPartOf :journal:SocStudSci ;
+        bibo:issue "3" ;
+        bibo:volume "52"
+    ] ;
+    bibo:pages "353-375" ;
+    bibo:doi "10.1177/03063127221078314" .
+
+:reading:Wickett2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1002/asi.24745> ;
+    dc:title "Critical data modeling and the basic representation model" ;
+    dc:creator :person:WickettK ;
+    bibo:authorList (
+        :person:WickettK
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:JASIST ;
+    ] ;
+    bibo:pages "1-11" ;
+    bibo:doi "10.1002/asi.24745" .
+
+:reading:Winograd1987
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1207/s15327051hci0301_2> ;
+    dc:title "A Language/Action Perspective on the Design of Cooperative Work" ;
+    dc:creator :person:WinogradT ;
+    bibo:authorList (
+        :person:WinogradT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "March 1987" ;
+        dc:isPartOf :journal:HCI ;
+        bibo:issue "1" ;
+        bibo:volume "3"
+    ] ;
+    bibo:pages "3–30" ;
+    bibo:doi "10.1207/s15327051hci0301_2" .
+
+:reading:Winograd1993
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1007/BF00749016> ;
+    dc:title "Categories, disciplines, and social coordination" ;
+    dc:creator :person:WinogradT ;
+    bibo:authorList (
+        :person:WinogradT
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "1993/09/01" ;
+        dc:isPartOf :journal:CSCW ;
+        bibo:issue "3" ;
+        bibo:volume "2"
+    ] ;
+    bibo:pages "191-197" ;
+    bibo:doi "10.1007/BF00749016" .
+
+:reading:WinthropYoung2010
+    a :Reading, bibo:BookSection ;
+    dc:title "Bubbles and webs: A backdoor stroll through the readings of Uexküll" ;
+    dc:creator :person:WinthropYoungG ;
+    bibo:authorList (
+        :person:WinthropYoungG
+    ) ;
+    dc:isPartOf :volume:VonUexkull2010 .
+
+:reading:WinthropYoung2014
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1215/17432197-2795741> ;
+    dc:title "The <i>Kultur</i> of cultural techniques: Conceptual inertia and the parasitic materialities of ontologization" ;
+    dc:creator :person:WinthropYoungG ;
+    bibo:authorList (
+        :person:WinthropYoungG
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2014" ;
+        dc:isPartOf :journal:CulturalPolitics ;
+        bibo:volume "10" ;
+        bibo:issue "3"
+    ] ;
+    bibo:pages "376-388" ;
+    bibo:doi "10.1215/17432197-2795741" .
+
+:reading:Wittkower2016
+    a :Reading, :ConferencePaper ;
+    owl:sameAs <http://doi.org/10.1109/ETHICS.2016.7560055> ;
+    dc:title "Principles of anti-discriminatory design" ;
+    dc:creator :person:WittkowerD ;
+    bibo:authorList (
+        :person:WittkowerD
+    ) ;
+    bibo:reproducedIn [
+        a bibo:Proceedings ;
+        dc:title "2016 IEEE International Symposium on Ethics in Engineering, Science, and Technology (ETHICS 2016)" ;
+        dc:date "May 2016" ;
+        dc:publisher :publisher:IEEE ;
+        bibo:isbn13 "9781509023189" ;
+        bibo:doi "10.1109/ETHICS.2016.7560055"
+    ] ;
+    bibo:presentedAt [
+        a bibo:Conference ;
+        dc:title "IEEE International Symposium on Ethics in Engineering, Science, and Technology, ETHICS 2016" ;
+        address:localityName "Vancouver, BC" ;
+        dc:date "13-14 May 2016" ;
+        foaf:homepage <http://sites.ieee.org/ethics-conference/>
+    ] ;
+    bibo:doi "10.1109/ETHICS.2016.7560055" .
+
+:reading:Wobbrock2009
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1145/1572626.1572641> ;
+    dc:title "Reflections on the Future of iSchools from Inspired Junior Faculty" ;
+    dc:creator :person:WobbrockJ, :person:KoA, :person:KientzJ ;
+    bibo:authorList (
+        :person:WobbrockJ
+    :person:KoA
+    :person:KientzJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:interactions ;
+        bibo:volume "16" ;
+        bibo:issue "5" ;
+        dc:date "September 2009"
+    ] ;
+    bibo:pages "69–71" ;
+    bibo:doi "10.1145/1572626.1572641" .
+
+:reading:Woodward2023
+    a :Reading , bibo:BookSection ;
+    dc:title "Raymond Ruyer and the Philosophy of Information" ;
+    dc:creator :person:WoodwardA ;
+    bibo:authorList (
+        :person:WoodwardA
+    ) ;
+    bibo:pages "vii-xxiii" ;
+    dc:isPartOf :volume:Ruyer2023 .
+
+:reading:Wright2021
+    a :Reading, bibo:Book ;
+    owl:sameAs <http://doi.org/10.1163/9789004471542> ;
+    dc:title "The weight of the printed word: Text, context and miltancy in <i>Operaismo</i>" ;
+    bibo:shortTitle "The weight of the printed word" ;
+    dc:creator :person:WrightS ;
+    bibo:authorList (
+        :person:WrightS
+    ) ;
+    dc:date "2021" ;
+    dc:publisher :publisher:Brill ;
+    bibo:doi "10.1163/9789004471542" .
+
+:reading:Young2021
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <http://doi.org/10.1215/9781478013037-008> ;
+    dc:title "Colonization's logistical media: The ship and the document" ;
+    dc:creator :person:YoungL ;
+    bibo:authorList (
+        :person:YoungL
+    ) ;
+    bibo:pages "94-110" ;
+    dc:isPartOf :volume:Hockenberry2021 ;
+    bibo:doi "10.1215/9781478013037-008" .
+

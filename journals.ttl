@@ -1,0 +1,633 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:journal:ACMTransWeb
+    a bibo:Journal ;
+    dc:title "ACM Transactions on the Web" ;
+    foaf:homepage <https://dl.acm.org/journal/tweb> ;
+    bibo:issn "1559-1131" .
+
+:journal:AI
+    a bibo:Journal ;
+    dc:title "Artificial Intelligence" ;
+    foaf:homepage <http://www.sciencedirect.com/science/journal/00043702> ;
+    bibo:issn "0004-3702" .
+
+:journal:AIS
+    a bibo:Journal ;
+    dc:title "AI & Society" ;
+    foaf:homepage <https://link.springer.com/journal/146> ;
+    bibo:issn "1435-5655" .
+
+:journal:AdvancingDigitalHumanities
+    a bibo:Journal ;
+    dc:title "Advancing digital humanities: research, methods, theories" .
+
+:journal:AmericanAnthropologist
+    a bibo:Journal ;
+    dc:title "American Anthropologist" ;
+    foaf:homepage <https://www.americananthropologist.org/> ;
+    bibo:issn "1548-1433" .
+
+:journal:ArchiveJournal
+    a bibo:Journal ;
+    dc:title "Archive Journal" ;
+    foaf:homepage <https://www.archivejournal.net/> ;
+    bibo:issn "2166-1189" .
+
+:journal:BDS
+    a bibo:Journal ;
+    dc:title "Big Data & Society" ;
+    foaf:homepage <https://journals.sagepub.com/home/bds> ;
+    bibo:issn "20539517" .
+
+:journal:BJS
+    a bibo:Journal ;
+    dc:title "The British Journal of Sociology" ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-4446> ;
+    bibo:issn "1468-4446" .
+
+:journal:CCQ
+    a bibo:Journal ;
+    dc:title "Cataloging & Classification Quarterly" ;
+    foaf:homepage <https://www.tandfonline.com/journals/wccq20> ;
+    bibo:issn "1544-4554" .
+
+:journal:CF
+    a bibo:Journal ;
+    dc:title "Constructivist Foundations" ;
+    foaf:homepage <https://constructivist.info> ;
+    bibo:issn "1782-348X" .
+
+:journal:CHK
+    a bibo:Journal ;
+    dc:title "Cybernetics & Human Knowing" ;
+    foaf:homepage <https://chkjournal.com> .
+
+:journal:CPO
+    a bibo:Journal ;
+    dc:title "communication +1" ;
+    foaf:homepage <https://scholarworks.umass.edu/cpo/> .
+
+:journal:CSCW
+    a bibo:Journal ;
+    dc:title "Computer Supported Cooperative Work" ;
+    bibo:shortTitle "Comput Supported Coop Work" ;
+    foaf:homepage <https://link.springer.com/journal/10606> ;
+    bibo:issn "0925-9724", "1573-7551" .
+
+:journal:CSCW:3:1
+    a bibo:Issue ;
+    dc:date "1994/03/01" ;
+    dc:isPartOf :journal:CSCW ;
+    bibo:issue "1" ;
+    bibo:volume "3" .
+
+:journal:Catalyst
+    a bibo:Journal ;
+    dc:title "Catalyst: Feminism, Theory, Technoscience" ;
+    foaf:homepage <https://catalystjournal.org/> ;
+    bibo:issn "2380-3312" .
+
+:journal:ComputationalCulture
+    a bibo:Journal ;
+    dc:title "Computational Culture" ;
+    foaf:homepage <http://computationalculture.net/> ;
+    bibo:issn "2047-2390" .
+
+:journal:Convergence
+    a bibo:Journal ;
+    dc:title "Convergence: The International Journal of Research into New Media Technologies" ;
+    foaf:homepage <https://journals.sagepub.com/home/con> ;
+    bibo:issn "1748-7382" .
+
+:journal:CriticalInquiry
+    a bibo:Journal ;
+    dc:title "Critical Inquiry" ;
+    foaf:homepage <http://criticalinquiry.uchicago.edu/> ;
+    bibo:issn "0093-1896" .
+
+:journal:CulturalPolitics
+    a bibo:Journal ;
+    dc:title "Cultural Politics" ;
+    foaf:homepage <https://read.dukeupress.edu/cultural-politics> ;
+    bibo:issn "1751-7435" .
+
+:journal:CulturalStudies
+    a bibo:Journal ;
+    dc:title "Cultural Studies" ;
+    foaf:homepage <https://www.tandfonline.com/toc/rcus20/current> ;
+    bibo:issn "1466-4348" .
+
+:journal:DSH
+    a bibo:Journal ;
+    dc:title "Digital Scholarship in the Humanities" ;
+    foaf:homepage <https://academic.oup.com/dsh> ;
+    bibo:issn "2055-768X" .
+
+:journal:Distinktion
+    a bibo:Journal ;
+    dc:title "Distinktion: Journal of Social Theory" ;
+    foaf:homepage <https://www.tandfonline.com/journals/rdis20> ;
+    bibo:issn "2159-9149" .
+
+:journal:EJIS
+    a bibo:Journal ;
+    dc:title "European Journal of Information Systems" ;
+    foaf:homepage <https://link.springer.com/journal/41303> ;
+    bibo:issn "0960-085X" .
+
+:journal:ELH
+    a bibo:Journal ;
+    dc:title "ELH" ;
+    foaf:homepage <https://www.press.jhu.edu/journals/elh> ;
+    bibo:issn "1080-6547" .
+
+:journal:EPT
+    a bibo:Journal ;
+    dc:title "Educational Philosophy and Theory" ;
+    foaf:homepage <https://www.tandfonline.com/journals/rept20> ;
+    bibo:issn "1469-5812" .
+
+:journal:EconSoc
+    a bibo:Journal ;
+    dc:title "Economy and Society" ;
+    foaf:homepage <https://www.tandfonline.com/toc/reso20/current> ;
+    bibo:issn "1469-5766" .
+
+:journal:EducauseReview
+    a bibo:Journal ;
+    dc:title "Educause Review" ;
+    foaf:homepage <https://er.educause.edu> ;
+    bibo:issn "1527-6619" .
+
+:journal:Emergence
+    a bibo:Journal ;
+    dc:title "Emergence: Complexity and Organization" ;
+    foaf:homepage <https://journal.emergentpublications.com> ;
+    bibo:issn "15213250" .
+
+:journal:FIP
+    a bibo:Journal ;
+    dc:title "Frontiers in Psychology" ;
+    foaf:homepage <https://www.frontiersin.org/journals/psychology> ;
+    bibo:issn "1664-1078" .
+
+:journal:FOS
+    a bibo:Journal ;
+    dc:title "Foundations of Science" ;
+    foaf:homepage <https://link.springer.com/journal/10699> ;
+    bibo:issn "1572-8471" .
+
+:journal:FabianOffertBlog
+    a bibo:Journal ;
+    dc:title "Fabian Offert → Blog" ;
+    foaf:homepage <https://zentralwerkstatt.squarespace.com/blog/> .
+
+:journal:FirstMonday
+    a bibo:Journal ;
+    dc:title "First Monday" ;
+    foaf:homepage <http://firstmonday.org> ;
+    bibo:issn "1396-0466" .
+
+:journal:Foucaldien
+    a bibo:Journal ;
+    dc:title "Le foucaldien" ;
+    foaf:homepage <https://foucaldien.net> .
+
+:journal:GoogleDevelopersBlog
+    a bibo:Journal ;
+    dc:title "Google Developers Blog" ;
+    foaf:homepage <https://developers.googleblog.com> .
+
+:journal:HCI
+    a bibo:Journal ;
+    dc:title "Human Computer Interaction" ;
+    foaf:homepage <http://www.tandfonline.com/toc/hhci20/current> ;
+    bibo:issn "0737-0024" .
+
+:journal:HistoryAndTheory
+    a bibo:Journal ;
+    dc:title "History & Theory" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/14682303> ;
+    bibo:issn "1468-2303" .
+
+:journal:HumanStudies
+    a bibo:Journal ;
+    dc:title "Human Studies" ;
+    foaf:homepage <https://www.springer.com/journal/10746> ;
+    bibo:issn "1572-851X" .
+
+:journal:Hypatia
+    a bibo:Journal ;
+    dc:title "Hypatia" ;
+    foaf:homepage <http://hypatiaphilosophy.org/> ;
+    bibo:issn "0887-5367" .
+
+:journal:IEEEAnnals
+    a bibo:Journal ;
+    dc:title "IEEE Annals of the History of Computing" ;
+    foaf:homepage <http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=85> ;
+    bibo:issn "1058-6180" .
+
+:journal:IR
+    a bibo:Journal ;
+    dc:title "Information Research" ;
+    foaf:homepage <http://www.informationr.net/> ;
+    bibo:issn "1368-1613" .
+
+:journal:InformationCommunicationSociety
+    a bibo:Journal ;
+    dc:title "Information, Communcation, & Society" ;
+    foaf:homepage <http://www.tandfonline.com/toc/rics20/current> ;
+    bibo:issn "1369-118X" .
+
+:journal:InformationSociety
+    a bibo:Journal ;
+    dc:title "The Information Society" ;
+    foaf:homepage <http://www.tandfonline.com/toc/utis20/current> ;
+    bibo:issn "0197-2243" .
+
+:journal:InterdisciplinaryScienceReviews
+    a bibo:Journal ;
+    dc:title "Interdisciplinary Science Reviews" ;
+    foaf:homepage <https://www.tandfonline.com/journals/yisr20> ;
+    bibo:issn "0308-0188" .
+
+:journal:InternetHistories
+    a bibo:Journal ;
+    dc:title "Internet Histories" ;
+    foaf:homepage <http://www.tandfonline.com/toc/rint20/current> ;
+    bibo:issn "2470-1475" .
+
+:journal:InternetHistories:1:1-2
+    a bibo:issue ;
+    dc:date "2017" ;
+    dc:isPartOf :journal:InternetHistories ;
+    bibo:volume "1" ;
+    bibo:issue "1-2" .
+
+:journal:JASIS
+    a bibo:Journal ;
+    dc:title "Journal of the American Society for Information Science" ;
+    bibo:shortTitle "J. Am. Soc. Inf. Sci." ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2330-1643> ;
+    bibo:issn "1097-4571" .
+
+:journal:JASIST
+    a bibo:Journal ;
+    dc:title "Journal of the Association for Information Science and Technology" ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2330-1643> ;
+    bibo:issn "2330-1643" .
+
+:journal:JBusEthics
+  a bibo:Journal ;
+  dc:title "Journal of Business Ethics" ;
+  foaf:homepage <https://www.springer.com/journal/10551> ;
+  bibo:issn "1573-0697" .
+
+:journal:JCA
+    a bibo:Journal ;
+    dc:title "Journal of Contemporary Archaeology" ;
+    foaf:homepage <https://journal.equinoxpub.com/JCA> ;
+    bibo:issn "2051-3437" .
+
+:journal:JCC
+    a bibo:Journal ;
+    dc:title "Journal of Computer-Mediated Communication" ;
+    foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1083-6101> ;
+    bibo:issn "1083-6101" .
+
+:journal:JCLIS
+    a bibo:Journal ;
+    dc:title "Journal of Critical Library and Information Studies" ;
+    foaf:homepage <http://libraryjuicepress.com/journals/index.php/jclis/index> ;
+    bibo:issn "2572-1364" .
+
+:journal:JDOC
+    a bibo:Journal ;
+    dc:title "Journal of Documentation" ;
+    foaf:homepage <http://www.emeraldinsight.com/journal/jd> ;
+    bibo:issn "0022-0418" .
+
+:journal:JIT
+    a bibo:journal ;
+    dc:title "Journal of Information Technology" ;
+    foaf:homepage <https://link.springer.com/journal/41265> ;
+    bibo:issn "1466-4437" .
+
+:journal:JMIS
+    a bibo:Journal ;
+    dc:title "Journal of Management Information Systems" ;
+    foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
+    bibo:issn "0742-1222", "1557-928X" .
+
+:journal:JRC
+    a bibo:Journal ;
+    dc:title "ACM Journal on Responsible Computing" ;
+    foaf:homepage <https://dl.acm.org/journal/jrc> ;
+    bibo:issn "2832-0565" .
+
+:journal:KO
+    a bibo:Journal ;
+    dc:title "Knowledge Organization" ;
+    foaf:homepage <http://www.isko.org/ko.html> ;
+    bibo:issn "0943-7444" .
+
+:journal:LLC
+    a bibo:Journal ;
+    dc:title "Literary and Linguistic Computing" ;
+    foaf:homepage <http://llc.oxfordjournals.org/> ;
+    bibo:issn "0268-1145" .
+
+:journal:LibEd
+    a bibo:Journal ;
+    dc:title "Liberal Education" ;
+    foaf:homepage <https://www.aacu.org/liberaleducation> ;
+    bibo:issn "0024-1822" .
+
+:journal:LibTrends
+    a bibo:Journal ;
+    dc:title "Library Trends" ;
+    foaf:homepage <https://muse.jhu.edu/pub/1/journal/334> ;
+    bibo:issn "1559-0682" .
+
+:journal:MCS
+    a bibo:Journal ;
+    dc:title "Media, Culture & Society" ;
+    foaf:homepage <https://journals.sagepub.com/home/mcs> ;
+    bibo:issn "1460-3675" .
+
+:journal:MDS
+    a bibo:Journal ;
+    dc:title "SIAM Journal on Mathematics of Data Science" ;
+    foaf:homepage <https://epubs.siam.org/loi/sjmdaq> ;
+    bibo:issn "2577-0187" .
+
+:journal:MediaTheory
+    a bibo:Journal ;
+    dc:title "Media Theory" ;
+    foaf:homepage <https://journalcontent.mediatheoryjournal.org/> ;
+    bibo:issn "2557-826X" .
+
+:journal:MinnesotaReview
+    a bibo:Journal ;
+    dc:title "The Minnesota Review" ;
+    foaf:homepage <http://www.theminnesotareview.org> ;
+    bibo:issn "0026-5667, 2157-4189" .
+
+:journal:NLR
+    a bibo:Journal ;
+    dc:title "New Left Review" ;
+    foaf:homepage <https://newleftreview.org/> ;
+    bibo:issn "0028-6060" .
+
+:journal:NatureHumanBehavior
+    a bibo:Journal ;
+    dc:title "Nature Human Behavior" ;
+    foaf:homepage <https://www.nature.com/nathumbehav/> ;
+    bibo:issn "2397-3374" .
+
+:journal:NewLeftReview
+    a bibo:Journal ;
+    dc:title "New Left Review" ;
+    foaf:homepage <https://newleftreview.org/> ;
+    bibo:issn "0028-6060" .
+
+:journal:NewMediaSociety
+    a bibo:Journal ;
+    dc:title "New Media & Society" ;
+    foaf:homepage <http://journals.sagepub.com/home/nms> ;
+    bibo:issn "1461-4448", "1461-7315" .
+
+:journal:OIR
+    a bibo:Journal ;
+    dc:title "Online Information Review" ;
+    foaf:homepage <http://www.emeraldgrouppublishing.com/OIR.htm> ;
+    bibo:issn "1468-4527" .
+
+:journal:OrbisLitterarum
+    a bibo:Journal ;
+    dc:title "Orbis Litterarum" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/16000730> ;
+    bibo:issn "0105-7510" .
+
+:journal:PJLI
+    a bibo:Journal ;
+    dc:title "Penn Journal of Law and Innovation" ;
+    foaf:homepage <https://www.law.upenn.edu/institutes/ctic/> .
+
+:journal:PJOS
+    a bibo:Journal ;
+    dc:title "Public Journal of Semiotics" ;
+    foaf:homepage <http://pjos.org/> ;
+    bibo:issn "1918-9907" .
+
+:journal:PNAS
+    a bibo:Journal ;
+    dc:title "Proceedings of the National Academy of Sciences" ;
+    foaf:homepage <https://www.pnas.org/> ;
+    bibo:issn "1091-6490" .
+
+:journal:PhilosophyAndTechnology
+    a bibo:Journal ;
+    dc:title "Philosophy & Technology" ;
+    foaf:homepage <https://www.springer.com/journal/13347> ;
+    bibo:issn "2210-5441" .
+
+:journal:PhilosophyToday
+    a bibo:Journal ;
+    dc:title "Philosophy Today" ;
+    foaf:homepage <https://www.pdcnet.org/philtoday> ;
+    bibo:issn "2329-8596" .
+
+:journal:QuantitativeScienceStudies
+    a bibo:Journal ;
+    dc:title "Quantitative Science Studies" ;
+    foaf:homepage <https://direct.mit.edu/qss> ;
+    bibo:issn "2641-3337" .
+
+:journal:QuiParle
+    a bibo:Journal ;
+    dc:title "Qui Parle" ;
+    foaf:homepage <https://quiparle.berkeley.edu/> .
+
+:journal:RethinkingMarxism
+    a bibo:Journal ;
+    dc:title "Rethinking Marxism" ;
+    foaf:homepage <http://www.rethinkingmarxism.org/> ;
+    bibo:issn "0893-5696" .
+
+:journal:ReviewOfCommunication
+    a bibo:Journal ;
+    dc:title "Review of Communication" ;
+    foaf:homepage <https://www.tandfonline.com/toc/rroc20/current> ;
+    bibo:issn "1535-8593" .
+
+:journal:SERRC
+    a bibo:Journal ;
+    dc:title "Social Epistemology Review and Reply Collective" ;
+    foaf:homepage <https://social-epistemology.com> .
+
+:journal:SI
+    a bibo:Journal ;
+    dc:title "Sociological Inquiry" ;
+    foaf:homepage <https://onlinelibrary.wiley.com/journal/1475682x> ;
+    bibo:issn "1475-682X" .
+
+:journal:STH
+    a bibo:Journal ;
+    dc:title "Science, Technology, & Human Values" ;
+    foaf:homepage <https://journals.sagepub.com/home/sth> ;
+    bibo:issn "1552-8251" .
+
+:journal:ScienceInContext
+    a bibo:Journal ;
+    dc:title "Science in Context" ;
+    foaf:homepage <https://www.cambridge.org/core/journals/science-in-context> ;
+    bibo:issn "0269-8897" .
+
+:journal:Semiotica
+    a bibo:Journal ;
+    dc:title "Semiotica" ;
+    foaf:homepage <https://www.degruyter.com/journal/key/semi/html> ;
+    bibo:issn "1613-3692" .
+
+:journal:Signs
+    a bibo:Journal ;
+    dc:title "Signs: Journal of Women in Culture and Society" ;
+    foaf:homepage <http://signsjournal.org/> .
+
+:journal:SocStudSci
+    a bibo:Journal ;
+    dc:title "Social Studies of Science" ;
+    foaf:homepage <http://journals.sagepub.com/home/sss> ;
+    bibo:issn "0306-3127" .
+
+:journal:SocialText
+    a bibo:Journal ;
+    dc:title "Social Text" ;
+    foaf:homepage <https://read.dukeupress.edu/social-text/> ;
+    bibo:issn "1527-1951" .
+
+:journal:Sociologica
+    a bibo:Journal ;
+    dc:title "Sociologica" ;
+    foaf:homepage <https://sociologica.unibo.it> ;
+    bibo:issn "19718853" .
+
+:journal:SociologicalTheory
+    a bibo:Journal ;
+    dc:title "Sociological Theory" ;
+    foaf:homepage <http://journals.sagepub.com/home/stx> ;
+    bibo:issn "14679558" .
+
+:journal:Subjectivity
+    a bibo:Journal ;
+    dc:title "Subjectivity" ;
+    foaf:homepage <https://www.palgrave.com/gp/journal/41286> ;
+    bibo:issn "1755-635X" .
+
+:journal:TAC
+    a bibo:Journal ;
+    dc:title "Technology and Culture" ;
+    foaf:homepage <https://www.press.jhu.edu/journals/technology-and-culture> ;
+    bibo:issn "1097-3729" .
+
+:journal:TCS
+    a bibo:Journal ;
+    dc:title "Theory, Culture & Society" ;
+    foaf:homepage <http://journals.sagepub.com/home/tcs> ;
+    bibo:issn "02632764", "14603616" .
+
+:journal:TCT
+    a bibo:Journal ;
+    dc:title "Transformer Circuits Thread" ;
+    foaf:homepage <https://transformer-circuits.pub> .
+
+:journal:TNM
+    a bibo:Journal ;
+    dc:title "Television & New Media" ;
+    foaf:homepage <https://journals.sagepub.com/home/tvn> ;
+    bibo:issn "1552-8316" .
+
+:journal:TheoryPsychology
+    a bibo:Journal ;
+    dc:title "Theory & Psychology" ;
+    foaf:homepage <http://journals.sagepub.com/home/tap> .
+
+:journal:ValuationStudies
+    a bibo:Journal ;
+    dc:title "Valuation Studies" ;
+    foaf:homepage <https://journal.ep.liu.se/valuationstudies> .
+
+:journal:WSQ
+    a bibo:Journal ;
+    dc:title "WSQ: Women's Studies Quarterly" ;
+    foaf:homepage <http://www.feministpress.org/wsq/> ;
+    bibo:issn "1934-1520" .
+
+:journal:WSQ:41:3
+    a bibo:Issue ;
+    dc:date "2013/12/06" ;
+    dc:isPartOf :journal:WSQ ;
+    bibo:issue "3" ;
+    bibo:volume "41" .
+
+:journal:YLJ
+    a bibo:Journal ;
+    dc:title "Yale Law Journal" ;
+    bibo:issn "0044-0094" ;
+    foaf:homepage <https://www.yalelawjournal.org> .
+
+:journal:arXiv
+    a bibo:Journal ;
+    dc:title "arXiv" ;
+    foaf:homepage <https://arxiv.org> ;
+    bibo:issn "2331-8422" .
+
+:journal:eflux
+    a bibo:Journal ;
+    dc:title "e-flux" ;
+    foaf:homepage <http://www.e-flux.com/journal/> .
+
+:journal:interactions
+    a bibo:Journal ;
+    dc:title "interactions" ;
+    foaf:homepage <https://dl.acm.org/citation.cfm?id=J373> ;
+    bibo:issn "1072-5520" .
+
+:journal:login
+    a bibo:Journal ;
+    dc:title ";login: The USENIX Magazine" ;
+    foaf:homepage <https://www.usenix.org/publications/login> .
+
+:journal:representations
+    a bibo:Journal ;
+    dc:title "Representations" ;
+    foaf:homepage <http://rep.ucpress.edu/> ;
+    bibo:issn "0734-6018", "1533-855X" .
+
+:journal:transversals
+    a bibo:Journal ;
+    dc:title "transversals" .
+
+:journal:tripleC
+    a bibo:Journal ;
+    dc:title "tripleC: Communication, Capitalism & Critique" ;
+    foaf:homepage <https://www.triple-c.at> ;
+    bibo:issn "1726-670X" .

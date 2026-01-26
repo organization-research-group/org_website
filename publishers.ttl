@@ -1,0 +1,315 @@
+@base <http://orgorgorgorgorg.org/graph/> .
+@prefix : <http://orgorgorgorgorg.org/graph#> .
+@prefix address: <http://schemas.talis.com/2005/address/schema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dblp: <https://dblp.org/pid/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Publisher
+    a rdf:Class ;
+    rdfs:isSubClassOf foaf:Organization .
+
+:publisher:ACL
+    a :Publisher ;
+    foaf:name "Association for Computational Linguistics" ;
+    address:localityName "Online" .
+
+:publisher:ACM
+    a :Publisher ;
+    foaf:name "ACM" ;
+    address:localityName "New York" .
+
+:publisher:AUP
+    a :Publisher ;
+    foaf:name "Amsterdam University Press" ;
+    address:localityName "Amsterdam" .
+
+:publisher:AllenUnwin
+    a :Publisher ;
+    foaf:name "Allen & Unwin" ;
+    address:localityName "London" .
+
+:publisher:Brill
+    a :Publisher ;
+    foaf:name "Brill" ;
+    address:localityName "Leiden" .
+
+:publisher:CUP
+    a :Publisher ;
+    foaf:name "Cambridge University Press" ;
+    address:localityName "Cambridge, UK" .
+
+:publisher:CityLights
+    a :Publisher ;
+    foaf:name "City Lights" ;
+    address:localityName "San Francisco" .
+
+:publisher:ColumbiaUP
+    a :Publisher ;
+    foaf:name "Columbia University Press" ;
+    address:localityName "New York" .
+
+:publisher:Continuum
+    a :Publisher ;
+    foaf:name "Continuum" ;
+    address:localityName "London" .
+
+:publisher:CornellUP
+    a :Publisher ;
+    foaf:name "Cornell University Press" ;
+    address:localityName "Ithaca" .
+
+:publisher:DUP
+    a :Publisher ;
+    foaf:name "Duke University Press" ;
+    address:localityName "Durham, North Carolina" .
+
+:publisher:EdinburghUP
+    a :Publisher ;
+    foaf:name "Edinburgh University Press" ;
+    address:localityName "Edinburgh" .
+
+:publisher:Elsevier
+    a :Publisher ;
+    foaf:name "Elsevier" ;
+    address:localityName "Amsterdam" .
+
+:publisher:FUP
+    a :Publisher ;
+    foaf:name "Fordham University Press" ;
+    address:localityName "New York" .
+
+:publisher:FreeAssociation
+    a :Publisher ;
+    foaf:name "Free Association Books" ;
+    address:localityName "London" .
+
+:publisher:FreePress
+    a :Publisher ;
+    foaf:name "The Free Press" ;
+    address:localityName "Glencoe, Illinois" .
+
+:publisher:GUP
+    a :Publisher ;
+    foaf:name "Georgetown University Press" ;
+    address:localityName "Washington, DC" .
+
+:publisher:HMH
+    a :Publisher ;
+    foaf:name "Houghton Mifflin Harcourt" ;
+    address:localityName "Boston" .
+
+:publisher:HRW
+    a :Publisher ;
+    foaf:name "Holt, Rinehart and Winston" ;
+    address:localityName "New York" .
+
+:publisher:HUP
+    a :Publisher ;
+    foaf:name "Harvard University Press" ;
+    address:localityName "Cambridge, MA" .
+
+:publisher:Hanart
+    a :Publisher ;
+    foaf:name "Hanart Press" ;
+    foaf:homepage <https://hanart.press> .
+
+:publisher:IEEComputerSociety
+    a :Publisher ;
+    foaf:name "IEEE Computer Society" ;
+    address:localityName "Washington, DC" .
+
+:publisher:IEEE
+    a :Publisher ;
+    foaf:name "IEEE" ;
+    address:localityName "Piscataway" .
+
+:publisher:IGNOTA
+    a :Publisher ;
+    foaf:name "Ignota Books" ;
+    address:localityName "London" .
+
+:publisher:Kluwer
+    a :Publisher ;
+    foaf:name "Kluwer Academic" ;
+    address:localityName "New York" .
+
+:publisher:MIT
+    a :Publisher ;
+    foaf:name "MIT Press" ;
+    address:localityName "Cambridge, MA" .
+
+:publisher:NYUP
+    a :Publisher ;
+    foaf:name "New York University Press" ;
+    address:localityName "New York" .
+
+:publisher:NeurIPS
+    a :Publisher ;
+    foaf:name "Neural Information Processing Systems Foundation" ;
+    address:localityName "San Diego, CA" .
+
+:publisher:NorthHollandPublishingCo
+    a :Publisher ;
+    foaf:name "North Holland Publishing Co." ;
+    address:localityName "Amsterdam" .
+
+:publisher:OUP
+    a :Publisher ;
+    foaf:name "Oxford University Press" ;
+    address:localityName "Oxford" .
+
+:publisher:PUP
+    a :Publisher ;
+    foaf:name "Princeton University Press" ;
+    address:localityName "Princeton, NJ" .
+
+:publisher:Palgrave
+    a :Publisher ;
+    foaf:name "Palgrave Macmillan" ;
+    address:localityName "Cham, Switzerland" .
+
+:publisher:PalgraveP
+    a :Publisher ;
+    foaf:name "Palgrave Pivot Cham" ;
+    address:localityName "Cham, Switzerland" .
+
+:publisher:Paradigm
+    a :Publisher ;
+    foaf:name "Paradigm Publishers" ;
+    address:localityName "Boulder" .
+
+:publisher:Plenum
+    a :Publisher ;
+    foaf:name "Plenum Publishers" ;
+    address:localityName "New York" .
+
+:publisher:Pluto
+    a :Publisher ;
+    foaf:name "Pluto Press" ;
+    address:localityName "London" .
+
+:publisher:Polity
+    a :Publisher ;
+    foaf:name "Polity" ;
+    address:localityName "Cambridge" .
+
+:publisher:PsychologyPress
+    a :Publisher ;
+    foaf:name "Psychology Press" ;
+    address:localityName "New York" .
+
+:publisher:RL
+    a :Publisher ;
+    foaf:name "Rowman & Littlefield" ;
+    address:localityName "London" .
+
+:publisher:Routledge
+    a :Publisher ;
+    foaf:name "Routledge" ;
+    address:localityName "Abingdon" .
+
+:publisher:RowmanLittlefield
+    a :Publisher ;
+    foaf:name "Rowman & Littlefield" ;
+    address:localityName "London" .
+
+:publisher:SUNY
+    a :Publisher ;
+    foaf:name "State University of New York Press" ;
+    address:localityName "Albany" .
+
+:publisher:SUP
+    a :Publisher ;
+    foaf:name "Stanford University Press" ;
+    address:localityName "Stanford, CA" .
+
+:publisher:SimonSchuster
+    a :Publisher ;
+    foaf:name "Simon & Schuster" ;
+    address:localityName "New York" .
+
+:publisher:SomethingElse
+    a :Publisher ;
+    foaf:name "Something Else Press" ;
+    address:localityName "New York" .
+
+:publisher:Spartan
+    a :Publisher ;
+    foaf:name "Spartan Books" ;
+    address:localityName "New York" .
+
+:publisher:Springer
+    a :Publisher ;
+    foaf:name "Springer" ;
+    address:localityName "Dordrecht" .
+
+:publisher:SpringerFW
+    a :Publisher ;
+    foaf:name "Springer Fachmedien Wiesbaden" ;
+    address:localityName "Wiesbaden" .
+
+:publisher:UCP
+    a :Publisher ;
+    foaf:name "University of Chicago Press" ;
+    address:localityName "Chicago" .
+
+:publisher:UCalP
+    a :Publisher ;
+    foaf:name "University of California Press" ;
+    address:localityName "Berkeley" .
+
+:publisher:UMP
+    a :Publisher ;
+    foaf:name "University of Minnesota Press" ;
+    address:localityName "Minneapolis" .
+
+:publisher:UMassP
+    a :Publisher ;
+    foaf:name "University of Massachusetts Press" ;
+    address:localityName "Amherst" .
+
+:publisher:Univocal
+    a :Publisher ;
+    foaf:name "Univocal" ;
+    address:localityName "Minneapolis" .
+
+:publisher:Verlag
+    a :Publisher ;
+    foaf:name "Verlag Dokumentation" ;
+    address:localityName "Pullach, Germany" .
+
+:publisher:Verso
+    a :Publisher ;
+    foaf:name "Verso" ;
+    address:localityName "New York" .
+
+:publisher:WUP
+    a :Publisher ;
+    foaf:name "Wesleyan University Press" ;
+    address:localityName "Middletown, Connecticut" .
+
+:publisher:Wiley
+    a :Publisher ;
+    foaf:name "Wiley" ;
+    address:localityName "New York" .
+
+:publisher:Zone
+    a :Publisher ;
+    foaf:name "Zone Books" ;
+    address:localityName "Brooklyn, New York" .
+
+:publisher:meson
+    a :Publisher ;
+    foaf:name "meson press" ;
+    address:localityName "Lüneburg, Germany" .
