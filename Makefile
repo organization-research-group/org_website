@@ -25,7 +25,7 @@ all: $(SITE_TARBALL)
 
 .PHONY: clean
 clean:
-	rm -rf dist node_modules
+	rm -rf dist node_modules graph.ttl
 
 .PHONY: upload
 upload: $(SITE_TARBALL)
