@@ -9,6 +9,7 @@ STATIC_DEPS = org.css graph.ttl org.js
 # Files that generate the tarball
 SITE_SCRIPTS := $(wildcard src/*js)
 
+GRAPH_FILES := conferences.ttl journals.ttl meetings.ttl people.ttl proceedings.ttl publishers.ttl readings.ttl volumes.ttl
 
 platform=$(shell uname -s)
 ifeq ($(platform), Darwin)
@@ -32,6 +33,8 @@ upload: $(SITE_TARBALL)
 	chmod g+w $(addprefix dist/,$(shell $(TAR) tf $<))
 	scp $(addprefix dist/,$(shell $(TAR) tf $<)) $(UPLOAD_HOST):$(UPLOAD_PATH)
 
+graph.ttl: $(GRAPH_FILES)
+	riot --formatted=ttl --set ttl:indentStyle=long $^ > $@
 
 dist:
 	mkdir -p $@
@@ -50,16 +53,10 @@ $(SITE_TARBALL): $(STATIC_DEPS) $(SITE_SCRIPTS) node_modules | dist
 add_meeting:
 	@python3 bin/add_meeting
 
-.PHONY: sort_turtle
-sort_turtle:
-	bin/clean_ttl.py graph.ttl | sponge graph.ttl
-
-
 .PHONY: add_missing_entities
 add_missing_entities:
 	bin/missing_entities graph.ttl >> graph.ttl
-	make sort_turtle
 
 .PHONY: check
 check:
-	shacl v -s shape.ttl -d graph.ttl
+	for f in $(GRAPH_FILES) ; do echo "\n$$f" && shacl v -s shape.ttl -d $$f --text ; done
