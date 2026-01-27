@@ -5,3 +5,4 @@ IGNORE
 node_modules
 .aider*
 /graph.ttl
+/CLAUDE.md
