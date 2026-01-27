@@ -54,8 +54,8 @@ add_meeting:
 	@python3 bin/add_meeting
 
 .PHONY: add_missing_entities
-add_missing_entities:
-	bin/missing_entities graph.ttl >> graph.ttl
+add_missing_entities: graph.ttl
+	bin/missing_entities
 
 .PHONY: check
 check:

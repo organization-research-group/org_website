@@ -6,7 +6,11 @@ import sys
 import json
 from datetime import datetime
 
-from clean_ttl import clean_ttl
+BIN_DIR = os.path.dirname(os.path.realpath(__file__))
+ROOT_DIR = os.path.join(BIN_DIR, '..')
+
+MEETINGS_FILE = os.path.join(ROOT_DIR, 'meetings.ttl')
+READINGS_FILE = os.path.join(ROOT_DIR, 'readings.ttl')
 
 meeting_ttl_template = '''
 :meeting:{date}
@@ -33,12 +37,6 @@ reading_ttl_template = '''
     # Added automatically for meeting on {date}
     a :Reading .
 '''
-
-BIB_FILENAME = os.path.join(
-    os.path.dirname(os.path.realpath(__file__)),
-    '..',
-    'graph.ttl'
-)
 
 print()
 
@@ -84,50 +82,76 @@ Add arbitrary HTML by just typing a string.
                 schedule.append('[ dc:description {} ]'.format(
                     json.dumps(item)))
 
-        old_ttl = ''.join([l for l in open(BIB_FILENAME)])
-
-        pattern = re.compile(r"    :meetings \[")
-
-        new_ttl = ''
-
-        new_ttl += meeting_ttl_template.format(
+        # Build meeting TTL
+        meeting_ttl = meeting_ttl_template.format(
             date=date_input,
             offset=4 if date.timetuple().tm_isdst > 0 else 5)
 
         if cites:
-            new_ttl += involved_ttl_template.format(
+            meeting_ttl += involved_ttl_template.format(
                 readings=', '.join(cites)
             )
 
         if schedule:
-            new_ttl += schedule_ttl_template.format(
+            meeting_ttl += schedule_ttl_template.format(
                 schedule='\n        '.join(schedule)
             )
 
-        new_ttl += ' .\n'
+        meeting_ttl += ' .\n'
 
+        # Build readings TTL
+        readings_ttl = ''
         for cite in cites:
-            new_ttl += reading_ttl_template.format(
+            readings_ttl += reading_ttl_template.format(
                 key=cite,
                 date=date_input)
-            new_ttl += '\n'
 
-        print('\n====')
-        print(new_ttl + '====\n')
+        print('\n==== meetings.ttl ====')
+        print(meeting_ttl)
+        if readings_ttl:
+            print('==== readings.ttl ====')
+            print(readings_ttl)
+        print('====\n')
 
         keep = input(
-            '\033[1mAdding these statements to graph.ttl. '
+            '\033[1mAdding these statements. '
             'Press Ctrl-c to cancel.\033[0m')
 
-        ttl_with_new = clean_ttl(
-            old_ttl.replace(
-                '    :meeting\n',
-                '    :meeting\n        :meeting:' + date_input + ',\n')
-            + new_ttl
-        )
+        # Update meetings.ttl
+        with open(MEETINGS_FILE, 'r') as fp:
+            meetings_content = fp.read()
 
-        with open(BIB_FILENAME, 'w') as fp:
-            fp.write(ttl_with_new)
+        # Find the last meeting entry in the :ORG-UNC :meeting list and add new one
+        # Pattern matches the last meeting in the list (ends with " .")
+        pattern = re.compile(r'(:meeting:\d{4}-\d{2}-\d{2}) \.')
+        matches = list(pattern.finditer(meetings_content))
+        if matches:
+            # Find the one in the :ORG-UNC block (within first ~500 lines)
+            # The :ORG-UNC block's meeting list comes before individual meeting definitions
+            org_block_end = meetings_content.find(':meeting:2015-07-24\n    a :Meeting')
+            for match in matches:
+                if match.start() < org_block_end:
+                    last_match = match
+
+            # Replace "last_meeting ." with "last_meeting ,\n        :meeting:new_date ."
+            old_text = last_match.group(0)
+            new_text = last_match.group(1) + ',\n        :meeting:' + date_input + ' .'
+            meetings_content = meetings_content[:last_match.start()] + new_text + meetings_content[last_match.end():]
+
+        # Append the new meeting definition
+        meetings_content = meetings_content.rstrip() + '\n' + meeting_ttl
+
+        with open(MEETINGS_FILE, 'w') as fp:
+            fp.write(meetings_content)
+
+        # Update readings.ttl if there are new readings
+        if readings_ttl:
+            with open(READINGS_FILE, 'a') as fp:
+                fp.write(readings_ttl)
+
+        print(f'\nUpdated {MEETINGS_FILE}')
+        if readings_ttl:
+            print(f'Updated {READINGS_FILE}')
 
 
 except (EOFError, KeyboardInterrupt):
