@@ -234,6 +234,11 @@
     foaf:homepage <https://stevebenford.wordpress.com/> ;
     foaf:workInfoHomepage <https://www.nottingham.ac.uk/computerscience/people/steve.benford> .
 
+:person:BennettSJ
+    a foaf:Person ;
+    foaf:givenname "S. J." ;
+    foaf:surname "Bennett" .
+
 :person:BergmanM
     a foaf:Person ;
     owl:sameAs viaf:45662184, orcid:0000-0003-3697-2752 ;
@@ -476,6 +481,11 @@
     owl:sameAs viaf:41837558, wd:Q433741 ;
     foaf:givenname "Georges" ;
     foaf:surname "Canguilhem" .
+
+:person:CampoloA
+    a foaf:Person ;
+    foaf:givenname "Alex" ;
+    foaf:surname "Campolo" .
 
 :person:CantwellSmithB
     a foaf:Person ;
@@ -951,6 +961,12 @@
     foaf:surname "Flynn" ;
     foaf:homepage <http://blogs.silmaril.ie/peter/>, <http://research.ucc.ie/profiles/H505/pflynn> .
 
+:person:FlusserV
+    a foaf:Person ;
+    foaf:givenname "Vilém" ;
+    foaf:surname "Flusser" ;
+    foaf:page <https://en.wikipedia.org/wiki/Vil%C3%A9m_Flusser> .
+
 :person:FrankA
     a foaf:Person ;
     owl:sameAs viaf:5300159248464104870006 ;
@@ -1059,6 +1075,11 @@
     owl:sameAs viaf:12396941, wd:Q737823 ;
     foaf:givenname "James Jerome" ;
     foaf:surname "Gibson" .
+
+:person:GibbinsN
+    a foaf:Person ;
+    foaf:givenname "Nicholas" ;
+    foaf:surname "Gibbins" .
 
 :person:GilbertJ
     a foaf:Person ;
@@ -1183,6 +1204,12 @@
     foaf:surname "Halpern" ;
     foaf:homepage <https://cs.nyu.edu/~halpern/> .
 
+:person:HalfordS
+    a foaf:Person ;
+    foaf:givenname "Susan" ;
+    foaf:surname "Halford" ;
+    foaf:homepage <https://www.bristol.ac.uk/people/person/Susan-Halford-81eee40c-0021-4b15-9bc9-4f3223a5faec/> .
+
 :person:HansenM
     a foaf:Person ;
     owl:sameAs viaf:62626903, wd:Q17745931 ;
@@ -1203,6 +1230,11 @@
     foaf:givenname "Donna" ;
     foaf:surname "Haraway" ;
     foaf:homepage <https://people.ucsc.edu/~haraway/> .
+
+:person:HardcastleF
+    a foaf:Person ;
+    foaf:givenname "Faranak" ;
+    foaf:surname "Hardcastle" .
 
 :person:HarrisD
     a foaf:Person ;
@@ -1289,6 +1321,11 @@
     foaf:givenname "James" ;
     foaf:surname "Hodges" ;
     foaf:homepage <https://www.jameshodges.net> .
+
+:person:HodkiewiczM
+    a foaf:Person ;
+    foaf:givenname "Melinda" ;
+    foaf:surname "Hodkiewicz" .
 
 :person:HoffmannA
     a foaf:Person ;
@@ -1537,6 +1574,12 @@
     foaf:surname "Koopman" ;
     foaf:homepage <https://pages.uoregon.edu/koopman/> .
 
+:person:KohlerN
+    a foaf:Person ;
+    foaf:givenname "Nele" ;
+    foaf:surname "Köhler" ;
+    foaf:homepage <https://www.linkedin.com/in/nele-köhler-07a46a21a> .
+
 :person:KreissD
     a foaf:Person ;
     owl:sameAs viaf:171118811, orcid:0000-0003-2533-195X ;
@@ -1550,6 +1593,12 @@
     foaf:givenname "Klaus" ;
     foaf:surname "Krippendorff" ;
     foaf:page <https://www.asc.upenn.edu/news-events/news/klaus-krippendorff-phd-pioneer-content-analysis-and-cybernetics-dies-90> .
+
+:person:KrappP
+    a foaf:Person ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Krapp" ;
+    foaf:homepage <https://krapp.org/> .
 
 :person:KroisJ
     a foaf:Person ;
@@ -1585,6 +1634,11 @@
     foaf:givenname "Donald" ;
     foaf:surname "Landes" ;
     foaf:homepage <https://www.donaldlandes.com> .
+
+:person:LaneR
+    a foaf:Person ;
+    foaf:givenname "Robert" ;
+    foaf:surname "Lane" .
 
 :person:LangvilleA
     a foaf:Person ;
@@ -1633,6 +1687,12 @@
     foaf:givenname "Lucian" ;
     foaf:surname "Leahu" ;
     foaf:workInfoHomepage <https://pure.itu.dk/portal/en/persons/lucian-leahu(55d34e51-05c7-460b-9918-067e3401e65c).html> .
+
+:person:LeggC
+    a foaf:Person ;
+    foaf:givenname "Catherine" ;
+    foaf:surname "Legg" ;
+    foaf:homepage <https://philpeople.org/profiles/cathy-legg> .
 
 :person:LeeD
     a foaf:Person ;
@@ -1993,6 +2053,11 @@
     foaf:surname "Naur" ;
     foaf:homepage <http://web.archive.org/web/20180222150441/http://www.naur.com> .
 
+:person:NeuhausF
+    a foaf:Person ;
+    foaf:givenname "Fabian" ;
+    foaf:surname "Neuhaus" .
+
 :person:NikKhahE
     a foaf:Person;
     owl:sameAs viaf:19424769 ;
@@ -2119,6 +2184,11 @@
     foaf:surname "Pearce" ;
     foaf:homepage <http://www.katypearce.net/> .
 
+:person:PearmanKanzaS
+    a foaf:Person ;
+    foaf:givenname "Samantha" ;
+    foaf:surname "Pearman-Kanza" .
+
 :person:PedwellC
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-4651-5766 , wd:Q112264500 , viaf:91027264 ;
@@ -2200,6 +2270,11 @@
     foaf:surname "Polt" ;
     foaf:homepage <https://site.xavier.edu/polt/typewriters/> .
 
+:person:PopeC
+    a foaf:Person ;
+    foaf:givenname "Catherine" ;
+    foaf:surname "Pope" .
+
 :person:PossatiL
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-7110-6107 ;
@@ -2245,6 +2320,11 @@
     foaf:givenname "Allen H." ;
     foaf:surname "Renear" ;
     foaf:workInfoHomepage <https://ischool.illinois.edu/people/allen-renear> .
+
+:person:RellaL
+    a foaf:Person ;
+    foaf:givenname "Ludovico" ;
+    foaf:surname "Rella" .
 
 :person:RennJ
     a foaf:Person ;
@@ -2302,6 +2382,11 @@
     foaf:homepage <https://thelynxiblog.com> ;
     foaf:workInfoHomepage <https://www.city.ac.uk/people/academics/lyn-robinson> .
 
+:person:RoockeN
+    a foaf:Person ;
+    foaf:givenname "Nicole" ;
+    foaf:surname "Roocke" .
+
 :person:RoblesAndersonE
     a foaf:Person ;
     foaf:givenname "Erica" ;
@@ -2328,6 +2413,11 @@
     foaf:givenname "Alvin" ;
     foaf:surname "Roth" ;
     foaf:homepage <https://web.stanford.edu/~alroth/> .
+
+:person:RothNA
+    a foaf:Person ;
+    foaf:givenname "Nancy Ann" ;
+    foaf:surname "Roth" .
 
 :person:RotmanB
     a foaf:Person ;
@@ -2409,6 +2499,12 @@
     owl:sameAs viaf:20913252, wd:Q523530 ;
     foaf:givenname "Len" ;
     foaf:surname "Sassaman" .
+
+:person:ScaffidiH
+    a foaf:Person ;
+    foaf:givenname "Henri" ;
+    foaf:surname "Scaffidi" ;
+    foaf:homepage <https://github.com/HenriScaff> .
 
 :person:SchwarzO
     a foaf:Person ;
@@ -2980,6 +3076,11 @@
     foaf:surname "Weatherby" ;
     foaf:homepage <https://as.nyu.edu/faculty/leif-allison-reid-weatherby.html> .
 
+:person:WealM
+    a foaf:Person ;
+    foaf:givenname "Mark" ;
+    foaf:surname "Weal" .
+
 :person:WeberN
     a foaf:Person ;
     owl:sameAs orcid:0000-0002-6008-3763 ;
@@ -3059,6 +3160,11 @@
     foaf:givenname "Ashley" ;
     foaf:surname "Wooodward" ;
     foaf:workInfoHomepage <https://www.dundee.ac.uk/people/ashley-woodward> .
+
+:person:WoodsC
+    a foaf:Person ;
+    foaf:givenname "Caitlin" ;
+    foaf:surname "Woods" .
 
 :person:WrightS
     a foaf:Person ;

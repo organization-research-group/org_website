@@ -320,6 +320,16 @@
     ) ;
     bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
 
+:volume:Lane
+    a bibo:EditedBook ;
+    dc:title "Pragmatism Revisited" ;
+    dc:date "2026" ;
+    dc:publisher :publisher:CUP ;
+    bibo:editor :person:LaneR ;
+    bibo:editorList (
+        :person:LaneR
+    ) .
+
 :volume:Machlup1983
     a bibo:EditedBook ;
     dc:title "The study of information: Interdisciplinary messages" ;

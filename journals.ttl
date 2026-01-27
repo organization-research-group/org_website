@@ -43,6 +43,12 @@
     foaf:homepage <https://www.americananthropologist.org/> ;
     bibo:issn "1548-1433" .
 
+:journal:AppliedOntology
+    a bibo:Journal ;
+    dc:title "Applied Ontology" ;
+    foaf:homepage <https://www.iospress.com/catalog/journals/applied-ontology> ;
+    bibo:issn "1570-5838" .
+
 :journal:ArchiveJournal
     a bibo:Journal ;
     dc:title "Archive Journal" ;
@@ -558,6 +564,11 @@
     a bibo:Journal ;
     dc:title "Transformer Circuits Thread" ;
     foaf:homepage <https://transformer-circuits.pub> .
+
+:journal:TGDK
+    a bibo:Journal ;
+    dc:title "Transactions on Graph Data and Knowledge" ;
+    foaf:homepage <https://www.dagstuhl.de/tgdk> .
 
 :journal:TNM
     a bibo:Journal ;

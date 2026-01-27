@@ -149,6 +149,28 @@
     dc:publisher :publisher:DUP ;
     bibo:doi "10.1215/9781478009276" .
 
+:reading:Amoore2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1080/03085147.2025.2560177> ;
+    dc:title "Politics of the prompt: Government in the age of generative AI" ;
+    dc:creator :person:AmooreL, :person:BennettSJ, :person:CampoloA, :person:JacobsenB, :person:RellaL ;
+    bibo:authorList (
+        :person:AmooreL
+        :person:BennettSJ
+        :person:CampoloA
+        :person:JacobsenB
+        :person:RellaL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:EconSoc ;
+        bibo:issue "3" ;
+        bibo:volume "54"
+    ] ;
+    bibo:pages "573-596" ;
+    bibo:doi "10.1080/03085147.2025.2560177" .
+
 :reading:Anderson2019
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1137/18M1183595> ;
@@ -1402,6 +1424,18 @@
     bibo:pages "614-621" ;
     bibo:doi "10.1002/(SICI)1097-4571(199707)48:7<614::AID-ASI8>3.0.CO;2-W" .
 
+:reading:Flusser2011
+    a :Reading, bibo:Book ;
+    dc:title "Does Writing Have a Future?" ;
+    dc:creator :person:FlusserV ;
+    bibo:authorList (
+        :person:FlusserV
+    ) ;
+    dc:date "2011" ;
+    dc:publisher :publisher:UMP ;
+    bibo:translator :person:RothNA ;
+    bibo:isbn13 "978-0816670239" .
+
 :reading:FrankWilson2020
     a :Reading , bibo:Book ;
     dc:title "A Sylvan Tomkins Handbook: Foundations for Affect Theory" ;
@@ -1836,6 +1870,29 @@
     dc:date "2020" ;
     bibo:isbn "9781503614437" ;
     foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
+
+:reading:Halford2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/01622439241249573> ;
+    dc:title "Semantic Web Practices: Infrastructural Politics and the Future of the Web" ;
+    dc:creator :person:HalfordS, :person:WealM, :person:HardcastleF, :person:GibbinsN, :person:PearmanKanzaS, :person:PopeC ;
+    bibo:authorList (
+        :person:HalfordS
+        :person:WealM
+        :person:HardcastleF
+        :person:GibbinsN
+        :person:PearmanKanzaS
+        :person:PopeC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:STH ;
+        bibo:issue "5" ;
+        bibo:volume "50"
+    ] ;
+    bibo:pages "907-931" ;
+    bibo:doi "10.1177/01622439241249573" .
 
 :reading:HansenMBN2024
     a :Reading, bibo:AcademicArticle ;
@@ -2314,7 +2371,7 @@
 :reading:Koopman2024
     a :Reading , bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1177/02632764231162251> ;
-    dc:title "From Galton’s pride to Du Bois’s pursuit: The formats of data-driven inequality" ;
+    dc:title "From Galton's pride to Du Bois's pursuit: The formats of data-driven inequality" ;
     bibo:shortTitle "The formats of data-driven inequality" ;
     dc:creator :person:KoopmanC ;
     bibo:authorList ( :person:KoopmanC ) ;
@@ -2327,6 +2384,25 @@
     ] ;
     bibo:pages "59–78" ;
     bibo:doi "10.1177/02632764231162251" .
+
+:reading:KohlerNeuhaus2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/15705838251336685> ;
+    dc:title "The Mercurial Top-Level Ontology of Large Language Models" ;
+    dc:creator :person:KohlerN, :person:NeuhausF ;
+    bibo:authorList (
+        :person:KohlerN
+        :person:NeuhausF
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:AppliedOntology ;
+        bibo:issue "1" ;
+        bibo:volume "20"
+    ] ;
+    bibo:pages "5-15" ;
+    bibo:doi "10.1177/15705838251336685" .
 
 :reading:Kreiss2011
     a :Reading, bibo:AcademicArticle ;
@@ -2380,6 +2456,17 @@
         bibo:volume "19"
     ] ;
     bibo:pages "82-93".
+
+:reading:Krapp2024
+    a :Reading, bibo:Book ;
+    dc:title "Computing Legacies: Digital Cultures of Simulation" ;
+    dc:creator :person:KrappP ;
+    bibo:authorList (
+        :person:KrappP
+    ) ;
+    dc:date "2024" ;
+    dc:publisher :publisher:MIT ;
+    bibo:isbn13 "9780262380881" .
 
 :reading:KumarCLS2025
     a :Reading, bibo:AcademicArticle ;
@@ -2493,6 +2580,15 @@
     bibo:reproducedIn :proceedings:DIS2016 ;
     bibo:pages "182–186" ;
     bibo:doi "10.1145/2901790.2901840" .
+
+:reading:Legg
+    a :Reading, bibo:BookSection ;
+    dc:title "Peirce and Generative AI" ;
+    dc:creator :person:LeggC ;
+    bibo:authorList (
+        :person:LeggC
+    ) ;
+    dc:isPartOf :volume:Lane .
 
 :reading:Lee2018
     a :Reading, bibo:AcademicArticle ;
@@ -3795,6 +3891,26 @@
         dc:isPartOf :journal:TCS
     ] ;
     bibo:doi "10.1177/02632764251322062" .
+
+:reading:Scaffidi2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.4230/TGDK.3.2.3> ;
+    dc:title "GraphRAG on Technical Documents - Impact of Knowledge Graph Schema" ;
+    dc:creator :person:ScaffidiH, :person:HodkiewiczM, :person:WoodsC, :person:RoockeN ;
+    bibo:authorList (
+        :person:ScaffidiH
+        :person:HodkiewiczM
+        :person:WoodsC
+        :person:RoockeN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:TGDK ;
+        bibo:issue "2" ;
+        bibo:volume "3"
+    ] ;
+    bibo:doi "10.4230/TGDK.3.2.3" .
 
 :reading:Seaver2022
     a :Reading, bibo:Book ;
