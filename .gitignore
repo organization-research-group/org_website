@@ -4,3 +4,4 @@ __pycache__
 IGNORE
 node_modules
 .aider*
+/graph.ttl
