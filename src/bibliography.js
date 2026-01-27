@@ -194,7 +194,10 @@ function cslConverter(fn) {
 
     // Convert agent fields to arrays of CSL agent objects
     def.agentListFields.forEach(cslKey => {
-      rdfListToArray(store, csl[cslKey])
+      if (!csl[cslKey]) {
+        csl[cslKey] = []
+        return
+      }
 
       csl[cslKey] = rdfListToArray(store, csl[cslKey]).map($agent => {
         const get = term => getFirstObjectLiteral(store, $agent, expandNS(term))
