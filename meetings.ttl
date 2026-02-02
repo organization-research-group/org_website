@@ -441,7 +441,8 @@
         :meeting:2026-01-09,
         :meeting:2026-01-16,
         :meeting:2026-01-23,
-        :meeting:2026-01-30 .
+        :meeting:2026-01-30,
+        :meeting:2026-02-06 .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6299,6 +6300,20 @@
         time:hasBeginning [
             a time:Instant ;
             time:inXSDDateTimeStamp "2026-01-30T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Flusser2011 ;
+    :schedule (
+        :reading:Flusser2011
+    ) .
+
+:meeting:2026-02-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-02-06T10:00:00-05:00"^^xsd:dateTimeStamp
         ]
     ] ;
     lode:involved :reading:Flusser2011 ;
