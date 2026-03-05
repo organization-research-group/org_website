@@ -1407,7 +1407,7 @@
 
 :reading:Flynn1997
     a :Reading, bibo:AcademicArticle ;
-    owl:sameAs <http://doi.org/10.1002/(SICI)1097-4571(199707)48:7%3c614::AID-ASI8%3e3.0.CO;2-W> ;
+    owl:sameAs <http://doi.org/10.1002/(SICI)1097-4571(199707)48:7%3C614::AID-ASI8%3E3.0.CO;2-W> ;
     dc:title "W[h]ither the web? The extension or replacement of HTML" ;
     bibo:shortTitle "W[h]ither the web?" ;
     dc:creator :person:FlynnP ;
@@ -3395,6 +3395,21 @@
     bibo:reproducedIn :proceedings:NCSIWS ;
     bibo:doi "10.48550/arXiv.2208.02957" .
 
+:reading:Picca2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2505.17080> ;
+    dc:title "Not Minds, but Signs: Reframing LLMs through Semiotics" ;
+    dc:creator :person:PiccaD ;
+    bibo:authorList (
+        :person:PiccaD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "May 2025" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2505.17080" .
+
 :reading:Pickering1995
     a :Reading, bibo:Book ;
     owl:sameAs <http://www.worldcat.org/oclc/832588301> ;
@@ -3892,6 +3907,21 @@
     ] ;
     bibo:doi "10.1177/02632764251322062" .
 
+:reading:Schmidgen2012
+    a :Reading, bibo:AcademicArticle ;
+    dc:title "Machine Cinematography" ;
+    dc:creator :person:SchmidgenH ;
+    bibo:authorList (
+        :person:SchmidgenH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        bibo:issue "5" ;
+        dc:date "2012" ;
+        dc:isPartOf :journal:Inflexions
+    ] ;
+    bibo:pages "131-148" .
+
 :reading:Scaffidi2025
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.4230/TGDK.3.2.3> ;
@@ -4357,6 +4387,21 @@
     dc:isPartOf :journal:CSCW:3:1 ;
     bibo:pages "85-95" ;
     bibo:doi "10.1007/BF01305852" .
+
+:reading:Sun2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/02632764251407520> ;
+    dc:title "Towards an Ecology of Time: Revisiting Simondon's Genetic Method" ;
+    dc:creator :person:SunN ;
+    bibo:authorList (
+        :person:SunN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:TCS
+    ] ;
+    bibo:doi "10.1177/02632764251407520" .
 
 :reading:Tatarchenko2021A
     a :Reading, bibo:AcademicArticle ;

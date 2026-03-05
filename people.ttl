@@ -203,7 +203,7 @@
     owl:sameAs viaf:98150468302804171513 ;
     foaf:givenname "Agiatis" ;
     foaf:surname "Benardou" ;
-    foaf:workInfoHomepage <http://www.dcu.gr/en/%ce%b1%ce%b3%ce%b9%ce%ac%cf%84%ce%b9%cf%82-%ce%bc%cf%80%ce%b5%ce%bd%ce%ac%cf%81%ce%b4%ce%bf%cf%85/> .
+    foaf:workInfoHomepage <http://www.dcu.gr/en/%CE%B1%CE%B3%CE%B9%CE%AC%CF%84%CE%B9%CF%82-%CE%BC%CF%80%CE%B5%CE%BD%CE%AC%CF%81%CE%B4%CE%BF%CF%85/> .
 
 :person:BendellJ
     a foaf:Person ;
@@ -2216,6 +2216,13 @@
     foaf:surname "Piantadosi" ;
     foaf:homepage <http://colala.berkeley.edu/people/piantadosi/> .
 
+:person:PiccaD
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2014-0855, dblp:88\/5657 ;
+    foaf:givenname "Davide" ;
+    foaf:surname "Picca" ;
+    foaf:workInfoHomepage <https://applicationspub.unil.ch/interpub/noauth/php/Un/UnPers.php?PerNum=71016&LanCode=8> .
+
 :person:PickeringA
     a foaf:Person ;
     owl:sameAs viaf:28274197, wd:Q2846705 ;
@@ -2506,6 +2513,13 @@
     foaf:surname "Scaffidi" ;
     foaf:homepage <https://github.com/HenriScaff> .
 
+:person:SchmidgenH
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9326-6902, wd:Q1283126 ;
+    foaf:givenname "Henning" ;
+    foaf:surname "Schmidgen" ;
+    foaf:workInfoHomepage <https://www.uni-weimar.de/en/media/chairs/media-studies/medientheorie-und-wissenschaftsgeschichte/personen/schmidgen/> .
+
 :person:SchwarzO
     a foaf:Person ;
     foaf:givenname "Ori" ;
@@ -2782,6 +2796,12 @@
     foaf:givenname "Patrik" ;
     foaf:surname "Svensson" ;
     foaf:homepage <http://patriksv.net/> .
+
+:person:SunN
+    a foaf:Person ;
+    foaf:givenname "Ningxiang" ;
+    foaf:surname "Sun" ;
+    foaf:workInfoHomepage <https://www.sps.ed.ac.uk/staff/ningxiang-sun> .
 
 :person:TanW
     a foaf:Person ;

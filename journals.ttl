@@ -250,6 +250,12 @@
     foaf:homepage <http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=85> ;
     bibo:issn "1058-6180" .
 
+:journal:Inflexions
+    a bibo:Journal ;
+    dc:title "Inflexions: A Journal for Research-Creation" ;
+    foaf:homepage <https://www.inflexions.org/> ;
+    bibo:issn "1916-5870" .
+
 :journal:IR
     a bibo:Journal ;
     dc:title "Information Research" ;
