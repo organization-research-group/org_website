@@ -5,4 +5,4 @@ IGNORE
 node_modules
 .aider*
 /graph.ttl
-
+.sprite
