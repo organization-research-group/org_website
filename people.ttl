@@ -1029,6 +1029,12 @@
     foaf:givenname "Alexander R." ;
     foaf:homepage <https://steinhardt.nyu.edu/people/alexander-galloway> .
 
+:person:GahrnAndersenR
+    a foaf:Person ;
+    foaf:surname "Gahrn-Andersen" ;
+    foaf:givenname "Rasmus" ;
+    foaf:homepage <https://portal.findresearcher.sdu.dk/en/persons/rga/> .
+
 :person:GarfinkelH
     a foaf:Person ;
     owl:sameAs viaf:108536033, wd:Q461121 ;

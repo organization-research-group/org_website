@@ -1530,6 +1530,21 @@
     bibo:doi "10.1086/717324" ;
     dc:publisher :publisher:UCP .
 
+:reading:GahrnAndersen2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1007/s00146-025-02599-x> ;
+    dc:title "Human languaging and large language models" ;
+    dc:creator :person:GahrnAndersenR ;
+    bibo:authorList (
+        :person:GahrnAndersenR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:AIS
+    ] ;
+    bibo:doi "10.1007/s00146-025-02599-x" .
+
 :reading:Garfinkel1986
     a :Reading, bibo:BookSection ;
     dc:title "On formal structures of practical actions" ;
