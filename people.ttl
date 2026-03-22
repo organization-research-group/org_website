@@ -2734,6 +2734,12 @@
     foaf:surname "Star" ;
     foaf:homepage <http://lchc.ucsd.edu/People/lstar_bio.html> .
 
+:person:StarkL
+    a foaf:Person ;
+    foaf:givenname "Luke" ;
+    foaf:surname "Stark" ;
+    foaf:homepage <https://starkcontrast.co/> .
+
 :person:StarosielskiN
     a foaf:Person ;
     owl:sameAs viaf:310731262, wd:Q81228010 ;

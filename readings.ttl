@@ -4242,6 +4242,21 @@
     dc:isPartOf :volume:Star1995 ;
     bibo:pages "88-118" .
 
+:reading:Stark2023
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1017/bjt.2023.3> ;
+    dc:title "Artificial intelligence and the conjectural sciences" ;
+    dc:creator :person:StarkL ;
+    bibo:authorList (
+        :person:StarkL
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2023" ;
+        dc:isPartOf :journal:BJHSThemes
+    ] ;
+    bibo:doi "10.1017/bjt.2023.3" .
+
 :reading:Starosielski2021
     a :Reading, bibo:BookSection ;
     owl:sameAs <http://doi.org/10.1215/9781478013037-014> ;

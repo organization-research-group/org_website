@@ -67,6 +67,12 @@
     foaf:homepage <http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1468-4446> ;
     bibo:issn "1468-4446" .
 
+:journal:BJHSThemes
+    a bibo:Journal ;
+    dc:title "BJHS Themes" ;
+    foaf:homepage <https://www.cambridge.org/core/journals/bjhs-themes> ;
+    bibo:issn "2058-850X" .
+
 :journal:CCQ
     a bibo:Journal ;
     dc:title "Cataloging & Classification Quarterly" ;
