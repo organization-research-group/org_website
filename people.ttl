@@ -98,6 +98,12 @@
     foaf:surname "Ankeny" ;
     foaf:workInfoHomepage <https://www.adelaide.edu.au/directory/rachel.ankeny> .
 
+:person:ApprichC
+    a foaf:Person ;
+    foaf:givenname "Clemens" ;
+    foaf:surname "Apprich" ;
+    foaf:homepage <https://medientheorie.uni-ak.ac.at/en/project/univ-prof-mmag-dr-clemens-apprich-2/> .
+
 :person:ArawjoI
     a foaf:Person ;
     foaf:givenname "Ian" ;

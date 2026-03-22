@@ -447,7 +447,8 @@
         :meeting:2026-02-20,
         :meeting:2026-02-27,
         :meeting:2026-03-06,
-        :meeting:2026-03-13 .
+        :meeting:2026-03-13,
+        :meeting:2026-03-20 .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6394,4 +6395,18 @@
     lode:involved :reading:GahrnAndersen2025 ;
     :schedule (
         :reading:GahrnAndersen2025
+    ) .
+
+:meeting:2026-03-20
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-03-20T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Apprich2025 ;
+    :schedule (
+        :reading:Apprich2025
     ) .

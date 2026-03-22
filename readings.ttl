@@ -234,6 +234,22 @@
     dc:date "1981" ;
     dc:publisher :publisher:UMassP .
 
+:reading:Apprich2025
+    a :Reading, bibo:AcademicArticle ;
+    bibo:uri "http://computationalculture.net/learning-how-to-learn/" ;
+    dc:title "Learning How to Learn: Abduction as the 'Missing Link' in Machine Learning" ;
+    dc:creator :person:ApprichC ;
+    bibo:authorList (
+        :person:ApprichC
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:ComputationalCulture ;
+        bibo:uri "http://computationalculture.net/issue-ten" ;
+        bibo:issue "10"
+    ] .
+
 :reading:Arawjo2020
     a :Reading, :ConferencePaper ;
     owl:sameAs <http://doi.org/10.1145/3313831.3376731> ;
