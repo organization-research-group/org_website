@@ -560,6 +560,12 @@
     foaf:homepage <https://www.palgrave.com/gp/journal/41286> ;
     bibo:issn "1755-635X" .
 
+:journal:SubStance
+    a bibo:Journal ;
+    dc:title "SubStance" ;
+    foaf:homepage <https://muse.jhu.edu/journal/189> ;
+    bibo:issn "1527-2095" .
+
 :journal:TAC
     a bibo:Journal ;
     dc:title "Technology and Culture" ;

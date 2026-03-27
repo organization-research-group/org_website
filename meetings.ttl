@@ -449,7 +449,9 @@
         :meeting:2026-03-06,
         :meeting:2026-03-13,
         :meeting:2026-03-20,
-        :meeting:2026-03-27 .
+        :meeting:2026-03-27,
+        :meeting:2026-04-03,
+        :meeting:2026-04-10 .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6424,4 +6426,31 @@
     lode:involved :reading:Stark2023 ;
     :schedule (
         :reading:Stark2023
+    ) .
+
+:meeting:2026-04-03
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-04-03T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "No meeting." ]
+    ) .
+
+:meeting:2026-04-10
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-04-10T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Tuckwell2025 ;
+    :schedule (
+        :reading:Tuckwell2025
     ) .

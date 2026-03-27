@@ -2937,6 +2937,13 @@
     foaf:surname "Tsing" ;
     foaf:workInfoHomepage <https://anthro.ucsc.edu/faculty/singleton.php?&singleton=true&cruz_id=atsing> .
 
+:person:TuckwellJ
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-9115-6742 ;
+    foaf:givenname "Jason" ;
+    foaf:surname "Tuckwell" ;
+    foaf:workInfoHomepage <https://researchers.westernsydney.edu.au/en/persons/jason-tuckwell/> .
+
 :person:TurnerF
     a foaf:Person ;
     owl:sameAs viaf:340652, wd:Q5496435 ;

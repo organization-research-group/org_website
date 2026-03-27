@@ -4641,6 +4641,24 @@
     bibo:pages "15-32" ;
     bibo:doi "10.1215/9781478022664-002" .
 
+:reading:Tuckwell2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/sub.2025.a969739> ;
+    dc:title "On a Simondonian Theory of Signification at the Limits of Language and Information" ;
+    dc:creator :person:TuckwellJ ;
+    bibo:authorList (
+        :person:TuckwellJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:SubStance ;
+        bibo:volume "54" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "120-149" ;
+    bibo:doi "10.1353/sub.2025.a969739" .
+
 :reading:Turner2017
     a :Reading, bibo:AcademicArticle ;
     # owl:sameAs <http://doi.org/10.1080/24701475.2017.1307540> ;
