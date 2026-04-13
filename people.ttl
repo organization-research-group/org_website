@@ -3108,6 +3108,13 @@
     foaf:surname "Warner" ;
     foaf:workInfoHomepage <https://www.qub.ac.uk/schools/QueensManagementSchool/People/AcademicStaff/AllAcademicStaffProfiles/Warner.html> .
 
+:person:WasserA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5462-843X ;
+    foaf:givenname "Audrey" ;
+    foaf:surname "Wasser" ;
+    foaf:workInfoHomepage <https://miamioh.edu/profiles/cas/audrey-wasser.html> .
+
 :person:WatsonR
     a foaf:Person ;
     owl:sameAs viaf:147150325514110090006 ;

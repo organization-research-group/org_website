@@ -4881,6 +4881,24 @@
     ] ;
     bibo:doi "10.1108/JD-03-2023-0057" .
 
+:reading:Wasser2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/sub.2025.a969742> ;
+    dc:title "Mutatis mutandis; or, Analogy and Justification in Simondon's System" ;
+    dc:creator :person:WasserA ;
+    bibo:authorList (
+        :person:WasserA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:SubStance ;
+        bibo:volume "54" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "189-206" ;
+    bibo:doi "10.1353/sub.2025.a969742" .
+
 :reading:Watson2012
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1007/s10746-012-9233-1> ;

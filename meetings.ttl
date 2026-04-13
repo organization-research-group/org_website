@@ -451,7 +451,8 @@
         :meeting:2026-03-20,
         :meeting:2026-03-27,
         :meeting:2026-04-03,
-        :meeting:2026-04-10 .
+        :meeting:2026-04-10,
+        :meeting:2026-04-17 .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6453,4 +6454,18 @@
     lode:involved :reading:Tuckwell2025 ;
     :schedule (
         :reading:Tuckwell2025
+    ) .
+
+:meeting:2026-04-17
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-04-17T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Wasser2025 ;
+    :schedule (
+        :reading:Wasser2025
     ) .
