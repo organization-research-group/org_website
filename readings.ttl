@@ -2155,6 +2155,24 @@
     dc:isPartOf :volume:Burnett2023 ;
     bibo:pages "63–80" .
 
+:reading:Hui2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1353/sub.2025.a969737> ;
+    dc:title "Tendency and Intuition in Simondon's \"Genesis of Technicity\"" ;
+    dc:creator :person:HuiY ;
+    bibo:authorList (
+        :person:HuiY
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2025" ;
+        dc:isPartOf :journal:SubStance ;
+        bibo:volume "54" ;
+        bibo:issue "2"
+    ] ;
+    bibo:pages "80-95" ;
+    bibo:doi "10.1353/sub.2025.a969737" .
+
 :reading:Iliadis2013
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.7275/R59884XW> ;
