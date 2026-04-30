@@ -58,6 +58,19 @@ make add_missing_entities  # Find and append missing RDF entity definitions
 3. HTML rendered with hyperscript, pretty-printed
 4. Pages bundled into TAR archive, static assets appended by Makefile
 
+## Dev Server (Sprite)
+
+The site is served via a persistent Sprite service named `org-site` on port 8080,
+already configured to serve `dist/`. After building, restart it to pick up changes:
+
+```bash
+make all
+sprite-env services stop org-site && sprite-env services start org-site
+```
+
+Do **not** create a new service — one is already registered with `--http-port 8080`.
+Use `sprite-env services list` to check status.
+
 ## Platform Notes
 
 - On macOS, requires `gtar` (GNU tar) instead of BSD tar

@@ -129,6 +129,12 @@
   foaf:givenname "Charles-James" ;
   foaf:surname "Bailey" .
 
+:person:BajohrH
+    a foaf:Person ;
+    foaf:givenname "Hannes" ;
+    foaf:surname "Bajohr" ;
+    foaf:homepage <https://hannesbajohr.de> .
+
 :person:BakHerrieM
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-4412-9896 ;

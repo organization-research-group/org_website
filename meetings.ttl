@@ -6484,3 +6484,30 @@
     :schedule (
         :reading:Hui2025
     ) .
+
+:meeting:2026-05-01
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-05-01T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    :schedule (
+        [ dc:description "International Workers' Day, no meeting." ]
+    ) .
+
+:meeting:2026-05-08
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-05-08T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Bajohr2025 ;
+    :schedule (
+        :reading:Bajohr2025
+    ) .

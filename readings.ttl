@@ -280,6 +280,16 @@
     bibo:pages "253-256" ;
     bibo:doi "10.1353/wsq.2013.0082" .
 
+:reading:Bajohr2025
+    a :Reading, bibo:Report ;
+    bibo:uri "https://arxiv.org/abs/2510.22162" ;
+    dc:title "Surface Reading LLMs: Synthetic Text and its Styles" ;
+    dc:creator :person:BajohrH ;
+    bibo:authorList (
+        :person:BajohrH
+    ) ;
+    dc:date "2025" .
+
 :reading:BakHerrie2025
     a :Reading, bibo:Book ;
     dc:title "Thinking Through Data: How Outliers, Aggregates, and Patterns Shape Perception" ;
