@@ -11,6 +11,7 @@ const bibRDFTypes = {
   'bibo:BookSection': cslConverter(bookSection),
   'bibo:AcademicArticle': cslConverter(academicArticle),
   'bibo:Book': cslConverter(book),
+  'bibo:Report': cslConverter(report),
   ':ConferencePaper': cslConverter(conferencePaper),
   ':Lecture': cslConverter(lecture),
 }
@@ -168,6 +169,23 @@ function conferencePaper(store, uri) {
   }
 }
 
+
+function report(store, uri) {
+  const $report = uri
+
+  return {
+    cslType: 'report',
+    agentListFields: ['author'],
+    dateFields: ['issued'],
+    fields: {
+      title: [$report, 'dc:title'],
+      URI: [$report, 'bibo:uri'],
+      DOI: [$report, 'bibo:doi'],
+      author: [$report, 'bibo:authorList'],
+      issued: [$report, 'dc:date'],
+    },
+  }
+}
 
 function cslConverter(fn) {
   return (store, $bibItem) => {
