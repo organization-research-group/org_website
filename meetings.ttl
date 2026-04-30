@@ -453,7 +453,9 @@
         :meeting:2026-04-03,
         :meeting:2026-04-10,
         :meeting:2026-04-17,
-        :meeting:2026-04-24 .
+        :meeting:2026-04-24,
+        :meeting:2026-05-01,
+        :meeting:2026-05-08 .
 
 :meeting:2015-07-24
     a :Meeting ;

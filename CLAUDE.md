@@ -31,7 +31,12 @@ make add_missing_entities  # Find and append missing RDF entity definitions
 
 **Data Layer:** RDF/Turtle files in the root directory
 
-- `meetings.ttl` - Meeting schedule with dates and attendees
+- `meetings.ttl` - Meeting schedule with dates and attendees. Contains a root
+  node near the top (around line 1) that enumerates **all** meetings via the
+  `:meeting` predicate — this is what `src/meetings.js` queries. **When adding
+  new meetings, you must add them to both this enumeration list AND define the
+  meeting node below.** Omitting either will silently drop the meeting from the
+  site.
 - `readings.ttl` - Reading entries linked to meetings
 - `people.ttl`, `journals.ttl`, `conferences.ttl`, `publishers.ttl`,
   `volumes.ttl`, `proceedings.ttl` - Entity definitions
