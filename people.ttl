@@ -1971,6 +1971,13 @@
     foaf:surname "Miles" ;
     foaf:homepage <http://web.archive.org/web/20180222142812/http://vogmae.net.au> .
 
+:person:MillikanR
+    a foaf:Person ;
+    owl:sameAs viaf:73894668 ;
+    foaf:givenname "Ruth Garrett" ;
+    foaf:surname "Millikan" ;
+    foaf:workInfoHomepage <https://philosophy.uconn.edu/person/ruth-millikan/> .
+
 :person:MinamizonoK
     a foaf:Person ;
     foaf:givenname "Katsushi" ;

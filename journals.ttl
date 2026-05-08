@@ -354,6 +354,12 @@
     foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
     bibo:issn "0742-1222", "1557-928X" .
 
+:journal:JPhilosophy
+    a bibo:Journal ;
+    dc:title "The Journal of Philosophy" ;
+    foaf:homepage <https://www.journalofphilosophy.org/> ;
+    bibo:issn "0022-362X" .
+
 :journal:JRC
     a bibo:Journal ;
     dc:title "ACM Journal on Responsible Computing" ;

@@ -3028,6 +3028,24 @@
     bibo:pages "61-68" ;
     bibo:doi "10.1145/504216.504236" .
 
+:reading:Millikan1989
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.2307/2027123> ;
+    dc:title "Biosemantics" ;
+    dc:creator :person:MillikanR ;
+    bibo:authorList (
+        :person:MillikanR
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:JPhilosophy ;
+        dc:date "June 1989" ;
+        bibo:volume "86" ;
+        bibo:issue "6"
+    ] ;
+    bibo:pages "281-297" ;
+    bibo:doi "10.2307/2027123" .
+
 :reading:Mirowski2017
     a :Reading, bibo:Book ;
     dc:title "The knowledge we have lost in information: The history of information in modern economics" ;
