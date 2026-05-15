@@ -50,6 +50,12 @@
     foaf:surname "Agre" ;
     foaf:homepage <http://polaris.gseis.ucla.edu/pagre/> .
 
+:person:AlbertS
+    a foaf:Person ;
+    foaf:givenname "Saul" ;
+    foaf:surname "Albert" ;
+    foaf:homepage <https://saulalbert.net/> .
+
 :person:AlbertsG
     a foaf:Person ;
     foaf:givenname "Gerard" ;
@@ -1375,6 +1381,12 @@
     foaf:surname "Hong" ;
     foaf:homepage <0000-0002-8243-4974> .
 
+:person:HousleyW
+    a foaf:Person ;
+    foaf:givenname "William" ;
+    foaf:surname "Housley" ;
+    foaf:homepage <https://profiles.cardiff.ac.uk/staff/housleyw> .
+
 :person:HoyJ
     a foaf:Person ;
     foaf:givenname "Josephine" ;
@@ -2633,6 +2645,12 @@
     foaf:givenname "Bernhard" ;
     foaf:surname "Siegert" .
 
+:person:SikvelandR
+    a foaf:Person ;
+    foaf:givenname "Rein Ove" ;
+    foaf:surname "Sikveland" ;
+    foaf:homepage <https://www.ntnu.edu/employees/rein.o.sikveland> .
+
 :person:SilenoG
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-5155-9021 ;
@@ -2800,6 +2818,12 @@
     owl:sameAs viaf:84982383 ;
     foaf:givenname "John" ;
     foaf:surname "Stewart" .
+
+:person:StokoeE
+    a foaf:Person ;
+    foaf:givenname "Elizabeth" ;
+    foaf:surname "Stokoe" ;
+    foaf:homepage <https://www.lboro.ac.uk/subjects/communication-media/staff/honorary/elizabeth-stokoe/> .
 
 :person:StolerAL
     a foaf:Person ;

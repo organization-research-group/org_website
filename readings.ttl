@@ -98,6 +98,27 @@
     bibo:pages "31-35" ;
     bibo:doi "10.1007/BF01305840" .
 
+:reading:Albert2025
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.1177/14614448251338277> ;
+    dc:title "The conversational action test: detecting the artificial sociality of artificial intelligence" ;
+    dc:creator :person:AlbertS, :person:HousleyW, :person:SikvelandR, :person:StokoeE ;
+    bibo:authorList (
+        :person:AlbertS
+        :person:HousleyW
+        :person:SikvelandR
+        :person:StokoeE
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:isPartOf :journal:NewMediaSociety ;
+        bibo:volume "27" ;
+        bibo:issue "10" ;
+        dc:date "2025"
+    ] ;
+    bibo:pages "5592-5621" ;
+    bibo:doi "10.1177/14614448251338277" .
+
 :reading:Alcoff1997
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1017/S0269889700002556> ;
