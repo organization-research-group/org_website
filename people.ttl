@@ -1437,7 +1437,7 @@
 
 :person:IncittiF
     a foaf:Person ;
-    owl:sameAs orcid:0000-0001-6820-485X ;
+    owl:sameAs orcid:0000-0001-6820-485X, dblp:308\/4774 ;
     foaf:givenname "Francesca" ;
     foaf:surname "Incitti" .
 
@@ -2551,7 +2551,7 @@
 
 :person:SalfingerA
     a foaf:Person ;
-    owl:sameAs orcid:0000-0003-4160-3871 ;
+    owl:sameAs orcid:0000-0003-4160-3871, dblp:127\/6114 ;
     foaf:givenname "Andrea" ;
     foaf:surname "Salfinger" .
 
@@ -3336,7 +3336,7 @@
 
 :person:ZaccagnaL
     a foaf:Person ;
-    owl:sameAs orcid:0009-0008-8600-792X ;
+    owl:sameAs orcid:0009-0008-8600-792X, dblp:432\/1894 ;
     foaf:givenname "Luca" ;
     foaf:surname "Zaccagna" .
 
