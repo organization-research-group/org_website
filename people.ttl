@@ -1522,7 +1522,7 @@
 
 :person:KahlerM
     a foaf:Person ;
-    owl:sameAs orcid:0000-0003-4695-0565 ;
+    owl:sameAs orcid:0000-0003-4695-0565, dblp:386\/6656 ;
     foaf:givenname "Maximilian" ;
     foaf:surname "Kähler" .
 
