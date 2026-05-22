@@ -722,8 +722,10 @@
 
 :person:DSouzaJ
     a foaf:Person ;
+    owl:sameAs orcid:0000-0002-6616-9509, dblp:121\/1227-1 ;
     foaf:givenname "Jennifer" ;
-    foaf:surname "D'Souza" .
+    foaf:surname "D'Souza" ;
+    foaf:workInfoHomepage <https://www.tib.eu/en/research-development/research-groups-and-labs/data-science-and-digital-libraries/staff/jennifer-dsouza> .
 
 :person:DadeRobertsonM
     a foaf:Person ;
@@ -1435,6 +1437,7 @@
 
 :person:IncittiF
     a foaf:Person ;
+    owl:sameAs orcid:0000-0001-6820-485X ;
     foaf:givenname "Francesca" ;
     foaf:surname "Incitti" .
 
@@ -1519,6 +1522,7 @@
 
 :person:KahlerM
     a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4695-0565 ;
     foaf:givenname "Maximilian" ;
     foaf:surname "Kähler" .
 
@@ -2534,6 +2538,7 @@
 
 :person:SadruddinS
     a foaf:Person ;
+    owl:sameAs orcid:0009-0006-7990-9955 ;
     foaf:givenname "Sameer" ;
     foaf:surname "Sadruddin" .
 
@@ -2546,6 +2551,7 @@
 
 :person:SalfingerA
     a foaf:Person ;
+    owl:sameAs orcid:0000-0003-4160-3871 ;
     foaf:givenname "Andrea" ;
     foaf:surname "Salfinger" .
 
@@ -2745,8 +2751,10 @@
 
 :person:SnidaroL
     a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3828-9017, dblp:13\/2395 ;
     foaf:givenname "Lauro" ;
-    foaf:surname "Snidaro" .
+    foaf:surname "Snidaro" ;
+    foaf:workInfoHomepage <http://users.dimi.uniud.it/~lauro.snidaro/wordpress/> .
 
 :person:SofiaZ
     a foaf:Person ;
@@ -2890,8 +2898,10 @@
 
 :person:SuominenO
     a foaf:Person ;
+    owl:sameAs orcid:0000-0003-0042-0745, dblp:96\/1258 ;
     foaf:givenname "Osma" ;
-    foaf:surname "Suominen" .
+    foaf:surname "Suominen" ;
+    foaf:workInfoHomepage <https://researchportal.helsinki.fi/en/persons/8c21fa74-193e-4397-b938-42cc3cd2bbac> .
 
 :person:TanW
     a foaf:Person ;
@@ -3326,6 +3336,7 @@
 
 :person:ZaccagnaL
     a foaf:Person ;
+    owl:sameAs orcid:0009-0008-8600-792X ;
     foaf:givenname "Luca" ;
     foaf:surname "Zaccagna" .
 
