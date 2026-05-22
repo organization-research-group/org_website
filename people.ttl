@@ -720,6 +720,11 @@
     foaf:surname "D'Ignazio" ;
     foaf:homepage <http://www.kanarinka.com/> .
 
+:person:DSouzaJ
+    a foaf:Person ;
+    foaf:givenname "Jennifer" ;
+    foaf:surname "D'Souza" .
+
 :person:DadeRobertsonM
     a foaf:Person ;
     owl:sameAs viaf:130429885 ;
@@ -1428,6 +1433,11 @@
     foaf:homepage <http://andrewiliadis.com> ;
     foaf:workInfoHomepage <https://klein.temple.edu/faculty/andrew-iliadis> .
 
+:person:IncittiF
+    a foaf:Person ;
+    foaf:givenname "Francesca" ;
+    foaf:surname "Incitti" .
+
 :person:IngoldT
     a foaf:Person ;
     owl:sameAs viaf:108921732, wd:Q2073266 ;
@@ -1506,6 +1516,11 @@
     foaf:givenname "Nathan" ;
     foaf:surname "Jun" ;
     foaf:homepage <http://www.nathanjun.com/> .
+
+:person:KahlerM
+    a foaf:Person ;
+    foaf:givenname "Maximilian" ;
+    foaf:surname "Kähler" .
 
 :person:KalwaraJ
     a foaf:Person ;
@@ -2517,12 +2532,22 @@
     foaf:surname "Sadowski" ;
     foaf:homepage <https://www.jathansadowski.com> .
 
+:person:SadruddinS
+    a foaf:Person ;
+    foaf:givenname "Sameer" ;
+    foaf:surname "Sadruddin" .
+
 :person:SakaiT
     a foaf:Person ;
     foaf:givenname "Tetsuya " ;
     foaf:surname "Sakai" ;
     owl:sameAs orcid:0000-0002-6720-963X ;
     foaf:homepage <http://sakailab.com/tetsuya/> .
+
+:person:SalfingerA
+    a foaf:Person ;
+    foaf:givenname "Andrea" ;
+    foaf:surname "Salfinger" .
 
 :person:SalterC
     a foaf:Person ;
@@ -2718,6 +2743,11 @@
     foaf:surname "Smith" ;
     foaf:homepage <https://www.the-hinternet.com> .
 
+:person:SnidaroL
+    a foaf:Person ;
+    foaf:givenname "Lauro" ;
+    foaf:surname "Snidaro" .
+
 :person:SofiaZ
     a foaf:Person ;
     owl:sameAs viaf:29227959, wd:Q67782833 ;
@@ -2857,6 +2887,11 @@
     foaf:givenname "Ningxiang" ;
     foaf:surname "Sun" ;
     foaf:workInfoHomepage <https://www.sps.ed.ac.uk/staff/ningxiang-sun> .
+
+:person:SuominenO
+    a foaf:Person ;
+    foaf:givenname "Osma" ;
+    foaf:surname "Suominen" .
 
 :person:TanW
     a foaf:Person ;
@@ -3288,6 +3323,11 @@
     foaf:givenname "Liam Cole" ;
     foaf:surname "Young" ;
     foaf:workInfoHomepage <https://carleton.ca/sjc/profile/young-liam-cole/> .
+
+:person:ZaccagnaL
+    a foaf:Person ;
+    foaf:givenname "Luca" ;
+    foaf:surname "Zaccagna" .
 
 :person:ZiegerS
     a foaf:Person ;
