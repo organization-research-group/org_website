@@ -75,11 +75,12 @@ function renderMeeting({ store, bibliography, entities }) {
             `<a href="${url}">doi:${doi.replace(/(\W)+/g, "<wbr>$1</wbr>")}</a></div>`,
         );
 
-        // Add "Retrieved from" URL if available and there is no URI in the citation
-        if (URI && html.slice(-7) === ".</div>") {
+        // Add "Retrieved from" URL if available and there is no link in the citation
+        if (URI && !html.includes('<a href=')) {
+          const period = /[.!?](<\/\w+>)*<\/div>$/.test(html) ? '' : '.';
           html =
             html.slice(0, -6) +
-            ` Retrieved from <a href="${URI}">${URI}</a>.</div>`;
+            `${period} Retrieved from <a href="${URI}">${URI}</a>.</div>`;
         }
 
         ret = html;
