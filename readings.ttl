@@ -2706,6 +2706,22 @@
     ] ;
     bibo:doi "10.1002/asi.24120" .
 
+:reading:LeoXIV2026
+    a :Reading, bibo:BookSection ;
+    bibo:uri "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html#CHAPTER_THREE" ;
+    dc:title "Technology and Dominance. The Grandeur of Humanity in Light of the Promises of AI" ;
+    dc:creator :person:LeoXIV ;
+    bibo:authorList (
+        :person:LeoXIV
+    ) ;
+    dc:isPartOf [
+        a bibo:Book ;
+        dc:title "Magnifica Humanitas" ;
+        dc:date "2026" ;
+        dc:publisher :publisher:HolySee ;
+        bibo:uri "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html"
+    ] .
+
 :reading:Levine2015
     a :Reading, bibo:Book ;
     dc:title "Forms: Whole, rhythm, hierarchy, network" ;

@@ -1776,6 +1776,11 @@
     foaf:surname "Leonelli" ;
     foaf:workInfoHomepage <http://socialsciences.exeter.ac.uk/sociology/research/sts/egenis/staff/leonelli/> .
 
+:person:LeoXIV
+    a foaf:Person ;
+    foaf:surname "Leo XIV" ;
+    foaf:homepage <https://www.vatican.va/content/leo-xiv/en.html> .
+
 :person:LevineC
     a foaf:Person ;
     foaf:givenname "Caroline" ;

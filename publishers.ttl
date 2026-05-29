@@ -124,6 +124,11 @@
     foaf:name "Hanart Press" ;
     foaf:homepage <https://hanart.press> .
 
+:publisher:HolySee
+    a :Publisher ;
+    foaf:name "Libreria Editrice Vaticana" ;
+    address:localityName "Vatican City" .
+
 :publisher:IEEComputerSociety
     a :Publisher ;
     foaf:name "IEEE Computer Society" ;
