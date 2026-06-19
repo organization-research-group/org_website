@@ -3606,6 +3606,23 @@
     ] ;
     bibo:doi "10.1177/20539517211029322" .
 
+:reading:Poirier2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://dx.doi.org/10.1177/03063127261424496> ;
+    dc:title "Re-Formalizing owl:sameas: Iterating Meaning-Making in a Computer Ontology Language" ;
+    dc:creator :person:PoirierL ;
+    bibo:authorList (
+        :person:PoirierL
+    ) ;
+    bibo:pages "353–377" ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:SocStudSci ;
+        bibo:volume "56"
+    ] ;
+    bibo:doi "10.1177/03063127261424496" .
+
 :reading:Poitou1997
     # FIXME: Update the details of this entry.
     # Added automatically for meeting on 2017-06-30
