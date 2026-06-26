@@ -4119,6 +4119,24 @@
     dc:date "2022" ;
     dc:publisher :publisher:UCP .
 
+:reading:Seaver2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.70064/mt.v10i1.1373> ;
+    dc:title "Keep Computer Awake: Mouse Jigglers and the Technicity of Attention" ;
+    dc:creator :person:SeaverN ;
+    bibo:authorList (
+        :person:SeaverN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026-06-22" ;
+        dc:isPartOf :journal:MediaTheory ;
+        bibo:volume "10" ;
+        bibo:issue "1"
+    ] ;
+    bibo:pages "205–230" ;
+    bibo:doi "10.70064/mt.v10i1.1373" .
+
 :reading:Serres2015
     a :Reading, bibo:Book ;
     dc:title "Thumbelina: The culture and technology of Millenials" ;
