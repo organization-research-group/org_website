@@ -2429,6 +2429,22 @@
     bibo:reproducedIn :proceedings:CHI2019 ;
     bibo:doi "10.1145/3290605.3300569" .
 
+:reading:Kirkwood2022intro
+    # FIXME: verify publisher, pages, DOI
+    a :Reading, bibo:BookSection ;
+    dc:title "Introduction" ;
+    dc:creator :person:KirkwoodJ ;
+    bibo:authorList (
+        :person:KirkwoodJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Book ;
+        dc:title "Endless Intervals: Cinema, Psychology, and Semiotechnics around 1900" ;
+        bibo:shortTitle "Endless Intervals" ;
+        dc:date "2022" ;
+        dc:publisher :publisher:DUP
+    ] .
+
 :reading:Koch2018
     a :Reading, bibo:BookSection ;
     dc:title "Introduction: Non-knowledge and digital cultures" ;

@@ -1584,6 +1584,11 @@
     foaf:surname "Kim" ;
     foaf:workInfoHomepage <https://www.moles.washington.edu/student/paul-kim/> .
 
+:person:KirkwoodJ
+    a foaf:Person ;
+    foaf:givenname "Jeffrey W." ;
+    foaf:surname "Kirkwood" .
+
 :person:KleinL
     a foaf:Person ;
     owl:sameAs viaf:134148389577810712856, wd:Q98502620, orcid:0000-0002-1511-0910 ;
