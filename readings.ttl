@@ -3789,7 +3789,6 @@
     bibo:authorList (
         :person:RibesD
     ) ;
-    bibo:pages "19-44" ;
     dc:isPartOf [
         a bibo:Book ;
         dc:title "Machineries of Similarity and Difference" ;
