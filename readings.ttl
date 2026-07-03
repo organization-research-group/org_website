@@ -2430,9 +2430,9 @@
     bibo:doi "10.1145/3290605.3300569" .
 
 :reading:Kirkwood2022intro
-    # FIXME: verify publisher, pages, DOI
     a :Reading, bibo:BookSection ;
-    dc:title "Introduction" ;
+    dc:title "Introduction: Signifying Nothings" ;
+    bibo:shortTitle "Introduction" ;
     dc:creator :person:KirkwoodJ ;
     bibo:authorList (
         :person:KirkwoodJ
@@ -2442,7 +2442,8 @@
         dc:title "Endless Intervals: Cinema, Psychology, and Semiotechnics around 1900" ;
         bibo:shortTitle "Endless Intervals" ;
         dc:date "2022" ;
-        dc:publisher :publisher:DUP
+        dc:publisher :publisher:UMP ;
+        bibo:isbn13 "9781517912543", "9781517912536"
     ] .
 
 :reading:Koch2018

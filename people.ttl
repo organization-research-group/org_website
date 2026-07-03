@@ -1587,7 +1587,8 @@
 :person:KirkwoodJ
     a foaf:Person ;
     foaf:givenname "Jeffrey W." ;
-    foaf:surname "Kirkwood" .
+    foaf:surname "Kirkwood" ;
+    foaf:workInfoHomepage <https://www.binghamton.edu/art-history/people/profile.html?id=kirkwood> .
 
 :person:KleinL
     a foaf:Person ;
