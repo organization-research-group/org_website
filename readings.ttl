@@ -2446,6 +2446,22 @@
         bibo:isbn13 "9781517912543", "9781517912536"
     ] .
 
+:reading:Kirkwood2022ch5
+    a :Reading, bibo:BookSection ;
+    dc:title "The Cinema of Afflictions" ;
+    dc:creator :person:KirkwoodJ ;
+    bibo:authorList (
+        :person:KirkwoodJ
+    ) ;
+    dc:isPartOf [
+        a bibo:Book ;
+        dc:title "Endless Intervals: Cinema, Psychology, and Semiotechnics around 1900" ;
+        bibo:shortTitle "Endless Intervals" ;
+        dc:date "2022" ;
+        dc:publisher :publisher:UMP ;
+        bibo:isbn13 "9781517912543", "9781517912536"
+    ] .
+
 :reading:Koch2018
     a :Reading, bibo:BookSection ;
     dc:title "Introduction: Non-knowledge and digital cultures" ;
