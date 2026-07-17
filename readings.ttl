@@ -2799,6 +2799,16 @@
     bibo:pages "2-30" ;
     bibo:doi "10.1086/726293" .
 
+:reading:Liu2026
+    a :Reading, bibo:Report ;
+    bibo:uri "https://arxiv.org/abs/2607.01776" ;
+    dc:title "AI Virtue: What is \"Good\" Knowledge in the Age of Artificial Intelligence?" ;
+    dc:creator :person:LiuA ;
+    bibo:authorList (
+        :person:LiuA
+    ) ;
+    dc:date "2026" .
+
 :reading:Losee2015
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1002/asi.23544> ;

@@ -465,7 +465,8 @@
         :meeting:2026-06-26,
         :meeting:2026-07-03,
         :meeting:2026-07-10,
-        :meeting:2026-07-17 .
+        :meeting:2026-07-17,
+        :meeting:2026-07-24 .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6662,4 +6663,18 @@
     lode:involved :reading:Kirkwood2022ch5 ;
     :schedule (
         :reading:Kirkwood2022ch5
+    ) .
+
+:meeting:2026-07-24
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-07-24T10:00:00-04:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Liu2026 ;
+    :schedule (
+        :reading:Liu2026
     ) .

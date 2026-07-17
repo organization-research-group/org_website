@@ -1800,6 +1800,12 @@
     foaf:surname "Lien" ;
     foaf:workInfoHomepage <https://www.sv.uio.no/sai/english/people/aca/marianel/> .
 
+:person:LiuA
+    a foaf:Person ;
+    foaf:givenname "Alan" ;
+    foaf:surname "Liu" ;
+    foaf:homepage <https://liu.english.ucsb.edu/> .
+
 :person:LiuJ
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-3643-2182 ;
