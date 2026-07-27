@@ -121,8 +121,7 @@
 
 :publisher:Hanart
     a :Publisher ;
-    foaf:name "Hanart Press" ;
-    foaf:homepage <https://hanart.press> .
+    foaf:name "Hanart Press" .
 
 :publisher:HolySee
     a :Publisher ;

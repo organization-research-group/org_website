@@ -320,8 +320,7 @@
     ) ;
     dc:publisher :publisher:SUP ;
     dc:date "2025" ;
-    bibo:isbn "9781503639874" ;
-    foaf:homepage <https://www.sup.org/books/thinking-through-data> .
+    bibo:isbn13 "9781503639874" .
 
 :reading:Barad2003
     a :Reading, bibo:AcademicArticle ;
@@ -603,8 +602,7 @@
         bibo:issue "3"
     ] ;
     bibo:pages "225-242" ;
-    bibo:doi "10.1111/oli.12174" ;
-    dc:publisher :publisher:Wiley .
+    bibo:doi "10.1111/oli.12174" .
 
 :reading:Bratton2016
     a :Reading, bibo:Book ;
@@ -1584,15 +1582,13 @@
     bibo:authorList (
         :person:GallowayA
     ) ;
-    dc:date "2025" ;
     owl:sameAs <https://doi.org/10.1086/717324> ;
     dc:isPartOf [
         a bibo:Issue ;
         dc:date "2025" ;
         dc:isPartOf :journal:CriticalInquiry
     ] ;
-    bibo:doi "10.1086/717324" ;
-    dc:publisher :publisher:UCP .
+    bibo:doi "10.1086/717324" .
 
 :reading:GahrnAndersen2025
     a :Reading, bibo:AcademicArticle ;
@@ -1901,8 +1897,7 @@
         bibo:issue "2"
     ] ;
     bibo:pages "2055-2068" ;
-    bibo:doi "10.1007/s00146-024-02079-8" ;
-    dc:publisher :publisher:Springer .
+    bibo:doi "10.1007/s00146-024-02079-8" .
 
 :reading:Grossberg2016
     a :Reading, bibo:AcademicArticle ;
@@ -1935,8 +1930,7 @@
         dc:date "2025" ;
         dc:isPartOf :journal:AIS
     ] ;
-    bibo:doi "10.1007/s00146-025-02640-z" ;
-    dc:publisher :publisher:Springer .
+    bibo:doi "10.1007/s00146-025-02640-z" .
 
 :reading:GuoS2020
     a :Reading, bibo:Book ;
@@ -1947,8 +1941,7 @@
     ) ;
     dc:publisher :publisher:SUP ;
     dc:date "2020" ;
-    bibo:isbn "9781503614437" ;
-    foaf:homepage <https://www.sup.org/books/asian-studies/evolution-chinese-internet> .
+    bibo:isbn13 "9781503614437" .
 
 :reading:Halford2024
     a :Reading, bibo:AcademicArticle ;
@@ -2509,8 +2502,8 @@
         a bibo:Issue ;
         dc:date "2024" ;
         dc:isPartOf :journal:TCS ;
-        bibo:issue 1 ;
-        bibo:volume 41
+        bibo:issue "1" ;
+        bibo:volume "41"
     ] ;
     bibo:pages "59–78" ;
     bibo:doi "10.1177/02632764231162251" .
@@ -2741,7 +2734,7 @@
 
 :reading:LeoXIV2026
     a :Reading, bibo:BookSection ;
-    bibo:uri "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html#CHAPTER_THREE" ;
+    owl:sameAs <https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html#CHAPTER_THREE> ;
     dc:title "Technology and Dominance. The Grandeur of Humanity in Light of the Promises of AI" ;
     dc:creator :person:LeoXIV ;
     bibo:authorList (
@@ -2858,7 +2851,7 @@
         dc:date "2024-05-02" ;
         dc:isPartOf :journal:ValuationStudies ;
         bibo:volume "11" ;
-        bibo:issn "1"
+        bibo:issue "1"
     ] ;
     bibo:doi "10.3384/VS.2001-5992.2024.11.1.38-59" .
 
@@ -2977,7 +2970,7 @@
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1080/1600910X.2023.2185874> ;
     dc:title "Some-any: approximating personalization in contemporary ensembles" ;
-    dc:created :person:MackenzieA ;
+    dc:creator :person:MackenzieA ;
     bibo:authorList (
         :person:MackenzieA
     ) ;
@@ -3395,8 +3388,7 @@
     ) ;
     dc:publisher :publisher:FUP ;
     dc:date "2025-01-07" ;
-    bibo:isbn "9781531508937" ;
-    foaf:homepage <https://fordhampress.com/cybernetic-capitalism-hb-9781531508920.html> .
+    bibo:isbn13 "9781531508937" .
 
 :reading:Oyama2000
     a :Reading, bibo:Book ;
@@ -3939,7 +3931,7 @@
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.6092/issn.1971-8853/15910> ;
     dc:title "Mapping Value(s) in AI: Methodological Directions for Examining Normativity in Complex Technical Systems" ;
-    dc:shortTitle "Mapping Value(s) in AI" ;
+    bibo:shortTitle "Mapping Value(s) in AI" ;
     dc:creator :person:RiederB , :person:GordonG , :person:SilenoG ;
     bibo:authorList (
         :person:RiederB
@@ -4024,9 +4016,8 @@
     ) ;
     dc:publisher :publisher:DUP ;
     dc:date "2008" ;
-    bibo:isbn "9780822342007" ;
-    bibo:doi "10.1215/9780822389118" ;
-    foaf:homepage <https://www.dukeupress.edu/becoming-beside-ourselves> .
+    bibo:isbn13 "9780822342007" ;
+    bibo:doi "10.1215/9780822389118" .
 
 :reading:Rouvroy2011
     a :Reading, bibo:BookSection ;
@@ -4100,8 +4091,7 @@
     ) ;
     dc:publisher :publisher:UCalP ;
     dc:date "2025" ;
-    bibo:isbn "9780520398085" ;
-    foaf:homepage <https://www.ucpress.edu/book/9780520398078/the-mechanic-and-the-luddite> .
+    bibo:isbn13 "9780520398085" .
 
 :reading:Salter2015
     a :Reading, bibo:Book ;
@@ -4223,8 +4213,7 @@
         bibo:issue "3"
     ] ;
     bibo:pages "1-24" ;
-    bibo:doi "10.1145/3649468" ;
-    dc:publisher :publisher:ACM .
+    bibo:doi "10.1145/3649468" .
 
 :reading:Shavit2011
     a :Reading, bibo:BookSection ;
@@ -5136,8 +5125,7 @@
     ) ;
     dc:publisher :publisher:UMP ;
     dc:date "2025-06-24" ;
-    bibo:isbn "9781452973517" ;
-    foaf:homepage <https://www.upress.umn.edu/9781452973517/language-machines/> .
+    bibo:isbn13 "9781452973517" .
 
 :reading:West2022
     a :Reading, bibo:AcademicArticle ;

@@ -1049,9 +1049,8 @@
 
 :person:GallowayA
     a foaf:Person ;
-    foaf:givenname "Alexander" ;
-    foaf:surname "Galloway" ;
     foaf:givenname "Alexander R." ;
+    foaf:surname "Galloway" ;
     foaf:homepage <https://steinhardt.nyu.edu/people/alexander-galloway> .
 
 :person:GahrnAndersenR
