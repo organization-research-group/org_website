@@ -169,6 +169,11 @@
     foaf:surname "Barad" ;
     foaf:homepage <https://people.ucsc.edu/~kbarad/> .
 
+:person:BardinA
+    a foaf:Person ;
+    foaf:givenname "Andrea" ;
+    foaf:surname "Bardin" .
+
 :person:BarkerT
     a foaf:Person ;
     owl:sameAs viaf:233151759, orcid:0000-0003-0382-8025 ;
@@ -952,6 +957,11 @@
     foaf:givenname "Melanie" ;
     foaf:surname "Feinberg" ;
     foaf:homepage <https://ils.unc.edu/~mfeinber/> .
+
+:person:FerrariM
+    a foaf:Person ;
+    foaf:givenname "Marco" ;
+    foaf:surname "Ferrari" .
 
 :person:FidlerB
     a foaf:Person ;
@@ -1924,6 +1934,12 @@
     foaf:surname "Mai" ;
     foaf:homepage <http://www.jenserikmai.info/> .
 
+:person:MalaspinaC
+    a foaf:Person ;
+    foaf:givenname "Cécile" ;
+    foaf:surname "Malaspina" ;
+    foaf:workInfoHomepage <https://www.kcl.ac.uk/people/cecile-malaspina> .
+
 :person:MansfieldU
     a foaf:Person ;
     owl:sameAs viaf:14835690;
@@ -2149,6 +2165,11 @@
     foaf:givenname "David" ;
     foaf:surname "Nofre" ;
     foaf:homepage <https://www.researchgate.net/profile/David_Nofre> .
+
+:person:NonyA
+    a foaf:Person ;
+    foaf:givenname "Anaïs" ;
+    foaf:surname "Nony" .
 
 :person:NordmannA
     a foaf:Person ;
@@ -2973,6 +2994,11 @@
     foaf:surname "Tennis" ;
     foaf:homepage <https://joseph-t-tennis.squarespace.com> ;
     foaf:workInfoHomepage <https://ischool.uw.edu/people/faculty/profile/jtennis> .
+
+:person:TentiG
+    a foaf:Person ;
+    foaf:givenname "Gregorio" ;
+    foaf:surname "Tenti" .
 
 :person:ThomasN
     a foaf:Person ;

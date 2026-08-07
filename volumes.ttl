@@ -41,6 +41,22 @@
   ) ;
   bibo:isbn10 "0878402055" .
 
+:volume:Bardin2025
+    a bibo:EditedBook ;
+    dc:title "The Edinburgh Companion to Gilbert Simondon" ;
+    dc:date "2025" ;
+    dc:publisher :publisher:EdinburghUP ;
+    bibo:editor :person:BardinA, :person:FerrariM, :person:NonyA, :person:TentiG ;
+    bibo:editorList (
+        :person:BardinA
+        :person:FerrariM
+        :person:NonyA
+        :person:TentiG
+    ) ;
+    owl:sameAs <https://doi.org/10.1515/9781399541091> ;
+    bibo:doi "10.1515/9781399541091" ;
+    bibo:isbn13 "978-1-3995-4107-7" .
+
 :volume:Becker1982
     a bibo:Book ;
     dc:title "Art Worlds" ;

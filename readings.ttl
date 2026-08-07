@@ -3000,6 +3000,17 @@
     bibo:pages "192-199" ;
     bibo:doi "10.1080/01972243.2016.1153010" .
 
+:reading:Malaspina2025
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1515/9781399541091-014> ;
+    dc:title "Simondon and Information: A Qualitative Topological Concept" ;
+    dc:creator :person:MalaspinaC ;
+    bibo:authorList (
+        :person:MalaspinaC
+    ) ;
+    dc:isPartOf :volume:Bardin2025 ;
+    bibo:doi "10.1515/9781399541091-014" .
+
 :reading:Marcus2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1525/rep.2016.135.1.1> ;
