@@ -1938,7 +1938,7 @@
     a foaf:Person ;
     foaf:givenname "Cécile" ;
     foaf:surname "Malaspina" ;
-    foaf:workInfoHomepage <https://www.kcl.ac.uk/people/cecile-malaspina> .
+    foaf:homepage <https://www.linkedin.com/in/cecile-malaspina/> .
 
 :person:MansfieldU
     a foaf:Person ;
