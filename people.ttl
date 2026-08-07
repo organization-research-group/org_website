@@ -172,7 +172,8 @@
 :person:BardinA
     a foaf:Person ;
     foaf:givenname "Andrea" ;
-    foaf:surname "Bardin" .
+    foaf:surname "Bardin" ;
+    foaf:homepage <https://unipd.academia.edu/AndreaBardin> .
 
 :person:BarkerT
     a foaf:Person ;
@@ -961,7 +962,8 @@
 :person:FerrariM
     a foaf:Person ;
     foaf:givenname "Marco" ;
-    foaf:surname "Ferrari" .
+    foaf:surname "Ferrari" ;
+    foaf:homepage <https://unipd.academia.edu/MarcoFerrari> .
 
 :person:FidlerB
     a foaf:Person ;
@@ -2169,7 +2171,8 @@
 :person:NonyA
     a foaf:Person ;
     foaf:givenname "Anaïs" ;
-    foaf:surname "Nony" .
+    foaf:surname "Nony" ;
+    foaf:homepage <https://anaisnony.com/> .
 
 :person:NordmannA
     a foaf:Person ;
@@ -2998,7 +3001,8 @@
 :person:TentiG
     a foaf:Person ;
     foaf:givenname "Gregorio" ;
-    foaf:surname "Tenti" .
+    foaf:surname "Tenti" ;
+    foaf:workInfoHomepage <https://www.upf.edu/en/web/humanitats/docents-i-investigadors/-/asset_publisher/AwHWXL9uZXHH/content/tenti-gregorio/maximized> .
 
 :person:ThomasN
     a foaf:Person ;
