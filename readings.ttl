@@ -3976,6 +3976,21 @@
     bibo:pages "1-17" ;
     bibo:doi "10.1093/llc/fqac066" .
 
+:reading:Robbins2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.48550/arXiv.2608.18041> ;
+    dc:title "Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation" ;
+    dc:creator :person:RobbinsH ;
+    bibo:authorList (
+        :person:RobbinsH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "August 2026" ;
+        dc:isPartOf :journal:arXiv
+    ] ;
+    bibo:doi "10.48550/arXiv.2608.18041" .
+
 :reading:RoblesAnderson2016
     a :Reading, bibo:AcademicArticle ;
     dc:title "“One damn slide after another”: PowerPoint at every occasion for speech" ;

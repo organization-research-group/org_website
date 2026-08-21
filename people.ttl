@@ -2464,6 +2464,12 @@
     foaf:surname "Roach" ;
     foaf:workInfoHomepage <https://www.birmingham.ac.uk/staff/profiles/english/roach-rebecca.aspx> .
 
+:person:RobbinsH
+    a foaf:Person ;
+    foaf:givenname "Hollis" ;
+    foaf:surname "Robbins" ;
+    foaf:homepage <https://faculty.utah.edu/u6043188-HOLLIS_ROBBINS/hm/index.hml> .
+
 :person:RobertsS
     a foaf:Person ;
     foaf:givenname "Sarah T." ;
