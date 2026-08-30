@@ -466,6 +466,13 @@
     foaf:surname "Bucher" ;
     foaf:homepage <http://tainabucher.com/> .
 
+:person:BucklandM
+    a foaf:Person ;
+    owl:sameAs viaf:110232641, wd:Q499731 ;
+    foaf:givenname "Michael" ;
+    foaf:surname "Buckland" ;
+    foaf:homepage <https://people.ischool.berkeley.edu/~buckland/> .
+
 :person:BunemanP
     a foaf:Person ;
     owl:sameAs viaf:110045336, wd:Q7173055 ;
@@ -1459,6 +1466,12 @@
     foaf:surname "Ingold" ;
     foaf:workInfoHomepage <https://www.abdn.ac.uk/socsci/people/profiles/tim.ingold> .
 
+:person:IngwersenP
+    a foaf:Person ;
+    owl:sameAs viaf:5223504, wd:Q2075945 ;
+    foaf:givenname "Peter" ;
+    foaf:surname "Ingwersen" .
+
 :person:IpJ
     a foaf:Person ;
     owl:sameAs orcid:0000-0001-9952-4987 ;
@@ -2377,6 +2390,11 @@
     a foaf:Person ;
     foaf:givenname "Catherine" ;
     foaf:surname "Pope" .
+
+:person:PorsN
+    a foaf:Person ;
+    foaf:givenname "Niels Ole" ;
+    foaf:surname "Pors" .
 
 :person:PossatiL
     a foaf:Person ;

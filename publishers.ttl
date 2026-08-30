@@ -218,6 +218,11 @@
     foaf:name "Rowman & Littlefield" ;
     address:localityName "London" .
 
+:publisher:RSL
+    a :Publisher ;
+    foaf:name "Royal School of Librarianship" ;
+    address:localityName "Copenhagen" .
+
 :publisher:Routledge
     a :Publisher ;
     foaf:name "Routledge" ;

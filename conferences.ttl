@@ -50,6 +50,12 @@
     dc:date "June 16-19, 2019" ;
     foaf:homepage <http://oddelki.ff.uni-lj.si/biblio/colis/>.
 
+:conference:COLIS2
+    a bibo:Conference ;
+    dc:title "Second International Conference on Conceptions of Library and Information Science: Integration in Perspective" ;
+    address:localityName "Copenhagen, Denmark" ;
+    dc:date "October 13-16, 1996" .
+
 :conference:CSCW2017
     a bibo:Conference ;
     dc:title "The 20th ACM Conference on Computer-Supported Cooperative Work and Social Computing" ;

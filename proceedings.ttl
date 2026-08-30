@@ -49,6 +49,17 @@
     dc:date "2019" ;
     dc:publisher :journal:IR .
 
+:proceedings:COLIS2
+    a bibo:Proceedings ;
+    dc:title "Proceedings of the Second International Conference on Conceptions of Library and Information Science: Integration in Perspective" ;
+    dc:date "1996" ;
+    dc:publisher :publisher:RSL ;
+    bibo:editor :person:IngwersenP, :person:PorsN ;
+    bibo:editorList (
+        :person:IngwersenP
+        :person:PorsN
+    ) .
+
 :proceedings:CSCW2017
     a bibo:Proceedings ;
     dc:title "Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing" ;
