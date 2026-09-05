@@ -354,6 +354,12 @@
     foaf:homepage <http://www.tandfonline.com/loi/mmis20> ;
     bibo:issn "0742-1222", "1557-928X" .
 
+:journal:JPhilEducation
+    a bibo:Journal ;
+    dc:title "Journal of Philosophy of Education" ;
+    foaf:homepage <https://academic.oup.com/jope> ;
+    bibo:issn "1467-9752" .
+
 :journal:JPhilosophy
     a bibo:Journal ;
     dc:title "The Journal of Philosophy" ;

@@ -4780,6 +4780,24 @@
     dc:publisher :publisher:Routledge ;
     bibo:isbn13 "9781138719026" .
 
+:reading:Thomas2024
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1093/jopedu/qhae063> ;
+    dc:title "Digital Bildung as semantic emplacement" ;
+    dc:creator :person:ThomasN ;
+    bibo:authorList (
+        :person:ThomasN
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2024" ;
+        dc:isPartOf :journal:JPhilEducation ;
+        bibo:volume "58" ;
+        bibo:issue "5" ;
+    ] ;
+    bibo:pages "674-696" ;
+    bibo:doi "10.1093/jopedu/qhae063" .
+
 :reading:Thomer2020
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1177/2053951720934838> ;
