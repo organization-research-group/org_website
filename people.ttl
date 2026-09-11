@@ -610,7 +610,7 @@
     owl:sameAs wd:Q23883713 ;
     foaf:givenname "Wendy Hui Kyong" ;
     foaf:surname "Chun" ;
-    foaf:homepage <http://www.brown.edu/Departments/MCM/people/chun/> .
+    foaf:workInfoHomepage <https://www.sfu.ca/communication/people/faculty/wendy-chun.html> .
 
 :person:CiborraC
     a foaf:Person ;
