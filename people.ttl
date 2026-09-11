@@ -507,6 +507,12 @@
     foaf:surname "Calzati" ;
     foaf:workInfoHomepage <https://www.etis.ee/CV/Stefano_Calzati/eng> .
 
+:person:CanuteM
+    a foaf:Person ;
+    foaf:givenname "Matt" ;
+    foaf:surname "Canute" ;
+    foaf:homepage <https://just-tech.ssrc.org/our-network/matt-canute/> .
+
 :person:CanguilhemG
     a foaf:Person ;
     owl:sameAs viaf:41837558, wd:Q433741 ;
@@ -843,6 +849,18 @@
     foaf:givenname "Alan" ;
     foaf:surname "Díaz Alva" ;
     foaf:homepage <https://leuphana.academia.edu/AlanDiaz> .
+
+:person:DickS
+    a foaf:Person ;
+    foaf:givenname "Stephanie" ;
+    foaf:surname "Dick" ;
+    foaf:homepage <https://www.sas.upenn.edu/~sadick/> .
+
+:person:DonahueE
+    a foaf:Person ;
+    foaf:givenname "Evan" ;
+    foaf:surname "Donahue" ;
+    foaf:homepage <http://www.evandonahue.com/> .
 
 :person:DobsonJ
     a foaf:Person ;

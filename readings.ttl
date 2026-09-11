@@ -826,6 +826,27 @@
     ] ;
     bibo:doi "10.48550/arXiv.2409.16022" .
 
+:reading:Chun2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1525/rep.2026.175.7.145> ;
+    dc:title "Echoing Narcissus: Large Language Models and the Returns of Critical Theory" ;
+    dc:creator :person:ChunW, :person:CanuteM, :person:DonahueE, :person:DickS ;
+    bibo:authorList (
+        :person:ChunW
+        :person:CanuteM
+        :person:DonahueE
+        :person:DickS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:representations ;
+        bibo:volume "175" ;
+        bibo:issue "1" ;
+    ] ;
+    bibo:pages "145-164" ;
+    bibo:doi "10.1525/rep.2026.175.7.145" .
+
 :reading:Chun2016
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <http://doi.org/10.1353/elh.2016.0011> ;
