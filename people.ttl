@@ -2670,6 +2670,12 @@
     foaf:surname "Schmidgen" ;
     foaf:workInfoHomepage <https://www.uni-weimar.de/en/media/chairs/media-studies/medientheorie-und-wissenschaftsgeschichte/personen/schmidgen/> .
 
+:person:SchmidtH
+    a foaf:Person ;
+    foaf:givenname "Henry" ;
+    foaf:surname "Schmidt" ;
+    foaf:homepage <https://cstms.berkeley.edu/people/henry-schmidt/> .
+
 :person:SchwarzO
     a foaf:Person ;
     foaf:givenname "Ori" ;

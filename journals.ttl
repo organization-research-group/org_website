@@ -232,6 +232,12 @@
     foaf:homepage <http://www.tandfonline.com/toc/hhci20/current> ;
     bibo:issn "0737-0024" .
 
+:journal:HistoricalStudiesNaturalSciences
+    a bibo:Journal ;
+    dc:title "Historical Studies in the Natural Sciences" ;
+    foaf:homepage <https://online.ucpress.edu/hsns> ;
+    bibo:issn "1939-1811" .
+
 :journal:HistoryAndTheory
     a bibo:Journal ;
     dc:title "History & Theory" ;

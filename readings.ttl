@@ -4194,6 +4194,24 @@
     ] ;
     bibo:pages "131-148" .
 
+:reading:Schmidt2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1525/hsns.2026.56.4.295> ;
+    dc:title "Making Problem Situations, from Psychology to Computing to Design" ;
+    dc:creator :person:SchmidtH ;
+    bibo:authorList (
+        :person:SchmidtH
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:HistoricalStudiesNaturalSciences ;
+        bibo:volume "56" ;
+        bibo:issue "4" ;
+    ] ;
+    bibo:pages "295-327" ;
+    bibo:doi "10.1525/hsns.2026.56.4.295" .
+
 :reading:Scaffidi2025
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.4230/TGDK.3.2.3> ;
