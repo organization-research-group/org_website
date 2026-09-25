@@ -3464,6 +3464,18 @@
     ] ;
     bibo:uri "https://developers.googleblog.com/2018/04/text-embedding-models-contain-bias.html" .
 
+:reading:Paglen2026
+    a :Reading, bibo:Book ;
+    dc:title "How to See Like a Machine: Images After AI" ;
+    bibo:shortTitle "How to See Like a Machine" ;
+    dc:creator :person:PaglenT ;
+    bibo:authorList (
+        :person:PaglenT
+    ) ;
+    dc:date "2026" ;
+    dc:publisher :publisher:Verso ;
+    bibo:isbn13 "9781836742166" .
+
 :reading:Palmer2013
     a :Reading, bibo:AcademicArticle ;
     dc:title "Foundations of data curation: The pedagogy and practice of “purposeful work” with research data" ;

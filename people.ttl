@@ -2258,6 +2258,12 @@
     foaf:surname "Packer" ;
     foaf:homepage <https://www.quora.com/profile/Ben-Packer-1> .
 
+:person:PaglenT
+    a foaf:Person ;
+    foaf:givenname "Trevor" ;
+    foaf:surname "Paglen" ;
+    foaf:homepage <https://paglen.studio/> .
+
 :person:PalmerC
     a foaf:Person ;
     owl:sameAs viaf:93754580, orcid:0000-0001-7420-3765 ;
