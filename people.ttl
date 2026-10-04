@@ -184,8 +184,10 @@
 
 :person:BaruseviciusD
     a foaf:Person ;
+    owl:sameAs orcid:0000-0002-5947-4636 ;
     foaf:givenname "Dominykas" ;
-    foaf:surname "Barusevičius" .
+    foaf:surname "Barusevičius" ;
+    foaf:homepage <https://philpeople.org/profiles/dominykas-barusevicius> .
 
 :person:BatesM
     a foaf:Person ;
