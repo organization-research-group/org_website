@@ -614,7 +614,7 @@
 
 :journal:Technophany
     a bibo:Journal ;
-    dc:title "Technophany, A Journal for Philosophy and Technology" ;
+    dc:title "Technophany" ;
     foaf:homepage <https://technophany.philosophyandtechnology.network> ;
     bibo:issn "2773-0875" .
 
