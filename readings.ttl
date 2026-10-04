@@ -359,6 +359,23 @@
     bibo:pages "1-16" ;
     bibo:doi "10.1177/02632764221140825" .
 
+:reading:Barusevicius2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <http://doi.org/10.54195/technophany.23898> ;
+    dc:title "On Relational Memory through Archaeology, Technics, and Organization" ;
+    bibo:shortTitle "On Relational Memory" ;
+    dc:creator :person:BaruseviciusD ;
+    bibo:authorList (
+        :person:BaruseviciusD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:Technophany
+    ] ;
+    bibo:pages "1-20" ;
+    bibo:doi "10.54195/technophany.23898" .
+
 :reading:Bates2018
     a :Reading , bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1353/lib.2018.0002> ;

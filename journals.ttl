@@ -612,6 +612,12 @@
     foaf:homepage <https://journals.sagepub.com/home/tvn> ;
     bibo:issn "1552-8316" .
 
+:journal:Technophany
+    a bibo:Journal ;
+    dc:title "Technophany, A Journal for Philosophy and Technology" ;
+    foaf:homepage <https://technophany.philosophyandtechnology.network> ;
+    bibo:issn "2773-0875" .
+
 :journal:TheoryPsychology
     a bibo:Journal ;
     dc:title "Theory & Psychology" ;

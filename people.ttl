@@ -182,6 +182,11 @@
     foaf:surname "Barker" ;
     foaf:workInfoHomepage <https://www.gla.ac.uk/schools/cca/staff/timothybarker/> .
 
+:person:BaruseviciusD
+    a foaf:Person ;
+    foaf:givenname "Dominykas" ;
+    foaf:surname "Barusevičius" .
+
 :person:BatesM
     a foaf:Person ;
     owl:sameAs viaf:94420353 , wd:Q6757112 ;
