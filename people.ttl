@@ -793,7 +793,7 @@
     owl:sameAs viaf:71647760, wd:Q24196086 ;
     foaf:givenname "Ronald E" ;
     foaf:surname "Day" ;
-    foaf:homepage <http://info.slis.indiana.edu/~roday/> .
+    foaf:homepage <https://roday.pages.iu.edu/> .
 
 :person:DayS
     a foaf:Person ;
