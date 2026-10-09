@@ -1103,6 +1103,18 @@
     dc:date "2014" ;
     dc:publisher :publisher:MIT .
 
+:reading:Day2026
+    a :Reading, bibo:Book ;
+    dc:title "Neo-Documentation and the End of Information: A Copernican Revolution" ;
+    bibo:shortTitle "Neo-Documentation and the End of Information" ;
+    dc:creator :person:DayR ;
+    bibo:authorList (
+        :person:DayR
+    ) ;
+    dc:publisher :publisher:MIT ;
+    dc:date "2026-10-06" ;
+    bibo:isbn13 "9780262054713" .
+
 :reading:Day2023
     a :Reading , bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1080/1600910X.2022.2098352> ;
