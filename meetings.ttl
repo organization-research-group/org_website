@@ -6856,5 +6856,4 @@
     lode:involved :reading:Day2026 ;
     :schedule (
         :reading:Day2026
-        [ dc:description "Introduction and Chapter 2" ]
     ) .
