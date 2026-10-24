@@ -2655,6 +2655,18 @@
     dc:publisher :publisher:MIT ;
     bibo:isbn13 "9780262380881" .
 
+:reading:Kuiken2026
+    a :Reading, bibo:BookSection ;
+    owl:sameAs <https://doi.org/10.1007/978-3-032-11631-4_2> ;
+    dc:title "From Sensemaking in to Sensemaking as Organizing: The Evolution of Weick’s Thought" ;
+    dc:creator :person:KuikenB ;
+    bibo:authorList (
+        :person:KuikenB
+    ) ;
+    dc:isPartOf :volume:Kuiken2026 ;
+    bibo:pages "23–66" ;
+    bibo:doi "10.1007/978-3-032-11631-4_2" .
+
 :reading:KumarCLS2025
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.48550/arXiv.2505.11581> ;

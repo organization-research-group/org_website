@@ -1711,6 +1711,12 @@
     foaf:surname "Krois" ;
     foaf:page <https://de.wikipedia.org/wiki/John_Michael_Krois> .
 
+:person:KuikenB
+    a foaf:Person ;
+    owl:sameAs orcid:0009-0004-6384-9885 ;
+    foaf:givenname "Ben" ;
+    foaf:surname "Kuiken" .
+
 :person:KumarA
     a foaf:Person ;
     foaf:givenname "Akarsh" ;

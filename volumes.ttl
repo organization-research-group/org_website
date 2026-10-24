@@ -336,6 +336,20 @@
     ) ;
     bibo:isbn13 "978-3-658-14679-5", "978-3-658-14681-8" .
 
+:volume:Kuiken2026
+    a bibo:Book ;
+    owl:sameAs <https://doi.org/10.1007/978-3-032-11631-4> ;
+    dc:title "Rethinking Sensemaking: Tools and Techniques for Organizing" ;
+    bibo:shortTitle "Rethinking Sensemaking" ;
+    dc:date "2026" ;
+    dc:publisher :publisher:Palgrave ;
+    dc:creator :person:KuikenB ;
+    bibo:authorList (
+        :person:KuikenB
+    ) ;
+    bibo:doi "10.1007/978-3-032-11631-4" ;
+    bibo:isbn13 "978-3-032-11630-7", "978-3-032-11631-4" .
+
 :volume:Lane
     a bibo:EditedBook ;
     dc:title "Pragmatism Revisited" ;
