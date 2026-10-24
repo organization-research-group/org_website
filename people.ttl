@@ -1715,7 +1715,8 @@
     a foaf:Person ;
     owl:sameAs orcid:0009-0004-6384-9885 ;
     foaf:givenname "Ben" ;
-    foaf:surname "Kuiken" .
+    foaf:surname "Kuiken" ;
+    foaf:homepage <https://www.benkuiken.nl/> .
 
 :person:KumarA
     a foaf:Person ;
