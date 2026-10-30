@@ -480,7 +480,8 @@
         :meeting:2026-10-09,
         :meeting:2026-10-16,
         :meeting:2026-10-23,
-        :meeting:2026-10-30 .
+        :meeting:2026-10-30,
+        :meeting:2026-11-06 .
 
 :meeting:2015-07-24
     a :Meeting ;
@@ -6886,4 +6887,18 @@
     lode:involved :reading:Kuiken2026 ;
     :schedule (
         :reading:Kuiken2026
+    ) .
+
+:meeting:2026-11-06
+    a :Meeting ;
+    lode:atTime [
+        a time:Interval ;
+        time:hasBeginning [
+            a time:Instant ;
+            time:inXSDDateTimeStamp "2026-11-06T10:00:00-05:00"^^xsd:dateTimeStamp
+        ]
+    ] ;
+    lode:involved :reading:Stevenson2026 ;
+    :schedule (
+        :reading:Stevenson2026
     ) .

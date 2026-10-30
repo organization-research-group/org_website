@@ -4670,6 +4670,22 @@
     bibo:pages "1331–1346" ;
     bibo:doi "10.1177/1461444814555950" .
 
+:reading:Stevenson2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1108/JD-03-2026-0162> ;
+    dc:title "Legitimation trumps public librarianship's historic commitments and social purpose" ;
+    dc:creator :person:StevensonS ;
+    bibo:authorList (
+        :person:StevensonS
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:JDOC
+    ] ;
+    bibo:pages "1–16" ;
+    bibo:doi "10.1108/JD-03-2026-0162" .
+
 :reading:Stevenson2020
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.1080/24701475.2020.1725854> ;

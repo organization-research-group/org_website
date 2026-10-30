@@ -2959,6 +2959,12 @@
     foaf:surname "Stevenson" ;
     foaf:homepage <https://hcommons.org/members/mstevenson/> .
 
+:person:StevensonS
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-3050-0172 ;
+    foaf:givenname "Siobhan" ;
+    foaf:surname "Stevenson" .
+
 :person:StewartJ
     a foaf:Person ;
     owl:sameAs viaf:84982383 ;
