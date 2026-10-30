@@ -2963,7 +2963,8 @@
     a foaf:Person ;
     owl:sameAs orcid:0000-0003-3050-0172 ;
     foaf:givenname "Siobhan" ;
-    foaf:surname "Stevenson" .
+    foaf:surname "Stevenson" ;
+    foaf:workInfoHomepage <https://ischool.utoronto.ca/faculty-profile/siobhan-stevenson/> .
 
 :person:StewartJ
     a foaf:Person ;
