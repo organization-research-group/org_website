@@ -394,6 +394,24 @@
     bibo:pages "239-266" ;
     bibo:doi "10.1353/lib.2018.0002" .
 
+:reading:Bates2020
+    a :Reading , bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1177/0952695119864237> ;
+    dc:title "The political theology of entropy: A Katechon for the cybernetic age" ;
+    dc:creator :person:BatesD ;
+    bibo:authorList (
+        :person:BatesD
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2020" ;
+        dc:isPartOf :journal:HistoryHumanSciences ;
+        bibo:issue "1" ;
+        bibo:volume "33"
+    ] ;
+    bibo:pages "109-127" ;
+    bibo:doi "10.1177/0952695119864237" .
+
 :reading:Becker1982a
     a :Reading, bibo:BookSection ;
     dc:title "Art worlds and collective activity" ;

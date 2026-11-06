@@ -244,6 +244,12 @@
     foaf:homepage <https://onlinelibrary.wiley.com/journal/14682303> ;
     bibo:issn "1468-2303" .
 
+:journal:HistoryHumanSciences
+    a bibo:Journal ;
+    dc:title "History of the Human Sciences" ;
+    foaf:homepage <https://journals.sagepub.com/home/hhs> ;
+    bibo:issn "0952-6951" .
+
 :journal:HumanStudies
     a bibo:Journal ;
     dc:title "Human Studies" ;
