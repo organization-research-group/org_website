@@ -456,6 +456,12 @@
     foaf:homepage <http://journals.sagepub.com/home/nms> ;
     bibo:issn "1461-4448", "1461-7315" .
 
+:journal:October
+    a bibo:Journal ;
+    dc:title "October" ;
+    foaf:homepage <https://direct.mit.edu/octo> ;
+    bibo:issn "0162-2870", "1536-013X" .
+
 :journal:OIR
     a bibo:Journal ;
     dc:title "Online Information Review" ;

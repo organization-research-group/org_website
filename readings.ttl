@@ -4521,6 +4521,23 @@
     bibo:pages "181-201" ;
     bibo:doi "10.1353/hyp.2000.0029" .
 
+:reading:Somaini2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1162/OCTO.a.545> ;
+    dc:title "Latent spaces: AI, art, and the archive" ;
+    dc:creator :person:SomainiA ;
+    bibo:authorList (
+        :person:SomainiA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:October ;
+        bibo:issue "196"
+    ] ;
+    bibo:pages "19-60" ;
+    bibo:doi "10.1162/OCTO.a.545" .
+
 :reading:SorensenBB2024
     a :Reading, bibo:AcademicArticle ;
     owl:sameAs <https://doi.org/10.31269/triplec.v22i2.1475> ;
