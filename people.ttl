@@ -2880,7 +2880,8 @@
 :person:SomainiA
     a foaf:Person ;
     foaf:givenname "Antonio" ;
-    foaf:surname "Somaini" .
+    foaf:surname "Somaini" ;
+    foaf:workInfoHomepage <https://www.sorbonne-nouvelle.fr/m-somaini-antonio-176677.kjsp> .
 
 :person:SorensenBB
     a foaf:Person ;
