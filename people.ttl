@@ -1061,6 +1061,13 @@
     foaf:givenname "Jo" ;
     foaf:surname "Freeman" .
 
+:person:FriedmanA
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0003-2621-0906 ;
+    foaf:givenname "Alon" ;
+    foaf:surname "Friedman" ;
+    foaf:workInfoHomepage <https://www.usf.edu/arts-sciences/departments/information/people/alon-friedman.aspx> .
+
 :person:FriedmanB
     a foaf:Person ;
     owl:sameAs viaf:77828351 , wd:Q95183473 , dblp:20\/2143 ;
@@ -3090,6 +3097,13 @@
     foaf:givenname "Gregorio" ;
     foaf:surname "Tenti" ;
     foaf:workInfoHomepage <https://www.upf.edu/en/web/humanitats/docents-i-investigadors/-/asset_publisher/AwHWXL9uZXHH/content/tenti-gregorio/maximized> .
+
+:person:ThellefsenM
+    a foaf:Person ;
+    owl:sameAs orcid:0000-0002-3023-0240 ;
+    foaf:givenname "Martin" ;
+    foaf:surname "Thellefsen" ;
+    foaf:workInfoHomepage <https://researchprofiles.ku.dk/en/persons/martin-muderspach-thellefsen/> .
 
 :person:ThomasN
     a foaf:Person ;

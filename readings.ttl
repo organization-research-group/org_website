@@ -4914,6 +4914,25 @@
     bibo:pages "42-49" ;
     bibo:uri "http://hdl.handle.net/1773/37978" .
 
+:reading:Thellefsen2026
+    a :Reading, bibo:AcademicArticle ;
+    owl:sameAs <https://doi.org/10.1002/asi.70132> ;
+    dc:title "The ultimate forgery: A semiotic deconstruction of large language models as engines of simulated selfhood" ;
+    dc:creator :person:ThellefsenM, :person:FriedmanA ;
+    bibo:authorList (
+        :person:ThellefsenM
+        :person:FriedmanA
+    ) ;
+    dc:isPartOf [
+        a bibo:Issue ;
+        dc:date "2026" ;
+        dc:isPartOf :journal:JASIST ;
+        bibo:issue "12" ;
+        bibo:volume "77"
+    ] ;
+    bibo:pages "1514-1529" ;
+    bibo:doi "10.1002/asi.70132" .
+
 :reading:Thomas2018
     a :Reading, bibo:Book ;
     dc:title "Becoming-Social in a Networked Age" ;
